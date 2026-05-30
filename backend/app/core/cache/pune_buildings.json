@@ -1,0 +1,146 @@
+{
+  "type": "FeatureCollection",
+  "category": "buildings",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.855,
+              18.531
+            ],
+            [
+              73.858,
+              18.531
+            ],
+            [
+              73.858,
+              18.533
+            ],
+            [
+              73.855,
+              18.533
+            ],
+            [
+              73.855,
+              18.531
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 3001,
+        "name": "Deccan Municipal Plaza",
+        "osm_building": "commercial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.874,
+              18.538
+            ],
+            [
+              73.877,
+              18.538
+            ],
+            [
+              73.877,
+              18.54
+            ],
+            [
+              73.874,
+              18.54
+            ],
+            [
+              73.874,
+              18.538
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 3002,
+        "name": "Pune Junction Administrative Block",
+        "osm_building": "public"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.832,
+              18.511
+            ],
+            [
+              73.836,
+              18.511
+            ],
+            [
+              73.836,
+              18.514
+            ],
+            [
+              73.832,
+              18.514
+            ],
+            [
+              73.832,
+              18.511
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 3003,
+        "name": "Erandwane Residential Tower A",
+        "osm_building": "apartments"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.864,
+              18.52
+            ],
+            [
+              73.867,
+              18.52
+            ],
+            [
+              73.867,
+              18.522
+            ],
+            [
+              73.864,
+              18.522
+            ],
+            [
+              73.864,
+              18.52
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 3004,
+        "name": "Rasta Peth Power Office Complex",
+        "osm_building": "industrial"
+      }
+    }
+  ]
+}

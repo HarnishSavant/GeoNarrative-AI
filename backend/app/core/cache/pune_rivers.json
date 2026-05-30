@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "category": "rivers",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.8012,
+            18.5204
+          ],
+          [
+            73.8155,
+            18.528
+          ],
+          [
+            73.8312,
+            18.5325
+          ],
+          [
+            73.8456,
+            18.5348
+          ],
+          [
+            73.8589,
+            18.5312
+          ],
+          [
+            73.8722,
+            18.5385
+          ],
+          [
+            73.889,
+            18.541
+          ],
+          [
+            73.9056,
+            18.5365
+          ]
+        ]
+      },
+      "properties": {
+        "id": 2001,
+        "name": "Mula-Mutha River",
+        "osm_type": "way",
+        "osm_waterway": "river"
+      }
+    }
+  ]
+}

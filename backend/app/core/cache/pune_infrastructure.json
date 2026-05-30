@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "category": "infrastructure",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.866,
+          18.521
+        ]
+      },
+      "properties": {
+        "id": 6001,
+        "name": "Rasta Peth 220KV Substation",
+        "category": "infrastructure",
+        "osm_power": "substation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.834,
+          18.512
+        ]
+      },
+      "properties": {
+        "id": 6002,
+        "name": "Erandwane Distribution Substation",
+        "category": "infrastructure",
+        "osm_power": "substation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "category": "schools",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8415,
+          18.522
+        ]
+      },
+      "properties": {
+        "id": 5001,
+        "name": "Fergusson College Campus",
+        "category": "schools",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8525,
+          18.518
+        ]
+      },
+      "properties": {
+        "id": 5002,
+        "name": "Abasaheb Garware College",
+        "category": "schools",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.876,
+          18.5385
+        ]
+      },
+      "properties": {
+        "id": 5003,
+        "name": "Wadia College Complex",
+        "category": "schools",
+        "osm_amenity": "school"
+      }
+    }
+  ]
+}

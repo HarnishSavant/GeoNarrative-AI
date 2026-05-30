@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "category": "roads",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.83,
+            18.51
+          ],
+          [
+            73.84,
+            18.515
+          ],
+          [
+            73.85,
+            18.52
+          ],
+          [
+            73.86,
+            18.525
+          ]
+        ]
+      },
+      "properties": {
+        "id": 4001,
+        "name": "Karve Road",
+        "osm_highway": "primary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.84,
+            18.53
+          ],
+          [
+            73.842,
+            18.52
+          ],
+          [
+            73.845,
+            18.51
+          ]
+        ]
+      },
+      "properties": {
+        "id": 4002,
+        "name": "Fergusson College Road (FC Road)",
+        "osm_highway": "secondary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.87,
+            18.545
+          ],
+          [
+            73.875,
+            18.538
+          ],
+          [
+            73.88,
+            18.53
+          ]
+        ]
+      },
+      "properties": {
+        "id": 4003,
+        "name": "Pune Station Overpass Road",
+        "osm_highway": "trunk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.85,
+            18.535
+          ],
+          [
+            73.858,
+            18.531
+          ],
+          [
+            73.868,
+            18.534
+          ]
+        ]
+      },
+      "properties": {
+        "id": 4004,
+        "name": "Jangali Maharaj Road (JM Road)",
+        "osm_highway": "primary"
+      }
+    }
+  ]
+}

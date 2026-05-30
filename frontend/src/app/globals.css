@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --color-primary: 99 102 241;
+    --color-accent: 6 182 212;
+    --color-bg-primary: 255 255 255;
+    --color-bg-secondary: 249 250 251;
+    --color-text-primary: 17 24 39;
+    --color-text-secondary: 107 114 128;
+    --color-border: 229 231 235;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.3);
+  }
+
+  .dark {
+    --color-bg-primary: 10 14 26;
+    --color-bg-secondary: 17 24 39;
+    --color-text-primary: 243 244 246;
+    --color-text-secondary: 156 163 175;
+    --color-border: 31 41 55;
+    --glass-bg: rgba(17, 24, 39, 0.7);
+    --glass-border: rgba(55, 65, 81, 0.5);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply backdrop-blur-xl border rounded-2xl;
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+
+  .glass-card-hover:hover {
+    @apply shadow-lg;
+    transform: translateY(-2px);
+    border-color: rgba(99, 102, 241, 0.3);
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #6366f1, #06b6d4);
+  }
+
+  .gradient-text-warm {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #f59e0b, #ef4444);
+  }
+
+  /* Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+    background: rgba(99, 102, 241, 0.3);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.5);
+  }
+
+  /* Sidebar */
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 cursor-pointer;
+  }
+
+  .sidebar-item:hover {
+    @apply bg-primary-500/10 text-primary-400;
+  }
+
+  .sidebar-item.active {
+    @apply bg-primary-500/20 text-primary-400;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.1);
+  }
+
+  /* KPI Card */
+  .kpi-card {
+    @apply glass-card p-5 relative overflow-hidden;
+  }
+
+  .kpi-card::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 rounded-t-2xl;
+    background: linear-gradient(90deg, var(--kpi-color-start, #6366f1), var(--kpi-color-end, #06b6d4));
+  }
+
+  /* Risk Badge */
+  .risk-badge {
+    @apply px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+  }
+
+  .risk-low {
+    @apply bg-emerald-500/20 text-emerald-400 border border-emerald-500/30;
+  }
+
+  .risk-medium {
+    @apply bg-amber-500/20 text-amber-400 border border-amber-500/30;
+  }
+
+  .risk-high {
+    @apply bg-red-500/20 text-red-400 border border-red-500/30;
+  }
+
+  /* Chat */
+  .chat-bubble {
+    @apply px-4 py-3 rounded-2xl max-w-[85%] text-sm leading-relaxed;
+  }
+
+  .chat-bubble-user {
+    @apply chat-bubble bg-primary-600 text-white ml-auto rounded-br-md;
+  }
+
+  .chat-bubble-ai {
+    @apply chat-bubble glass-card mr-auto rounded-bl-md;
+  }
+
+  /* Pulse Dot */
+  .pulse-dot {
+    @apply relative;
+  }
+
+  .pulse-dot::after {
+    content: '';
+    @apply absolute top-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full;
+    animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+  }
+
+  /* Map container */
+  .map-container {
+    @apply w-full h-full rounded-xl overflow-hidden;
+  }
+
+  .mapboxgl-popup-content {
+    @apply rounded-xl shadow-xl border border-gray-700 !important;
+    background: rgba(17, 24, 39, 0.95) !important;
+    backdrop-filter: blur(10px);
+    color: #f3f4f6 !important;
+    padding: 16px !important;
+  }
+
+  .mapboxgl-popup-tip {
+    border-top-color: rgba(17, 24, 39, 0.95) !important;
+  }
+
+  /* Layer toggle */
+  .layer-toggle {
+    @apply flex items-center justify-between px-3 py-2 rounded-lg transition-all duration-200 cursor-pointer;
+  }
+
+  .layer-toggle:hover {
+    @apply bg-white/5;
+  }
+
+  /* Input */
+  .input-geo {
+    @apply w-full px-4 py-3 rounded-xl border bg-transparent text-sm transition-all duration-200 outline-none;
+    border-color: var(--glass-border);
+  }
+
+  .input-geo:focus {
+    @apply border-primary-500 ring-2 ring-primary-500/20;
+  }
+
+  /* Button */
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white rounded-xl font-medium text-sm transition-all duration-200 flex items-center gap-2;
+  }
+
+  .btn-primary:hover {
+    @apply shadow-glow-primary;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border border-gray-600 hover:border-primary-500 text-gray-300 hover:text-primary-400 rounded-xl font-medium text-sm transition-all duration-200 flex items-center gap-2;
+  }
+
+  /* Notification badge */
+  .notification-badge {
+    @apply absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full text-[10px] font-bold text-white flex items-center justify-center;
+  }
+
+  /* Analytics widget */
+  .analytics-widget {
+    @apply glass-card p-4 space-y-3;
+  }
+
+  /* Glow effects */
+  .glow-border {
+    position: relative;
+  }
+
+  .glow-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #6366f1, #06b6d4, #6366f1);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .glow-border:hover::before {
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Mapbox overrides */
+.mapboxgl-ctrl-attrib {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+/* Recharts custom */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: rgba(55, 65, 81, 0.3) !important;
+}
+
+.recharts-text {
+  fill: #9ca3af !important;
+  font-size: 11px !important;
+}

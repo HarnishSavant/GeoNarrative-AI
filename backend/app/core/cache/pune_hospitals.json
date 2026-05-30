@@ -1,0 +1,102 @@
+{
+  "type": "FeatureCollection",
+  "category": "hospitals",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8562,
+          18.532
+        ]
+      },
+      "properties": {
+        "id": 1001,
+        "name": "Sahyadri Hospital (Deccan)",
+        "category": "hospitals",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8752,
+          18.5392
+        ]
+      },
+      "properties": {
+        "id": 1002,
+        "name": "Jehangir Hospital",
+        "category": "hospitals",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8785,
+          18.5398
+        ]
+      },
+      "properties": {
+        "id": 1003,
+        "name": "Ruby Hall Clinic",
+        "category": "hospitals",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8354,
+          18.5125
+        ]
+      },
+      "properties": {
+        "id": 1004,
+        "name": "Deenanath Mangeshkar Hospital",
+        "category": "hospitals",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8654,
+          18.5212
+        ]
+      },
+      "properties": {
+        "id": 1005,
+        "name": "KEM Hospital Pune",
+        "category": "hospitals",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.842,
+          18.5285
+        ]
+      },
+      "properties": {
+        "id": 1006,
+        "name": "Poona Hospital & Research Centre",
+        "category": "hospitals",
+        "osm_amenity": "hospital"
+      }
+    }
+  ]
+}

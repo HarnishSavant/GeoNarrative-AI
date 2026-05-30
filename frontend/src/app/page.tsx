@@ -1,0 +1,375 @@
+"use client";
+
+import React, { useState, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import dynamic from "next/dynamic";
+import { Droplets, Car, Building2, Zap, Globe2, Search, MapPin, BarChart3, MessageSquareText, Shield } from "lucide-react";
+
+import Sidebar from "@/components/Sidebar";
+import TopNav from "@/components/TopNav";
+import KPICard from "@/components/KPICard";
+import AIChatPanel from "@/components/AIChatPanel";
+import MapLayersPanel from "@/components/MapLayersPanel";
+import PredictionPanel from "@/components/PredictionPanel";
+import ReportsPanel from "@/components/ReportsPanel";
+import SettingsPanel from "@/components/SettingsPanel";
+import RightPanel from "@/components/RightPanel";
+
+import { SidebarTab, UploadedFile, DashboardMode } from "@/lib/types";
+import { getKPIsForMode, generateFloodRisksForLocation, generateAnalyticsForLocation } from "@/lib/mockData";
+import { useMapControl } from "@/hooks/useMapControl";
+
+// Dynamic import for the map to avoid SSR issues
+const MapView = dynamic(() => import("@/components/MapView"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full rounded-xl bg-geo-card border border-geo-border flex items-center justify-center">
+      <div className="text-center space-y-3">
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+          className="w-10 h-10 border-2 border-primary-500/30 border-t-primary-500 rounded-full mx-auto"
+        />
+        <p className="text-sm text-gray-500">Loading map...</p>
+      </div>
+    </div>
+  ),
+});
+
+const DASHBOARD_MODES = [
+  { id: "flood" as DashboardMode, label: "Flood Risk", icon: <Droplets size={14} />, color: "#3b82f6", gradient: "from-blue-600 to-cyan-500" },
+  { id: "traffic" as DashboardMode, label: "Traffic", icon: <Car size={14} />, color: "#f59e0b", gradient: "from-amber-500 to-orange-500" },
+  { id: "urban" as DashboardMode, label: "Urban Dev", icon: <Building2 size={14} />, color: "#8b5cf6", gradient: "from-violet-500 to-indigo-500" },
+  { id: "utility" as DashboardMode, label: "Utility", icon: <Zap size={14} />, color: "#10b981", gradient: "from-emerald-500 to-teal-500" },
+];
+
+export default function Home() {
+  const [activeTab, setActiveTab] = useState<SidebarTab>("dashboard");
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [rightPanelOpen, setRightPanelOpen] = useState(true);
+  const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
+
+  const {
+    currentLocation,
+    mapCenter,
+    dashboardMode,
+    mapLayers,
+    layerOpacity,
+    mapFullscreen,
+    osmData,
+    isLoadingOSM,
+    hasSearched,
+    setLayerOpacity,
+    setMapFullscreen,
+    handleModeChange,
+    handleToggleLayer,
+    handleRegisterCustomLayer,
+    handleLocationSearch,
+  } = useMapControl();
+
+  // Dynamic data based on location AND mode
+  const currentKPIs = React.useMemo(() => getKPIsForMode(dashboardMode), [dashboardMode]);
+  const currentFloodRisks = React.useMemo(() => generateFloodRisksForLocation(currentLocation || "Unknown", dashboardMode), [currentLocation, dashboardMode]);
+  const currentAnalytics = React.useMemo(() => generateAnalyticsForLocation(currentLocation || "Unknown", dashboardMode), [currentLocation, dashboardMode]);
+
+  const handleMapAction = useCallback((action: string) => {
+    if (action === "highlight-hospitals-flood") {
+      handleModeChange("flood");
+    } else if (action === "highlight-schools-river") {
+      handleModeChange("flood");
+    } else if (action === "highlight-shelters") {
+      handleModeChange("traffic");
+    } else if (action === "highlight-substations") {
+      handleModeChange("utility");
+    } else if (action === "highlight-roads") {
+      handleModeChange("traffic");
+    } else if (action === "highlight-zoning-compliance") {
+      handleModeChange("urban");
+    }
+  }, [handleModeChange]);
+
+  // File upload handler — called from AIChatPanel
+  const handleFileUpload = useCallback((file: UploadedFile) => {
+    setUploadedFiles((prev) => [...prev, file]);
+    handleRegisterCustomLayer(file);
+  }, [handleRegisterCustomLayer]);
+
+  const renderLeftContent = () => {
+    switch (activeTab) {
+      case "map":
+        return (
+          <MapLayersPanel
+            layers={mapLayers}
+            onToggleLayer={handleToggleLayer}
+            layerOpacity={layerOpacity}
+            onOpacityChange={setLayerOpacity}
+          />
+        );
+      case "chat":
+        return (
+          <AIChatPanel
+            currentLocation={currentLocation}
+            dashboardMode={dashboardMode}
+            uploadedFiles={uploadedFiles}
+            onMapAction={handleMapAction}
+            onFileUpload={handleFileUpload}
+          />
+        );
+      case "prediction":
+        return <PredictionPanel currentLocation={currentLocation} dashboardMode={dashboardMode} />;
+      case "reports":
+        return <ReportsPanel currentLocation={currentLocation} />;
+      case "settings":
+        return <SettingsPanel />;
+      default:
+        return null;
+    }
+  };
+
+  const showLeftContent = activeTab !== "dashboard" && activeTab !== "analytics";
+
+  // Welcome Screen Component — shown when no location has been searched
+  const WelcomeScreen = () => (
+    <div className="flex-1 flex items-center justify-center p-8">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-2xl w-full text-center space-y-8"
+      >
+        {/* Logo & Title */}
+        <div className="space-y-4">
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-cyan-500 flex items-center justify-center mx-auto shadow-glow-primary"
+          >
+            <Globe2 size={40} className="text-white" />
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="text-3xl font-bold gradient-text"
+          >
+            GeoNarrative AI
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="text-gray-400 text-sm max-w-md mx-auto leading-relaxed"
+          >
+            Your intelligent geospatial digital twin platform. Analyze flood risks, traffic patterns,
+            urban development, and utility infrastructure with real-time PostGIS spatial intelligence.
+          </motion.p>
+        </div>
+
+        {/* Search CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="bg-geo-card/40 backdrop-blur-xl border border-geo-border rounded-2xl p-6 space-y-4"
+        >
+          <div className="flex items-center gap-3 justify-center text-gray-300">
+            <Search size={18} className="text-primary-400" />
+            <span className="text-sm font-medium">Search for a city to begin analysis</span>
+          </div>
+          <p className="text-xs text-gray-500">
+            Use the search bar above to load any city — we'll automatically ingest OpenStreetMap data,
+            build the digital twin, and activate all analysis engines.
+          </p>
+        </motion.div>
+
+        {/* Feature Cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-3"
+        >
+          {[
+            { icon: <Droplets size={20} />, label: "Flood Risk", desc: "Hydrological analysis", color: "from-blue-600 to-cyan-500" },
+            { icon: <Car size={20} />, label: "Traffic", desc: "Congestion modeling", color: "from-amber-500 to-orange-500" },
+            { icon: <Building2 size={20} />, label: "Urban Dev", desc: "Zoning compliance", color: "from-violet-500 to-indigo-500" },
+            { icon: <Zap size={20} />, label: "Utility Grid", desc: "Infrastructure audit", color: "from-emerald-500 to-teal-500" },
+          ].map((feature, i) => (
+            <motion.div
+              key={feature.label}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 + i * 0.1 }}
+              className="bg-geo-card/30 border border-geo-border rounded-xl p-4 space-y-2 hover:border-primary-500/30 transition-all duration-300"
+            >
+              <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center text-white mx-auto`}>
+                {feature.icon}
+              </div>
+              <p className="text-xs font-semibold text-gray-200">{feature.label}</p>
+              <p className="text-[10px] text-gray-500">{feature.desc}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Bottom Quick Actions */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.9 }}
+          className="flex items-center justify-center gap-4 text-xs text-gray-500"
+        >
+          <button
+            onClick={() => setActiveTab("chat")}
+            className="flex items-center gap-1.5 px-4 py-2 rounded-lg border border-geo-border hover:border-primary-500/30 hover:text-primary-300 transition-all"
+          >
+            <MessageSquareText size={14} />
+            Open AI Assistant
+          </button>
+          <span className="text-gray-700">or</span>
+          <span className="text-gray-400">Upload data via the AI chat</span>
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+
+  return (
+    <div className="h-screen w-screen flex flex-col bg-geo-dark">
+      {/* Top Navigation */}
+      <TopNav onLocationSearch={handleLocationSearch} currentLocation={currentLocation} />
+
+      {/* Main Content */}
+      <div className="flex-1 flex overflow-hidden">
+        {/* Left Sidebar */}
+        <Sidebar
+          activeTab={activeTab}
+          onTabChange={setActiveTab}
+          collapsed={sidebarCollapsed}
+          onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
+        />
+
+        {/* Secondary Left Panel (contextual) — wider for chat */}
+        <AnimatePresence>
+          {showLeftContent && (
+            <motion.div
+              initial={{ width: 0, opacity: 0 }}
+              animate={{ width: activeTab === "chat" ? 440 : 340, opacity: 1 }}
+              exit={{ width: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="h-full bg-geo-darker/60 backdrop-blur-xl border-r border-geo-border overflow-hidden flex flex-col"
+            >
+              {renderLeftContent()}
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Main Panel */}
+        <div className="flex-1 flex flex-col overflow-hidden relative">
+          {/* If no search done yet, show welcome screen */}
+          {!hasSearched ? (
+            <WelcomeScreen />
+          ) : (
+            <>
+              {/* Dashboard Mode Selector Row */}
+              <div className="px-4 pt-3 pb-0 flex-shrink-0">
+                <div className="flex items-center gap-2">
+                  {DASHBOARD_MODES.map((mode) => (
+                    <button
+                      key={mode.id}
+                      onClick={() => handleModeChange(mode.id)}
+                      className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300 border ${
+                        dashboardMode === mode.id
+                          ? `bg-gradient-to-r ${mode.gradient} text-white border-transparent shadow-lg`
+                          : "bg-geo-card/50 text-gray-400 border-geo-border hover:border-gray-500 hover:text-gray-200"
+                      }`}
+                    >
+                      {mode.icon}
+                      {mode.label}
+                    </button>
+                  ))}
+                  <div className="flex-1" />
+                  <span className="text-[10px] text-gray-600 font-mono uppercase tracking-widest">
+                    {dashboardMode} intelligence • {currentLocation?.split(",")[0] || ""}
+                  </span>
+                </div>
+              </div>
+
+              {/* KPI Row — Only on Dashboard and Analytics */}
+              {(activeTab === "dashboard" || activeTab === "analytics") && (
+                <div className="p-4 pb-0 flex-shrink-0">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                    {currentKPIs.map((kpi, i) => (
+                      <KPICard key={`${dashboardMode}-${kpi.id}`} data={kpi} index={i} />
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Uploaded files banner */}
+              {(activeTab === "dashboard" || activeTab === "analytics") && uploadedFiles.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="px-4 pt-3 pb-0 flex-shrink-0"
+                >
+                  <div className="bg-gradient-to-r from-primary-950/40 via-geo-card/60 to-purple-950/30 backdrop-blur-xl border border-primary-500/25 rounded-2xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-lg shadow-primary-950/20">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-400">
+                        <Shield className="text-primary-400" size={20} />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-gray-100 flex items-center gap-1.5">
+                          <span>Custom Layer Active:</span>
+                          <span className="text-primary-400 font-mono font-semibold">{uploadedFiles[uploadedFiles.length - 1].name}</span>
+                        </h4>
+                        <p className="text-[10px] text-gray-400 mt-0.5">
+                          {uploadedFiles[uploadedFiles.length - 1].features || 0} features indexed • {uploadedFiles[uploadedFiles.length - 1].type} format • Active on map
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => setActiveTab("chat")}
+                      className="px-3 py-2 bg-gradient-to-r from-primary-600 to-indigo-600 hover:from-primary-500 hover:to-indigo-500 text-white text-[11px] font-bold rounded-xl transition-all duration-300 shadow-md shadow-primary-900/30 flex-shrink-0"
+                    >
+                      Analyze in Chat
+                    </button>
+                  </div>
+                </motion.div>
+              )}
+
+              {/* Map Area */}
+              <div
+                className={`flex-1 p-4 ${
+                  mapFullscreen ? "fixed inset-0 z-50 p-0" : ""
+                }`}
+              >
+                <MapView
+                  center={mapCenter}
+                  currentLocation={currentLocation}
+                  layers={mapLayers}
+                  dashboardMode={dashboardMode}
+                  isFullscreen={mapFullscreen}
+                  onToggleFullscreen={() => setMapFullscreen(!mapFullscreen)}
+                  layerOpacity={layerOpacity}
+                  osmData={osmData}
+                />
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Right Intelligence Panel — only when searched */}
+        {!mapFullscreen && hasSearched && (
+          <RightPanel
+            analytics={currentAnalytics}
+            floodRisks={currentFloodRisks}
+            currentLocation={currentLocation}
+            dashboardMode={dashboardMode}
+            isOpen={rightPanelOpen}
+            onToggle={() => setRightPanelOpen(!rightPanelOpen)}
+          />
+        )}
+      </div>
+    </div>
+  );
+}
