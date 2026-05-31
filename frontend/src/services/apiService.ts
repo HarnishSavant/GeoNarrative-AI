@@ -11,6 +11,7 @@ export interface PredictionParams {
   population_density: number;
   drainage_capacity: number;
   location?: string;
+  domain?: string;
 }
 
 export const apiService = {
@@ -41,8 +42,9 @@ export const apiService = {
   /**
    * Get location analytics trends and charts
    */
-  async getAnalytics(location: string): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/analytics?location=${encodeURIComponent(location)}`);
+  async getAnalytics(location: string, mode?: string): Promise<any> {
+    const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
+    const res = await fetch(`${BASE_URL}/api/v1/analytics?location=${encodeURIComponent(location)}${modeParam}`);
     if (!res.ok) throw new Error("Failed to fetch analytics");
     return res.json();
   },
@@ -50,8 +52,9 @@ export const apiService = {
   /**
    * Get real-time metric KPIs for a location and active mode
    */
-  async getKPIs(location: string): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/analytics/kpi?location=${encodeURIComponent(location)}`);
+  async getKPIs(location: string, mode?: string): Promise<any> {
+    const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/kpi?location=${encodeURIComponent(location)}${modeParam}`);
     if (!res.ok) throw new Error("Failed to fetch KPIs");
     return res.json();
   },
@@ -59,8 +62,9 @@ export const apiService = {
   /**
    * Get low-lying risk flood zones
    */
-  async getFloodZones(location: string): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/flood/zones?location=${encodeURIComponent(location)}`);
+  async getFloodZones(location: string, mode?: string): Promise<any> {
+    const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
+    const res = await fetch(`${BASE_URL}/api/v1/flood/zones?location=${encodeURIComponent(location)}${modeParam}`);
     if (!res.ok) throw new Error("Failed to fetch flood zones");
     return res.json();
   },
@@ -138,5 +142,349 @@ export const apiService = {
     );
     if (!res.ok) throw new Error("Failed to fetch live weather telemetry");
     return res.json();
+  },
+
+  /**
+   * Secure local storage bearer headers helper
+   */
+  getAuthHeaders(): HeadersInit {
+    const token = typeof window !== "undefined" ? localStorage.getItem("geonarrative_token") : null;
+    return {
+      "Content-Type": "application/json",
+      ...(token ? { "Authorization": `Bearer ${token}` } : {})
+    };
+  },
+
+  /**
+   * Sign up a new user account
+   */
+  async register(payload: any): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/register`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Registration failed");
+    }
+    return res.json();
+  },
+
+  /**
+   * Log in user using credentials, returning JWT token
+   */
+  async login(payload: any): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Login failed");
+    }
+    return res.json();
+  },
+
+  /**
+   * Verify verification token and activate account
+   */
+  async verifyEmail(email: string, token: string): Promise<any> {
+    const res = await fetch(
+      `${BASE_URL}/api/v1/auth/verify?email=${encodeURIComponent(email)}&token=${encodeURIComponent(token)}`
+    );
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Email verification failed");
+    }
+    return res.json();
+  },
+
+  /**
+   * Request password reset token
+   */
+  async forgotPassword(email: string): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/forgot-password`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Request failed");
+    }
+    return res.json();
+  },
+
+  /**
+   * Reset password with valid token
+   */
+  async resetPassword(payload: any): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/reset-password`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Password reset failed");
+    }
+    return res.json();
+  },
+
+  /**
+   * Fetch authenticated user profile data
+   */
+  async getProfile(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/me`, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) {
+      throw new Error("Failed to fetch user session profile");
+    }
+    return res.json();
+  },
+
+  /**
+   * Admin API: get all platform users
+   */
+  async adminGetUsers(search?: string, roleFilter?: string, subFilter?: string): Promise<any> {
+    let url = `${BASE_URL}/api/v1/auth/admin/users?`;
+    if (search) url += `search=${encodeURIComponent(search)}&`;
+    if (roleFilter) url += `role_filter=${encodeURIComponent(roleFilter)}&`;
+    if (subFilter) url += `sub_filter=${encodeURIComponent(subFilter)}&`;
+    
+    const res = await fetch(url, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to fetch admin users");
+    }
+    return res.json();
+  },
+
+  /**
+   * Admin API: toggle user active state
+   */
+  async adminToggleStatus(userId: number, isActive: boolean): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/admin/users/${userId}/status`, {
+      method: "PUT",
+      headers: this.getAuthHeaders(),
+      body: JSON.stringify({ is_active: isActive }),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to change user status");
+    }
+    return res.json();
+  },
+
+  /**
+   * Admin API: modify subscription classes & credit limits
+   */
+  async adminUpdateSubscription(userId: number, subscription: string, credits: number): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/admin/users/${userId}/subscription`, {
+      method: "PUT",
+      headers: this.getAuthHeaders(),
+      body: JSON.stringify({ subscription, credits }),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to adjust user subscription");
+    }
+    return res.json();
+  },
+
+  /**
+   * Admin API: read overall SaaS metrics
+   */
+  async adminGetAnalytics(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/auth/admin/analytics`, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to load platform stats");
+    }
+    return res.json();
+  },
+
+  /**
+   * SaaS API: fetch billing and credit status
+   */
+  async getBillingStatus(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/billing/status`, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to fetch billing status");
+    return res.json();
+  },
+
+  /**
+   * SaaS API: create Razorpay transaction order
+   */
+  async createRazorpayOrder(planType: string): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/billing/create-order`, {
+      method: "POST",
+      headers: this.getAuthHeaders(),
+      body: JSON.stringify({ plan_type: planType }),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to create Razorpay order");
+    }
+    return res.json();
+  },
+
+  /**
+   * SaaS API: verify Razorpay payment signatures
+   */
+  async verifyRazorpayPayment(payload: {
+    razorpay_order_id: string;
+    razorpay_payment_id: string;
+    razorpay_signature: string;
+    plan_type: string;
+  }): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/billing/verify-payment`, {
+      method: "POST",
+      headers: this.getAuthHeaders(),
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Payment verification failed");
+    }
+    return res.json();
+  },
+
+  /**
+   * SaaS API: fetch invoice payment logs
+   */
+  async getPaymentHistory(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/billing/payments`, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to fetch payment history");
+    return res.json();
+  },
+
+  /**
+   * SaaS API: fetch usage telemetry
+   */
+  async getUsageLogs(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/billing/usage`, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to fetch usage logs");
+    return res.json();
+  },
+
+  /**
+   * SaaS API: admin revenue analytics
+   */
+  async adminGetRevenueAnalytics(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/billing/admin/revenue`, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to fetch revenue analytics");
+    }
+    return res.json();
+  },
+
+  /**
+   * Enterprise: Contact us submissions
+   */
+  async submitContactInquiry(payload: { name: string; email: string; subject: string; message: string }): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/enterprise/contact`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to submit inquiry");
+    }
+    return res.json();
+  },
+
+  /**
+   * Enterprise: Help Tickets
+   */
+  async createSupportTicket(payload: { subject: string; description: string; category: string }): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/enterprise/tickets`, {
+      method: "POST",
+      headers: this.getAuthHeaders(),
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to submit ticket");
+    }
+    return res.json();
+  },
+
+  async listSupportTickets(): Promise<any[]> {
+    const res = await fetch(`${BASE_URL}/api/v1/enterprise/tickets`, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to load tickets");
+    return res.json();
+  },
+
+  /**
+   * Enterprise: Activity Logs
+   */
+  async listActivityLogs(): Promise<any[]> {
+    const res = await fetch(`${BASE_URL}/api/v1/enterprise/activity-logs`, {
+      method: "GET",
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to load activity logs");
+    return res.json();
+  },
+
+  /**
+   * Enterprise: Profile Management
+   */
+  async updateProfileDetails(payload: { full_name?: string; industry?: string; designation?: string }): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/enterprise/profile`, {
+      method: "PUT",
+      headers: this.getAuthHeaders(),
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to update profile details");
+    }
+    return res.json();
+  },
+
+  async changePassword(payload: { old_password: any; new_password: any }): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/enterprise/change-password`, {
+      method: "POST",
+      headers: this.getAuthHeaders(),
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.detail || "Failed to modify password credentials");
+    }
+    return res.json();
+  },
+  
+  getBaseUrl(): string {
+    return BASE_URL;
   },
 };

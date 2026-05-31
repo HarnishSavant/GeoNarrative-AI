@@ -29,6 +29,8 @@ export function useMapControl(initialLocation: string = "") {
   }, []);
 
   const handleRegisterCustomLayer = useCallback((file: any) => {
+    setHasSearched(true);
+    setCurrentLocation((prev) => prev || file.name);
     const newCustomLayer: MapLayer = {
       id: `custom-uploaded-${file.id}`,
       name: `Uploaded: ${file.name}`,

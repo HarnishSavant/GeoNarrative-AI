@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, Text, JSON, func
+from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, Text, JSON, func, Boolean
 from sqlalchemy.orm import relationship
 from geoalchemy2 import Geometry
 from app.core.database import Base
@@ -9,9 +9,31 @@ class User(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     email = Column(String, unique=True, index=True, nullable=False)
+    username = Column(String, unique=True, index=True, nullable=False)
     hashed_password = Column(String, nullable=False)
     full_name = Column(String, nullable=True)
+    industry = Column(String, nullable=True) # Domain/Industry
+    designation = Column(String, nullable=True) # Job Designation
+    
+    # Account status & Authentication
+    is_verified = Column(Boolean, default=False, nullable=False)
+    verification_token = Column(String, nullable=True)
+    reset_token = Column(String, nullable=True)
+    reset_token_expiry = Column(DateTime, nullable=True)
+    is_active = Column(Boolean, default=True, nullable=False)
+    role = Column(String, default="user", nullable=False) # admin, user
+    
+    # SaaS Subscription
+    credits = Column(Integer, default=100, nullable=False) # credits remaining
+    subscription = Column(String, default="free", nullable=False) # free, basic, premium
+    
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+    # Relationships
+    subscriptions = relationship("Subscription", back_populates="user", cascade="all, delete-orphan")
+    payments = relationship("Payment", back_populates="user", cascade="all, delete-orphan")
+    usage_logs = relationship("UsageLog", back_populates="user", cascade="all, delete-orphan")
+    user_credits = relationship("Credit", back_populates="user", uselist=False, cascade="all, delete-orphan")
 
 
 class UploadedDataset(Base):
@@ -90,10 +112,129 @@ class Prediction(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     location_name = Column(String, nullable=False)
+    domain = Column(String, default="flood", nullable=False) # flood, traffic, urban, utility
     rainfall_intensity = Column(Float, nullable=False)
     elevation = Column(Float, nullable=False)
+    river_proximity = Column(Float, default=500.0, nullable=False) # distance in meters
+    urban_density = Column(Float, default=5000.0, nullable=False) # people/km2
     land_use = Column(String, nullable=False)
     calculated_score = Column(Float, nullable=False)
     risk_level = Column(String, nullable=False)
     recommendations = Column(JSON, nullable=True) # List of actions
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    
+    # Store predictions in PostGIS with spatial index for regional safety zoning audits
+    geom = Column(Geometry("POINT", srid=4326), nullable=True)
+
+
+class Subscription(Base):
+    __tablename__ = "subscriptions"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    plan_type = Column(String, default="free", nullable=False) # free, premium_monthly, premium_6months, premium_annual
+    price = Column(Float, default=0.0, nullable=False)
+    currency = Column(String, default="INR", nullable=False)
+    status = Column(String, default="active", nullable=False) # active, expired, cancelled
+    starts_at = Column(DateTime, default=datetime.datetime.utcnow, nullable=False)
+    expires_at = Column(DateTime, nullable=True)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow)
+
+    user = relationship("User", back_populates="subscriptions")
+    payments = relationship("Payment", back_populates="subscription")
+
+
+class Payment(Base):
+    __tablename__ = "payments"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    subscription_id = Column(Integer, ForeignKey("subscriptions.id", ondelete="SET NULL"), nullable=True)
+    amount = Column(Float, nullable=False)
+    currency = Column(String, default="INR", nullable=False)
+    payment_status = Column(String, default="success", nullable=False) # success, pending, failed
+    transaction_id = Column(String, unique=True, index=True, nullable=True)
+    payment_method = Column(String, default="Card", nullable=False) # Card, UPI, NetBanking
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+    user = relationship("User", back_populates="payments")
+    subscription = relationship("Subscription", back_populates="payments")
+
+
+class UsageLog(Base):
+    __tablename__ = "usage_logs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    request_path = Column(String, nullable=False)
+    request_method = Column(String, nullable=False)
+    feature_domain = Column(String, nullable=False) # flood, traffic, urban, utility, ai_chat
+    credits_consumed = Column(Integer, default=1, nullable=False)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+    user = relationship("User", back_populates="usage_logs")
+
+
+class Credit(Base):
+    __tablename__ = "credits"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    credit_limit = Column(Integer, default=100, nullable=False)
+    credits_used = Column(Integer, default=0, nullable=False)
+    credits_remaining = Column(Integer, default=100, nullable=False)
+    updated_at = Column(DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow)
+
+    user = relationship("User", back_populates="user_credits")
+
+
+class Inquiry(Base):
+    __tablename__ = "inquiries"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, nullable=False)
+    email = Column(String, nullable=False)
+    subject = Column(String, nullable=False)
+    message = Column(Text, nullable=False)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+
+class Ticket(Base):
+    __tablename__ = "tickets"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    subject = Column(String, nullable=False)
+    description = Column(Text, nullable=False)
+    category = Column(String, default="General", nullable=False) # Technical, Billing, General
+    status = Column(String, default="open", nullable=False) # open, in_progress, resolved
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+    user = relationship("User")
+
+
+class ActivityLog(Base):
+    __tablename__ = "activity_logs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    action_type = Column(String, nullable=False, index=True) # login, analysis, chat, report
+    details = Column(String, nullable=False)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+    user = relationship("User")
+
+
+class AuditLog(Base):
+    __tablename__ = "audit_logs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
+    event_type = Column(String, nullable=False, index=True) # rate_limit_hit, validation_error, unauthorized_access, auth_success, auth_failure
+    resource = Column(String, nullable=False)
+    status = Column(String, nullable=False) # success, failure
+    details = Column(String, nullable=False)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+    user = relationship("User")

@@ -18,9 +18,12 @@ import { mockNotifications } from "@/lib/mockData";
 interface TopNavProps {
   onLocationSearch: (location: string) => void;
   currentLocation: string;
+  user: any;
+  onTabChange: (tab: any) => void;
+  onLogout: () => void;
 }
 
-export default function TopNav({ onLocationSearch, currentLocation }: TopNavProps) {
+export default function TopNav({ onLocationSearch, currentLocation, user, onTabChange, onLogout }: TopNavProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearching, setIsSearching] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
@@ -230,16 +233,27 @@ export default function TopNav({ onLocationSearch, currentLocation }: TopNavProp
                 className="absolute right-0 top-full mt-2 w-56 glass-card p-3 z-50 shadow-xl"
               >
                 <div className="px-3 py-2 border-b border-geo-border mb-2">
-                  <p className="text-sm font-medium">GeoAnalyst</p>
-                  <p className="text-xs text-gray-500">admin@geonarrative.ai</p>
+                  <p className="text-sm font-medium text-white">{user ? user.full_name : "GeoAnalyst"}</p>
+                  <p className="text-xs text-gray-500 font-mono overflow-hidden text-ellipsis">{user ? user.email : "admin@geonarrative.ai"}</p>
                 </div>
-                <button className="w-full text-left px-3 py-2 rounded-lg text-sm text-gray-400 hover:bg-primary-500/10 hover:text-primary-300 transition-colors">
+                <button 
+                  onClick={() => { onTabChange("profile"); setShowProfile(false); }}
+                  className="w-full text-left px-3 py-2 rounded-lg text-sm text-gray-400 hover:bg-primary-500/10 hover:text-primary-300 transition-colors"
+                >
                   Profile Settings
                 </button>
-                <button className="w-full text-left px-3 py-2 rounded-lg text-sm text-gray-400 hover:bg-primary-500/10 hover:text-primary-300 transition-colors">
-                  API Keys
-                </button>
-                <button className="w-full text-left px-3 py-2 rounded-lg text-sm text-red-400 hover:bg-red-500/10 transition-colors">
+                {user && user.role === "admin" && (
+                  <button 
+                    onClick={() => { onTabChange("admin"); setShowProfile(false); }}
+                    className="w-full text-left px-3 py-2 rounded-lg text-sm text-gray-400 hover:bg-primary-500/10 hover:text-primary-300 transition-colors"
+                  >
+                    Admin Console
+                  </button>
+                )}
+                <button 
+                  onClick={() => { onLogout(); setShowProfile(false); }}
+                  className="w-full text-left px-3 py-2 rounded-lg text-sm text-red-400 hover:bg-red-500/10 transition-colors mt-1 border-t border-geo-border/40 pt-2"
+                >
                   Sign Out
                 </button>
               </motion.div>

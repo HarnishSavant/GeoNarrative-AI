@@ -180,6 +180,62 @@ export default function RightPanel({
                   ))}
                 </div>
               </div>
+
+              {/* Enterprise-Grade GIS & AI Explainability Panel */}
+              <div className="glass-card p-4 space-y-3 mt-4 border-primary-500/15 bg-gradient-to-br from-geo-card/60 via-geo-card to-primary-950/10">
+                <div className="flex items-center gap-2">
+                  <Sparkles size={14} className="text-primary-400 animate-pulse" />
+                  <h4 className="text-xs font-bold text-gray-200">AI & Spatial Pipeline Explainability</h4>
+                </div>
+                
+                <p className="text-[10px] text-gray-400 leading-relaxed">
+                  Transparency audit for the active <span className="text-primary-400 font-bold uppercase tracking-wider">{dashboardMode}</span> geoprocessing twin:
+                </p>
+
+                <div className="space-y-2.5 font-mono text-[9px]">
+                  {/* Pipeline Equation / Logic */}
+                  <div className="p-2 rounded-lg bg-black/35 border border-geo-border space-y-1">
+                    <span className="text-gray-500 block uppercase text-[8px] font-bold">Mathematical Logic</span>
+                    <p className="text-gray-300 font-semibold">
+                      {dashboardMode === "flood" && "Risk = ∫ (Depth_m × Slope_deg × Runoff_coeff) + Vulnerable_Facilities × 1.5"}
+                      {dashboardMode === "traffic" && "Delay = Sum(Segment_Inundation × Commuter_Density) × Signal_Efficiency⁻¹"}
+                      {dashboardMode === "urban" && "Encroachment = ST_Area(ST_Intersection(Zoning_Polygon, Hazard_Polygon))"}
+                      {dashboardMode === "utility" && "Substation_Stress = Active_Thermal_Load × (1 - (Uptime_Pct × Health_Index))"}
+                    </p>
+                  </div>
+
+                  {/* PostGIS Functions used */}
+                  <div className="p-2 rounded-lg bg-black/35 border border-geo-border space-y-1">
+                    <span className="text-gray-500 block uppercase text-[8px] font-bold">SQL / PostGIS Operators Executed</span>
+                    <p className="text-primary-400 font-semibold font-mono">
+                      {dashboardMode === "flood" && "ST_Contains(zone.geom, hospital.geom) & ST_DWithin(infra.geom, river_wkt, 500m)"}
+                      {dashboardMode === "traffic" && "ST_Intersects(road_wkt, floodway.geom) & KNN <-> Operator distance sorting"}
+                      {dashboardMode === "urban" && "ST_Intersects(building.geom, zone.geom) filtered by High/Critical Overlay"}
+                      {dashboardMode === "utility" && "ST_Contains(zone.geom, substation.geom) & ST_Distance(geom, water_main.geom)"}
+                    </p>
+                  </div>
+
+                  {/* Feature Weights breakdown */}
+                  <div className="space-y-1">
+                    <span className="text-gray-500 block uppercase text-[8px] font-bold">ML Prediction Feature Weights</span>
+                    <div className="space-y-1">
+                      {[
+                        { name: dashboardMode === "flood" ? "DEM Elevation Profile" : dashboardMode === "traffic" ? "Road Capacity Volume" : dashboardMode === "urban" ? "Zoning Buffer Encroachment" : "Substation Thermal Load", weight: 45 },
+                        { name: dashboardMode === "flood" ? "Hydrometeorological Rainfall" : dashboardMode === "traffic" ? "Flood Depth Bottleneck" : dashboardMode === "urban" ? "Slope Profile deviation" : "Pipe Wall thickness thinning", weight: 35 },
+                        { name: "Historical Frequency", weight: 20 }
+                      ].map((weight, idx) => (
+                        <div key={idx} className="flex items-center gap-2">
+                          <span className="text-gray-400 flex-1 truncate">{weight.name}</span>
+                          <div className="w-16 h-1.5 bg-geo-dark rounded-full overflow-hidden shrink-0">
+                            <div className="h-full bg-primary-500 rounded-full" style={{ width: `${weight.weight}%` }} />
+                          </div>
+                          <span className="text-gray-300 font-bold shrink-0">{weight.weight}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           )}
 

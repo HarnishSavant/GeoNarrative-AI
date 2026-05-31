@@ -28,12 +28,15 @@ class PredictionRequest(BaseModel):
     population_density: float = 9500.0
     drainage_capacity: float = 60.0
     location: Optional[str] = None
+    domain: str = "flood" # flood, traffic, urban, utility
 
 class PredictionResponse(BaseModel):
     overall_risk: str
     score: float
     factors: List[dict]
     recommendations: List[str]
+    model_metrics: Optional[dict] = None # R2, RMSE, Accuracy, F1
+    feature_importance: Optional[List[dict]] = None # Random Forest and XGBoost weights
 
 class FloodZone(BaseModel):
     zone: str
@@ -70,3 +73,121 @@ class ReportResponse(BaseModel):
     risk_level: str
     summary: str
     sections: List[dict]
+
+
+# SaaS Schemas
+class SubscriptionUpgradeRequest(BaseModel):
+    plan_type: str # free, premium_monthly, premium_6months, premium_annual
+    payment_method: str = "Card" # Card, UPI, NetBanking
+
+class SubscriptionStatusResponse(BaseModel):
+    plan_type: str
+    status: str
+    price: float
+    currency: str
+    starts_at: str
+    expires_at: Optional[str] = None
+    credits_remaining: int
+    credits_used: int
+    credit_limit: int
+
+class PaymentHistoryItem(BaseModel):
+    id: int
+    amount: float
+    currency: str
+    payment_status: str
+    transaction_id: Optional[str] = None
+    payment_method: str
+    created_at: str
+
+class UsageLogItem(BaseModel):
+    id: int
+    request_path: str
+    request_method: str
+    feature_domain: str
+    credits_consumed: int
+    created_at: str
+
+class AdminRevenueAnalyticsResponse(BaseModel):
+    total_revenue: float
+    active_subscriptions: int
+    plan_distribution: dict # {"free": 5, "premium_monthly": 10...}
+    recent_payments: List[PaymentHistoryItem]
+    usage_trends: List[dict] # hourly/daily usage counts
+
+
+# Razorpay Schemas
+class RazorpayOrderRequest(BaseModel):
+    plan_type: str
+
+class RazorpayOrderResponse(BaseModel):
+    key: str
+    amount: int # in paise
+    currency: str
+    order_id: str
+    plan_type: str
+    user_name: str
+    user_email: str
+
+class RazorpayVerifyRequest(BaseModel):
+    razorpay_order_id: str
+    razorpay_payment_id: str
+    razorpay_signature: str
+    plan_type: str
+
+
+# Enterprise Support, Profile, and Logging Schemas
+from datetime import datetime
+
+class InquiryCreate(BaseModel):
+    name: str
+    email: str
+    subject: str
+    message: str
+
+class InquiryResponse(BaseModel):
+    id: int
+    name: str
+    email: str
+    subject: str
+    message: str
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+class TicketCreate(BaseModel):
+    subject: str
+    description: str
+    category: str = "General"
+
+class TicketResponse(BaseModel):
+    id: int
+    user_id: int
+    subject: str
+    description: str
+    category: str
+    status: str
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+class ActivityLogResponse(BaseModel):
+    id: int
+    user_id: int
+    action_type: str
+    details: str
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+class ProfileUpdateRequest(BaseModel):
+    full_name: Optional[str] = None
+    industry: Optional[str] = None
+    designation: Optional[str] = None
+
+class PasswordChangeRequest(BaseModel):
+    old_password: str
+    new_password: str

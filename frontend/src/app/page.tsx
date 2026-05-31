@@ -15,6 +15,13 @@ import ReportsPanel from "@/components/ReportsPanel";
 import SettingsPanel from "@/components/SettingsPanel";
 import RightPanel from "@/components/RightPanel";
 
+// SaaS upgrades
+import LandingPage from "@/components/LandingPage";
+import AuthModal from "@/components/AuthModal";
+import UserDashboard from "@/components/UserDashboard";
+import AdminDashboard from "@/components/AdminDashboard";
+import { apiService } from "@/services/apiService";
+
 import { SidebarTab, UploadedFile, DashboardMode } from "@/lib/types";
 import { getKPIsForMode, generateFloodRisksForLocation, generateAnalyticsForLocation } from "@/lib/mockData";
 import { useMapControl } from "@/hooks/useMapControl";
@@ -49,6 +56,54 @@ export default function Home() {
   const [rightPanelOpen, setRightPanelOpen] = useState(true);
   const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
 
+  // SaaS session state parameters
+  const [user, setUser] = useState<any>(null);
+  const [hasCheckedSession, setHasCheckedSession] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [authModalMode, setAuthModalMode] = useState<"login" | "register" | "forgot" | "reset" | "verify">("login");
+
+  // Automatic JWT session check on dashboard mount
+  React.useEffect(() => {
+    const checkSession = async () => {
+      const storedUser = localStorage.getItem("geonarrative_user");
+      const storedToken = localStorage.getItem("geonarrative_token");
+      
+      if (storedUser && storedToken) {
+        setUser(JSON.parse(storedUser));
+        try {
+          // Verify with FastAPI backend database dynamically
+          const activeUser = await apiService.getProfile();
+          setUser(activeUser);
+          localStorage.setItem("geonarrative_user", JSON.stringify(activeUser));
+        } catch (err) {
+          console.error("Automatically validating active JWT session failed:", err);
+          localStorage.removeItem("geonarrative_token");
+          localStorage.removeItem("geonarrative_user");
+          setUser(null);
+        }
+      }
+      setHasCheckedSession(true);
+    };
+    checkSession();
+  }, []);
+
+  const handleLogout = useCallback(() => {
+    localStorage.removeItem("geonarrative_token");
+    localStorage.removeItem("geonarrative_user");
+    setUser(null);
+    setActiveTab("dashboard");
+  }, []);
+
+  const handleRefreshProfile = useCallback(async () => {
+    try {
+      const activeUser = await apiService.getProfile();
+      setUser(activeUser);
+      localStorage.setItem("geonarrative_user", JSON.stringify(activeUser));
+    } catch (err) {
+      console.error("Profile sync failed:", err);
+    }
+  }, []);
+
   const {
     currentLocation,
     mapCenter,
@@ -67,10 +122,65 @@ export default function Home() {
     handleLocationSearch,
   } = useMapControl();
 
-  // Dynamic data based on location AND mode
-  const currentKPIs = React.useMemo(() => getKPIsForMode(dashboardMode), [dashboardMode]);
-  const currentFloodRisks = React.useMemo(() => generateFloodRisksForLocation(currentLocation || "Unknown", dashboardMode), [currentLocation, dashboardMode]);
-  const currentAnalytics = React.useMemo(() => generateAnalyticsForLocation(currentLocation || "Unknown", dashboardMode), [currentLocation, dashboardMode]);
+  // Dynamic, real-analytics metrics synced from FastAPI backend + PostGIS database
+  const [currentKPIs, setCurrentKPIs] = useState<any[]>(() => getKPIsForMode(dashboardMode));
+  const [currentFloodRisks, setCurrentFloodRisks] = useState<any[]>(() => generateFloodRisksForLocation(currentLocation || "Unknown", dashboardMode));
+  const [currentAnalytics, setCurrentAnalytics] = useState<any>(() => generateAnalyticsForLocation(currentLocation || "Unknown", dashboardMode));
+  const [isSyncingData, setIsSyncingData] = useState(false);
+
+  // Fetch dynamic, real-analytics metrics from FastAPI backend + PostGIS database
+  React.useEffect(() => {
+    if (!hasSearched || !currentLocation) return;
+
+    let active = true;
+    const fetchDashboardData = async () => {
+      setIsSyncingData(true);
+      try {
+        const { apiService } = await import("@/services/apiService");
+        
+        // Parallel queries to FastAPI modular backend endpoints
+        const [kpiData, floodData, analyticsData] = await Promise.all([
+          apiService.getKPIs(currentLocation, dashboardMode),
+          apiService.getFloodZones(currentLocation, dashboardMode),
+          apiService.getAnalytics(currentLocation, dashboardMode)
+        ]);
+
+        if (active) {
+          if (kpiData) {
+            // Support direct lists or wrapped structures
+            if (Array.isArray(kpiData)) {
+              setCurrentKPIs(kpiData);
+            } else if (kpiData.kpis && Array.isArray(kpiData.kpis)) {
+              setCurrentKPIs(kpiData.kpis);
+            } else {
+              setCurrentKPIs(getKPIsForMode(dashboardMode));
+            }
+          }
+          if (floodData) {
+            const zones = Array.isArray(floodData) ? floodData : (floodData.zones || []);
+            setCurrentFloodRisks(zones);
+          }
+          if (analyticsData) {
+            setCurrentAnalytics(analyticsData);
+          }
+        }
+      } catch (err) {
+        console.error("FastAPI Backend sync failed, using dynamic local twin fallbacks:", err);
+        if (active) {
+          setCurrentKPIs(getKPIsForMode(dashboardMode));
+          setCurrentFloodRisks(generateFloodRisksForLocation(currentLocation || "Unknown", dashboardMode));
+          setCurrentAnalytics(generateAnalyticsForLocation(currentLocation || "Unknown", dashboardMode));
+        }
+      } finally {
+        if (active) setIsSyncingData(false);
+      }
+    };
+
+    fetchDashboardData();
+    return () => {
+      active = false;
+    };
+  }, [currentLocation, dashboardMode, hasSearched]);
 
   const handleMapAction = useCallback((action: string) => {
     if (action === "highlight-hospitals-flood") {
@@ -126,7 +236,7 @@ export default function Home() {
     }
   };
 
-  const showLeftContent = activeTab !== "dashboard" && activeTab !== "analytics";
+  const showLeftContent = activeTab !== "dashboard" && activeTab !== "analytics" && activeTab !== "profile" && activeTab !== "admin";
 
   // Welcome Screen Component — shown when no location has been searched
   const WelcomeScreen = () => (
@@ -233,10 +343,47 @@ export default function Home() {
     </div>
   );
 
+  // 1. Session Loading State
+  if (!hasCheckedSession) {
+    return (
+      <div className="h-screen w-screen bg-geo-darker flex items-center justify-center font-mono text-xs text-gray-500">
+        <div className="text-center space-y-4">
+          <Loader2 size={32} className="animate-spin text-primary-500 mx-auto" />
+          <p>Verifying secure JWT geoprocessing token...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // 2. Unauthenticated SaaS Visitor View
+  if (!user) {
+    return (
+      <>
+        <LandingPage onStartAuth={(mode) => { setAuthModalMode(mode); setShowAuthModal(true); }} />
+        <AnimatePresence>
+          {showAuthModal && (
+            <AuthModal 
+              initialMode={authModalMode} 
+              onSuccess={(userData) => { setUser(userData); setShowAuthModal(false); }} 
+              onCancel={() => setShowAuthModal(false)} 
+            />
+          )}
+        </AnimatePresence>
+      </>
+    );
+  }
+
+  // 3. Authenticated SaaS Enterprise View
   return (
-    <div className="h-screen w-screen flex flex-col bg-geo-dark">
+    <div className="h-screen w-screen flex flex-col bg-geo-dark text-gray-100">
       {/* Top Navigation */}
-      <TopNav onLocationSearch={handleLocationSearch} currentLocation={currentLocation} />
+      <TopNav 
+        onLocationSearch={handleLocationSearch} 
+        currentLocation={currentLocation} 
+        user={user} 
+        onTabChange={setActiveTab} 
+        onLogout={handleLogout} 
+      />
 
       {/* Main Content */}
       <div className="flex-1 flex overflow-hidden">
@@ -246,6 +393,7 @@ export default function Home() {
           onTabChange={setActiveTab}
           collapsed={sidebarCollapsed}
           onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
+          user={user}
         />
 
         {/* Secondary Left Panel (contextual) — wider for chat */}
@@ -265,8 +413,14 @@ export default function Home() {
 
         {/* Main Panel */}
         <div className="flex-1 flex flex-col overflow-hidden relative">
-          {/* If no search done yet, show welcome screen */}
-          {!hasSearched ? (
+          
+          {/* SaaS Full Width Panels */}
+          {activeTab === "profile" ? (
+            <UserDashboard user={user} onLogout={handleLogout} onRefreshProfile={handleRefreshProfile} />
+          ) : activeTab === "admin" ? (
+            <AdminDashboard />
+          ) : !hasSearched ? (
+            /* If no search done yet, show welcome screen */
             <WelcomeScreen />
           ) : (
             <>
@@ -319,8 +473,8 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className="text-xs font-bold text-gray-100 flex items-center gap-1.5">
-                          <span>Custom Layer Active:</span>
-                          <span className="text-primary-400 font-mono font-semibold">{uploadedFiles[uploadedFiles.length - 1].name}</span>
+                           <span>Custom Layer Active:</span>
+                           <span className="text-primary-400 font-mono font-semibold">{uploadedFiles[uploadedFiles.length - 1].name}</span>
                         </h4>
                         <p className="text-[10px] text-gray-400 mt-0.5">
                           {uploadedFiles[uploadedFiles.length - 1].features || 0} features indexed • {uploadedFiles[uploadedFiles.length - 1].type} format • Active on map
@@ -358,8 +512,8 @@ export default function Home() {
           )}
         </div>
 
-        {/* Right Intelligence Panel — only when searched */}
-        {!mapFullscreen && hasSearched && (
+        {/* Right Intelligence Panel — only when searched and not on profile/admin tabs */}
+        {activeTab !== "profile" && activeTab !== "admin" && !mapFullscreen && hasSearched && (
           <RightPanel
             analytics={currentAnalytics}
             floodRisks={currentFloodRisks}

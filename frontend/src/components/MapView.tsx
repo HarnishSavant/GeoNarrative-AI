@@ -208,6 +208,66 @@ export default function MapView({
     }
   }, [center, mapLoaded, osmData]);
 
+  // Listen for zone selection drill-down events to fly the camera
+  useEffect(() => {
+    const handleFly = (e: Event) => {
+      const detail = (e as CustomEvent).detail;
+      if (!detail) return;
+      
+      const zoneOffsets: Record<string, [number, number]> = {
+        // Floodways
+        "Deccan Hydrological Floodway A": [73.8450, 18.5280],
+        "Koregaon-Bund Garden Floodway B": [73.8900, 18.5410],
+        "Pune Hilltop Terraces": [73.8200, 18.5150],
+        // Roads
+        "Pune Karve Road Segment": [73.8400, 18.5150],
+        "Pune Fergusson College Road Segment": [73.8420, 18.5200],
+        "Pune Jangali Maharaj Road Segment": [73.8580, 18.5310],
+        "Pune Pune Station Overpass Segment": [73.8750, 18.5380],
+        // Urban Assets
+        "Pune Sassoon General Hospital Zone": [73.8732, 18.5273],
+        "Pune Deccan Power Grid Substation Zone": [73.8315, 18.5189],
+        "Pune Deccan Gymkhana School Zone": [73.8405, 18.5192],
+        "Pune Deccan Rescue Center Zone": [73.8398, 18.5177],
+        // Substations (Utility)
+        "Pune Deccan Power Grid Substation Sector": [73.8315, 18.5189],
+        "Pune Bund Garden Substation Sector": [73.8905, 18.5412]
+      };
+
+      const targetCoords = zoneOffsets[detail.zoneName];
+      if (mapRef.current && mapLoaded && targetCoords) {
+        mapRef.current.flyTo({
+          center: targetCoords,
+          zoom: 14.5,
+          pitch: 50,
+          bearing: 35,
+          duration: 2000,
+        });
+
+        // Trigger focal popup on map
+        try {
+          import("mapbox-gl").then((mapboxglModule) => {
+            const mapboxgl = mapboxglModule.default;
+            new mapboxgl.Popup({ closeButton: true, className: "geo-popup" })
+              .setLngLat(targetCoords)
+              .setHTML(`
+                <div style="font-family: Inter, sans-serif; padding: 4px;">
+                  <div style="font-weight: 700; font-size: 13px; margin-bottom: 4px; color: ${detail.level === "critical" ? "#ef4444" : "#f59e0b"};">📍 Focused: ${detail.zoneName}</div>
+                  <p style="font-size: 10px; color: #d1d5db; margin: 0; line-height: 1.4;">Active digital twin camera focus. Querying PostGIS georeferenced boundary.</p>
+                </div>
+              `)
+              .addTo(mapRef.current);
+          });
+        } catch (e) {
+          console.warn("Failed to mount focal popup:", e);
+        }
+      }
+    };
+
+    window.addEventListener("map-fly-to-zone", handleFly);
+    return () => window.removeEventListener("map-fly-to-zone", handleFly);
+  }, [mapLoaded]);
+
   const updateMapLayerVisibility = useCallback((mapInstance: any, layerId: string, visibility: "visible" | "none") => {
     if (!mapInstance) return;
     try {
@@ -220,20 +280,20 @@ export default function MapView({
         "population": ["population-heatmap"],
         "roads": ["custom-roads-layer"],
         "shelters": ["shelters-pts-layer"],
-        
+
         // Traffic mode
         "traffic-heatmap": ["risk-heatmap", "risk-points-circle"],
         "accident-hotspots": ["accident-hotspots-layer"],
         "transit-routes": ["custom-rivers-layer"],
         "parking": ["parking-zones-fill"],
         "speed-zones": ["shelters-pts-layer"],
-        
+
         // Urban mode
         "land-use-zones": ["land-use-zones-fill", "land-use-zones-border"],
         "zoning-overlay": ["custom-roads-layer"],
         "construction": ["construction-sites-layer"],
         "green-spaces": ["green-spaces-fill"],
-        
+
         // Utility mode
         "power-grid": ["custom-roads-layer"],
         "water-pipes": ["custom-rivers-layer"],
@@ -261,22 +321,22 @@ export default function MapView({
 
     // Safely remove existing mock layers and sources
     const layersToRemove = [
-      "flood-zones-fill", "flood-zones-border", 
+      "flood-zones-fill", "flood-zones-border",
       "land-use-zones-fill", "land-use-zones-border",
       "green-spaces-fill", "parking-zones-fill",
       "outage-zones-fill", "outage-zones-border",
-      "risk-heatmap", "risk-points-circle", 
-      "infrastructure-pts-layer", "shelters-pts-layer", 
-      "population-heatmap", "custom-rivers-layer", 
+      "risk-heatmap", "risk-points-circle",
+      "infrastructure-pts-layer", "shelters-pts-layer",
+      "population-heatmap", "custom-rivers-layer",
       "custom-roads-layer", "custom-elevation-layer",
       "accident-hotspots-layer", "construction-sites-layer",
       "telecom-towers-layer", "substations-layer"
     ];
     layersToRemove.forEach(l => { if (mapInstance.getLayer(l)) mapInstance.removeLayer(l); });
-    
+
     const sourcesToRemove = [
       "flood-zones", "land-use-zones", "green-spaces", "parking-zones", "outage-zones",
-      "risk-points", "infrastructure-pts", "shelters-pts", "population-pts", 
+      "risk-points", "infrastructure-pts", "shelters-pts", "population-pts",
       "custom-rivers", "custom-roads", "custom-elevation",
       "accident-hotspots", "construction-sites", "telecom-towers", "substations"
     ];
@@ -468,7 +528,7 @@ export default function MapView({
     if (!mapRef.current || !mapLoaded) return;
     try {
       const map = mapRef.current;
-      
+
       const layerOpacities: Record<string, { property: string, factor: number }> = {
         "flood-zones-fill": { property: "fill-opacity", factor: 0.35 },
         "flood-zones-border": { property: "line-opacity", factor: 0.8 },
@@ -554,7 +614,7 @@ export default function MapView({
           <div className="absolute inset-0 pointer-events-none z-30 font-mono text-[9px] text-primary-400 p-4 flex flex-col justify-between select-none">
             {/* Top HUD Row */}
             <div className="flex justify-between items-start">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 className="bg-geo-darker/90 border border-primary-500/35 rounded-xl px-3 py-2 backdrop-blur-xl shadow-lg shadow-black/40 space-y-0.5"
@@ -566,8 +626,8 @@ export default function MapView({
                 <p className="text-primary-400 font-semibold font-mono text-[8px]">REFERENCE: EPSG:4326 (WGS84)</p>
                 <p className="text-gray-500 text-[8px]">GRID: Pune Catchment Bounds</p>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 animate={{ opacity: 1, x: 0 }}
                 className="bg-geo-darker/90 border border-primary-500/35 rounded-xl px-3 py-2 backdrop-blur-xl shadow-lg shadow-black/40 text-right space-y-0.5"
@@ -577,10 +637,10 @@ export default function MapView({
                 <p className="text-gray-500 font-mono text-[8px]">TEL: 18.5204° N, 73.8567° E</p>
               </motion.div>
             </div>
-            
+
             {/* Bottom HUD Row */}
             <div className="flex justify-between items-end">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="bg-geo-darker/90 border border-primary-500/35 rounded-xl px-3 py-2 backdrop-blur-xl shadow-lg shadow-black/40 space-y-0.5"
@@ -589,8 +649,8 @@ export default function MapView({
                 <p className="text-gray-400 font-semibold font-mono text-[8px]">GEOMETRY: active scanning</p>
                 <p className="text-gray-500 text-[8px]">INDEXED NODE CHUNKS: 223</p>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="bg-geo-darker/90 border border-primary-500/35 rounded-xl px-3 py-2 backdrop-blur-xl shadow-lg shadow-black/40 text-right space-y-0.5"
@@ -620,18 +680,16 @@ export default function MapView({
 
         {/* Animated gradient background simulating a map */}
         <div className="absolute inset-0">
-          <div 
-            className={`absolute inset-0 transition-all duration-1000 ${
-              isCustomActive 
-                ? "bg-gradient-to-br from-[#02131e] via-[#051c2c] to-[#012a4a]" 
+          <div
+            className={`absolute inset-0 transition-all duration-1000 ${isCustomActive
+                ? "bg-gradient-to-br from-[#02131e] via-[#051c2c] to-[#012a4a]"
                 : "bg-gradient-to-br from-[#0c1929] via-[#0a2540] to-[#0c3547]"
-            }`} 
+              }`}
           />
           {/* Grid pattern */}
           <div
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              isCustomActive ? "opacity-25" : "opacity-10"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${isCustomActive ? "opacity-25" : "opacity-10"
+              }`}
             style={{
               backgroundImage:
                 "linear-gradient(rgba(6,182,212,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(6,182,212,0.3) 1px, transparent 1px)",
@@ -656,12 +714,12 @@ export default function MapView({
                     layer && layer.id.startsWith("custom-")
                       ? layer.color
                       : i % 4 === 0
-                      ? "#8b5cf6" // purple (Telecom/Urban)
-                      : i % 4 === 1
-                      ? "#f59e0b" // amber (Substations)
-                      : i % 4 === 2
-                      ? "#10b981" // emerald (Rivers)
-                      : "#ef4444", // red (Risk/Gas)
+                        ? "#8b5cf6" // purple (Telecom/Urban)
+                        : i % 4 === 1
+                          ? "#f59e0b" // amber (Substations)
+                          : i % 4 === 2
+                            ? "#10b981" // emerald (Rivers)
+                            : "#ef4444", // red (Risk/Gas)
                   opacity: layerOpacity,
                 }}
                 animate={{
@@ -683,9 +741,9 @@ export default function MapView({
               const r = 10 + (idx % 3) * 6; // distance from map center
               const x = 50 + r * Math.cos(angle);
               const y = 50 + r * Math.sin(angle);
-              
+
               return (
-                <div 
+                <div
                   key={`custom-marker-${layer.id}-${idx}`}
                   className="absolute"
                   style={{
@@ -708,7 +766,7 @@ export default function MapView({
                   >
                     <span className="w-1.5 h-1.5 bg-white rounded-full" />
                     {/* Glowing pulse ring */}
-                    <motion.div 
+                    <motion.div
                       className="absolute inset-0 rounded-full border opacity-75"
                       style={{ borderColor: layer.color }}
                       animate={{
@@ -894,11 +952,10 @@ export default function MapView({
                 <button
                   key={style.id}
                   onClick={() => handleStyleChange(style.id)}
-                  className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs transition-colors ${
-                    currentStyle === style.id
+                  className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs transition-colors ${currentStyle === style.id
                       ? "bg-primary-500/20 text-primary-300"
                       : "text-gray-400 hover:bg-white/5"
-                  }`}
+                    }`}
                 >
                   <span>{style.icon}</span>
                   <span>{style.label}</span>
@@ -913,12 +970,12 @@ export default function MapView({
       <div className="absolute bottom-4 left-4 glass-card p-3 z-20 transition-all duration-300">
         <p className="text-xs font-semibold mb-2 text-gray-300">
           {layers.find(l => l.id === "population")?.visible ? "Population Density" :
-           (layers.find(l => l.id === "roads")?.visible || layers.find(l => l.id === "power-grid")?.visible) && !layers.find(l => l.id === "flood-zones")?.visible && !layers.find(l => l.id === "land-use-zones")?.visible ? (dashboardMode === "traffic" ? "Road Congestion Levels" : dashboardMode === "utility" ? "Grid Power Load" : "Network Coverage") :
-           layers.find(l => l.id === "elevation")?.visible ? "Elevation / Terrain" :
-           dashboardMode === "traffic" ? "Congestion Levels" :
-           dashboardMode === "urban" ? "Zoning Classifications" :
-           dashboardMode === "utility" ? "Asset Outage Severity" :
-           "Risk Levels"}
+            (layers.find(l => l.id === "roads")?.visible || layers.find(l => l.id === "power-grid")?.visible) && !layers.find(l => l.id === "flood-zones")?.visible && !layers.find(l => l.id === "land-use-zones")?.visible ? (dashboardMode === "traffic" ? "Road Congestion Levels" : dashboardMode === "utility" ? "Grid Power Load" : "Network Coverage") :
+              layers.find(l => l.id === "elevation")?.visible ? "Elevation / Terrain" :
+                dashboardMode === "traffic" ? "Congestion Levels" :
+                  dashboardMode === "urban" ? "Zoning Classifications" :
+                    dashboardMode === "utility" ? "Asset Outage Severity" :
+                      "Risk Levels"}
         </p>
         <div className="space-y-1.5">
           {(layers.find(l => l.id === "population")?.visible ? [

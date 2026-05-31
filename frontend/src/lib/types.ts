@@ -118,4 +118,6 @@ export type SidebarTab =
   | "analytics"
   | "reports"
   | "prediction"
-  | "settings";
+  | "settings"
+  | "profile"
+  | "admin";

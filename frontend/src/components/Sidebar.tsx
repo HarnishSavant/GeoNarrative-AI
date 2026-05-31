@@ -14,6 +14,8 @@ import {
   ChevronRight,
   Zap,
   Globe2,
+  User,
+  Shield,
 } from "lucide-react";
 import { SidebarTab } from "@/lib/types";
 
@@ -22,19 +24,22 @@ interface SidebarProps {
   onTabChange: (tab: SidebarTab) => void;
   collapsed: boolean;
   onToggleCollapse: () => void;
+  user: any;
 }
 
-const tabs: { id: SidebarTab; label: string; icon: React.ReactNode; badge?: number }[] = [
-  { id: "dashboard", label: "Dashboard", icon: <LayoutDashboard size={20} /> },
-  { id: "map", label: "Map Layers", icon: <Map size={20} /> },
-  { id: "chat", label: "AI Assistant", icon: <MessageSquareText size={20} />, badge: 1 },
-  { id: "analytics", label: "Analytics", icon: <BarChart3 size={20} /> },
-  { id: "prediction", label: "Prediction", icon: <BrainCircuit size={20} /> },
-  { id: "reports", label: "Reports", icon: <FileText size={20} /> },
-  { id: "settings", label: "Settings", icon: <Settings size={20} /> },
-];
+export default function Sidebar({ activeTab, onTabChange, collapsed, onToggleCollapse, user }: SidebarProps) {
+  const dynamicTabs = [
+    { id: "dashboard" as SidebarTab, label: "Dashboard", icon: <LayoutDashboard size={20} /> },
+    { id: "map" as SidebarTab, label: "Map Layers", icon: <Map size={20} /> },
+    { id: "chat" as SidebarTab, label: "AI Assistant", icon: <MessageSquareText size={20} />, badge: 1 },
+    { id: "analytics" as SidebarTab, label: "Analytics", icon: <BarChart3 size={20} /> },
+    { id: "prediction" as SidebarTab, label: "Prediction", icon: <BrainCircuit size={20} /> },
+    { id: "reports" as SidebarTab, label: "Reports", icon: <FileText size={20} /> },
+    { id: "settings" as SidebarTab, label: "Settings", icon: <Settings size={20} /> },
+    { id: "profile" as SidebarTab, label: "SaaS Profile", icon: <User size={20} /> },
+    ...(user && user.role === "admin" ? [{ id: "admin" as SidebarTab, label: "Admin Console", icon: <Shield size={20} /> }] : [])
+  ];
 
-export default function Sidebar({ activeTab, onTabChange, collapsed, onToggleCollapse }: SidebarProps) {
   return (
     <motion.aside
       initial={false}
@@ -65,7 +70,7 @@ export default function Sidebar({ activeTab, onTabChange, collapsed, onToggleCol
 
       {/* Navigation */}
       <nav className="flex-1 p-3 space-y-1 overflow-y-auto custom-scrollbar">
-        {tabs.map((tab) => (
+        {dynamicTabs.map((tab) => (
           <motion.button
             key={tab.id}
             onClick={() => onTabChange(tab.id)}

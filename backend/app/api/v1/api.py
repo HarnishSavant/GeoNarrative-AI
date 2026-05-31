@@ -10,10 +10,16 @@ from app.api.v1.endpoints import (
     report,
     weather,
     gis_db,
+    auth,
+    billing,
+    enterprise,
 )
 
 api_router = APIRouter()
 
+api_router.include_router(auth.router, prefix="/auth", tags=["authentication"])
+api_router.include_router(billing.router, prefix="/billing", tags=["billing"])
+api_router.include_router(enterprise.router, prefix="/enterprise", tags=["enterprise"])
 api_router.include_router(location.router, prefix="/locations", tags=["locations"])
 api_router.include_router(upload.router, prefix="/upload", tags=["upload"])
 api_router.include_router(analytics.router, prefix="/analytics", tags=["analytics"])
