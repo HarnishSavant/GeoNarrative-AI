@@ -1,0 +1,76 @@
+version: "3.8"
+
+services:
+  # =====================================================================
+  #   1. POSTGRESQL + POSTGIS SPATIAL DATABASE
+  # =====================================================================
+  db:
+    image: postgis/postgis:15-3.3
+    container_name: geonarrative_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: geonarrative
+    ports:
+      - "5432:5432"
+    volumes:
+      - geonarrative_pgdata:/var/lib/postgresql/data
+    networks:
+      - geonarrative_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d geonarrative"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # =====================================================================
+  #   2. FASTAPI ROBUST BACKEND ENGINE
+  # =====================================================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: geonarrative_backend
+    restart: always
+    environment:
+      - DATABASE_URL=postgresql://postgres:root@db:5432/geonarrative
+      - DEBUG=false
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - geonarrative_network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  # =====================================================================
+  #   3. NEXT.JS PREMIUM FRONTEND INTERFACE
+  # =====================================================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: geonarrative_frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - geonarrative_network
+
+volumes:
+  geonarrative_pgdata:
+    driver: local
+
+networks:
+  geonarrative_network:
+    driver: bridge

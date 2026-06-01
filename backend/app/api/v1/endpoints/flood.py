@@ -2,7 +2,8 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
 from app.services.spatial_query_service import SpatialQueryService
-from app.models.db_models import FloodZone, Infrastructure
+from app.models.db_models import FloodZone, Infrastructure, User
+from app.api.v1.endpoints.auth import get_current_user
 from sqlalchemy import select, func, and_
 from typing import Optional, List, Dict, Any
 
@@ -12,7 +13,8 @@ router = APIRouter()
 async def get_flood_zones(
     location: str = Query(default="Pune"),
     mode: str = Query(default="flood"),
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user)
 ):
     """
     GET LOW-LYING RISK ZONES / SAFETY EXPOSURE PIPELINE:
@@ -92,7 +94,40 @@ async def get_flood_zones(
                 }
             ]
         else:
-            return zones
+            return [
+                {
+                    "zone": f"{cityName} Riverside District",
+                    "level": "critical",
+                    "score": 9.2,
+                    "area": 12.5,
+                    "population": 45000,
+                    "description": f"Adjacent to the main {cityName} water basin. Historical seasonal inundations."
+                },
+                {
+                    "zone": f"{cityName} Low-Lying Basin Area",
+                    "level": "high",
+                    "score": 7.8,
+                    "area": 8.3,
+                    "population": 32000,
+                    "description": f"Low-lying catchment region with poor gravity drainage outflow capacity."
+                },
+                {
+                    "zone": f"{cityName} Industrial Corridor",
+                    "level": "medium",
+                    "score": 5.5,
+                    "area": 15.2,
+                    "population": 18000,
+                    "description": f"Moderate hazard zone primarily due to high industrial impervious ground cover."
+                },
+                {
+                    "zone": f"{cityName} Hilltop Residential",
+                    "level": "low",
+                    "score": 2.1,
+                    "area": 22.0,
+                    "population": 55000,
+                    "description": f"Elevated terrain above the safe municipal floodway baseline."
+                }
+            ]
 
     # --- REAL SPATIAL DATABASE QUERY PIPELINE FOR PUNE ---
     

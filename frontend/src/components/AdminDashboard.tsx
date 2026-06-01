@@ -43,9 +43,18 @@ export default function AdminDashboard() {
     setIsLoading(true);
     try {
       const [usersData, statsData, revData] = await Promise.all([
-        apiService.adminGetUsers(searchQuery, roleFilter, subFilter),
-        apiService.adminGetAnalytics(),
-        apiService.adminGetRevenueAnalytics()
+        apiService.adminGetUsers(searchQuery, roleFilter, subFilter).catch(err => {
+          console.warn("Resilient Admin Dashboard: Failed to load users:", err);
+          return [];
+        }),
+        apiService.adminGetAnalytics().catch(err => {
+          console.warn("Resilient Admin Dashboard: Failed to load analytics:", err);
+          return null;
+        }),
+        apiService.adminGetRevenueAnalytics().catch(err => {
+          console.warn("Resilient Admin Dashboard: Failed to load revenue telemetry:", err);
+          return null;
+        })
       ]);
       setUsers(usersData);
       setAnalytics(statsData);

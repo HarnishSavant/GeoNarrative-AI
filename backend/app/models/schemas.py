@@ -15,6 +15,7 @@ class ChatRequest(BaseModel):
     message: str
     location: Optional[str] = None
     context: Optional[List[dict]] = None
+    uploaded_files: Optional[List[dict]] = None
 
 class ChatResponse(BaseModel):
     message: str
@@ -31,6 +32,8 @@ class PredictionRequest(BaseModel):
     domain: str = "flood" # flood, traffic, urban, utility
 
 class PredictionResponse(BaseModel):
+    model_config = {"protected_namespaces": ()}
+    
     overall_risk: str
     score: float
     factors: List[dict]

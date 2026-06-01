@@ -1,20 +1,19 @@
 # Dependencies
 node_modules/
+venv/
 __pycache__/
 *.pyc
-venv/
-.venv/
-
-# Environment
-.env
-.env.local
-.env.production.local
-
-# Build
 .next/
-out/
 dist/
 build/
+
+# Environment & Secrets — NEVER COMMIT
+.env
+.env.local
+.env.production
+.env.*.local
+backend/.env
+frontend/.env.local
 
 # IDE
 .vscode/
@@ -27,9 +26,16 @@ build/
 Thumbs.db
 desktop.ini
 
-# Database
-*.db
-*.sqlite
-
-# Logs
+# Logs & Temp
 *.log
+outbox/
+backend/outbox/
+
+# Coverage & Testing
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Build artifacts
+*.egg-info/
+*.egg

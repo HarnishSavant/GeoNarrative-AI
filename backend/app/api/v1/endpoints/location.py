@@ -1,13 +1,22 @@
+"""
+GeoNarrative AI — Geocoding & OpenStreetMap GIS Integration API
+Secured via secure JWT bearer authentication.
+"""
 from fastapi import APIRouter, Query, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
 from app.services.osm_service import OSMService
+from app.api.v1.endpoints.auth import get_current_user
+from app.models.db_models import User
 from typing import Dict, Any, List
 
 router = APIRouter()
 
 @router.get("/search")
-async def search_location(q: str = Query(..., description="Geocode location name using Nominatim")):
+async def search_location(
+    q: str = Query(..., description="Geocode location name using Nominatim"),
+    current_user: User = Depends(get_current_user)
+):
     """
     DYNAMIC GEOCODING API:
     Queries OpenStreetMap Nominatim for the searched city.
@@ -29,6 +38,7 @@ async def fetch_osm_layers(
     lat_max: float = Query(..., description="Bounding box max latitude"),
     lon_min: float = Query(..., description="Bounding box min longitude"),
     lon_max: float = Query(..., description="Bounding box max longitude"),
+    current_user: User = Depends(get_current_user)
 ):
     """
     DYNAMIC GIS EXTRACTION API:
@@ -55,7 +65,8 @@ async def persist_osm_layers(
     lat_max: float = Query(..., description="Bounding box max latitude"),
     lon_min: float = Query(..., description="Bounding box min longitude"),
     lon_max: float = Query(..., description="Bounding box max longitude"),
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user)
 ):
     """
     DYNAMIC DATABASE PERSISTENCE API:

@@ -98,13 +98,17 @@ export default function AuthModal({ initialMode, onSuccess, onCancel }: AuthModa
         industry,
         designation
       });
-      setSuccessMsg(res.message || "Registration successful! A verification email has been dispatched.");
+      setSuccessMsg(res.message || "Registration successful! Bypassing email verification - you can now log in.");
       // Clear form
       setFullName("");
       setUsername("");
       setPassword("");
       setConfirmPassword("");
       setDesignation("");
+      setTimeout(() => {
+        setMode("login");
+        setSuccessMsg("");
+      }, 2000);
     } catch (err: any) {
       setErrorMsg(err.message || "Failed to register account");
     } finally {

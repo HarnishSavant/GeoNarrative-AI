@@ -88,7 +88,7 @@ class SMTPService:
                     <p>Your payment has been successfully processed. Here are your transaction details:</p>
                     <div style="background-color: #1f2937; border-radius: 8px; padding: 20px; margin: 20px 0; font-family: monospace; font-size: 13px;">
                         <div style="padding-bottom: 8px; border-bottom: 1px solid #374151; margin-bottom: 8px;">
-                            <span>Plan:</span> <strong>{plan_name.replace('_', ' ').toUpperCase()}</strong>
+                            <span>Plan:</span> <strong>{plan_name.replace('_', ' ').upper()}</strong>
                         </div>
                         <div style="padding-bottom: 8px; border-bottom: 1px solid #374151; margin-bottom: 8px;">
                             <span>Amount:</span> <strong>₹{amount}</strong>
@@ -248,7 +248,7 @@ class SMTPService:
                 msg["To"] = recipient
                 msg.attach(MIMEText(html_body, "html"))
                 
-                with smtplib.SMTP(config["host"], config["port"]) as server:
+                with smtplib.SMTP(config["host"], config["port"], timeout=2.0) as server:
                     server.starttls()
                     server.login(config["user"], config["password"])
                     server.sendmail(config["from"], recipient, msg.as_string())

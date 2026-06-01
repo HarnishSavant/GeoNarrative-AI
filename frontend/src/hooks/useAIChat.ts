@@ -311,7 +311,8 @@ Please check the file and try uploading again.`,
         const response = await apiService.sendChatMessage(
           text.trim(),
           currentLocation || undefined,
-          chatContext
+          chatContext,
+          uploadedFiles
         );
 
         const aiMessage: ChatMessage = {

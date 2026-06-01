@@ -36,25 +36,21 @@ config.set_main_option("sqlalchemy.url", db_url)
 # Add our target metadata for autogenerate support
 target_metadata = Base.metadata
 
+def include_object(object, name, type_, reflected, compare_to):
+    """Exclude PostGIS system spatial metadata tables from migrations."""
+    if type_ == "table" and name in ["spatial_ref_sys", "geometry_columns", "geography_columns"]:
+        return False
+    return True
+
 def run_migrations_offline() -> None:
-    """Run migrations in 'offline' mode.
-
-    This configures the context with just a URL
-    and not an Engine, though an Engine is also acceptable
-    here.  By skipping the Engine creation we don't even need a
-    DBAPI to be available.
-
-    Calls to context.execute() here emit the given string to the
-    script output.
-
-    """
+    """Run migrations in 'offline' mode."""
     url = config.get_main_option("sqlalchemy.url")
     context.configure(
         url=url,
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
-        include_object=None, # Include all tables, including PostGIS geography tables
+        include_object=include_object,
     )
 
     with context.begin_transaction():
@@ -62,7 +58,11 @@ def run_migrations_offline() -> None:
 
 
 def do_run_migrations(connection):
-    context.configure(connection=connection, target_metadata=target_metadata)
+    context.configure(
+        connection=connection, 
+        target_metadata=target_metadata,
+        include_object=include_object
+    )
 
     with context.begin_transaction():
         context.run_migrations()

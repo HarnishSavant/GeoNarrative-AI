@@ -3,6 +3,10 @@ import os
 import random
 import hmac
 import hashlib
+import logging
+import urllib.request
+import json
+import base64
 from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -22,8 +26,10 @@ from app.models.schemas import (
     RazorpayVerifyRequest
 )
 
+logger = logging.getLogger("geonarrative.billing")
+
 # Razorpay Test Credentials (graceful config loading)
-RAZORPAY_KEY_ID = os.getenv("RAZORPAY_KEY_ID", "rzp_test_geonarrative_2026")
+RAZORPAY_KEY_ID = os.getenv("RAZORPAY_KEY_ID", "rzp_test_geonar2026abcd")
 RAZORPAY_KEY_SECRET = os.getenv("RAZORPAY_KEY_SECRET", "geonarrative_secret_key_2026")
 
 router = APIRouter()
@@ -95,8 +101,42 @@ async def create_razorpay_order(
     details = PLAN_DETAILS[plan]
     amount_paise = int(details["price"] * 100) # Razorpay operates in lowest denomination currency unit (paise)
     
-    # Generate unique test order id
+    # Generate unique test order id fallback
     order_id = f"order_{os.urandom(8).hex()}"
+    
+    # If using a real developer key, contact the real Razorpay Orders API dynamically!
+    if RAZORPAY_KEY_ID != "rzp_test_geonar2026abcd":
+        try:
+            url = "https://api.razorpay.com/v1/orders"
+            post_payload = json.dumps({
+                "amount": amount_paise,
+                "currency": "INR",
+                "receipt": f"receipt_{os.urandom(4).hex()}"
+            }).encode('utf-8')
+            
+            req_obj = urllib.request.Request(url, data=post_payload, method="POST")
+            
+            # Setup Basic Auth
+            auth_str = f"{RAZORPAY_KEY_ID}:{RAZORPAY_KEY_SECRET}"
+            encoded_auth = base64.b64encode(auth_str.encode('utf-8')).decode('utf-8')
+            req_obj.add_header("Authorization", f"Basic {encoded_auth}")
+            req_obj.add_header("Content-Type", "application/json")
+            
+            # Make the connection
+            with urllib.request.urlopen(req_obj, timeout=6) as response:
+                res_data = json.loads(response.read().decode('utf-8'))
+                if "id" in res_data:
+                    order_id = res_data["id"]
+                    logger.info(f"Real Razorpay Order created successfully: {order_id}")
+        except Exception as e:
+            error_details = str(e)
+            if hasattr(e, 'read'):
+                try:
+                    error_details = e.read().decode('utf-8')
+                except:
+                    pass
+            logger.error(f"Failed to create real Razorpay order dynamically: {error_details}")
+            raise HTTPException(status_code=400, detail=f"Failed to initialize Razorpay: {error_details}")
     
     return RazorpayOrderResponse(
         key=RAZORPAY_KEY_ID,
@@ -122,24 +162,21 @@ async def verify_razorpay_payment(
     details = PLAN_DETAILS[plan]
     
     # 1. Cryptographic HMAC Signature Verification
-    message = f"{req.razorpay_order_id}|{req.razorpay_payment_id}"
-    calculated_sig = hmac.new(
+    is_valid_sig = False
+    if req.razorpay_signature == "MOCK_SIGNATURE" and (RAZORPAY_KEY_ID == "rzp_test_geonar2026abcd" or RAZORPAY_KEY_ID.startswith("rzp_test_")):
+      is_valid_sig = True
+      logger.info("Local Sandbox billing bypass active. Verification approved.")
+    else:
+      message = f"{req.razorpay_order_id}|{req.razorpay_payment_id}"
+      calculated_sig = hmac.new(
         RAZORPAY_KEY_SECRET.encode(),
         message.encode(),
         hashlib.sha256
-    ).hexdigest()
+      ).hexdigest()
+      is_valid_sig = hmac.compare_digest(calculated_sig, req.razorpay_signature)
     
-    # Secure constant-time comparison
-    is_valid_sig = hmac.compare_digest(calculated_sig, req.razorpay_signature)
-    
-    # In sandbox test mode, if the client sends a default dummy key or default test signature,
-    # we allow verification for seamless user trial and ease of developer evaluation!
-    if not is_valid_sig and req.razorpay_signature != "MOCK_SIGNATURE":
-        # Check if they are using default keys - if so, allow it for sandbox test execution
-        if RAZORPAY_KEY_ID == "rzp_test_geonarrative_2026":
-            is_valid_sig = True
-        else:
-            raise HTTPException(status_code=400, detail="Secure signature verification failed. Fraud detected.")
+    if not is_valid_sig:
+      raise HTTPException(status_code=400, detail="Secure signature verification failed. Fraud detected.")
 
     # 2. Deactivate previous active plans
     await db.execute(

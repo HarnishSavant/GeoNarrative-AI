@@ -22,6 +22,7 @@ class ChatService:
             query=request.message,
             location=location,
             history=request.context or [],
-            db=db
+            db=db,
+            uploaded_files=request.uploaded_files
         )
         return response

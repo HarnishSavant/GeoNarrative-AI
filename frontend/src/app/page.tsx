@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-import { Droplets, Car, Building2, Zap, Globe2, Search, MapPin, BarChart3, MessageSquareText, Shield } from "lucide-react";
+import { Droplets, Car, Building2, Zap, Globe2, Search, MapPin, BarChart3, MessageSquareText, Shield, Loader2 } from "lucide-react";
 
 import Sidebar from "@/components/Sidebar";
 import TopNav from "@/components/TopNav";
@@ -65,24 +65,32 @@ export default function Home() {
   // Automatic JWT session check on dashboard mount
   React.useEffect(() => {
     const checkSession = async () => {
-      const storedUser = localStorage.getItem("geonarrative_user");
-      const storedToken = localStorage.getItem("geonarrative_token");
-      
-      if (storedUser && storedToken) {
-        setUser(JSON.parse(storedUser));
-        try {
-          // Verify with FastAPI backend database dynamically
-          const activeUser = await apiService.getProfile();
-          setUser(activeUser);
-          localStorage.setItem("geonarrative_user", JSON.stringify(activeUser));
-        } catch (err) {
-          console.error("Automatically validating active JWT session failed:", err);
-          localStorage.removeItem("geonarrative_token");
-          localStorage.removeItem("geonarrative_user");
-          setUser(null);
+      try {
+        const storedUser = localStorage.getItem("geonarrative_user");
+        const storedToken = localStorage.getItem("geonarrative_token");
+        
+        if (storedUser && storedToken) {
+          try {
+            setUser(JSON.parse(storedUser));
+          } catch (parseErr) {
+            console.warn("Failed to parse local stored user:", parseErr);
+          }
+
+          try {
+            // Verify with FastAPI backend database dynamically
+            const activeUser = await apiService.getProfile();
+            setUser(activeUser);
+            localStorage.setItem("geonarrative_user", JSON.stringify(activeUser));
+          } catch (err) {
+            console.warn("Automatically validating active JWT session failed, keeping local session active:", err);
+            // High-resilience: do not log out user on transient backend errors
+          }
         }
+      } catch (err) {
+        console.error("Error checking session:", err);
+      } finally {
+        setHasCheckedSession(true);
       }
-      setHasCheckedSession(true);
     };
     checkSession();
   }, []);

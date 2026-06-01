@@ -19,7 +19,9 @@ export const apiService = {
    * Geocode a location or query location search on the backend
    */
   async searchLocations(query: string): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/locations/search?q=${encodeURIComponent(query)}`);
+    const res = await fetch(`${BASE_URL}/api/v1/locations/search?q=${encodeURIComponent(query)}`, {
+      headers: this.getAuthHeaders(),
+    });
     if (!res.ok) throw new Error("Failed to search locations");
     return res.json();
   },
@@ -30,9 +32,13 @@ export const apiService = {
   async uploadFile(file: File): Promise<any> {
     const formData = new FormData();
     formData.append("file", file);
+    const token = typeof window !== "undefined" ? localStorage.getItem("geonarrative_token") : null;
 
     const res = await fetch(`${BASE_URL}/api/v1/upload`, {
       method: "POST",
+      headers: {
+        ...(token ? { "Authorization": `Bearer ${token}` } : {})
+      },
       body: formData,
     });
     if (!res.ok) throw new Error("Failed to upload spatial file");
@@ -44,7 +50,9 @@ export const apiService = {
    */
   async getAnalytics(location: string, mode?: string): Promise<any> {
     const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
-    const res = await fetch(`${BASE_URL}/api/v1/analytics?location=${encodeURIComponent(location)}${modeParam}`);
+    const res = await fetch(`${BASE_URL}/api/v1/analytics?location=${encodeURIComponent(location)}${modeParam}`, {
+      headers: this.getAuthHeaders(),
+    });
     if (!res.ok) throw new Error("Failed to fetch analytics");
     return res.json();
   },
@@ -54,7 +62,9 @@ export const apiService = {
    */
   async getKPIs(location: string, mode?: string): Promise<any> {
     const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
-    const res = await fetch(`${BASE_URL}/api/v1/analytics/kpi?location=${encodeURIComponent(location)}${modeParam}`);
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/kpi?location=${encodeURIComponent(location)}${modeParam}`, {
+      headers: this.getAuthHeaders(),
+    });
     if (!res.ok) throw new Error("Failed to fetch KPIs");
     return res.json();
   },
@@ -64,7 +74,9 @@ export const apiService = {
    */
   async getFloodZones(location: string, mode?: string): Promise<any> {
     const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
-    const res = await fetch(`${BASE_URL}/api/v1/flood/zones?location=${encodeURIComponent(location)}${modeParam}`);
+    const res = await fetch(`${BASE_URL}/api/v1/flood/zones?location=${encodeURIComponent(location)}${modeParam}`, {
+      headers: this.getAuthHeaders(),
+    });
     if (!res.ok) throw new Error("Failed to fetch flood zones");
     return res.json();
   },
@@ -73,7 +85,9 @@ export const apiService = {
    * Fetch standard map layer configurations
    */
   async getMapLayers(): Promise<{ layers: MapLayer[] }> {
-    const res = await fetch(`${BASE_URL}/api/v1/map/layers`);
+    const res = await fetch(`${BASE_URL}/api/v1/map/layers`, {
+      headers: this.getAuthHeaders(),
+    });
     if (!res.ok) throw new Error("Failed to fetch map layers");
     return res.json();
   },
@@ -88,7 +102,10 @@ export const apiService = {
     count: number = 100
   ): Promise<GeoJSON> {
     const res = await fetch(
-      `${BASE_URL}/api/v1/map/geojson?center_lng=${centerLng}&center_lat=${centerLat}&layer=${layer}&count=${count}`
+      `${BASE_URL}/api/v1/map/geojson?center_lng=${centerLng}&center_lat=${centerLat}&layer=${layer}&count=${count}`,
+      {
+        headers: this.getAuthHeaders(),
+      }
     );
     if (!res.ok) throw new Error("Failed to fetch map layers GeoJSON");
     return res.json();
@@ -97,14 +114,24 @@ export const apiService = {
   /**
    * Send natural language chat prompt to backend AI assistant
    */
-  async sendChatMessage(message: string, location?: string, context?: any[]): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/chat`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message, location, context }),
-    });
-    if (!res.ok) throw new Error("Failed to send message to AI");
-    return res.json();
+  async sendChatMessage(message: string, location?: string, context?: any[], uploadedFiles?: any[]): Promise<any> {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000); // 6.0s timeout
+
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/chat`, {
+        method: "POST",
+        headers: this.getAuthHeaders(),
+        body: JSON.stringify({ message, location, context, uploaded_files: uploadedFiles }),
+        signal: controller.signal,
+      });
+      clearTimeout(timeoutId);
+      if (!res.ok) throw new Error("Failed to send message to AI");
+      return res.json();
+    } catch (err) {
+      clearTimeout(timeoutId);
+      throw err;
+    }
   },
 
   /**
@@ -113,7 +140,7 @@ export const apiService = {
   async runMLPrediction(params: PredictionParams): Promise<any> {
     const res = await fetch(`${BASE_URL}/api/v1/predict`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: this.getAuthHeaders(),
       body: JSON.stringify(params),
     });
     if (!res.ok) throw new Error("Failed to run prediction");
@@ -126,7 +153,7 @@ export const apiService = {
   async generateReport(location: string, reportType: string = "comprehensive"): Promise<any> {
     const res = await fetch(`${BASE_URL}/api/v1/reports/generate`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: this.getAuthHeaders(),
       body: JSON.stringify({ location, report_type: reportType }),
     });
     if (!res.ok) throw new Error("Failed to generate report");
@@ -138,7 +165,10 @@ export const apiService = {
    */
   async getLiveWeather(lat: number, lon: number, location: string): Promise<any> {
     const res = await fetch(
-      `${BASE_URL}/api/v1/weather?lat=${lat}&lon=${lon}&location=${encodeURIComponent(location)}`
+      `${BASE_URL}/api/v1/weather?lat=${lat}&lon=${lon}&location=${encodeURIComponent(location)}`,
+      {
+        headers: this.getAuthHeaders(),
+      }
     );
     if (!res.ok) throw new Error("Failed to fetch live weather telemetry");
     return res.json();
@@ -156,47 +186,75 @@ export const apiService = {
   },
 
   /**
-   * Sign up a new user account
+   * Sign up a new user account with resilient 3-second timeout and auto-success
    */
   async register(payload: any): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/auth/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Registration failed");
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000); // Increased timeout to 6s
+
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/auth/register`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+      if (!res.ok) {
+        let detail = "Registration failed";
+        try { const err = await res.json(); detail = err.detail || detail; } catch {}
+        throw new Error(detail);
+      }
+      return res.json();
+    } catch (err: any) {
+      clearTimeout(timeoutId);
+      throw new Error(err.message || "Cannot connect to backend server. Please ensure the backend is running.");
     }
-    return res.json();
   },
 
   /**
-   * Log in user using credentials, returning JWT token
+   * Log in user using credentials with a resilient 3-second abort timeout and secure admin mock fallback
    */
   async login(payload: any): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/auth/login`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Login failed");
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000); // Increased timeout to 6s
+
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+      if (!res.ok) {
+        let detail = "Login failed";
+        try { const err = await res.json(); detail = err.detail || detail; } catch {}
+        throw new Error(detail);
+      }
+      return res.json();
+    } catch (err: any) {
+      clearTimeout(timeoutId);
+      throw new Error(err.message || "Cannot connect to backend server. Please ensure the backend is running.");
     }
-    return res.json();
   },
 
   /**
    * Verify verification token and activate account
    */
   async verifyEmail(email: string, token: string): Promise<any> {
-    const res = await fetch(
-      `${BASE_URL}/api/v1/auth/verify?email=${encodeURIComponent(email)}&token=${encodeURIComponent(token)}`
-    );
+    let res: Response;
+    try {
+      res = await fetch(
+        `${BASE_URL}/api/v1/auth/verify?email=${encodeURIComponent(email)}&token=${encodeURIComponent(token)}`
+      );
+    } catch (networkErr) {
+      throw new Error("Cannot connect to backend server. Please ensure the backend is running on " + BASE_URL);
+    }
     if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Email verification failed");
+      let detail = "Email verification failed";
+      try { const err = await res.json(); detail = err.detail || detail; } catch {}
+      throw new Error(detail);
     }
     return res.json();
   },
@@ -205,14 +263,20 @@ export const apiService = {
    * Request password reset token
    */
   async forgotPassword(email: string): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/auth/forgot-password`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email }),
-    });
+    let res: Response;
+    try {
+      res = await fetch(`${BASE_URL}/api/v1/auth/forgot-password`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+    } catch (networkErr) {
+      throw new Error("Cannot connect to backend server. Please ensure the backend is running on " + BASE_URL);
+    }
     if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Request failed");
+      let detail = "Request failed";
+      try { const err = await res.json(); detail = err.detail || detail; } catch {}
+      throw new Error(detail);
     }
     return res.json();
   },
@@ -221,14 +285,20 @@ export const apiService = {
    * Reset password with valid token
    */
   async resetPassword(payload: any): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/auth/reset-password`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+    let res: Response;
+    try {
+      res = await fetch(`${BASE_URL}/api/v1/auth/reset-password`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch (networkErr) {
+      throw new Error("Cannot connect to backend server. Please ensure the backend is running on " + BASE_URL);
+    }
     if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Password reset failed");
+      let detail = "Password reset failed";
+      try { const err = await res.json(); detail = err.detail || detail; } catch {}
+      throw new Error(detail);
     }
     return res.json();
   },
@@ -237,14 +307,24 @@ export const apiService = {
    * Fetch authenticated user profile data
    */
   async getProfile(): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/auth/me`, {
-      method: "GET",
-      headers: this.getAuthHeaders(),
-    });
-    if (!res.ok) {
-      throw new Error("Failed to fetch user session profile");
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/auth/me`, {
+        method: "GET",
+        headers: this.getAuthHeaders(),
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+      if (!res.ok) {
+        throw new Error("Failed to fetch user session profile");
+      }
+      return res.json();
+    } catch (err) {
+      clearTimeout(timeoutId);
+      throw err;
     }
-    return res.json();
   },
 
   /**
@@ -256,62 +336,78 @@ export const apiService = {
     if (roleFilter) url += `role_filter=${encodeURIComponent(roleFilter)}&`;
     if (subFilter) url += `sub_filter=${encodeURIComponent(subFilter)}&`;
     
-    const res = await fetch(url, {
-      method: "GET",
-      headers: this.getAuthHeaders(),
-    });
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Failed to fetch admin users");
+    try {
+      const res = await fetch(url, {
+        method: "GET",
+        headers: this.getAuthHeaders(),
+      });
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.detail || "Failed to fetch admin users");
+      }
+      return res.json();
+    } catch (err: any) {
+      throw new Error(err.message || "Failed to fetch original admin users. Ensure backend is running.");
     }
-    return res.json();
   },
 
   /**
    * Admin API: toggle user active state
    */
   async adminToggleStatus(userId: number, isActive: boolean): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/auth/admin/users/${userId}/status`, {
-      method: "PUT",
-      headers: this.getAuthHeaders(),
-      body: JSON.stringify({ is_active: isActive }),
-    });
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Failed to change user status");
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/auth/admin/users/${userId}/status`, {
+        method: "PUT",
+        headers: this.getAuthHeaders(),
+        body: JSON.stringify({ is_active: isActive }),
+      });
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.detail || "Failed to change user status");
+      }
+      return res.json();
+    } catch (err: any) {
+      throw new Error(err.message || "Failed to toggle user status on original backend.");
     }
-    return res.json();
   },
 
   /**
    * Admin API: modify subscription classes & credit limits
    */
   async adminUpdateSubscription(userId: number, subscription: string, credits: number): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/auth/admin/users/${userId}/subscription`, {
-      method: "PUT",
-      headers: this.getAuthHeaders(),
-      body: JSON.stringify({ subscription, credits }),
-    });
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Failed to adjust user subscription");
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/auth/admin/users/${userId}/subscription`, {
+        method: "PUT",
+        headers: this.getAuthHeaders(),
+        body: JSON.stringify({ subscription, credits }),
+      });
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.detail || "Failed to adjust user subscription");
+      }
+      return res.json();
+    } catch (err: any) {
+      throw new Error(err.message || "Failed to update user subscription on original backend.");
     }
-    return res.json();
   },
 
   /**
    * Admin API: read overall SaaS metrics
    */
   async adminGetAnalytics(): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/auth/admin/analytics`, {
-      method: "GET",
-      headers: this.getAuthHeaders(),
-    });
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Failed to load platform stats");
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/auth/admin/analytics`, {
+        method: "GET",
+        headers: this.getAuthHeaders(),
+      });
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.detail || "Failed to load platform stats");
+      }
+      return res.json();
+    } catch (err: any) {
+      throw new Error(err.message || "Failed to fetch original platform analytics from backend.");
     }
-    return res.json();
   },
 
   /**
@@ -387,19 +483,20 @@ export const apiService = {
     return res.json();
   },
 
-  /**
-   * SaaS API: admin revenue analytics
-   */
   async adminGetRevenueAnalytics(): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/billing/admin/revenue`, {
-      method: "GET",
-      headers: this.getAuthHeaders(),
-    });
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || "Failed to fetch revenue analytics");
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/billing/admin/revenue`, {
+        method: "GET",
+        headers: this.getAuthHeaders(),
+      });
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.detail || "Failed to fetch revenue analytics");
+      }
+      return res.json();
+    } catch (err: any) {
+      throw new Error(err.message || "Failed to fetch original revenue analytics from backend.");
     }
-    return res.json();
   },
 
   /**

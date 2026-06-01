@@ -52,13 +52,18 @@ export function useMapControl(initialLocation: string = "") {
     toast.loading(`Extracting live OSM layers for ${city}...`, { id: "osm-loader" });
 
     try {
+      const token = typeof window !== "undefined" ? localStorage.getItem("geonarrative_token") : null;
       await Promise.all(
         categories.map(async (cat) => {
           const url = `${config.api.baseUrl}/api/v1/locations/osm?city=${encodeURIComponent(
             city
           )}&category=${cat}&lat_min=${bbox.lat_min}&lat_max=${bbox.lat_max}&lon_min=${bbox.lon_min}&lon_max=${bbox.lon_max}`;
 
-          const res = await fetch(url);
+          const res = await fetch(url, {
+            headers: {
+              ...(token ? { "Authorization": `Bearer ${token}` } : {})
+            }
+          });
           if (res.ok) {
             const data = await res.json();
             fetchedData[cat] = data;
@@ -83,7 +88,12 @@ export function useMapControl(initialLocation: string = "") {
     try {
       // 1. Geocode location using our backend dynamic Geocoder (OSM Nominatim API wrapper)
       const url = `${config.api.baseUrl}/api/v1/locations/search?q=${encodeURIComponent(location)}`;
-      const res = await fetch(url);
+      const token = typeof window !== "undefined" ? localStorage.getItem("geonarrative_token") : null;
+      const res = await fetch(url, {
+        headers: {
+          ...(token ? { "Authorization": `Bearer ${token}` } : {})
+        }
+      });
       
       if (res.ok) {
         const geocodeResult = await res.json();

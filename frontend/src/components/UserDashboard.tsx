@@ -46,6 +46,18 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
   const [upgradeMsg, setUpgradeMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
+  // Custom high-fidelity interactive Razorpay Checkout simulator states
+  const [showMockCheckout, setShowMockCheckout] = useState(false);
+  const [checkoutTier, setCheckoutTier] = useState("");
+  const [checkoutAmount, setCheckoutAmount] = useState(0);
+  const [checkoutEmail, setCheckoutEmail] = useState("");
+  const [checkoutOrderId, setCheckoutOrderId] = useState("");
+  const [isSimulatingSuccess, setIsSimulatingSuccess] = useState(false);
+  const [isSimulatingFailure, setIsSimulatingFailure] = useState(false);
+  const [isSimulatedDone, setIsSimulatedDone] = useState(false);
+  const [selectedMethod, setSelectedMethod] = useState<'netbanking' | 'card'>('netbanking');
+  const [mockSelectedBank, setMockSelectedBank] = useState("State Bank of India");
+
   // Profile Edit fields
   const [fullName, setFullName] = useState(user.full_name || "");
   const [industry, setIndustry] = useState(user.industry || "");
@@ -65,17 +77,29 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
     setErrorMsg("");
     try {
       const [status, paymentList, logsList, activities] = await Promise.all([
-        apiService.getBillingStatus(),
-        apiService.getPaymentHistory(),
-        apiService.getUsageLogs(),
-        apiService.listActivityLogs().catch(() => [])
+        apiService.getBillingStatus().catch(err => {
+          console.warn("Resilient User Dashboard: Failed to load billing status:", err);
+          return null;
+        }),
+        apiService.getPaymentHistory().catch(err => {
+          console.warn("Resilient User Dashboard: Failed to load payment history:", err);
+          return [];
+        }),
+        apiService.getUsageLogs().catch(err => {
+          console.warn("Resilient User Dashboard: Failed to load usage logs:", err);
+          return [];
+        }),
+        apiService.listActivityLogs().catch(err => {
+          console.warn("Resilient User Dashboard: Failed to load activity logs:", err);
+          return [];
+        })
       ]);
       setBilling(status);
       setPayments(paymentList);
       setUsageLogs(logsList);
       setActivityLogs(activities);
     } catch (err: any) {
-      setErrorMsg(err.message || "Failed to load account metrics");
+      console.error("Failed to load account metrics:", err);
     } finally {
       setIsLoading(false);
     }
@@ -121,20 +145,31 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
 
       const orderData = await apiService.createRazorpayOrder(tier);
 
-      if (!(window as any).Razorpay) {
-        console.warn("Razorpay script not active. Initializing offline testing fallback.");
-        const verifyRes = await apiService.verifyRazorpayPayment({
-          razorpay_order_id: orderData.order_id,
-          razorpay_payment_id: "pay_mock_" + Math.random().toString(36).substring(7),
-          razorpay_signature: "MOCK_SIGNATURE",
-          plan_type: tier
-        });
-        setUpgradeMsg(verifyRes.message || "Payment processed via local billing sandbox!");
-        onRefreshProfile();
+      // Check if we are using the default mock/sandbox key
+      const isSandboxKey = orderData.key === "rzp_test_geonar2026abcd";
+
+      if (isSandboxKey) {
+        // Trigger the premium simulated custom Razorpay checkout overlay!
+        setCheckoutTier(tier);
+        setCheckoutAmount(orderData.amount / 100); // converting paise to rupees
+        setCheckoutEmail(orderData.user_email || user.email);
+        setCheckoutOrderId(orderData.order_id);
+        setIsSimulatingSuccess(false);
+        setIsSimulatingFailure(false);
+        setIsSimulatedDone(false);
+        setShowMockCheckout(true);
+        setIsUpgrading(false);
         return;
       }
 
-      const options = {
+      // Fallback for real Razorpay Keys
+      if (!(window as any).Razorpay) {
+        setErrorMsg("Razorpay payment gateway script not loaded. Please disable ad-blockers or try again.");
+        setIsUpgrading(false);
+        return;
+      }
+
+      const options: any = {
         key: orderData.key,
         amount: orderData.amount,
         currency: orderData.currency,
@@ -152,8 +187,11 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
             });
             setUpgradeMsg(verifyRes.message || "Invoice cleared and plan upgraded successfully!");
             onRefreshProfile();
+            setTimeout(() => {
+              loadBillingAndEnterpriseData();
+            }, 300);
           } catch (err: any) {
-            setErrorMsg(err.message || "Digital twin payment signature verification failed.");
+            setErrorMsg(err.message || "Payment signature verification failed.");
           } finally {
             setIsUpgrading(false);
           }
@@ -722,6 +760,249 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
         </motion.div>
       </AnimatePresence>
 
+      {/* HIGH-FIDELITY INTERACTIVE RAZORPAY BILLING SIMULATOR MODAL */}
+      <AnimatePresence>
+        {showMockCheckout && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 backdrop-blur-md p-4"
+          >
+            <motion.div 
+              initial={{ scale: 0.95, y: 15 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.95, y: 15 }}
+              transition={{ type: "spring", duration: 0.4 }}
+              className="bg-[#0b0f19] border border-geo-border rounded-2xl w-full max-w-[420px] overflow-hidden shadow-2xl relative flex flex-col font-sans text-gray-200 select-none"
+            >
+              {/* TOP BRAND HEADER (Razorpay Deep Royal Blue Theme) */}
+              <div className="bg-gradient-to-r from-blue-950 via-[#0d2a4a] to-blue-950 px-5 py-4 border-b border-blue-900/40 relative flex items-center justify-between text-white">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-5 h-5 rounded bg-blue-600 flex items-center justify-center shadow-glow-primary">
+                      <span className="text-[10px] font-black">GN</span>
+                    </div>
+                    <span className="text-[11px] font-bold tracking-wider text-blue-400 font-mono uppercase">GeoNarrative AI</span>
+                  </div>
+                  <h4 className="text-xs font-black tracking-wide text-gray-200 uppercase">{checkoutTier.replace('_', ' ')} Plan</h4>
+                </div>
+                
+                <div className="text-right space-y-1">
+                  <span className="text-[9px] bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono font-bold uppercase tracking-widest px-2 py-0.5 rounded-full">
+                    Demo Test Mode
+                  </span>
+                  <div className="text-xl font-mono font-black text-white">₹{checkoutAmount.toLocaleString()}</div>
+                </div>
+              </div>
+
+              {/* MAIN CONTENT AREA */}
+              <div className="p-5 space-y-4 relative min-h-[300px]">
+                {/* 1. Processing / Loading Spinner Overlay */}
+                {isSimulatingSuccess && (
+                  <div className="absolute inset-0 bg-[#0b0f19]/95 z-20 flex flex-col items-center justify-center p-6 text-center space-y-4">
+                    <Loader2 className="animate-spin text-blue-500" size={44} />
+                    <div className="space-y-1">
+                      <h4 className="text-sm font-bold text-white">Connecting Secure Banking...</h4>
+                      <p className="text-[10px] text-gray-500 leading-relaxed font-mono">Simulating standard secure bank authorization API. Do not close or refresh this page.</p>
+                    </div>
+                  </div>
+                )}
+
+                {/* 2. Success Done Overlay */}
+                {isSimulatedDone && (
+                  <div className="absolute inset-0 bg-[#0b0f19]/95 z-20 flex flex-col items-center justify-center p-6 text-center space-y-4">
+                    <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 animate-bounce">
+                      <CheckCircle size={36} />
+                    </div>
+                    <div className="space-y-1">
+                      <h4 className="text-sm font-bold text-white">Simulated Payment Clear!</h4>
+                      <p className="text-[10px] text-emerald-400 font-mono">Credits updated and SaaS subscription activated successfully.</p>
+                    </div>
+                  </div>
+                )}
+
+                {/* 3. Main Form fields */}
+                <div className="space-y-3">
+                  <div className="grid grid-cols-2 gap-3 text-[10px] font-mono">
+                    <div className="bg-black/30 border border-geo-border p-2 rounded-lg">
+                      <span className="text-gray-500 block uppercase">Client Email</span>
+                      <span className="text-gray-200 truncate block">{checkoutEmail}</span>
+                    </div>
+                    <div className="bg-black/30 border border-geo-border p-2 rounded-lg">
+                      <span className="text-gray-500 block uppercase">Payment Gateway</span>
+                      <span className="text-blue-400 block font-bold">1Razorpay Sim</span>
+                    </div>
+                  </div>
+
+                  {/* Tab selection */}
+                  <div className="flex border-b border-geo-border/60">
+                    <button 
+                      onClick={() => setSelectedMethod('netbanking')}
+                      className={`flex-1 pb-2 text-[11px] font-bold text-center border-b-2 transition-all ${
+                        selectedMethod === 'netbanking' 
+                          ? 'border-blue-500 text-blue-400' 
+                          : 'border-transparent text-gray-500 hover:text-gray-300'
+                      }`}
+                    >
+                      🏦 Netbanking
+                    </button>
+                    <button 
+                      onClick={() => setSelectedMethod('card')}
+                      className={`flex-1 pb-2 text-[11px] font-bold text-center border-b-2 transition-all ${
+                        selectedMethod === 'card' 
+                          ? 'border-blue-500 text-blue-400' 
+                          : 'border-transparent text-gray-500 hover:text-gray-300'
+                      }`}
+                    >
+                      💳 Credit/Debit Card
+                    </button>
+                  </div>
+
+                  {/* Netbanking content */}
+                  {selectedMethod === 'netbanking' && (
+                    <div className="space-y-3 pt-2">
+                      <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider block">Popular Banks</span>
+                      
+                      <div className="grid grid-cols-2 gap-2 text-[10px] font-semibold">
+                        {[
+                          { name: "State Bank of India", logo: "🏦 SBI" },
+                          { name: "HDFC Bank", logo: "🏦 HDFC" },
+                          { name: "ICICI Bank", logo: "🏦 ICICI" },
+                          { name: "Axis Bank", logo: "🏦 Axis" }
+                        ].map((bank) => (
+                          <button
+                            key={bank.name}
+                            onClick={() => setMockSelectedBank(bank.name)}
+                            className={`p-2.5 rounded-lg border text-center transition-all ${
+                              mockSelectedBank === bank.name 
+                                ? 'bg-blue-600/10 border-blue-500 text-blue-400 shadow-glow-primary/10' 
+                                : 'bg-black/20 border-geo-border text-gray-400 hover:text-gray-200'
+                            }`}
+                          >
+                            <span className="block font-mono text-xs">{bank.logo}</span>
+                            <span className="text-[8px] truncate block text-gray-500">{bank.name}</span>
+                          </button>
+                        ))}
+                      </div>
+
+                      <div className="space-y-1">
+                        <label className="text-[9px] text-gray-500 uppercase tracking-wider block">Or select other bank</label>
+                        <select 
+                          value={mockSelectedBank}
+                          onChange={(e) => setMockSelectedBank(e.target.value)}
+                          className="w-full bg-black/40 border border-geo-border rounded-lg text-xs py-2 px-3 focus:outline-none focus:border-blue-500 text-gray-300 font-mono text-white"
+                        >
+                          <option value="State Bank of India">State Bank of India</option>
+                          <option value="HDFC Bank">HDFC Bank</option>
+                          <option value="ICICI Bank">ICICI Bank</option>
+                          <option value="Axis Bank">Axis Bank</option>
+                          <option value="Punjab National Bank">Punjab National Bank</option>
+                          <option value="Kotak Mahindra Bank">Kotak Mahindra Bank</option>
+                        </select>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Card Content */}
+                  {selectedMethod === 'card' && (
+                    <div className="space-y-3 pt-2">
+                      <div className="bg-gradient-to-br from-gray-900 to-slate-950 border border-geo-border/60 rounded-xl p-4 space-y-3 shadow-inner relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+                        <div className="flex justify-between items-start">
+                          <span className="text-[10px] font-mono text-gray-500 font-bold uppercase tracking-wider">Test Card details</span>
+                          <span className="text-xs font-bold text-gray-400 font-mono">VISA</span>
+                        </div>
+
+                        <div className="space-y-2">
+                          <div className="space-y-0.5">
+                            <span className="text-[8px] text-gray-600 uppercase font-mono block">Card Number</span>
+                            <input 
+                              type="text" 
+                              disabled 
+                              value="4111 • 2222 • 3333 • 4444" 
+                              className="w-full bg-transparent border-0 p-0 text-xs font-mono text-gray-300 font-black tracking-widest focus:outline-none focus:ring-0"
+                            />
+                          </div>
+
+                          <div className="grid grid-cols-2 gap-4">
+                            <div className="space-y-0.5">
+                              <span className="text-[8px] text-gray-600 uppercase font-mono block">Expires</span>
+                              <span className="text-xs font-mono text-gray-300 font-black">12 / 2030</span>
+                            </div>
+                            <div className="space-y-0.5">
+                              <span className="text-[8px] text-gray-600 uppercase font-mono block">CVV</span>
+                              <span className="text-xs font-mono text-gray-300 font-black">***</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-[9px] text-gray-500 font-mono leading-relaxed text-center">
+                        This test card details is prefilled automatically for local demo validation.
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                {/* Simulated Payment Action Buttons */}
+                <div className="pt-2 space-y-2">
+                  <button
+                    onClick={async () => {
+                      setIsSimulatingSuccess(true);
+                      try {
+                        // 1.5 seconds mock banking delay for hyper-realism
+                        await new Promise((resolve) => setTimeout(resolve, 1500));
+                        
+                        const verifyRes = await apiService.verifyRazorpayPayment({
+                          razorpay_order_id: checkoutOrderId || "order_simple_checkout",
+                          razorpay_payment_id: "pay_mock_" + Math.random().toString(36).substring(7),
+                          razorpay_signature: "MOCK_SIGNATURE",
+                          plan_type: checkoutTier
+                        });
+
+                        setIsSimulatingSuccess(false);
+                        setIsSimulatedDone(true);
+
+                        // Wait 1.2 seconds for the success check animation
+                        await new Promise((resolve) => setTimeout(resolve, 1200));
+                        
+                        setUpgradeMsg(verifyRes.message || `Upgraded to ${checkoutTier.replace('_', ' ').toUpperCase()} successfully!`);
+                        setShowMockCheckout(false);
+                        setIsSimulatedDone(false);
+                        onRefreshProfile();
+                        
+                        setTimeout(() => {
+                          loadBillingAndEnterpriseData();
+                        }, 300);
+                      } catch (err: any) {
+                        setIsSimulatingSuccess(false);
+                        setErrorMsg(err.message || "Simulated payment process verification failed.");
+                        setShowMockCheckout(false);
+                      }
+                    }}
+                    className="w-full bg-[#3b82f6] hover:bg-blue-600 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-glow-primary transition-all duration-300 active:scale-[0.98]"
+                  >
+                    💳 Simulate Success via {selectedMethod === 'netbanking' ? mockSelectedBank : 'Visa Test Card'}
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setShowMockCheckout(false);
+                      setIsSimulatingSuccess(false);
+                      setIsSimulatingFailure(false);
+                      setIsSimulatedDone(false);
+                      setErrorMsg("Demo payment simulation cancelled by planner.");
+                    }}
+                    className="w-full text-center py-2 text-[10px] text-gray-500 hover:text-gray-300 font-mono transition-colors"
+                  >
+                    Cancel transaction
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
