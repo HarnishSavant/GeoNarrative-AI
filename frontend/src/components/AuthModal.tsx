@@ -87,6 +87,23 @@ export default function AuthModal({ initialMode, onSuccess, onCancel }: AuthModa
       return;
     }
 
+    if (password.length < 8) {
+      setErrorMsg("Password must be at least 8 characters long.");
+      return;
+    }
+    if (!/[A-Z]/.test(password)) {
+      setErrorMsg("Password must contain at least one uppercase letter.");
+      return;
+    }
+    if (!/[a-z]/.test(password)) {
+      setErrorMsg("Password must contain at least one lowercase letter.");
+      return;
+    }
+    if (!/[0-9]/.test(password)) {
+      setErrorMsg("Password must contain at least one digit.");
+      return;
+    }
+
     setIsLoading(true);
     try {
       const res = await apiService.register({

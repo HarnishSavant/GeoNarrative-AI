@@ -94,7 +94,7 @@ class SaaSLimitMiddleware(BaseHTTPMiddleware):
                     )
 
             # D. Audit Geoprocessing Credits depletion
-            if user.credits <= 0 and current_plan == "free":
+            if user.credits <= 0:
                 return JSONResponse(
                     status_code=403,
                     content={
@@ -124,19 +124,26 @@ class SaaSLimitMiddleware(BaseHTTPMiddleware):
                 user_res = await session.execute(select(User).filter(User.id == user_id))
                 db_user = user_res.scalars().first()
                 if db_user:
-                    # Update credits if free plan
-                    if db_user.subscription == "free" and db_user.credits > 0:
+                    # Update credits for any subscription tier
+                    if db_user.credits > 0:
                         db_user.credits -= 1
 
                     # Sync User Credit Record
                     credit_res = await session.execute(select(Credit).filter(Credit.user_id == user_id))
                     db_credit = credit_res.scalars().first()
                     if not db_credit:
+                        limit_val = 100
+                        if db_user.subscription == "premium_monthly":
+                            limit_val = 1000
+                        elif db_user.subscription == "premium_6months":
+                            limit_val = 7000
+                        elif db_user.subscription == "premium_annual":
+                            limit_val = 15000
                         db_credit = Credit(
                             user_id=user_id,
-                            credit_limit=100,
+                            credit_limit=limit_val,
                             credits_used=0,
-                            credits_remaining=100
+                            credits_remaining=db_user.credits
                         )
                         session.add(db_credit)
                     

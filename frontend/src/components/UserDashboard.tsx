@@ -145,8 +145,8 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
 
       const orderData = await apiService.createRazorpayOrder(tier);
 
-      // Check if we are using the default mock/sandbox key
-      const isSandboxKey = orderData.key === "rzp_test_geonar2026abcd";
+      // Check if we are using the default mock/sandbox key or any other test key
+      const isSandboxKey = orderData.key === "rzp_test_geonar2026abcd" || (orderData.key && orderData.key.startsWith("rzp_test_"));
 
       if (isSandboxKey) {
         // Trigger the premium simulated custom Razorpay checkout overlay!

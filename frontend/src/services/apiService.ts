@@ -14,6 +14,20 @@ export interface PredictionParams {
   domain?: string;
 }
 
+function parseErrorDetail(err: any, fallback: string): string {
+  if (!err) return fallback;
+  const detail = err.detail;
+  if (!detail) return fallback;
+  if (typeof detail === "string") return detail;
+  if (Array.isArray(detail)) {
+    return detail.map((d: any) => `${d.loc ? d.loc.join(".") + ": " : ""}${d.msg}`).join("; ");
+  }
+  if (typeof detail === "object") {
+    return detail.message || JSON.stringify(detail);
+  }
+  return fallback;
+}
+
 export const apiService = {
   /**
    * Geocode a location or query location search on the backend
@@ -116,7 +130,7 @@ export const apiService = {
    */
   async sendChatMessage(message: string, location?: string, context?: any[], uploadedFiles?: any[]): Promise<any> {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 6000); // 6.0s timeout
+    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30.0s timeout
 
     try {
       const res = await fetch(`${BASE_URL}/api/v1/chat`, {
@@ -127,7 +141,11 @@ export const apiService = {
       });
       clearTimeout(timeoutId);
       if (!res.ok) throw new Error("Failed to send message to AI");
-      return res.json();
+      const data = await res.json();
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(new CustomEvent("geonarrative_credits_updated"));
+      }
+      return data;
     } catch (err) {
       clearTimeout(timeoutId);
       throw err;
@@ -138,13 +156,31 @@ export const apiService = {
    * Run ML risk calculation model
    */
   async runMLPrediction(params: PredictionParams): Promise<any> {
-    const res = await fetch(`${BASE_URL}/api/v1/predict`, {
-      method: "POST",
-      headers: this.getAuthHeaders(),
-      body: JSON.stringify(params),
-    });
-    if (!res.ok) throw new Error("Failed to run prediction");
-    return res.json();
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30-second timeout to prevent UI hang
+
+    try {
+      const res = await fetch(`${BASE_URL}/api/v1/predict`, {
+        method: "POST",
+        headers: this.getAuthHeaders(),
+        body: JSON.stringify(params),
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+      if (!res.ok) {
+        let detail = "Failed to run prediction";
+        try { const err = await res.json(); detail = parseErrorDetail(err, detail); } catch {}
+        throw new Error(detail);
+      }
+      const data = await res.json();
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(new CustomEvent("geonarrative_credits_updated"));
+      }
+      return data;
+    } catch (err: any) {
+      clearTimeout(timeoutId);
+      throw new Error(err.message || "Cannot connect to prediction engine.");
+    }
   },
 
   /**
@@ -157,7 +193,11 @@ export const apiService = {
       body: JSON.stringify({ location, report_type: reportType }),
     });
     if (!res.ok) throw new Error("Failed to generate report");
-    return res.json();
+    const data = await res.json();
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("geonarrative_credits_updated"));
+    }
+    return data;
   },
 
   /**
@@ -190,7 +230,7 @@ export const apiService = {
    */
   async register(payload: any): Promise<any> {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 6000); // Increased timeout to 6s
+    const timeoutId = setTimeout(() => controller.abort(), 30000); // Increased timeout to 30s
 
     try {
       const res = await fetch(`${BASE_URL}/api/v1/auth/register`, {
@@ -202,7 +242,7 @@ export const apiService = {
       clearTimeout(timeoutId);
       if (!res.ok) {
         let detail = "Registration failed";
-        try { const err = await res.json(); detail = err.detail || detail; } catch {}
+        try { const err = await res.json(); detail = parseErrorDetail(err, detail); } catch {}
         throw new Error(detail);
       }
       return res.json();
@@ -217,7 +257,7 @@ export const apiService = {
    */
   async login(payload: any): Promise<any> {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 6000); // Increased timeout to 6s
+    const timeoutId = setTimeout(() => controller.abort(), 30000); // Increased timeout to 30s
 
     try {
       const res = await fetch(`${BASE_URL}/api/v1/auth/login`, {
@@ -229,7 +269,7 @@ export const apiService = {
       clearTimeout(timeoutId);
       if (!res.ok) {
         let detail = "Login failed";
-        try { const err = await res.json(); detail = err.detail || detail; } catch {}
+        try { const err = await res.json(); detail = parseErrorDetail(err, detail); } catch {}
         throw new Error(detail);
       }
       return res.json();
@@ -253,7 +293,7 @@ export const apiService = {
     }
     if (!res.ok) {
       let detail = "Email verification failed";
-      try { const err = await res.json(); detail = err.detail || detail; } catch {}
+      try { const err = await res.json(); detail = parseErrorDetail(err, detail); } catch {}
       throw new Error(detail);
     }
     return res.json();
@@ -275,7 +315,7 @@ export const apiService = {
     }
     if (!res.ok) {
       let detail = "Request failed";
-      try { const err = await res.json(); detail = err.detail || detail; } catch {}
+      try { const err = await res.json(); detail = parseErrorDetail(err, detail); } catch {}
       throw new Error(detail);
     }
     return res.json();
@@ -297,7 +337,7 @@ export const apiService = {
     }
     if (!res.ok) {
       let detail = "Password reset failed";
-      try { const err = await res.json(); detail = err.detail || detail; } catch {}
+      try { const err = await res.json(); detail = parseErrorDetail(err, detail); } catch {}
       throw new Error(detail);
     }
     return res.json();
@@ -308,7 +348,7 @@ export const apiService = {
    */
   async getProfile(): Promise<any> {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 3000);
+    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30-second timeout
 
     try {
       const res = await fetch(`${BASE_URL}/api/v1/auth/me`, {

@@ -464,6 +464,72 @@ async def compute_dynamic_analytics(location: str, mode: str) -> Dict[str, Any]:
             ],
         }
 
+    elif mode == "urban":
+        return {
+            "rainfall": [
+                {"month": "Jan", "value": 18, "avg": 15}, {"month": "Feb", "value": 22, "avg": 18},
+                {"month": "Mar", "value": 35, "avg": 25}, {"month": "Apr", "value": 42, "avg": 30},
+                {"month": "May", "value": 38, "avg": 28}, {"month": "Jun", "value": 25, "avg": 22},
+                {"month": "Jul", "value": 15, "avg": 20}, {"month": "Aug", "value": 12, "avg": 18},
+                {"month": "Sep", "value": 28, "avg": 22}, {"month": "Oct", "value": 32, "avg": 25},
+                {"month": "Nov", "value": 30, "avg": 24}, {"month": "Dec", "value": 20, "avg": 18},
+            ],
+            "elevation": [
+                {"zone": "Residential", "min": 45, "max": 65, "avg": 55}, {"zone": "Commercial", "min": 20, "max": 35, "avg": 28},
+                {"zone": "Industrial", "min": 10, "max": 18, "avg": 14}, {"zone": "Mixed Use", "min": 5, "max": 12, "avg": 8},
+            ],
+            "riskDistribution": [
+                {"name": "Residential", "value": 45, "color": "#6366f1"}, {"name": "Commercial", "value": 25, "color": "#f59e0b"},
+                {"name": "Industrial", "value": 15, "color": "#ef4444"}, {"name": "Green/Open", "value": 15, "color": "#10b981"},
+            ],
+            "populationDensity": [
+                {"area": "Central", "density": 14200, "risk": "high"}, {"area": "North", "density": 9800, "risk": "medium"},
+                {"area": "South", "density": 7200, "risk": "low"}, {"area": "East", "density": 10500, "risk": "medium"},
+                {"area": "West", "density": 12800, "risk": "high"},
+            ],
+            "infrastructure": [
+                {"type": "Schools", "count": num_schools, "atRisk": 15}, {"type": "Hospitals", "count": num_hospitals, "atRisk": 3},
+                {"type": "Parks", "count": 78, "atRisk": 0}, {"type": "Markets", "count": 125, "atRisk": 8},
+            ],
+            "timeSeriesRisk": [
+                {"date": "2020", "permits": 82, "violations": 12, "growth": 6}, {"date": "2021", "permits": 85, "violations": 14, "growth": 8},
+                {"date": "2022", "permits": 88, "violations": 15, "growth": 10}, {"date": "2023", "permits": 91, "violations": 16, "growth": 12},
+                {"date": "2024", "permits": 93, "violations": 17, "growth": 14}, {"date": "2025", "permits": 95, "violations": 18, "growth": 16},
+            ],
+        }
+
+    elif mode == "utility":
+        return {
+            "rainfall": [
+                {"month": "Mon", "value": 780, "avg": 720}, {"month": "Tue", "value": 820, "avg": 740},
+                {"month": "Wed", "value": 842, "avg": 760}, {"month": "Thu", "value": 810, "avg": 750},
+                {"month": "Fri", "value": 795, "avg": 730}, {"month": "Sat", "value": 650, "avg": 620},
+                {"month": "Sun", "value": 580, "avg": 550},
+            ],
+            "elevation": [
+                {"zone": "Zone A", "min": 95, "max": 99, "avg": 97}, {"zone": "Zone B", "min": 88, "max": 96, "avg": 92},
+                {"zone": "Zone C", "min": 92, "max": 98, "avg": 95}, {"zone": "Zone D", "min": 85, "max": 94, "avg": 90},
+            ],
+            "riskDistribution": [
+                {"name": "Operational", "value": 72, "color": "#10b981"}, {"name": "Maintenance", "value": 15, "color": "#f59e0b"},
+                {"name": "At Risk", "value": 10, "color": "#ef4444"}, {"name": "Offline", "value": 3, "color": "#dc2626"},
+            ],
+            "populationDensity": [
+                {"area": "Central", "density": 98, "risk": "low"}, {"area": "North", "density": 92, "risk": "medium"},
+                {"area": "South", "density": 95, "risk": "low"}, {"area": "East", "density": 88, "risk": "high"},
+                {"area": "West", "density": 91, "risk": "medium"},
+            ],
+            "infrastructure": [
+                {"type": "Substations", "count": 42, "atRisk": 5}, {"type": "Pump Stns", "count": 28, "atRisk": 4},
+                {"type": "Cell Towers", "count": 156, "atRisk": 12}, {"type": "Pipelines (km)", "count": 850, "atRisk": 45},
+            ],
+            "timeSeriesRisk": [
+                {"date": "2020", "outages": 15, "load": 8, "maintenance": 3}, {"date": "2021", "outages": 18, "load": 12, "maintenance": 5},
+                {"date": "2022", "outages": 12, "load": 10, "maintenance": 4}, {"date": "2023", "outages": 22, "load": 14, "maintenance": 6},
+                {"date": "2024", "outages": 16, "load": 11, "maintenance": 3}, {"date": "2025", "outages": 12, "load": 8, "maintenance": 2},
+            ],
+        }
+
     # DEFAULT mode: flood
     flood_risk_factor = min(10.0, 1.8 + (humidity / 22.0) + (num_rivers * 0.45))
     
@@ -589,12 +655,12 @@ async def get_analytics(
                 {"type": "Metro Stns", "count": 24, "atRisk": 4},
             ],
             "timeSeriesRisk": [
-                {"date": "2020", "flood": 52, "drought": 38, "earthquake": 15},
-                {"date": "2021", "flood": 58, "drought": 42, "earthquake": 18},
-                {"date": "2022", "flood": 65, "drought": 48, "earthquake": 22},
-                {"date": "2023", "flood": 72, "drought": 55, "earthquake": 28},
-                {"date": "2024", "flood": 78, "drought": 62, "earthquake": 32},
-                {"date": "2025", "flood": 82, "drought": 68, "earthquake": 35},
+                {"date": "2020", "congestion": 52, "accidents": 38, "roadworks": 15},
+                {"date": "2021", "congestion": 58, "accidents": 42, "roadworks": 18},
+                {"date": "2022", "congestion": 65, "accidents": 48, "roadworks": 22},
+                {"date": "2023", "congestion": 72, "accidents": 55, "roadworks": 28},
+                {"date": "2024", "congestion": 78, "accidents": 62, "roadworks": 32},
+                {"date": "2025", "congestion": 82, "accidents": 68, "roadworks": 35},
             ],
         }
 
@@ -643,12 +709,12 @@ async def get_analytics(
                 {"type": "Shelters", "count": infra_counts.get("shelter", 3), "atRisk": shelters_at_risk},
             ],
             "timeSeriesRisk": [
-                {"date": "2020", "flood": 82, "drought": 12, "earthquake": 6},
-                {"date": "2021", "flood": 85, "drought": 14, "earthquake": 8},
-                {"date": "2022", "flood": 88, "drought": 15, "earthquake": 10},
-                {"date": "2023", "flood": 91, "drought": 16, "earthquake": 12},
-                {"date": "2024", "flood": 93, "drought": 17, "earthquake": 14},
-                {"date": "2025", "flood": 95, "drought": 18, "earthquake": 16},
+                {"date": "2020", "permits": 82, "violations": 12, "growth": 6},
+                {"date": "2021", "permits": 85, "violations": 14, "growth": 8},
+                {"date": "2022", "permits": 88, "violations": 15, "growth": 10},
+                {"date": "2023", "permits": 91, "violations": 16, "growth": 12},
+                {"date": "2024", "permits": 93, "violations": 17, "growth": 14},
+                {"date": "2025", "permits": 95, "violations": 18, "growth": 16},
             ],
         }
 
@@ -689,12 +755,12 @@ async def get_analytics(
                 {"type": "Pipelines (km)", "count": 850, "atRisk": 45},
             ],
             "timeSeriesRisk": [
-                {"date": "2020", "flood": 15, "drought": 8, "earthquake": 3},
-                {"date": "2021", "flood": 18, "drought": 12, "earthquake": 5},
-                {"date": "2022", "flood": 12, "drought": 10, "earthquake": 4},
-                {"date": "2023", "flood": 22, "drought": 14, "earthquake": 6},
-                {"date": "2024", "flood": 16, "drought": 11, "earthquake": 3},
-                {"date": "2025", "flood": 12, "drought": 8, "earthquake": 2},
+                {"date": "2020", "outages": 15, "load": 8, "maintenance": 3},
+                {"date": "2021", "outages": 18, "load": 12, "maintenance": 5},
+                {"date": "2022", "outages": 12, "load": 10, "maintenance": 4},
+                {"date": "2023", "outages": 22, "load": 14, "maintenance": 6},
+                {"date": "2024", "outages": 16, "load": 11, "maintenance": 3},
+                {"date": "2025", "outages": 12, "load": 8, "maintenance": 2},
             ],
         }
 

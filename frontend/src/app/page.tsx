@@ -112,6 +112,20 @@ export default function Home() {
     }
   }, []);
 
+  React.useEffect(() => {
+    const handleCreditsUpdate = () => {
+      handleRefreshProfile();
+    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("geonarrative_credits_updated", handleCreditsUpdate);
+    }
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("geonarrative_credits_updated", handleCreditsUpdate);
+      }
+    };
+  }, [handleRefreshProfile]);
+
   const {
     currentLocation,
     mapCenter,

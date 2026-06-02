@@ -48,7 +48,7 @@ export interface AnalyticsData {
   riskDistribution: { name: string; value: number; color: string }[];
   populationDensity: { area: string; density: number; risk: string }[];
   infrastructure: { type: string; count: number; atRisk: number }[];
-  timeSeriesRisk: { date: string; flood: number; drought: number; earthquake: number }[];
+  timeSeriesRisk: { date: string; [key: string]: string | number }[];
 }
 
 export interface ChatMessage {

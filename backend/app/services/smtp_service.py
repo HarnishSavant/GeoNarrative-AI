@@ -264,9 +264,11 @@ class SMTPService:
             outbox_path = os.path.join(outbox_dir, "emails.txt")
             
             # Simple, neat format of the email
+            import datetime
+            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             email_log = f"""
 ============================================================
-TIMESTAMP: {os.popen('echo %date% %time%').read().strip() if os.name == 'nt' else ''}
+TIMESTAMP: {timestamp}
 RECIPIENT: {recipient}
 SUBJECT  : {subject}
 ------------------------------------------------------------

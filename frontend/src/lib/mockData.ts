@@ -331,9 +331,9 @@ export function generateAnalyticsForLocation(location: string, mode: DashboardMo
         { type: "Parking", count: 180, atRisk: 22 },
       ],
       timeSeriesRisk: [
-        { date: "2020", flood: 52, drought: 38, earthquake: 15 }, { date: "2021", flood: 58, drought: 42, earthquake: 18 },
-        { date: "2022", flood: 65, drought: 48, earthquake: 22 }, { date: "2023", flood: 72, drought: 55, earthquake: 28 },
-        { date: "2024", flood: 78, drought: 62, earthquake: 32 }, { date: "2025", flood: 82, drought: 68, earthquake: 35 },
+        { date: "2020", congestion: 52, accidents: 38, roadworks: 15 }, { date: "2021", congestion: 58, accidents: 42, roadworks: 18 },
+        { date: "2022", congestion: 65, accidents: 48, roadworks: 22 }, { date: "2023", congestion: 72, accidents: 55, roadworks: 28 },
+        { date: "2024", congestion: 78, accidents: 62, roadworks: 32 }, { date: "2025", congestion: 82, accidents: 68, roadworks: 35 },
       ],
     };
   }
@@ -366,9 +366,9 @@ export function generateAnalyticsForLocation(location: string, mode: DashboardMo
         { type: "Govt. Bldgs", count: 56, atRisk: 2 },
       ],
       timeSeriesRisk: [
-        { date: "2020", flood: 82, drought: 12, earthquake: 6 }, { date: "2021", flood: 85, drought: 14, earthquake: 8 },
-        { date: "2022", flood: 88, drought: 15, earthquake: 10 }, { date: "2023", flood: 91, drought: 16, earthquake: 12 },
-        { date: "2024", flood: 93, drought: 17, earthquake: 14 }, { date: "2025", flood: 95, drought: 18, earthquake: 16 },
+        { date: "2020", permits: 82, violations: 12, growth: 6 }, { date: "2021", permits: 85, violations: 14, growth: 8 },
+        { date: "2022", permits: 88, violations: 15, growth: 10 }, { date: "2023", permits: 91, violations: 16, growth: 12 },
+        { date: "2024", permits: 93, violations: 17, growth: 14 }, { date: "2025", permits: 95, violations: 18, growth: 16 },
       ],
     };
   }
@@ -399,9 +399,9 @@ export function generateAnalyticsForLocation(location: string, mode: DashboardMo
         { type: "Transformers", count: 380, atRisk: 28 },
       ],
       timeSeriesRisk: [
-        { date: "2020", flood: 15, drought: 8, earthquake: 3 }, { date: "2021", flood: 18, drought: 12, earthquake: 5 },
-        { date: "2022", flood: 12, drought: 10, earthquake: 4 }, { date: "2023", flood: 22, drought: 14, earthquake: 6 },
-        { date: "2024", flood: 16, drought: 11, earthquake: 3 }, { date: "2025", flood: 12, drought: 8, earthquake: 2 },
+        { date: "2020", outages: 15, load: 8, maintenance: 3 }, { date: "2021", outages: 18, load: 12, maintenance: 5 },
+        { date: "2022", outages: 12, load: 10, maintenance: 4 }, { date: "2023", outages: 22, load: 14, maintenance: 6 },
+        { date: "2024", outages: 16, load: 11, maintenance: 3 }, { date: "2025", outages: 12, load: 8, maintenance: 2 },
       ],
     };
   }

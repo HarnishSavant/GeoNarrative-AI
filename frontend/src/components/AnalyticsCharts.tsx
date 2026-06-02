@@ -56,10 +56,14 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
 export default function AnalyticsCharts({ data, dashboardMode = "flood" }: AnalyticsChartsProps) {
   const titles = CHART_TITLES[dashboardMode];
-  // Risk gauge data
-  const riskGaugeData = [
-    { name: "Risk Score", value: 78, fill: "#ef4444" },
-  ];
+  // Calculate a dynamic risk score out of 10 based on riskDistribution high/critical levels
+  const highRiskItem = data.riskDistribution.find(d => d.name.toLowerCase().includes("high") || d.name.toLowerCase().includes("congested") || d.name.toLowerCase().includes("industrial") || d.name.toLowerCase().includes("at risk"));
+  const criticalRiskItem = data.riskDistribution.find(d => d.name.toLowerCase().includes("critical") || d.name.toLowerCase().includes("gridlock") || d.name.toLowerCase().includes("offline"));
+  
+  const highVal = highRiskItem ? highRiskItem.value : 15;
+  const criticalVal = criticalRiskItem ? criticalRiskItem.value : 5;
+  const calculatedRisk = Math.min(10.0, ((highVal * 0.1) + (criticalVal * 0.2)) || 5.0);
+  const gaugePercentage = Math.round(calculatedRisk * 10);
 
   return (
     <div className="space-y-4">
@@ -192,30 +196,31 @@ export default function AnalyticsCharts({ data, dashboardMode = "flood" }: Analy
               <XAxis dataKey="date" tick={{ fontSize: 10 }} />
               <YAxis tick={{ fontSize: 10 }} />
               <Tooltip content={<CustomTooltip />} />
-              <Line
-                type="monotone"
-                dataKey="flood"
-                stroke="#3b82f6"
-                strokeWidth={2}
-                name="Flood"
-                dot={{ r: 3, fill: "#3b82f6" }}
-              />
-              <Line
-                type="monotone"
-                dataKey="drought"
-                stroke="#f59e0b"
-                strokeWidth={2}
-                name="Drought"
-                dot={{ r: 3, fill: "#f59e0b" }}
-              />
-              <Line
-                type="monotone"
-                dataKey="earthquake"
-                stroke="#8b5cf6"
-                strokeWidth={2}
-                name="Earthquake"
-                dot={{ r: 3, fill: "#8b5cf6" }}
-              />
+              {dashboardMode === "flood" ? (
+                <>
+                  <Line type="monotone" dataKey="flood" stroke="#3b82f6" strokeWidth={2} name="Flood" dot={{ r: 3, fill: "#3b82f6" }} />
+                  <Line type="monotone" dataKey="drought" stroke="#f59e0b" strokeWidth={2} name="Drought" dot={{ r: 3, fill: "#f59e0b" }} />
+                  <Line type="monotone" dataKey="earthquake" stroke="#8b5cf6" strokeWidth={2} name="Earthquake" dot={{ r: 3, fill: "#8b5cf6" }} />
+                </>
+              ) : dashboardMode === "traffic" ? (
+                <>
+                  <Line type="monotone" dataKey="congestion" stroke="#ef4444" strokeWidth={2} name="Congestion" dot={{ r: 3, fill: "#ef4444" }} />
+                  <Line type="monotone" dataKey="accidents" stroke="#f59e0b" strokeWidth={2} name="Accidents" dot={{ r: 3, fill: "#f59e0b" }} />
+                  <Line type="monotone" dataKey="roadworks" stroke="#8b5cf6" strokeWidth={2} name="Roadworks" dot={{ r: 3, fill: "#8b5cf6" }} />
+                </>
+              ) : dashboardMode === "urban" ? (
+                <>
+                  <Line type="monotone" dataKey="permits" stroke="#10b981" strokeWidth={2} name="Permits" dot={{ r: 3, fill: "#10b981" }} />
+                  <Line type="monotone" dataKey="violations" stroke="#ef4444" strokeWidth={2} name="Violations" dot={{ r: 3, fill: "#ef4444" }} />
+                  <Line type="monotone" dataKey="growth" stroke="#3b82f6" strokeWidth={2} name="Growth" dot={{ r: 3, fill: "#3b82f6" }} />
+                </>
+              ) : (
+                <>
+                  <Line type="monotone" dataKey="outages" stroke="#ef4444" strokeWidth={2} name="Outages" dot={{ r: 3, fill: "#ef4444" }} />
+                  <Line type="monotone" dataKey="load" stroke="#f59e0b" strokeWidth={2} name="Network Load" dot={{ r: 3, fill: "#f59e0b" }} />
+                  <Line type="monotone" dataKey="maintenance" stroke="#10b981" strokeWidth={2} name="Maintenance" dot={{ r: 3, fill: "#10b981" }} />
+                </>
+              )}
             </LineChart>
           </ResponsiveContainer>
         </div>
@@ -250,9 +255,9 @@ export default function AnalyticsCharts({ data, dashboardMode = "flood" }: Analy
                 stroke="url(#riskGaugeGradient)"
                 strokeWidth="10"
                 strokeLinecap="round"
-                strokeDasharray={`${78 * 3.14} ${100 * 3.14}`}
+                strokeDasharray={`${gaugePercentage * 3.14} ${100 * 3.14}`}
                 initial={{ strokeDasharray: `0 ${100 * 3.14}` }}
-                animate={{ strokeDasharray: `${78 * 3.14} ${100 * 3.14}` }}
+                animate={{ strokeDasharray: `${gaugePercentage * 3.14} ${100 * 3.14}` }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
               />
               <defs>
@@ -264,7 +269,7 @@ export default function AnalyticsCharts({ data, dashboardMode = "flood" }: Analy
               </defs>
             </svg>
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-2xl font-bold text-gray-100">7.8</span>
+              <span className="text-2xl font-bold text-gray-100">{calculatedRisk.toFixed(1)}</span>
               <span className="text-[10px] text-gray-500 uppercase tracking-wider">/ 10</span>
             </div>
           </div>

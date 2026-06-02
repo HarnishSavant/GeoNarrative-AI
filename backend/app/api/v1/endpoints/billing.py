@@ -123,7 +123,7 @@ async def create_razorpay_order(
             req_obj.add_header("Content-Type", "application/json")
             
             # Make the connection
-            with urllib.request.urlopen(req_obj, timeout=6) as response:
+            with urllib.request.urlopen(req_obj, timeout=15) as response:
                 res_data = json.loads(response.read().decode('utf-8'))
                 if "id" in res_data:
                     order_id = res_data["id"]
