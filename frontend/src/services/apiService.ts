@@ -358,6 +358,9 @@ export const apiService = {
       });
       clearTimeout(timeoutId);
       if (!res.ok) {
+        if (res.status === 401) {
+          throw new Error("401 Unauthorized");
+        }
         throw new Error("Failed to fetch user session profile");
       }
       return res.json();
@@ -618,6 +621,17 @@ export const apiService = {
       const err = await res.json();
       throw new Error(err.detail || "Failed to modify password credentials");
     }
+    return res.json();
+  },
+
+  /**
+   * Fetch unified multi-domain urban risk framework metrics
+   */
+  async getUrbanRiskFramework(location: string): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/gis/urban-risk-framework?location=${encodeURIComponent(location)}`, {
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to fetch urban risk framework");
     return res.json();
   },
   

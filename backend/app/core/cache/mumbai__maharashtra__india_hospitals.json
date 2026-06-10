@@ -1,0 +1,4150 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8314957,
+          18.9599377
+        ]
+      },
+      "properties": {
+        "id": 860315256,
+        "name": "Saifee Ambulance",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "GPS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8135089,
+          18.9656765
+        ]
+      },
+      "properties": {
+        "id": 4209578999,
+        "name": "Bhatia",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Chikalwadi, J Dadaji Road, Tardeo",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharashtra",
+        "osm_addr:street": "Tukaram Javji Marg",
+        "osm_amenity": "hospital",
+        "osm_email": "info@bhatiahospital.org",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Bhatia Hospital",
+        "osm_opening_hours": "24/7",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "www.bhatiahospital.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.844575,
+          19.0401523
+        ]
+      },
+      "properties": {
+        "id": 4672225593,
+        "name": "Pikale Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:street": "Mia Mohd Chhotani Road",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Pikale Hospital",
+        "osm_name:hi": "पिकाले अस्पताल"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8179411,
+          19.0066529
+        ]
+      },
+      "properties": {
+        "id": 5090930970,
+        "name": "Peoples Mobile Hospitals",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8405011,
+          18.9994432
+        ]
+      },
+      "properties": {
+        "id": 5099872961,
+        "name": "Global Hospital Super Speciality and Transplant Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "35 Dr E Borges Road, Hospital Avenue, Opposite Shirodkar High School, Parel",
+        "osm_addr:postcode": "400012",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "8024242424",
+        "osm_email": "web.enquiries@globalhospitalsindia.com",
+        "osm_healthcare": "hospital",
+        "osm_operator": "Global Hospital",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "http://www.globalhospitalsindia.com/",
+        "osm_website:1": "https://www.spineexpertmumbai.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8371432,
+          18.9534957
+        ]
+      },
+      "properties": {
+        "id": 5193467221,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Jaslok Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8054881,
+          18.9645402
+        ]
+      },
+      "properties": {
+        "id": 5206554121,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:housenumber": "7",
+        "osm_addr:street": "August Kranti Marg",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Dr. Sunil n. vasani",
+        "osm_opening_hours": "Mo-Su 16:00-18:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8407113,
+          19.0239187
+        ]
+      },
+      "properties": {
+        "id": 6991331185,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:housenumber": "400028",
+        "osm_addr:street": "D L Vaidya Marg",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "DHANVANTARI HOSPITAL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8102066,
+          18.9603152
+        ]
+      },
+      "properties": {
+        "id": 7043448094,
+        "name": "Mangeshikar Access Gynecology and Infertility Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "(Dr Mangeshikar Clinic) Madhav Niwas , 8. Laburnum Road , Bombay",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8276074,
+          18.9230941
+        ]
+      },
+      "properties": {
+        "id": 7043574603,
+        "name": "Vinod Sharma Memorial Medical Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "9th Floor, Room No-91, Lady Ratan Tata Medical & Research Centre 31, Maharshi Karve Road, Cooperage",
+        "osm_addr:postcode": "400021",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8368979,
+          19.0240308
+        ]
+      },
+      "properties": {
+        "id": 7044064894,
+        "name": "Dr.Vaze Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Meghdoot, S.H.Paralkar Marg, Shivaji Park, Dadar (W)",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8283792,
+          19.0135345
+        ]
+      },
+      "properties": {
+        "id": 7044071693,
+        "name": "Asha Surgical and Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Gyaneshwar Apts, 2nd Floor, Off Veer Savarkar Marg, Prabhadevi",
+        "osm_addr:postcode": "400025",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_email": "hkkothawala@yahoo.com",
+        "osm_healthcare": "hospital",
+        "osm_phone": "09821662821",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.821319,
+          18.9576821
+        ]
+      },
+      "properties": {
+        "id": 7044466685,
+        "name": "Dr. Yash Shah Total Eye Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "E -1st Floor, Bhaveshwar Vihar Svp Road, Prathna Samaj,Opposite Hurkiondas Hospital, Girgaum",
+        "osm_addr:postcode": "400004",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8486822,
+          19.0196598
+        ]
+      },
+      "properties": {
+        "id": 7044553386,
+        "name": "Krishna Cardiac Care Centre, Mumbai",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "166-C Krishna Kunj,Khareghat Road, Dr.Ambedkar Road,Dadar( E)",
+        "osm_addr:postcode": "400014",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8325856,
+          19.0139586
+        ]
+      },
+      "properties": {
+        "id": 7045291440,
+        "name": "Siddivinayak Healthcare Pvt Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Ishaan, 1st Floor, Khed Gully, Prabhadevi, Dadar West",
+        "osm_addr:postcode": "400025",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8332373,
+          18.9358357
+        ]
+      },
+      "properties": {
+        "id": 7047557038,
+        "name": "Banaji Eyesurgery and Laser Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Navsari Bldg.240,Dr. D.N. Road",
+        "osm_addr:postcode": "400001",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8306866,
+          18.9868937
+        ]
+      },
+      "properties": {
+        "id": 7047598027,
+        "name": "Nirmala Maternity and Surgical Hospital with Polyclinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Subh Ashish, Subhash Nagar, Estate N M Joshi Marg",
+        "osm_addr:postcode": "400011",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8412236,
+          18.9898598
+        ]
+      },
+      "properties": {
+        "id": 7047933154,
+        "name": "Aryan Hospital and Icu",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Royal Garden Next To Girnar Tower Ambawadi Kalachowki",
+        "osm_addr:postcode": "400033",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8590146,
+          19.0338607
+        ]
+      },
+      "properties": {
+        "id": 7048172474,
+        "name": "Vaishnav Seva Samaj",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "No. 1/ 7, Sindhi Society, opp. Gurukrupa Hotel, Sion",
+        "osm_addr:postcode": "400022",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_operator:type": "government",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8133863,
+          18.956311
+        ]
+      },
+      "properties": {
+        "id": 7048433639,
+        "name": "Foresight Eye Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "105 A&C & 405 A Sukh Sagar, N.S. Patkar Marg, Opera House",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8116697,
+          18.9590608
+        ]
+      },
+      "properties": {
+        "id": 7048777736,
+        "name": "Dr. Nisars Eye Care Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Modi Bhavan, Pandita Ramabai Road, Gamdevi, Grant Road (W)",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8383778,
+          19.0204668
+        ]
+      },
+      "properties": {
+        "id": 7049124019,
+        "name": "Shree Vardhaman Sthanakvasi Jain Shravak Sangh Dadar Sanchalit Navneet Jain Health Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "12, Gyan Mandir Road, Dadar West Railway Station",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8343451,
+          19.0124701
+        ]
+      },
+      "properties": {
+        "id": 7049812966,
+        "name": "Punamiya Hospital, Mumbai",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "101, Inder Tower Gokhale Road (S), Near Tilak Bhavan, Opposite Ashishind Estate, Dadar (West)",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_email": "punamiya.hospital@gmail.com",
+        "osm_healthcare": "hospital",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "http://punamiyahospital.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8366089,
+          18.9707774
+        ]
+      },
+      "properties": {
+        "id": 7050575276,
+        "name": "Prince Aly Khan Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Aga Hall, Nesbit Road, Mazgaon",
+        "osm_addr:postcode": "400010",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "general;gynaecology",
+        "osm_name:mr": "प्रिंस अली खान हॉस्पिटल",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8400777,
+          19.0250711
+        ]
+      },
+      "properties": {
+        "id": 7051069996,
+        "name": "Dr Thakur Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Vidya Bhuvan 121, Shivaji Park, Opp Shiv Sena Bhavan Dadar - West",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8225555,
+          19.0050283
+        ]
+      },
+      "properties": {
+        "id": 7051070010,
+        "name": "Reliance Life Sciences Pvt. Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "3Road Floor, Sadhana House Behind Mahindra Towers, Pandurang Budhkar Marg, Worli Mumbai",
+        "osm_addr:postcode": "400018",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8467025,
+          19.0130174
+        ]
+      },
+      "properties": {
+        "id": 7051831014,
+        "name": "Dr. Karmarkar Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "172 -A Naigaum, Dadar",
+        "osm_addr:postcode": "400014",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8538381,
+          19.0279281
+        ]
+      },
+      "properties": {
+        "id": 7052027524,
+        "name": "Jashem Eye Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Sanjay, Ground Floor, Plot 376, Telang Cross Road No.2, Near Matunga Circle",
+        "osm_addr:postcode": "400019",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8591891,
+          19.0342874
+        ]
+      },
+      "properties": {
+        "id": 7052058100,
+        "name": "Vyas' Surgery",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "2/254, Alka Mansion, Dr Ambedkar Road, Sion West",
+        "osm_addr:postcode": "400022",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8546199,
+          19.0399657
+        ]
+      },
+      "properties": {
+        "id": 7052181497,
+        "name": "Sai Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "90 Feet Road, Ground, 1st, 2nd & 3rd Road, At Masiha Islampura Co-operative Housing Society Ltd., Behind Sion Hospital, Near Dharavi Police Station",
+        "osm_addr:postcode": "400017",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8190404,
+          18.9568031
+        ]
+      },
+      "properties": {
+        "id": 7052365607,
+        "name": "Brahman Sabha, Mhaskar Gruh and General Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "9,Dr, D.D. Sathe Marg",
+        "osm_addr:postcode": "400004",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "general;gynaecology",
+        "osm_phone": "+91 22 23871999",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8432125,
+          19.004984
+        ]
+      },
+      "properties": {
+        "id": 7052388277,
+        "name": "Tata Memorial Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Dr.E Borges Road, Parel",
+        "osm_addr:postcode": "400012",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_email": "info@tmcmail.org; tmcit1@vsnl.com",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "www.tmc.gov.in"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8318681,
+          19.0146877
+        ]
+      },
+      "properties": {
+        "id": 7052963441,
+        "name": "Dr.Palep's Priyank Maternity Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Manoj Co-Op,Hsg,Society,Shankar Ghanekar Marg.Prabhedevi",
+        "osm_addr:postcode": "400025",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "maternity;pathology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8335994,
+          19.0154396
+        ]
+      },
+      "properties": {
+        "id": 7053245833,
+        "name": "Dev Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Shilpa Appts, 1st Floor, Shankar Ghanekar Marg, Off Gokhle Road (S)",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "general",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8451061,
+          19.0136391
+        ]
+      },
+      "properties": {
+        "id": 7053265680,
+        "name": "Suprabha Surgicare",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "15, First Floor, Vincent Court, Near Fire Brigade, Opposite Chitra Cinema, Dr.B.Ambedkar Road, Dadar (East)",
+        "osm_addr:postcode": "400014",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_email": "info@daycaresurgery.com",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "http://www.daycaresurgery.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8520517,
+          19.0253227
+        ]
+      },
+      "properties": {
+        "id": 7053277891,
+        "name": "Dr.Chhatres Maternity and Surgical Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "1/320, Shridhar Niwas,Sir Bhaichandra Road, Matunga",
+        "osm_addr:postcode": "400019",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8380385,
+          19.0241779
+        ]
+      },
+      "properties": {
+        "id": 7053355770,
+        "name": "Well Spring Dr Avinash Phadke Pathlab Clinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Udyam, Ranade Road Shivaji Park",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8128391,
+          18.9747946
+        ]
+      },
+      "properties": {
+        "id": 7054423656,
+        "name": "Shetty Nursing Home (Shetty Health Services Pvt. Ltd.)",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Between Cross Roads Shopping Centre And Tardeo A/C Market, 50, Tardeo Road",
+        "osm_addr:postcode": "400034",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8337845,
+          18.9527132
+        ]
+      },
+      "properties": {
+        "id": 7054447906,
+        "name": "Dholkawalla Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "58,Mohammedali Road",
+        "osm_addr:postcode": "400003",
+        "osm_addr:state": "Maharashtra",
+        "osm_addr:street": "Muhammad Ali Road",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "gynaecology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8416521,
+          19.0307218
+        ]
+      },
+      "properties": {
+        "id": 7054526793,
+        "name": "Surlata Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "1st Fl., Shayog Society, L.J. Road, Next To City Light Cinema, Mahim",
+        "osm_addr:postcode": "400016",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8511733,
+          19.0399822
+        ]
+      },
+      "properties": {
+        "id": 7055262419,
+        "name": "Dr Savlas Child Care Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "103, Jai Ganesh Co-Op Soc, Plot No 206, Opp Sion Hosp-Sion East",
+        "osm_addr:postcode": "400022",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8248367,
+          18.957344
+        ]
+      },
+      "properties": {
+        "id": 7055428168,
+        "name": "Yogeshwar Surgical Clinic and Nursing Home - Mumbai",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Mahaprabhu Krupa, 1st Floor, Room No.5, Near Alankar Cinema, Girgaum -Charni Road",
+        "osm_addr:postcode": "400004",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8243351,
+          18.9925482
+        ]
+      },
+      "properties": {
+        "id": 7055759633,
+        "name": "Ipc Heart Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Mumbai",
+        "osm_addr:postcode": "400008",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8331207,
+          18.9595979
+        ]
+      },
+      "properties": {
+        "id": 7059192086,
+        "name": "M.H. Saboo Siddique Maternity and General Hospital - Masjid",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Imamwada Road, Opposite Mughal Masjid",
+        "osm_addr:postcode": "400009",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "gynaecology;general",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8397457,
+          19.0373922
+        ]
+      },
+      "properties": {
+        "id": 7063077063,
+        "name": "Dr Haresh Shah Prabhat Maternity and Surgical Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Above Prabhat Bazar, 26, Kapad Bazar, Mahim",
+        "osm_addr:postcode": "400016",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8535792,
+          19.0254153
+        ]
+      },
+      "properties": {
+        "id": 7063808889,
+        "name": "Lions Club Of East Bombay",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Matunga",
+        "osm_addr:postcode": "400019",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8225863,
+          19.0128124
+        ]
+      },
+      "properties": {
+        "id": 7064364272,
+        "name": "Worli Hospital For Women",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Pupala Sadan",
+        "osm_addr:postcode": "400030",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8402299,
+          19.0030769
+        ]
+      },
+      "properties": {
+        "id": 7064867159,
+        "name": "K B Haji Bachooali Charitable Ophthalmic and E N T H",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "58-60 Jehangir Merwanji Street Parel",
+        "osm_addr:postcode": "400012",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8449465,
+          19.0056262
+        ]
+      },
+      "properties": {
+        "id": 7066371677,
+        "name": "Parel Institute Of Orthopaedic Specialities",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "96/97, Jerbai Wadia Road, Near Tata Hospital, Opp Vicco House, Bhoiwada, Parel",
+        "osm_addr:postcode": "400012",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8339642,
+          19.0202665
+        ]
+      },
+      "properties": {
+        "id": 7066505690,
+        "name": "Ashtavinayak Maternity Surgical and Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "104, Ramgiri Heights, Mtnl Marg, Dadari (W)",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8095293,
+          18.9580372
+        ]
+      },
+      "properties": {
+        "id": 7066505700,
+        "name": "Bombay City Eye Institute and Research Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Apex centre, 5 Babulnath Road, OppositeBabulnath Temple, Grant Road",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_email": "Contact@EyeCareForAll.in",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "http://www.eyecareforall.in/eyecareforall/index.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8485903,
+          19.0051336
+        ]
+      },
+      "properties": {
+        "id": 7066505743,
+        "name": "Asmi Arthroscopy and Sports Medicine Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Savitri Sadan, 168-A, Dr. Ambedkar Road",
+        "osm_addr:postcode": "400014",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8182693,
+          18.9547128
+        ]
+      },
+      "properties": {
+        "id": 7066505804,
+        "name": "Beramjis Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "266 , Patel Bldg Opposite Central Cinema Girgaum",
+        "osm_addr:postcode": "400004",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8451866,
+          19.015612
+        ]
+      },
+      "properties": {
+        "id": 7066695543,
+        "name": "G S B S Medical Trust",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Shilpa Apartment Dasturwadi Dadar E Mumbai",
+        "osm_addr:postcode": "400014",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8401695,
+          19.0346836
+        ]
+      },
+      "properties": {
+        "id": 7066865609,
+        "name": "Gupte Maternity and Surgical Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Rajdeep, 143, Lt. Dilip Gupte Road, Mahim",
+        "osm_addr:postcode": "400016",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8275739,
+          18.923141
+        ]
+      },
+      "properties": {
+        "id": 7068194983,
+        "name": "Spectrum Health Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "81-84 Lady R.T.Med.&Reserch Cntre",
+        "osm_addr:postcode": "400049",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8286038,
+          18.9685072
+        ]
+      },
+      "properties": {
+        "id": 7069814001,
+        "name": "Nagori Clinic and Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "245-A, Maulana Azad Road , Nagpada",
+        "osm_addr:housenumber": "247",
+        "osm_addr:postcode": "400008",
+        "osm_addr:state": "Maharashtra",
+        "osm_addr:street": "Maulana Azad Road North",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8087763,
+          18.9634974
+        ]
+      },
+      "properties": {
+        "id": 7069814052,
+        "name": "Cumbala Hill Hospital and Heart Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "93/95, August Kranti Marg, August Kranti Maidan",
+        "osm_addr:postcode": "400036",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_email": "support@cumbalahillhospital.com",
+        "osm_healthcare": "hospital",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "www.chh.co.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8485957,
+          18.9772251
+        ]
+      },
+      "properties": {
+        "id": 7070054643,
+        "name": "Sai Raj Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Queystreet, OppositeSaibabamandir, Reayroad(E)",
+        "osm_addr:postcode": "400010",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8337315,
+          19.0196078
+        ]
+      },
+      "properties": {
+        "id": 7070711758,
+        "name": "Shreedhar Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Anil Apartment Ist Floor College Street Behind Prabhadevi Teleophone Exchange Agar Bazar Dadar",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8195715,
+          18.9661811
+        ]
+      },
+      "properties": {
+        "id": 7070857459,
+        "name": "Sadhu-Kamal Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Bldg. No.2, 1st Floor, R.No. 4, 5 & 10, Navjivan Society, Lamington Road",
+        "osm_addr:postcode": "400008",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8278414,
+          18.9415002
+        ]
+      },
+      "properties": {
+        "id": 7072544668,
+        "name": "Zain Eye Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "3-D, Kakad House, 11, 3rd Floor, Opposite Liberty Cinema, Vithaldas Thackersey Marg, New Marine Lines",
+        "osm_addr:postcode": "400020",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "http://zaineyecare.net/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8229122,
+          18.9571912
+        ]
+      },
+      "properties": {
+        "id": 7073672865,
+        "name": "Dr.Pai Dhungat Maternity and Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "V.P.Road",
+        "osm_addr:postcode": "400004",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8201012,
+          18.9498421
+        ]
+      },
+      "properties": {
+        "id": 7073944671,
+        "name": "Smt. Kamladevi Gauridutt Mittal Ayurvedic Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Netaji Subash Road",
+        "osm_addr:postcode": "400002",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8133488,
+          18.9563909
+        ]
+      },
+      "properties": {
+        "id": 7073949849,
+        "name": "Samyak Drishti Eye Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "202-A, Sukh Sagar,2nd Floor, N S Patkar Marg",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8313598,
+          18.9893399
+        ]
+      },
+      "properties": {
+        "id": 7074541583,
+        "name": "Sankalp Eye Care Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Yashashree Society N M Joshi Marg Opp Zee News Bldg Lower Parel",
+        "osm_addr:postcode": "400011",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8549686,
+          19.0120922
+        ]
+      },
+      "properties": {
+        "id": 7079665691,
+        "name": "Shobha Maternity and Surgical Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "17/1, Vijay Niwas, R.A.K Road Wadala (W)",
+        "osm_addr:postcode": "400031",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8383537,
+          18.9592421
+        ]
+      },
+      "properties": {
+        "id": 7080141269,
+        "name": "Smt.Laxmiben Dhanji Devshi Health Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Latur",
+        "osm_addr:full": "122, Dr Maheshwari Rd, Dongri, Umerkhadi",
+        "osm_addr:postcode": "400009",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8078722,
+          18.9639954
+        ]
+      },
+      "properties": {
+        "id": 7080205222,
+        "name": "Gynaecworld",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Mumbai",
+        "osm_addr:postcode": "400026",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8427344,
+          19.0363697
+        ]
+      },
+      "properties": {
+        "id": 7080269652,
+        "name": "Ashwini Accident Hospital and Poly Clinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Ganesh Apt. Ground Floor, L. J. Road, Opposite Sitladevi Temple, Mahim",
+        "osm_addr:postcode": "400014",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8145584,
+          18.9734559
+        ]
+      },
+      "properties": {
+        "id": 7082733172,
+        "name": "Anudhiti Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "47-A, Walchand Terraces, Opp Tardeo A/C Market, Tardeo",
+        "osm_addr:postcode": "400034",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8275497,
+          18.9230674
+        ]
+      },
+      "properties": {
+        "id": 7083190122,
+        "name": "Abhishek Day Care Institute and Medical Research Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "74/78/Lady Ratan Tata M R C Karve Road, Cooperage",
+        "osm_addr:postcode": "400021",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8275685,
+          19.0146725
+        ]
+      },
+      "properties": {
+        "id": 7086283490,
+        "name": "Varad Medical Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "14,Ground Floor Muljee House,Veer Savarkar Marg,Prabhadevi",
+        "osm_addr:postcode": "400025",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8498315,
+          19.0230349
+        ]
+      },
+      "properties": {
+        "id": 7086409774,
+        "name": "Icon The Eye Consultants Eye and Laser Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "153-B Dongre Building Hindu Colony Opp Ruia College Matunga (Cr)",
+        "osm_addr:postcode": "400019",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8116241,
+          18.9654379
+        ]
+      },
+      "properties": {
+        "id": 7086734179,
+        "name": "Infiniti Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "6,Jaymahal,French Bridge,Opera House, Next To Patidar Samaj Hall",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8289157,
+          18.9666435
+        ]
+      },
+      "properties": {
+        "id": 7206288300,
+        "name": "Dawood Multispeciality Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:housenumber": "21/22",
+        "osm_addr:postcode": "400008",
+        "osm_addr:street": "Memni Buidling, Dimtimakar Road",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "gynaecology;surgery;paediatrics;orthopaedics;general",
+        "osm_opening_hours": "09:30-22:30, We off",
+        "osm_operator": "sabusiddique",
+        "osm_operator:type": "public",
+        "osm_phone": "+91 22 23091413, +91 22 23051797"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8284384,
+          18.966675
+        ]
+      },
+      "properties": {
+        "id": 7207893889,
+        "name": "Tibbia Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400008",
+        "osm_addr:street": "Duncan Road, Dalal Estate, Kamathipura",
+        "osm_amenity": "hospital",
+        "osm_facility:unani": "yes",
+        "osm_healthcare": "clinic",
+        "osm_healthcare:speciality": "general"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8334612,
+          18.9538884
+        ]
+      },
+      "properties": {
+        "id": 7207893890,
+        "name": "Noor Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:full": "49, Mohammed Ali Road near Masjid Bunder, Pydhonie, Mumbai 400003",
+        "osm_addr:housenumber": "49",
+        "osm_addr:postcode": "400003",
+        "osm_addr:street": "Mohammed Ali Road",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "general;gynaecology"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8345389,
+          18.9456103
+        ]
+      },
+      "properties": {
+        "id": 7207893891,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:full": "1st Floor, Greenstone Heritage, Commercial premises, C-Wing, Chhatrapati Shivaji Terminus Area, Mumbai 400001",
+        "osm_addr:postcode": "400001",
+        "osm_amenity": "hospital",
+        "osm_emergency": "no",
+        "osm_healthcare": "laboratory",
+        "osm_healthcare:speciality": "blood_check",
+        "osm_phone": "+91 22 2344 8024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.830035,
+          18.98419
+        ]
+      },
+      "properties": {
+        "id": 7225067144,
+        "name": "Kasturba Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Near Nirmal Park Railway Quarters, Chinchpokli",
+        "osm_addr:postcode": "400011",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_description": "Civil Hospital/General Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.816903,
+          19.0017314
+        ]
+      },
+      "properties": {
+        "id": 7225067153,
+        "name": "ESIS Hospital WORLI",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "BDD Chawls Worli, behind Poddar Hospital",
+        "osm_addr:postcode": "400018",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8162624,
+          19.0022803
+        ]
+      },
+      "properties": {
+        "id": 7225067192,
+        "name": "Poddar Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Dr Annie Besant Road, B Wing, BDD Chawls Worli",
+        "osm_addr:postcode": "400018",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.820968,
+          18.971194
+        ]
+      },
+      "properties": {
+        "id": 7225067213,
+        "name": "Nair Hospital Dental College",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "55, Dr Anandrao Nair Marg, Near Mumbai Central Railway Station, Mumbai",
+        "osm_addr:postcode": "400008",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_description": "Medical Colleges Hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8582046,
+          19.0369195
+        ]
+      },
+      "properties": {
+        "id": 7225067271,
+        "name": "L.T.Muncipal Medical College and Sion Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Dr Babasaheb Ambedkar Road, Sion West, Sion",
+        "osm_addr:postcode": "400022",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_description": "Medical Colleges Hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8219188,
+          18.9742153
+        ]
+      },
+      "properties": {
+        "id": 7225067284,
+        "name": "BYL Nair hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Dr. A. L. Nair Road, Mumbai",
+        "osm_addr:postcode": "400008",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_description": "Medical Colleges Hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.838827,
+          18.95168
+        ]
+      },
+      "properties": {
+        "id": 7226727393,
+        "name": "General Hospital, Janabai Rokade",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Janabai Madhavrao Rokade Municipal School Ground Floor, Masjid Bunder Katha Bazzar, Mumbai",
+        "osm_addr:postcode": "400009",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8340909,
+          18.9540069
+        ]
+      },
+      "properties": {
+        "id": 7433481437,
+        "name": "The Muslim Ambulance Society Diagnostic Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_emergency": "no",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8368049,
+          18.9596948
+        ]
+      },
+      "properties": {
+        "id": 7433481438,
+        "name": "Habib Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "general;paediatrics;gynaecology;orthopaedics",
+        "osm_phone": "+91-22-23788100",
+        "osm_website": "http://habibhospital.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.831912,
+          18.9660613
+        ]
+      },
+      "properties": {
+        "id": 7433682214,
+        "name": "Nagpada Police Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Shreeram Rane Chowk, Police Colony, New Nagpada, Byculla, Mumbai",
+        "osm_addr:postcode": "400008",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:mr": "नागपाडा पोलीस रुग्णालय",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8357505,
+          18.9724219
+        ]
+      },
+      "properties": {
+        "id": 7433749757,
+        "name": "Rajshree Maternity",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:postcode": "400010",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "gynaecology",
+        "osm_name:mr": "राजश्री मैटरनिटी"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8357371,
+          18.9749545
+        ]
+      },
+      "properties": {
+        "id": 7433829905,
+        "name": "Masina Cancer Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "oncology"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8265104,
+          18.961983
+        ]
+      },
+      "properties": {
+        "id": 7607557871,
+        "name": "BMC Eye Hospital ,Kamathipura",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "MS Ali Road, Siddharth Nagar, Kamathipura, Mumbai",
+        "osm_addr:postcode": "400008",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8128747,
+          18.9785849
+        ]
+      },
+      "properties": {
+        "id": 7607886540,
+        "name": "All India Institute of Physical Medicine and Rehabilitation",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Haji Ali, Keshavrao Khadye Marg",
+        "osm_addr:postcode": "400034",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.823862,
+          18.959185
+        ]
+      },
+      "properties": {
+        "id": 7664032187,
+        "name": "Dr. Sanjay Shah Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Khemraj Srikrishna Das Marg, Grant Road, Khetwadi, Girgaon, Mumbai",
+        "osm_addr:postcode": "400004",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8236501,
+          18.9513853
+        ]
+      },
+      "properties": {
+        "id": 7664032188,
+        "name": "Suryakant Wagal Maternity Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Zaobawadi Road, Marine Lines East, Thakurdwar, Kalbadevi, Mumbai",
+        "osm_addr:postcode": "400002",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.835058,
+          19.012455
+        ]
+      },
+      "properties": {
+        "id": 7664032192,
+        "name": "Gorai Naka Nalasopara Zoya Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "R K Madani Building, Babasaheb Ambedkar Nagar, Mumbai",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.832811,
+          18.923038
+        ]
+      },
+      "properties": {
+        "id": 7664032193,
+        "name": "Kalajot Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Devidas Mansion, 4, Behind Taj Hotel, Apollo Bandar, Colaba, Mumbai",
+        "osm_addr:postcode": "400005",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8230369,
+          18.9887771
+        ]
+      },
+      "properties": {
+        "id": 7664032196,
+        "name": "Anand Niketan Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "20, Dr E Moses Road, Gandhi Nagar, Upper Worli, Lower Parel, Mumbai",
+        "osm_addr:postcode": "400013",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_opening_hours": "24/7",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.807685,
+          18.956001
+        ]
+      },
+      "properties": {
+        "id": 7664032197,
+        "name": "Desa's Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Dadyseth Road, Opp Bombay Garage, Chowpatty, Mumbai",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8115973,
+          18.9570962
+        ]
+      },
+      "properties": {
+        "id": 7664032200,
+        "name": "Dolby Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "KM Munshi Road, Gamdevi, Mumbai",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8424841,
+          19.0146087
+        ]
+      },
+      "properties": {
+        "id": 7664032202,
+        "name": "Ashvini Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Rupal Apartment, 1st Floor, Dadasaheb Phalke Road, Dadar East, Mumbai",
+        "osm_addr:postcode": "400014",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.838751,
+          18.967509
+        ]
+      },
+      "properties": {
+        "id": 7664032203,
+        "name": "Dr. Shantilal Oza Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "37, St Mary Road, Tadwadi, Mazgaon, Mumbai",
+        "osm_addr:postcode": "400010",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.854633,
+          19.040411
+        ]
+      },
+      "properties": {
+        "id": 7664032209,
+        "name": "Janani Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Dharavi Vivekananda Cooperative Housing Society Limited, RP Nagar, Dharavi, Mumbai",
+        "osm_addr:postcode": "400017",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.835476,
+          19.008175
+        ]
+      },
+      "properties": {
+        "id": 7664032211,
+        "name": "Laxmi Niwas General Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Elphinstone Bridge, Babasaheb Ambedkar Nagar, Parel, Mumbai",
+        "osm_addr:postcode": "400012",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8386025,
+          19.0358599
+        ]
+      },
+      "properties": {
+        "id": 7664032213,
+        "name": "New Ratna Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Sitladevi Temple Road, Mahim West, Mahim, Mumbai",
+        "osm_addr:postcode": "400016",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8102818,
+          18.9582867
+        ]
+      },
+      "properties": {
+        "id": 7664032214,
+        "name": "Smt. Motiben B. Dalvi Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "N S Patkar Marg, Opp Westside, Babulnath, Dadi Sheth Wadi, Gamdevi, Mumbai",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.833644,
+          19.012145
+        ]
+      },
+      "properties": {
+        "id": 7664032215,
+        "name": "Punamiya Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "101, Inder Tower, Gokhale Road, Near Tilak Bhavan, Dadar West, Mumbai",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7952414,
+          18.9459308
+        ]
+      },
+      "properties": {
+        "id": 7664032217,
+        "name": "Khimji Jeeva Sanitorium Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "2, Banganga Cross Lane, Teen Batti, Malabar Hill, Mumbai",
+        "osm_addr:postcode": "400006",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8376926,
+          18.9881485
+        ]
+      },
+      "properties": {
+        "id": 7664032218,
+        "name": "Astha Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Digvijay Mill Building, Dattaram Lad Marg, Ghodapdeo, Byculla East, Mumbai",
+        "osm_addr:postcode": "400033",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8261774,
+          19.015443
+        ]
+      },
+      "properties": {
+        "id": 7664032219,
+        "name": "BMC Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Old Prabhadevi Road, G-South Ward, Dadar West, Prabhadevi, Mumbai",
+        "osm_addr:postcode": "400025",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "general",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.807333,
+          18.957089
+        ]
+      },
+      "properties": {
+        "id": 7664032220,
+        "name": "Hospital For Women Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Rambha Bhavan, Near Babulnath Temple, Khareghat Colony, Malabar Hill, Mumbai",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.840027,
+          19.03978
+        ]
+      },
+      "properties": {
+        "id": 7664032224,
+        "name": "Welkarwadi BMC Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Welkarwadi BMC Building, LJ Cross Road, Opp.Darga Sarff, Mahim West, Mahim, Mumbai",
+        "osm_addr:postcode": "400016",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8084083,
+          18.9559782
+        ]
+      },
+      "properties": {
+        "id": 7664032225,
+        "name": "Dr. Nadeem Rais Endocrinologist",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Baig Mansion, Chowpatty Medical Centre 3, Babulnath Road, Mumbai",
+        "osm_addr:postcode": "400007",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8400357,
+          19.0363379
+        ]
+      },
+      "properties": {
+        "id": 7664032231,
+        "name": "Raj Ratan Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Bobby Apartments, Near Mahim Bazar, P.O., Kapad Bazar, Mahim West, Mumbai",
+        "osm_addr:postcode": "400016",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8403416,
+          18.9368113
+        ]
+      },
+      "properties": {
+        "id": 7664032233,
+        "name": "Reliance Health Ventures Limited Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "5, Walchand Hirachand Marg, Ballard Estate, Fort, Mumbai",
+        "osm_addr:postcode": "400001",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8219132,
+          18.9730222
+        ]
+      },
+      "properties": {
+        "id": 7664032237,
+        "name": "Nair Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "43-A/43B, Dr Anandrao Nair Marg, RTO Colony, Mumbai Central, Mumbai",
+        "osm_addr:postcode": "400008",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8553219,
+          19.04033
+        ]
+      },
+      "properties": {
+        "id": 7664032240,
+        "name": "Lelavati Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Bandra Reclamation Road, Muslim Nagar, Kumbhar Wada, Bandra West, Mumbai",
+        "osm_addr:postcode": "400017",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.854812,
+          19.040315
+        ]
+      },
+      "properties": {
+        "id": 7664032241,
+        "name": "Aayush Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Dharavi Vivekananda Cooperative Housing Society Limited, 90 Feet Road, Muslim Nagar, RP Nagar, Dharavi, Mumbai",
+        "osm_addr:postcode": "400017",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8294352,
+          18.9921984
+        ]
+      },
+      "properties": {
+        "id": 7664032244,
+        "name": "Mhaskar Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "31, Lower Parel East, BDD Chawl, Lower Parel, Mumbai",
+        "osm_addr:postcode": "400013",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8416085,
+          18.9764756
+        ]
+      },
+      "properties": {
+        "id": 8797105668,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Sant Savata Mali Marg, Naralwadi, Sewri, Mumbai",
+        "osm_addr:postcode": "400027",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8460141,
+          19.0115774
+        ]
+      },
+      "properties": {
+        "id": 8797726541,
+        "name": "Naigaon Municipal Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "SS Wagh Marg, Old bdd chawl, Naigaon, Dadar, Mumbai",
+        "osm_addr:postcode": "400014",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8237596,
+          18.9752297
+        ]
+      },
+      "properties": {
+        "id": 8817020641,
+        "name": "Dr Mudit Khanna",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:housenumber": "1877",
+        "osm_addr:postcode": "400011",
+        "osm_addr:street": "Doctor Anandrao Nair Marg, Near Agripada Police Station Mumbai Central East, Agripada",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "Arthroplasty;Arthroscopy;Hip_Replacement;Knee_Replacement;Trauma",
+        "osm_website": "https://www.drmuditkhanna.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8419304,
+          19.0207825
+        ]
+      },
+      "properties": {
+        "id": 9215659357,
+        "name": "Thyrocare Aarogyam Center - Dadar West",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Dadar West",
+        "osm_addr:postcode": "400028",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_description": "Private Hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8271144,
+          18.9783359
+        ]
+      },
+      "properties": {
+        "id": 10616180012,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8288189,
+          18.9666988
+        ]
+      },
+      "properties": {
+        "id": 12555159227,
+        "name": "siddiqui",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:housenumber": "222",
+        "osm_addr:postcode": "400008",
+        "osm_addr:street": "Dimtimakar Road",
+        "osm_amenity": "hospital",
+        "osm_email": "sshaikh@gmail.com",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "dentist;ophthalmology;orthodontics;dermatology;biology;gynaecology;radiology;otolaryngology;orthopaedics;internal;osteopathy;plastic_surgery;chiropractic;physiotherapy;urology;general;cardiology;surgery;neurology;emergency;psychiatry;traditional_chinese_m",
+        "osm_opening_hours": "Mo-Su 09:00-21:00",
+        "osm_operator": "iffat",
+        "osm_operator:type": "public"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.831386,
+          18.9232674
+        ]
+      },
+      "properties": {
+        "id": 12560946824,
+        "name": "Apollo Hospitals",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-12",
+        "osm_healthcare": "hospital",
+        "osm_operator": "Apollo Hospitals",
+        "osm_operator:type": "private",
+        "osm_operator:wikidata": "Q4780321"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8274992,
+          18.9231434
+        ]
+      },
+      "properties": {
+        "id": 12573856473,
+        "name": "Indian Cancer Society",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400021",
+        "osm_addr:street": "Maharshi Karve Rd, Nariman Point",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8414756,
+          18.9899194
+        ]
+      },
+      "properties": {
+        "id": 12603333590,
+        "name": "Sattva Pediatric - Dr. Rishabh K. Shah",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:housenumber": "36/2515 Abhyudayanagar Sagar Chs",
+        "osm_addr:postcode": "400033",
+        "osm_addr:street": "G D Ambedkar Marg (Parel Tank Road)",
+        "osm_amenity": "hospital",
+        "osm_email": "sattvapediatric@gmail.com",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "paediatrics;vaccination;neonatology;child_psychiatry",
+        "osm_image": "https://lh3.googleusercontent.com/p/AF1QipNqWO4N20NhKCfqGCxIpUpdiu8KE_mlghX88Cle=s1360-w1360-h1020",
+        "osm_level": "0",
+        "osm_mobile": "+918655285545",
+        "osm_operator": "Dr. Rishabh K. Shah",
+        "osm_operator:type": "private",
+        "osm_payment:cards": "yes",
+        "osm_payment:cash": "yes",
+        "osm_payment:credit_cards": "yes",
+        "osm_payment:debit_cards": "yes",
+        "osm_payment:upi": "yes",
+        "osm_website": "https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LE_LMTbILso1YLRSNagwTko1T04zNLO0MDAxNk0ytTKoMDExSzY3Tk42TkkyTDJMM_cSKE4sKSlLVChITclMLCnKTAYA7LAV0Q&q=sattva+pediatric&oq=sattva+pediat&gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8296146,
+          18.9192257
+        ]
+      },
+      "properties": {
+        "id": 13377774440,
+        "name": "Kataria eye clinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "mumbai",
+        "osm_addr:postcode": "400005",
+        "osm_addr:street": "s bharucha marg",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_operator": "Mr. Kataria",
+        "osm_operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8386903,
+          19.0009418
+        ]
+      },
+      "properties": {
+        "id": 13633845989,
+        "name": "M J Speciality Clinic - Dr Manoj Jain",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:postcode": "400012",
+        "osm_addr:street": "Royal imperia building, Parmar guruji Marg, lane, next to Bharat bank, opposite to global hospital",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "orthopaedic_and_spine_surgeon",
+        "osm_website": "https://www.drmanojjainortho.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8404522,
+          18.9994082
+        ]
+      },
+      "properties": {
+        "id": 13666342137,
+        "name": "Global Hospital Super Speciality and Transplant Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:postcode": "400012",
+        "osm_addr:street": "Gleneagles Hospital Parel",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "spine_surgery",
+        "osm_official_name": "Dr. Uday Pawar",
+        "osm_website": "https://www.spineexpertmumbai.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.803795,
+              18.9723999
+            ],
+            [
+              72.8041555,
+              18.9723187
+            ],
+            [
+              72.8043958,
+              18.972619
+            ],
+            [
+              72.8048336,
+              18.9727408
+            ],
+            [
+              72.8047992,
+              18.9728706
+            ],
+            [
+              72.80431,
+              18.9727408
+            ],
+            [
+              72.8040954,
+              18.9724486
+            ],
+            [
+              72.8038294,
+              18.9725135
+            ],
+            [
+              72.803795,
+              18.9723999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 39223162,
+        "name": "ब्रीच कँडी हॉस्पिटल",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_building:levels": "10",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Breach Candy Hospital",
+        "osm_name:hi": "ब्रीच कैंडी अस्पताल",
+        "osm_source": "Yahoo",
+        "osm_wikidata": "Q4959103",
+        "osm_wikipedia": "en:Breach Candy Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8092481,
+              18.9578361
+            ],
+            [
+              72.809128,
+              18.95769
+            ],
+            [
+              72.8093254,
+              18.957625
+            ],
+            [
+              72.8094198,
+              18.9577387
+            ],
+            [
+              72.8092481,
+              18.9578361
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 39838498,
+        "name": "Ruxmani Lying in Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_building": "apartments"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8280619,
+              18.940198
+            ],
+            [
+              72.8287516,
+              18.9403654
+            ],
+            [
+              72.8284385,
+              18.9413659
+            ],
+            [
+              72.8277085,
+              18.9411477
+            ],
+            [
+              72.8275769,
+              18.9411
+            ],
+            [
+              72.8274988,
+              18.9412904
+            ],
+            [
+              72.8270883,
+              18.941179
+            ],
+            [
+              72.8272539,
+              18.9406678
+            ],
+            [
+              72.8278239,
+              18.9408663
+            ],
+            [
+              72.8280619,
+              18.940198
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 46715024,
+        "name": "Bombay Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Bombay Hospital",
+        "osm_name:hi": "बॉम्बे हॉस्पिटल",
+        "osm_name:mr": "बॉम्बे हॉस्पिटल",
+        "osm_source": "Yahoo",
+        "osm_wikipedia": "en:Bombay Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8581106,
+              19.0360806
+            ],
+            [
+              72.8583026,
+              19.0358885
+            ],
+            [
+              72.8597511,
+              19.0353273
+            ],
+            [
+              72.860318,
+              19.0367462
+            ],
+            [
+              72.8586434,
+              19.0373889
+            ],
+            [
+              72.8581106,
+              19.0360806
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 49681498,
+        "name": "Lokmanya Tilak Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:postcode": "400022",
+        "osm_addr:street": "Laxmibai Kelkar Marg",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_helipad": "no",
+        "osm_name:etymology:wikidata": "Q312555",
+        "osm_wikidata": "Q6668710",
+        "osm_wikipedia": "en:Lokmanya Tilak Municipal General Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8381355,
+              18.9407336
+            ],
+            [
+              72.8381769,
+              18.9408227
+            ],
+            [
+              72.8379096,
+              18.9409286
+            ],
+            [
+              72.8377799,
+              18.94098
+            ],
+            [
+              72.8375868,
+              18.9405589
+            ],
+            [
+              72.8379838,
+              18.9404067
+            ],
+            [
+              72.8380263,
+              18.9404982
+            ],
+            [
+              72.8379784,
+              18.9405183
+            ],
+            [
+              72.8380857,
+              18.9407568
+            ],
+            [
+              72.8381355,
+              18.9407336
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 50884815,
+        "name": "St George Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "opp. C S T Railway Station,",
+        "osm_addr:postcode": "400001",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_building": "yes",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_wikidata": "Q7593225",
+        "osm_wikimedia_commons": "Category:St George Hospital, Mumbai",
+        "osm_wikipedia": "en:St George Hospital, Mumbai"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8185702,
+              18.9521343
+            ],
+            [
+              72.8187022,
+              18.9522816
+            ],
+            [
+              72.8177592,
+              18.9529406
+            ],
+            [
+              72.8176647,
+              18.9528291
+            ],
+            [
+              72.8176966,
+              18.9527596
+            ],
+            [
+              72.8185702,
+              18.9521343
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 56199740,
+        "name": "Saifee Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "15/17, Maharshi Karve Marg",
+        "osm_addr:postcode": "400004",
+        "osm_addr:state": "Maharashtra",
+        "osm_addr:street": "Maharshi Karve Road",
+        "osm_amenity": "hospital",
+        "osm_building": "yes",
+        "osm_email": "write@saifeehospital.com",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "general;gynaecology;cardiology;surgery",
+        "osm_name:en": "Saifee Hospital",
+        "osm_name:etymology:wikidata": "Q7675438",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.saifeehospital.com/",
+        "osm_wikidata": "Q7400018",
+        "osm_wikimedia_commons": "Category:Saifee Hospital",
+        "osm_wikipedia": "en:Saifee Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8374771,
+              18.9432496
+            ],
+            [
+              72.8377433,
+              18.9435985
+            ],
+            [
+              72.8379427,
+              18.9441657
+            ],
+            [
+              72.838609,
+              18.9438793
+            ],
+            [
+              72.8391722,
+              18.9436665
+            ],
+            [
+              72.8390285,
+              18.9431558
+            ],
+            [
+              72.838564,
+              18.9412732
+            ],
+            [
+              72.8380998,
+              18.9392546
+            ],
+            [
+              72.8371388,
+              18.9395207
+            ],
+            [
+              72.8369286,
+              18.9414178
+            ],
+            [
+              72.8369878,
+              18.9416584
+            ],
+            [
+              72.8372772,
+              18.9416522
+            ],
+            [
+              72.8374771,
+              18.9432496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 107441511,
+        "name": "St George Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "St. George's Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8574014,
+              19.0211771
+            ],
+            [
+              72.8589049,
+              19.0209503
+            ],
+            [
+              72.8588338,
+              19.0204278
+            ],
+            [
+              72.8605096,
+              19.0201928
+            ],
+            [
+              72.8602182,
+              19.0192046
+            ],
+            [
+              72.8595165,
+              19.0192633
+            ],
+            [
+              72.8591857,
+              19.0194047
+            ],
+            [
+              72.8589927,
+              19.0193824
+            ],
+            [
+              72.8589021,
+              19.0192186
+            ],
+            [
+              72.8588785,
+              19.0189989
+            ],
+            [
+              72.8575206,
+              19.0190616
+            ],
+            [
+              72.8569821,
+              19.0193913
+            ],
+            [
+              72.8569997,
+              19.0196684
+            ],
+            [
+              72.8574014,
+              19.0211771
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 112781797,
+        "name": "Acworth Leper Asylum",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_historic": "public"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8425819,
+              18.9960758
+            ],
+            [
+              72.842726,
+              18.9961997
+            ],
+            [
+              72.8431135,
+              18.996905
+            ],
+            [
+              72.8436316,
+              18.9967467
+            ],
+            [
+              72.8435429,
+              18.9972483
+            ],
+            [
+              72.8419594,
+              18.9979121
+            ],
+            [
+              72.8418229,
+              18.9976802
+            ],
+            [
+              72.8410548,
+              18.9979736
+            ],
+            [
+              72.8405206,
+              18.9971823
+            ],
+            [
+              72.8415405,
+              18.9966368
+            ],
+            [
+              72.841729,
+              18.9965141
+            ],
+            [
+              72.8425819,
+              18.9960758
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113561019,
+        "name": "Mahatma Gandhi Memorial Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_healthcare": "hospital",
+        "osm_name:etymology:wikidata": "Q1001"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.84339,
+              19.0059618
+            ],
+            [
+              72.8433811,
+              19.0054595
+            ],
+            [
+              72.8434402,
+              19.0054586
+            ],
+            [
+              72.8434375,
+              19.0053064
+            ],
+            [
+              72.8426836,
+              19.0053183
+            ],
+            [
+              72.842688,
+              19.0055649
+            ],
+            [
+              72.8427964,
+              19.0055632
+            ],
+            [
+              72.8428036,
+              19.0059711
+            ],
+            [
+              72.84339,
+              19.0059618
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113570522,
+        "name": "Tata Memorial Cancer Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "Mumbai",
+        "osm_addr:postcode": "400001",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "radiology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8437904,
+              19.0020113
+            ],
+            [
+              72.8438994,
+              19.0031178
+            ],
+            [
+              72.8452288,
+              19.0043243
+            ],
+            [
+              72.8459264,
+              19.0043242
+            ],
+            [
+              72.8462465,
+              19.0041072
+            ],
+            [
+              72.8463971,
+              19.0039163
+            ],
+            [
+              72.8464655,
+              19.0034416
+            ],
+            [
+              72.8466015,
+              19.0031813
+            ],
+            [
+              72.846798,
+              19.0029646
+            ],
+            [
+              72.8470324,
+              19.0028775
+            ],
+            [
+              72.8468803,
+              19.0022389
+            ],
+            [
+              72.8462424,
+              19.0005585
+            ],
+            [
+              72.8456701,
+              19.0008682
+            ],
+            [
+              72.8447301,
+              19.0013768
+            ],
+            [
+              72.8437904,
+              19.0020113
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113576203,
+        "name": "Haffkine Institute For Training, Research & Testing",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400012",
+        "osm_addr:street": "Acharya Donde Marg",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_historic": "public",
+        "osm_old_name": "Government House",
+        "osm_website": "http://www.haffkineinstitute.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8387547,
+              19.0329157
+            ],
+            [
+              72.8387426,
+              19.0327895
+            ],
+            [
+              72.8391364,
+              19.0326962
+            ],
+            [
+              72.839232,
+              19.0329452
+            ],
+            [
+              72.8393222,
+              19.0329023
+            ],
+            [
+              72.8394537,
+              19.0333038
+            ],
+            [
+              72.8388383,
+              19.0334494
+            ],
+            [
+              72.8387547,
+              19.0329157
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113716576,
+        "name": "Hinduja Clinic",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8377435,
+              19.0327661
+            ],
+            [
+              72.8385025,
+              19.0327357
+            ],
+            [
+              72.8385253,
+              19.0332123
+            ],
+            [
+              72.8386004,
+              19.0336282
+            ],
+            [
+              72.8379976,
+              19.0337229
+            ],
+            [
+              72.8379419,
+              19.0332352
+            ],
+            [
+              72.8378025,
+              19.033007
+            ],
+            [
+              72.8377435,
+              19.0327661
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113716578,
+        "name": "Hinduja Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8590688,
+              19.021313
+            ],
+            [
+              72.8590511,
+              19.0211306
+            ],
+            [
+              72.8592095,
+              19.0211168
+            ],
+            [
+              72.8592272,
+              19.0212993
+            ],
+            [
+              72.8590688,
+              19.021313
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 116342799,
+        "name": "Aditya Jyot Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "Wadala, Mumbai",
+        "osm_addr:full": "Registered Office, Plot No 153, Major Parmeshwaran Road Road No 9, Opp Siws College Gate No 3, Wadala (West)",
+        "osm_addr:housenumber": "Plot 153",
+        "osm_addr:postcode": "400031",
+        "osm_addr:state": "Maharashtra",
+        "osm_addr:street": "Major R Parameswaran Road",
+        "osm_amenity": "hospital",
+        "osm_building": "yes",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8095997,
+              18.9719226
+            ],
+            [
+              72.810202,
+              18.9719764
+            ],
+            [
+              72.8102836,
+              18.9711607
+            ],
+            [
+              72.8099342,
+              18.9711294
+            ],
+            [
+              72.8098993,
+              18.9714784
+            ],
+            [
+              72.8096463,
+              18.9714558
+            ],
+            [
+              72.8095997,
+              18.9719226
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 150485811,
+        "name": "Jaslok Hospital and Research Centre",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "15, Near Sophia College, Dr.G.Deshmukh Marg,Pedder Road, Cumballa Hill",
+        "osm_addr:postcode": "400026",
+        "osm_addr:state": "Maharashtra",
+        "osm_addr:street": "Pedder Road (Gopalrao Deshmukh Marg)",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_name:hi": "जसलोक रुग्णालय",
+        "osm_source": "OpenGovernmentData",
+        "osm_wikidata": "Q6161662",
+        "osm_wikipedia": "en:Jaslok Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8393416,
+              19.0320669
+            ],
+            [
+              72.8393212,
+              19.0319324
+            ],
+            [
+              72.8394263,
+              19.031922
+            ],
+            [
+              72.8394753,
+              19.031947
+            ],
+            [
+              72.8395515,
+              19.0318651
+            ],
+            [
+              72.8396044,
+              19.0318295
+            ],
+            [
+              72.8396253,
+              19.0318692
+            ],
+            [
+              72.8397602,
+              19.0318409
+            ],
+            [
+              72.839874,
+              19.0318019
+            ],
+            [
+              72.8399255,
+              19.0319497
+            ],
+            [
+              72.8393416,
+              19.0320669
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 151806615,
+        "name": "Lalita Girdhar (Hinduja Hospital)",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_amenity": "hospital",
+        "osm_building": "apartments",
+        "osm_building:levels": "15",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8311351,
+              18.9349497
+            ],
+            [
+              72.8311884,
+              18.9346354
+            ],
+            [
+              72.8315509,
+              18.9346959
+            ],
+            [
+              72.8315101,
+              18.9348842
+            ],
+            [
+              72.8312435,
+              18.9349699
+            ],
+            [
+              72.8311351,
+              18.9349497
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206806614,
+        "name": "Atmasingh Jassasingh Bankebihar Municipal ENT Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:full": "Maharshi Dadhichi Marg, Azad Maidan, Fort, Mumbai",
+        "osm_addr:postcode": "400001",
+        "osm_addr:state": "Maharastra",
+        "osm_amenity": "hospital",
+        "osm_building": "yes",
+        "osm_healthcare": "hospital",
+        "osm_old_name": "Bombay City Improvement Trust Building",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8295858,
+              18.9425149
+            ],
+            [
+              72.8295322,
+              18.9427586
+            ],
+            [
+              72.829545,
+              18.9429208
+            ],
+            [
+              72.8296089,
+              18.9430467
+            ],
+            [
+              72.8297292,
+              18.9430927
+            ],
+            [
+              72.8298751,
+              18.9430612
+            ],
+            [
+              72.8301154,
+              18.9428926
+            ],
+            [
+              72.829843,
+              18.9425622
+            ],
+            [
+              72.8295858,
+              18.9425149
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 207319558,
+        "name": "Lady Willingdon Building",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-12",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.827466,
+              18.9412747
+            ],
+            [
+              72.8272184,
+              18.941192
+            ],
+            [
+              72.8273848,
+              18.9407465
+            ],
+            [
+              72.8276324,
+              18.9408293
+            ],
+            [
+              72.827466,
+              18.9412747
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 207324961,
+        "name": "Bombay Hospital and Medical Research Center",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:full": "12, New Marine Lines, Marine Lines",
+        "osm_addr:postcode": "400020",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_building": "apartments",
+        "osm_healthcare": "hospital",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.bombayhospital.com/",
+        "osm_wikidata": "Q4940562",
+        "osm_wikipedia": "en:Bombay Hospital"
+      }
+    }
+  ],
+  "category": "hospitals",
+  "count": 178
+}

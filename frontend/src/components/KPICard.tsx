@@ -18,6 +18,7 @@ import { KPIData } from "@/lib/types";
 interface KPICardProps {
   data: KPIData;
   index: number;
+  isSimulated?: boolean;
 }
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -29,7 +30,7 @@ const iconMap: Record<string, React.ReactNode> = {
   waves: <Waves size={22} />,
 };
 
-export default function KPICard({ data, index }: KPICardProps) {
+export default function KPICard({ data, index, isSimulated = false }: KPICardProps) {
   const isPositive = data.change > 0;
   const isNeutral = data.change === 0;
 
@@ -55,9 +56,16 @@ export default function KPICard({ data, index }: KPICardProps) {
       <div className="relative flex flex-col justify-between flex-grow">
         {/* Header Row: Title & Compact Icon */}
         <div className="flex items-start justify-between gap-1">
-          <p className="text-[10px] font-bold text-gray-500 uppercase tracking-wide truncate flex-1">
-            {data.title}
-          </p>
+          <div className="flex flex-col flex-1 truncate">
+            <p className="text-[10px] font-bold text-gray-500 uppercase tracking-wide truncate">
+              {data.title}
+            </p>
+            {isSimulated && (
+              <span className="text-[8px] font-bold text-blue-400 tracking-normal uppercase mt-0.5">
+                Simulation
+              </span>
+            )}
+          </div>
           <div
             className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
             style={{

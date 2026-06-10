@@ -848,6 +848,10 @@ async def get_kpis(
     warning_infra = status_counts.get("warning", 0)
     offline_infra = status_counts.get("offline", 0)
     total_infra = active_infra + warning_infra + offline_infra
+    
+    # Compute substations at risk for utility mode
+    high_risk_infra = await SpatialQueryService.query_high_risk_infrastructure(db)
+    substations_at_risk = sum(1 for i in high_risk_infra if i["type"] == "substation")
 
     # Ingest PostGIS flood intersection
     high_risk_infra = await SpatialQueryService.query_high_risk_infrastructure(db)

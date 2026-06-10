@@ -11,6 +11,7 @@ from shapely.wkt import dumps
 # Setup a local cache directory for heavy Overpass GIS files to prevent API rate-limiting
 CACHE_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "core", "cache")
 os.makedirs(CACHE_DIR, exist_ok=True)
+CURRENT_CITY_FILE = os.path.join(CACHE_DIR, "current_loaded_city.txt")
 
 class OSMService:
     """
@@ -18,6 +19,49 @@ class OSMService:
     Downloads real-time geospatial layers (roads, rivers, schools, hospitals)
     for any searched city and compiles them to standard GeoJSON payloads.
     """
+    _MEMORY_CACHE: Dict[str, Any] = {}
+
+    @staticmethod
+    def get_loaded_city() -> str:
+        if os.path.exists(CURRENT_CITY_FILE):
+            with open(CURRENT_CITY_FILE, "r") as f:
+                return f.read().strip().lower()
+        return "pune"
+
+    @staticmethod
+    def set_loaded_city(city: str):
+        with open(CURRENT_CITY_FILE, "w") as f:
+            f.write(city.lower())
+
+    @staticmethod
+    async def load_city_to_db(session: AsyncSession, city: str) -> bool:
+        """
+        Wipes old city data and loads the requested city dynamically.
+        """
+        import logging
+        from sqlalchemy import text
+        logger = logging.getLogger("geonarrative.osm_service")
+        
+        geo = await OSMService.geocode_city(city)
+        if not geo:
+            logger.error(f"Failed to geocode {city}")
+            return False
+            
+        logger.info(f"Clearing old spatial data for new city: {city}")
+        await session.execute(text("TRUNCATE TABLE infrastructure RESTART IDENTITY CASCADE;"))
+        await session.execute(text("TRUNCATE TABLE flood_zones RESTART IDENTITY CASCADE;"))
+        await session.commit()
+        
+        bbox = geo["bbox"]
+        for category in ["roads", "rivers", "hospitals", "schools", "buildings", "infrastructure"]:
+            logger.info(f"Ingesting {category} for {city}...")
+            geojson = await OSMService.fetch_osm_features(city, category, bbox)
+            if geojson and geojson.get("features"):
+                await OSMService.persist_osm_to_db(session, geojson, city)
+        
+        await session.commit()
+        OSMService.set_loaded_city(city)
+        return True
 
     @staticmethod
     async def geocode_city(city: str) -> Optional[Dict[str, Any]]:
@@ -25,8 +69,12 @@ class OSMService:
         Geocode a city name using the OpenStreetMap Nominatim API.
         Returns the center coordinates and bounding box coordinates.
         """
+        cache_key = f"geocode_{city.lower()}"
+        if cache_key in OSMService._MEMORY_CACHE:
+            return OSMService._MEMORY_CACHE[cache_key]
+            
         headers = {"User-Agent": "GeoNarrativeAI/1.0 (contact: admin@geonarrative.ai)"}
-        url = f"https://nominatim.openstreetmap.org/search?q={httpx.URL(city)}&format=json&limit=1"
+        url = f"https://nominatim.openstreetmap.org/search?q={httpx.URL(city)}&format=json&limit=1&polygon_geojson=1"
         
         async with httpx.AsyncClient(timeout=10.0) as client:
             try:
@@ -37,7 +85,7 @@ class OSMService:
                         result = data[0]
                         # Nominatim returns bounding box as [lat_min, lat_max, lon_min, lon_max]
                         bbox = [float(x) for x in result["boundingbox"]]
-                        return {
+                        result_dict = {
                             "display_name": result["display_name"],
                             "lat": float(result["lat"]),
                             "lon": float(result["lon"]),
@@ -46,8 +94,13 @@ class OSMService:
                                 "lat_max": bbox[1],
                                 "lon_min": bbox[2],
                                 "lon_max": bbox[3]
-                            }
+                            },
+                            "geojson": result.get("geojson"),
+                            "type": result.get("type", "administrative"),
+                            "importance": result.get("importance", 0.5)
                         }
+                        OSMService._MEMORY_CACHE[cache_key] = result_dict
+                        return result_dict
             except Exception as e:
                 print(f"Nominatim Geocoding Exception: {str(e)}")
         return None
@@ -63,12 +116,18 @@ class OSMService:
         Query Overpass API for specific geographic tags within the city bounding box.
         Converts the returned OSM node/way JSON elements into standardized GeoJSON.
         """
+        cache_key = f"{city_name.lower()}_{category}"
+        if cache_key in OSMService._MEMORY_CACHE:
+            return OSMService._MEMORY_CACHE[cache_key]
+
         # 1. Check Local Cache first
         cache_path = OSMService._get_cache_path(city_name, category)
         if os.path.exists(cache_path):
             try:
                 with open(cache_path, "r", encoding="utf-8") as f:
-                    return json.load(f)
+                    data = json.load(f)
+                    OSMService._MEMORY_CACHE[cache_key] = data
+                    return data
             except Exception:
                 pass # Fallback to live fetch on cache read error
 
@@ -96,22 +155,33 @@ class OSMService:
 
         # 3. Request from Overpass API
         url = "https://overpass-api.de/api/interpreter"
-        headers = {"Content-Type": "application/x-www-form-urlencoded"}
+        headers = {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "GeoNarrativeAI/1.0 (contact: admin@geonarrative.ai)",
+            "Accept": "application/json"
+        }
         
         async with httpx.AsyncClient(timeout=30.0) as client:
-            try:
-                response = await client.post(url, data={"data": overpass_ql}, headers=headers)
-                if response.status_code == 200:
-                    raw_data = response.json()
-                    geojson = OSMService._convert_osm_to_geojson(raw_data, category)
-                    
-                    # Save to local cache
-                    with open(cache_path, "w", encoding="utf-8") as f:
-                        json.dump(geojson, f, ensure_ascii=False, indent=2)
+            for attempt in range(3):
+                try:
+                    response = await client.post(url, data={"data": overpass_ql}, headers=headers)
+                    if response.status_code == 200:
+                        raw_data = response.json()
+                        geojson = OSMService._convert_osm_to_geojson(raw_data, category)
                         
-                    return geojson
-            except Exception as e:
-                print(f"Overpass API Ingestion Exception: {str(e)}")
+                        # Save to local cache
+                        with open(cache_path, "w", encoding="utf-8") as f:
+                            json.dump(geojson, f, ensure_ascii=False, indent=2)
+                        
+                        OSMService._MEMORY_CACHE[cache_key] = geojson
+                        return geojson
+                    elif response.status_code == 429:
+                        print(f"Overpass 429 Rate Limit hit for {category}. Retrying in 4s...")
+                        await asyncio.sleep(4)
+                        continue
+                except Exception as e:
+                    print(f"Overpass API Ingestion Exception: {str(e)}")
+                    await asyncio.sleep(2)
                 
         # Return fallback empty GeoJSON on failure
         return {"type": "FeatureCollection", "features": [], "category": category, "city": city_name}
@@ -205,14 +275,23 @@ class OSMService:
                     # Convert GeoJSON to WKT for storage using Shapely
                     wkt_geom = None
                     if geom_type == "LineString":
-                        wkt_geom = LineString(coords).wkt
+                        line = LineString(coords)
+                        # Buffer line slightly (approx 11 meters) to represent corridor area
+                        poly = line.buffer(0.0001)
+                        if poly.geom_type == "Polygon":
+                            wkt_geom = MultiPolygon([poly]).wkt
+                        elif poly.geom_type == "MultiPolygon":
+                            wkt_geom = poly.wkt
                     elif geom_type == "Polygon":
-                        wkt_geom = Polygon(coords[0]).wkt
+                        poly = Polygon(coords[0])
+                        wkt_geom = MultiPolygon([poly]).wkt
                     
                     if wkt_geom:
-                        # Save in catalog
+                        # Save in catalog with category prefix for dynamic queries
+                        full_name = f"[{category}] {name}"
+                        risk_level = "critical" if category == "rivers" else "low"
                         await DBRepository.create_flood_zone(
-                            session, name=name, risk_level="low", depth=0.0, multipolygon_wkt=f"MULTIPOLYGON(({coords[0][0]} {coords[0][1]}))"
+                            session, name=full_name, risk_level=risk_level, depth=0.0, multipolygon_wkt=wkt_geom
                         )
                         count += 1
             except Exception as e:

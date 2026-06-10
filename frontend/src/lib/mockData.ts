@@ -153,10 +153,13 @@ export const mockFloodRisks: FloodRisk[] = [
   },
 ];
 
+const normalizeRiskScores = (risks: FloodRisk[]): FloodRisk[] =>
+  risks.map((risk) => ({ ...risk, score: Math.round(risk.score * 10) / 10 }));
+
 export function generateFloodRisksForLocation(location: string, mode: DashboardMode = "flood"): FloodRisk[] {
   const cityName = location.split(',')[0].trim();
   if (mode === "traffic") {
-    return [
+    return normalizeRiskScores([
       {
         zone: `${cityName} NH-48 Corridor`,
         level: "critical",
@@ -189,10 +192,10 @@ export function generateFloodRisksForLocation(location: string, mode: DashboardM
         population: 8000 + Math.floor(Math.random() * 2000),
         description: "Smooth flow, low congestion, optimized signal intervals.",
       },
-    ].map(risk => ({ ...risk, score: Math.round(risk.score * 10) / 10 }));
+    ]);
   }
   if (mode === "urban") {
-    return [
+    return normalizeRiskScores([
       {
         zone: `${cityName} Industrial Corridor`,
         level: "critical",
@@ -225,10 +228,10 @@ export function generateFloodRisksForLocation(location: string, mode: DashboardM
         population: 5000 + Math.floor(Math.random() * 1000),
         description: "Strict agricultural reserve with zero unauthorized construction.",
       },
-    ].map(risk => ({ ...risk, score: Math.round(risk.score * 10) / 10 }));
+    ]);
   }
   if (mode === "utility") {
-    return [
+    return normalizeRiskScores([
       {
         zone: `${cityName} Substation Zone D`,
         level: "critical",
@@ -261,11 +264,11 @@ export function generateFloodRisksForLocation(location: string, mode: DashboardM
         population: 15000 + Math.floor(Math.random() * 3000),
         description: "Excellent infrastructure reliability with dual feed redundancies.",
       },
-    ].map(risk => ({ ...risk, score: Math.round(risk.score * 10) / 10 }));
+    ]);
   }
 
   // default: flood
-  return [
+  return normalizeRiskScores([
     {
       zone: `${cityName} Central Riverside`,
       level: "critical",
@@ -298,7 +301,7 @@ export function generateFloodRisksForLocation(location: string, mode: DashboardM
       population: 55000 + Math.floor(Math.random() * 12000),
       description: "Elevated terrain with good natural drainage slopes.",
     },
-  ].map(risk => ({ ...risk, score: Math.round(risk.score * 10) / 10 }));
+  ]);
 }
 
 export function generateAnalyticsForLocation(location: string, mode: DashboardMode = "flood"): AnalyticsData {
@@ -418,14 +421,14 @@ export function generateAnalyticsForLocation(location: string, mode: DashboardMo
 }
 
 export const mockMapLayers: MapLayer[] = [
-  { id: "flood-zones", name: "Flood Zones", type: "fill", visible: true, color: "#3b82f6", icon: "droplets", description: "Historical and predicted flood zones" },
-  { id: "risk-heatmap", name: "Risk Heatmap", type: "heatmap", visible: true, color: "#ef4444", icon: "flame", description: "Composite risk intensity map" },
-  { id: "rivers", name: "Rivers & Water Bodies", type: "line", visible: true, color: "#06b6d4", icon: "waves", description: "Major rivers and water features" },
-  { id: "infrastructure", name: "Infrastructure", type: "circle", visible: false, color: "#f59e0b", icon: "building", description: "Critical infrastructure points" },
-  { id: "elevation", name: "Elevation Contours", type: "line", visible: false, color: "#8b5cf6", icon: "mountain", description: "Terrain elevation data" },
-  { id: "population", name: "Population Density", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Population distribution" },
-  { id: "roads", name: "Road Network", type: "line", visible: false, color: "#9ca3af", icon: "route", description: "Major roads and highways" },
-  { id: "shelters", name: "Emergency Shelters", type: "symbol", visible: false, color: "#22d3ee", icon: "shield", description: "Designated emergency shelters" },
+  { id: "flood-zones", name: "Estimated Flood Zones", type: "fill", visible: true, color: "#3b82f6", icon: "droplets", description: "Modeled predictive inundation overlay" },
+  { id: "risk-heatmap", name: "Risk Density (Modeled)", type: "heatmap", visible: true, color: "#ef4444", icon: "flame", description: "AI-estimated risk intensity heatmap" },
+  { id: "rivers", name: "Rivers/Water (Live OSM)", type: "line", visible: true, color: "#06b6d4", icon: "waves", description: "Verified real-time water features" },
+  { id: "infrastructure", name: "Infrastructure (Live OSM)", type: "circle", visible: false, color: "#f59e0b", icon: "building", description: "Verified OpenStreetMap amenities" },
+  { id: "elevation", name: "Elevation Contours (Est.)", type: "line", visible: false, color: "#8b5cf6", icon: "mountain", description: "Modeled topographic elevation" },
+  { id: "population", name: "Population Density (Est.)", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Estimated demographic distribution" },
+  { id: "roads", name: "Road Network (Live OSM)", type: "line", visible: false, color: "#9ca3af", icon: "route", description: "Verified street and highway grid" },
+  { id: "shelters", name: "Emergency Shelters (Modeled)", type: "symbol", visible: false, color: "#22d3ee", icon: "shield", description: "Simulated emergency response points" },
 ];
 
 // ===== TRAFFIC MODE =====
@@ -438,14 +441,14 @@ export const trafficKPIs: KPIData[] = [
   { id: "signal-eff", title: "Signal Efficiency", value: "81%", change: 4.2, changeLabel: "optimized", icon: "waves", color: "#06b6d4", gradient: ["#06b6d4", "#22d3ee"] },
 ];
 export const trafficMapLayers: MapLayer[] = [
-  { id: "traffic-heatmap", name: "Traffic Heatmap", type: "heatmap", visible: true, color: "#ef4444", icon: "flame", description: "Real-time congestion density" },
-  { id: "roads", name: "Road Congestion", type: "line", visible: true, color: "#f59e0b", icon: "route", description: "Color-coded road congestion" },
-  { id: "accident-hotspots", name: "Accident Hotspots", type: "circle", visible: true, color: "#dc2626", icon: "droplets", description: "High-frequency accident zones" },
-  { id: "transit-routes", name: "Transit Routes", type: "line", visible: false, color: "#3b82f6", icon: "route", description: "Bus and metro corridors" },
-  { id: "parking", name: "Parking Zones", type: "fill", visible: false, color: "#8b5cf6", icon: "building", description: "Public parking areas" },
-  { id: "population", name: "Commuter Density", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Peak-hour commuter flow" },
-  { id: "speed-zones", name: "Speed Cameras", type: "circle", visible: false, color: "#06b6d4", icon: "waves", description: "Speed monitoring points" },
-  { id: "infrastructure", name: "Traffic Signals", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Smart traffic signal nodes" },
+  { id: "traffic-heatmap", name: "Congestion Heatmap (Est.)", type: "heatmap", visible: true, color: "#ef4444", icon: "flame", description: "Modeled real-time traffic density" },
+  { id: "roads", name: "Road Network (Live OSM)", type: "line", visible: true, color: "#f59e0b", icon: "route", description: "Verified street infrastructure" },
+  { id: "accident-hotspots", name: "Accident Hotspots (Modeled)", type: "circle", visible: true, color: "#dc2626", icon: "droplets", description: "Estimated high-frequency collision zones" },
+  { id: "transit-routes", name: "Transit Corridors (Live OSM)", type: "line", visible: false, color: "#3b82f6", icon: "route", description: "Verified transit corridors" },
+  { id: "parking", name: "Parking Zones (Est.)", type: "fill", visible: false, color: "#8b5cf6", icon: "building", description: "Modeled parking capacities" },
+  { id: "population", name: "Commuter Flow (Modeled)", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Simulated peak-hour commuter flow" },
+  { id: "speed-zones", name: "Speed Cameras (Est.)", type: "circle", visible: false, color: "#06b6d4", icon: "waves", description: "Simulated speed monitoring points" },
+  { id: "infrastructure", name: "Traffic Signals (Live OSM)", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Verified signaling nodes" },
 ];
 
 // ===== URBAN DEVELOPMENT MODE =====
@@ -458,14 +461,14 @@ export const urbanKPIs: KPIData[] = [
   { id: "housing", title: "Housing Index", value: "156", change: 6.7, changeLabel: "base 100", icon: "building", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
 ];
 export const urbanMapLayers: MapLayer[] = [
-  { id: "land-use-zones", name: "Land Use Zones", type: "fill", visible: true, color: "#8b5cf6", icon: "building", description: "Residential, commercial, industrial" },
-  { id: "zoning-overlay", name: "Zoning Boundaries", type: "line", visible: true, color: "#f59e0b", icon: "route", description: "Municipal zoning overlay" },
-  { id: "construction", name: "Construction Sites", type: "circle", visible: true, color: "#ef4444", icon: "building", description: "Active construction permits" },
-  { id: "green-spaces", name: "Green Spaces", type: "fill", visible: false, color: "#10b981", icon: "waves", description: "Parks, gardens, open areas" },
-  { id: "population", name: "Population Density", type: "heatmap", visible: false, color: "#3b82f6", icon: "users", description: "Residential density heatmap" },
-  { id: "roads", name: "Road Network", type: "line", visible: false, color: "#9ca3af", icon: "route", description: "Street and highway grid" },
-  { id: "elevation", name: "Terrain Profile", type: "line", visible: false, color: "#06b6d4", icon: "mountain", description: "Topographic elevation lines" },
-  { id: "infrastructure", name: "Civic Buildings", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Government and civic centers" },
+  { id: "land-use-zones", name: "Land Use Zones (Modeled)", type: "fill", visible: true, color: "#8b5cf6", icon: "building", description: "Estimated municipal zoning overlay" },
+  { id: "zoning-overlay", name: "Zoning Boundaries (Est.)", type: "line", visible: true, color: "#f59e0b", icon: "route", description: "Modeled administrative boundaries" },
+  { id: "construction", name: "Construction Sites (Modeled)", type: "circle", visible: true, color: "#ef4444", icon: "building", description: "Simulated active permits" },
+  { id: "green-spaces", name: "Green Spaces (Live OSM)", type: "fill", visible: false, color: "#10b981", icon: "waves", description: "Verified parks and open areas" },
+  { id: "population", name: "Residential Density (Est.)", type: "heatmap", visible: false, color: "#3b82f6", icon: "users", description: "Estimated household density" },
+  { id: "roads", name: "Road Network (Live OSM)", type: "line", visible: false, color: "#9ca3af", icon: "route", description: "Verified street grid" },
+  { id: "elevation", name: "Terrain Profile (Est.)", type: "line", visible: false, color: "#06b6d4", icon: "mountain", description: "Modeled elevation contours" },
+  { id: "infrastructure", name: "Civic Buildings (Live OSM)", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Verified government centers" },
 ];
 
 // ===== UTILITY INFRASTRUCTURE MODE =====
@@ -478,14 +481,14 @@ export const utilityKPIs: KPIData[] = [
   { id: "telecom", title: "Telecom Coverage", value: "96%", change: 1.5, changeLabel: "4G/5G area", icon: "mountain", color: "#8b5cf6", gradient: ["#8b5cf6", "#a855f7"] },
 ];
 export const utilityMapLayers: MapLayer[] = [
-  { id: "power-grid", name: "Power Grid Lines", type: "line", visible: true, color: "#f59e0b", icon: "waves", description: "High-voltage transmission lines" },
-  { id: "water-pipes", name: "Water Pipelines", type: "line", visible: true, color: "#06b6d4", icon: "droplets", description: "Municipal water mains" },
-  { id: "gas-mains", name: "Gas Mains", type: "line", visible: true, color: "#ef4444", icon: "flame", description: "Natural gas distribution" },
-  { id: "telecom-towers", name: "Telecom Towers", type: "circle", visible: false, color: "#8b5cf6", icon: "mountain", description: "Cell towers and base stations" },
-  { id: "substations", name: "Substations", type: "circle", visible: false, color: "#f59e0b", icon: "building", description: "Power substations and transformers" },
-  { id: "outage-zones", name: "Outage Zones", type: "fill", visible: false, color: "#dc2626", icon: "flame", description: "Active and recent outage areas" },
-  { id: "population", name: "Service Coverage", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Utility service reach" },
-  { id: "infrastructure", name: "Pump Stations", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Water and sewer pump stations" },
+  { id: "power-grid", name: "Power Grid Lines (Live OSM)", type: "line", visible: true, color: "#f59e0b", icon: "waves", description: "Verified high-voltage lines" },
+  { id: "water-pipes", name: "Water Pipelines (Live OSM)", type: "line", visible: true, color: "#06b6d4", icon: "droplets", description: "Verified municipal water mains" },
+  { id: "gas-mains", name: "Gas Mains (Modeled)", type: "line", visible: true, color: "#ef4444", icon: "flame", description: "Estimated gas distribution network" },
+  { id: "telecom-towers", name: "Telecom Towers (Live OSM)", type: "circle", visible: false, color: "#8b5cf6", icon: "mountain", description: "Verified base stations" },
+  { id: "substations", name: "Substations (Live OSM)", type: "circle", visible: false, color: "#f59e0b", icon: "building", description: "Verified power substations" },
+  { id: "outage-zones", name: "Outage Zones (Modeled)", type: "fill", visible: false, color: "#dc2626", icon: "flame", description: "Simulated current outage areas" },
+  { id: "population", name: "Service Coverage (Est.)", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Estimated utility reach" },
+  { id: "infrastructure", name: "Pump Stations (Live OSM)", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Verified pump stations" },
 ];
 
 // Master getter functions

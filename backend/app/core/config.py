@@ -13,19 +13,19 @@ class Settings(BaseSettings):
     # App
     APP_NAME: str = "GeoNarrative AI"
     APP_VERSION: str = "1.4.0"
-    DEBUG: bool = os.getenv("DEBUG", "false").lower() == "true"
+    DEBUG: bool = False
 
     # API Keys
-    GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
-    MAPBOX_TOKEN: str = os.getenv("MAPBOX_TOKEN", "")
-    WEATHER_API_KEY: str = os.getenv("WEATHER_API_KEY", "")
+    GEMINI_API_KEY: str = ""
+    MAPBOX_TOKEN: str = ""
+    WEATHER_API_KEY: str = ""
 
     # JWT Secret Key — stable across restarts
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "")
+    SECRET_KEY: str = ""
 
     # Razorpay Payment Gateway
-    RAZORPAY_KEY_ID: str = os.getenv("RAZORPAY_KEY_ID", "")
-    RAZORPAY_KEY_SECRET: str = os.getenv("RAZORPAY_KEY_SECRET", "")
+    RAZORPAY_KEY_ID: str = ""
+    RAZORPAY_KEY_SECRET: str = ""
 
     # CORS — restricted to known origins only
     ALLOWED_ORIGINS: List[str] = [
@@ -35,12 +35,14 @@ class Settings(BaseSettings):
     ]
 
     # Database — PostgreSQL required, no SQLite fallback
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://postgres:root@localhost:5432/geonarrative")
+    DATABASE_URL: str = "postgresql://postgres:root@localhost:5432/geonarrative"
 
     model_config = SettingsConfigDict(
-        env_file=".env",
-        extra="ignore"  # Don't crash on unknown .env variables like razorpay keys or other additions
+        env_file=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), ".env"),
+        env_file_encoding="utf-8",
+        extra="ignore"
     )
 
 
 settings = Settings()
+

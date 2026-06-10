@@ -1,0 +1,8989 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1675024,
+              28.5421965
+            ],
+            [
+              77.1676998,
+              28.5421286
+            ],
+            [
+              77.1676397,
+              28.5419175
+            ],
+            [
+              77.1678371,
+              28.5418723
+            ],
+            [
+              77.1679315,
+              28.5420231
+            ],
+            [
+              77.1681804,
+              28.5419326
+            ],
+            [
+              77.1680173,
+              28.541631
+            ],
+            [
+              77.1674165,
+              28.5417516
+            ],
+            [
+              77.1675024,
+              28.5421965
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 7891819,
+        "name": "School of Computional and Integrative Sciences",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0680919,
+              28.4910922
+            ],
+            [
+              77.0685231,
+              28.4910997
+            ],
+            [
+              77.0685189,
+              28.4912857
+            ],
+            [
+              77.0684667,
+              28.4912848
+            ],
+            [
+              77.0684616,
+              28.4915096
+            ],
+            [
+              77.0685119,
+              28.4915105
+            ],
+            [
+              77.0685081,
+              28.4916804
+            ],
+            [
+              77.0684568,
+              28.4916795
+            ],
+            [
+              77.0684519,
+              28.4918958
+            ],
+            [
+              77.0685013,
+              28.4918967
+            ],
+            [
+              77.0684972,
+              28.4920797
+            ],
+            [
+              77.0680796,
+              28.4920724
+            ],
+            [
+              77.0680839,
+              28.4918844
+            ],
+            [
+              77.0683102,
+              28.4918884
+            ],
+            [
+              77.0683149,
+              28.4916802
+            ],
+            [
+              77.0680837,
+              28.4916762
+            ],
+            [
+              77.0680876,
+              28.4915038
+            ],
+            [
+              77.06833,
+              28.491508
+            ],
+            [
+              77.0683351,
+              28.4912854
+            ],
+            [
+              77.0680877,
+              28.4912811
+            ],
+            [
+              77.0680919,
+              28.4910922
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 28749226,
+        "name": "Siemens Ltd.",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0902895,
+              28.5119176
+            ],
+            [
+              77.0900162,
+              28.5116259
+            ],
+            [
+              77.090169,
+              28.5115153
+            ],
+            [
+              77.0904423,
+              28.5118068
+            ],
+            [
+              77.0902895,
+              28.5119176
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 28846424,
+        "name": "Educomp",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_landuse": "commercial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1853377,
+              28.5396127
+            ],
+            [
+              77.1857077,
+              28.5394817
+            ],
+            [
+              77.1857356,
+              28.5395425
+            ],
+            [
+              77.1859453,
+              28.5394683
+            ],
+            [
+              77.1859247,
+              28.5394234
+            ],
+            [
+              77.1858157,
+              28.539462
+            ],
+            [
+              77.1857387,
+              28.5392941
+            ],
+            [
+              77.1852678,
+              28.5394608
+            ],
+            [
+              77.185285,
+              28.5394981
+            ],
+            [
+              77.1853377,
+              28.5396127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565332,
+        "name": "Faculty Block",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:levels": "4",
+        "osm_roof:shape": "flat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1860193,
+              28.5393008
+            ],
+            [
+              77.1859764,
+              28.5391791
+            ],
+            [
+              77.1858939,
+              28.5391367
+            ],
+            [
+              77.1856911,
+              28.5391838
+            ],
+            [
+              77.1857195,
+              28.5392574
+            ],
+            [
+              77.1858423,
+              28.5392215
+            ],
+            [
+              77.1858971,
+              28.5392168
+            ],
+            [
+              77.1859341,
+              28.5393281
+            ],
+            [
+              77.1860193,
+              28.5393008
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565334,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:levels": "4",
+        "osm_building:material": "brick",
+        "osm_roof:shape": "flat",
+        "osm_tourism": "guest_house"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.185101,
+              28.5396713
+            ],
+            [
+              77.1850439,
+              28.5395467
+            ],
+            [
+              77.1847608,
+              28.5396466
+            ],
+            [
+              77.1848179,
+              28.5397712
+            ],
+            [
+              77.185101,
+              28.5396713
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565383,
+        "name": "Administrative Block",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1855795,
+              28.5387033
+            ],
+            [
+              77.1859122,
+              28.5385967
+            ],
+            [
+              77.1858314,
+              28.538419
+            ],
+            [
+              77.1855083,
+              28.5385242
+            ],
+            [
+              77.1855795,
+              28.5387033
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565401,
+        "name": "C block",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_created_by": "Potlatch 0.10f",
+        "osm_landuse": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1852371,
+              28.5383986
+            ],
+            [
+              77.1852865,
+              28.5385235
+            ],
+            [
+              77.1855735,
+              28.5384236
+            ],
+            [
+              77.1855306,
+              28.5382945
+            ],
+            [
+              77.1852371,
+              28.5383986
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565409,
+        "name": "A block",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_created_by": "Potlatch 0.10f",
+        "osm_landuse": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1846594,
+              28.5387428
+            ],
+            [
+              77.1850376,
+              28.5386223
+            ],
+            [
+              77.1849681,
+              28.5384686
+            ],
+            [
+              77.1845937,
+              28.5385958
+            ],
+            [
+              77.1846594,
+              28.5387428
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565416,
+        "name": "A block",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_landuse": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1860823,
+              28.5393848
+            ],
+            [
+              77.1860517,
+              28.539314
+            ],
+            [
+              77.1863294,
+              28.5392216
+            ],
+            [
+              77.1864507,
+              28.539503
+            ],
+            [
+              77.1864021,
+              28.5395192
+            ],
+            [
+              77.1863227,
+              28.5393349
+            ],
+            [
+              77.1862744,
+              28.5393118
+            ],
+            [
+              77.1861737,
+              28.5393498
+            ],
+            [
+              77.1860823,
+              28.5393848
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565434,
+        "name": "Hostel",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_amenity": "student_accommodation",
+        "osm_building": "yes",
+        "osm_building:levels": "4",
+        "osm_operator": "ISI Delhi",
+        "osm_roof:shape": "flat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1847576,
+              28.5390094
+            ],
+            [
+              77.1847146,
+              28.5389189
+            ],
+            [
+              77.1847661,
+              28.5388812
+            ],
+            [
+              77.1847082,
+              28.5387758
+            ],
+            [
+              77.1845086,
+              28.5388435
+            ],
+            [
+              77.1845623,
+              28.5389416
+            ],
+            [
+              77.1845022,
+              28.5389718
+            ],
+            [
+              77.1845623,
+              28.5390774
+            ],
+            [
+              77.1847576,
+              28.5390094
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565445,
+        "name": "B block",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_landuse": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1861929,
+              28.5397413
+            ],
+            [
+              77.1860454,
+              28.5393747
+            ],
+            [
+              77.1859338,
+              28.5394199
+            ],
+            [
+              77.1860396,
+              28.5396638
+            ],
+            [
+              77.1859311,
+              28.5396972
+            ],
+            [
+              77.1859835,
+              28.5398116
+            ],
+            [
+              77.1861929,
+              28.5397413
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565449,
+        "name": "Academic Block",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:colour": "B22222",
+        "osm_building:levels": "3",
+        "osm_description": "Lecture rooms, auditorium, computer lab",
+        "osm_roof:shape": "flat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.185757,
+              28.5397136
+            ],
+            [
+              77.1859022,
+              28.5397032
+            ],
+            [
+              77.185888,
+              28.5395507
+            ],
+            [
+              77.1857428,
+              28.5395611
+            ],
+            [
+              77.185757,
+              28.5397136
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565462,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_amenity": "library",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1843316,
+              28.5391484
+            ],
+            [
+              77.1841685,
+              28.5387261
+            ],
+            [
+              77.1840312,
+              28.5387638
+            ],
+            [
+              77.1841943,
+              28.5391861
+            ],
+            [
+              77.1843316,
+              28.5391484
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31565491,
+        "name": "D block",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_created_by": "Potlatch 0.10f",
+        "osm_landuse": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1863505,
+              28.5397827
+            ],
+            [
+              77.1865235,
+              28.5397264
+            ],
+            [
+              77.1864685,
+              28.5395961
+            ],
+            [
+              77.1862955,
+              28.5396524
+            ],
+            [
+              77.1863505,
+              28.5397827
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 31658491,
+        "name": "Students' Mess",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "customers",
+        "osm_amenity": "restaurant",
+        "osm_building": "yes",
+        "osm_building:levels": "3",
+        "osm_building:material": "brick",
+        "osm_level": "0",
+        "osm_operator": "Indian Statistical Institute, Delhi",
+        "osm_roof:shape": "flat",
+        "osm_self_service": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1478773,
+              28.5450058
+            ],
+            [
+              77.1477009,
+              28.5445735
+            ],
+            [
+              77.1489386,
+              28.5437443
+            ],
+            [
+              77.149251,
+              28.5441477
+            ],
+            [
+              77.1478773,
+              28.5450058
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 34940752,
+        "name": "TERI University",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:city": "New Delhi",
+        "osm_addr:housenumber": "10",
+        "osm_addr:postcode": "110070",
+        "osm_addr:street": "Institutional Area, Vasant Kunj",
+        "osm_building": "yes",
+        "osm_layer": "-1",
+        "osm_office": "educational_institution",
+        "osm_opening_hours": "08:30-17:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0867303,
+              28.5591702
+            ],
+            [
+              77.08665,
+              28.5591385
+            ],
+            [
+              77.0865816,
+              28.5591115
+            ],
+            [
+              77.0864356,
+              28.5592056
+            ],
+            [
+              77.0863619,
+              28.5592532
+            ],
+            [
+              77.086275,
+              28.5593092
+            ],
+            [
+              77.087053,
+              28.5596272
+            ],
+            [
+              77.0876807,
+              28.5598837
+            ],
+            [
+              77.0881035,
+              28.5600565
+            ],
+            [
+              77.0885823,
+              28.5597202
+            ],
+            [
+              77.088504,
+              28.5592937
+            ],
+            [
+              77.0884653,
+              28.5590833
+            ],
+            [
+              77.0883612,
+              28.5585164
+            ],
+            [
+              77.088308,
+              28.5582268
+            ],
+            [
+              77.0882641,
+              28.5579878
+            ],
+            [
+              77.0882075,
+              28.5580245
+            ],
+            [
+              77.0879618,
+              28.5581837
+            ],
+            [
+              77.0879851,
+              28.5583133
+            ],
+            [
+              77.0878813,
+              28.5583803
+            ],
+            [
+              77.0877492,
+              28.5584655
+            ],
+            [
+              77.0877672,
+              28.5584864
+            ],
+            [
+              77.0867303,
+              28.5591702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 35261858,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_aeroway": "terminal",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1074635,
+              28.4835661
+            ],
+            [
+              77.1077327,
+              28.483059
+            ],
+            [
+              77.1077885,
+              28.4832832
+            ],
+            [
+              77.1077859,
+              28.4834286
+            ],
+            [
+              77.1076807,
+              28.4836549
+            ],
+            [
+              77.1074635,
+              28.4835661
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38106806,
+        "name": "Neelkanth Hospital Pvt. Ltd",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:district": "Gurgaon",
+        "osm_addr:full": "1, Nathupur Road, Ph-Iii, Dlf City",
+        "osm_addr:postcode": "122022",
+        "osm_addr:state": "Haryana",
+        "osm_amenity": "hospital",
+        "osm_building": "yes",
+        "osm_healthcare": "hospital",
+        "osm_landuse": "commercial",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.neelkanthhospital.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1681074,
+              28.4953564
+            ],
+            [
+              77.1680473,
+              28.4958391
+            ],
+            [
+              77.1684764,
+              28.4958391
+            ],
+            [
+              77.1684421,
+              28.4962088
+            ],
+            [
+              77.168794,
+              28.4962163
+            ],
+            [
+              77.1689571,
+              28.4963747
+            ],
+            [
+              77.1689571,
+              28.4966991
+            ],
+            [
+              77.1694635,
+              28.4967141
+            ],
+            [
+              77.1694635,
+              28.4964426
+            ],
+            [
+              77.1698154,
+              28.4964577
+            ],
+            [
+              77.1698068,
+              28.4961333
+            ],
+            [
+              77.1693862,
+              28.4961031
+            ],
+            [
+              77.1691545,
+              28.4958316
+            ],
+            [
+              77.1691888,
+              28.4955469
+            ],
+            [
+              77.1689313,
+              28.4954695
+            ],
+            [
+              77.1689571,
+              28.4951452
+            ],
+            [
+              77.1685194,
+              28.495115
+            ],
+            [
+              77.1685108,
+              28.4954243
+            ],
+            [
+              77.1681074,
+              28.4953564
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38170302,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1200431,
+              28.5667197
+            ],
+            [
+              77.1200364,
+              28.5670627
+            ],
+            [
+              77.1195642,
+              28.5670557
+            ],
+            [
+              77.1195709,
+              28.5667127
+            ],
+            [
+              77.1200431,
+              28.5667197
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38234253,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_aeroway": "hangar",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1195597,
+              28.567222
+            ],
+            [
+              77.1200318,
+              28.5672196
+            ],
+            [
+              77.1200339,
+              28.5675438
+            ],
+            [
+              77.1195618,
+              28.5675462
+            ],
+            [
+              77.1195597,
+              28.567222
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38234257,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_aeroway": "hangar",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1195613,
+              28.5676479
+            ],
+            [
+              77.1200333,
+              28.5676439
+            ],
+            [
+              77.1200373,
+              28.5680057
+            ],
+            [
+              77.1195653,
+              28.5680097
+            ],
+            [
+              77.1195613,
+              28.5676479
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38234275,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_aeroway": "hangar",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0915271,
+              28.4919672
+            ],
+            [
+              77.0919253,
+              28.4920004
+            ],
+            [
+              77.0918535,
+              28.4917807
+            ],
+            [
+              77.0917974,
+              28.4916964
+            ],
+            [
+              77.0916169,
+              28.4915859
+            ],
+            [
+              77.0915454,
+              28.4916489
+            ],
+            [
+              77.0915965,
+              28.4917669
+            ],
+            [
+              77.0914295,
+              28.4918174
+            ],
+            [
+              77.0915271,
+              28.4919672
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 40102985,
+        "name": "Royal Bank of Scotland",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:housenumber": "7B",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0915642,
+              28.4924311
+            ],
+            [
+              77.0920848,
+              28.4922135
+            ],
+            [
+              77.0924579,
+              28.492903
+            ],
+            [
+              77.0919373,
+              28.4931206
+            ],
+            [
+              77.0915642,
+              28.4924311
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 40102986,
+        "name": "Building 7A",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:levels": "7",
+        "osm_landuse": "commercial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0928852,
+              28.4946326
+            ],
+            [
+              77.0933978,
+              28.4955663
+            ],
+            [
+              77.0938273,
+              28.4953898
+            ],
+            [
+              77.0933195,
+              28.4944517
+            ],
+            [
+              77.0928852,
+              28.4946326
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 40102988,
+        "name": "Building 9B",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:housenumber": "9B",
+        "osm_addr:street": "DLF Cyber City",
+        "osm_building": "office",
+        "osm_roof:shape": "flat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0923834,
+              28.4965211
+            ],
+            [
+              77.0930375,
+              28.4960549
+            ],
+            [
+              77.0933631,
+              28.4964077
+            ],
+            [
+              77.0927088,
+              28.4968739
+            ],
+            [
+              77.0923834,
+              28.4965211
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 40102989,
+        "name": "Building 9A",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:housenumber": "9A",
+        "osm_building": "office"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1634744,
+              28.5102603
+            ],
+            [
+              77.163473,
+              28.5099997
+            ],
+            [
+              77.1637642,
+              28.5099984
+            ],
+            [
+              77.1637656,
+              28.510259
+            ],
+            [
+              77.1634744,
+              28.5102603
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 41840311,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1646534,
+              28.5089051
+            ],
+            [
+              77.1645395,
+              28.5090467
+            ],
+            [
+              77.1644751,
+              28.5091268
+            ],
+            [
+              77.1643797,
+              28.5092453
+            ],
+            [
+              77.164296,
+              28.5092438
+            ],
+            [
+              77.1642122,
+              28.5092424
+            ],
+            [
+              77.1641318,
+              28.509241
+            ],
+            [
+              77.1641312,
+              28.509059
+            ],
+            [
+              77.1641306,
+              28.5088737
+            ],
+            [
+              77.1642271,
+              28.5088795
+            ],
+            [
+              77.1643787,
+              28.5088886
+            ],
+            [
+              77.1644527,
+              28.508893
+            ],
+            [
+              77.1645243,
+              28.5088973
+            ],
+            [
+              77.1646534,
+              28.5089051
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 41840385,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1641371,
+              28.5092885
+            ],
+            [
+              77.1643317,
+              28.5092935
+            ],
+            [
+              77.1641139,
+              28.5095695
+            ],
+            [
+              77.163692,
+              28.5095576
+            ],
+            [
+              77.1636939,
+              28.5093765
+            ],
+            [
+              77.1641332,
+              28.5093917
+            ],
+            [
+              77.1641371,
+              28.5092885
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 41840386,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1640417,
+              28.5096156
+            ],
+            [
+              77.163774,
+              28.509939
+            ],
+            [
+              77.1635139,
+              28.5099356
+            ],
+            [
+              77.16351,
+              28.50979
+            ],
+            [
+              77.1636526,
+              28.50979
+            ],
+            [
+              77.1636506,
+              28.5097341
+            ],
+            [
+              77.1630572,
+              28.5097256
+            ],
+            [
+              77.1630553,
+              28.5095919
+            ],
+            [
+              77.1640417,
+              28.5096156
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 41840387,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1846869,
+              28.5404126
+            ],
+            [
+              77.1849244,
+              28.5403299
+            ],
+            [
+              77.1848736,
+              28.5402174
+            ],
+            [
+              77.1846361,
+              28.5403001
+            ],
+            [
+              77.1846869,
+              28.5404126
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44007901,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_amenity": "community_hall",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1857359,
+              28.5389209
+            ],
+            [
+              77.1858389,
+              28.5388832
+            ],
+            [
+              77.1857788,
+              28.5387701
+            ],
+            [
+              77.1856759,
+              28.5388078
+            ],
+            [
+              77.1857359,
+              28.5389209
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44091397,
+        "name": "Electric Substation",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_power": "substation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1857639,
+              28.5383068
+            ],
+            [
+              77.1860042,
+              28.5382164
+            ],
+            [
+              77.1859699,
+              28.538141
+            ],
+            [
+              77.1857124,
+              28.5382164
+            ],
+            [
+              77.1857639,
+              28.5383068
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44091410,
+        "name": "Transit Flats",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_landuse": "residential"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1987457,
+              28.6152655
+            ],
+            [
+              77.1993803,
+              28.6152363
+            ],
+            [
+              77.199383,
+              28.6152815
+            ],
+            [
+              77.1997972,
+              28.6152624
+            ],
+            [
+              77.1997947,
+              28.6152203
+            ],
+            [
+              77.200451,
+              28.6151901
+            ],
+            [
+              77.2004387,
+              28.6149843
+            ],
+            [
+              77.1999466,
+              28.615007
+            ],
+            [
+              77.1998898,
+              28.6140549
+            ],
+            [
+              77.1998677,
+              28.613685
+            ],
+            [
+              77.200273,
+              28.6136664
+            ],
+            [
+              77.2002608,
+              28.6134618
+            ],
+            [
+              77.1996723,
+              28.6134889
+            ],
+            [
+              77.1996897,
+              28.6137815
+            ],
+            [
+              77.1997564,
+              28.6137784
+            ],
+            [
+              77.1997712,
+              28.6140268
+            ],
+            [
+              77.1991553,
+              28.6140552
+            ],
+            [
+              77.1991395,
+              28.6137902
+            ],
+            [
+              77.1992032,
+              28.6137873
+            ],
+            [
+              77.1991864,
+              28.6135063
+            ],
+            [
+              77.1986055,
+              28.613533
+            ],
+            [
+              77.1986235,
+              28.6138349
+            ],
+            [
+              77.1989432,
+              28.6138201
+            ],
+            [
+              77.1990099,
+              28.6149371
+            ],
+            [
+              77.1987268,
+              28.6149502
+            ],
+            [
+              77.1987457,
+              28.6152655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44187405,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1904019,
+              28.5464944
+            ],
+            [
+              77.1911223,
+              28.546723
+            ],
+            [
+              77.1911346,
+              28.546727
+            ],
+            [
+              77.1912047,
+              28.54675
+            ],
+            [
+              77.1914207,
+              28.5468195
+            ],
+            [
+              77.1919891,
+              28.547016
+            ],
+            [
+              77.1920485,
+              28.5468766
+            ],
+            [
+              77.1904613,
+              28.5463551
+            ],
+            [
+              77.1904019,
+              28.5464944
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44408520,
+        "name": "Block 5",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:levels": "3",
+        "osm_layer": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1905406,
+              28.5460972
+            ],
+            [
+              77.1925815,
+              28.5467807
+            ],
+            [
+              77.1926377,
+              28.5466511
+            ],
+            [
+              77.1905969,
+              28.5459676
+            ],
+            [
+              77.1905406,
+              28.5460972
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44408521,
+        "name": "Block 4",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:levels": "3",
+        "osm_layer": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1907891,
+              28.5457137
+            ],
+            [
+              77.1933665,
+              28.5465756
+            ],
+            [
+              77.1934274,
+              28.546435
+            ],
+            [
+              77.19085,
+              28.5455731
+            ],
+            [
+              77.1907891,
+              28.5457137
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44408522,
+        "name": "Block 3",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:levels": "3",
+        "osm_layer": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1909336,
+              28.5453426
+            ],
+            [
+              77.1920153,
+              28.5457253
+            ],
+            [
+              77.1920742,
+              28.5455699
+            ],
+            [
+              77.1915733,
+              28.5454045
+            ],
+            [
+              77.1910706,
+              28.5452385
+            ],
+            [
+              77.19099,
+              28.5452119
+            ],
+            [
+              77.1909336,
+              28.5453426
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44408523,
+        "name": "Block 2",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:levels": "3",
+        "osm_layer": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1922523,
+              28.5457875
+            ],
+            [
+              77.1939715,
+              28.5463613
+            ],
+            [
+              77.1940272,
+              28.5462325
+            ],
+            [
+              77.1927985,
+              28.5458223
+            ],
+            [
+              77.1923118,
+              28.5456598
+            ],
+            [
+              77.1922523,
+              28.5457875
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44408524,
+        "name": "Block 2",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_building:levels": "3",
+        "osm_layer": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1919941,
+              28.5458021
+            ],
+            [
+              77.1920334,
+              28.5457087
+            ],
+            [
+              77.192086,
+              28.5455768
+            ],
+            [
+              77.1922388,
+              28.5452095
+            ],
+            [
+              77.192398,
+              28.5448423
+            ],
+            [
+              77.1926249,
+              28.544916
+            ],
+            [
+              77.1924721,
+              28.5452873
+            ],
+            [
+              77.1923118,
+              28.5456598
+            ],
+            [
+              77.1922523,
+              28.5457875
+            ],
+            [
+              77.1922209,
+              28.5458758
+            ],
+            [
+              77.1919941,
+              28.5458021
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44408525,
+        "name": "Main Building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_level": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.182996,
+              28.5458307
+            ],
+            [
+              77.182894,
+              28.5458799
+            ],
+            [
+              77.1826309,
+              28.5453878
+            ],
+            [
+              77.183316,
+              28.545102
+            ],
+            [
+              77.1833623,
+              28.5451876
+            ],
+            [
+              77.1827845,
+              28.5454286
+            ],
+            [
+              77.182996,
+              28.5458307
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44408528,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_layer": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.183474,
+              28.5461561
+            ],
+            [
+              77.1830601,
+              28.5453598
+            ],
+            [
+              77.1829448,
+              28.5454059
+            ],
+            [
+              77.1833862,
+              28.5461962
+            ],
+            [
+              77.183474,
+              28.5461561
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 44408529,
+        "name": "Nalanda",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_tourism": "hostel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0845331,
+              28.5566941
+            ],
+            [
+              77.083292,
+              28.5560523
+            ],
+            [
+              77.0831983,
+              28.5561759
+            ],
+            [
+              77.0823555,
+              28.5557391
+            ],
+            [
+              77.0824487,
+              28.5556175
+            ],
+            [
+              77.0821954,
+              28.5554747
+            ],
+            [
+              77.0837844,
+              28.5530793
+            ],
+            [
+              77.0840435,
+              28.5532084
+            ],
+            [
+              77.0841453,
+              28.5530542
+            ],
+            [
+              77.0849944,
+              28.5534977
+            ],
+            [
+              77.0849067,
+              28.5536337
+            ],
+            [
+              77.0861481,
+              28.5542582
+            ],
+            [
+              77.0860628,
+              28.5543881
+            ],
+            [
+              77.0860226,
+              28.5544476
+            ],
+            [
+              77.0859709,
+              28.5545254
+            ],
+            [
+              77.0858838,
+              28.5546561
+            ],
+            [
+              77.0858348,
+              28.5547273
+            ],
+            [
+              77.0857895,
+              28.554799
+            ],
+            [
+              77.085688,
+              28.5549494
+            ],
+            [
+              77.0856404,
+              28.5550206
+            ],
+            [
+              77.0855994,
+              28.5550857
+            ],
+            [
+              77.0854989,
+              28.5552321
+            ],
+            [
+              77.0854153,
+              28.5553635
+            ],
+            [
+              77.0853526,
+              28.555458
+            ],
+            [
+              77.0852292,
+              28.5556441
+            ],
+            [
+              77.0851153,
+              28.5557975
+            ],
+            [
+              77.0850424,
+              28.5559259
+            ],
+            [
+              77.0849973,
+              28.5559925
+            ],
+            [
+              77.084949,
+              28.5560661
+            ],
+            [
+              77.0848968,
+              28.5561354
+            ],
+            [
+              77.0848585,
+              28.5561939
+            ],
+            [
+              77.084812,
+              28.5562784
+            ],
+            [
+              77.0847324,
+              28.5563934
+            ],
+            [
+              77.084713,
+              28.5564177
+            ],
+            [
+              77.0845923,
+              28.5566009
+            ],
+            [
+              77.0845331,
+              28.5566941
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 51419058,
+        "name": "Terminal 3",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:street": "インドデリー空港",
+        "osm_aeroway": "terminal",
+        "osm_building": "yes",
+        "osm_internet_access": "wlan",
+        "osm_layer": "1",
+        "osm_name:fa": "ترمینال ۳",
+        "osm_name:hi": "टर्मिनल 3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0805707,
+              28.5512137
+            ],
+            [
+              77.0811755,
+              28.5510745
+            ],
+            [
+              77.0816506,
+              28.5513195
+            ],
+            [
+              77.0823483,
+              28.5516794
+            ],
+            [
+              77.0831228,
+              28.5520788
+            ],
+            [
+              77.0839361,
+              28.5524983
+            ],
+            [
+              77.0850499,
+              28.5530727
+            ],
+            [
+              77.0854904,
+              28.5529713
+            ],
+            [
+              77.0863969,
+              28.5527625
+            ],
+            [
+              77.0869857,
+              28.552629
+            ],
+            [
+              77.0873882,
+              28.5525368
+            ],
+            [
+              77.0877108,
+              28.5520489
+            ],
+            [
+              77.0879314,
+              28.551715
+            ],
+            [
+              77.0881652,
+              28.5513615
+            ],
+            [
+              77.08839,
+              28.5510214
+            ],
+            [
+              77.0886429,
+              28.5506389
+            ],
+            [
+              77.0888971,
+              28.5502543
+            ],
+            [
+              77.0891016,
+              28.549945
+            ],
+            [
+              77.0896492,
+              28.5491166
+            ],
+            [
+              77.0902253,
+              28.5489841
+            ],
+            [
+              77.0902115,
+              28.5490049
+            ],
+            [
+              77.0900609,
+              28.5492321
+            ],
+            [
+              77.0898551,
+              28.5495426
+            ],
+            [
+              77.0896157,
+              28.5499036
+            ],
+            [
+              77.0893815,
+              28.550257
+            ],
+            [
+              77.0891677,
+              28.5505794
+            ],
+            [
+              77.0889229,
+              28.5509486
+            ],
+            [
+              77.088699,
+              28.5512864
+            ],
+            [
+              77.0884531,
+              28.5516572
+            ],
+            [
+              77.0877339,
+              28.5527421
+            ],
+            [
+              77.0876485,
+              28.5528709
+            ],
+            [
+              77.0849944,
+              28.5534977
+            ],
+            [
+              77.0841453,
+              28.5530542
+            ],
+            [
+              77.0836391,
+              28.5527936
+            ],
+            [
+              77.0828559,
+              28.5523903
+            ],
+            [
+              77.0820966,
+              28.5519994
+            ],
+            [
+              77.0814022,
+              28.5516418
+            ],
+            [
+              77.0805707,
+              28.5512137
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 51419062,
+        "name": "Terminal 3 Domestic",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_aeroway": "terminal",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0810714,
+              28.562194
+            ],
+            [
+              77.0813715,
+              28.5623509
+            ],
+            [
+              77.0816627,
+              28.5619094
+            ],
+            [
+              77.082114,
+              28.561225
+            ],
+            [
+              77.0825722,
+              28.5605302
+            ],
+            [
+              77.0829856,
+              28.5599034
+            ],
+            [
+              77.0832758,
+              28.5594633
+            ],
+            [
+              77.0838847,
+              28.55854
+            ],
+            [
+              77.0837524,
+              28.5580842
+            ],
+            [
+              77.0836723,
+              28.5578085
+            ],
+            [
+              77.0831983,
+              28.5561759
+            ],
+            [
+              77.0823555,
+              28.5557391
+            ],
+            [
+              77.0813735,
+              28.5552298
+            ],
+            [
+              77.0810014,
+              28.5550369
+            ],
+            [
+              77.0802286,
+              28.5546361
+            ],
+            [
+              77.0793647,
+              28.5541881
+            ],
+            [
+              77.0787522,
+              28.5538705
+            ],
+            [
+              77.0785841,
+              28.5537833
+            ],
+            [
+              77.0787368,
+              28.5543203
+            ],
+            [
+              77.0799427,
+              28.5549414
+            ],
+            [
+              77.0807596,
+              28.5553622
+            ],
+            [
+              77.0815924,
+              28.5557911
+            ],
+            [
+              77.0822608,
+              28.5561354
+            ],
+            [
+              77.0828338,
+              28.5564305
+            ],
+            [
+              77.0830897,
+              28.5573143
+            ],
+            [
+              77.0833127,
+              28.5580849
+            ],
+            [
+              77.0834315,
+              28.5584951
+            ],
+            [
+              77.0827585,
+              28.5595148
+            ],
+            [
+              77.0822987,
+              28.5602114
+            ],
+            [
+              77.0818282,
+              28.5609241
+            ],
+            [
+              77.0813584,
+              28.5616359
+            ],
+            [
+              77.0810477,
+              28.5621066
+            ],
+            [
+              77.0810714,
+              28.562194
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 51419112,
+        "name": "Terminal 3 (International)",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_aeroway": "terminal",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0970614,
+              28.557282
+            ],
+            [
+              77.1003083,
+              28.5565361
+            ],
+            [
+              77.1003775,
+              28.5567685
+            ],
+            [
+              77.1011116,
+              28.5565999
+            ],
+            [
+              77.1010393,
+              28.5563571
+            ],
+            [
+              77.1036757,
+              28.5557609
+            ],
+            [
+              77.1039545,
+              28.5567126
+            ],
+            [
+              77.0984711,
+              28.5579546
+            ],
+            [
+              77.098399,
+              28.5577125
+            ],
+            [
+              77.0972603,
+              28.5579741
+            ],
+            [
+              77.0971381,
+              28.5575638
+            ],
+            [
+              77.0968931,
+              28.5576201
+            ],
+            [
+              77.0968097,
+              28.5573399
+            ],
+            [
+              77.0970614,
+              28.557282
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 51419271,
+        "name": "Freight Terminal",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_aeroway": "terminal",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.097321,
+              28.5565685
+            ],
+            [
+              77.0968696,
+              28.5566743
+            ],
+            [
+              77.0969654,
+              28.5569898
+            ],
+            [
+              77.0974169,
+              28.556884
+            ],
+            [
+              77.097321,
+              28.5565685
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 51419458,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1180218,
+              28.6200771
+            ],
+            [
+              77.1181916,
+              28.6199724
+            ],
+            [
+              77.1182509,
+              28.6200466
+            ],
+            [
+              77.1184269,
+              28.6202664
+            ],
+            [
+              77.1182572,
+              28.6203711
+            ],
+            [
+              77.1180218,
+              28.6200771
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 58586673,
+        "name": "FedEx",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1438276,
+              28.5665693
+            ],
+            [
+              77.1432459,
+              28.5664214
+            ],
+            [
+              77.1432838,
+              28.5663122
+            ],
+            [
+              77.1438533,
+              28.5664529
+            ],
+            [
+              77.1442883,
+              28.5660976
+            ],
+            [
+              77.144376,
+              28.5661823
+            ],
+            [
+              77.143956,
+              28.5665247
+            ],
+            [
+              77.1440917,
+              28.5670848
+            ],
+            [
+              77.1439832,
+              28.5671054
+            ],
+            [
+              77.1438276,
+              28.5665693
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 89309909,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1456319,
+              28.5661241
+            ],
+            [
+              77.1450343,
+              28.5660376
+            ],
+            [
+              77.1450573,
+              28.5659251
+            ],
+            [
+              77.1456417,
+              28.5660059
+            ],
+            [
+              77.1460259,
+              28.5656079
+            ],
+            [
+              77.1461244,
+              28.5656829
+            ],
+            [
+              77.1457534,
+              28.5660665
+            ],
+            [
+              77.1459635,
+              28.5666086
+            ],
+            [
+              77.1458584,
+              28.5666403
+            ],
+            [
+              77.1456319,
+              28.5661241
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 89309913,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1452423,
+              28.5677634
+            ],
+            [
+              77.1446427,
+              28.5676876
+            ],
+            [
+              77.1446631,
+              28.5675748
+            ],
+            [
+              77.1452493,
+              28.5676449
+            ],
+            [
+              77.1456242,
+              28.5672402
+            ],
+            [
+              77.1457244,
+              28.5673134
+            ],
+            [
+              77.1453623,
+              28.5677035
+            ],
+            [
+              77.1455851,
+              28.5682418
+            ],
+            [
+              77.1454808,
+              28.5682754
+            ],
+            [
+              77.1452423,
+              28.5677634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 89309926,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1886727,
+              28.5196055
+            ],
+            [
+              77.1888957,
+              28.5196007
+            ],
+            [
+              77.1888997,
+              28.5197444
+            ],
+            [
+              77.1886767,
+              28.5197492
+            ],
+            [
+              77.1886727,
+              28.5196055
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 89583599,
+        "name": "Tomb Of Balban",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "tomb",
+        "osm_historic": "monument",
+        "osm_name:hi": "बलबन का मकबरा",
+        "osm_wikidata": "Q374288",
+        "osm_wikimedia_commons": "Category:Tomb of Balban",
+        "osm_wikipedia": "en:Balban"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1873907,
+              28.5184245
+            ],
+            [
+              77.1874695,
+              28.5184184
+            ],
+            [
+              77.1875112,
+              28.5183858
+            ],
+            [
+              77.187532,
+              28.518343
+            ],
+            [
+              77.1875506,
+              28.5182596
+            ],
+            [
+              77.1875529,
+              28.5182087
+            ],
+            [
+              77.1875529,
+              28.5181537
+            ],
+            [
+              77.1875274,
+              28.518117
+            ],
+            [
+              77.1874857,
+              28.5180926
+            ],
+            [
+              77.1874185,
+              28.5180845
+            ],
+            [
+              77.1873605,
+              28.5180906
+            ],
+            [
+              77.187291,
+              28.5181272
+            ],
+            [
+              77.1872539,
+              28.5181964
+            ],
+            [
+              77.1872632,
+              28.5182677
+            ],
+            [
+              77.1872841,
+              28.5183329
+            ],
+            [
+              77.1873304,
+              28.5183899
+            ],
+            [
+              77.1873907,
+              28.5184245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 89583606,
+        "name": "Khan Shahid Tomb",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_historic": "tomb",
+        "osm_name:hi": "खान शाहिद मकबरा"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.183347,
+              28.520115
+            ],
+            [
+              77.1836311,
+              28.5201776
+            ],
+            [
+              77.1835396,
+              28.5204978
+            ],
+            [
+              77.1834796,
+              28.5204845
+            ],
+            [
+              77.1832838,
+              28.5204414
+            ],
+            [
+              77.1832954,
+              28.520401
+            ],
+            [
+              77.1831479,
+              28.5204164
+            ],
+            [
+              77.1831219,
+              28.5202244
+            ],
+            [
+              77.1833217,
+              28.5202035
+            ],
+            [
+              77.183347,
+              28.520115
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 89583611,
+        "name": "Rajon ki Baoli",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes",
+        "osm_man_made": "water_well",
+        "osm_wikidata": "Q7286369",
+        "osm_wikimedia_commons": "Category:Rajon ki Baoli",
+        "osm_wikipedia": "en:Rajon Ki Baoli"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.178108,
+              28.5423745
+            ],
+            [
+              77.1783923,
+              28.5422379
+            ],
+            [
+              77.1785479,
+              28.5424594
+            ],
+            [
+              77.1782743,
+              28.5426102
+            ],
+            [
+              77.178108,
+              28.5423745
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 98724273,
+        "name": "USO House",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:housename": "USO House",
+        "osm_alt_name": "USO House",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1781945,
+              28.5420241
+            ],
+            [
+              77.1775078,
+              28.5423507
+            ],
+            [
+              77.1770833,
+              28.5416621
+            ],
+            [
+              77.1777701,
+              28.5413355
+            ],
+            [
+              77.1781945,
+              28.5420241
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 98724294,
+        "name": "National Institute of Public Finance and Policy (NIPFP)",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_alt_name": "NIPFP",
+        "osm_amenity": "public_building",
+        "osm_building": "yes",
+        "osm_wikidata": "Q6973695",
+        "osm_wikipedia": "en:National Institute of Public Finance and Policy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1782845,
+              28.5418026
+            ],
+            [
+              77.1781987,
+              28.5416801
+            ],
+            [
+              77.1785044,
+              28.5415293
+            ],
+            [
+              77.1786117,
+              28.541633
+            ],
+            [
+              77.1782845,
+              28.5418026
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 98748075,
+        "name": "Dept of Delhi Archives",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:housename": "Dept of Delhi Archives",
+        "osm_building": "yes",
+        "osm_int_name": "Dept of Delhi Archives"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1793879,
+              28.5423503
+            ],
+            [
+              77.1791196,
+              28.5419828
+            ],
+            [
+              77.1795327,
+              28.5417424
+            ],
+            [
+              77.1798224,
+              28.5421477
+            ],
+            [
+              77.1793879,
+              28.5423503
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 98748170,
+        "name": "SAARC Documentation Centre",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:city": "New Delhi",
+        "osm_addr:housenumber": "14",
+        "osm_addr:postcode": "110 067",
+        "osm_addr:street": "Satsang Vihar Marg",
+        "osm_building": "industrial",
+        "osm_building:levels": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1773886,
+              28.5428299
+            ],
+            [
+              77.1775335,
+              28.5430561
+            ],
+            [
+              77.17763,
+              28.5430043
+            ],
+            [
+              77.1774852,
+              28.5427734
+            ],
+            [
+              77.1773886,
+              28.5428299
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 98748443,
+        "name": "Satsang Vihar",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1807721,
+              28.5427303
+            ],
+            [
+              77.1806285,
+              28.542495
+            ],
+            [
+              77.1810469,
+              28.5422499
+            ],
+            [
+              77.1812439,
+              28.5425251
+            ],
+            [
+              77.1807721,
+              28.5427303
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 99206550,
+        "name": "Guru Nanak Institute for comparative Study for region",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0938465,
+              28.5580598
+            ],
+            [
+              77.0936444,
+              28.5572704
+            ],
+            [
+              77.0939745,
+              28.5572052
+            ],
+            [
+              77.0941765,
+              28.5579947
+            ],
+            [
+              77.0938465,
+              28.5580598
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 103173012,
+        "name": "Air Traffic Services",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_aeroway": "control_center",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0650703,
+              28.4981509
+            ],
+            [
+              77.0663851,
+              28.4981862
+            ],
+            [
+              77.066391,
+              28.497933
+            ],
+            [
+              77.066109,
+              28.4979264
+            ],
+            [
+              77.0652356,
+              28.4979052
+            ],
+            [
+              77.0650794,
+              28.4979001
+            ],
+            [
+              77.0650703,
+              28.4981509
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109185,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0677407,
+              28.4928392
+            ],
+            [
+              77.0689918,
+              28.492871
+            ],
+            [
+              77.0690018,
+              28.4925665
+            ],
+            [
+              77.0677507,
+              28.4925347
+            ],
+            [
+              77.0677407,
+              28.4928392
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109186,
+        "name": "Coil Warehouse",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0677006,
+              28.4928024
+            ],
+            [
+              77.0677104,
+              28.4924979
+            ],
+            [
+              77.0668038,
+              28.4924762
+            ],
+            [
+              77.0667949,
+              28.4927798
+            ],
+            [
+              77.0677006,
+              28.4928024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109187,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0703026,
+              28.4948224
+            ],
+            [
+              77.0706297,
+              28.4948318
+            ],
+            [
+              77.0706338,
+              28.4946942
+            ],
+            [
+              77.0708764,
+              28.4947034
+            ],
+            [
+              77.0709179,
+              28.494705
+            ],
+            [
+              77.0709158,
+              28.4948401
+            ],
+            [
+              77.0710437,
+              28.4948438
+            ],
+            [
+              77.0710912,
+              28.4930455
+            ],
+            [
+              77.070352,
+              28.4930304
+            ],
+            [
+              77.0703514,
+              28.4930674
+            ],
+            [
+              77.0703479,
+              28.4931673
+            ],
+            [
+              77.0703371,
+              28.4935938
+            ],
+            [
+              77.0701924,
+              28.4935909
+            ],
+            [
+              77.0701878,
+              28.4937646
+            ],
+            [
+              77.070315,
+              28.4937672
+            ],
+            [
+              77.070314,
+              28.4938021
+            ],
+            [
+              77.0701841,
+              28.4937995
+            ],
+            [
+              77.0701776,
+              28.4940441
+            ],
+            [
+              77.0701613,
+              28.4946608
+            ],
+            [
+              77.0702381,
+              28.4946624
+            ],
+            [
+              77.0702366,
+              28.4947185
+            ],
+            [
+              77.070305,
+              28.4947199
+            ],
+            [
+              77.0703026,
+              28.4948224
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109188,
+        "name": "Paint Shop 3",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0667425,
+              28.4982227
+            ],
+            [
+              77.0680237,
+              28.4982497
+            ],
+            [
+              77.0680252,
+              28.4981957
+            ],
+            [
+              77.0681099,
+              28.4981975
+            ],
+            [
+              77.0681161,
+              28.4979689
+            ],
+            [
+              77.0680337,
+              28.4979672
+            ],
+            [
+              77.0680009,
+              28.4979665
+            ],
+            [
+              77.0667502,
+              28.4979402
+            ],
+            [
+              77.0667425,
+              28.4982227
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109190,
+        "name": "Machine Shop 2",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0651572,
+              28.493872
+            ],
+            [
+              77.0650207,
+              28.4938705
+            ],
+            [
+              77.0650224,
+              28.493931
+            ],
+            [
+              77.064836,
+              28.4939323
+            ],
+            [
+              77.0647488,
+              28.4939295
+            ],
+            [
+              77.0647396,
+              28.4941538
+            ],
+            [
+              77.0648258,
+              28.4941557
+            ],
+            [
+              77.064824,
+              28.4942177
+            ],
+            [
+              77.0651972,
+              28.4942225
+            ],
+            [
+              77.0652,
+              28.4941572
+            ],
+            [
+              77.0651765,
+              28.4941577
+            ],
+            [
+              77.0648439,
+              28.494156
+            ],
+            [
+              77.0648475,
+              28.4940033
+            ],
+            [
+              77.0651565,
+              28.4940096
+            ],
+            [
+              77.0651572,
+              28.493872
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109191,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "roof",
+        "osm_layer": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0692989,
+              28.494732
+            ],
+            [
+              77.0695582,
+              28.4947388
+            ],
+            [
+              77.0696592,
+              28.4947415
+            ],
+            [
+              77.0699958,
+              28.4947504
+            ],
+            [
+              77.0700193,
+              28.4940619
+            ],
+            [
+              77.0700949,
+              28.4940639
+            ],
+            [
+              77.0701082,
+              28.4936755
+            ],
+            [
+              77.0700669,
+              28.4936744
+            ],
+            [
+              77.0700779,
+              28.4933527
+            ],
+            [
+              77.0700943,
+              28.4933531
+            ],
+            [
+              77.0700993,
+              28.4932081
+            ],
+            [
+              77.07013,
+              28.4932089
+            ],
+            [
+              77.0701316,
+              28.4931613
+            ],
+            [
+              77.0701352,
+              28.4930614
+            ],
+            [
+              77.0701363,
+              28.4930257
+            ],
+            [
+              77.0693579,
+              28.4930052
+            ],
+            [
+              77.0692989,
+              28.494732
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109199,
+        "name": "Paint Shop 2",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0660316,
+              28.4958516
+            ],
+            [
+              77.0662676,
+              28.4958601
+            ],
+            [
+              77.0662891,
+              28.495366
+            ],
+            [
+              77.0660831,
+              28.4953542
+            ],
+            [
+              77.0660788,
+              28.4954056
+            ],
+            [
+              77.0660187,
+              28.4954052
+            ],
+            [
+              77.0660032,
+              28.4957823
+            ],
+            [
+              77.0660316,
+              28.4958516
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109409,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0677267,
+              28.4959072
+            ],
+            [
+              77.0681688,
+              28.4959167
+            ],
+            [
+              77.0681763,
+              28.4957272
+            ],
+            [
+              77.0679714,
+              28.4957224
+            ],
+            [
+              77.0679714,
+              28.4955414
+            ],
+            [
+              77.0682031,
+              28.4955471
+            ],
+            [
+              77.0682052,
+              28.4953788
+            ],
+            [
+              77.0679542,
+              28.4953698
+            ],
+            [
+              77.0679542,
+              28.4954377
+            ],
+            [
+              77.0677396,
+              28.4954358
+            ],
+            [
+              77.0677396,
+              28.495664
+            ],
+            [
+              77.067687,
+              28.4956616
+            ],
+            [
+              77.0676897,
+              28.4957149
+            ],
+            [
+              77.0677267,
+              28.4957168
+            ],
+            [
+              77.0677267,
+              28.4959072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109412,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0712115,
+              28.4976893
+            ],
+            [
+              77.0721387,
+              28.4977168
+            ],
+            [
+              77.0721452,
+              28.4973829
+            ],
+            [
+              77.0712158,
+              28.497365
+            ],
+            [
+              77.0712158,
+              28.4973914
+            ],
+            [
+              77.0711471,
+              28.4973914
+            ],
+            [
+              77.0711428,
+              28.4976667
+            ],
+            [
+              77.0712115,
+              28.4976686
+            ],
+            [
+              77.0712115,
+              28.4976893
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109751,
+        "name": "Technical Centre",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0696103,
+              28.4974298
+            ],
+            [
+              77.0697211,
+              28.4974345
+            ],
+            [
+              77.0706951,
+              28.4974585
+            ],
+            [
+              77.0707804,
+              28.4974607
+            ],
+            [
+              77.0708175,
+              28.4973963
+            ],
+            [
+              77.070834,
+              28.4970358
+            ],
+            [
+              77.0707165,
+              28.4970336
+            ],
+            [
+              77.0707411,
+              28.4963545
+            ],
+            [
+              77.0707801,
+              28.4963561
+            ],
+            [
+              77.0707848,
+              28.4962298
+            ],
+            [
+              77.0707454,
+              28.4962277
+            ],
+            [
+              77.0707825,
+              28.4950511
+            ],
+            [
+              77.0707833,
+              28.4950273
+            ],
+            [
+              77.0707868,
+              28.4949248
+            ],
+            [
+              77.0707587,
+              28.4949241
+            ],
+            [
+              77.0697843,
+              28.4948983
+            ],
+            [
+              77.0697792,
+              28.4950465
+            ],
+            [
+              77.0696747,
+              28.4950437
+            ],
+            [
+              77.0696743,
+              28.4950565
+            ],
+            [
+              77.0696698,
+              28.4951873
+            ],
+            [
+              77.0696578,
+              28.4955368
+            ],
+            [
+              77.0697818,
+              28.4955401
+            ],
+            [
+              77.0697635,
+              28.4960954
+            ],
+            [
+              77.0697591,
+              28.4962236
+            ],
+            [
+              77.0697407,
+              28.4967422
+            ],
+            [
+              77.0696339,
+              28.4967394
+            ],
+            [
+              77.0696217,
+              28.4970956
+            ],
+            [
+              77.0696103,
+              28.4974298
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109752,
+        "name": "Assembly 3",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0683858,
+              28.4973092
+            ],
+            [
+              77.0685021,
+              28.4973125
+            ],
+            [
+              77.0684989,
+              28.4974002
+            ],
+            [
+              77.0693905,
+              28.4974256
+            ],
+            [
+              77.0694868,
+              28.4974284
+            ],
+            [
+              77.0694878,
+              28.4974022
+            ],
+            [
+              77.0695042,
+              28.4969575
+            ],
+            [
+              77.0694096,
+              28.4969548
+            ],
+            [
+              77.0694398,
+              28.4961364
+            ],
+            [
+              77.0695373,
+              28.4961391
+            ],
+            [
+              77.0695618,
+              28.4954755
+            ],
+            [
+              77.0694611,
+              28.4954726
+            ],
+            [
+              77.069479,
+              28.4949876
+            ],
+            [
+              77.0694826,
+              28.4948914
+            ],
+            [
+              77.0685924,
+              28.494866
+            ],
+            [
+              77.068476,
+              28.4948627
+            ],
+            [
+              77.0684523,
+              28.4955071
+            ],
+            [
+              77.0684295,
+              28.4961241
+            ],
+            [
+              77.0683858,
+              28.4973092
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109753,
+        "name": "Assembly 2",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0710829,
+              28.4981033
+            ],
+            [
+              77.0711949,
+              28.4981051
+            ],
+            [
+              77.0711937,
+              28.4981601
+            ],
+            [
+              77.0712761,
+              28.4981615
+            ],
+            [
+              77.0712755,
+              28.4981859
+            ],
+            [
+              77.0713236,
+              28.4981867
+            ],
+            [
+              77.0713241,
+              28.4981617
+            ],
+            [
+              77.0714951,
+              28.4981645
+            ],
+            [
+              77.0714947,
+              28.4981861
+            ],
+            [
+              77.071535,
+              28.4981868
+            ],
+            [
+              77.0715354,
+              28.4981676
+            ],
+            [
+              77.0716021,
+              28.4981688
+            ],
+            [
+              77.0716016,
+              28.4981889
+            ],
+            [
+              77.0716428,
+              28.4981896
+            ],
+            [
+              77.0716432,
+              28.4981695
+            ],
+            [
+              77.0717062,
+              28.4981706
+            ],
+            [
+              77.0717058,
+              28.4981904
+            ],
+            [
+              77.0717376,
+              28.498191
+            ],
+            [
+              77.071738,
+              28.4981724
+            ],
+            [
+              77.0718166,
+              28.4981737
+            ],
+            [
+              77.0718162,
+              28.4981945
+            ],
+            [
+              77.0718618,
+              28.4981953
+            ],
+            [
+              77.0718622,
+              28.4981761
+            ],
+            [
+              77.0720276,
+              28.4981788
+            ],
+            [
+              77.0720271,
+              28.4982004
+            ],
+            [
+              77.0720753,
+              28.4982012
+            ],
+            [
+              77.0720757,
+              28.4981817
+            ],
+            [
+              77.0721595,
+              28.4981831
+            ],
+            [
+              77.0721599,
+              28.4981636
+            ],
+            [
+              77.072223,
+              28.4981647
+            ],
+            [
+              77.0722241,
+              28.4981133
+            ],
+            [
+              77.0723254,
+              28.498115
+            ],
+            [
+              77.072329,
+              28.4979459
+            ],
+            [
+              77.0722236,
+              28.4979441
+            ],
+            [
+              77.0722253,
+              28.4978686
+            ],
+            [
+              77.0711948,
+              28.4978513
+            ],
+            [
+              77.0711937,
+              28.4979007
+            ],
+            [
+              77.0711549,
+              28.4979001
+            ],
+            [
+              77.0711553,
+              28.497885
+            ],
+            [
+              77.0710881,
+              28.4978838
+            ],
+            [
+              77.0710867,
+              28.4979468
+            ],
+            [
+              77.0711211,
+              28.4979474
+            ],
+            [
+              77.0711207,
+              28.4979682
+            ],
+            [
+              77.0711488,
+              28.4979686
+            ],
+            [
+              77.071147,
+              28.4980484
+            ],
+            [
+              77.0710841,
+              28.4980473
+            ],
+            [
+              77.0710829,
+              28.4981033
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109754,
+        "name": "Technical Centre",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0712663,
+              28.4936763
+            ],
+            [
+              77.0712641,
+              28.4937329
+            ],
+            [
+              77.071393,
+              28.4937367
+            ],
+            [
+              77.0713956,
+              28.4936677
+            ],
+            [
+              77.0725441,
+              28.4937017
+            ],
+            [
+              77.0725528,
+              28.4934739
+            ],
+            [
+              77.0721822,
+              28.4934629
+            ],
+            [
+              77.0721873,
+              28.4933317
+            ],
+            [
+              77.0724067,
+              28.4933382
+            ],
+            [
+              77.0724107,
+              28.4932347
+            ],
+            [
+              77.0712845,
+              28.4932014
+            ],
+            [
+              77.0712663,
+              28.4936763
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109800,
+        "name": "Die Shop / Tool Shop",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0715377,
+              28.4971148
+            ],
+            [
+              77.0721278,
+              28.4971256
+            ],
+            [
+              77.0724038,
+              28.4971296
+            ],
+            [
+              77.072426,
+              28.4971311
+            ],
+            [
+              77.0724399,
+              28.4968454
+            ],
+            [
+              77.0725633,
+              28.496852
+            ],
+            [
+              77.0725719,
+              28.4965692
+            ],
+            [
+              77.0724388,
+              28.4965654
+            ],
+            [
+              77.0724517,
+              28.496226
+            ],
+            [
+              77.071572,
+              28.496192
+            ],
+            [
+              77.0715377,
+              28.4971148
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109801,
+        "name": "Warehouse KnockedDown Parts",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0725054,
+              28.498349
+            ],
+            [
+              77.0727943,
+              28.4983519
+            ],
+            [
+              77.0728002,
+              28.4978933
+            ],
+            [
+              77.0725031,
+              28.4978904
+            ],
+            [
+              77.0725022,
+              28.4979612
+            ],
+            [
+              77.0724771,
+              28.497961
+            ],
+            [
+              77.0724766,
+              28.4979976
+            ],
+            [
+              77.0725035,
+              28.4979979
+            ],
+            [
+              77.0725029,
+              28.4980433
+            ],
+            [
+              77.0724768,
+              28.498043
+            ],
+            [
+              77.0724764,
+              28.4980752
+            ],
+            [
+              77.0725045,
+              28.4980755
+            ],
+            [
+              77.0725034,
+              28.4981635
+            ],
+            [
+              77.0724765,
+              28.4981632
+            ],
+            [
+              77.0724761,
+              28.4981958
+            ],
+            [
+              77.0725054,
+              28.4981961
+            ],
+            [
+              77.0725043,
+              28.4982885
+            ],
+            [
+              77.0724762,
+              28.4982882
+            ],
+            [
+              77.0724756,
+              28.4983279
+            ],
+            [
+              77.0725056,
+              28.4983282
+            ],
+            [
+              77.0725054,
+              28.498349
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109802,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0711448,
+              28.4959451
+            ],
+            [
+              77.0712081,
+              28.4959471
+            ],
+            [
+              77.0721522,
+              28.4959774
+            ],
+            [
+              77.072153,
+              28.4959595
+            ],
+            [
+              77.0722527,
+              28.4959627
+            ],
+            [
+              77.0722778,
+              28.4953605
+            ],
+            [
+              77.0721729,
+              28.4953572
+            ],
+            [
+              77.0720586,
+              28.4953535
+            ],
+            [
+              77.0720638,
+              28.49523
+            ],
+            [
+              77.0714907,
+              28.4952116
+            ],
+            [
+              77.0714858,
+              28.4953299
+            ],
+            [
+              77.0712351,
+              28.4953219
+            ],
+            [
+              77.0711708,
+              28.4953198
+            ],
+            [
+              77.0711448,
+              28.4959451
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120109805,
+        "name": "Machine Shop 3",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0641325,
+              28.4957963
+            ],
+            [
+              77.0646261,
+              28.4958015
+            ],
+            [
+              77.0646287,
+              28.4955581
+            ],
+            [
+              77.0646861,
+              28.4955596
+            ],
+            [
+              77.0646866,
+              28.495533
+            ],
+            [
+              77.0646874,
+              28.495489
+            ],
+            [
+              77.06469,
+              28.495343
+            ],
+            [
+              77.0646907,
+              28.4953028
+            ],
+            [
+              77.0646912,
+              28.4952728
+            ],
+            [
+              77.0646318,
+              28.4952715
+            ],
+            [
+              77.0646345,
+              28.4950152
+            ],
+            [
+              77.0641486,
+              28.495002
+            ],
+            [
+              77.0641325,
+              28.4957963
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120110600,
+        "name": "Canteen",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_amenity": "restaurant",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0640627,
+              28.4962123
+            ],
+            [
+              77.0641663,
+              28.496216
+            ],
+            [
+              77.0641684,
+              28.4961708
+            ],
+            [
+              77.0643382,
+              28.4961763
+            ],
+            [
+              77.0643396,
+              28.496146
+            ],
+            [
+              77.064574,
+              28.4961523
+            ],
+            [
+              77.0645759,
+              28.4961203
+            ],
+            [
+              77.0646437,
+              28.4961217
+            ],
+            [
+              77.0646479,
+              28.4959973
+            ],
+            [
+              77.064651,
+              28.4958657
+            ],
+            [
+              77.0642049,
+              28.4958575
+            ],
+            [
+              77.0642022,
+              28.4960249
+            ],
+            [
+              77.0640654,
+              28.4960225
+            ],
+            [
+              77.0640627,
+              28.4962123
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120110603,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0629038,
+              28.4938066
+            ],
+            [
+              77.0636186,
+              28.4938264
+            ],
+            [
+              77.0636208,
+              28.4937638
+            ],
+            [
+              77.0648706,
+              28.4937985
+            ],
+            [
+              77.064912,
+              28.4926484
+            ],
+            [
+              77.0645929,
+              28.4926395
+            ],
+            [
+              77.0645996,
+              28.492451
+            ],
+            [
+              77.0643336,
+              28.4924437
+            ],
+            [
+              77.0643353,
+              28.4923964
+            ],
+            [
+              77.0637729,
+              28.4923807
+            ],
+            [
+              77.0637672,
+              28.4925412
+            ],
+            [
+              77.0638593,
+              28.4925437
+            ],
+            [
+              77.063851,
+              28.4927731
+            ],
+            [
+              77.0637625,
+              28.4927707
+            ],
+            [
+              77.063768,
+              28.4926158
+            ],
+            [
+              77.0631349,
+              28.4925983
+            ],
+            [
+              77.0631439,
+              28.4923457
+            ],
+            [
+              77.0629558,
+              28.4923405
+            ],
+            [
+              77.0629446,
+              28.4926495
+            ],
+            [
+              77.0626279,
+              28.4926407
+            ],
+            [
+              77.0625933,
+              28.4936032
+            ],
+            [
+              77.0629108,
+              28.493612
+            ],
+            [
+              77.0629038,
+              28.4938066
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120110606,
+        "name": "Spare Parts warehouse",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0647396,
+              28.4941538
+            ],
+            [
+              77.0648258,
+              28.4941557
+            ],
+            [
+              77.064824,
+              28.4942177
+            ],
+            [
+              77.0647469,
+              28.494216
+            ],
+            [
+              77.0647455,
+              28.4942679
+            ],
+            [
+              77.0648717,
+              28.4942707
+            ],
+            [
+              77.064861,
+              28.4946535
+            ],
+            [
+              77.0632944,
+              28.4946197
+            ],
+            [
+              77.0633054,
+              28.4942268
+            ],
+            [
+              77.0639395,
+              28.4942405
+            ],
+            [
+              77.0639432,
+              28.4941082
+            ],
+            [
+              77.0641464,
+              28.4941126
+            ],
+            [
+              77.0641426,
+              28.4942494
+            ],
+            [
+              77.0641828,
+              28.4942503
+            ],
+            [
+              77.0641865,
+              28.4941182
+            ],
+            [
+              77.0643237,
+              28.4941212
+            ],
+            [
+              77.064323,
+              28.4941448
+            ],
+            [
+              77.0647396,
+              28.4941538
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120110607,
+        "name": "Paint Shop 1",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.062299,
+              28.4935181
+            ],
+            [
+              77.062422,
+              28.4935225
+            ],
+            [
+              77.0624435,
+              28.4932161
+            ],
+            [
+              77.0622638,
+              28.4932067
+            ],
+            [
+              77.0622562,
+              28.4933131
+            ],
+            [
+              77.0623094,
+              28.4933175
+            ],
+            [
+              77.062299,
+              28.4935181
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120112294,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0651604,
+              28.4960802
+            ],
+            [
+              77.0656527,
+              28.4960919
+            ],
+            [
+              77.0658785,
+              28.4960973
+            ],
+            [
+              77.066313,
+              28.4961076
+            ],
+            [
+              77.0664953,
+              28.4961119
+            ],
+            [
+              77.0668736,
+              28.496121
+            ],
+            [
+              77.0672543,
+              28.49613
+            ],
+            [
+              77.067603,
+              28.4961384
+            ],
+            [
+              77.0678883,
+              28.4961473
+            ],
+            [
+              77.067873,
+              28.4965674
+            ],
+            [
+              77.067865,
+              28.4967824
+            ],
+            [
+              77.0678346,
+              28.4976641
+            ],
+            [
+              77.0678334,
+              28.4976916
+            ],
+            [
+              77.0667596,
+              28.497657
+            ],
+            [
+              77.0663946,
+              28.4976454
+            ],
+            [
+              77.0652442,
+              28.4976083
+            ],
+            [
+              77.0651153,
+              28.4976042
+            ],
+            [
+              77.0651604,
+              28.4960802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120112295,
+        "name": "Assembly Shop 1",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0619624,
+              28.4950129
+            ],
+            [
+              77.0621931,
+              28.4950176
+            ],
+            [
+              77.0621958,
+              28.4948055
+            ],
+            [
+              77.0619651,
+              28.4947984
+            ],
+            [
+              77.0619624,
+              28.4950129
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120112296,
+        "name": "SND",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0652381,
+              28.494137
+            ],
+            [
+              77.0657186,
+              28.4941494
+            ],
+            [
+              77.0666761,
+              28.4941742
+            ],
+            [
+              77.0667174,
+              28.4929411
+            ],
+            [
+              77.0666701,
+              28.4929392
+            ],
+            [
+              77.0664506,
+              28.4929336
+            ],
+            [
+              77.0654655,
+              28.4929087
+            ],
+            [
+              77.0652466,
+              28.4929031
+            ],
+            [
+              77.0652431,
+              28.4930068
+            ],
+            [
+              77.0652053,
+              28.4941361
+            ],
+            [
+              77.0652381,
+              28.494137
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120112297,
+        "name": "Weld Shop 1",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:housename": "W1",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0641911,
+              28.4978477
+            ],
+            [
+              77.0645935,
+              28.4978571
+            ],
+            [
+              77.0645988,
+              28.4976874
+            ],
+            [
+              77.064196,
+              28.4976756
+            ],
+            [
+              77.0641911,
+              28.4978477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120115974,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0642584,
+              28.497575
+            ],
+            [
+              77.0646098,
+              28.4975773
+            ],
+            [
+              77.0646094,
+              28.4972669
+            ],
+            [
+              77.0642611,
+              28.4972582
+            ],
+            [
+              77.0642584,
+              28.497575
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120115975,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0677385,
+              28.495098
+            ],
+            [
+              77.0679679,
+              28.4951022
+            ],
+            [
+              77.0679733,
+              28.49485
+            ],
+            [
+              77.0677425,
+              28.4948478
+            ],
+            [
+              77.0677385,
+              28.495098
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120123041,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0664713,
+              28.4946756
+            ],
+            [
+              77.0665863,
+              28.4946836
+            ],
+            [
+              77.066592,
+              28.4946374
+            ],
+            [
+              77.0669316,
+              28.4946473
+            ],
+            [
+              77.0669389,
+              28.4943997
+            ],
+            [
+              77.0664847,
+              28.494388
+            ],
+            [
+              77.0664713,
+              28.4946756
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120123043,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0669138,
+              28.4949985
+            ],
+            [
+              77.0675683,
+              28.4950126
+            ],
+            [
+              77.0675737,
+              28.4948453
+            ],
+            [
+              77.0669111,
+              28.4948335
+            ],
+            [
+              77.0669138,
+              28.4949985
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120123044,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.066018,
+              28.4953214
+            ],
+            [
+              77.0661065,
+              28.4953238
+            ],
+            [
+              77.0661065,
+              28.4951706
+            ],
+            [
+              77.0660207,
+              28.4951682
+            ],
+            [
+              77.066018,
+              28.4953214
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120123047,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0661033,
+              28.4947038
+            ],
+            [
+              77.066224,
+              28.4947038
+            ],
+            [
+              77.0662266,
+              28.4943715
+            ],
+            [
+              77.066114,
+              28.4943691
+            ],
+            [
+              77.0661033,
+              28.4947038
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120123048,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0666107,
+              28.4955595
+            ],
+            [
+              77.0670882,
+              28.495569
+            ],
+            [
+              77.0670909,
+              28.4954181
+            ],
+            [
+              77.0666081,
+              28.4954087
+            ],
+            [
+              77.0666107,
+              28.4955595
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120123050,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0658785,
+              28.4960145
+            ],
+            [
+              77.0658785,
+              28.4960973
+            ],
+            [
+              77.066313,
+              28.4961076
+            ],
+            [
+              77.0663184,
+              28.4959722
+            ],
+            [
+              77.0658809,
+              28.4959587
+            ],
+            [
+              77.0658785,
+              28.4960145
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120123586,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A1-1",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0735244,
+              28.4953218
+            ],
+            [
+              77.0735151,
+              28.4954855
+            ],
+            [
+              77.0735884,
+              28.4954893
+            ],
+            [
+              77.0737288,
+              28.4954967
+            ],
+            [
+              77.0737399,
+              28.4953331
+            ],
+            [
+              77.0735955,
+              28.4953255
+            ],
+            [
+              77.0735244,
+              28.4953218
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120126910,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0665021,
+              28.4960365
+            ],
+            [
+              77.0665034,
+              28.4959779
+            ],
+            [
+              77.0668817,
+              28.4959894
+            ],
+            [
+              77.0668736,
+              28.496121
+            ],
+            [
+              77.0664953,
+              28.4961119
+            ],
+            [
+              77.0665021,
+              28.4960365
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120129848,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A1-2",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0672571,
+              28.4960361
+            ],
+            [
+              77.0672543,
+              28.49613
+            ],
+            [
+              77.067603,
+              28.4961384
+            ],
+            [
+              77.0676032,
+              28.4960115
+            ],
+            [
+              77.0672544,
+              28.4960008
+            ],
+            [
+              77.0672571,
+              28.4960361
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120129849,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A1-3",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0685458,
+              28.4961274
+            ],
+            [
+              77.0684295,
+              28.4961241
+            ],
+            [
+              77.0684523,
+              28.4955071
+            ],
+            [
+              77.068476,
+              28.4948627
+            ],
+            [
+              77.0685924,
+              28.494866
+            ],
+            [
+              77.0685458,
+              28.4961274
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120129850,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A2-1",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0631853,
+              28.4969785
+            ],
+            [
+              77.0631896,
+              28.496997
+            ],
+            [
+              77.0631825,
+              28.4970244
+            ],
+            [
+              77.0631263,
+              28.497068
+            ],
+            [
+              77.0630971,
+              28.4970774
+            ],
+            [
+              77.0630604,
+              28.4970626
+            ],
+            [
+              77.0630477,
+              28.4970319
+            ],
+            [
+              77.0630584,
+              28.4970006
+            ],
+            [
+              77.0631128,
+              28.4969584
+            ],
+            [
+              77.0631396,
+              28.4969514
+            ],
+            [
+              77.0631638,
+              28.4969565
+            ],
+            [
+              77.0631853,
+              28.4969785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120132879,
+        "name": "Maruti Suzuki Gurgaon Factory, Entry Gate-1",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:street": "Old Delhi Gurgaon Road",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0681754,
+              28.4939559
+            ],
+            [
+              77.0681574,
+              28.4946387
+            ],
+            [
+              77.0681536,
+              28.4947455
+            ],
+            [
+              77.0685162,
+              28.4947555
+            ],
+            [
+              77.069129,
+              28.494772
+            ],
+            [
+              77.0692066,
+              28.4946962
+            ],
+            [
+              77.0692292,
+              28.4939833
+            ],
+            [
+              77.0690984,
+              28.4939804
+            ],
+            [
+              77.0681754,
+              28.4939559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120133688,
+        "name": "Weld Shop 3",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0681754,
+              28.4939559
+            ],
+            [
+              77.0681989,
+              28.4931167
+            ],
+            [
+              77.0682023,
+              28.4929927
+            ],
+            [
+              77.0667174,
+              28.4929411
+            ],
+            [
+              77.0666761,
+              28.4941742
+            ],
+            [
+              77.0666699,
+              28.4942897
+            ],
+            [
+              77.0668271,
+              28.4942939
+            ],
+            [
+              77.0668314,
+              28.4941926
+            ],
+            [
+              77.0674062,
+              28.4942086
+            ],
+            [
+              77.0674011,
+              28.4942831
+            ],
+            [
+              77.0672976,
+              28.4942831
+            ],
+            [
+              77.0672836,
+              28.494722
+            ],
+            [
+              77.0681536,
+              28.4947455
+            ],
+            [
+              77.0681574,
+              28.4946387
+            ],
+            [
+              77.0681754,
+              28.4939559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120133689,
+        "name": "Press Shop",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0681754,
+              28.4939559
+            ],
+            [
+              77.0690984,
+              28.4939804
+            ],
+            [
+              77.0692292,
+              28.4939833
+            ],
+            [
+              77.0692359,
+              28.4936895
+            ],
+            [
+              77.0692588,
+              28.4930233
+            ],
+            [
+              77.0686192,
+              28.4930015
+            ],
+            [
+              77.0682023,
+              28.4929927
+            ],
+            [
+              77.0681989,
+              28.4931167
+            ],
+            [
+              77.0681754,
+              28.4939559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120133690,
+        "name": "Weld Shop 2",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0902503,
+              28.4979603
+            ],
+            [
+              77.0901993,
+              28.4979921
+            ],
+            [
+              77.090159,
+              28.4980216
+            ],
+            [
+              77.0901252,
+              28.4980623
+            ],
+            [
+              77.0900961,
+              28.4981153
+            ],
+            [
+              77.0900869,
+              28.498172
+            ],
+            [
+              77.090092,
+              28.4982342
+            ],
+            [
+              77.0901044,
+              28.4982826
+            ],
+            [
+              77.0901322,
+              28.4983339
+            ],
+            [
+              77.0901734,
+              28.4983787
+            ],
+            [
+              77.0902402,
+              28.4983313
+            ],
+            [
+              77.0902796,
+              28.4982925
+            ],
+            [
+              77.0903014,
+              28.4982614
+            ],
+            [
+              77.0903243,
+              28.49822
+            ],
+            [
+              77.0903354,
+              28.4981381
+            ],
+            [
+              77.0903284,
+              28.4980865
+            ],
+            [
+              77.0903144,
+              28.4980451
+            ],
+            [
+              77.0902864,
+              28.4980015
+            ],
+            [
+              77.0902503,
+              28.4979603
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 121362984,
+        "name": "DLF Gateway Tower",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:city": "Gurugram",
+        "osm_addr:housename": "Gateway Tower",
+        "osm_alt_name:en": "Ship Building",
+        "osm_building": "apartments",
+        "osm_building:levels": "16",
+        "osm_ele": "16",
+        "osm_height": "60"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0773232,
+              28.4847971
+            ],
+            [
+              77.077326,
+              28.4846044
+            ],
+            [
+              77.0775881,
+              28.4846072
+            ],
+            [
+              77.0775853,
+              28.4848001
+            ],
+            [
+              77.0773232,
+              28.4847971
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 123401965,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0806473,
+              28.4814888
+            ],
+            [
+              77.0806499,
+              28.481382
+            ],
+            [
+              77.0808023,
+              28.4813849
+            ],
+            [
+              77.0808028,
+              28.4813631
+            ],
+            [
+              77.080923,
+              28.4813654
+            ],
+            [
+              77.0809224,
+              28.4813873
+            ],
+            [
+              77.0809511,
+              28.4813878
+            ],
+            [
+              77.0809516,
+              28.4813677
+            ],
+            [
+              77.0810311,
+              28.4813692
+            ],
+            [
+              77.0810302,
+              28.4814061
+            ],
+            [
+              77.0810509,
+              28.4814065
+            ],
+            [
+              77.0810514,
+              28.4813859
+            ],
+            [
+              77.0811285,
+              28.4813874
+            ],
+            [
+              77.0811281,
+              28.4814013
+            ],
+            [
+              77.0811525,
+              28.4814018
+            ],
+            [
+              77.0811529,
+              28.4813878
+            ],
+            [
+              77.0811728,
+              28.4813882
+            ],
+            [
+              77.0811725,
+              28.4814023
+            ],
+            [
+              77.0812001,
+              28.4814028
+            ],
+            [
+              77.0812011,
+              28.4813593
+            ],
+            [
+              77.0812892,
+              28.481361
+            ],
+            [
+              77.0813195,
+              28.4814089
+            ],
+            [
+              77.0813466,
+              28.4814094
+            ],
+            [
+              77.0813469,
+              28.4813983
+            ],
+            [
+              77.0813861,
+              28.481399
+            ],
+            [
+              77.0813858,
+              28.4814102
+            ],
+            [
+              77.0814481,
+              28.4814114
+            ],
+            [
+              77.0814488,
+              28.4813853
+            ],
+            [
+              77.0815153,
+              28.4813865
+            ],
+            [
+              77.0815343,
+              28.481413
+            ],
+            [
+              77.0815914,
+              28.4814141
+            ],
+            [
+              77.0815928,
+              28.4813581
+            ],
+            [
+              77.0816759,
+              28.4813597
+            ],
+            [
+              77.0817131,
+              28.4813996
+            ],
+            [
+              77.0817315,
+              28.4814
+            ],
+            [
+              77.081732,
+              28.4813806
+            ],
+            [
+              77.0818115,
+              28.4813822
+            ],
+            [
+              77.0818083,
+              28.4815088
+            ],
+            [
+              77.0817766,
+              28.4815082
+            ],
+            [
+              77.0817762,
+              28.4815223
+            ],
+            [
+              77.0817516,
+              28.4815218
+            ],
+            [
+              77.0817508,
+              28.4815542
+            ],
+            [
+              77.0816377,
+              28.481552
+            ],
+            [
+              77.0816389,
+              28.4815055
+            ],
+            [
+              77.0816135,
+              28.481505
+            ],
+            [
+              77.0816128,
+              28.4815349
+            ],
+            [
+              77.0815788,
+              28.4815343
+            ],
+            [
+              77.0815785,
+              28.4815467
+            ],
+            [
+              77.0814786,
+              28.4815448
+            ],
+            [
+              77.0814789,
+              28.4815332
+            ],
+            [
+              77.0813829,
+              28.4815313
+            ],
+            [
+              77.0813825,
+              28.4815471
+            ],
+            [
+              77.0812808,
+              28.4815452
+            ],
+            [
+              77.0812809,
+              28.4815391
+            ],
+            [
+              77.0812503,
+              28.4815385
+            ],
+            [
+              77.0812507,
+              28.481519
+            ],
+            [
+              77.0812142,
+              28.4815183
+            ],
+            [
+              77.0812135,
+              28.4815439
+            ],
+            [
+              77.081091,
+              28.4815415
+            ],
+            [
+              77.0810914,
+              28.4815271
+            ],
+            [
+              77.0810727,
+              28.4815268
+            ],
+            [
+              77.0810729,
+              28.4815177
+            ],
+            [
+              77.081009,
+              28.4815165
+            ],
+            [
+              77.0810088,
+              28.4815255
+            ],
+            [
+              77.0809863,
+              28.4815251
+            ],
+            [
+              77.080986,
+              28.4815395
+            ],
+            [
+              77.0808818,
+              28.4815375
+            ],
+            [
+              77.080882,
+              28.4815281
+            ],
+            [
+              77.0808476,
+              28.4815274
+            ],
+            [
+              77.0808484,
+              28.4814946
+            ],
+            [
+              77.0808241,
+              28.4814941
+            ],
+            [
+              77.0808233,
+              28.4815269
+            ],
+            [
+              77.0807903,
+              28.4815263
+            ],
+            [
+              77.08079,
+              28.4815358
+            ],
+            [
+              77.0806934,
+              28.4815339
+            ],
+            [
+              77.0806526,
+              28.4814889
+            ],
+            [
+              77.0806473,
+              28.4814888
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 123422569,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0880165,
+              28.4848477
+            ],
+            [
+              77.0876014,
+              28.4849523
+            ],
+            [
+              77.0873661,
+              28.4842317
+            ],
+            [
+              77.0877578,
+              28.4841329
+            ],
+            [
+              77.0878143,
+              28.4843057
+            ],
+            [
+              77.0876481,
+              28.4843476
+            ],
+            [
+              77.0877647,
+              28.4847101
+            ],
+            [
+              77.0879557,
+              28.484669
+            ],
+            [
+              77.0880165,
+              28.4848477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 123428960,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0887356,
+              28.4846211
+            ],
+            [
+              77.0886904,
+              28.4844813
+            ],
+            [
+              77.0889208,
+              28.4844237
+            ],
+            [
+              77.0887976,
+              28.4840429
+            ],
+            [
+              77.0885618,
+              28.4841018
+            ],
+            [
+              77.0885148,
+              28.4839567
+            ],
+            [
+              77.0889086,
+              28.4838582
+            ],
+            [
+              77.089124,
+              28.484524
+            ],
+            [
+              77.0887356,
+              28.4846211
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 123428962,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0829646,
+              28.4908426
+            ],
+            [
+              77.0828939,
+              28.4906428
+            ],
+            [
+              77.083159,
+              28.490606
+            ],
+            [
+              77.0834184,
+              28.4906377
+            ],
+            [
+              77.0836171,
+              28.4907086
+            ],
+            [
+              77.0838113,
+              28.490821
+            ],
+            [
+              77.0836471,
+              28.4910076
+            ],
+            [
+              77.0834911,
+              28.4908996
+            ],
+            [
+              77.083299,
+              28.4908383
+            ],
+            [
+              77.083137,
+              28.4908234
+            ],
+            [
+              77.0829646,
+              28.4908426
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 123543048,
+        "name": "Nestlé India",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0891347,
+              28.4909558
+            ],
+            [
+              77.0894049,
+              28.4908833
+            ],
+            [
+              77.0895035,
+              28.4911672
+            ],
+            [
+              77.0892333,
+              28.4912396
+            ],
+            [
+              77.0891347,
+              28.4909558
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 124332401,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.090952,
+              28.4902565
+            ],
+            [
+              77.0913308,
+              28.4910711
+            ],
+            [
+              77.0911267,
+              28.4911475
+            ],
+            [
+              77.0912095,
+              28.4912536
+            ],
+            [
+              77.0915251,
+              28.4911694
+            ],
+            [
+              77.0910417,
+              28.4900836
+            ],
+            [
+              77.0908438,
+              28.4898017
+            ],
+            [
+              77.090706,
+              28.4898804
+            ],
+            [
+              77.090952,
+              28.4902565
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 124332407,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0729529,
+              28.4940249
+            ],
+            [
+              77.073881,
+              28.4940528
+            ],
+            [
+              77.0738379,
+              28.495161
+            ],
+            [
+              77.0729098,
+              28.4951332
+            ],
+            [
+              77.0729529,
+              28.4940249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221069,
+        "name": "Casting Shop",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0649314,
+              28.4972257
+            ],
+            [
+              77.064942,
+              28.4968102
+            ],
+            [
+              77.0651191,
+              28.4968137
+            ],
+            [
+              77.0651085,
+              28.4972292
+            ],
+            [
+              77.0649314,
+              28.4972257
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221070,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A1-7",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0713065,
+              28.4949834
+            ],
+            [
+              77.0713175,
+              28.4947164
+            ],
+            [
+              77.0712178,
+              28.4947143
+            ],
+            [
+              77.071204,
+              28.4949803
+            ],
+            [
+              77.0713065,
+              28.4949834
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221072,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "KE-1",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0707165,
+              28.4970336
+            ],
+            [
+              77.0705882,
+              28.4970298
+            ],
+            [
+              77.0706153,
+              28.4963508
+            ],
+            [
+              77.0707411,
+              28.4963545
+            ],
+            [
+              77.0707165,
+              28.4970336
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221074,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A3-2",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0697407,
+              28.4967422
+            ],
+            [
+              77.0698699,
+              28.4967456
+            ],
+            [
+              77.0698883,
+              28.496227
+            ],
+            [
+              77.0697591,
+              28.4962236
+            ],
+            [
+              77.0697407,
+              28.4967422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221075,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A3-3",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0683858,
+              28.4973092
+            ],
+            [
+              77.0685021,
+              28.4973125
+            ],
+            [
+              77.0685458,
+              28.4961274
+            ],
+            [
+              77.0684295,
+              28.4961241
+            ],
+            [
+              77.0683858,
+              28.4973092
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221076,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A2-2",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0697635,
+              28.4960954
+            ],
+            [
+              77.0698922,
+              28.4960988
+            ],
+            [
+              77.0699105,
+              28.4955435
+            ],
+            [
+              77.0697818,
+              28.4955401
+            ],
+            [
+              77.0697635,
+              28.4960954
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221077,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A3-4",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0706143,
+              28.4962239
+            ],
+            [
+              77.0707454,
+              28.4962277
+            ],
+            [
+              77.0707825,
+              28.4950511
+            ],
+            [
+              77.0707833,
+              28.4950273
+            ],
+            [
+              77.070656,
+              28.4950236
+            ],
+            [
+              77.0706143,
+              28.4962239
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221078,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A3-1",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0713175,
+              28.4947164
+            ],
+            [
+              77.0713399,
+              28.4941694
+            ],
+            [
+              77.0712379,
+              28.4941639
+            ],
+            [
+              77.0712178,
+              28.4947143
+            ],
+            [
+              77.0713175,
+              28.4947164
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221079,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "KE-2",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.070834,
+              28.4970358
+            ],
+            [
+              77.0707165,
+              28.4970336
+            ],
+            [
+              77.0706951,
+              28.4974585
+            ],
+            [
+              77.0707804,
+              28.4974607
+            ],
+            [
+              77.0708175,
+              28.4973963
+            ],
+            [
+              77.070834,
+              28.4970358
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221080,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A3-5",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0694868,
+              28.4974284
+            ],
+            [
+              77.0693905,
+              28.4974256
+            ],
+            [
+              77.0693999,
+              28.4971937
+            ],
+            [
+              77.0694096,
+              28.4969548
+            ],
+            [
+              77.0695042,
+              28.4969575
+            ],
+            [
+              77.0694878,
+              28.4974022
+            ],
+            [
+              77.0694868,
+              28.4974284
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221081,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "A2-5",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0713399,
+              28.4941694
+            ],
+            [
+              77.071355,
+              28.4938015
+            ],
+            [
+              77.0712499,
+              28.4937983
+            ],
+            [
+              77.0712379,
+              28.4941639
+            ],
+            [
+              77.0713399,
+              28.4941694
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221082,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "KE-3",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0652466,
+              28.4929031
+            ],
+            [
+              77.0652431,
+              28.4930068
+            ],
+            [
+              77.065462,
+              28.4930124
+            ],
+            [
+              77.0654655,
+              28.4929087
+            ],
+            [
+              77.0652466,
+              28.4929031
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221084,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "W1-1",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0664506,
+              28.4929336
+            ],
+            [
+              77.0664471,
+              28.4930388
+            ],
+            [
+              77.0666666,
+              28.4930445
+            ],
+            [
+              77.0666701,
+              28.4929392
+            ],
+            [
+              77.0664506,
+              28.4929336
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221086,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "W1-2",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0692292,
+              28.4939833
+            ],
+            [
+              77.0690984,
+              28.4939804
+            ],
+            [
+              77.069107,
+              28.4936866
+            ],
+            [
+              77.0692359,
+              28.4936895
+            ],
+            [
+              77.0692292,
+              28.4939833
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221091,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "W2-2",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0682023,
+              28.4929927
+            ],
+            [
+              77.0681989,
+              28.4931167
+            ],
+            [
+              77.0686158,
+              28.4931255
+            ],
+            [
+              77.0686192,
+              28.4930015
+            ],
+            [
+              77.0682023,
+              28.4929927
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221095,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "W2-1",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0724949,
+              28.4937473
+            ],
+            [
+              77.0714879,
+              28.4937171
+            ],
+            [
+              77.0714845,
+              28.4938054
+            ],
+            [
+              77.071355,
+              28.4938015
+            ],
+            [
+              77.0712499,
+              28.4937983
+            ],
+            [
+              77.0712379,
+              28.4941639
+            ],
+            [
+              77.0712178,
+              28.4947143
+            ],
+            [
+              77.071204,
+              28.4949803
+            ],
+            [
+              77.0713065,
+              28.4949834
+            ],
+            [
+              77.0713024,
+              28.4950849
+            ],
+            [
+              77.0729098,
+              28.4951332
+            ],
+            [
+              77.0729529,
+              28.4940249
+            ],
+            [
+              77.0729631,
+              28.4937614
+            ],
+            [
+              77.0724949,
+              28.4937473
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221099,
+        "name": "KB engine shop/machine shop",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0726741,
+              28.4971303
+            ],
+            [
+              77.0726818,
+              28.4968743
+            ],
+            [
+              77.072877,
+              28.4968788
+            ],
+            [
+              77.0728693,
+              28.4971348
+            ],
+            [
+              77.0726741,
+              28.4971303
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221103,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0721526,
+              28.4973195
+            ],
+            [
+              77.0724009,
+              28.4973219
+            ],
+            [
+              77.0724031,
+              28.497152
+            ],
+            [
+              77.0721547,
+              28.4971496
+            ],
+            [
+              77.0721526,
+              28.4973195
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221106,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0721374,
+              28.4977802
+            ],
+            [
+              77.0723973,
+              28.4977842
+            ],
+            [
+              77.0724056,
+              28.4973625
+            ],
+            [
+              77.0721457,
+              28.4973585
+            ],
+            [
+              77.0721452,
+              28.4973829
+            ],
+            [
+              77.0721387,
+              28.4977168
+            ],
+            [
+              77.0721374,
+              28.4977802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221107,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0728144,
+              28.4973685
+            ],
+            [
+              77.0728127,
+              28.4974476
+            ],
+            [
+              77.0729068,
+              28.4974492
+            ],
+            [
+              77.0728994,
+              28.4977927
+            ],
+            [
+              77.0724436,
+              28.4977851
+            ],
+            [
+              77.0724527,
+              28.4973625
+            ],
+            [
+              77.0728144,
+              28.4973685
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127221109,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0772351,
+              28.496075
+            ],
+            [
+              77.0773754,
+              28.4960779
+            ],
+            [
+              77.077388,
+              28.4956189
+            ],
+            [
+              77.0772493,
+              28.4956159
+            ],
+            [
+              77.0772351,
+              28.496075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222511,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "BPS",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0658413,
+              28.4959573
+            ],
+            [
+              77.0657247,
+              28.4959527
+            ],
+            [
+              77.0657409,
+              28.4956325
+            ],
+            [
+              77.0658575,
+              28.495637
+            ],
+            [
+              77.0658413,
+              28.4959573
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222516,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_access": "delivery",
+        "osm_addr:housenumber": "T1-1",
+        "osm_barrier": "entrance",
+        "osm_building": "roof",
+        "osm_goods": "yes",
+        "osm_hgv": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0772639,
+              28.4976898
+            ],
+            [
+              77.0775346,
+              28.4976948
+            ],
+            [
+              77.0775366,
+              28.4976093
+            ],
+            [
+              77.0784217,
+              28.4976257
+            ],
+            [
+              77.07845,
+              28.4964423
+            ],
+            [
+              77.0782209,
+              28.496438
+            ],
+            [
+              77.0782241,
+              28.4963012
+            ],
+            [
+              77.0778449,
+              28.4962942
+            ],
+            [
+              77.0778409,
+              28.4964606
+            ],
+            [
+              77.0772936,
+              28.4964505
+            ],
+            [
+              77.0772639,
+              28.4976898
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222519,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0773754,
+              28.4960779
+            ],
+            [
+              77.0784478,
+              28.4961006
+            ],
+            [
+              77.0784603,
+              28.4956415
+            ],
+            [
+              77.077388,
+              28.4956189
+            ],
+            [
+              77.0773754,
+              28.4960779
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222520,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0774965,
+              28.4939495
+            ],
+            [
+              77.0784384,
+              28.4939691
+            ],
+            [
+              77.0784571,
+              28.4932732
+            ],
+            [
+              77.0775152,
+              28.4932537
+            ],
+            [
+              77.0774965,
+              28.4939495
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222521,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0773457,
+              28.494888
+            ],
+            [
+              77.078499,
+              28.4949178
+            ],
+            [
+              77.0785175,
+              28.494365
+            ],
+            [
+              77.0778085,
+              28.4943459
+            ],
+            [
+              77.077552,
+              28.4943408
+            ],
+            [
+              77.0773642,
+              28.4943352
+            ],
+            [
+              77.0773457,
+              28.494888
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222523,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0775596,
+              28.498813
+            ],
+            [
+              77.0783232,
+              28.4988287
+            ],
+            [
+              77.0783352,
+              28.4983788
+            ],
+            [
+              77.0775716,
+              28.4983631
+            ],
+            [
+              77.0775596,
+              28.498813
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222524,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0774861,
+              28.4955323
+            ],
+            [
+              77.078491,
+              28.4955479
+            ],
+            [
+              77.0784994,
+              28.4951257
+            ],
+            [
+              77.0774946,
+              28.4951102
+            ],
+            [
+              77.0774861,
+              28.4955323
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222525,
+        "name": "INTERGLOBE",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0652356,
+              28.4979052
+            ],
+            [
+              77.0652391,
+              28.4977945
+            ],
+            [
+              77.0652442,
+              28.4976083
+            ],
+            [
+              77.0663946,
+              28.4976454
+            ],
+            [
+              77.0667596,
+              28.497657
+            ],
+            [
+              77.0678334,
+              28.4976916
+            ],
+            [
+              77.0678346,
+              28.4976641
+            ],
+            [
+              77.0680959,
+              28.4976699
+            ],
+            [
+              77.0680928,
+              28.4977795
+            ],
+            [
+              77.0680062,
+              28.4977776
+            ],
+            [
+              77.0680009,
+              28.4979665
+            ],
+            [
+              77.0667502,
+              28.4979402
+            ],
+            [
+              77.066391,
+              28.497933
+            ],
+            [
+              77.066109,
+              28.4979264
+            ],
+            [
+              77.0652356,
+              28.4979052
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127222527,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "roof",
+        "osm_layer": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0886192,
+              28.4935423
+            ],
+            [
+              77.0872581,
+              28.4950687
+            ],
+            [
+              77.0867587,
+              28.4946647
+            ],
+            [
+              77.0881511,
+              28.4931185
+            ],
+            [
+              77.0881767,
+              28.4930851
+            ],
+            [
+              77.088287,
+              28.4930259
+            ],
+            [
+              77.0884305,
+              28.4930075
+            ],
+            [
+              77.08853,
+              28.4930269
+            ],
+            [
+              77.0886256,
+              28.4930764
+            ],
+            [
+              77.0887173,
+              28.4931816
+            ],
+            [
+              77.0887484,
+              28.4932994
+            ],
+            [
+              77.0887279,
+              28.4934097
+            ],
+            [
+              77.0886192,
+              28.4935423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127237413,
+        "name": "Epitome",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:street": "DLF Cyber City",
+        "osm_building": "yes",
+        "osm_roof:shape": "flat",
+        "osm_source:name": "survey"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0891244,
+              28.4939406
+            ],
+            [
+              77.0894064,
+              28.4944615
+            ],
+            [
+              77.088831,
+              28.4947001
+            ],
+            [
+              77.0885759,
+              28.4941553
+            ],
+            [
+              77.0891244,
+              28.4939406
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127237436,
+        "name": "8C",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:place": "DLF Cyber City",
+        "osm_building": "yes",
+        "osm_roof:shape": "flat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.089341,
+              28.4945628
+            ],
+            [
+              77.0896124,
+              28.4950629
+            ],
+            [
+              77.0895302,
+              28.4950963
+            ],
+            [
+              77.0890584,
+              28.4952861
+            ],
+            [
+              77.088785,
+              28.4947728
+            ],
+            [
+              77.088828,
+              28.4947556
+            ],
+            [
+              77.089341,
+              28.4945628
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127237443,
+        "name": "8B",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:place": "DLF Cyber City",
+        "osm_building": "yes",
+        "osm_roof:shape": "flat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0895443,
+              28.4951713
+            ],
+            [
+              77.0898549,
+              28.4956483
+            ],
+            [
+              77.089272,
+              28.4958977
+            ],
+            [
+              77.0890117,
+              28.4953522
+            ],
+            [
+              77.0890725,
+              28.4953611
+            ],
+            [
+              77.0895443,
+              28.4951713
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127237457,
+        "name": "8A",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_addr:place": "DLF Cyber City",
+        "osm_building": "yes",
+        "osm_roof:shape": "flat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0651604,
+              28.4960802
+            ],
+            [
+              77.0656527,
+              28.4960919
+            ],
+            [
+              77.0657186,
+              28.4941494
+            ],
+            [
+              77.0652381,
+              28.494137
+            ],
+            [
+              77.0651604,
+              28.4960802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127243088,
+        "name": "Paint Shop 1",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "industrial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1866386,
+              28.5395901
+            ],
+            [
+              77.1868371,
+              28.5395311
+            ],
+            [
+              77.1867781,
+              28.5393779
+            ],
+            [
+              77.1865796,
+              28.5394369
+            ],
+            [
+              77.1866386,
+              28.5395901
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 131655350,
+        "name": "New hostel",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_amenity": "student_accommodation",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0668834,
+              28.591337
+            ],
+            [
+              77.0668311,
+              28.5912766
+            ],
+            [
+              77.0668914,
+              28.5912364
+            ],
+            [
+              77.0668176,
+              28.591151
+            ],
+            [
+              77.0668814,
+              28.5911084
+            ],
+            [
+              77.0668513,
+              28.5910736
+            ],
+            [
+              77.0667335,
+              28.5911523
+            ],
+            [
+              77.066671,
+              28.5910801
+            ],
+            [
+              77.0667429,
+              28.5910322
+            ],
+            [
+              77.066677,
+              28.590956
+            ],
+            [
+              77.0667568,
+              28.5909028
+            ],
+            [
+              77.0668054,
+              28.5909589
+            ],
+            [
+              77.0668899,
+              28.5909025
+            ],
+            [
+              77.0669378,
+              28.5909579
+            ],
+            [
+              77.0668774,
+              28.5909982
+            ],
+            [
+              77.0669419,
+              28.5910728
+            ],
+            [
+              77.0668992,
+              28.5911013
+            ],
+            [
+              77.0669411,
+              28.5911496
+            ],
+            [
+              77.06715,
+              28.5910103
+            ],
+            [
+              77.06712,
+              28.5909756
+            ],
+            [
+              77.067167,
+              28.5909442
+            ],
+            [
+              77.0671903,
+              28.5909711
+            ],
+            [
+              77.0672097,
+              28.5909582
+            ],
+            [
+              77.0672473,
+              28.5910017
+            ],
+            [
+              77.067312,
+              28.5909585
+            ],
+            [
+              77.0673617,
+              28.591016
+            ],
+            [
+              77.0672698,
+              28.5910773
+            ],
+            [
+              77.0673115,
+              28.5911254
+            ],
+            [
+              77.067232,
+              28.5911784
+            ],
+            [
+              77.0671777,
+              28.5911157
+            ],
+            [
+              77.0670368,
+              28.5912096
+            ],
+            [
+              77.0670911,
+              28.5912724
+            ],
+            [
+              77.0670193,
+              28.5913203
+            ],
+            [
+              77.0669788,
+              28.5912734
+            ],
+            [
+              77.0668834,
+              28.591337
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 134496048,
+        "name": "Kamakshi Appartments",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0673425,
+              28.5915569
+            ],
+            [
+              77.0674316,
+              28.59157
+            ],
+            [
+              77.0674222,
+              28.5916192
+            ],
+            [
+              77.0674474,
+              28.5916229
+            ],
+            [
+              77.0675112,
+              28.5916323
+            ],
+            [
+              77.0674957,
+              28.5917137
+            ],
+            [
+              77.0675677,
+              28.5917243
+            ],
+            [
+              77.0675871,
+              28.5916222
+            ],
+            [
+              77.0676271,
+              28.5916281
+            ],
+            [
+              77.0676287,
+              28.5916197
+            ],
+            [
+              77.067707,
+              28.5916312
+            ],
+            [
+              77.0677201,
+              28.5915624
+            ],
+            [
+              77.0676533,
+              28.5915526
+            ],
+            [
+              77.0676674,
+              28.5914786
+            ],
+            [
+              77.0675853,
+              28.5914666
+            ],
+            [
+              77.0676066,
+              28.5913551
+            ],
+            [
+              77.0676733,
+              28.5913649
+            ],
+            [
+              77.0676808,
+              28.5913253
+            ],
+            [
+              77.0676947,
+              28.5913274
+            ],
+            [
+              77.0677023,
+              28.5912876
+            ],
+            [
+              77.0678372,
+              28.5913074
+            ],
+            [
+              77.0678267,
+              28.5913624
+            ],
+            [
+              77.067822,
+              28.5913872
+            ],
+            [
+              77.067903,
+              28.5913991
+            ],
+            [
+              77.0678923,
+              28.5914491
+            ],
+            [
+              77.0679766,
+              28.5914613
+            ],
+            [
+              77.0679925,
+              28.5913975
+            ],
+            [
+              77.0680066,
+              28.5913527
+            ],
+            [
+              77.0680653,
+              28.591361
+            ],
+            [
+              77.068094,
+              28.5913634
+            ],
+            [
+              77.0681228,
+              28.5913656
+            ],
+            [
+              77.0681286,
+              28.591318
+            ],
+            [
+              77.0680433,
+              28.5913001
+            ],
+            [
+              77.0680581,
+              28.5912228
+            ],
+            [
+              77.067967,
+              28.5912094
+            ],
+            [
+              77.0679781,
+              28.5911511
+            ],
+            [
+              77.0679169,
+              28.5911421
+            ],
+            [
+              77.0678972,
+              28.5912454
+            ],
+            [
+              77.067853,
+              28.5912389
+            ],
+            [
+              77.0676954,
+              28.5912157
+            ],
+            [
+              77.0677031,
+              28.591175
+            ],
+            [
+              77.0676566,
+              28.5911681
+            ],
+            [
+              77.0676666,
+              28.5911154
+            ],
+            [
+              77.0675996,
+              28.5911056
+            ],
+            [
+              77.0675898,
+              28.5911567
+            ],
+            [
+              77.0675063,
+              28.591151
+            ],
+            [
+              77.0674875,
+              28.5912352
+            ],
+            [
+              77.0674113,
+              28.591224
+            ],
+            [
+              77.0674003,
+              28.5912815
+            ],
+            [
+              77.0674893,
+              28.5912946
+            ],
+            [
+              77.0674811,
+              28.5913375
+            ],
+            [
+              77.0675061,
+              28.5913411
+            ],
+            [
+              77.0675298,
+              28.5913446
+            ],
+            [
+              77.0675188,
+              28.5914025
+            ],
+            [
+              77.0675262,
+              28.5914036
+            ],
+            [
+              77.067524,
+              28.5914152
+            ],
+            [
+              77.0675126,
+              28.5914135
+            ],
+            [
+              77.0675001,
+              28.591479
+            ],
+            [
+              77.0674665,
+              28.591474
+            ],
+            [
+              77.0673477,
+              28.5914566
+            ],
+            [
+              77.0672627,
+              28.5914441
+            ],
+            [
+              77.0672782,
+              28.5913632
+            ],
+            [
+              77.0672052,
+              28.5913524
+            ],
+            [
+              77.0671943,
+              28.5914095
+            ],
+            [
+              77.0671169,
+              28.591402
+            ],
+            [
+              77.0670969,
+              28.5914745
+            ],
+            [
+              77.0670286,
+              28.5914663
+            ],
+            [
+              77.0670107,
+              28.5915367
+            ],
+            [
+              77.0670939,
+              28.5915489
+            ],
+            [
+              77.0670853,
+              28.5915942
+            ],
+            [
+              77.0671334,
+              28.5916013
+            ],
+            [
+              77.0671209,
+              28.5916671
+            ],
+            [
+              77.0671973,
+              28.5916784
+            ],
+            [
+              77.0672096,
+              28.5916139
+            ],
+            [
+              77.0673283,
+              28.5916314
+            ],
+            [
+              77.0673425,
+              28.5915569
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 134496053,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0661455,
+              28.5902703
+            ],
+            [
+              77.0662225,
+              28.5903515
+            ],
+            [
+              77.0662465,
+              28.5903339
+            ],
+            [
+              77.066272,
+              28.5903609
+            ],
+            [
+              77.0662464,
+              28.5903796
+            ],
+            [
+              77.0662793,
+              28.5904142
+            ],
+            [
+              77.066405,
+              28.5903222
+            ],
+            [
+              77.0663475,
+              28.5902616
+            ],
+            [
+              77.0662828,
+              28.5903089
+            ],
+            [
+              77.0662049,
+              28.5902268
+            ],
+            [
+              77.0661455,
+              28.5902703
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 134622928,
+        "name": "Unnamed building",
+        "category": "buildings",
+        "osm_type": "way",
+        "osm_building": "apartments"
+      }
+    }
+  ],
+  "category": "buildings",
+  "count": 68556
+}

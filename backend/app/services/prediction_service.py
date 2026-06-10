@@ -27,7 +27,22 @@ class DecisionNode:
 
 
 class DecisionTree:
-    """Sleek Decision Tree Regressor using Gini variance reduction splits."""
+    """
+    Sleek Decision Tree Regressor using Gini variance reduction splits.
+    
+    Mathematical Formulation:
+    For a given node S containing samples y, the variance is defined as:
+        Var(S) = (1 / |S|) * sum_{y_i in S} (y_i - mean(S))^2
+        
+    A split on feature j at threshold t partitions S into left child L and right child R.
+    The variance reduction (impurity decrease) is computed as:
+        Delta_Var(S, j, t) = Var(S) - [ (|L| / |S|) * Var(L) + (|R| / |S|) * Var(R) ]
+        
+    The algorithm greedily selects feature j* and threshold t* that maximize Delta_Var:
+        (j*, t*) = argmax_{j, t} Delta_Var(S, j, t)
+        
+    This serves as the regression analog to Gini impurity reduction used in classification trees.
+    """
     def __init__(self, max_depth: int = 3, min_samples_split: int = 2):
         self.max_depth = max_depth
         self.min_samples_split = min_samples_split

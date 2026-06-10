@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8108703,
+            18.9610344
+          ],
+          [
+            72.8124079,
+            18.9643393
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1031144873,
+        "name": "ganga",
+        "category": "rivers",
+        "osm_type": "way",
+        "osm_layer": "-1",
+        "osm_tunnel": "culvert",
+        "osm_waterway": "river",
+        "osm_width": "24"
+      }
+    }
+  ],
+  "category": "rivers",
+  "count": 1
+}

@@ -34,7 +34,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-geo-dark text-gray-100 overflow-hidden">
+      <body className="bg-geo-dark text-gray-100">
         {children}
       </body>
     </html>

@@ -8,10 +8,21 @@ export function useMapControl(initialLocation: string = "") {
   const [currentLocation, setCurrentLocation] = useState(initialLocation);
   const [mapCenter, setMapCenter] = useState<[number, number]>(config.mapbox.defaultCenter);
   const [dashboardMode, setDashboardMode] = useState<DashboardMode>("flood");
-  const [mapLayers, setMapLayers] = useState<MapLayer[]>(getLayersForMode("flood"));
+  const defaultBoundaryLayer: MapLayer = {
+    id: "city-boundary",
+    name: "Study Area Boundary",
+    type: "polygon",
+    visible: true,
+    color: "#0ea5e9",
+    icon: "shield",
+    description: "Official administrative boundary polygon"
+  };
+
+  const [mapLayers, setMapLayers] = useState<MapLayer[]>([defaultBoundaryLayer, ...getLayersForMode("flood")]);
   const [layerOpacity, setLayerOpacity] = useState<number>(0.7);
   const [mapFullscreen, setMapFullscreen] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
+  const [boundaryData, setBoundaryData] = useState<any>(null);
 
   // Dynamic Real OSM Layer State
   const [osmData, setOsmData] = useState<Record<string, any>>({});
@@ -19,7 +30,7 @@ export function useMapControl(initialLocation: string = "") {
 
   const handleModeChange = useCallback((mode: DashboardMode) => {
     setDashboardMode(mode);
-    setMapLayers(getLayersForMode(mode));
+    setMapLayers([defaultBoundaryLayer, ...getLayersForMode(mode)]);
   }, []);
 
   const handleToggleLayer = useCallback((layerId: string) => {
@@ -46,30 +57,29 @@ export function useMapControl(initialLocation: string = "") {
   // Fetch real GIS layers dynamically from Nominatim + Overpass APIs via our Backend Services
   const fetchRealOSMData = useCallback(async (city: string, bbox: any) => {
     setIsLoadingOSM(true);
+    setOsmData({}); // Enforce Layer Validation: Block rendering of old city data
     const categories = ["roads", "rivers", "hospitals", "schools", "buildings", "infrastructure"];
-    const fetchedData: Record<string, any> = {};
+    const fetchedData: Record<string, any> = { __metadata: { city } };
 
     toast.loading(`Extracting live OSM layers for ${city}...`, { id: "osm-loader" });
 
     try {
       const token = typeof window !== "undefined" ? localStorage.getItem("geonarrative_token") : null;
-      await Promise.all(
-        categories.map(async (cat) => {
-          const url = `${config.api.baseUrl}/api/v1/locations/osm?city=${encodeURIComponent(
-            city
-          )}&category=${cat}&lat_min=${bbox.lat_min}&lat_max=${bbox.lat_max}&lon_min=${bbox.lon_min}&lon_max=${bbox.lon_max}`;
+      for (const cat of categories) {
+        const url = `${config.api.baseUrl}/api/v1/locations/osm?city=${encodeURIComponent(
+          city
+        )}&category=${cat}&lat_min=${bbox.lat_min}&lat_max=${bbox.lat_max}&lon_min=${bbox.lon_min}&lon_max=${bbox.lon_max}`;
 
-          const res = await fetch(url, {
-            headers: {
-              ...(token ? { "Authorization": `Bearer ${token}` } : {})
-            }
-          });
-          if (res.ok) {
-            const data = await res.json();
-            fetchedData[cat] = data;
+        const res = await fetch(url, {
+          headers: {
+            ...(token ? { "Authorization": `Bearer ${token}` } : {})
           }
-        })
-      );
+        });
+        if (res.ok) {
+          const data = await res.json();
+          fetchedData[cat] = data;
+        }
+      }
       setOsmData(fetchedData);
       toast.success(`Ingested real OSM city map for ${city}!`, { id: "osm-loader" });
     } catch (err) {
@@ -99,6 +109,17 @@ export function useMapControl(initialLocation: string = "") {
         const geocodeResult = await res.json();
         const centerCoords: [number, number] = [geocodeResult.lon, geocodeResult.lat];
         setMapCenter(centerCoords);
+        if (geocodeResult.geojson) {
+          setBoundaryData({
+            geojson: geocodeResult.geojson,
+            boundingbox: [geocodeResult.bbox.lat_min, geocodeResult.bbox.lat_max, geocodeResult.bbox.lon_min, geocodeResult.bbox.lon_max],
+            display_name: geocodeResult.display_name,
+            type: geocodeResult.type,
+            importance: geocodeResult.importance
+          });
+        } else {
+          setBoundaryData(null);
+        }
 
         // 2. Load live OSM Overpass layers for the city bounding box!
         fetchRealOSMData(location, geocodeResult.bbox);
@@ -142,6 +163,7 @@ export function useMapControl(initialLocation: string = "") {
     osmData,
     isLoadingOSM,
     hasSearched,
+    boundaryData,
     setLayerOpacity,
     setMapFullscreen,
     handleModeChange,

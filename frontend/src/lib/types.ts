@@ -60,6 +60,17 @@ export interface ChatMessage {
     mapAction?: string;
     dataPoints?: number;
     sources?: string[];
+    agent_trace?: {
+      user_query: string;
+      detected_intent: string;
+      selected_tool: string;
+      spatial_operation: string;
+      parameters: Record<string, any>;
+      records_found: number;
+      map_action: string;
+      report_action: string;
+      processing_time: number;
+    };
   };
 }
 

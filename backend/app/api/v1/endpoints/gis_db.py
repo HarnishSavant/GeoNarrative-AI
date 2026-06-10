@@ -5,6 +5,7 @@ from app.services.database_service import DatabaseService
 from app.services.spatial_query_service import SpatialQueryService
 from app.services.osm_service import OSMService
 from app.services.gis_engine import GISEngine
+from app.services.urban_risk_service import UrbanRiskService
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 
@@ -314,3 +315,37 @@ async def run_live_gis_analysis(
             
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"GIS Analysis pipeline execution failed: {str(e)}")
+
+
+@router.get("/exposure-summary", response_model=Dict[str, Any])
+async def get_infrastructure_exposure_summary(
+    db: AsyncSession = Depends(get_db)
+):
+    """
+    GEOSPATIAL QUERY: Aggregated Infrastructure Exposure Summary by Domain.
+    Runs active PostGIS spatial queries mapping vulnerabilities across flood, traffic, urban, and utility layers.
+    """
+    try:
+        summary = await SpatialQueryService.query_infrastructure_exposure_summary(db)
+        return summary
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to generate exposure summary: {str(e)}")
+
+
+@router.get("/urban-risk-framework", response_model=Dict[str, Any])
+async def get_urban_risk_framework(
+    location: str = Query("Pune, Maharashtra", description="Target location name"),
+    db: AsyncSession = Depends(get_db)
+):
+    """
+    GET UNIFIED MULTI-DOMAIN URBAN RISK FRAMEWORK:
+    Aggregates explainable rule-based scoring models across flood, traffic,
+    urban, and utility domains. Clearly labeled as explainable rules/MCDA.
+    """
+    try:
+        framework_data = await UrbanRiskService.get_unified_framework_data(db, location)
+        return framework_data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to generate urban risk framework: {str(e)}")
+
+

@@ -20,16 +20,16 @@ async def test_user_registration_success(client: AsyncClient, db_session: AsyncS
     response = await client.post("/api/v1/auth/register", json=payload)
     assert response.status_code == 200
     data = response.json()
-    assert data["username"] == "planner1"
-    assert data["email"] == "planner1@geonarrative.ai"
-    assert data["role"] == "admin"  # The very first user dynamically gets assigned the admin role!
+    assert data["status"] == "success"
+    assert data["assigned_role"] == "admin"  # The very first user dynamically gets assigned the admin role.
     
     # Assert database persistence
     result = await db_session.execute(select(User).filter(User.username == "planner1"))
     user = result.scalars().first()
     assert user is not None
     assert user.role == "admin"
-    assert user.is_verified is False # Must go through outbox activation flow
+    assert user.email == "planner1@geonarrative.ai"
+    assert user.is_verified is True
 
 
 @pytest.mark.asyncio

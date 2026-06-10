@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { DashboardMode } from "@/lib/types";
 import { apiService } from "@/services/apiService";
 
@@ -16,6 +16,11 @@ export interface PredictionResult {
 export function usePrediction(initialMode: DashboardMode = "flood") {
   const [isRunning, setIsRunning] = useState(false);
   const [result, setResult] = useState<PredictionResult | null>(null);
+
+  // Clear previous output when domain mode switches
+  useEffect(() => {
+    setResult(null);
+  }, [initialMode]);
   
   const [parameters, setParameters] = useState<Record<string, any>>({
     rainfall: 245,
@@ -156,40 +161,98 @@ export function usePrediction(initialMode: DashboardMode = "flood") {
           "Alert residents in high-risk zones"
         ];
       } else if (mode === "traffic") {
-        score = dynamicScore;
-        riskLevel = score > 7.0 ? "high" : "medium";
+        const volume = Number(parameters.peakVolume);
+        const capacity = Number(parameters.capacityRatio);
+        const signal = Number(parameters.signalTiming);
+        const construction = Number(parameters.construction);
+        const weather = Number(parameters.weatherImpact);
+
+        const volFactor = Math.min(volume / 12000, 1.0) * 0.30;
+        const capFactor = (Math.min(capacity, 1.2) / 1.2) * 0.30;
+        const cloggedFactor = Math.min(construction / 10.0, 1.0) * 0.20;
+        const cycleFactor = Math.min(signal / 180.0, 1.0) * 0.10;
+        const weatherFactor = Math.min(weather / 100.0, 1.0) * 0.10;
+
+        score = (volFactor + capFactor + cloggedFactor + cycleFactor + weatherFactor) * 10;
+        score = parseFloat(Math.min(Math.max(score, 0), 10).toFixed(1));
+        riskLevel = score > 8.0 ? "critical" : score > 6.5 ? "high" : score > 4.0 ? "medium" : "low";
+
         factorsList = [
-          { name: "Commuter Demand Volume", value: Math.round(Number(parameters.peakVolume) / 100) || 85, weight: 0.4, impact: score > 7 ? "High" : "Medium" },
-          { name: "Ambient Climate factor", value: Math.round(Number(parameters.weatherImpact)) || 65, weight: 0.3, impact: "Medium" },
-          { name: "Node Synchronization Index", value: Math.round(Number(parameters.signalTiming) / 2) || 45, weight: 0.3, impact: "Medium" }
+          { name: "Peak Commuter Volume", value: Math.round((volFactor / 0.30) * 100), weight: 0.30, impact: volFactor > 0.22 ? "High" : "Medium" },
+          { name: "Capacity Ratio Stress", value: Math.round((capFactor / 0.30) * 100), weight: 0.30, impact: capFactor > 0.22 ? "High" : "Medium" },
+          { name: "Clogged Segments", value: Math.round((cloggedFactor / 0.20) * 100), weight: 0.20, impact: cloggedFactor > 0.15 ? "Critical" : "Medium" },
+          { name: "Signal Timing Delay", value: Math.round((cycleFactor / 0.10) * 100), weight: 0.10, impact: "Medium" },
+          { name: "Weather Speed Reduction", value: Math.round((weatherFactor / 0.10) * 100), weight: 0.10, impact: "Medium" }
         ];
+
         recsList = [
-          "Activate adaptive digital twin scheduling overrides",
-          "Dispatch roadside response systems to central warning points"
+          "Trigger automated adaptive signal timing timing override at JM Road",
+          "Deploy corridor speed reduction warnings via variable message signs",
+          "Advise commercial commuters to seek alternative NH-48 bypass routes",
+          "Pre-position roadside towing units near warning junctions"
         ];
       } else if (mode === "urban") {
-        score = dynamicScore;
-        riskLevel = score > 7.0 ? "high" : "medium";
+        const growth = Number(parameters.popGrowth);
+        const land = Number(parameters.landAvail);
+        const infra = Number(parameters.infraCapacity);
+        const compliance = Number(parameters.zoningCompliance);
+        const green = Number(parameters.greenSpace);
+        const permits = Number(parameters.activePermits);
+
+        const growthFactor = Math.min(growth / 6.0, 1.0) * 0.30;
+        const complianceFactor = Math.max(1.0 - (compliance / 100.0), 0.0) * 0.25;
+        const violationFactor = Math.min(permits / 500.0, 1.0) * 0.20;
+        const landFactor = Math.max(1.0 - (land / 100.0), 0.0) * 0.15;
+        const infraFactor = Math.max(1.0 - (infra / 100.0), 0.0) * 0.10;
+
+        score = (growthFactor + complianceFactor + violationFactor + landFactor + infraFactor) * 10;
+        score = parseFloat(Math.min(Math.max(score, 0), 10).toFixed(1));
+        riskLevel = score > 8.0 ? "critical" : score > 6.0 ? "high" : score > 3.5 ? "medium" : "low";
+
         factorsList = [
-          { name: "Zoning Deviation Limit", value: Math.round(Number(parameters.zoningCompliance)) || 88, weight: 0.4, impact: score > 7 ? "High" : "Medium" },
-          { name: "Environmental Buffer", value: Math.round(Number(parameters.greenSpace)) || 18, weight: 0.3, impact: "Medium" },
-          { name: "Population Sprawl Index", value: Math.round(Number(parameters.popGrowth) * 10) || 34, weight: 0.3, impact: "Medium" }
+          { name: "Population Growth Rate", value: Math.round((growthFactor / 0.30) * 100), weight: 0.30, impact: growthFactor > 0.22 ? "High" : "Medium" },
+          { name: "Zoning Deviation Limit", value: Math.round((complianceFactor / 0.25) * 100), weight: 0.25, impact: complianceFactor > 0.18 ? "High" : "Medium" },
+          { name: "Active Building Permits", value: Math.round((violationFactor / 0.20) * 100), weight: 0.20, impact: violationFactor > 0.15 ? "High" : "Medium" },
+          { name: "Land Availability Scarcity", value: Math.round((landFactor / 0.15) * 100), weight: 0.15, impact: "Medium" },
+          { name: "Grid System Capacity", value: Math.round((infraFactor / 0.10) * 100), weight: 0.10, impact: "Medium" }
         ];
+
         recsList = [
-          "Issue regulatory construction halt warnings",
-          "Enforce wetland buffer zone overlays"
+          "Issue regulatory height construction audit warnings for Deccan properties",
+          "Enforce strict building setback buffer overlays on wetland zones",
+          "Impose green canopy cover offset penalties on industrial developments",
+          "Halt municipal sewer line extensions in non-compliant commercial sectors"
         ];
-      } else {
-        score = dynamicScore;
-        riskLevel = score > 7.0 ? "high" : "medium";
+      } else { // utility
+        const age = Number(parameters.equipAge);
+        const load = Number(parameters.loadStress);
+        const backlog = Number(parameters.maintBacklog);
+        const vulner = Number(parameters.vulnerability);
+        const redundancy = Number(parameters.redundancy);
+
+        const loadFactor = (Math.min(load, 120.0) / 120.0) * 0.35;
+        const ageFactor = Math.min(age / 25.0, 1.0) * 0.20;
+        const redundancyFactor = Math.max(1.0 - (redundancy / 100.0), 0.0) * 0.15;
+        const maintFactor = Math.min(backlog / 30.0, 1.0) * 0.15;
+        const atRiskFactor = Math.min(vulner / 100.0, 1.0) * 0.15;
+
+        score = (loadFactor + ageFactor + redundancyFactor + maintFactor + atRiskFactor) * 10;
+        score = parseFloat(Math.min(Math.max(score, 0), 10).toFixed(1));
+        riskLevel = score > 8.2 ? "critical" : score > 6.5 ? "high" : score > 4.5 ? "medium" : "low";
+
         factorsList = [
-          { name: "Thermal Load Stress", value: Math.round(Number(parameters.loadStress)) || 88, weight: 0.4, impact: score > 7 ? "High" : "Medium" },
-          { name: "Infrastructure Age Risk", value: Math.round(Number(parameters.equipAge)) || 14, weight: 0.3, impact: "Medium" },
-          { name: "Network Redundancy", value: Math.round(Number(parameters.redundancy)) || 62, weight: 0.3, impact: "Medium" }
+          { name: "Thermal Load Stress", value: Math.round((loadFactor / 0.35) * 100), weight: 0.35, impact: loadFactor > 0.25 ? "High" : "Medium" },
+          { name: "Equipment Aging Risk", value: Math.round((ageFactor / 0.20) * 100), weight: 0.20, impact: ageFactor > 0.15 ? "High" : "Medium" },
+          { name: "Grid Redundancy Scarcity", value: Math.round((redundancyFactor / 0.15) * 100), weight: 0.15, impact: redundancyFactor > 0.10 ? "High" : "Medium" },
+          { name: "Maintenance Backlog Delay", value: Math.round((maintFactor / 0.15) * 100), weight: 0.15, impact: "Medium" },
+          { name: "Storm Infrastructure Vulnerability", value: Math.round((atRiskFactor / 0.15) * 100), weight: 0.15, impact: "Medium" }
         ];
+
         recsList = [
-          "Pre-position mobile generators near grid nodes",
-          "Execute load balancing transformer sequence"
+          "Dispatch acoustic leak detection teams to Bund Garden main lines",
+          "Execute smart load-balancing transformers sequence overrides",
+          "Pre-position emergency backup generators near grid node Sector A",
+          "Optimize telecommunication booster gains for low-lying coverage cells"
         ];
       }
 

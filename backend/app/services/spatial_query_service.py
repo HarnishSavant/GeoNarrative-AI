@@ -6,16 +6,6 @@ from app.models.db_models import Infrastructure, FloodZone, AnalyticsHistory
 
 logger = logging.getLogger("geonarrative.spatial_query_service")
 
-# Georeferenced WKT course of the Mula-Mutha River in Pune (SRID 4326)
-PUNE_RIVER_WKT = "SRID=4326;LINESTRING(73.8012 18.5204, 73.8155 18.5280, 73.8312 18.5325, 73.8456 18.5348, 73.8589 18.5312, 73.8722 18.5385, 73.8890 18.5410, 73.9056 18.5365)"
-
-# Georeferenced WKT course of key highway road corridors in Pune
-PUNE_ROADS_WKT = {
-    "Karve Road": "SRID=4326;LINESTRING(73.8300 18.5100, 73.8400 18.5150, 73.8500 18.5200, 73.8600 18.5250)",
-    "Fergusson College Road": "SRID=4326;LINESTRING(73.8400 18.5300, 73.8420 18.5200, 73.8450 18.5100)",
-    "Pune Station Overpass": "SRID=4326;LINESTRING(73.8700 18.5450, 73.8750 18.5380, 73.8800 18.5300)",
-    "Jangali Maharaj Road": "SRID=4326;LINESTRING(73.8500 18.5350, 73.8580 18.5310, 73.8680 18.5340)"
-}
 
 
 class SpatialQueryService:
@@ -24,6 +14,24 @@ class SpatialQueryService:
     Executes raw and SQLAlchemy-wrapped geospatial query logic inside the
     PostgreSQL PostGIS database, leveraging spatial indexes for O(log N) KNN operations.
     """
+
+    @staticmethod
+    async def get_total_feature_counts(session: AsyncSession) -> Dict[str, int]:
+        """Returns the total count of each infrastructure type in the current city bounds."""
+        stmt = select(Infrastructure.type, func.count(Infrastructure.id)).group_by(Infrastructure.type)
+        result = await session.execute(stmt)
+        counts = {type_: count for type_, count in result.all()}
+        
+        # Also count roads and rivers from FloodZone
+        road_stmt = select(func.count(FloodZone.id)).where(FloodZone.name.like("[roads]%"))
+        road_res = await session.execute(road_stmt)
+        counts["roads"] = road_res.scalar() or 0
+        
+        river_stmt = select(func.count(FloodZone.id)).where(FloodZone.name.like("[rivers]%"))
+        river_res = await session.execute(river_stmt)
+        counts["rivers"] = river_res.scalar() or 0
+        
+        return counts
 
     @staticmethod
     async def query_hospitals_in_flood_zones(session: AsyncSession) -> List[Dict[str, Any]]:
@@ -65,14 +73,16 @@ class SpatialQueryService:
         stmt = (
             select(
                 Infrastructure,
-                func.ST_Distance(Infrastructure.geom, func.ST_GeomFromText(PUNE_RIVER_WKT, 4326)).label("dist")
+                func.min(func.ST_Distance(Infrastructure.geom, FloodZone.geom)).label("dist")
             )
+            .join(FloodZone, func.ST_DWithin(Infrastructure.geom, FloodZone.geom, distance_degrees))
             .where(
                 and_(
                     Infrastructure.type.ilike("school"),
-                    func.ST_DWithin(Infrastructure.geom, func.ST_GeomFromText(PUNE_RIVER_WKT, 4326), distance_degrees)
+                    FloodZone.name.like("[rivers]%")
                 )
             )
+            .group_by(Infrastructure.id)
             .order_by("dist")
         )
 
@@ -183,11 +193,22 @@ class SpatialQueryService:
         logger.info("Executing PostGIS query: Flood-prone road corridors.")
         results = []
 
-        # Audit each key roadway vector stored as WKT in our registry against active database floodway zones
-        for road_name, road_wkt in PUNE_ROADS_WKT.items():
+        # Query all roads from FloodZone table
+        roads_stmt = select(FloodZone).where(FloodZone.name.like("[roads]%"))
+        roads_result = await session.execute(roads_stmt)
+        roads = roads_result.scalars().all()
+
+        for road in roads:
+            # Check intersections with high/critical flood zones (like rivers)
             stmt = (
                 select(FloodZone)
-                .where(func.ST_Intersects(func.ST_GeomFromText(road_wkt, 4326), FloodZone.geom))
+                .where(
+                    and_(
+                        FloodZone.risk_level.in_(["high", "critical"]),
+                        FloodZone.id != road.id,
+                        func.ST_Intersects(road.geom, FloodZone.geom)
+                    )
+                )
             )
             
             result = await session.execute(stmt)
@@ -197,7 +218,7 @@ class SpatialQueryService:
                 max_depth = max(z.inundation_depth for z in zones)
                 highest_risk = "critical" if any(z.risk_level == "critical" for z in zones) else "high"
                 results.append({
-                    "road_name": road_name,
+                    "road_name": road.name.replace("[roads] ", ""),
                     "is_flood_prone": True,
                     "max_inundation_depth_m": round(max_depth, 2),
                     "highest_risk_level": highest_risk,
@@ -282,3 +303,59 @@ class SpatialQueryService:
             
         else:
             raise ValueError(f"Unsupported analysis mode: {mode}")
+
+    @staticmethod
+    async def query_infrastructure_exposure_summary(session: AsyncSession) -> Dict[str, Any]:
+        """
+        Query 7: Infrastructure exposure summary aggregated by domain.
+        Queries the active PostGIS database and categorizes vulnerable assets by domain.
+        """
+        logger.info("Executing PostGIS query: Infrastructure exposure summary by domain.")
+        
+        # 1. Flood domain: count facilities in flood zones
+        flood_stmt = (
+            select(FloodZone.risk_level, func.count(Infrastructure.id))
+            .join(Infrastructure, func.ST_Contains(FloodZone.geom, Infrastructure.geom))
+            .group_by(FloodZone.risk_level)
+        )
+        res_flood = await session.execute(flood_stmt)
+        flood_counts = {level: count for level, count in res_flood.all()}
+        
+        # 2. Traffic domain: count of flood-prone road intersections
+        prone_roads = await SpatialQueryService.query_flood_prone_roads(session)
+        traffic_exposure = len(prone_roads)
+        
+        # 3. Urban domain: count of zoning violations / buildings in vulnerable hazard areas
+        violations = await SpatialQueryService.query_buildings_intersecting_vulnerable_areas(session)
+        urban_exposure = len(violations)
+        
+        # 4. Utility domain: substations in critical/high risk zones
+        high_risk_infra = await SpatialQueryService.query_high_risk_infrastructure(session)
+        substations_at_risk = len([i for i in high_risk_infra if i["type"] == "substation"])
+        
+        total_exposed = sum(flood_counts.values()) + traffic_exposure + urban_exposure + substations_at_risk
+        
+        return {
+            "total_exposed_assets": total_exposed,
+            "domains": {
+                "flood": {
+                    "exposed_assets_count": sum(flood_counts.values()),
+                    "by_risk_level": flood_counts
+                },
+                "traffic": {
+                    "impacted_corridors_count": traffic_exposure,
+                    "roads": [r["road_name"] for r in prone_roads]
+                },
+                "urban": {
+                    "zoning_violations_count": urban_exposure,
+                    "violations": [
+                        {"name": v["asset_name"], "zone": v["intersecting_zone"], "risk": v["risk_level"]}
+                        for v in violations
+                    ]
+                },
+                "utility": {
+                    "vulnerable_substations_count": substations_at_risk
+                }
+            }
+        }
+

@@ -16,7 +16,13 @@ from app.middleware.saas_limit_middleware import SaaSLimitMiddleware
 from app.middleware.rate_limit_middleware import RateLimitMiddleware
 from app.core.config import settings
 
+import logging
+from datetime import datetime
 from contextlib import asynccontextmanager
+from fastapi import Request
+from fastapi.responses import JSONResponse
+
+logger = logging.getLogger("geonarrative_telemetry")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -34,6 +40,15 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    import traceback
+    logger.error(f"Unhandled Exception: {exc}\n{traceback.format_exc()}")
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "Internal Server Error. Please contact support or check server logs."},
+    )
+
 # Custom Telemetry & Latency Logging Middleware
 app.add_middleware(LoggingMiddleware)
 app.add_middleware(RateLimitMiddleware)
@@ -50,11 +65,6 @@ app.add_middleware(
 
 # Include Enterprise Modular Router
 app.include_router(api_router, prefix="/api/v1")
-
-
-import logging
-
-logger = logging.getLogger("geonarrative_telemetry")
 
 async def init_db_and_seed():
     """Attempt to create database tables and seed Pune digital twin spatial datasets in the background"""
@@ -103,6 +113,76 @@ async def root():
 @app.get("/health")
 async def health_check():
     return {"status": "healthy", "service": "geonarrative-ai-backend"}
+
+
+@app.get("/api/debug/gemini")
+async def debug_gemini():
+    """
+    Diagnostic endpoint to safely test Gemini API connectivity.
+    Tests: API key presence, model access, response generation.
+    Does NOT expose the API key.
+    """
+    import httpx
+    import time
+
+    api_key = settings.GEMINI_API_KEY
+    diagnostics = {
+        "timestamp": datetime.now().isoformat(),
+        "api_key_configured": bool(api_key),
+        "api_key_prefix": api_key[:6] + "..." if api_key and len(api_key) > 6 else "N/A",
+        "api_key_length": len(api_key) if api_key else 0,
+        "model": "gemini-2.5-flash",
+        "endpoint": "generativelanguage.googleapis.com/v1beta",
+        "auth_method": "x-goog-api-key header",
+        "connection_test": None,
+        "response_test": None,
+        "latency_ms": None,
+        "error": None,
+    }
+
+    if not api_key:
+        diagnostics["error"] = "GEMINI_API_KEY is empty or not set in .env"
+        return diagnostics
+
+    # Test actual API call
+    model_name = "gemini-2.5-flash"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent"
+    payload = {
+        "contents": [{"role": "user", "parts": [{"text": "Reply with exactly: GEMINI_OK"}]}],
+        "generationConfig": {"temperature": 0.0, "maxOutputTokens": 20}
+    }
+    headers = {
+        "x-goog-api-key": api_key,
+        "Content-Type": "application/json"
+    }
+
+    start = time.perf_counter()
+    try:
+        async with httpx.AsyncClient(timeout=15.0) as client:
+            resp = await client.post(url, json=payload, headers=headers)
+            latency = round((time.perf_counter() - start) * 1000, 1)
+            diagnostics["latency_ms"] = latency
+
+            if resp.status_code == 200:
+                data = resp.json()
+                candidates = data.get("candidates", [])
+                if candidates:
+                    text = candidates[0].get("content", {}).get("parts", [{}])[0].get("text", "")
+                    diagnostics["connection_test"] = "SUCCESS"
+                    diagnostics["response_test"] = text.strip()[:100]
+                else:
+                    diagnostics["connection_test"] = "SUCCESS (no candidates)"
+                    diagnostics["response_test"] = "Empty response"
+            else:
+                diagnostics["connection_test"] = "FAILED"
+                error_text = resp.text[:200] if resp.text else "No response body"
+                diagnostics["error"] = f"HTTP {resp.status_code}: {error_text}"
+    except Exception as e:
+        diagnostics["connection_test"] = "FAILED"
+        diagnostics["error"] = f"Connection error: {str(e)}"
+        diagnostics["latency_ms"] = round((time.perf_counter() - start) * 1000, 1)
+
+    return diagnostics
 
 
 if __name__ == "__main__":

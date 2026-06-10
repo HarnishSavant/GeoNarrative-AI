@@ -1,0 +1,4503 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3728451,
+          22.5595068
+        ]
+      },
+      "properties": {
+        "id": 1283776632,
+        "name": "Loreto Convent",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3690927,
+          22.5251285
+        ]
+      },
+      "properties": {
+        "id": 1686118748,
+        "name": "Patha Bhavan Higher Secondary School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "82/7a",
+        "osm_addr:street": "Ballygunge Place",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-12-16",
+        "osm_operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3683953,
+          22.5287655
+        ]
+      },
+      "properties": {
+        "id": 1686118749,
+        "name": "Patha Bhavan High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-12-16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3146978,
+          22.492189
+        ]
+      },
+      "properties": {
+        "id": 1894645910,
+        "name": "National Gems Higher Secoundry School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:street": "D.r A.k paul raod",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3158083,
+          22.4911829
+        ]
+      },
+      "properties": {
+        "id": 1894648468,
+        "name": "Behla Blind School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:street": "Diamond Harbour road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.313523,
+          22.492422
+        ]
+      },
+      "properties": {
+        "id": 1894651523,
+        "name": "Shaw Public Girls High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:street": "Fakir para road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3681468,
+          22.5645214
+        ]
+      },
+      "properties": {
+        "id": 2266850256,
+        "name": "Loreto Girls School, Sealdah",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2025-04-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3707472,
+          22.5882004
+        ]
+      },
+      "properties": {
+        "id": 2383558698,
+        "name": "Holy child school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "2",
+        "osm_addr:street": "Duff Street",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3476941,
+          22.525445
+        ]
+      },
+      "properties": {
+        "id": 2471894139,
+        "name": "The New Horizon High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3740861,
+          22.5799109
+        ]
+      },
+      "properties": {
+        "id": 3413973942,
+        "name": "Brahmo Balika Shikshalaya",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q16255382",
+        "osm_wikipedia": "en:Brahmo Balika Shikshalaya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3432922,
+          22.4852557
+        ]
+      },
+      "properties": {
+        "id": 5162632122,
+        "name": "ITI (TOLLYGUNGE)",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3460047,
+          22.4852308
+        ]
+      },
+      "properties": {
+        "id": 5162659223,
+        "name": "ITI",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3421025,
+          22.4856531
+        ]
+      },
+      "properties": {
+        "id": 5162685021,
+        "name": "Swami pranabananda school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3621813,
+          22.5525146
+        ]
+      },
+      "properties": {
+        "id": 5169245623,
+        "name": "St.Augustine's Day School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_name:en": "St.Augustine's Day School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3623891,
+          22.5002815
+        ]
+      },
+      "properties": {
+        "id": 5996138986,
+        "name": "South City International School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "375",
+        "osm_addr:postcode": "700068",
+        "osm_addr:street": "Prince Anwar Shah Road",
+        "osm_amenity": "school",
+        "osm_website": "https://www.scis.co.in/",
+        "osm_wikidata": "Q24940031",
+        "osm_wikipedia": "en:South City International School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3545701,
+          22.5528356
+        ]
+      },
+      "properties": {
+        "id": 6135362109,
+        "name": "Jewish Girls' School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "63",
+        "osm_addr:postcode": "700016",
+        "osm_addr:street": "Park Street",
+        "osm_amenity": "school",
+        "osm_operator": "Emunah Calcutta Jewish Trust"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3526693,
+          22.5496347
+        ]
+      },
+      "properties": {
+        "id": 6541624088,
+        "name": "Loreto School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q6680900",
+        "osm_wikipedia": "en:Loreto College, Kolkata"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3739599,
+          22.5008535
+        ]
+      },
+      "properties": {
+        "id": 7265194481,
+        "name": "Jadavpur N.K. Pal Adarsha Sikshayatan",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:housenumber": "43/5H",
+        "osm_addr:postcode": "700031",
+        "osm_addr:street": "Jheel Road",
+        "osm_amenity": "school",
+        "osm_description": "A very Reputable Higher Secondary School in Jadavpur",
+        "osm_phone": "+91 33 2472 3339"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3750971,
+          22.500405
+        ]
+      },
+      "properties": {
+        "id": 7265218444,
+        "name": "Adarsha Balika Shikshayatan",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:postcode": "700075",
+        "osm_amenity": "school",
+        "osm_description": "A higher secondary school(upto 18 years) for girls.",
+        "osm_phone": "+91 33 2418 2975",
+        "osm_religion": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3699876,
+          22.4993295
+        ]
+      },
+      "properties": {
+        "id": 7265545939,
+        "name": "Jadavpur Vidyapith",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:housenumber": "188",
+        "osm_addr:postcode": "700032",
+        "osm_addr:street": "Raja Subodh Chandra Mullick Road",
+        "osm_amenity": "school",
+        "osm_phone": "+91 33 2414 6746",
+        "osm_website": "https://jadavpurvidyapithhs.org/",
+        "osm_wikidata": "Q17058443",
+        "osm_wikipedia": "en:Jadavpur Vidyapith"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3747787,
+          22.4997741
+        ]
+      },
+      "properties": {
+        "id": 7265758614,
+        "name": "Shishu Siksha Niketan",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:housenumber": "1/68",
+        "osm_addr:postcode": "700075",
+        "osm_addr:street": "Jheel Road",
+        "osm_amenity": "school",
+        "osm_religion": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3791735,
+          22.5032499
+        ]
+      },
+      "properties": {
+        "id": 7265838416,
+        "name": "RD Memorial School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2687635,
+          22.5604779
+        ]
+      },
+      "properties": {
+        "id": 7592914055,
+        "name": "Podra Mahakali Vidyalaya",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3668259,
+          22.5215559
+        ]
+      },
+      "properties": {
+        "id": 8011950457,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3608192,
+          22.5477035
+        ]
+      },
+      "properties": {
+        "id": 9658705417,
+        "name": "The Assembly of God Church School (Senior Section), Park Street",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "125,1",
+        "osm_addr:postcode": "700017",
+        "osm_addr:street": "Park Street",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_opening_hours": "Mo-Fr 07:15-17:15",
+        "osm_phone": "0033 2229 4484",
+        "osm_website": "https://www.agcschools.edu.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3825458,
+          22.5790125
+        ]
+      },
+      "properties": {
+        "id": 9691487817,
+        "name": "Deshabandhu Vidyapith",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "106",
+        "osm_addr:postcode": "700011",
+        "osm_addr:street": "Narkel Danga North Road",
+        "osm_amenity": "school",
+        "osm_opening_hours": "Mo-Sa 10:00-17:00",
+        "osm_phone": "098042 77695"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.345584,
+          22.4817158
+        ]
+      },
+      "properties": {
+        "id": 9910279968,
+        "name": "SOUTHEND SCHOOL",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3647526,
+          22.5165758
+        ]
+      },
+      "properties": {
+        "id": 9911367818,
+        "name": "Nava Nalanda High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3802091,
+          22.5144727
+        ]
+      },
+      "properties": {
+        "id": 10247535209,
+        "name": "Silver Point School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:street": "Banku Bihari Chatterjee Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3810173,
+          22.476745
+        ]
+      },
+      "properties": {
+        "id": 11300039718,
+        "name": "Kendua Mahendragarh High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-30",
+        "osm_fee": "yes",
+        "osm_operator:type": "government",
+        "osm_religion": "hindu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3778406,
+          22.4674766
+        ]
+      },
+      "properties": {
+        "id": 11300237037,
+        "name": "BD Memorial Primary School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-30",
+        "osm_operator:type": "private",
+        "osm_source": "local knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3778875,
+          22.4647949
+        ]
+      },
+      "properties": {
+        "id": 11300245908,
+        "name": "SB girls High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-30",
+        "osm_operator:type": "government",
+        "osm_source": "local knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3658586,
+          22.5270866
+        ]
+      },
+      "properties": {
+        "id": 11422441931,
+        "name": "M G Rungta Academy",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "53/1/3",
+        "osm_addr:street": "Hazra Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-12-16",
+        "osm_operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3572206,
+          22.5767656
+        ]
+      },
+      "properties": {
+        "id": 11736253669,
+        "name": "Md Jan Higher Secondary School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "9B",
+        "osm_addr:postcode": "700073",
+        "osm_addr:street": "Bolai Dutta Street",
+        "osm_amenity": "school",
+        "osm_opening_hours": "Mo-Sa 06:00-04:30",
+        "osm_website": "http://mdjanschool.org.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3807611,
+          22.462766
+        ]
+      },
+      "properties": {
+        "id": 11847022218,
+        "name": "Garia Barada Prasad Uchcha Vidyalaya (Estd.-1919)",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:postcode": "700084",
+        "osm_addr:street": "Garia Station Road",
+        "osm_amenity": "school",
+        "osm_opening_hours": "Mo-Fr 10:00-17:00; Sa 10:00-14:30",
+        "osm_operator": "Garia Barada Prasad Uchcha Vidyalaya (Estd.-1919)",
+        "osm_phone": "03324622387"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.369557,
+          22.5660376
+        ]
+      },
+      "properties": {
+        "id": 12080634069,
+        "name": "PW Govt Exam Wallah Kolkata",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "8th floor",
+        "osm_addr:postcode": "700014",
+        "osm_addr:street": "AJC Bose Road (Sealdah Flyover)",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_internet_access": "wlan",
+        "osm_opening_hours": "Mo-Su 07:00-20:00",
+        "osm_phone": "+917044531884;+918420620749",
+        "osm_website": "https://pw.live/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3616203,
+          22.5800786
+        ]
+      },
+      "properties": {
+        "id": 12164967801,
+        "name": "Shree Vishudhanand Saraswati Vidyalay school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "36",
+        "osm_addr:postcode": "700007",
+        "osm_addr:street": "Chittaranjan Avenue",
+        "osm_amenity": "school",
+        "osm_opening_hours": "Mo-Sa 06:00-17:30",
+        "osm_outdoor_seating": "no",
+        "osm_phone": "033 2241 1539"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3203914,
+          22.4774268
+        ]
+      },
+      "properties": {
+        "id": 12308788601,
+        "name": "Purba Barisha High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:postcode": "700008",
+        "osm_addr:street": "Kailash Ghosh Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3696565,
+          22.5276908
+        ]
+      },
+      "properties": {
+        "id": 12346102001,
+        "name": "Ballygunge Vidyalaya & Silpa Sikshayatana",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:postcode": "700019",
+        "osm_addr:street": "Ballygunge Place",
+        "osm_amenity": "school",
+        "osm_opening_hours": "Mo-Sa 10:45-17:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3680212,
+          22.5284937
+        ]
+      },
+      "properties": {
+        "id": 12346105101,
+        "name": "Jagriti Vidyapeeth High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "80/A",
+        "osm_addr:postcode": "700019",
+        "osm_addr:street": "Bondel Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3787871,
+          22.5163806
+        ]
+      },
+      "properties": {
+        "id": 13406746701,
+        "name": "Kasba Modern Institute For Girls",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "235/1",
+        "osm_addr:postcode": "70042",
+        "osm_addr:street": "Banku Bihari Chatterjee Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3506459,
+          22.4706095
+        ]
+      },
+      "properties": {
+        "id": 13885049501,
+        "name": "Bansdroni Chakdah Vidyamandir",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-05-27",
+        "osm_education": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3523217,
+          22.4699105
+        ]
+      },
+      "properties": {
+        "id": 13885066101,
+        "name": "Muktadhara Nursery & Kindergarten School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-05-27",
+        "osm_education": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3750103,
+              22.580474
+            ],
+            [
+              88.3749765,
+              22.5797811
+            ],
+            [
+              88.3745609,
+              22.5798797
+            ],
+            [
+              88.3740888,
+              22.579954
+            ],
+            [
+              88.3741693,
+              22.580593
+            ],
+            [
+              88.3747272,
+              22.5805187
+            ],
+            [
+              88.3750103,
+              22.580474
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 105738763,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.36507,
+              22.5607349
+            ],
+            [
+              88.3649874,
+              22.5602603
+            ],
+            [
+              88.364963,
+              22.5596792
+            ],
+            [
+              88.3650174,
+              22.559218
+            ],
+            [
+              88.3654133,
+              22.5592685
+            ],
+            [
+              88.3661721,
+              22.5590698
+            ],
+            [
+              88.3664733,
+              22.5598391
+            ],
+            [
+              88.3667657,
+              22.5606181
+            ],
+            [
+              88.3666268,
+              22.5606276
+            ],
+            [
+              88.36507,
+              22.5607349
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 106086759,
+        "name": "Calcutta Boys School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_wikidata": "Q5018918",
+        "osm_wikimedia_commons": "Category:Calcutta Boys' School",
+        "osm_wikipedia": "en:Calcutta Boys' School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3643132,
+              22.5538806
+            ],
+            [
+              88.3660502,
+              22.5536913
+            ],
+            [
+              88.3663796,
+              22.5554258
+            ],
+            [
+              88.3649972,
+              22.5557725
+            ],
+            [
+              88.3643132,
+              22.5538806
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 112075902,
+        "name": "St. James' School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housename": "St. James' School",
+        "osm_addr:housenumber": "165",
+        "osm_addr:postcode": "700014",
+        "osm_addr:street": "A. J. C. Bose Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_wikidata": "Q7588404",
+        "osm_wikipedia": "en:St. James' School (India)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3765557,
+              22.5610245
+            ],
+            [
+              88.3763626,
+              22.5607124
+            ],
+            [
+              88.3760246,
+              22.5595978
+            ],
+            [
+              88.3762177,
+              22.5594194
+            ],
+            [
+              88.3775696,
+              22.5590528
+            ],
+            [
+              88.3779236,
+              22.5589686
+            ],
+            [
+              88.3783042,
+              22.558929
+            ],
+            [
+              88.3788138,
+              22.5603904
+            ],
+            [
+              88.378905,
+              22.5604895
+            ],
+            [
+              88.3784652,
+              22.5607718
+            ],
+            [
+              88.3782881,
+              22.5604895
+            ],
+            [
+              88.3765557,
+              22.5610245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 112869509,
+        "name": "Loreto Convent School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2024-09-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.378707,
+              22.5586702
+            ],
+            [
+              88.3782716,
+              22.558825
+            ],
+            [
+              88.378643,
+              22.5598801
+            ],
+            [
+              88.3792559,
+              22.5597166
+            ],
+            [
+              88.3792215,
+              22.5595779
+            ],
+            [
+              88.3790485,
+              22.559026
+            ],
+            [
+              88.3788409,
+              22.5590277
+            ],
+            [
+              88.378707,
+              22.5586702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 112869542,
+        "name": "Nikita Don Bosco School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2024-09-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3729398,
+              22.5540988
+            ],
+            [
+              88.3728325,
+              22.5536331
+            ],
+            [
+              88.3736479,
+              22.5534745
+            ],
+            [
+              88.373723,
+              22.55397
+            ],
+            [
+              88.3729398,
+              22.5540988
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113119622,
+        "name": "Holy Child Sch",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2024-09-08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3729703,
+              22.544366
+            ],
+            [
+              88.3729292,
+              22.544369
+            ],
+            [
+              88.3718482,
+              22.5444458
+            ],
+            [
+              88.3709899,
+              22.5445647
+            ],
+            [
+              88.3707217,
+              22.5445052
+            ],
+            [
+              88.370829,
+              22.5441882
+            ],
+            [
+              88.3708034,
+              22.5438949
+            ],
+            [
+              88.3718875,
+              22.5437903
+            ],
+            [
+              88.371881,
+              22.5436558
+            ],
+            [
+              88.3720191,
+              22.5436623
+            ],
+            [
+              88.3720118,
+              22.5434747
+            ],
+            [
+              88.3729608,
+              22.5434918
+            ],
+            [
+              88.3729703,
+              22.544366
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113279122,
+        "name": "Don Bosco",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2025-06-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3641421,
+              22.5350737
+            ],
+            [
+              88.3639812,
+              22.5342351
+            ],
+            [
+              88.364535,
+              22.5341174
+            ],
+            [
+              88.364814,
+              22.5354341
+            ],
+            [
+              88.364833,
+              22.5356898
+            ],
+            [
+              88.3646692,
+              22.5357788
+            ],
+            [
+              88.3644342,
+              22.5359024
+            ],
+            [
+              88.3642451,
+              22.5360052
+            ],
+            [
+              88.3638782,
+              22.5361432
+            ],
+            [
+              88.3636636,
+              22.5351785
+            ],
+            [
+              88.3641421,
+              22.5350737
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 117170569,
+        "name": "Modern High School For Girls",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-01-08",
+        "osm_operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3688091,
+              22.5204809
+            ],
+            [
+              88.3681632,
+              22.5202948
+            ],
+            [
+              88.3680834,
+              22.5201021
+            ],
+            [
+              88.3680259,
+              22.5200076
+            ],
+            [
+              88.3679601,
+              22.5198565
+            ],
+            [
+              88.3681051,
+              22.5197884
+            ],
+            [
+              88.3684348,
+              22.5196335
+            ],
+            [
+              88.3685382,
+              22.5197078
+            ],
+            [
+              88.3686884,
+              22.5200671
+            ],
+            [
+              88.3689111,
+              22.520518
+            ],
+            [
+              88.3688091,
+              22.5204809
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 118176394,
+        "name": "Jagadbandhu Institution",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:housenumber": "25",
+        "osm_addr:postcode": "700019",
+        "osm_addr:street": "Fern Road",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q6122065",
+        "osm_wikipedia": "en:Jagadbandhu Institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3642065,
+              22.5054554
+            ],
+            [
+              88.3640402,
+              22.5047095
+            ],
+            [
+              88.3657041,
+              22.5043733
+            ],
+            [
+              88.3657943,
+              22.5050313
+            ],
+            [
+              88.3655809,
+              22.5050645
+            ],
+            [
+              88.3655762,
+              22.5053767
+            ],
+            [
+              88.3647463,
+              22.5053786
+            ],
+            [
+              88.3642065,
+              22.5054554
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 118618360,
+        "name": "Jodhpur Park Boys School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q6207841",
+        "osm_wikipedia": "en:Jodhpur Park Boys School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3739267,
+              22.5011809
+            ],
+            [
+              88.3739402,
+              22.5010247
+            ],
+            [
+              88.3738409,
+              22.5010124
+            ],
+            [
+              88.3738302,
+              22.5006307
+            ],
+            [
+              88.3739107,
+              22.500606
+            ],
+            [
+              88.3743775,
+              22.5005953
+            ],
+            [
+              88.3747396,
+              22.5006944
+            ],
+            [
+              88.3746484,
+              22.5008456
+            ],
+            [
+              88.3745518,
+              22.5012049
+            ],
+            [
+              88.3745009,
+              22.5012842
+            ],
+            [
+              88.3742352,
+              22.5012007
+            ],
+            [
+              88.3739267,
+              22.5011809
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 118840250,
+        "name": "NK Pal Adarsha Shikshyatan School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.374863,
+              22.5005267
+            ],
+            [
+              88.3749354,
+              22.5002591
+            ],
+            [
+              88.3753445,
+              22.5002073
+            ],
+            [
+              88.3753431,
+              22.5005564
+            ],
+            [
+              88.374863,
+              22.5005267
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 119052291,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3820566,
+              22.5069849
+            ],
+            [
+              88.3818558,
+              22.5064423
+            ],
+            [
+              88.3822984,
+              22.5063308
+            ],
+            [
+              88.382411,
+              22.5066306
+            ],
+            [
+              88.3823735,
+              22.5066578
+            ],
+            [
+              88.3824327,
+              22.506864
+            ],
+            [
+              88.3823838,
+              22.5068827
+            ],
+            [
+              88.3820566,
+              22.5069849
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 119940296,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3643593,
+              22.4980237
+            ],
+            [
+              88.3642904,
+              22.497557
+            ],
+            [
+              88.3651238,
+              22.4972606
+            ],
+            [
+              88.365185,
+              22.4974752
+            ],
+            [
+              88.365205,
+              22.4976452
+            ],
+            [
+              88.3652327,
+              22.4978785
+            ],
+            [
+              88.3650898,
+              22.4979146
+            ],
+            [
+              88.3645337,
+              22.4980014
+            ],
+            [
+              88.3643593,
+              22.4980237
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120182169,
+        "name": "Jadavpur Girls High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q73770810"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3460184,
+              22.4928793
+            ],
+            [
+              88.3457074,
+              22.4925547
+            ],
+            [
+              88.3461712,
+              22.4922077
+            ],
+            [
+              88.3465301,
+              22.4925818
+            ],
+            [
+              88.3460184,
+              22.4928793
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120345361,
+        "name": "Montclair School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.358185,
+              22.4851629
+            ],
+            [
+              88.3582613,
+              22.4848729
+            ],
+            [
+              88.3585391,
+              22.48493
+            ],
+            [
+              88.3585408,
+              22.4852323
+            ],
+            [
+              88.358185,
+              22.4851629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 120459498,
+        "name": "Gandhi Colony High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.347239,
+              22.4813082
+            ],
+            [
+              88.3474188,
+              22.4814206
+            ],
+            [
+              88.3477165,
+              22.4815445
+            ],
+            [
+              88.3478468,
+              22.4815959
+            ],
+            [
+              88.3479067,
+              22.4814916
+            ],
+            [
+              88.3478909,
+              22.4813834
+            ],
+            [
+              88.3479258,
+              22.4813066
+            ],
+            [
+              88.3479767,
+              22.4812075
+            ],
+            [
+              88.3480408,
+              22.4811422
+            ],
+            [
+              88.3484676,
+              22.4809026
+            ],
+            [
+              88.3482232,
+              22.4805424
+            ],
+            [
+              88.3475688,
+              22.4809389
+            ],
+            [
+              88.3474346,
+              22.4810455
+            ],
+            [
+              88.3473461,
+              22.4811075
+            ],
+            [
+              88.347263,
+              22.4812215
+            ],
+            [
+              88.347239,
+              22.4813082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 121473955,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3558113,
+              22.5288797
+            ],
+            [
+              88.3557014,
+              22.5287187
+            ],
+            [
+              88.3556075,
+              22.5283372
+            ],
+            [
+              88.3554251,
+              22.5278243
+            ],
+            [
+              88.3553902,
+              22.5276484
+            ],
+            [
+              88.3558191,
+              22.5276131
+            ],
+            [
+              88.3557845,
+              22.5274403
+            ],
+            [
+              88.3566425,
+              22.527244
+            ],
+            [
+              88.357013,
+              22.5271579
+            ],
+            [
+              88.3572621,
+              22.5282474
+            ],
+            [
+              88.357305,
+              22.5284629
+            ],
+            [
+              88.3573104,
+              22.5285273
+            ],
+            [
+              88.3558113,
+              22.5288797
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 121906351,
+        "name": "St. Lawrence High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q17016720",
+        "osm_wikipedia": "en:St. Lawrence High School, Kolkata"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3579408,
+              22.531843
+            ],
+            [
+              88.3578308,
+              22.5308991
+            ],
+            [
+              88.3577556,
+              22.5304338
+            ],
+            [
+              88.35804,
+              22.5302574
+            ],
+            [
+              88.3585443,
+              22.5299577
+            ],
+            [
+              88.3586514,
+              22.5299433
+            ],
+            [
+              88.3586811,
+              22.5300667
+            ],
+            [
+              88.3588661,
+              22.53135
+            ],
+            [
+              88.3588688,
+              22.5316746
+            ],
+            [
+              88.3579408,
+              22.531843
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 122039677,
+        "name": "Kendriya Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_brand": "Kendriya Vidyalaya",
+        "osm_brand:wikidata": "Q1156653",
+        "osm_check_date": "2023-10-04",
+        "osm_operator:type": "government_non_profit"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3602661,
+              22.5328741
+            ],
+            [
+              88.3600408,
+              22.5319055
+            ],
+            [
+              88.3600623,
+              22.5318807
+            ],
+            [
+              88.3606765,
+              22.5317618
+            ],
+            [
+              88.361044,
+              22.5317519
+            ],
+            [
+              88.3615107,
+              22.5316131
+            ],
+            [
+              88.3616931,
+              22.5322597
+            ],
+            [
+              88.3618567,
+              22.5322127
+            ],
+            [
+              88.3618915,
+              22.5326413
+            ],
+            [
+              88.3607382,
+              22.5328048
+            ],
+            [
+              88.3602661,
+              22.5328741
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 122039679,
+        "name": "Army Public School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q73858555"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3541505,
+              22.530417
+            ],
+            [
+              88.3539574,
+              22.5294904
+            ],
+            [
+              88.3541344,
+              22.5293913
+            ],
+            [
+              88.3542739,
+              22.5293567
+            ],
+            [
+              88.3544992,
+              22.5293468
+            ],
+            [
+              88.3546816,
+              22.5293517
+            ],
+            [
+              88.3547889,
+              22.5294161
+            ],
+            [
+              88.3548693,
+              22.5295004
+            ],
+            [
+              88.3549069,
+              22.5301643
+            ],
+            [
+              88.3541505,
+              22.530417
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 122151081,
+        "name": "Ballygunge Government High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_wikidata": "Q4852149",
+        "osm_wikimedia_commons": "Category:Ballygunge Government High School",
+        "osm_wikipedia": "en:Ballygunge Government High School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3534723,
+              22.5375979
+            ],
+            [
+              88.3532742,
+              22.5364085
+            ],
+            [
+              88.3540543,
+              22.5361833
+            ],
+            [
+              88.3542045,
+              22.5365004
+            ],
+            [
+              88.3542988,
+              22.5373895
+            ],
+            [
+              88.3543038,
+              22.5375359
+            ],
+            [
+              88.3534723,
+              22.5375979
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 122191974,
+        "name": "St Johns Diocesan Girls Higher Secondary",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_wikidata": "Q7588662",
+        "osm_wikipedia": "en:St. John's Diocesan Girls' Higher Secondary School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3466945,
+              22.5370999
+            ],
+            [
+              88.3470485,
+              22.5369909
+            ],
+            [
+              88.3472124,
+              22.5369758
+            ],
+            [
+              88.3472553,
+              22.5371195
+            ],
+            [
+              88.3479929,
+              22.5370352
+            ],
+            [
+              88.3478827,
+              22.5365078
+            ],
+            [
+              88.3474428,
+              22.5365846
+            ],
+            [
+              88.3469737,
+              22.5368123
+            ],
+            [
+              88.346481,
+              22.5369425
+            ],
+            [
+              88.3465078,
+              22.5371513
+            ],
+            [
+              88.3466945,
+              22.5370999
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 122191980,
+        "name": "United Missionary Girls High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "3",
+        "osm_addr:postcode": "700020",
+        "osm_addr:street": "Ashutosh Mukhejee Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-28",
+        "osm_phone": "03324752135"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3527186,
+              22.5365252
+            ],
+            [
+              88.3532742,
+              22.5364085
+            ],
+            [
+              88.3534723,
+              22.5375979
+            ],
+            [
+              88.353027,
+              22.5376202
+            ],
+            [
+              88.3528902,
+              22.5370305
+            ],
+            [
+              88.3527186,
+              22.5365252
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 122191985,
+        "name": "Cathedral Mission High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q24945327",
+        "osm_wikipedia": "en:Cathedral Mission High School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3286082,
+              22.5404668
+            ],
+            [
+              88.328552,
+              22.5404759
+            ],
+            [
+              88.3285573,
+              22.5399664
+            ],
+            [
+              88.3285519,
+              22.5391464
+            ],
+            [
+              88.3292144,
+              22.5391439
+            ],
+            [
+              88.3292466,
+              22.5390844
+            ],
+            [
+              88.3300889,
+              22.5390787
+            ],
+            [
+              88.3300191,
+              22.5402339
+            ],
+            [
+              88.3286082,
+              22.5404668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 123491611,
+        "name": "St Thomas Girls School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3273845,
+              22.5397559
+            ],
+            [
+              88.3274809,
+              22.5396375
+            ],
+            [
+              88.3274806,
+              22.5394819
+            ],
+            [
+              88.3274936,
+              22.5393381
+            ],
+            [
+              88.327492,
+              22.539258
+            ],
+            [
+              88.3275148,
+              22.5391358
+            ],
+            [
+              88.3285519,
+              22.5391464
+            ],
+            [
+              88.3285573,
+              22.5399664
+            ],
+            [
+              88.328552,
+              22.5404759
+            ],
+            [
+              88.327825,
+              22.5405931
+            ],
+            [
+              88.3276882,
+              22.5399961
+            ],
+            [
+              88.3275595,
+              22.5399887
+            ],
+            [
+              88.327538,
+              22.5398772
+            ],
+            [
+              88.3273845,
+              22.5397559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 123491615,
+        "name": "St Paul's High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3104969,
+              22.546797
+            ],
+            [
+              88.3105919,
+              22.5464493
+            ],
+            [
+              88.3109943,
+              22.5465063
+            ],
+            [
+              88.3108631,
+              22.5468767
+            ],
+            [
+              88.3104969,
+              22.546797
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 123852896,
+        "name": "School for the Handicapped",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3098328,
+              22.5430827
+            ],
+            [
+              88.3099183,
+              22.5429001
+            ],
+            [
+              88.3098727,
+              22.542754
+            ],
+            [
+              88.3095861,
+              22.5426765
+            ],
+            [
+              88.3096849,
+              22.5422288
+            ],
+            [
+              88.3103264,
+              22.5423446
+            ],
+            [
+              88.3104896,
+              22.5425161
+            ],
+            [
+              88.310439,
+              22.5427137
+            ],
+            [
+              88.3103451,
+              22.542731
+            ],
+            [
+              88.3101762,
+              22.5432066
+            ],
+            [
+              88.3098328,
+              22.5430827
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 142482528,
+        "name": "Sanghamitra Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q73862133"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3265828,
+              22.5377862
+            ],
+            [
+              88.3264674,
+              22.5375409
+            ],
+            [
+              88.3263896,
+              22.5372932
+            ],
+            [
+              88.3263762,
+              22.5371569
+            ],
+            [
+              88.3274239,
+              22.5369884
+            ],
+            [
+              88.3274223,
+              22.5371668
+            ],
+            [
+              88.327412,
+              22.5376624
+            ],
+            [
+              88.3265828,
+              22.5377862
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 142487309,
+        "name": "St Teresa's Secondary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "72",
+        "osm_addr:postcode": "700023",
+        "osm_addr:street": "Diamond Harbour Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-28",
+        "osm_name:etymology:wikidata": "Q458315",
+        "osm_opening_hours": "Mo-Fr 08:25-14:30",
+        "osm_website": "https://www.stssalumni.co.in/about.html",
+        "osm_wikidata": "Q24940094",
+        "osm_wikimedia_commons": "Category:St. Teresa's Secondary School",
+        "osm_wikipedia": "en:St. Teresa's Secondary School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3261164,
+              22.5357424
+            ],
+            [
+              88.3266287,
+              22.5356681
+            ],
+            [
+              88.326618,
+              22.5356111
+            ],
+            [
+              88.3272407,
+              22.5354845
+            ],
+            [
+              88.3273017,
+              22.5354737
+            ],
+            [
+              88.3274066,
+              22.5354551
+            ],
+            [
+              88.327369,
+              22.5351008
+            ],
+            [
+              88.3273558,
+              22.5350206
+            ],
+            [
+              88.3272782,
+              22.5345481
+            ],
+            [
+              88.327184,
+              22.5341098
+            ],
+            [
+              88.3271169,
+              22.5334781
+            ],
+            [
+              88.3261624,
+              22.5336265
+            ],
+            [
+              88.326208,
+              22.5340724
+            ],
+            [
+              88.3250922,
+              22.5342384
+            ],
+            [
+              88.3251647,
+              22.5345208
+            ],
+            [
+              88.3251861,
+              22.5347116
+            ],
+            [
+              88.3252612,
+              22.5349618
+            ],
+            [
+              88.3252907,
+              22.5351526
+            ],
+            [
+              88.3253574,
+              22.5354798
+            ],
+            [
+              88.3260547,
+              22.5353708
+            ],
+            [
+              88.3261164,
+              22.5357424
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 142681896,
+        "name": "St Paul's Boarding and Day School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "68",
+        "osm_addr:postcode": "700023",
+        "osm_addr:street": "Diamond Harbour Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3266641,
+              22.5299065
+            ],
+            [
+              88.3272542,
+              22.5298123
+            ],
+            [
+              88.3271657,
+              22.5292945
+            ],
+            [
+              88.3265514,
+              22.5294036
+            ],
+            [
+              88.3266641,
+              22.5299065
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 143605085,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.359867,
+              22.5474403
+            ],
+            [
+              88.3602855,
+              22.548337
+            ],
+            [
+              88.3610713,
+              22.5480621
+            ],
+            [
+              88.36072,
+              22.5471084
+            ],
+            [
+              88.359867,
+              22.5474403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 166896283,
+        "name": "A. G. Church School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housename": "A. G. Towers",
+        "osm_addr:street": "Park Street",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3635214,
+              22.5317201
+            ],
+            [
+              88.3635214,
+              22.5319311
+            ],
+            [
+              88.3636394,
+              22.5319311
+            ],
+            [
+              88.3636394,
+              22.5317449
+            ],
+            [
+              88.3635214,
+              22.5317201
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 172431347,
+        "name": "Calcutta School of Music",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "6B",
+        "osm_addr:place": "Sunny Park",
+        "osm_addr:postcode": "700019",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-12-16",
+        "osm_operator:type": "private",
+        "osm_wikidata": "Q5018954",
+        "osm_wikipedia": "en:Calcutta School of Music"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3652051,
+              22.5237526
+            ],
+            [
+              88.3645189,
+              22.5237814
+            ],
+            [
+              88.3645413,
+              22.5242377
+            ],
+            [
+              88.3652275,
+              22.5242089
+            ],
+            [
+              88.3652051,
+              22.5237526
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 172432468,
+        "name": "Ballygunge Siksha Sadan",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:street": "Ashutosh Chowdhury Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-12-16",
+        "osm_grades": "1-7",
+        "osm_operator:type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3628093,
+              22.525295
+            ],
+            [
+              88.3626259,
+              22.5252738
+            ],
+            [
+              88.3626058,
+              22.5254221
+            ],
+            [
+              88.3627892,
+              22.5254433
+            ],
+            [
+              88.3628093,
+              22.525295
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 175478107,
+        "name": "Surendra Chakravorty Institution",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "56 C",
+        "osm_addr:postcode": "700019",
+        "osm_addr:street": "Garcha Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-12-16",
+        "osm_operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3308185,
+              22.5254039
+            ],
+            [
+              88.3309257,
+              22.5258326
+            ],
+            [
+              88.3302686,
+              22.5259936
+            ],
+            [
+              88.3301372,
+              22.5255897
+            ],
+            [
+              88.3308185,
+              22.5254039
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 175879411,
+        "name": "Lakshmipat Singhania Academy",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "12-B",
+        "osm_addr:street": "Alipore Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3594254,
+              22.5417046
+            ],
+            [
+              88.357623,
+              22.5422546
+            ],
+            [
+              88.357167,
+              22.5412686
+            ],
+            [
+              88.3588407,
+              22.5411894
+            ],
+            [
+              88.3594254,
+              22.5417046
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 187718109,
+        "name": "La Martinere for Girls",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3274882,
+              22.5290259
+            ],
+            [
+              88.3276518,
+              22.5297196
+            ],
+            [
+              88.3266808,
+              22.5299178
+            ],
+            [
+              88.3265467,
+              22.5292687
+            ],
+            [
+              88.3274882,
+              22.5290259
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 188763407,
+        "name": "Kendriya Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_brand": "Kendriya Vidyalaya",
+        "osm_brand:wikidata": "Q1156653",
+        "osm_check_date": "2023-10-27",
+        "osm_grades": "1-12",
+        "osm_operator:type": "government_non_profit",
+        "osm_wikidata": "Q73860767"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3263083,
+              22.5304278
+            ],
+            [
+              88.3264579,
+              22.530404
+            ],
+            [
+              88.3264022,
+              22.5301062
+            ],
+            [
+              88.3262526,
+              22.53013
+            ],
+            [
+              88.3263083,
+              22.5304278
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 188763410,
+        "name": "Loyola High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "54/3",
+        "osm_addr:street": "Diamond Harbour Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-27",
+        "osm_denomination": "catholic",
+        "osm_wikidata": "Q91225355",
+        "osm_wikipedia": "en:Loyola High School (Kolkata)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3336077,
+              22.5243313
+            ],
+            [
+              88.3332375,
+              22.5229091
+            ],
+            [
+              88.3332214,
+              22.5220766
+            ],
+            [
+              88.3331302,
+              22.5211872
+            ],
+            [
+              88.3344034,
+              22.5212003
+            ],
+            [
+              88.3345014,
+              22.5212013
+            ],
+            [
+              88.3351731,
+              22.5210791
+            ],
+            [
+              88.3351615,
+              22.5218237
+            ],
+            [
+              88.3353443,
+              22.521871
+            ],
+            [
+              88.3353028,
+              22.5225573
+            ],
+            [
+              88.3352921,
+              22.5232312
+            ],
+            [
+              88.3354047,
+              22.5241479
+            ],
+            [
+              88.334187,
+              22.5242817
+            ],
+            [
+              88.3336077,
+              22.5243313
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 190905693,
+        "name": "Alipore Multipurpose Government Girls School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3364698,
+              22.5162712
+            ],
+            [
+              88.3366952,
+              22.5162571
+            ],
+            [
+              88.3367033,
+              22.5165718
+            ],
+            [
+              88.336451,
+              22.5165611
+            ],
+            [
+              88.3364698,
+              22.5162712
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 191003726,
+        "name": "Chetla Girls' School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q73859327"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3698074,
+              22.5256349
+            ],
+            [
+              88.369827,
+              22.5260652
+            ],
+            [
+              88.3703794,
+              22.526106
+            ],
+            [
+              88.3703734,
+              22.5259599
+            ],
+            [
+              88.3703125,
+              22.5259567
+            ],
+            [
+              88.3703453,
+              22.5256769
+            ],
+            [
+              88.3698074,
+              22.5256349
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 191145360,
+        "name": "South Point High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "82/7a",
+        "osm_addr:postcode": "700019",
+        "osm_addr:street": "Ballygunge Place",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-12-16",
+        "osm_grades": "1-7",
+        "osm_operator:type": "private",
+        "osm_wikidata": "Q7568252",
+        "osm_wikipedia": "en:South Point School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3549242,
+              22.5428089
+            ],
+            [
+              88.3540277,
+              22.5429792
+            ],
+            [
+              88.3542097,
+              22.5436685
+            ],
+            [
+              88.3550947,
+              22.5434494
+            ],
+            [
+              88.3549242,
+              22.5428089
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 197120147,
+        "name": "Birla High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "700017",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_opening_hours": "Mo-Fr 07:00-17:00",
+        "osm_website": "https://birlahighschool.com/",
+        "osm_wikidata": "Q4916516",
+        "osm_wikipedia": "en:Birla High School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3194539,
+              22.4935111
+            ],
+            [
+              88.3191813,
+              22.4931351
+            ],
+            [
+              88.3190837,
+              22.4930006
+            ],
+            [
+              88.3197704,
+              22.4926536
+            ],
+            [
+              88.3201915,
+              22.4934739
+            ],
+            [
+              88.3200144,
+              22.4935978
+            ],
+            [
+              88.3197999,
+              22.4933079
+            ],
+            [
+              88.3194539,
+              22.4935111
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 197230777,
+        "name": "MP Birla Foundation Higher Secondary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "700034",
+        "osm_addr:street": "James Long Sarani",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q6712947",
+        "osm_wikipedia": "en:M. P. Birla Foundation Higher Secondary School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.236595,
+              22.5862845
+            ],
+            [
+              88.2371985,
+              22.5868318
+            ],
+            [
+              88.2375418,
+              22.5866486
+            ],
+            [
+              88.2370054,
+              22.5859948
+            ],
+            [
+              88.236595,
+              22.5862845
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 215824661,
+        "name": "Mohiary Kundu Chaudhury Institution",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "711302",
+        "osm_addr:street": "Acharya Sirish Sarani",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.343714,
+              22.5292869
+            ],
+            [
+              88.3436496,
+              22.5292881
+            ],
+            [
+              88.3436469,
+              22.529277
+            ],
+            [
+              88.3434833,
+              22.5292869
+            ],
+            [
+              88.3434752,
+              22.5291097
+            ],
+            [
+              88.3438266,
+              22.5290973
+            ],
+            [
+              88.3438253,
+              22.529137
+            ],
+            [
+              88.3436482,
+              22.5291419
+            ],
+            [
+              88.3436469,
+              22.5291543
+            ],
+            [
+              88.3435705,
+              22.5291543
+            ],
+            [
+              88.3435718,
+              22.5292187
+            ],
+            [
+              88.3437327,
+              22.529215
+            ],
+            [
+              88.343714,
+              22.5292869
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 224409627,
+        "name": "Mitra Institution Bhowanipore Branch",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3444161,
+              22.5303579
+            ],
+            [
+              88.3442096,
+              22.5303876
+            ],
+            [
+              88.344349,
+              22.5313142
+            ],
+            [
+              88.3444563,
+              22.5313093
+            ],
+            [
+              88.3445019,
+              22.5312449
+            ],
+            [
+              88.3445448,
+              22.5314257
+            ],
+            [
+              88.3446521,
+              22.5314034
+            ],
+            [
+              88.3446173,
+              22.5312102
+            ],
+            [
+              88.3445287,
+              22.5312151
+            ],
+            [
+              88.3444939,
+              22.5312126
+            ],
+            [
+              88.3444751,
+              22.531069
+            ],
+            [
+              88.3443812,
+              22.5310615
+            ],
+            [
+              88.3443249,
+              22.5309376
+            ],
+            [
+              88.3444054,
+              22.5308807
+            ],
+            [
+              88.3444161,
+              22.5309327
+            ],
+            [
+              88.3444885,
+              22.5309253
+            ],
+            [
+              88.3444885,
+              22.5308633
+            ],
+            [
+              88.344526,
+              22.5308579
+            ],
+            [
+              88.3444831,
+              22.530628
+            ],
+            [
+              88.3444161,
+              22.5303579
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 224410798,
+        "name": "South Subarban School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3158999,
+              22.4896924
+            ],
+            [
+              88.3166589,
+              22.4908724
+            ],
+            [
+              88.3158489,
+              22.4914325
+            ],
+            [
+              88.3157149,
+              22.4915311
+            ],
+            [
+              88.3155809,
+              22.4916352
+            ],
+            [
+              88.3154468,
+              22.4916947
+            ],
+            [
+              88.3153325,
+              22.4917113
+            ],
+            [
+              88.3149409,
+              22.4907335
+            ],
+            [
+              88.314787,
+              22.4903986
+            ],
+            [
+              88.3158999,
+              22.4896924
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 226503612,
+        "name": "Behala Blind School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3179258,
+              22.4914847
+            ],
+            [
+              88.3180164,
+              22.4913897
+            ],
+            [
+              88.318169,
+              22.4916154
+            ],
+            [
+              88.318132,
+              22.4916336
+            ],
+            [
+              88.3180888,
+              22.4916548
+            ],
+            [
+              88.3179258,
+              22.4914847
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 226831697,
+        "name": "National Gems Higher Secondary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housename": "National Gems Higher Secondary School",
+        "osm_addr:housenumber": "P15 Mitra Colony, Behala",
+        "osm_addr:postcode": "700034",
+        "osm_addr:street": "James Long Sarani",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3793084,
+              22.5606471
+            ],
+            [
+              88.3794055,
+              22.5606158
+            ],
+            [
+              88.3793993,
+              22.5605603
+            ],
+            [
+              88.3795395,
+              22.5605147
+            ],
+            [
+              88.379537,
+              22.5603683
+            ],
+            [
+              88.3794822,
+              22.5602372
+            ],
+            [
+              88.3792001,
+              22.5603458
+            ],
+            [
+              88.3793084,
+              22.5606471
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 260127832,
+        "name": "Bhutnath Mahamaya School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:housenumber": "9",
+        "osm_addr:postcode": "700015",
+        "osm_addr:street": "Radhanath Chowdhury Road",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2024-09-17",
+        "osm_phone": "+913323291006",
+        "osm_source": "http://wbbse.org/skolkata.htm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3813411,
+              22.5127274
+            ],
+            [
+              88.3819528,
+              22.512753
+            ],
+            [
+              88.3819908,
+              22.5130322
+            ],
+            [
+              88.3815075,
+              22.5130552
+            ],
+            [
+              88.3815046,
+              22.5129823
+            ],
+            [
+              88.3813352,
+              22.5129783
+            ],
+            [
+              88.3813411,
+              22.5127274
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 325363388,
+        "name": "Delhi Public School - DPS",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3698289,
+              22.5913709
+            ],
+            [
+              88.3700736,
+              22.5913127
+            ],
+            [
+              88.3700144,
+              22.5911006
+            ],
+            [
+              88.3697697,
+              22.5911588
+            ],
+            [
+              88.3698289,
+              22.5913709
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 359297816,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:housenumber": "73",
+        "osm_addr:postcode": "700006",
+        "osm_addr:street": "Bidhan Sarani",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_email": "info.sccskolkata@gmail.com",
+        "osm_mobile": "7980837093;9883268781",
+        "osm_religion": "christian",
+        "osm_start_date": "1837-02-23",
+        "osm_website": "https://www.sccskolkata.in/",
+        "osm_wikidata": "Q18164352",
+        "osm_wikimedia_commons": "Category:Scottish Church Collegiate School",
+        "osm_wikipedia": "en:Scottish Church Collegiate School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3662232,
+              22.5986403
+            ],
+            [
+              88.3662839,
+              22.5988067
+            ],
+            [
+              88.3664229,
+              22.5987634
+            ],
+            [
+              88.3663622,
+              22.5985971
+            ],
+            [
+              88.3662232,
+              22.5986403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 359338049,
+        "name": "Shyambazar AV English School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2023-10-30",
+        "osm_grades": "1-7",
+        "osm_opening_hours": "Mo-Sa 10:00-16:00",
+        "osm_operator:type": "government",
+        "osm_religion": "hindu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3535175,
+              22.5173831
+            ],
+            [
+              88.3537927,
+              22.5174267
+            ],
+            [
+              88.3538185,
+              22.5172875
+            ],
+            [
+              88.353773,
+              22.5172803
+            ],
+            [
+              88.3537658,
+              22.5173185
+            ],
+            [
+              88.3536304,
+              22.5172971
+            ],
+            [
+              88.3536551,
+              22.5171643
+            ],
+            [
+              88.3535609,
+              22.5171494
+            ],
+            [
+              88.3535175,
+              22.5173831
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 359770419,
+        "name": "Tirthapati Institution",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:postcode": "700029",
+        "osm_addr:street": "Rash Behari Avenue",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3553325,
+              22.560057
+            ],
+            [
+              88.3553062,
+              22.5597965
+            ],
+            [
+              88.3552058,
+              22.5598052
+            ],
+            [
+              88.3552239,
+              22.5599838
+            ],
+            [
+              88.3551222,
+              22.5599924
+            ],
+            [
+              88.3551295,
+              22.5600656
+            ],
+            [
+              88.3553325,
+              22.560057
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 362945052,
+        "name": "Saint Anthony's High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3193381,
+              22.5720111
+            ],
+            [
+              88.3195151,
+              22.571949
+            ],
+            [
+              88.3195841,
+              22.5721124
+            ],
+            [
+              88.3195381,
+              22.5721435
+            ],
+            [
+              88.3195147,
+              22.5722112
+            ],
+            [
+              88.3195664,
+              22.572351
+            ],
+            [
+              88.3194761,
+              22.5723821
+            ],
+            [
+              88.3193381,
+              22.5720111
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 384645281,
+        "name": "Tiny Tots Kindergarten School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3160798,
+              22.5775714
+            ],
+            [
+              88.3166734,
+              22.5772774
+            ],
+            [
+              88.3168872,
+              22.5777733
+            ],
+            [
+              88.3162926,
+              22.5780774
+            ],
+            [
+              88.3162533,
+              22.5779755
+            ],
+            [
+              88.3160798,
+              22.5775714
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 384699047,
+        "name": "HVI Play Ground",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_lit": "no",
+        "osm_surface": "paved"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.325952,
+              22.5757645
+            ],
+            [
+              88.3258813,
+              22.5756176
+            ],
+            [
+              88.3260625,
+              22.5755727
+            ],
+            [
+              88.3261398,
+              22.5757135
+            ],
+            [
+              88.325952,
+              22.5757645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 384701039,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3247183,
+              22.5720687
+            ],
+            [
+              88.3248774,
+              22.5719769
+            ],
+            [
+              88.3247514,
+              22.5717229
+            ],
+            [
+              88.3245851,
+              22.5718329
+            ],
+            [
+              88.3247183,
+              22.5720687
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 384707684,
+        "name": "B. K. Paul's Institution Ground",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3100996,
+              22.5598668
+            ],
+            [
+              88.3100034,
+              22.5595868
+            ],
+            [
+              88.3106972,
+              22.5594388
+            ],
+            [
+              88.3107701,
+              22.5597026
+            ],
+            [
+              88.3100996,
+              22.5598668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 385516755,
+        "name": "Pajnanananda Vidyalaya Ground",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3626299,
+              22.576002
+            ],
+            [
+              88.3632763,
+              22.5757494
+            ],
+            [
+              88.3634131,
+              22.5760367
+            ],
+            [
+              88.3627613,
+              22.5762893
+            ],
+            [
+              88.3626299,
+              22.576002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 404863237,
+        "name": "Hare School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2023-10-06",
+        "osm_education": "school",
+        "osm_name:en": "Hare School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3644539,
+              22.4974407
+            ],
+            [
+              88.3643859,
+              22.4972038
+            ],
+            [
+              88.3646684,
+              22.4971285
+            ],
+            [
+              88.3647194,
+              22.4973515
+            ],
+            [
+              88.3644539,
+              22.4974407
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 450305914,
+        "name": "The Calcutta Emmanuel School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:housenumber": "56A",
+        "osm_addr:postcode": "700032",
+        "osm_addr:street": "Prince Golam Hossain Shah Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3032837,
+              22.5543935
+            ],
+            [
+              88.3032551,
+              22.5538145
+            ],
+            [
+              88.3055738,
+              22.5533368
+            ],
+            [
+              88.3057692,
+              22.554101
+            ],
+            [
+              88.304702,
+              22.5542918
+            ],
+            [
+              88.3032837,
+              22.5543935
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 517920586,
+        "name": "BE College Model School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3523619,
+              22.5538356
+            ],
+            [
+              88.3523614,
+              22.5538855
+            ],
+            [
+              88.353003,
+              22.5538515
+            ],
+            [
+              88.3530195,
+              22.5540606
+            ],
+            [
+              88.3530626,
+              22.5540496
+            ],
+            [
+              88.3530414,
+              22.5537953
+            ],
+            [
+              88.3527992,
+              22.5538097
+            ],
+            [
+              88.3527617,
+              22.5538119
+            ],
+            [
+              88.3523884,
+              22.553834
+            ],
+            [
+              88.3523619,
+              22.5538356
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 754822036,
+        "name": "Harrow Hall",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "27-B",
+        "osm_addr:postcode": "700016",
+        "osm_addr:street": "Park Street",
+        "osm_amenity": "school",
+        "osm_building": "school",
+        "osm_contact:email": "harrowhallcalcutta@gmail.com",
+        "osm_contact:phone": "+91 33 3242 0436;+91 33 6451 0008;+91 33 2252 2404",
+        "osm_contact:website": "http://harrowhallkolkata.net"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3163603,
+              22.578466
+            ],
+            [
+              88.3165082,
+              22.5787182
+            ],
+            [
+              88.3168534,
+              22.5788618
+            ],
+            [
+              88.3166106,
+              22.5779826
+            ],
+            [
+              88.3171383,
+              22.5777489
+            ],
+            [
+              88.3170531,
+              22.5774849
+            ],
+            [
+              88.3172799,
+              22.577402
+            ],
+            [
+              88.3172036,
+              22.5772484
+            ],
+            [
+              88.317192,
+              22.5771927
+            ],
+            [
+              88.3170776,
+              22.5772029
+            ],
+            [
+              88.3170201,
+              22.5770695
+            ],
+            [
+              88.3167323,
+              22.5771143
+            ],
+            [
+              88.3166971,
+              22.5771397
+            ],
+            [
+              88.3166734,
+              22.5772774
+            ],
+            [
+              88.3160798,
+              22.5775714
+            ],
+            [
+              88.3162654,
+              22.5781122
+            ],
+            [
+              88.3163603,
+              22.578466
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 803411963,
+        "name": "Howrah Vivekananda Institution",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "howrah",
+        "osm_addr:housenumber": "72 & 77",
+        "osm_addr:postcode": "711104",
+        "osm_addr:street": "Swami Vivekananda Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.2686769,
+              22.5605315
+            ],
+            [
+              88.2688754,
+              22.5604919
+            ],
+            [
+              88.2689183,
+              22.5606405
+            ],
+            [
+              88.2690014,
+              22.560633
+            ],
+            [
+              88.2689246,
+              22.5603766
+            ],
+            [
+              88.2686422,
+              22.56043
+            ],
+            [
+              88.2686769,
+              22.5605315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 812906603,
+        "name": "Podra Mahakali Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3820064,
+              22.5452672
+            ],
+            [
+              88.3819903,
+              22.5451991
+            ],
+            [
+              88.3820225,
+              22.5451706
+            ],
+            [
+              88.3819836,
+              22.5450579
+            ],
+            [
+              88.3818938,
+              22.5450108
+            ],
+            [
+              88.3817275,
+              22.545069
+            ],
+            [
+              88.3816349,
+              22.5449811
+            ],
+            [
+              88.381407,
+              22.5451273
+            ],
+            [
+              88.3815557,
+              22.5453678
+            ],
+            [
+              88.3816752,
+              22.5453341
+            ],
+            [
+              88.3817798,
+              22.5454988
+            ],
+            [
+              88.3819018,
+              22.5454369
+            ],
+            [
+              88.3819702,
+              22.545396
+            ],
+            [
+              88.3819407,
+              22.545323
+            ],
+            [
+              88.3820064,
+              22.5452672
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 820426309,
+        "name": "Kazi Nazrul Islam School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2024-09-08",
+        "osm_name:etymology:wikidata": "Q334818",
+        "osm_religion": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.2702272,
+              22.5679832
+            ],
+            [
+              88.2702059,
+              22.5678407
+            ],
+            [
+              88.2706565,
+              22.5677664
+            ],
+            [
+              88.2706851,
+              22.5679079
+            ],
+            [
+              88.2702272,
+              22.5679832
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 833631693,
+        "name": "Podra G.S.F.P School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.3490175,
+              22.5444169
+            ],
+            [
+              88.3490535,
+              22.544762
+            ],
+            [
+              88.349066,
+              22.5448818
+            ],
+            [
+              88.3499798,
+              22.5448004
+            ],
+            [
+              88.3499314,
+              22.5443357
+            ],
+            [
+              88.3490175,
+              22.5444169
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1131229990,
+        "name": "Sakhawat Memorial Govt. Girls' High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:housenumber": "17",
+        "osm_addr:postcode": "700071",
+        "osm_addr:street": "Lord Sinha Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-22",
+        "osm_grades": "1-12",
+        "osm_landuse": "education",
+        "osm_name:etymology:wikidata": "Q467083",
+        "osm_operator": "Government of West Bengal",
+        "osm_operator:type": "government",
+        "osm_religion": "none",
+        "osm_school:gender": "female",
+        "osm_wikidata": "Q23013854",
+        "osm_wikipedia": "en:Sakhawat Memorial Govt. Girls' High School"
+      }
+    }
+  ],
+  "category": "schools",
+  "count": 112
+}

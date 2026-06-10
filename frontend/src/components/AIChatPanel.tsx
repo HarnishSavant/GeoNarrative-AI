@@ -16,9 +16,95 @@ import {
   Paperclip,
   User,
   Globe2,
+  Terminal,
+  Cpu,
+  Clock,
+  Database,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import { DashboardMode, UploadedFile } from "@/lib/types";
 import { useAIChat } from "@/hooks/useAIChat";
+
+function AgentTraceView({ trace }: { trace: any }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  if (!trace) return null;
+
+  return (
+    <div className="mt-2 border border-geo-border/50 rounded-lg overflow-hidden bg-geo-card/45 backdrop-blur-sm transition-all duration-200">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-3 py-2 flex items-center justify-between text-[11px] font-mono text-cyan-400 hover:text-cyan-300 hover:bg-white/5 transition-all duration-150"
+      >
+        <span className="flex items-center gap-1.5 font-semibold">
+          <Terminal size={12} className="text-cyan-500 animate-pulse" />
+          AGENT EXECUTION TRACE
+        </span>
+        <span className="flex items-center gap-2">
+          <span className="text-[10px] text-gray-500">({trace.processing_time}s)</span>
+          {isOpen ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+        </span>
+      </button>
+
+      {isOpen && (
+        <div className="px-3 pb-3 pt-2 border-t border-geo-border/30 font-mono text-[10px] space-y-2 text-gray-400">
+          <div className="grid grid-cols-2 gap-2 border-b border-white/5 pb-2">
+            <div>
+              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Detected Intent</span>
+              <span className="text-gray-300 break-all">{trace.detected_intent}</span>
+            </div>
+            <div>
+              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Processing Latency</span>
+              <span className="text-gray-300 flex items-center gap-1">
+                <Clock size={10} className="text-amber-500" />
+                {trace.processing_time} seconds
+              </span>
+            </div>
+            <div className="col-span-2">
+              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Selected Tool</span>
+              <span className="text-gray-300 flex items-center gap-1">
+                <Cpu size={10} className="text-purple-400" />
+                {trace.selected_tool}
+              </span>
+            </div>
+            <div className="col-span-2">
+              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Spatial SQL / Operation</span>
+              <span className="text-gray-300 flex items-center gap-1">
+                <Database size={10} className="text-cyan-400" />
+                <code className="bg-black/30 px-1 py-0.5 rounded text-cyan-300 text-[9px]">
+                  {trace.spatial_operation}
+                </code>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <span className="text-gray-600 block text-[9px] uppercase font-semibold mb-1">Execution Parameters</span>
+            <pre className="bg-black/30 p-2 rounded text-[9px] text-gray-400 overflow-x-auto max-w-full font-mono">
+              {JSON.stringify(trace.parameters, null, 2)}
+            </pre>
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 border-t border-white/5 pt-2">
+            <div>
+              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Records Found</span>
+              <span className="text-gray-300 font-semibold text-emerald-400">{trace.records_found} spatial entities</span>
+            </div>
+            <div>
+              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Digital Twin Map Action</span>
+              <span className="text-gray-300">{trace.map_action}</span>
+            </div>
+            <div className="col-span-2">
+              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Report Action</span>
+              <span className="text-gray-300">{trace.report_action}</span>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 interface AIChatPanelProps {
   currentLocation: string;
@@ -49,6 +135,26 @@ export default function AIChatPanel({
     fileInputRef,
     handleFileUploadFromChat,
   } = useAIChat(currentLocation, dashboardMode, uploadedFiles, onMapAction, onFileUpload);
+
+  const [thinkingStep, setThinkingStep] = React.useState(0);
+  const thinkingPhrases = [
+    "Classifying query intent...",
+    "Selecting response mode...",
+    "Building conversation context...",
+    "Generating intelligent response...",
+    "Formatting output..."
+  ];
+
+  React.useEffect(() => {
+    let interval: any;
+    if (isTyping) {
+      setThinkingStep(0);
+      interval = setInterval(() => {
+        setThinkingStep((prev) => (prev < thinkingPhrases.length - 1 ? prev + 1 : prev));
+      }, 1500);
+    }
+    return () => clearInterval(interval);
+  }, [isTyping]);
 
   const handleSend = () => {
     sendMessage(input);
@@ -240,6 +346,9 @@ export default function AIChatPanel({
                     <div>{renderContent(msg.content)}</div>
                   )}
                 </div>
+                {msg.role === "assistant" && msg.metadata?.agent_trace && (
+                  <AgentTraceView trace={msg.metadata.agent_trace} />
+                )}
                 {msg.role === "assistant" && (
                   <div className="flex items-center gap-2 mt-1.5 ml-1">
                     <button
@@ -275,14 +384,24 @@ export default function AIChatPanel({
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-start gap-2"
+            className="flex items-start gap-2.5"
           >
-            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-primary-500/30 to-cyan-500/30 flex items-center justify-center flex-shrink-0">
-              <Sparkles size={12} className="text-primary-400" />
+            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-primary-500/30 to-cyan-500/30 flex items-center justify-center flex-shrink-0 animate-pulse mt-0.5">
+              <Sparkles size={11} className="text-primary-400" />
             </div>
-            <div className="chat-bubble-ai flex items-center gap-2">
-              <Loader2 size={14} className="text-primary-400 animate-spin" />
-              <span className="text-xs text-gray-400">Processing geospatial analysis...</span>
+            <div className="bg-geo-card/45 border border-geo-border/60 rounded-xl p-3.5 max-w-[85%] space-y-2 backdrop-blur-sm">
+              <div className="flex items-center gap-2">
+                <div className="chat-typing-dots flex items-center gap-1">
+                  <span />
+                  <span />
+                  <span />
+                </div>
+                <span className="text-[9px] font-bold text-primary-400 uppercase tracking-widest animate-pulse">GeoAI Agent Running</span>
+              </div>
+              <div className="text-[11px] text-gray-300 leading-relaxed font-mono flex items-center gap-1.5">
+                <Loader2 size={11} className="animate-spin text-primary-400" />
+                {thinkingPhrases[thinkingStep]}
+              </div>
             </div>
           </motion.div>
         )}

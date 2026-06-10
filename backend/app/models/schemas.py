@@ -76,6 +76,11 @@ class ReportResponse(BaseModel):
     risk_level: str
     summary: str
     sections: List[dict]
+    pdf_base64: Optional[str] = None
+    charts: Optional[dict] = None
+    telemetry_source: Optional[dict] = None
+
+
 
 
 # SaaS Schemas

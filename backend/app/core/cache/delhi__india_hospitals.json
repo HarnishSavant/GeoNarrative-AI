@@ -1,0 +1,3249 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1366732,
+          28.6082403
+        ]
+      },
+      "properties": {
+        "id": 632050626,
+        "name": "Base Hospital Delhi Cantt",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0573761,
+          28.5866431
+        ]
+      },
+      "properties": {
+        "id": 995630812,
+        "name": "Govt Dispensory",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West",
+        "osm_addr:full": "Sec-10, Dwarka, Golok Dham Mandir",
+        "osm_addr:postcode": "110075",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "25081423",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1893283,
+          28.5647144
+        ]
+      },
+      "properties": {
+        "id": 2318172256,
+        "name": "Goyal MRI & Diagnostic Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "New Delhi",
+        "osm_addr:housenumber": "B-1/12",
+        "osm_addr:postcode": "110029",
+        "osm_addr:street": "Safdarjung Enclave",
+        "osm_amenity": "hospital",
+        "osm_phone": "+91-11-40771234"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0816478,
+          28.5934549
+        ]
+      },
+      "properties": {
+        "id": 4859968811,
+        "name": "Bhagat Chandra Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Mahavir Enclave",
+        "osm_addr:postcode": "110045",
+        "osm_addr:street": "Dabri Road",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1973263,
+          28.5460823
+        ]
+      },
+      "properties": {
+        "id": 5253691568,
+        "name": "Cygnus Orthocare Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1965361,
+          28.5158966
+        ]
+      },
+      "properties": {
+        "id": 5799040150,
+        "name": "Rural Medical Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:housenumber": "Khasra Number 242",
+        "osm_addr:place": "Saidulajaib",
+        "osm_addr:postcode": "110030",
+        "osm_addr:subdistrict": "Mehrauli",
+        "osm_amenity": "hospital",
+        "osm_phone": "+91-11-2953-4031;+91-11-2953-6833"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1071305,
+          28.4832404
+        ]
+      },
+      "properties": {
+        "id": 6071092569,
+        "name": "Anahat Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1900425,
+          28.529118
+        ]
+      },
+      "properties": {
+        "id": 6257609191,
+        "name": "National Institute of TB and Respiratory Diseases",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South",
+        "osm_addr:full": "NITRD, Sri Aurobindo Marg, Near Qutub minar",
+        "osm_addr:postcode": "110030",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "1.13E+42",
+        "osm_description": ">500 Bedded Hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1836992,
+          28.4943675
+        ]
+      },
+      "properties": {
+        "id": 6411571309,
+        "name": "Manchanda Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0886731,
+          28.6121754
+        ]
+      },
+      "properties": {
+        "id": 6466294311,
+        "name": "World Brain Center Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1946519,
+          28.5660178
+        ]
+      },
+      "properties": {
+        "id": 6771396260,
+        "name": "Diyos",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0863196,
+          28.4814867
+        ]
+      },
+      "properties": {
+        "id": 6994228914,
+        "name": "Uma Sanjeevani Health Centre And Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Gurgaon",
+        "osm_addr:full": "1, Dakshin Marg Dlf City Phase-Ii",
+        "osm_addr:postcode": "122002",
+        "osm_addr:state": "Haryana",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2025-02-23",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0653957,
+          28.4814348
+        ]
+      },
+      "properties": {
+        "id": 6997568727,
+        "name": "Thukral Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Gurgaon",
+        "osm_addr:full": "Sector 17-B,H No 956,Defence Colony, (Behind Iffco)By Pass Road",
+        "osm_addr:postcode": "122001",
+        "osm_addr:state": "Haryana",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.099508,
+          28.4936346
+        ]
+      },
+      "properties": {
+        "id": 7010125933,
+        "name": "Shri Ram Memorial Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Gurgaon",
+        "osm_addr:full": "Opposite Agarwal Sweet Home, Sikanderpur, Dlf Phase - Ii, M.G. Main Road",
+        "osm_addr:postcode": "122001",
+        "osm_addr:state": "Haryana",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1469129,
+          28.6284133
+        ]
+      },
+      "properties": {
+        "id": 7138493132,
+        "name": "Doctor Grover's Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "Near Park, Inderpuri",
+        "osm_addr:postcode": "110012",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0702439,
+          28.5874217
+        ]
+      },
+      "properties": {
+        "id": 7138493141,
+        "name": "Bharti Nursingh Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West",
+        "osm_addr:full": "A-132, Palam Extension, Sector-7",
+        "osm_addr:postcode": "110075",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "25075530",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1684265,
+          28.5862718
+        ]
+      },
+      "properties": {
+        "id": 7138493147,
+        "name": "Dr B R Sur Homoeopathic Medical college and Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "Nanakpura, Near Nanakpura Gurudwara, South Motibagh",
+        "osm_addr:postcode": "110021",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "011-24105298",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1773627,
+          28.5739982
+        ]
+      },
+      "properties": {
+        "id": 7138493169,
+        "name": "Prem Chiktsa Kendra",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "Ring Road, Near Cghs Disprnsary, R.K.Puram, SECTOR-12",
+        "osm_addr:postcode": "110022",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "011-26195636",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0875445,
+          28.5862424
+        ]
+      },
+      "properties": {
+        "id": 7138493199,
+        "name": "Divya Prastha Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West",
+        "osm_addr:full": "Divya Prastha Hospital, Opp.Bagh Wala School, Raj Nagar Part I, Main Road, Palam Colony",
+        "osm_addr:postcode": "110045",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "2536 5960",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1770243,
+          28.5853147
+        ]
+      },
+      "properties": {
+        "id": 7138493205,
+        "name": "Charak Palika Hospital NDMC",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "Main Road, North-West Moti-Bagh, Near Begumjadi Market",
+        "osm_addr:postcode": "110021",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-20",
+        "osm_contact:phone": "011-24156218",
+        "osm_description": "100-500 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1008845,
+          28.6089466
+        ]
+      },
+      "properties": {
+        "id": 7138493206,
+        "name": "Kesar Nursing Home Dabri",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West",
+        "osm_addr:full": "Street Number 12, Sagar Pur, Vashist Park Sagar Pur",
+        "osm_addr:postcode": "110046",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "28523683",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0952919,
+          28.6081283
+        ]
+      },
+      "properties": {
+        "id": 7138493238,
+        "name": "Shakuntla Nursing Home Sagarpur",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West",
+        "osm_addr:full": "RZ-I-81A, Sagarpur",
+        "osm_addr:postcode": "110046",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "25383171",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0887312,
+          28.5882997
+        ]
+      },
+      "properties": {
+        "id": 7138493264,
+        "name": "Singhal Hospital Palam Colony",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West",
+        "osm_addr:full": "C-40, Sadh Nagar, Palam Colony, Street No-9",
+        "osm_addr:postcode": "110045",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "25055191",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1812935,
+          28.5216502
+        ]
+      },
+      "properties": {
+        "id": 7138534304,
+        "name": "Aman Medical Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South",
+        "osm_addr:full": "1061 /7, Dargah Street, Mehrauli, New Delhi",
+        "osm_addr:postcode": "110030",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "011 2664 5113",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1788654,
+          28.5241613
+        ]
+      },
+      "properties": {
+        "id": 7138534328,
+        "name": "Bhagwati Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South",
+        "osm_addr:full": "1/113, Desu Road, Near Dreamland School, Mehrauli, New Delhi",
+        "osm_addr:postcode": "110030",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2024-05-26",
+        "osm_contact:phone": "011 2664 3304",
+        "osm_internet_access": "no",
+        "osm_name:en": "Bhagwati Hospital",
+        "osm_name:hi": "भगवती अस्पताल",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1810712,
+          28.5374555
+        ]
+      },
+      "properties": {
+        "id": 7138534339,
+        "name": "Medeor Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South",
+        "osm_addr:full": "B-33-34, Qutab Institutional Area, Katwaria Sarai",
+        "osm_addr:postcode": "110016",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "47667100",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1864475,
+          28.5412998
+        ]
+      },
+      "properties": {
+        "id": 7138534411,
+        "name": "Satyam Medical Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South",
+        "osm_addr:full": "Satyam Medical Centre, 115/1, Katwaria Sarai, New Delhi",
+        "osm_addr:postcode": "110016",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "1141688372",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1938033,
+          28.4851071
+        ]
+      },
+      "properties": {
+        "id": 7498553877,
+        "name": "NDMS Park",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0535572,
+          28.6054061
+        ]
+      },
+      "properties": {
+        "id": 7543715668,
+        "name": "Aakash Healthcare Super Speciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "Hospital Plot, Road Number 201, Dwarka",
+        "osm_addr:postcode": "110075",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0988531,
+          28.6304061
+        ]
+      },
+      "properties": {
+        "id": 7543715681,
+        "name": "Dashmesh Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "C141, Jail Road, Near Fateh Nagar Bus Stand, Shiv Nagar Extension, Janakpuri",
+        "osm_addr:postcode": "110058",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0535384,
+          28.6200029
+        ]
+      },
+      "properties": {
+        "id": 7543715687,
+        "name": "Gandhi Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "C-50-51, Najafgarh Road, Block E, Om Vihar, Uttam Nagar",
+        "osm_addr:postcode": "110059",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0794442,
+          28.6172035
+        ]
+      },
+      "properties": {
+        "id": 7543715713,
+        "name": "Arya Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "C - 1/101, Pankha Road, Block C1, Janakpuri",
+        "osm_addr:postcode": "110058",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.078224,
+          28.618749
+        ]
+      },
+      "properties": {
+        "id": 7543715738,
+        "name": "Mata Chanan Devi Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "c1, Lal Sai Mandir Marg, Block C1, Janakpuri",
+        "osm_addr:postcode": "110058",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge",
+        "osm_wikidata": "Q30260551"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.110763,
+          28.626739
+        ]
+      },
+      "properties": {
+        "id": 7543715739,
+        "name": "Lotus Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "WZ-409-A, Janak Park, Pocket 408, Hari Nagar",
+        "osm_addr:postcode": "110064",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.081707,
+          28.621501
+        ]
+      },
+      "properties": {
+        "id": 7543715750,
+        "name": "Sai Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "18, Block A3, Janakpuri",
+        "osm_addr:postcode": "110058",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0613682,
+          28.6195378
+        ]
+      },
+      "properties": {
+        "id": 7543715756,
+        "name": "B.M. Gupta Hospital Pvt. Ltd.",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "H-9, 15, Arya Samaj Road, SDM Market, Block O, Uttam Nagar",
+        "osm_addr:postcode": "110059",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1157209,
+          28.6237693
+        ]
+      },
+      "properties": {
+        "id": 7543715763,
+        "name": "Jasrotia Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "MS Block, Nanak Pura, Hari Nagar",
+        "osm_addr:postcode": "110064",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.08125,
+          28.620674
+        ]
+      },
+      "properties": {
+        "id": 7543715767,
+        "name": "Genesis Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "C-1/130, Block C1, Janakpuri",
+        "osm_addr:postcode": "110058",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1733997,
+          28.519682
+        ]
+      },
+      "properties": {
+        "id": 7544955434,
+        "name": "Gendox Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South Delhi",
+        "osm_addr:full": "602, Kishangarh - Mehrauli Road, Islam Colony, Mehrauli",
+        "osm_addr:postcode": "110030",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1848394,
+          28.5074677
+        ]
+      },
+      "properties": {
+        "id": 7544955447,
+        "name": "K.R. Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South Delhi",
+        "osm_addr:full": "100 Feet Road, Chhatarpur Hills, Dr Ambedkar Colony, Chhatarpur",
+        "osm_addr:postcode": "110074",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1367669,
+          28.6243272
+        ]
+      },
+      "properties": {
+        "id": 7544955461,
+        "name": "Behl Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "B-128, B - Block, Naraina Vihar, Naraina",
+        "osm_addr:postcode": "110028",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1833094,
+          28.4943274
+        ]
+      },
+      "properties": {
+        "id": 7544955462,
+        "name": "Yogmaya Multispeciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South Delhi",
+        "osm_addr:full": "203/A, Chhattarpur Ext Road, Block F, Block G, Chhatarpur",
+        "osm_addr:postcode": "110074",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1774582,
+          28.5773794
+        ]
+      },
+      "properties": {
+        "id": 7544955471,
+        "name": "Safdarjung Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "J Block, New Moti Bagh, Near NBCC Zonal Office",
+        "osm_addr:postcode": "110023",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.198976,
+          28.566466
+        ]
+      },
+      "properties": {
+        "id": 7544955483,
+        "name": "Aashlok Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "Aashlok 25 AB, Safdarjung Enclave, Near NCRMP",
+        "osm_addr:postcode": "110029",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1743007,
+          28.5193612
+        ]
+      },
+      "properties": {
+        "id": 7544955496,
+        "name": "Vikas Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South Delhi",
+        "osm_addr:full": "173C, Kishangarh - Mehrauli Road, Islam Colony, Mehrauli",
+        "osm_addr:postcode": "110030",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1060923,
+          28.6085331
+        ]
+      },
+      "properties": {
+        "id": 7544955511,
+        "name": "Bhagat Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "D-2/48-49, PT Vishnu Datt Marg, Block D2, Janakpuri",
+        "osm_addr:postcode": "110058",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.146723,
+          28.629893
+        ]
+      },
+      "properties": {
+        "id": 7544955513,
+        "name": "Sri Guru Nanak Charitable Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "EA 80-81, Sant Kabir Nagar, EA Block, Block F, Inder Puri",
+        "osm_addr:postcode": "110012",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1843915,
+          28.5001805
+        ]
+      },
+      "properties": {
+        "id": 7544955524,
+        "name": "Apex Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South Delhi",
+        "osm_addr:full": "Plot No, 8, Chattarpur Mandir Road, Dr Ambedkar Colony, Sat Bari",
+        "osm_addr:postcode": "110074",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0658712,
+          28.6184538
+        ]
+      },
+      "properties": {
+        "id": 7545203164,
+        "name": "Bm Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "Vijay Vihar, Block E, Uttam Nagar East, Uttam Nagar",
+        "osm_addr:postcode": "110059",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0846422,
+          28.5873313
+        ]
+      },
+      "properties": {
+        "id": 7545203169,
+        "name": "Sunil Memorial Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "RZ-13-I/6, Main Road, Raj Nagar I",
+        "osm_addr:postcode": "110077",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0637613,
+          28.5929199
+        ]
+      },
+      "properties": {
+        "id": 7545203173,
+        "name": "Manipal Hospitals",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "Sector 6, Dwarka",
+        "osm_addr:postcode": "110075",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0859526,
+          28.5869919
+        ]
+      },
+      "properties": {
+        "id": 7545203178,
+        "name": "Ardent Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "6, Palam Village Road, Block RZ, Raj Nagar I",
+        "osm_addr:postcode": "110077",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0596665,
+          28.5881804
+        ]
+      },
+      "properties": {
+        "id": 7545203208,
+        "name": "Ayushman Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "Sector 10, Dwarka, Elephenta Line, Near Pacific Apartments",
+        "osm_addr:postcode": "110075",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0984624,
+          28.6051867
+        ]
+      },
+      "properties": {
+        "id": 7545203218,
+        "name": "Bhagat Chandra Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "Geetanjali Park, Block RZ, West Sagarpur, Sagar Pur",
+        "osm_addr:postcode": "110046",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0874447,
+          28.614656
+        ]
+      },
+      "properties": {
+        "id": 7545203223,
+        "name": "Orchid Hospital Maternity and Heart Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "C-3/91-92, Major P Srikumar Marg, Block C3A, Block C3, Janakpuri",
+        "osm_addr:postcode": "110058",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.071139,
+          28.614442
+        ]
+      },
+      "properties": {
+        "id": 7545203231,
+        "name": "Apaar Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "Ez a1, Adarsh Nagar, Bindapur Extn, Uttam Nagar",
+        "osm_addr:postcode": "110059",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0857082,
+          28.5870577
+        ]
+      },
+      "properties": {
+        "id": 7545203241,
+        "name": "Angel Agastya Multi Speciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "Pillar No.39, RZ-14, 40, Palam Colony, Raj Nagar",
+        "osm_addr:postcode": "110045",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0848898,
+          28.5300327
+        ]
+      },
+      "properties": {
+        "id": 7545203244,
+        "name": "Deepan Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "Khasra No:139/140, Najafgarh Road, Kapashera",
+        "osm_addr:postcode": "110037",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0623437,
+          28.6186477
+        ]
+      },
+      "properties": {
+        "id": 7545203254,
+        "name": "Chander Leela Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South West Delhi",
+        "osm_addr:full": "Vijay Vihar, Vani Vihar, New Uttam Nagar, Bindapur",
+        "osm_addr:postcode": "110059",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.104817,
+          28.485499
+        ]
+      },
+      "properties": {
+        "id": 7622826267,
+        "name": "St Stephen's Hospital Health Care Facility",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Gurugram",
+        "osm_addr:full": "Plot No. 3204, Dlf Phase 3, Sector 24",
+        "osm_addr:postcode": "122002",
+        "osm_addr:state": "Haryana",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1576228,
+          28.5760974
+        ]
+      },
+      "properties": {
+        "id": 8440425818,
+        "name": "Research & Referal Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0675724,
+          28.5764608
+        ]
+      },
+      "properties": {
+        "id": 10314282871,
+        "name": "SITE",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1676082,
+          28.5495066
+        ]
+      },
+      "properties": {
+        "id": 11242142952,
+        "name": "JNU Health Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-06",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_internet_access": "wlan",
+        "osm_internet_access:fee": "no",
+        "osm_opening_hours": "Mo-Fr 08:30-16:00; Sa-Su off",
+        "osm_operator:type": "government",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0536459,
+          28.6053767
+        ]
+      },
+      "properties": {
+        "id": 11697720523,
+        "name": "Aakash Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0526152,
+          28.6063225
+        ]
+      },
+      "properties": {
+        "id": 11698355649,
+        "name": "Injury Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0952619,
+          28.4828162
+        ]
+      },
+      "properties": {
+        "id": 11750077269,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:postcode": "122001",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Dr Lal Pathlabs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.115956,
+          28.5445057
+        ]
+      },
+      "properties": {
+        "id": 11868133252,
+        "name": "Airport Health Organization",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:postcode": "110037",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2024-06-28",
+        "osm_contact:email": "apho.del-yfv-mohfw@gov.in",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "vaccination",
+        "osm_operator:type": "government",
+        "osm_phone": "+91 11 2565 2129",
+        "osm_short_name": "APHO Delhi",
+        "osm_website": "https://ihpoe.mohfw.gov.in/apho_delhi.php",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1017103,
+          28.4981571
+        ]
+      },
+      "properties": {
+        "id": 12609739301,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Narayana multispeciaity hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1538641,
+          28.583431
+        ]
+      },
+      "properties": {
+        "id": 13131402843,
+        "name": "Medical Room",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "physiotherapy;emergency"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2003585,
+              28.6243399
+            ],
+            [
+              77.2004598,
+              28.6243843
+            ],
+            [
+              77.2012472,
+              28.6247296
+            ],
+            [
+              77.2016416,
+              28.6249061
+            ],
+            [
+              77.2030551,
+              28.6255223
+            ],
+            [
+              77.2031394,
+              28.6255593
+            ],
+            [
+              77.202751,
+              28.6262889
+            ],
+            [
+              77.2001246,
+              28.6277835
+            ],
+            [
+              77.1983531,
+              28.6253265
+            ],
+            [
+              77.1997742,
+              28.6244251
+            ],
+            [
+              77.1999754,
+              28.6243456
+            ],
+            [
+              77.2003585,
+              28.6243399
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 34404757,
+        "name": "Dr. Ram Manohar Lohia Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "Baba Kharak Singh Marg, Near Bangla Sahib Gurudwara",
+        "osm_addr:postcode": "110001",
+        "osm_addr:state": "Delhi",
+        "osm_alt_name": "Willingdon Hospital",
+        "osm_amenity": "hospital",
+        "osm_barrier": "wall",
+        "osm_contact:phone": "011-22344470;23404040;23365525;23404325",
+        "osm_description": ">500 Bedded Hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:etymology:wikidata": "Q2759530",
+        "osm_name:hi": "राम मनोहर लोहिया अस्पताल",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1074635,
+              28.4835661
+            ],
+            [
+              77.1077327,
+              28.483059
+            ],
+            [
+              77.1077885,
+              28.4832832
+            ],
+            [
+              77.1077859,
+              28.4834286
+            ],
+            [
+              77.1076807,
+              28.4836549
+            ],
+            [
+              77.1074635,
+              28.4835661
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38106806,
+        "name": "Neelkanth Hospital Pvt. Ltd",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "Gurgaon",
+        "osm_addr:full": "1, Nathupur Road, Ph-Iii, Dlf City",
+        "osm_addr:postcode": "122022",
+        "osm_addr:state": "Haryana",
+        "osm_amenity": "hospital",
+        "osm_building": "yes",
+        "osm_healthcare": "hospital",
+        "osm_landuse": "commercial",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.neelkanthhospital.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1601524,
+              28.5187862
+            ],
+            [
+              77.1610187,
+              28.519294
+            ],
+            [
+              77.1606353,
+              28.5197907
+            ],
+            [
+              77.1596654,
+              28.5192402
+            ],
+            [
+              77.1601524,
+              28.5187862
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38170365,
+        "name": "Fortis Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "New Delhi",
+        "osm_addr:housenumber": "Sector B1, Vasant Kunj",
+        "osm_addr:postcode": "110070",
+        "osm_addr:street": "Aruna Asif Ali Marg",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_landuse": "commercial",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0915174,
+              28.4947822
+            ],
+            [
+              77.0913869,
+              28.4946018
+            ],
+            [
+              77.091845,
+              28.4943385
+            ],
+            [
+              77.0919634,
+              28.4945007
+            ],
+            [
+              77.0915174,
+              28.4947822
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 127245642,
+        "name": "World Laparoscopy Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "Gurgaon",
+        "osm_addr:full": "Cyber City, Dlf Ph 2, Dlf City Phase Ii",
+        "osm_addr:postcode": "122008",
+        "osm_addr:state": "Haryana",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.14344,
+              28.5323575
+            ],
+            [
+              77.1428383,
+              28.5325658
+            ],
+            [
+              77.1428061,
+              28.5323773
+            ],
+            [
+              77.1420551,
+              28.5323396
+            ],
+            [
+              77.1420873,
+              28.53184
+            ],
+            [
+              77.1429145,
+              28.5317835
+            ],
+            [
+              77.1428168,
+              28.5311142
+            ],
+            [
+              77.1424483,
+              28.5306915
+            ],
+            [
+              77.1414543,
+              28.5309908
+            ],
+            [
+              77.1415905,
+              28.5312212
+            ],
+            [
+              77.1410203,
+              28.5312976
+            ],
+            [
+              77.1410761,
+              28.5316298
+            ],
+            [
+              77.1411372,
+              28.5321341
+            ],
+            [
+              77.1407049,
+              28.5321516
+            ],
+            [
+              77.1406468,
+              28.5328622
+            ],
+            [
+              77.1407591,
+              28.533089
+            ],
+            [
+              77.14198,
+              28.5341088
+            ],
+            [
+              77.1430048,
+              28.5330395
+            ],
+            [
+              77.1434822,
+              28.5324789
+            ],
+            [
+              77.14344,
+              28.5323575
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 190333646,
+        "name": "Indian Spinal Injuries Centre",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_barrier": "wall",
+        "osm_is_in": "Vasant Kunj",
+        "osm_short_name": "ISIC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0890577,
+              28.6215689
+            ],
+            [
+              77.0905108,
+              28.6214627
+            ],
+            [
+              77.0905392,
+              28.6205627
+            ],
+            [
+              77.090835,
+              28.6205699
+            ],
+            [
+              77.0908387,
+              28.6195723
+            ],
+            [
+              77.0896907,
+              28.6196006
+            ],
+            [
+              77.0896977,
+              28.6199184
+            ],
+            [
+              77.0889611,
+              28.6199302
+            ],
+            [
+              77.0890577,
+              28.6215689
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 221340536,
+        "name": "JANAKPURI SUPER SPECIALITY HOSPITAL",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "West",
+        "osm_addr:full": "NEW DELHI",
+        "osm_addr:postcode": "110058",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_beds": "300",
+        "osm_contact:phone": "1125508550",
+        "osm_healthcare": "hospital",
+        "osm_operator": "Ministry of Health & Family Welfare, Govt. of NCT of Delhi",
+        "osm_operator:type": "government",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://jsshs.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0744045,
+              28.6110796
+            ],
+            [
+              77.0743058,
+              28.6110814
+            ],
+            [
+              77.0742275,
+              28.6110772
+            ],
+            [
+              77.0742143,
+              28.610681
+            ],
+            [
+              77.0743976,
+              28.6106833
+            ],
+            [
+              77.0744045,
+              28.6110796
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 260463360,
+        "name": "Dispensary",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0770145,
+              28.6120462
+            ],
+            [
+              77.0766501,
+              28.6120585
+            ],
+            [
+              77.076635,
+              28.6118563
+            ],
+            [
+              77.077011,
+              28.6118404
+            ],
+            [
+              77.0770145,
+              28.6120462
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 260463370,
+        "name": "ESI",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_operator": "Employees' State Insurance",
+        "osm_operator:short": "ESI",
+        "osm_operator:wikidata": "Q3595726"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1805374,
+              28.5930335
+            ],
+            [
+              77.1815016,
+              28.5926338
+            ],
+            [
+              77.1815864,
+              28.5925986
+            ],
+            [
+              77.1819297,
+              28.5932631
+            ],
+            [
+              77.1808646,
+              28.5936647
+            ],
+            [
+              77.1805374,
+              28.5930335
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 262439881,
+        "name": "Primus Super Specialty Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "2, Chandragupt Marg, Chanakyapuri",
+        "osm_addr:postcode": "110021",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_barrier": "wall",
+        "osm_contact:phone": "011-66206620",
+        "osm_description": "100-500 Bedded Hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1111133,
+              28.6270869
+            ],
+            [
+              77.1134949,
+              28.627053
+            ],
+            [
+              77.1135376,
+              28.6286751
+            ],
+            [
+              77.1135447,
+              28.6289459
+            ],
+            [
+              77.1119912,
+              28.6289774
+            ],
+            [
+              77.1110867,
+              28.6289937
+            ],
+            [
+              77.1111133,
+              28.6270869
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 264998538,
+        "name": "Deen Dayal Upadhyaya Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "West",
+        "osm_addr:full": "Hari Nagar, Clock Tower",
+        "osm_addr:postcode": "110064",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_barrier": "wall",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_name:etymology:wikidata": "Q3631426",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1526261,
+              28.5342115
+            ],
+            [
+              77.1525177,
+              28.5340727
+            ],
+            [
+              77.1523647,
+              28.5341648
+            ],
+            [
+              77.1524731,
+              28.5343037
+            ],
+            [
+              77.1526261,
+              28.5342115
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 350511222,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1768059,
+              28.565701
+            ],
+            [
+              77.1770732,
+              28.565438
+            ],
+            [
+              77.1769669,
+              28.5653547
+            ],
+            [
+              77.1769487,
+              28.5653726
+            ],
+            [
+              77.1768591,
+              28.5653024
+            ],
+            [
+              77.1767643,
+              28.5653958
+            ],
+            [
+              77.1768382,
+              28.5654537
+            ],
+            [
+              77.176684,
+              28.5656055
+            ],
+            [
+              77.1768059,
+              28.565701
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 351121261,
+        "name": "C.G.H.S. Maternity & Gynae Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:full": "Tamil Sangam Marg, R.K.Puram, sec-5",
+        "osm_addr:postcode": "110022",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_building": "yes",
+        "osm_contact:phone": "011-26174490",
+        "osm_description": "<100 Bedded Hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.081484,
+              28.6215818
+            ],
+            [
+              77.0817275,
+              28.6216779
+            ],
+            [
+              77.0818632,
+              28.621413
+            ],
+            [
+              77.0816197,
+              28.6213168
+            ],
+            [
+              77.081484,
+              28.6215818
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 351567938,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0780721,
+              28.6185203
+            ],
+            [
+              77.0780328,
+              28.6184568
+            ],
+            [
+              77.0782004,
+              28.6183715
+            ],
+            [
+              77.0780071,
+              28.618079
+            ],
+            [
+              77.0779183,
+              28.6179413
+            ],
+            [
+              77.0777277,
+              28.618036
+            ],
+            [
+              77.0778145,
+              28.6181707
+            ],
+            [
+              77.0777484,
+              28.6182043
+            ],
+            [
+              77.0779449,
+              28.6185016
+            ],
+            [
+              77.0779914,
+              28.6184779
+            ],
+            [
+              77.0780305,
+              28.618541
+            ],
+            [
+              77.0779689,
+              28.6185717
+            ],
+            [
+              77.0781022,
+              28.618778
+            ],
+            [
+              77.0781242,
+              28.6188117
+            ],
+            [
+              77.0780076,
+              28.6188705
+            ],
+            [
+              77.0779856,
+              28.6188368
+            ],
+            [
+              77.0778144,
+              28.6189231
+            ],
+            [
+              77.0778242,
+              28.6189385
+            ],
+            [
+              77.078063,
+              28.6193033
+            ],
+            [
+              77.0781258,
+              28.6192716
+            ],
+            [
+              77.0781401,
+              28.6192935
+            ],
+            [
+              77.0782256,
+              28.6192504
+            ],
+            [
+              77.0782103,
+              28.619227
+            ],
+            [
+              77.0783453,
+              28.6191589
+            ],
+            [
+              77.078333,
+              28.6191402
+            ],
+            [
+              77.0784961,
+              28.619058
+            ],
+            [
+              77.0782706,
+              28.6187134
+            ],
+            [
+              77.0782681,
+              28.6187147
+            ],
+            [
+              77.0781254,
+              28.6184938
+            ],
+            [
+              77.0780721,
+              28.6185203
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 352922509,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0723989,
+              28.6281424
+            ],
+            [
+              77.0726766,
+              28.6282531
+            ],
+            [
+              77.0727727,
+              28.6280673
+            ],
+            [
+              77.072495,
+              28.6279567
+            ],
+            [
+              77.0723989,
+              28.6281424
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 352937312,
+        "name": "Shankar Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "West Delhi",
+        "osm_addr:full": "B/6, Shankar Garden, Near Janakpuri West Metro Station",
+        "osm_addr:postcode": "110018",
+        "osm_addr:state": "Delhi",
+        "osm_amenity": "hospital",
+        "osm_building": "yes",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1248259,
+              28.5991653
+            ],
+            [
+              77.1243613,
+              28.5982345
+            ],
+            [
+              77.1250506,
+              28.5979693
+            ],
+            [
+              77.1255186,
+              28.5988982
+            ],
+            [
+              77.1248259,
+              28.5991653
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 408034524,
+        "name": "Delhi Cantonment General Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:place": "Sadar Bazar",
+        "osm_addr:postcode": "110010",
+        "osm_addr:state": "DL",
+        "osm_amenity": "hospital",
+        "osm_baby_feeding": "no",
+        "osm_beds": "49",
+        "osm_contact:phone": "+91 1800 11 5300",
+        "osm_healthcare": "hospital",
+        "osm_kids_area": "no",
+        "osm_name:hi": "दिल्ली कैंट जेनरल अस्पताल",
+        "osm_nohousenumber": "yes",
+        "osm_opening_hours": "24/7",
+        "osm_operator": "Delhi Cantonment Board",
+        "osm_short_name": "Delhi Cantt General Hospital",
+        "osm_website": "https://delhi.cantt.gov.in/?page_id=1044",
+        "osm_wheelchair": "designated"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0974239,
+              28.4928137
+            ],
+            [
+              77.097275,
+              28.4929339
+            ],
+            [
+              77.097318,
+              28.4929893
+            ],
+            [
+              77.0974762,
+              28.4928703
+            ],
+            [
+              77.0974239,
+              28.4928137
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 453862916,
+        "name": "RBS Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_emergency": "no",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2023409,
+              28.5685984
+            ],
+            [
+              77.2022527,
+              28.566898
+            ],
+            [
+              77.2013412,
+              28.5669079
+            ],
+            [
+              77.2012886,
+              28.5665046
+            ],
+            [
+              77.2010901,
+              28.566168
+            ],
+            [
+              77.2008323,
+              28.5661001
+            ],
+            [
+              77.2007792,
+              28.5659972
+            ],
+            [
+              77.2002113,
+              28.5659233
+            ],
+            [
+              77.1999932,
+              28.566413
+            ],
+            [
+              77.1995973,
+              28.5670205
+            ],
+            [
+              77.1994793,
+              28.5674587
+            ],
+            [
+              77.199431,
+              28.5694327
+            ],
+            [
+              77.1995007,
+              28.5695269
+            ],
+            [
+              77.1996509,
+              28.5695552
+            ],
+            [
+              77.2012008,
+              28.5695044
+            ],
+            [
+              77.2011235,
+              28.5686389
+            ],
+            [
+              77.2023409,
+              28.5685984
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 454523333,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1499332,
+              28.5831998
+            ],
+            [
+              77.1507438,
+              28.5837345
+            ],
+            [
+              77.150906,
+              28.5835644
+            ],
+            [
+              77.1511234,
+              28.5833178
+            ],
+            [
+              77.1506094,
+              28.5826616
+            ],
+            [
+              77.1499332,
+              28.5831998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 531891636,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "New Delhi",
+        "osm_addr:postcode": "110010",
+        "osm_addr:street": "Subroto Park",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.15687,
+              28.5818409
+            ],
+            [
+              77.1575659,
+              28.5823003
+            ],
+            [
+              77.1590024,
+              28.5832673
+            ],
+            [
+              77.1584622,
+              28.5838884
+            ],
+            [
+              77.1581515,
+              28.5849398
+            ],
+            [
+              77.1575774,
+              28.5852904
+            ],
+            [
+              77.1567675,
+              28.5847038
+            ],
+            [
+              77.1558871,
+              28.5836477
+            ],
+            [
+              77.15515,
+              28.5827051
+            ],
+            [
+              77.1557365,
+              28.5823445
+            ],
+            [
+              77.1564768,
+              28.5819701
+            ],
+            [
+              77.15687,
+              28.5818409
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 531909670,
+        "name": "Army Research and Referral Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "Delhi Cantonment",
+        "osm_addr:postcode": "110010",
+        "osm_alt_name": "R&R Hospital",
+        "osm_alt_name_1": "RR Hospital",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1226817,
+              28.5797948
+            ],
+            [
+              77.1222212,
+              28.579854
+            ],
+            [
+              77.1220907,
+              28.579466
+            ],
+            [
+              77.1223273,
+              28.5794001
+            ],
+            [
+              77.1221384,
+              28.5790339
+            ],
+            [
+              77.1229093,
+              28.5789281
+            ],
+            [
+              77.1229339,
+              28.5789775
+            ],
+            [
+              77.123204,
+              28.579521
+            ],
+            [
+              77.1232394,
+              28.5795922
+            ],
+            [
+              77.1226817,
+              28.5797948
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 532774412,
+        "name": "Station Medicare Centre",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:country": "IN",
+        "osm_addr:district": "New Delhi",
+        "osm_addr:housename": "Station Medicare Centre",
+        "osm_addr:postcode": "110010",
+        "osm_addr:state": "DL",
+        "osm_addr:street": "Maude Road",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0920498,
+              28.577181
+            ],
+            [
+              77.0925645,
+              28.5770836
+            ],
+            [
+              77.0926656,
+              28.5770645
+            ],
+            [
+              77.0926674,
+              28.5764522
+            ],
+            [
+              77.0917897,
+              28.5765889
+            ],
+            [
+              77.0920498,
+              28.577181
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 532890550,
+        "name": "Station Medicare Center",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "Delhi Cantonment",
+        "osm_addr:postcode": "110010",
+        "osm_addr:suburb": "New Pinto Park",
+        "osm_alt_name": "SMC",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0822668,
+              28.5908572
+            ],
+            [
+              77.0815828,
+              28.5909302
+            ],
+            [
+              77.0815514,
+              28.5910628
+            ],
+            [
+              77.0814797,
+              28.5913644
+            ],
+            [
+              77.0813093,
+              28.5920819
+            ],
+            [
+              77.0816955,
+              28.5920795
+            ],
+            [
+              77.0819691,
+              28.5919877
+            ],
+            [
+              77.0821488,
+              28.5918346
+            ],
+            [
+              77.0822051,
+              28.5916603
+            ],
+            [
+              77.0822668,
+              28.5908572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 662185788,
+        "name": "Primary Health Centre",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0781143,
+              28.5935936
+            ],
+            [
+              77.0784779,
+              28.5939398
+            ],
+            [
+              77.0788341,
+              28.5938063
+            ],
+            [
+              77.0785391,
+              28.5934733
+            ],
+            [
+              77.0781143,
+              28.5935936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 782378314,
+        "name": "Maharaja Agrasen Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "New Delhi",
+        "osm_addr:postcode": "110045",
+        "osm_addr:street": "Sector 1 Dwarka",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:etymology:wikidata": "Q2721961",
+        "osm_operator": "Maharaja Agrasen Group of Hospitals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0660212,
+              28.576984
+            ],
+            [
+              77.067001,
+              28.578005
+            ],
+            [
+              77.069111,
+              28.5766019
+            ],
+            [
+              77.0682369,
+              28.5755487
+            ],
+            [
+              77.0660212,
+              28.576984
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1128182482,
+        "name": "SITE BOUNDARY",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0823507,
+              28.6101678
+            ],
+            [
+              77.0826876,
+              28.6100397
+            ],
+            [
+              77.0823957,
+              28.6095725
+            ],
+            [
+              77.08223,
+              28.6095296
+            ],
+            [
+              77.0818936,
+              28.609727
+            ],
+            [
+              77.0821468,
+              28.6101226
+            ],
+            [
+              77.0823507,
+              28.6101678
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1267054047,
+        "name": "Shri Dada Dev Matri Avum Shishu Chikitsalaya",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:city": "New Delhi",
+        "osm_addr:district": "Dwarka South West",
+        "osm_addr:housenumber": "Dabri Village",
+        "osm_addr:postcode": "110045",
+        "osm_addr:street": "Dabri Palam Road",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "paediatrics;gynaecology",
+        "osm_operator": "Delhi Government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1199499,
+              28.5906889
+            ],
+            [
+              77.1201409,
+              28.5910565
+            ],
+            [
+              77.1198456,
+              28.5911743
+            ],
+            [
+              77.1196534,
+              28.5908093
+            ],
+            [
+              77.1199499,
+              28.5906889
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1278167327,
+        "name": "Central Government Health Scheme Wellness Centre",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_short_name": "CGHS Wellness Centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1279475,
+              28.6094192
+            ],
+            [
+              77.1283964,
+              28.6094455
+            ],
+            [
+              77.1289232,
+              28.609545
+            ],
+            [
+              77.1292181,
+              28.6096834
+            ],
+            [
+              77.129555,
+              28.6098937
+            ],
+            [
+              77.1298362,
+              28.6101533
+            ],
+            [
+              77.1298212,
+              28.6102527
+            ],
+            [
+              77.1298387,
+              28.6102761
+            ],
+            [
+              77.1298865,
+              28.6103398
+            ],
+            [
+              77.1299026,
+              28.6103614
+            ],
+            [
+              77.1300315,
+              28.6103661
+            ],
+            [
+              77.1302401,
+              28.6106567
+            ],
+            [
+              77.1304168,
+              28.6109748
+            ],
+            [
+              77.1305394,
+              28.6112382
+            ],
+            [
+              77.1306265,
+              28.6115248
+            ],
+            [
+              77.1294271,
+              28.6121335
+            ],
+            [
+              77.1288965,
+              28.611378
+            ],
+            [
+              77.128596,
+              28.6115449
+            ],
+            [
+              77.1284061,
+              28.6112526
+            ],
+            [
+              77.1282635,
+              28.6113341
+            ],
+            [
+              77.128081,
+              28.6110739
+            ],
+            [
+              77.1285783,
+              28.6108037
+            ],
+            [
+              77.1284663,
+              28.6106445
+            ],
+            [
+              77.1284879,
+              28.6106336
+            ],
+            [
+              77.1281162,
+              28.6100475
+            ],
+            [
+              77.1279475,
+              28.6094192
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1296268637,
+        "name": "New Outpatient Department\nComplex",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_operator": "Base Hospital",
+        "osm_short_name": "New OPD Complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0637351,
+              28.5802198
+            ],
+            [
+              77.0622212,
+              28.5784147
+            ],
+            [
+              77.0602733,
+              28.5797244
+            ],
+            [
+              77.0616305,
+              28.5813053
+            ],
+            [
+              77.0620495,
+              28.5813454
+            ],
+            [
+              77.0637351,
+              28.5802198
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1384923957,
+        "name": "Indira Gandhi Hospital",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_beds": "1725",
+        "osm_email": "ighofficedwarka@gmail.com",
+        "osm_healthcare": "hospital",
+        "osm_mobile": "+91 99106 31876",
+        "osm_name:etymology:wikidata": "Q1149",
+        "osm_operator": "Government of Delhi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1423199,
+              28.624899
+            ],
+            [
+              77.1423149,
+              28.6246861
+            ],
+            [
+              77.1429952,
+              28.6247396
+            ],
+            [
+              77.143001,
+              28.6249628
+            ],
+            [
+              77.1423199,
+              28.624899
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1417674631,
+        "name": "Vacant Plot for Hospital C-Block",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "emergency",
+        "osm_operator": "This is proposed Hospital Land"
+      }
+    }
+  ],
+  "category": "hospitals",
+  "count": 99
+}

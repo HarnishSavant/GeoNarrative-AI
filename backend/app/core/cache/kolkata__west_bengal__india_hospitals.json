@@ -1,0 +1,3634 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3600196,
+          22.5727398
+        ]
+      },
+      "properties": {
+        "id": 1189036467,
+        "name": "Eden Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Eden Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3614363,
+          22.5722242
+        ]
+      },
+      "properties": {
+        "id": 1189036837,
+        "name": "Calcutta Medical College & Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Calcutta Medical College & Hospital",
+        "osm_wikidata": "Q3348933",
+        "osm_wikipedia": "en:Medical College and Hospital, Kolkata"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3163322,
+          22.4987178
+        ]
+      },
+      "properties": {
+        "id": 1272967205,
+        "name": "Vidyasagar State General Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South 24 Parganas",
+        "osm_addr:full": "Brahma Samaj Road, Vidyasagar Park, Behala",
+        "osm_addr:postcode": "700034",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_description": "Sub-District Hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "wbhealth.gov.in",
+        "osm_wikidata": "Q61453790"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3121663,
+          22.4951399
+        ]
+      },
+      "properties": {
+        "id": 1765139008,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3471209,
+          22.5264408
+        ]
+      },
+      "properties": {
+        "id": 2471894122,
+        "name": "Chittaranjan Shishu Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "paediatrics",
+        "osm_name:etymology:wikidata": "Q560182"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3470069,
+          22.5259264
+        ]
+      },
+      "properties": {
+        "id": 2471894125,
+        "name": "Chittaranjan Seva Sadan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:etymology:wikidata": "Q560182"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3466423,
+          22.5252694
+        ]
+      },
+      "properties": {
+        "id": 2471894143,
+        "name": "Chittaranjan National Cancer Institute Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:housenumber": "37",
+        "osm_addr:postcode": "700026",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:street": "Shyama Prasad Mukherjee Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-09-30",
+        "osm_healthcare": "hospital",
+        "osm_internet_access": "wlan",
+        "osm_internet_access:fee": "no",
+        "osm_name:etymology:wikidata": "Q560182",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "yes",
+        "osm_wikidata": "Q5102433",
+        "osm_wikipedia": "en:Chittaranjan National Cancer Institute"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3507269,
+          22.5895694
+        ]
+      },
+      "properties": {
+        "id": 3324142933,
+        "name": "Mayor Chect Clinick",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3079611,
+          22.4731537
+        ]
+      },
+      "properties": {
+        "id": 4596276123,
+        "name": "Prima Orthopaedic Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "130E, Bhattacharya Para Road",
+        "osm_addr:postcode": "700063",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Prima Orthopaedic Centre",
+        "osm_phone": "033-24968255",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3730073,
+          22.5728574
+        ]
+      },
+      "properties": {
+        "id": 4834257106,
+        "name": "ESI HOSPITAL, SEALDAH",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "KOLKATA",
+        "osm_addr:housenumber": "301",
+        "osm_addr:postcode": "700009",
+        "osm_addr:street": "Acharya Jagadish Chandra Bose Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-09-30",
+        "osm_healthcare": "hospital",
+        "osm_internet_access": "wlan",
+        "osm_internet_access:fee": "no",
+        "osm_operator": "Employees' State Insurance",
+        "osm_operator:short": "ESI",
+        "osm_operator:type": "public",
+        "osm_operator:wikidata": "Q3595726",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3460553,
+          22.4866272
+        ]
+      },
+      "properties": {
+        "id": 5162659222,
+        "name": "Chandi tala health center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_opening_hours": "Mo-Sa 09:00-15:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3205755,
+          22.5065586
+        ]
+      },
+      "properties": {
+        "id": 5358863021,
+        "name": "Behala Balananda Brahmachari Hospital and Research Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "151 and 153 Diamond Harbour Road",
+        "osm_addr:housenumber": "151",
+        "osm_addr:postcode": "700034",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:street": "Diamond Harbour Road",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3324072112",
+        "osm_email": "info@bbbhospital.org",
+        "osm_healthcare": "hospital",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.375858,
+          22.4792072
+        ]
+      },
+      "properties": {
+        "id": 5385568522,
+        "name": "IRIS HOSPITAL",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3486944,
+          22.5239877
+        ]
+      },
+      "properties": {
+        "id": 5574214722,
+        "name": "Paramount Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "109/1, Hazra Road",
+        "osm_addr:postcode": "700026",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3679312,
+          22.5627691
+        ]
+      },
+      "properties": {
+        "id": 5832603185,
+        "name": "Dr Rafi Ahmed Dental College & Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:street": "AJC Bose Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_wikidata": "Q5304333",
+        "osm_wikimedia_commons": "Category:Dr. R. Ahmed Dental College and Hospital",
+        "osm_wikipedia": "en:Dr. R. Ahmed Dental College and Hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3695623,
+          22.5648794
+        ]
+      },
+      "properties": {
+        "id": 5832603186,
+        "name": "UNB building, NRS medical college",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:street": "AJC Bose Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2025-04-30",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_operator": "GOVT OF WEST BENGAL",
+        "osm_operator:type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3686937,
+          22.5645047
+        ]
+      },
+      "properties": {
+        "id": 5832603385,
+        "name": "NRS OPD Building",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_operator:type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3698611,
+          22.5633946
+        ]
+      },
+      "properties": {
+        "id": 5832603485,
+        "name": "Bekar Ward, NRS Medical College",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_name:en": "Baker Ward"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3691544,
+          22.5652972
+        ]
+      },
+      "properties": {
+        "id": 5832603585,
+        "name": "NRS Medical college & Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_description": "Emergency department",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.367509,
+          22.5629472
+        ]
+      },
+      "properties": {
+        "id": 5832603685,
+        "name": "Dr Rafi Ahmed Dental College & Hospital, Old Campus",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:street": "AJC Bose Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "dental_oral_maxillo_facial_surgery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3690769,
+          22.563659
+        ]
+      },
+      "properties": {
+        "id": 6180273185,
+        "name": "Obs & Gynaecology Building, NRS",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3195026,
+          22.4590152
+        ]
+      },
+      "properties": {
+        "id": 6420585685,
+        "name": "Thakur Pukur Cancer Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:postcode": "700104",
+        "osm_addr:street": "Mahatma Gandhi Road",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_opening_hours": "24/7",
+        "osm_phone": "913324536711"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3602395,
+          22.5012444
+        ]
+      },
+      "properties": {
+        "id": 6602110919,
+        "name": "Unnamed hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3723557,
+          22.5572974
+        ]
+      },
+      "properties": {
+        "id": 7048046835,
+        "name": "Micro Phaco Surgery Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Kalicharan Seth Lane, Mondal Para Lane, Sinthi",
+        "osm_addr:postcode": "700014",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "22651808",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3592599,
+          22.5474203
+        ]
+      },
+      "properties": {
+        "id": 7048136974,
+        "name": "Bhagirathi Neotia Woman And Child Care Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "2, Rawdon Street",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "paediatric_surgery",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3519824,
+          22.5234205
+        ]
+      },
+      "properties": {
+        "id": 7048158968,
+        "name": "Rama Krishna Mission Seva Pratisthan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "99,Sarat Bose Road,Kalighat",
+        "osm_addr:postcode": "700026",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://rkmsevapratishthan.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.34363,
+          22.5137804
+        ]
+      },
+      "properties": {
+        "id": 7048161360,
+        "name": "Ramakrishma Sarada Mission Matri Bhavan/Matri Bhavan Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "7A,Sree Mohan Lane",
+        "osm_addr:postcode": "700026",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "paediatrics;gynaecology;maternity",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://rksm-matribhavan.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3474602,
+          22.5198434
+        ]
+      },
+      "properties": {
+        "id": 7048235268,
+        "name": "Probal Eye Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "34, Satish Mukherjee Road",
+        "osm_addr:postcode": "700026",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "03324641210;24642782",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://probaleyeinstitute.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3554102,
+          22.5424238
+        ]
+      },
+      "properties": {
+        "id": 7048456215,
+        "name": "Priyamvada Birla Aravind Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "10, Loudon Street,Elgin",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_email": "info@birlaeye.com",
+        "osm_healthcare": "hospital",
+        "osm_opening_hours": "Mo-Sa 08:30-17:30",
+        "osm_operator:type": "private",
+        "osm_phone": "03322894343",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "http://www.birlaeye.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3651547,
+          22.542529
+        ]
+      },
+      "properties": {
+        "id": 7048489106,
+        "name": "Harvard Medicare And Research Institute (P) Ltd.",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "42,Sk Mujibur Rahman Sarani,Circus Avenue, Beck Bagan",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3542247,
+          22.5477696
+        ]
+      },
+      "properties": {
+        "id": 7048590774,
+        "name": "Life Line Diagnostic Centre And Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "4 A, Wood Street",
+        "osm_addr:postcode": "700016",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3232278,
+          22.58174
+        ]
+      },
+      "properties": {
+        "id": 7048662834,
+        "name": "People Meditreat Pvt Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "262,Netaji Subhash Road",
+        "osm_addr:postcode": "711101",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:mobile": "9804172455",
+        "osm_contact:phone": "26409141",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3743808,
+          22.5347322
+        ]
+      },
+      "properties": {
+        "id": 7048758386,
+        "name": "Swastik Seva Sadan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "No. 16C Topsia,Tiljala",
+        "osm_addr:postcode": "700046",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3550012,
+          22.5403082
+        ]
+      },
+      "properties": {
+        "id": 7050661963,
+        "name": "The Orthopaedic And Fracture Clinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "15/2,Sarat Bose Road",
+        "osm_addr:postcode": "700020",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "orthopaedics",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2696868,
+          22.5440241
+        ]
+      },
+      "properties": {
+        "id": 7050784008,
+        "name": "Unipon Hospital and Medical Sciences Pvt.Ltd -Kolkata",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "V-122/A/2,S.A.Farooquie Road,Opp: Bartala Post Office",
+        "osm_addr:postcode": "700018",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "30216666",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3606586,
+          22.5240061
+        ]
+      },
+      "properties": {
+        "id": 7050801780,
+        "name": "Dr Nihar Munshi Eye Foundation",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "1/3, Dover Place",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-12-16",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_internet_access": "no",
+        "osm_operator:type": "private",
+        "osm_payment:cash": "yes",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3105063,
+          22.4660881
+        ]
+      },
+      "properties": {
+        "id": 7050837362,
+        "name": "DM Hospitals Pvt. Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "113, James Long Sarani",
+        "osm_addr:postcode": "700063",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3324536221",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3380973,
+          22.5086023
+        ]
+      },
+      "properties": {
+        "id": 7050840075,
+        "name": "Shradha Health Care Pvt. Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "No.46,Pramatha Chowdhary Sarani,Near Rasai Factory",
+        "osm_addr:postcode": "700053",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3324003522",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3515425,
+          22.546022
+        ]
+      },
+      "properties": {
+        "id": 7050974464,
+        "name": "Nightingale Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "11, Shakespeare Sarani Road",
+        "osm_addr:housenumber": "11",
+        "osm_addr:postcode": "700071",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:street": "Shakespeare Sarani",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-28",
+        "osm_email": "admin@nightingalehospital.com",
+        "osm_healthcare": "hospital",
+        "osm_opening_hours": "24/7",
+        "osm_operator:type": "private",
+        "osm_phone": "03335005949",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://nightingalehospital.com/",
+        "osm_wikidata": "Q30270145"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3591291,
+          22.5187786
+        ]
+      },
+      "properties": {
+        "id": 7051027437,
+        "name": "N G Medicare And Calcutta Hope Infertility Clinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "123A, Rash Behari Avenue",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-04",
+        "osm_contact:phone": "3324640230",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3559132,
+          22.5181685
+        ]
+      },
+      "properties": {
+        "id": 7051204581,
+        "name": "Fortis Healthcare",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "111A, Rash Behari Avenue",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3366276800",
+        "osm_email": "enquiries@fortishospitals.in",
+        "osm_healthcare": "hospital",
+        "osm_operator": "Fortis Healthcare",
+        "osm_operator:type": "private",
+        "osm_operator:wikidata": "Q7810035",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3618898,
+          22.539975
+        ]
+      },
+      "properties": {
+        "id": 7051208986,
+        "name": "Farsight Eye Research Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "32-A,Lower Range Road",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3744177,
+          22.5997713
+        ]
+      },
+      "properties": {
+        "id": 7051213951,
+        "name": "Five Point Micro Surgery Centre Pvt Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "227, Acharya Praffula Chandra Road,( Near Shyambazar Cesc Building )",
+        "osm_addr:postcode": "700004",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-09-30",
+        "osm_healthcare": "hospital",
+        "osm_internet_access": "wlan",
+        "osm_internet_access:fee": "no",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3621646,
+          22.5395258
+        ]
+      },
+      "properties": {
+        "id": 7051230850,
+        "name": "Implant House Laser and Diagnostic Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "40A, Beck Bagan Row",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3656241,
+          22.5810552
+        ]
+      },
+      "properties": {
+        "id": 7051316701,
+        "name": "Aurobindo Netralaya",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "4A, Rajendra Deb Road",
+        "osm_addr:postcode": "700007",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-09-30",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3551662,
+          22.5446657
+        ]
+      },
+      "properties": {
+        "id": 7051316710,
+        "name": "Gamma Centauri Health Care P Ltd.,",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "3 - B, Albert Road",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3197114,
+          22.4592477
+        ]
+      },
+      "properties": {
+        "id": 7053689148,
+        "name": "Saroj Gupta Cancer Centre And Research Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "109,Mahatma Gandhi Road,Thakurpukur",
+        "osm_addr:postcode": "700063",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "cancercentrecalcutta.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3304657,
+          22.5782195
+        ]
+      },
+      "properties": {
+        "id": 7053865156,
+        "name": "Belur Sramajibi Swasthya Prakalpa Samity",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "5,Grand Trunk Road ,Belur",
+        "osm_addr:postcode": "711101",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3723074,
+          22.5386694
+        ]
+      },
+      "properties": {
+        "id": 7059017540,
+        "name": "Institute Of Child Health",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "11, Dr. Biresh Guha Street",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_wikidata": "Q28154828",
+        "osm_wikipedia": "en:Institute of Child Health, Kolkata"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3530888,
+          22.5165078
+        ]
+      },
+      "properties": {
+        "id": 7059027977,
+        "name": "B.N Basu Memorial Clinic Appolo Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "34 B, Jatin Das Road",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3063807,
+          22.4580615
+        ]
+      },
+      "properties": {
+        "id": 7059096584,
+        "name": "Swadesh Basu Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "204A, Diamond Harbour Road , Thakurpukur",
+        "osm_addr:postcode": "700063",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "24674006",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3613316,
+          22.5567342
+        ]
+      },
+      "properties": {
+        "id": 7059136652,
+        "name": "Angel Maternity and Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "No.3,Komedan Bagan Lane,Near Jora Girja, Corporation ,Garage On Ajc Bose Road",
+        "osm_addr:postcode": "700016",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_contact:phone": "22493361",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3483134,
+          22.5136699
+        ]
+      },
+      "properties": {
+        "id": 7059220242,
+        "name": "Infirmary Orthopaedic Centre and Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "39A, Southern Avenue",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "orthopaedics",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3674172,
+          22.5058109
+        ]
+      },
+      "properties": {
+        "id": 7059255451,
+        "name": "RG Stone Urology And Laparoscopy Hospital, Kolkata",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "33, Gariahat Road (South) Opp To Jodhpur Park",
+        "osm_addr:postcode": "700031",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3340271000",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "urology",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.rghospitals.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3664475,
+          22.5427124
+        ]
+      },
+      "properties": {
+        "id": 7062120846,
+        "name": "Islamia Medical Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "94, Park Street, Park Circus",
+        "osm_addr:housenumber": "2",
+        "osm_addr:place": "Syed Amir Ali Avenue",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-12-16",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_internet_access": "wlan",
+        "osm_internet_access:fee": "customers",
+        "osm_operator:type": "government",
+        "osm_payment:cash": "yes",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3708055,
+          22.5447604
+        ]
+      },
+      "properties": {
+        "id": 7062138859,
+        "name": "Islamia Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "73,Chittaranjan Avenue,Darga Road",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3641677,
+          22.5373304
+        ]
+      },
+      "properties": {
+        "id": 7062229867,
+        "name": "Implant's Better Sight Centre Pvt Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "13A,Colonel Biswas Road",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "implantsbettersight.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3197241,
+          22.5816657
+        ]
+      },
+      "properties": {
+        "id": 7062316904,
+        "name": "Dristi Eye Foundation",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "5/7 Halder Para Lane,Naora",
+        "osm_addr:postcode": "711101",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3684555,
+          22.527795
+        ]
+      },
+      "properties": {
+        "id": 7062396399,
+        "name": "Deshari Complete Eye Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "99/5/8C, Bullygunge Place",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-12-16",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3717764,
+          22.5188765
+        ]
+      },
+      "properties": {
+        "id": 7062396402,
+        "name": "B.K.Dutt Memorial Medical Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "4K, Ballygunge Station Road",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "24611512",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3337856,
+          22.5812075
+        ]
+      },
+      "properties": {
+        "id": 7062411420,
+        "name": "Howrah Lions Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "9,Near Bangabasi Cinema Hall,Nityadhan Mukherjee Road,Kadamtala",
+        "osm_addr:postcode": "711101",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3532457,
+          22.5310898
+        ]
+      },
+      "properties": {
+        "id": 7062470862,
+        "name": "Health Point Hospitals",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Hooghly",
+        "osm_addr:full": "21, Prannath Pandit Street",
+        "osm_addr:postcode": "700 025",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_email": "info@healthpointhospital.com",
+        "osm_healthcare": "hospital",
+        "osm_phone": "91 629 220 6008",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.healthpointhospital.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3414158,
+          22.5031868
+        ]
+      },
+      "properties": {
+        "id": 7065226681,
+        "name": "Siddhi Multi Speciality Ayurveda Hospital and Research Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "101, Tollygunge Circular Road, Tollygunge",
+        "osm_addr:postcode": "700053",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ayurveda",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3610965,
+          22.5029093
+        ]
+      },
+      "properties": {
+        "id": 7065226682,
+        "name": "SilverLine Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "396, Prince Anwar Shah Road",
+        "osm_addr:postcode": "700045",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "03324736940;24720836",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3644935,
+          22.5032339
+        ]
+      },
+      "properties": {
+        "id": 7065232712,
+        "name": "Sri Aurobindo Seva Kendra (EEDF)",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "1 H,Garihat Road (South),Jodhpur Park",
+        "osm_addr:postcode": "700068",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "03340171717;24143881",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://eedf.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3518905,
+          22.5353788
+        ]
+      },
+      "properties": {
+        "id": 7065232721,
+        "name": "Sri Lakshmi Narayana Trust Maternity Home and Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "4, Justice Chandra Madhav Road",
+        "osm_addr:postcode": "700020",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3187538,
+          22.562627
+        ]
+      },
+      "properties": {
+        "id": 7065252195,
+        "name": "SMI Pvt Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "263/3,G.T. Road(South),Shibpur",
+        "osm_addr:postcode": "711314",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "03326782283;26783881",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3257383,
+          22.5697343
+        ]
+      },
+      "properties": {
+        "id": 7065252203,
+        "name": "Smt. Sarla Pahwa Memorial Eye Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "Ma Bindhyachal Apartment,169, G.T.Road, Shibpur",
+        "osm_addr:postcode": "711102",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "26426050",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.355944,
+          22.5819362
+        ]
+      },
+      "properties": {
+        "id": 7065265207,
+        "name": "Shree Vishudhanand Hospital and Research Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "35 & 37, Burtolla Street, M G Road",
+        "osm_addr:postcode": "700007",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-30",
+        "osm_healthcare": "hospital",
+        "osm_operator:type": "government",
+        "osm_phone": "033 40233030",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://jsdl.in/DT-37BPSIW2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3421754,
+          22.5925889
+        ]
+      },
+      "properties": {
+        "id": 7065269299,
+        "name": "Alpha Medical Services Pvt. Ltd.",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "21/1, Dobson Road",
+        "osm_addr:postcode": "711101",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3326667494",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3739229,
+          22.4674584
+        ]
+      },
+      "properties": {
+        "id": 7065473746,
+        "name": "Sevangan Medical Complex",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "398/1, Netaji Subhas Chandra Bose Road",
+        "osm_addr:postcode": "700047",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.341794,
+          22.596013
+        ]
+      },
+      "properties": {
+        "id": 7065473779,
+        "name": "Shiny Swadha Eye Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "72,Jelia Para Lane,Salkia",
+        "osm_addr:postcode": "711106",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3297522,
+          22.5714259
+        ]
+      },
+      "properties": {
+        "id": 7065473780,
+        "name": "Shree Jain Hospital And Research Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "493,B/12,G.T. Road,Shibpor (South)",
+        "osm_addr:postcode": "711102",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3756904,
+          22.4814755
+        ]
+      },
+      "properties": {
+        "id": 7065549006,
+        "name": "Dakshinee Eye Foundation",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "69/1/1/3, Raja S C Mullick Road, Vidhyasagar Bus Stop",
+        "osm_addr:postcode": "700047",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-19",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "optometry",
+        "osm_operator:type": "public",
+        "osm_payment:cash": "yes",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.328214,
+          22.5738494
+        ]
+      },
+      "properties": {
+        "id": 7065549022,
+        "name": "D.B. Eye Foundation",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "No.138, Sree Appartment, Baisnabpara Bazar",
+        "osm_addr:postcode": "711102",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3574648,
+          22.5152875
+        ]
+      },
+      "properties": {
+        "id": 7065549029,
+        "name": "Complete Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Lake Road",
+        "osm_addr:postcode": "700001",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3210942,
+          22.5016929
+        ]
+      },
+      "properties": {
+        "id": 7065628333,
+        "name": "Mohanananda Brahmachari Sishu Seva Pratisthan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "57A, Roy Bahadur Road",
+        "osm_addr:postcode": "700034",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "24788169",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3439103,
+          22.5079159
+        ]
+      },
+      "properties": {
+        "id": 7065697990,
+        "name": "Debdoot Sevayan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "51, Charu Chandra Avenue",
+        "osm_addr:postcode": "700033",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3262127,
+          22.5296568
+        ]
+      },
+      "properties": {
+        "id": 7065864053,
+        "name": "Bellona Nursing Home And Diagnostic Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "51A, Diamond Harbour Road",
+        "osm_addr:postcode": "700027",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.301756,
+          22.5768741
+        ]
+      },
+      "properties": {
+        "id": 7065866518,
+        "name": "Chokher Aloy",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "1/10, Bholanath Nandy Lane",
+        "osm_addr:postcode": "711104",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "26778050",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3708222,
+          22.5041947
+        ]
+      },
+      "properties": {
+        "id": 7065866539,
+        "name": "Dr. Mina Majumder Seva Mandir Pvt. Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Near Krishna Glass Factory, 6/10 Central Park, Jadavpur University",
+        "osm_addr:postcode": "700032",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2555755,
+          22.578847
+        ]
+      },
+      "properties": {
+        "id": 7065866583,
+        "name": "Disha Eye Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "Andulrailway Siding.Jhorehat",
+        "osm_addr:postcode": "711302",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3545157,
+          22.5185965
+        ]
+      },
+      "properties": {
+        "id": 7065868649,
+        "name": "Nemesis Eye Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "6 A, Sarat Bose Road, near Deshapriya Park E",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3045549,
+          22.4573942
+        ]
+      },
+      "properties": {
+        "id": 7065868655,
+        "name": "Bangur Medicare Research Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "8A, Diamond Harbour Road Thakurpukur",
+        "osm_addr:postcode": "700063",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3447391,
+          22.5030685
+        ]
+      },
+      "properties": {
+        "id": 7065871405,
+        "name": "RSV Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "40, Deshapran Sashmal Road , Lake Gardens",
+        "osm_addr:postcode": "700033",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://rsvhospital.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3617255,
+          22.524196
+        ]
+      },
+      "properties": {
+        "id": 7065871417,
+        "name": "All Asia Medical Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "8B, Garcha First Lane, Ballygunge",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-12-16",
+        "osm_contact:mobile": "8017306599",
+        "osm_contact:phone": "3366037324",
+        "osm_healthcare": "hospital",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.aamihospitals.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3732912,
+          22.5111409
+        ]
+      },
+      "properties": {
+        "id": 7065871453,
+        "name": "Dhakuria Sree Ramkrishna Sebasram",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "13, Sarat Ghosh Garden Road",
+        "osm_addr:postcode": "700031",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "24152038",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3214565,
+          22.5177264
+        ]
+      },
+      "properties": {
+        "id": 7068409204,
+        "name": "Kolkata Port Trust Centenary Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "1, Diamond Harbour Road, Majerhat",
+        "osm_addr:postcode": "700053",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_email": "calport@kolkataporttrust.gov.in",
+        "osm_healthcare": "hospital",
+        "osm_phone": "(91-33) 2230-3451",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.kolkataporttrust.gov.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3762866,
+          22.5832265
+        ]
+      },
+      "properties": {
+        "id": 7068409266,
+        "name": "Jitendra Narayan Ray Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "58/1S, Raja Dinendra Street",
+        "osm_addr:postcode": "700006",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3711521,
+          22.5223254
+        ]
+      },
+      "properties": {
+        "id": 7068429387,
+        "name": "Mood",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "227/A, Rashbehari Avenue",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "32914212",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3387953,
+          22.5026069
+        ]
+      },
+      "properties": {
+        "id": 7068614368,
+        "name": "Arogya Maternity and Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "71, Tollyganj Circular Road",
+        "osm_addr:postcode": "700053",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "03324000684;24000681",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3539256,
+          22.5866107
+        ]
+      },
+      "properties": {
+        "id": 7068631608,
+        "name": "Asharam Bhiwaniwala Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "55, Kalikrishna Tagore Street",
+        "osm_addr:postcode": "700007",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2704237,
+          22.5673073
+        ]
+      },
+      "properties": {
+        "id": 7068798167,
+        "name": "N H Narayana Multispeciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "Andul Road",
+        "osm_addr:postcode": "711109",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.343991,
+          22.5366525
+        ]
+      },
+      "properties": {
+        "id": 7068798177,
+        "name": "Kolkata Heart Foundation",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "42/IA,Harish Mulherjee Road, Elgin Road",
+        "osm_addr:housenumber": "42/1a",
+        "osm_addr:postcode": "700020",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:street": "Harish Mukherjee Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-28",
+        "osm_email": "info@khfindia.com",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "cardiology",
+        "osm_opening_hours": "10:00-20:00",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.drkunalsarkar.com/appointment/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3525617,
+          22.5233166
+        ]
+      },
+      "properties": {
+        "id": 7068798178,
+        "name": "Calcutta Heart Research Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "114B, Sarat Bose Road, Opposite Shishu Mangal Hospital",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3524887,
+          22.5207604
+        ]
+      },
+      "properties": {
+        "id": 7069051085,
+        "name": "Amulya Jyoti Eye Foundation",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "105, Manoharpukur Road",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "03324668529;24197326",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://amulyajyoti.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3418547,
+          22.5919035
+        ]
+      },
+      "properties": {
+        "id": 7069051117,
+        "name": "Anjali Eye Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "11/12, Burnt Salt Gola Lane",
+        "osm_addr:postcode": "711101",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3326661768",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://drnavingupta.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.363941,
+          22.5252905
+        ]
+      },
+      "properties": {
+        "id": 7069095504,
+        "name": "Micro Surgery Day Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "51-B, Garcha Road",
+        "osm_addr:housenumber": "54/1 A",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:street": "Hazra Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-12-16",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3606895,
+          22.5837064
+        ]
+      },
+      "properties": {
+        "id": 7069095510,
+        "name": "Mitra Snagh Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "116, Rajballav Saha Lane",
+        "osm_addr:postcode": "711101",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.321133,
+          22.5641763
+        ]
+      },
+      "properties": {
+        "id": 7069095553,
+        "name": "Mandelia Maternity and Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "285/1, G. T Road, (South) , Shibpur",
+        "osm_addr:postcode": "711102",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3480369,
+          22.5200298
+        ]
+      },
+      "properties": {
+        "id": 7069095554,
+        "name": "Palm Springs",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "2,Greek Church Row Kalighat",
+        "osm_addr:postcode": "700026",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3622351,
+          22.5622368
+        ]
+      },
+      "properties": {
+        "id": 7069095555,
+        "name": "GD Hospital and Diabetes Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "139 A, Lenin Sarani",
+        "osm_addr:postcode": "700013",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_email": "info@gddihealthcare.com",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "diabetology",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.gddihealthcare.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3581018,
+          22.5842853
+        ]
+      },
+      "properties": {
+        "id": 7069095565,
+        "name": "Matri Mangal Pratishthan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "228, Rabindra Sarani, Burrabazar",
+        "osm_addr:postcode": "700007",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3618113,
+          22.5410414
+        ]
+      },
+      "properties": {
+        "id": 7069112434,
+        "name": "East End Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "14, Circus Avenue",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3776719,
+          22.4712333
+        ]
+      },
+      "properties": {
+        "id": 7069112469,
+        "name": "BRWS Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "279, Kendua Main Road, P.O Garia",
+        "osm_addr:postcode": "700084",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_email": "brws@cal.vsnl.net.in",
+        "osm_healthcare": "hospital",
+        "osm_operator:type": "private",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3705661,
+          22.5392157
+        ]
+      },
+      "properties": {
+        "id": 7069117897,
+        "name": "Good Samaritan Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "6, Dr, Biresh Guha Street, Near Park Circus, 4 No Bridge",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "22810200",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3710073,
+          22.5213682
+        ]
+      },
+      "properties": {
+        "id": 7071390530,
+        "name": "The Medicure, Kolkata",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "227 A,Rash Behari Avenue",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3035014,
+          22.5858477
+        ]
+      },
+      "properties": {
+        "id": 7071390546,
+        "name": "S.C. Bagchi Arogya Sadan Pvt.Ltd.",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "43/5, Nani Villa, Ramcharan Seth Road, Santragachi More, Ramrajatala, Baruipara",
+        "osm_addr:postcode": "711104",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3602614,
+          22.5478931
+        ]
+      },
+      "properties": {
+        "id": 7071458833,
+        "name": "Mission Of Mercy Hospital And Research Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "125/1 Park Street",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_email": "email@momhospital.org",
+        "osm_healthcare": "hospital",
+        "osm_phone": "+91 983 600 8484",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://mercyhealthcare.org.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3748181,
+          22.5833714
+        ]
+      },
+      "properties": {
+        "id": 7071458839,
+        "name": "The Leprosy Mission Permananda Memorial Leprosy Ho",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "259-A, Acharya Prafulla Chandra Road, Maniktala",
+        "osm_addr:postcode": "700006",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3749845,
+          22.4830661
+        ]
+      },
+      "properties": {
+        "id": 7071466514,
+        "name": "Baghajatin State General Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Vidya Sagar Main Road,Ganguli Bagan",
+        "osm_addr:postcode": "700092",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_wikidata": "Q61453792"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3046014,
+          22.4556049
+        ]
+      },
+      "properties": {
+        "id": 7071466620,
+        "name": "Kasturi Medical Centre Pvt Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South 24 Parganas",
+        "osm_addr:full": "Diamond Harbour Road,3A Bus Stand, P.O-Joka",
+        "osm_addr:postcode": "700104",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://www.kasturimedicalcentre.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3677826,
+          22.5999558
+        ]
+      },
+      "properties": {
+        "id": 7071650047,
+        "name": "Sterling Hospital, Kolkata",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "55/1, Bhupen Bose Avenue",
+        "osm_addr:postcode": "700004",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-30",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_internet_access": "wlan",
+        "osm_internet_access:fee": "customers",
+        "osm_opening_hours": "24/7",
+        "osm_operator:type": "private",
+        "osm_payment:cash": "yes",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_phone": "033 2530 1313",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://g.co/kgs/6bBZS9",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.28518,
+          22.4849865
+        ]
+      },
+      "properties": {
+        "id": 7071650069,
+        "name": "Netaji Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Kolkata",
+        "osm_addr:postcode": "700001",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3710095,
+          22.5395189
+        ]
+      },
+      "properties": {
+        "id": 7071670270,
+        "name": "TRA General Hospital - Kolkata",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "7, Dr.Biresh Guha Street, Park Circus,4 No. Bridge",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-02-17",
+        "osm_contact:phone": "22895346;40116800",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://trageneralhospital.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3584841,
+          22.5408036
+        ]
+      },
+      "properties": {
+        "id": 7071677083,
+        "name": "Lions Club Of Calcutta",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "68, Ballygunge Circular Road",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3049056,
+          22.5113168
+        ]
+      },
+      "properties": {
+        "id": 7071683907,
+        "name": "Vivekananda Hospital and Research Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "P-516/1, Banamali Naskar Road, Parnasree Palli, Behala",
+        "osm_addr:postcode": "700060",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2025-12-28",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "http://www.vivekanandahospitalbehala.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.358423,
+          22.4963257
+        ]
+      },
+      "properties": {
+        "id": 7071683932,
+        "name": "Calcutta Lions Netra Niketan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "1/2/A/2, Uday Sankar Sarani Near Golf Green Door Darshan Kendra, South 24 Parganas",
+        "osm_addr:postcode": "700095",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3324224637",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3741294,
+          22.5781464
+        ]
+      },
+      "properties": {
+        "id": 7071683933,
+        "name": "Dr. M. N. Chatterjee Memorial Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "295/1, Acharya Prafulla Chandra Road",
+        "osm_addr:postcode": "700009",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.379223,
+          22.4680074
+        ]
+      },
+      "properties": {
+        "id": 7071685696,
+        "name": "Garia Eye Clinic and Micro Surgery Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "South 24 Parganas",
+        "osm_addr:full": "173,Kanungo Park,Garia",
+        "osm_addr:postcode": "700084",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3072391,
+          22.4726658
+        ]
+      },
+      "properties": {
+        "id": 7071685703,
+        "name": "Suburban Eye Microsurgery Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "130A, Bhattacharjee Para Road",
+        "osm_addr:postcode": "700063",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "24961319",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3698897,
+          22.5404476
+        ]
+      },
+      "properties": {
+        "id": 7074272608,
+        "name": "Calcutta Pay Clinic and Hospital Pvt Ltd",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "215, Park Street",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3648047,
+          22.5077512
+        ]
+      },
+      "properties": {
+        "id": 7074312573,
+        "name": "KD Cure S.C. Das Memorial Medical Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "No.52,Jodhpur Park",
+        "osm_addr:postcode": "700068",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "3324236703",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3553157,
+          22.5665163
+        ]
+      },
+      "properties": {
+        "id": 7074312654,
+        "name": "Netra Sevasram",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "15, Prafulla Sarkar Street",
+        "osm_addr:postcode": "700072",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3573455,
+          22.5827281
+        ]
+      },
+      "properties": {
+        "id": 7074312657,
+        "name": "Marwari Relief Society Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "225/227, Rabindra Sarani",
+        "osm_addr:postcode": "700007",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-04",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3545975,
+          22.5174951
+        ]
+      },
+      "properties": {
+        "id": 7074329101,
+        "name": "Himalaya Vision Care Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "146, Rash Behari Avenue,Opposite Priya Cinema Hall",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "24653530",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "ophthalmology",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3572811,
+          22.5671621
+        ]
+      },
+      "properties": {
+        "id": 7074329102,
+        "name": "Kalidas Mullick Sebayatan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "47, Ganesh Chandra Avenue",
+        "osm_addr:postcode": "700013",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_contact:phone": "22376642",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3544424,
+          22.4818251
+        ]
+      },
+      "properties": {
+        "id": 7074329114,
+        "name": "Lions North Kolkata Hospital and Medical Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "141, Regent Park",
+        "osm_addr:postcode": "700040",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_contact:phone": "24710076",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3390568,
+          22.5932877
+        ]
+      },
+      "properties": {
+        "id": 7074329149,
+        "name": "Kumar Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "51/2 G.T. Road (N) Pilkhana",
+        "osm_addr:postcode": "711101",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2740081,
+          22.5981589
+        ]
+      },
+      "properties": {
+        "id": 7199742791,
+        "name": "Bankra Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "Near Bankra Police Phari, Bankra",
+        "osm_addr:postcode": "711403",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:subdistrict": "Domjur",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.359983,
+          22.595575
+        ]
+      },
+      "properties": {
+        "id": 7199853302,
+        "name": "Abinash Dutta Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "B.K.Pal Avenue",
+        "osm_addr:postcode": "700005",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-04",
+        "osm_description": "Maternity Home",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3039377,
+          22.5602924
+        ]
+      },
+      "properties": {
+        "id": 7199853326,
+        "name": "South Howrah State General Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "Laxmi Narayana Tala Road, Near IIEST, Shibpur",
+        "osm_addr:postcode": "711103",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_description": "Sub-District Hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3657939,
+          22.5691437
+        ]
+      },
+      "properties": {
+        "id": 7199853340,
+        "name": "Lady Dufferin Victoria Hospital, Kolkata",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Raja Ram Mohan Sarani, Near Bank Of India, Baithakkhana",
+        "osm_addr:postcode": "700009",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_emergency": "yes",
+        "osm_healthcare": "hospital",
+        "osm_internet_access": "wlan",
+        "osm_internet_access:fee": "no",
+        "osm_operator:type": "government",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2404221,
+          22.589507
+        ]
+      },
+      "properties": {
+        "id": 7199853408,
+        "name": "Mahiyari Lakshmikamal Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Howrah",
+        "osm_addr:full": "Ambagan Club, Mohiary",
+        "osm_addr:postcode": "711302",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:subdistrict": "Domjur",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.324507,
+          22.534245
+        ]
+      },
+      "properties": {
+        "id": 7199853420,
+        "name": "S.S.K.M. Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Kolkata, A.J.C. Bose Road",
+        "osm_addr:housenumber": "b,29",
+        "osm_addr:postcode": "700020",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:street": "Ibrahim Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-28",
+        "osm_description": "Medical Colleges Hospital",
+        "osm_healthcare": "hospital",
+        "osm_opening_hours": "24/7",
+        "osm_phone": "09163162204",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2718829,
+          22.5672546
+        ]
+      },
+      "properties": {
+        "id": 7592786738,
+        "name": "Indus Nursing Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2730325,
+          22.5671332
+        ]
+      },
+      "properties": {
+        "id": 7640497232,
+        "name": "Smile Dental Care",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.345912,
+          22.5311485
+        ]
+      },
+      "properties": {
+        "id": 7668176272,
+        "name": "Anandalok Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Ashutosh Mukherjee Road, Paddapukur, Bhowanipore",
+        "osm_addr:postcode": "700025",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:street": "Ashutosh Mukhejee Road",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.34615,
+          22.532648
+        ]
+      },
+      "properties": {
+        "id": 7668176283,
+        "name": "Harlaka Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Ashutosh Mukherjee Road, Paddapukur, Bhowanipore",
+        "osm_addr:postcode": "700025",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3227465,
+          22.508538
+        ]
+      },
+      "properties": {
+        "id": 7668176285,
+        "name": "Hope Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "James Long Sarani, Vinobha Bhave Road, Behala",
+        "osm_addr:postcode": "700038",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.363293,
+          22.552075
+        ]
+      },
+      "properties": {
+        "id": 7668176293,
+        "name": "Mission Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Acharya Jagadish Chandra Bose Road, Rippon Street, Taltala",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3596261,
+          22.5444397
+        ]
+      },
+      "properties": {
+        "id": 7668176307,
+        "name": "Miot Hospitals",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Kala Mandir, Shakespeare Sarani Road, Mullick Bazar, Park Street Area",
+        "osm_addr:postcode": "700017",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3607871,
+          22.563724
+        ]
+      },
+      "properties": {
+        "id": 7668176310,
+        "name": "Sankara Nethralaya",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Raja Subodh Mullick Square Road, Bowbazar",
+        "osm_addr:postcode": "700013",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-22",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3525175,
+          22.5155617
+        ]
+      },
+      "properties": {
+        "id": 7668176312,
+        "name": "Kottakkal Ayurvedic Hospital and Research Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Sarat Bose Road, Lake Road Crossing, Near Lake Road Bus Stop",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3590386,
+          22.5331915
+        ]
+      },
+      "properties": {
+        "id": 7668176329,
+        "name": "Duncan Gleneagles Hospitals",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Leela Roy Sarani, Ballygunge",
+        "osm_addr:postcode": "700019",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3432901,
+          22.5321441
+        ]
+      },
+      "properties": {
+        "id": 7668176330,
+        "name": "Netaji Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Harish Mukherjee Road, Jatin Das Park, Patuapara, Bhowanipore",
+        "osm_addr:housenumber": "28",
+        "osm_addr:postcode": "700025",
+        "osm_addr:state": "West Bengal",
+        "osm_addr:street": "Harish Mukherjee Road",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-28",
+        "osm_healthcare": "hospital",
+        "osm_phone": "03324551174",
+        "osm_source": "Local Knowledge",
+        "osm_website": "http://www.asimananda.com/founded/founded_eye_hosp.htm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3659743,
+          22.5202511
+        ]
+      },
+      "properties": {
+        "id": 7668176332,
+        "name": "Disha Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Citi Mart Building, Rash Behari Ave",
+        "osm_addr:postcode": "700029",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-10-04",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3324303,
+          22.5117693
+        ]
+      },
+      "properties": {
+        "id": 7668176334,
+        "name": "B.P. Poddar Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Humayun Kabir Sarani, New Alipore",
+        "osm_addr:postcode": "700053",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3419528,
+          22.4865885
+        ]
+      },
+      "properties": {
+        "id": 7668176340,
+        "name": "Tapan Sinha Memorial Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Kolkata",
+        "osm_addr:full": "Tollygunge",
+        "osm_addr:postcode": "700040",
+        "osm_addr:state": "West Bengal",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3676076,
+          22.5125412
+        ]
+      },
+      "properties": {
+        "id": 7968592609,
+        "name": "AMRI Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Kolkata",
+        "osm_addr:postcode": "700029",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2023-12-16",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "blood_check;cardiology;cardiothoracic_surgery;child_psychiatry;chiropractic;clinical_pathology",
+        "osm_internet_access": "no",
+        "osm_operator:type": "private",
+        "osm_payment:cash": "yes",
+        "osm_payment:mastercard": "yes",
+        "osm_payment:visa": "yes",
+        "osm_wheelchair": "yes"
+      }
+    }
+  ],
+  "category": "hospitals",
+  "count": 195
+}

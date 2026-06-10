@@ -1,0 +1,7032 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.815365,
+          18.9600399
+        ]
+      },
+      "properties": {
+        "id": 2457605417,
+        "name": "Edubridge International School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8550806,
+          19.0372258
+        ]
+      },
+      "properties": {
+        "id": 3205780114,
+        "name": "Little Angels' High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:street": "Sulochana Shetty Marg",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8199209,
+          18.9160698
+        ]
+      },
+      "properties": {
+        "id": 4044345936,
+        "name": "B.D. Somani International School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:housenumber": "625",
+        "osm_addr:postcode": "400005",
+        "osm_addr:street": "GD Somani Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8516675,
+          19.0271372
+        ]
+      },
+      "properties": {
+        "id": 6423547527,
+        "name": "MCGM, L K Waghji, Mumbai Public School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Matunga, Mumbai",
+        "osm_addr:housenumber": "304",
+        "osm_addr:postcode": "400019",
+        "osm_addr:street": "Bhimani Street",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8543408,
+          19.008134
+        ]
+      },
+      "properties": {
+        "id": 6442254811,
+        "name": "Dnayneshwar Vidyalaya",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.813493,
+          18.9737612
+        ]
+      },
+      "properties": {
+        "id": 7405089091,
+        "name": "The Golden Spiral School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8140038,
+          18.9651298
+        ]
+      },
+      "properties": {
+        "id": 7405863748,
+        "name": "The Universal School, Tardeo",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8159226,
+          18.9634363
+        ]
+      },
+      "properties": {
+        "id": 7405863749,
+        "name": "Grant Road Central High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8173698,
+          18.9709943
+        ]
+      },
+      "properties": {
+        "id": 7411177793,
+        "name": "Tardeo Municipal Secondary School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8185191,
+          18.9675962
+        ]
+      },
+      "properties": {
+        "id": 7411177799,
+        "name": "Education Inspector South",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8189721,
+          18.9684792
+        ]
+      },
+      "properties": {
+        "id": 7411177803,
+        "name": "Gilder Lane Muncipal School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8319417,
+          18.9764347
+        ]
+      },
+      "properties": {
+        "id": 7414783359,
+        "name": "Sadhvi Savitribai Phule Upper Primary School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "Nm Joshi Marg, Near Bycullaw Railway Station, Mumbai, Maharashtra",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8347715,
+          18.9871
+        ]
+      },
+      "properties": {
+        "id": 7414791530,
+        "name": "Napoo High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8157382,
+          19.0086699
+        ]
+      },
+      "properties": {
+        "id": 7425930335,
+        "name": "Worli Seaface Municipal School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "16",
+        "osm_addr:street": "Sir Pochkhanawala Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8285467,
+          18.9869676
+        ]
+      },
+      "properties": {
+        "id": 7430392503,
+        "name": "Worli Naka Upper Primary School-Tamil",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20",
+        "osm_fixme": "does not exist here, nor is this place called Worli Naka"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8214434,
+          18.9956112
+        ]
+      },
+      "properties": {
+        "id": 7430392504,
+        "name": "KASTURBA GANDHI MUNICIPAL SCHOOL",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8304056,
+          19.0058854
+        ]
+      },
+      "properties": {
+        "id": 7434309486,
+        "name": "Kamaladevi Gobindram Tahiliani High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:postcode": "400013",
+        "osm_addr:street": "Pandurang Budhkar Marg",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8356824,
+          19.0209617
+        ]
+      },
+      "properties": {
+        "id": 7442381761,
+        "name": "Pragati School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:street": "College Lane, MTNL Marg",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8399288,
+          19.0313861
+        ]
+      },
+      "properties": {
+        "id": 7442381773,
+        "name": "St. Michaels English Primary School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:street": "Jamshetji Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8400202,
+          19.0295396
+        ]
+      },
+      "properties": {
+        "id": 7442381774,
+        "name": "R.C.Mahim Municipal Urdu Primary",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:street": "L.J. Cross Road 2",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8477584,
+          19.0224005
+        ]
+      },
+      "properties": {
+        "id": 7442452600,
+        "name": "Shishuvihar Madhyamik Vidhyala",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8481813,
+          19.0200022
+        ]
+      },
+      "properties": {
+        "id": 7442452610,
+        "name": "Saraswati Mandir School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8487774,
+          19.0206415
+        ]
+      },
+      "properties": {
+        "id": 7442452611,
+        "name": "Patkar Guruji Vidyalaya",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_education": "school",
+        "osm_fee": "yes",
+        "osm_isced:level": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8480814,
+          19.0108269
+        ]
+      },
+      "properties": {
+        "id": 7453717287,
+        "name": "Kranti Singh Nana Patil Vidyalaya",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8527661,
+          19.0358812
+        ]
+      },
+      "properties": {
+        "id": 7453717309,
+        "name": "Matunga Labour Camp Upper Primary Marathi School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8366214,
+          18.9562488
+        ]
+      },
+      "properties": {
+        "id": 7912405385,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "#84",
+        "osm_addr:postcode": "400009",
+        "osm_addr:street": "C.V.O.D. Jain Pathshala, SVP Road, Samuel Street (PalaGaly), Masjid Bunder",
+        "osm_amenity": "school",
+        "osm_email": "communications.oisp@orchids.edu.in",
+        "osm_name:en": "Orchids The International School, Masjid Bunder",
+        "osm_opening_hours": "Mo-Su 09:00-18:30",
+        "osm_operator": "Orchids International School",
+        "osm_phone": "9513731352",
+        "osm_website": "https://www.orchidsinternationalschool.com/mumbai-branches/masjid-bunder/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.828683,
+          19.0108648
+        ]
+      },
+      "properties": {
+        "id": 9055069383,
+        "name": "Prabhadevi Municipal School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8446515,
+          19.0124003
+        ]
+      },
+      "properties": {
+        "id": 9055082839,
+        "name": "Guru Nank English High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8280567,
+          18.938294
+        ]
+      },
+      "properties": {
+        "id": 9056958182,
+        "name": "The Blossom English Primary School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_isced:level": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.812634,
+          18.973182
+        ]
+      },
+      "properties": {
+        "id": 9060641466,
+        "name": "Bhausaheb Hiray Vidyalaya",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8347508,
+          18.9868553
+        ]
+      },
+      "properties": {
+        "id": 9060840937,
+        "name": "VLN High School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8212203,
+          18.9598574
+        ]
+      },
+      "properties": {
+        "id": 13116847401,
+        "name": "Sant Gadge Maharaj School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:postcode": "400004",
+        "osm_addr:street": "Khetwadi 12th Lane",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.7961342,
+              18.9540341
+            ],
+            [
+              72.7960794,
+              18.9539223
+            ],
+            [
+              72.7960021,
+              18.9539223
+            ],
+            [
+              72.795942,
+              18.9538898
+            ],
+            [
+              72.795942,
+              18.953833
+            ],
+            [
+              72.7960021,
+              18.9537681
+            ],
+            [
+              72.7959368,
+              18.9536282
+            ],
+            [
+              72.7962424,
+              18.9534921
+            ],
+            [
+              72.7963111,
+              18.9536382
+            ],
+            [
+              72.7963883,
+              18.9536057
+            ],
+            [
+              72.7964484,
+              18.9537275
+            ],
+            [
+              72.7963712,
+              18.95376
+            ],
+            [
+              72.7964313,
+              18.953898
+            ],
+            [
+              72.7961342,
+              18.9540341
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 38725419,
+        "name": "Walsingham House School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.811763,
+              18.9608682
+            ],
+            [
+              72.8116265,
+              18.9606722
+            ],
+            [
+              72.8117073,
+              18.9606218
+            ],
+            [
+              72.811716,
+              18.9606343
+            ],
+            [
+              72.811945,
+              18.9604739
+            ],
+            [
+              72.8119971,
+              18.9604414
+            ],
+            [
+              72.8120052,
+              18.960453
+            ],
+            [
+              72.81204,
+              18.9604306
+            ],
+            [
+              72.8120669,
+              18.9604665
+            ],
+            [
+              72.8120523,
+              18.9604762
+            ],
+            [
+              72.8121026,
+              18.9605433
+            ],
+            [
+              72.8121109,
+              18.9605382
+            ],
+            [
+              72.8121377,
+              18.9605202
+            ],
+            [
+              72.8121817,
+              18.9605788
+            ],
+            [
+              72.8122923,
+              18.9607801
+            ],
+            [
+              72.8123561,
+              18.9609202
+            ],
+            [
+              72.8122397,
+              18.9609531
+            ],
+            [
+              72.8122264,
+              18.9609028
+            ],
+            [
+              72.81203,
+              18.960602
+            ],
+            [
+              72.8117722,
+              18.9607742
+            ],
+            [
+              72.8118128,
+              18.960835
+            ],
+            [
+              72.811763,
+              18.9608682
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 39836739,
+        "name": "St. Columba High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai",
+        "osm_addr:postcode": "400007",
+        "osm_addr:street": "Gamdevi Lane",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8102994,
+              18.9596304
+            ],
+            [
+              72.8104388,
+              18.9598187
+            ],
+            [
+              72.8105186,
+              18.9597596
+            ],
+            [
+              72.8103792,
+              18.9595713
+            ],
+            [
+              72.8102994,
+              18.9596304
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 39842003,
+        "name": "BM Ruia Girls College",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "apartments"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8157492,
+              18.966227
+            ],
+            [
+              72.8156245,
+              18.9662689
+            ],
+            [
+              72.8156942,
+              18.966449
+            ],
+            [
+              72.8155668,
+              18.9664909
+            ],
+            [
+              72.8156044,
+              18.966586
+            ],
+            [
+              72.8158565,
+              18.966501
+            ],
+            [
+              72.8157492,
+              18.966227
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 48748553,
+        "name": "Girton High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:housenumber": "Grant Road",
+        "osm_addr:postcode": "400007",
+        "osm_addr:street": "N Bharucha Marg",
+        "osm_amenity": "school",
+        "osm_building": "apartments",
+        "osm_source": "Yahoo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.807448,
+              18.9105015
+            ],
+            [
+              72.8074026,
+              18.9104321
+            ],
+            [
+              72.8070897,
+              18.9099255
+            ],
+            [
+              72.8068685,
+              18.9095698
+            ],
+            [
+              72.8066761,
+              18.9092604
+            ],
+            [
+              72.806811,
+              18.9091634
+            ],
+            [
+              72.8074762,
+              18.9090497
+            ],
+            [
+              72.8078952,
+              18.9092355
+            ],
+            [
+              72.8082849,
+              18.9094266
+            ],
+            [
+              72.8083905,
+              18.9095918
+            ],
+            [
+              72.8085841,
+              18.9099129
+            ],
+            [
+              72.8081977,
+              18.9101225
+            ],
+            [
+              72.8080378,
+              18.9102016
+            ],
+            [
+              72.8075786,
+              18.9104289
+            ],
+            [
+              72.807448,
+              18.9105015
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 49480385,
+        "name": "Navy Children School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8088441,
+              18.8956419
+            ],
+            [
+              72.8098311,
+              18.89585
+            ],
+            [
+              72.810314,
+              18.8950201
+            ],
+            [
+              72.8101369,
+              18.8944518
+            ],
+            [
+              72.8096541,
+              18.8943173
+            ],
+            [
+              72.8090694,
+              18.8948045
+            ],
+            [
+              72.8088441,
+              18.8956419
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 52754753,
+        "name": "Kendriya Vidyalaya No.3, Colaba",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_brand": "Kendriya Vidyalaya",
+        "osm_brand:wikidata": "Q1156653",
+        "osm_check_date": "2026-03-12",
+        "osm_isced:level": "1;2;3",
+        "osm_landuse": "education"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8602162,
+              19.0431075
+            ],
+            [
+              72.8596325,
+              19.0435137
+            ],
+            [
+              72.858952,
+              19.0426305
+            ],
+            [
+              72.8595788,
+              19.0422091
+            ],
+            [
+              72.8602162,
+              19.0431075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 53349816,
+        "name": "Dharavi Municipal School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_education": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.831153,
+              18.9250918
+            ],
+            [
+              72.8312237,
+              18.9253821
+            ],
+            [
+              72.8315017,
+              18.9253216
+            ],
+            [
+              72.831431,
+              18.9250313
+            ],
+            [
+              72.831153,
+              18.9250918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 56207793,
+        "name": "St Anne's High Scool",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8297217,
+              18.9249867
+            ],
+            [
+              72.8300021,
+              18.9249566
+            ],
+            [
+              72.8299979,
+              18.9249071
+            ],
+            [
+              72.8299447,
+              18.924905
+            ],
+            [
+              72.8299455,
+              18.924872
+            ],
+            [
+              72.8300405,
+              18.9248666
+            ],
+            [
+              72.8300304,
+              18.9247906
+            ],
+            [
+              72.8299491,
+              18.9247966
+            ],
+            [
+              72.8299436,
+              18.9247201
+            ],
+            [
+              72.8299801,
+              18.9247187
+            ],
+            [
+              72.8299751,
+              18.9246628
+            ],
+            [
+              72.8299027,
+              18.9246677
+            ],
+            [
+              72.8298975,
+              18.9245978
+            ],
+            [
+              72.8299759,
+              18.9245929
+            ],
+            [
+              72.8299755,
+              18.9245434
+            ],
+            [
+              72.8296715,
+              18.924565
+            ],
+            [
+              72.829675,
+              18.9246052
+            ],
+            [
+              72.829654,
+              18.9246431
+            ],
+            [
+              72.8296593,
+              18.9246866
+            ],
+            [
+              72.8297082,
+              18.9246952
+            ],
+            [
+              72.8297105,
+              18.9247409
+            ],
+            [
+              72.8297531,
+              18.9247399
+            ],
+            [
+              72.8297567,
+              18.9248147
+            ],
+            [
+              72.8296974,
+              18.9248193
+            ],
+            [
+              72.8297217,
+              18.9249867
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 56207795,
+        "name": "Campion School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:district": "Mumbai City",
+        "osm_addr:housenumber": "13",
+        "osm_addr:postcode": "400001",
+        "osm_addr:street": "Cooperage St, Dr Ambedkar Statue Chowk Area, Colaba",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "4",
+        "osm_wikidata": "Q5028412",
+        "osm_wikipedia": "en:Campion School, Mumbai"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8422337,
+              19.0083644
+            ],
+            [
+              72.842188,
+              19.0082074
+            ],
+            [
+              72.8419708,
+              19.0073323
+            ],
+            [
+              72.8413287,
+              19.0074165
+            ],
+            [
+              72.8411933,
+              19.0071472
+            ],
+            [
+              72.8422394,
+              19.0069879
+            ],
+            [
+              72.8422907,
+              19.0073278
+            ],
+            [
+              72.843552,
+              19.0071497
+            ],
+            [
+              72.8435882,
+              19.0072701
+            ],
+            [
+              72.843501,
+              19.0075859
+            ],
+            [
+              72.8432851,
+              19.0079383
+            ],
+            [
+              72.8428023,
+              19.0083948
+            ],
+            [
+              72.8425877,
+              19.0085774
+            ],
+            [
+              72.8422337,
+              19.0083644
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 76281423,
+        "name": "St. Pauls Convent",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8570178,
+              19.0267313
+            ],
+            [
+              72.8590776,
+              19.0268977
+            ],
+            [
+              72.8594308,
+              19.0259986
+            ],
+            [
+              72.8595713,
+              19.0251186
+            ],
+            [
+              72.8595176,
+              19.0250628
+            ],
+            [
+              72.857286,
+              19.0247763
+            ],
+            [
+              72.8571787,
+              19.0248371
+            ],
+            [
+              72.8571298,
+              19.0251762
+            ],
+            [
+              72.8570654,
+              19.0256236
+            ],
+            [
+              72.8569963,
+              19.0266926
+            ],
+            [
+              72.8570178,
+              19.0267313
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 112781805,
+        "name": "Don Bosco School - Matunga",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400019",
+        "osm_addr:street": "Nathalal Parekh Road",
+        "osm_amenity": "school",
+        "osm_amenity_1": "church",
+        "osm_education": "school",
+        "osm_religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8517386,
+              19.0194636
+            ],
+            [
+              72.8519655,
+              19.0191155
+            ],
+            [
+              72.852751,
+              19.0195732
+            ],
+            [
+              72.852524,
+              19.0199213
+            ],
+            [
+              72.8517386,
+              19.0194636
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113578545,
+        "name": "J.B. Vaccha High School for Girls",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8426394,
+              19.0206184
+            ],
+            [
+              72.84254,
+              19.0206738
+            ],
+            [
+              72.842039,
+              19.0206236
+            ],
+            [
+              72.8419006,
+              19.020441
+            ],
+            [
+              72.842323,
+              19.0201701
+            ],
+            [
+              72.8426394,
+              19.0206184
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113696497,
+        "name": "Chhabildas Boys High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_isced:level": "1;2;3",
+        "osm_school:gender": "male"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8347424,
+              19.0231393
+            ],
+            [
+              72.8353472,
+              19.0227823
+            ],
+            [
+              72.8350613,
+              19.0223382
+            ],
+            [
+              72.8349486,
+              19.0223319
+            ],
+            [
+              72.8345315,
+              19.0226159
+            ],
+            [
+              72.8345208,
+              19.0226881
+            ],
+            [
+              72.8345531,
+              19.0227699
+            ],
+            [
+              72.8347424,
+              19.0231393
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113715167,
+        "name": "Dr. Antonio Da Silva Technical High School & Jr. College Of Science",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8395719,
+              19.0340812
+            ],
+            [
+              72.8394584,
+              19.0335676
+            ],
+            [
+              72.8388174,
+              19.0336927
+            ],
+            [
+              72.8389542,
+              19.0346845
+            ],
+            [
+              72.8396396,
+              19.0346067
+            ],
+            [
+              72.8396679,
+              19.0348271
+            ],
+            [
+              72.8400121,
+              19.0347848
+            ],
+            [
+              72.8399213,
+              19.0340388
+            ],
+            [
+              72.8395719,
+              19.0340812
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113716553,
+        "name": "Bombay Scottish",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_old_name": "Scottish Orphanage",
+        "osm_wikidata": "Q3631441",
+        "osm_wikimedia_commons": "Category:Bombay Scottish School",
+        "osm_wikipedia": "en:Bombay Scottish School, Mahim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8565777,
+              19.0184835
+            ],
+            [
+              72.856091,
+              19.0187805
+            ],
+            [
+              72.8560388,
+              19.018836
+            ],
+            [
+              72.8560254,
+              19.0188502
+            ],
+            [
+              72.8560142,
+              19.0189339
+            ],
+            [
+              72.8562705,
+              19.0194471
+            ],
+            [
+              72.8563848,
+              19.0194487
+            ],
+            [
+              72.8567993,
+              19.0192695
+            ],
+            [
+              72.8570471,
+              19.0191389
+            ],
+            [
+              72.8569375,
+              19.0189287
+            ],
+            [
+              72.8565777,
+              19.0184835
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113775904,
+        "name": "St Joseph High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.853718,
+              19.0188778
+            ],
+            [
+              72.8540248,
+              19.0188268
+            ],
+            [
+              72.8540398,
+              19.0189607
+            ],
+            [
+              72.8540552,
+              19.0190548
+            ],
+            [
+              72.8537575,
+              19.0191014
+            ],
+            [
+              72.853718,
+              19.0188778
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113777719,
+        "name": "Dadar Athornan Institute",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:housenumber": "651-652",
+        "osm_addr:postcode": "400014",
+        "osm_addr:street": "Lady Jehangir Road",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q33121281"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8535283,
+              19.01812
+            ],
+            [
+              72.8534505,
+              19.0177777
+            ],
+            [
+              72.8536034,
+              19.0177422
+            ],
+            [
+              72.8536302,
+              19.0177802
+            ],
+            [
+              72.8536731,
+              19.017978
+            ],
+            [
+              72.8536543,
+              19.0180034
+            ],
+            [
+              72.8536506,
+              19.0180376
+            ],
+            [
+              72.8536221,
+              19.0180617
+            ],
+            [
+              72.8536275,
+              19.0180972
+            ],
+            [
+              72.8535283,
+              19.01812
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113792227,
+        "name": "Dadar Parsee Youth Assembly High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8544979,
+              19.0169253
+            ],
+            [
+              72.8548776,
+              19.016708
+            ],
+            [
+              72.854855,
+              19.0165879
+            ],
+            [
+              72.8549641,
+              19.0165959
+            ],
+            [
+              72.8550282,
+              19.0165519
+            ],
+            [
+              72.8550344,
+              19.0164823
+            ],
+            [
+              72.8551351,
+              19.0164818
+            ],
+            [
+              72.8550232,
+              19.0163456
+            ],
+            [
+              72.854832,
+              19.0160702
+            ],
+            [
+              72.8545893,
+              19.0162208
+            ],
+            [
+              72.8545445,
+              19.0162422
+            ],
+            [
+              72.8545079,
+              19.0162612
+            ],
+            [
+              72.85394,
+              19.0166125
+            ],
+            [
+              72.8544979,
+              19.0169253
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 113978749,
+        "name": "Auxilium Convent School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8536851,
+              19.0228523
+            ],
+            [
+              72.8536646,
+              19.0227584
+            ],
+            [
+              72.8537423,
+              19.0227432
+            ],
+            [
+              72.8536859,
+              19.0224848
+            ],
+            [
+              72.8536101,
+              19.0224996
+            ],
+            [
+              72.8535935,
+              19.0224237
+            ],
+            [
+              72.8537889,
+              19.0223855
+            ],
+            [
+              72.8538825,
+              19.0228138
+            ],
+            [
+              72.8536851,
+              19.0228523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 115830793,
+        "name": "Seth V.M. Kapole Boarding School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8514766,
+              19.0273845
+            ],
+            [
+              72.8516169,
+              19.0272512
+            ],
+            [
+              72.8515139,
+              19.0271543
+            ],
+            [
+              72.8514013,
+              19.0272614
+            ],
+            [
+              72.8514439,
+              19.0273014
+            ],
+            [
+              72.8514162,
+              19.0273277
+            ],
+            [
+              72.8514766,
+              19.0273845
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 117083034,
+        "name": "Matunga Premier School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_fee": "yes",
+        "osm_isced:level": "0;1;2;3",
+        "osm_website": "https://matungapremierschool.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8518974,
+              19.0270161
+            ],
+            [
+              72.8520012,
+              19.0269216
+            ],
+            [
+              72.8518946,
+              19.026817
+            ],
+            [
+              72.8517908,
+              19.0269114
+            ],
+            [
+              72.8518974,
+              19.0270161
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 117083050,
+        "name": "Shri Dayanand Vidyalay and Junior College",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8317665,
+              18.9348001
+            ],
+            [
+              72.832074,
+              18.9346976
+            ],
+            [
+              72.8319407,
+              18.9345244
+            ],
+            [
+              72.8318998,
+              18.9345564
+            ],
+            [
+              72.8319353,
+              18.9346522
+            ],
+            [
+              72.8318785,
+              18.9346723
+            ],
+            [
+              72.8318388,
+              18.9345561
+            ],
+            [
+              72.8318132,
+              18.9344898
+            ],
+            [
+              72.8317669,
+              18.9345019
+            ],
+            [
+              72.8317061,
+              18.9345494
+            ],
+            [
+              72.8317665,
+              18.9348001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206806601,
+        "name": "J. B. Petit High School for Girls",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:housenumber": "5",
+        "osm_addr:postcode": "400001",
+        "osm_addr:street": "Maharshi Dadhichi Marg",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_school:gender": "female",
+        "osm_wikidata": "Q23013676",
+        "osm_wikipedia": "en:J.B. Petit High School for Girls"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8311567,
+              18.935647
+            ],
+            [
+              72.8315032,
+              18.9355142
+            ],
+            [
+              72.8313415,
+              18.9351629
+            ],
+            [
+              72.8310963,
+              18.9352688
+            ],
+            [
+              72.8310732,
+              18.9353898
+            ],
+            [
+              72.8313042,
+              18.9352957
+            ],
+            [
+              72.8313629,
+              18.9354419
+            ],
+            [
+              72.8311212,
+              18.9355394
+            ],
+            [
+              72.8311567,
+              18.935647
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206806617,
+        "name": "The Alexandra Girls English Institution",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_school:gender": "female"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8312346,
+              18.9345968
+            ],
+            [
+              72.8312796,
+              18.9343581
+            ],
+            [
+              72.8314616,
+              18.9343888
+            ],
+            [
+              72.8314408,
+              18.9344989
+            ],
+            [
+              72.8314851,
+              18.9345063
+            ],
+            [
+              72.8315082,
+              18.9343837
+            ],
+            [
+              72.8316108,
+              18.934401
+            ],
+            [
+              72.8315634,
+              18.9346522
+            ],
+            [
+              72.8312346,
+              18.9345968
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206806618,
+        "name": "Cathedral & John Connon Junior School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:housenumber": "19",
+        "osm_addr:postcode": "400001",
+        "osm_addr:street": "Mahatma Gandhi Road",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.829785,
+              18.9441358
+            ],
+            [
+              72.8302022,
+              18.9437756
+            ],
+            [
+              72.8307044,
+              18.9442276
+            ],
+            [
+              72.8309033,
+              18.9440142
+            ],
+            [
+              72.8312302,
+              18.9443333
+            ],
+            [
+              72.8309156,
+              18.9447231
+            ],
+            [
+              72.8306845,
+              18.9450094
+            ],
+            [
+              72.829785,
+              18.9441358
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 207376653,
+        "name": "St. Xavier's High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400001",
+        "osm_addr:street": "Lockmanya Talik Marg",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q7592184",
+        "osm_wikipedia": "en:St. Xavier's High School, Fort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.834374,
+              18.9429791
+            ],
+            [
+              72.8338398,
+              18.942888
+            ],
+            [
+              72.8338981,
+              18.9425564
+            ],
+            [
+              72.8339781,
+              18.9425725
+            ],
+            [
+              72.8340776,
+              18.9421017
+            ],
+            [
+              72.8344964,
+              18.9421664
+            ],
+            [
+              72.834374,
+              18.9429791
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 207380909,
+        "name": "Anjuman-I-Islam's Allana English High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8141433,
+              18.9906266
+            ],
+            [
+              72.8140772,
+              18.9897491
+            ],
+            [
+              72.8144302,
+              18.989731
+            ],
+            [
+              72.8144894,
+              18.9906005
+            ],
+            [
+              72.8141433,
+              18.9906266
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 219426802,
+        "name": "Happy Home and School for the Blind",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20",
+        "osm_school": "blind",
+        "osm_source": "GPS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.855438,
+              19.0416023
+            ],
+            [
+              72.8556687,
+              19.0413894
+            ],
+            [
+              72.8555619,
+              19.0411776
+            ],
+            [
+              72.8552449,
+              19.0412474
+            ],
+            [
+              72.855438,
+              19.0416023
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 229637665,
+        "name": "Kamaraj School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:etymology:wikidata": "Q522048"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8545632,
+              19.0302822
+            ],
+            [
+              72.8544427,
+              19.0302656
+            ],
+            [
+              72.8542155,
+              19.0303409
+            ],
+            [
+              72.8543884,
+              19.0307246
+            ],
+            [
+              72.8544408,
+              19.0307467
+            ],
+            [
+              72.8544913,
+              19.0307338
+            ],
+            [
+              72.8545632,
+              19.0302822
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 236596238,
+        "name": "Lion's Pioneer High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8547069,
+              19.0296689
+            ],
+            [
+              72.854769,
+              19.0293256
+            ],
+            [
+              72.8547438,
+              19.0292889
+            ],
+            [
+              72.8536523,
+              19.0291328
+            ],
+            [
+              72.8536193,
+              19.0291603
+            ],
+            [
+              72.853829,
+              19.0295698
+            ],
+            [
+              72.8547069,
+              19.0296689
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 236596241,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8353954,
+              19.0178753
+            ],
+            [
+              72.8352369,
+              19.0179297
+            ],
+            [
+              72.8352757,
+              19.0180612
+            ],
+            [
+              72.8351927,
+              19.0180858
+            ],
+            [
+              72.8352864,
+              19.0184923
+            ],
+            [
+              72.8351427,
+              19.0185135
+            ],
+            [
+              72.835044,
+              19.0181596
+            ],
+            [
+              72.8346053,
+              19.0182392
+            ],
+            [
+              72.8343923,
+              19.0174739
+            ],
+            [
+              72.8351233,
+              19.0171948
+            ],
+            [
+              72.8353954,
+              19.0178753
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 236631072,
+        "name": "Our Lady Of Salvation School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_isced:level": "1;2;3",
+        "osm_school:gender": "male"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8347758,
+              19.0172602
+            ],
+            [
+              72.8342406,
+              19.0175165
+            ],
+            [
+              72.8340946,
+              19.017408
+            ],
+            [
+              72.8341552,
+              19.0172962
+            ],
+            [
+              72.8342662,
+              19.0171841
+            ],
+            [
+              72.8346545,
+              19.0170319
+            ],
+            [
+              72.8347758,
+              19.0172602
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 236631074,
+        "name": "Maharashtra High School Number 2",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_alt_name": "People's Education Society",
+        "osm_amenity": "school",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8321455,
+              18.9811401
+            ],
+            [
+              72.832627,
+              18.9811472
+            ],
+            [
+              72.8326244,
+              18.9806822
+            ],
+            [
+              72.8321563,
+              18.9806811
+            ],
+            [
+              72.8321455,
+              18.9811401
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 286014465,
+        "name": "Byculla School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400011",
+        "osm_addr:street": "N M Joshi Marg",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "3",
+        "osm_education": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8212706,
+              18.9550121
+            ],
+            [
+              72.8215377,
+              18.9550029
+            ],
+            [
+              72.8215523,
+              18.9552662
+            ],
+            [
+              72.8212918,
+              18.9552739
+            ],
+            [
+              72.8212706,
+              18.9550121
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 288426456,
+        "name": "Chikitsak Samuh High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400004",
+        "osm_addr:street": "Sadashiva Cross Lane",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8031952,
+              18.9521697
+            ],
+            [
+              72.8033912,
+              18.9522946
+            ],
+            [
+              72.8035576,
+              18.952061
+            ],
+            [
+              72.8033639,
+              18.9519375
+            ],
+            [
+              72.8033221,
+              18.9519961
+            ],
+            [
+              72.8031952,
+              18.9521697
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 332516150,
+        "name": "Gopi Birla Memorial School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:housenumber": "68",
+        "osm_addr:street": "Walkeshwar Road",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8173629,
+              18.9558896
+            ],
+            [
+              72.8172168,
+              18.9559616
+            ],
+            [
+              72.8173989,
+              18.9563374
+            ],
+            [
+              72.8175498,
+              18.9562738
+            ],
+            [
+              72.8173629,
+              18.9558896
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 347010736,
+        "name": "Aryan E.S. High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:street": "Jagannath Shankarsheth Marg",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_wikidata": "Q4802640"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8177542,
+              18.957366
+            ],
+            [
+              72.8178134,
+              18.9572088
+            ],
+            [
+              72.817904,
+              18.9571366
+            ],
+            [
+              72.8180511,
+              18.9571799
+            ],
+            [
+              72.8180631,
+              18.9571481
+            ],
+            [
+              72.8181937,
+              18.9571822
+            ],
+            [
+              72.8181636,
+              18.9572686
+            ],
+            [
+              72.8182845,
+              18.9573106
+            ],
+            [
+              72.8182089,
+              18.95751
+            ],
+            [
+              72.8177542,
+              18.957366
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 347012133,
+        "name": "Marwari Vidyalaya High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400004",
+        "osm_addr:street": "Sardar Vallabhbhai Patel Marg (Sandhurst Road)",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8357772,
+              19.0226959
+            ],
+            [
+              72.8359019,
+              19.02295
+            ],
+            [
+              72.8360195,
+              19.0228984
+            ],
+            [
+              72.8360413,
+              19.0229429
+            ],
+            [
+              72.8361283,
+              19.0229047
+            ],
+            [
+              72.8361066,
+              19.0228603
+            ],
+            [
+              72.8362274,
+              19.0228073
+            ],
+            [
+              72.8361279,
+              19.0226044
+            ],
+            [
+              72.835978,
+              19.0226701
+            ],
+            [
+              72.8360032,
+              19.0227215
+            ],
+            [
+              72.8359595,
+              19.0227406
+            ],
+            [
+              72.8359092,
+              19.022638
+            ],
+            [
+              72.8357772,
+              19.0226959
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353175766,
+        "name": "Sane Guruji Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_isced:level": "1;2;3",
+        "osm_name:etymology:wikidata": "Q55769"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8222444,
+              18.9662089
+            ],
+            [
+              72.8223887,
+              18.965863
+            ],
+            [
+              72.8222249,
+              18.9658019
+            ],
+            [
+              72.8222003,
+              18.9658609
+            ],
+            [
+              72.8222297,
+              18.9658719
+            ],
+            [
+              72.8221608,
+              18.966037
+            ],
+            [
+              72.8221768,
+              18.966043
+            ],
+            [
+              72.8221598,
+              18.9660836
+            ],
+            [
+              72.8222033,
+              18.9660998
+            ],
+            [
+              72.8221837,
+              18.9661468
+            ],
+            [
+              72.8222048,
+              18.9661547
+            ],
+            [
+              72.8221906,
+              18.9661888
+            ],
+            [
+              72.8222444,
+              18.9662089
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353203398,
+        "name": "KK Marg Municipal School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_education": "school",
+        "osm_operator": "Brihanmumbai Municipal Corporation",
+        "osm_operator:type": "public/government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8279151,
+              18.9359845
+            ],
+            [
+              72.8281631,
+              18.9360023
+            ],
+            [
+              72.8281842,
+              18.9357388
+            ],
+            [
+              72.8279362,
+              18.935721
+            ],
+            [
+              72.8279151,
+              18.9359845
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353351784,
+        "name": "Saint Xavier's Boys Academy",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_school:gender": "male"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8283109,
+              18.9355247
+            ],
+            [
+              72.8285133,
+              18.9355346
+            ],
+            [
+              72.8285268,
+              18.9352874
+            ],
+            [
+              72.8283243,
+              18.9352776
+            ],
+            [
+              72.8283109,
+              18.9355247
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353351803,
+        "name": "Bombay International School (Junior)",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8140442,
+              18.997399
+            ],
+            [
+              72.8142439,
+              18.9975378
+            ],
+            [
+              72.8143247,
+              18.9974339
+            ],
+            [
+              72.8141249,
+              18.9972951
+            ],
+            [
+              72.8140442,
+              18.997399
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353354801,
+        "name": "Podar International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "apartments",
+        "osm_building:levels": "8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.796707,
+              18.949176
+            ],
+            [
+              72.7968182,
+              18.9491198
+            ],
+            [
+              72.7967533,
+              18.9490047
+            ],
+            [
+              72.7969347,
+              18.9489132
+            ],
+            [
+              72.796947,
+              18.9489351
+            ],
+            [
+              72.7970454,
+              18.9488855
+            ],
+            [
+              72.7969745,
+              18.9487597
+            ],
+            [
+              72.7966928,
+              18.9489018
+            ],
+            [
+              72.7967208,
+              18.9489516
+            ],
+            [
+              72.7966116,
+              18.9490067
+            ],
+            [
+              72.796707,
+              18.949176
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353355120,
+        "name": "Manav Mandir Primary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8323194,
+              18.9671012
+            ],
+            [
+              72.8324938,
+              18.9670944
+            ],
+            [
+              72.8324879,
+              18.9669588
+            ],
+            [
+              72.8323135,
+              18.9669656
+            ],
+            [
+              72.8323194,
+              18.9671012
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353364856,
+        "name": "Sir Jacob Sasoon High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8074751,
+              18.9561586
+            ],
+            [
+              72.8073857,
+              18.955909
+            ],
+            [
+              72.8072337,
+              18.9559577
+            ],
+            [
+              72.8072992,
+              18.9561403
+            ],
+            [
+              72.8072696,
+              18.9561498
+            ],
+            [
+              72.8072936,
+              18.9562168
+            ],
+            [
+              72.8074751,
+              18.9561586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353377165,
+        "name": "B.K.M. High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8303646,
+              18.9714001
+            ],
+            [
+              72.8305749,
+              18.971398
+            ],
+            [
+              72.8305682,
+              18.9708096
+            ],
+            [
+              72.8306403,
+              18.9708089
+            ],
+            [
+              72.8306378,
+              18.9705797
+            ],
+            [
+              72.8306661,
+              18.9705419
+            ],
+            [
+              72.8306852,
+              18.9703812
+            ],
+            [
+              72.8303468,
+              18.9703629
+            ],
+            [
+              72.8302875,
+              18.9703273
+            ],
+            [
+              72.8302856,
+              18.9703554
+            ],
+            [
+              72.8302314,
+              18.9703432
+            ],
+            [
+              72.8302028,
+              18.9706088
+            ],
+            [
+              72.830337,
+              18.970613
+            ],
+            [
+              72.8303364,
+              18.9705621
+            ],
+            [
+              72.8305338,
+              18.9705601
+            ],
+            [
+              72.8305355,
+              18.9707106
+            ],
+            [
+              72.8303638,
+              18.970711
+            ],
+            [
+              72.8303643,
+              18.9711607
+            ],
+            [
+              72.8303646,
+              18.9714001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353394683,
+        "name": "St. Agnes' High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8306493,
+              18.9671117
+            ],
+            [
+              72.8308925,
+              18.967109
+            ],
+            [
+              72.8308912,
+              18.9670002
+            ],
+            [
+              72.830648,
+              18.9670029
+            ],
+            [
+              72.8306493,
+              18.9671117
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353394704,
+        "name": "E.E.E. Sassoon High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8207991,
+              19.0160962
+            ],
+            [
+              72.8209204,
+              19.0161476
+            ],
+            [
+              72.8209461,
+              19.0160934
+            ],
+            [
+              72.8211211,
+              19.0161676
+            ],
+            [
+              72.8212032,
+              19.0159945
+            ],
+            [
+              72.8211325,
+              19.0159645
+            ],
+            [
+              72.8211262,
+              19.0159776
+            ],
+            [
+              72.8210217,
+              19.0159333
+            ],
+            [
+              72.8210958,
+              19.0157771
+            ],
+            [
+              72.8212832,
+              19.0158566
+            ],
+            [
+              72.8213415,
+              19.0157338
+            ],
+            [
+              72.8211474,
+              19.0156515
+            ],
+            [
+              72.8211362,
+              19.0156752
+            ],
+            [
+              72.8211054,
+              19.0156621
+            ],
+            [
+              72.8211015,
+              19.0156703
+            ],
+            [
+              72.821018,
+              19.0156349
+            ],
+            [
+              72.8207991,
+              19.0160962
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353395699,
+        "name": "D Y Patil International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_isced:level": "1;2;3",
+        "osm_website": "https://www.dypisworli.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.826388,
+              18.9150189
+            ],
+            [
+              72.8265015,
+              18.9151151
+            ],
+            [
+              72.8266331,
+              18.9149764
+            ],
+            [
+              72.826696,
+              18.9150297
+            ],
+            [
+              72.8267732,
+              18.9149483
+            ],
+            [
+              72.8265968,
+              18.9147987
+            ],
+            [
+              72.826388,
+              18.9150189
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353402349,
+        "name": "Colaba Municipal Secondary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_isced:level": "2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8109847,
+              18.961473
+            ],
+            [
+              72.8106186,
+              18.9615823
+            ],
+            [
+              72.8106776,
+              18.9617032
+            ],
+            [
+              72.8106879,
+              18.9616987
+            ],
+            [
+              72.8107614,
+              18.9618423
+            ],
+            [
+              72.8108615,
+              18.9618133
+            ],
+            [
+              72.8107759,
+              18.9616271
+            ],
+            [
+              72.8109067,
+              18.9615835
+            ],
+            [
+              72.8109194,
+              18.9616082
+            ],
+            [
+              72.8109112,
+              18.9616349
+            ],
+            [
+              72.8109828,
+              18.9618029
+            ],
+            [
+              72.8110419,
+              18.9617858
+            ],
+            [
+              72.8110353,
+              18.9617633
+            ],
+            [
+              72.8110763,
+              18.961751
+            ],
+            [
+              72.8109847,
+              18.961473
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353407984,
+        "name": "Fellowship International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8108913,
+              18.9621477
+            ],
+            [
+              72.8109798,
+              18.9621112
+            ],
+            [
+              72.8109835,
+              18.9620684
+            ],
+            [
+              72.8110654,
+              18.962082
+            ],
+            [
+              72.81107,
+              18.9620374
+            ],
+            [
+              72.8111339,
+              18.9620483
+            ],
+            [
+              72.8111363,
+              18.9620254
+            ],
+            [
+              72.8111795,
+              18.962033
+            ],
+            [
+              72.8111795,
+              18.9619836
+            ],
+            [
+              72.8111382,
+              18.9618817
+            ],
+            [
+              72.8111086,
+              18.9618605
+            ],
+            [
+              72.8110779,
+              18.9618953
+            ],
+            [
+              72.8110601,
+              18.9618665
+            ],
+            [
+              72.8110149,
+              18.9619239
+            ],
+            [
+              72.8109768,
+              18.9618936
+            ],
+            [
+              72.8109305,
+              18.9619585
+            ],
+            [
+              72.8109038,
+              18.9619362
+            ],
+            [
+              72.8108118,
+              18.9619748
+            ],
+            [
+              72.8108913,
+              18.9621477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353407985,
+        "name": "Fellowship School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8080829,
+              18.9573086
+            ],
+            [
+              72.8082176,
+              18.9572627
+            ],
+            [
+              72.8081196,
+              18.9570054
+            ],
+            [
+              72.8079848,
+              18.9570513
+            ],
+            [
+              72.8080829,
+              18.9573086
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353407996,
+        "name": "DSB International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8123359,
+              18.9616663
+            ],
+            [
+              72.8124594,
+              18.9616174
+            ],
+            [
+              72.8123741,
+              18.9614249
+            ],
+            [
+              72.8122506,
+              18.9614738
+            ],
+            [
+              72.8123359,
+              18.9616663
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353408060,
+        "name": "St. Columba Marathi Primary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8083284,
+              18.9622357
+            ],
+            [
+              72.8085185,
+              18.962303
+            ],
+            [
+              72.8085993,
+              18.9620985
+            ],
+            [
+              72.8084092,
+              18.9620313
+            ],
+            [
+              72.8083284,
+              18.9622357
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353408072,
+        "name": "New Activity School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "13",
+        "osm_addr:street": "N S Patkar Marg",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8313916,
+              18.9698392
+            ],
+            [
+              72.8316185,
+              18.9698419
+            ],
+            [
+              72.8316183,
+              18.9698593
+            ],
+            [
+              72.831796,
+              18.9698614
+            ],
+            [
+              72.8317962,
+              18.9698427
+            ],
+            [
+              72.8318139,
+              18.9698429
+            ],
+            [
+              72.8318133,
+              18.9698867
+            ],
+            [
+              72.831887,
+              18.9698875
+            ],
+            [
+              72.8318876,
+              18.9698433
+            ],
+            [
+              72.8319429,
+              18.9698439
+            ],
+            [
+              72.8319397,
+              18.9696431
+            ],
+            [
+              72.8317513,
+              18.9696409
+            ],
+            [
+              72.8317512,
+              18.9696526
+            ],
+            [
+              72.8314791,
+              18.9696494
+            ],
+            [
+              72.8314795,
+              18.9696183
+            ],
+            [
+              72.8313946,
+              18.9696173
+            ],
+            [
+              72.8313916,
+              18.9698392
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353411203,
+        "name": "Christ Church School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q5108823",
+        "osm_wikipedia": "en:Christ Church School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8152439,
+              18.9592962
+            ],
+            [
+              72.8150592,
+              18.9589755
+            ],
+            [
+              72.8148624,
+              18.9590769
+            ],
+            [
+              72.8148781,
+              18.9591041
+            ],
+            [
+              72.814758,
+              18.959166
+            ],
+            [
+              72.814786,
+              18.9592147
+            ],
+            [
+              72.8148118,
+              18.9592594
+            ],
+            [
+              72.815035,
+              18.9591444
+            ],
+            [
+              72.8151025,
+              18.9592617
+            ],
+            [
+              72.815049,
+              18.9592893
+            ],
+            [
+              72.8150967,
+              18.9593721
+            ],
+            [
+              72.8152439,
+              18.9592962
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353424037,
+        "name": "Queen Mary's Girls School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_school:gender": "female"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8172061,
+              19.0130177
+            ],
+            [
+              72.8175382,
+              19.0129788
+            ],
+            [
+              72.8175194,
+              19.0128362
+            ],
+            [
+              72.8171874,
+              19.0128751
+            ],
+            [
+              72.8172061,
+              19.0130177
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353750257,
+        "name": "Greenlawns School Worli",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "6",
+        "osm_addr:street": "Khan Abdul Gaffar Khan Marg",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_wikidata": "Q5604266",
+        "osm_wikipedia": "en:Greenlawns School Worli"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8191721,
+              19.015012
+            ],
+            [
+              72.8193145,
+              19.0150482
+            ],
+            [
+              72.8193187,
+              19.0150334
+            ],
+            [
+              72.8194437,
+              19.0150653
+            ],
+            [
+              72.8194862,
+              19.0149163
+            ],
+            [
+              72.8193055,
+              19.0148703
+            ],
+            [
+              72.8192959,
+              19.0149038
+            ],
+            [
+              72.8192092,
+              19.0148817
+            ],
+            [
+              72.8191721,
+              19.015012
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353757972,
+        "name": "Sacred Heart High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:housenumber": "26",
+        "osm_addr:postcode": "400025",
+        "osm_addr:street": "Sasmira Marg, Municipal Colony, Shivaji Nagar, Worli",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8223636,
+              18.9130771
+            ],
+            [
+              72.8222266,
+              18.9131949
+            ],
+            [
+              72.8222746,
+              18.9132449
+            ],
+            [
+              72.8224116,
+              18.913127
+            ],
+            [
+              72.8223636,
+              18.9130771
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353758564,
+        "name": "Dunne's Institute",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8091362,
+              18.9620642
+            ],
+            [
+              72.8092011,
+              18.9619181
+            ],
+            [
+              72.8089871,
+              18.9618331
+            ],
+            [
+              72.8090025,
+              18.9617984
+            ],
+            [
+              72.8088628,
+              18.9617429
+            ],
+            [
+              72.8088424,
+              18.9617888
+            ],
+            [
+              72.8087499,
+              18.9617521
+            ],
+            [
+              72.8087801,
+              18.9616839
+            ],
+            [
+              72.8086633,
+              18.9616375
+            ],
+            [
+              72.8085731,
+              18.9618405
+            ],
+            [
+              72.8087584,
+              18.9619142
+            ],
+            [
+              72.8087703,
+              18.9618874
+            ],
+            [
+              72.8090045,
+              18.9619804
+            ],
+            [
+              72.8089926,
+              18.9620072
+            ],
+            [
+              72.8091362,
+              18.9620642
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353761087,
+        "name": "The New Era School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:housenumber": "4/B",
+        "osm_addr:street": "Kashibai Navrange Marg (Alexandra Road)",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8284074,
+              18.9906883
+            ],
+            [
+              72.8284573,
+              18.9908068
+            ],
+            [
+              72.8285868,
+              18.990758
+            ],
+            [
+              72.828632,
+              18.9908652
+            ],
+            [
+              72.8285324,
+              18.9909028
+            ],
+            [
+              72.828561,
+              18.9909705
+            ],
+            [
+              72.8286558,
+              18.9909347
+            ],
+            [
+              72.8286984,
+              18.9910359
+            ],
+            [
+              72.8285796,
+              18.9910806
+            ],
+            [
+              72.8286394,
+              18.9912225
+            ],
+            [
+              72.8288526,
+              18.9911422
+            ],
+            [
+              72.8286264,
+              18.9906058
+            ],
+            [
+              72.8284074,
+              18.9906883
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353790686,
+        "name": "Sitaram School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building:levels": "7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.83195,
+              18.9908557
+            ],
+            [
+              72.8319482,
+              18.9915861
+            ],
+            [
+              72.8323962,
+              18.9915871
+            ],
+            [
+              72.8323976,
+              18.9909924
+            ],
+            [
+              72.832341,
+              18.9909923
+            ],
+            [
+              72.8323414,
+              18.9908566
+            ],
+            [
+              72.8321946,
+              18.9908563
+            ],
+            [
+              72.8321944,
+              18.9909667
+            ],
+            [
+              72.8321157,
+              18.9909665
+            ],
+            [
+              72.832116,
+              18.9908561
+            ],
+            [
+              72.83195,
+              18.9908557
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353799688,
+        "name": "N.M. Joshi Marg Municipal Secondary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8223564,
+              19.0013023
+            ],
+            [
+              72.8225626,
+              19.0012755
+            ],
+            [
+              72.8225431,
+              19.0011416
+            ],
+            [
+              72.8225063,
+              19.0011464
+            ],
+            [
+              72.8224903,
+              19.0010363
+            ],
+            [
+              72.8225505,
+              19.0010285
+            ],
+            [
+              72.8225384,
+              19.0009458
+            ],
+            [
+              72.8224095,
+              19.0009626
+            ],
+            [
+              72.8224112,
+              19.0009736
+            ],
+            [
+              72.8223105,
+              19.0009867
+            ],
+            [
+              72.8223564,
+              19.0013023
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353825818,
+        "name": "Maratha High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8241877,
+              18.9980239
+            ],
+            [
+              72.8241744,
+              18.9978679
+            ],
+            [
+              72.8243722,
+              18.9978528
+            ],
+            [
+              72.8243876,
+              18.9980329
+            ],
+            [
+              72.8244798,
+              18.9980259
+            ],
+            [
+              72.8244566,
+              18.9977545
+            ],
+            [
+              72.8241005,
+              18.9977818
+            ],
+            [
+              72.8241025,
+              18.9978046
+            ],
+            [
+              72.8240366,
+              18.9978096
+            ],
+            [
+              72.824042,
+              18.9978735
+            ],
+            [
+              72.8240333,
+              18.9978742
+            ],
+            [
+              72.8240389,
+              18.9979392
+            ],
+            [
+              72.8240913,
+              18.9979352
+            ],
+            [
+              72.8240946,
+              18.9979743
+            ],
+            [
+              72.8239544,
+              18.997985
+            ],
+            [
+              72.8239588,
+              18.9980372
+            ],
+            [
+              72.8239422,
+              18.9980385
+            ],
+            [
+              72.8239476,
+              18.9981011
+            ],
+            [
+              72.8239606,
+              18.9981001
+            ],
+            [
+              72.8239631,
+              18.9981292
+            ],
+            [
+              72.8240575,
+              18.998122
+            ],
+            [
+              72.8240523,
+              18.9980607
+            ],
+            [
+              72.8241376,
+              18.9980542
+            ],
+            [
+              72.8241354,
+              18.9980279
+            ],
+            [
+              72.8241877,
+              18.9980239
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353825842,
+        "name": "Ganpatrao Kadam Marg BMC School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8315837,
+              18.993873
+            ],
+            [
+              72.8315736,
+              18.9940966
+            ],
+            [
+              72.8317154,
+              18.9941024
+            ],
+            [
+              72.8317257,
+              18.9938787
+            ],
+            [
+              72.8315837,
+              18.993873
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 353995767,
+        "name": "PES Maharashtra High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20",
+        "osm_education": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8315765,
+              19.0167777
+            ],
+            [
+              72.8316158,
+              19.0169518
+            ],
+            [
+              72.8317253,
+              19.0169297
+            ],
+            [
+              72.8317163,
+              19.0168901
+            ],
+            [
+              72.831762,
+              19.0168809
+            ],
+            [
+              72.8317541,
+              19.0168459
+            ],
+            [
+              72.8319223,
+              19.0168119
+            ],
+            [
+              72.8319302,
+              19.0168469
+            ],
+            [
+              72.831979,
+              19.016837
+            ],
+            [
+              72.8319686,
+              19.016791
+            ],
+            [
+              72.8319907,
+              19.0167865
+            ],
+            [
+              72.8319708,
+              19.0166981
+            ],
+            [
+              72.8315765,
+              19.0167777
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 354015397,
+        "name": "Stephen High School For The Hearing Handicapped",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8308686,
+              18.9996058
+            ],
+            [
+              72.830971,
+              18.999605
+            ],
+            [
+              72.8309673,
+              18.9992106
+            ],
+            [
+              72.830865,
+              18.9992114
+            ],
+            [
+              72.8308686,
+              18.9996058
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 354041997,
+        "name": "Talchekar Wadi Municipal School And Hall",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8360194,
+              19.0222179
+            ],
+            [
+              72.8361128,
+              19.0224998
+            ],
+            [
+              72.8364533,
+              19.0223573
+            ],
+            [
+              72.8364005,
+              19.0222397
+            ],
+            [
+              72.8362605,
+              19.0222812
+            ],
+            [
+              72.8362655,
+              19.0222964
+            ],
+            [
+              72.8362193,
+              19.0223101
+            ],
+            [
+              72.8361676,
+              19.022154
+            ],
+            [
+              72.8360652,
+              19.0221843
+            ],
+            [
+              72.8360713,
+              19.0222026
+            ],
+            [
+              72.8360194,
+              19.0222179
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 354262712,
+        "name": "IES Modern English School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8369139,
+              19.0197946
+            ],
+            [
+              72.8370199,
+              19.0197375
+            ],
+            [
+              72.8369828,
+              19.0196759
+            ],
+            [
+              72.8370117,
+              19.0196603
+            ],
+            [
+              72.8369825,
+              19.0196118
+            ],
+            [
+              72.8369937,
+              19.0196057
+            ],
+            [
+              72.8369436,
+              19.0195225
+            ],
+            [
+              72.8369211,
+              19.0195346
+            ],
+            [
+              72.8368949,
+              19.019491
+            ],
+            [
+              72.8368771,
+              19.0195005
+            ],
+            [
+              72.8368514,
+              19.0194578
+            ],
+            [
+              72.8367454,
+              19.0195148
+            ],
+            [
+              72.8369139,
+              19.0197946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 354262742,
+        "name": "Nabar Guruji School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8349366,
+              19.0168235
+            ],
+            [
+              72.8347883,
+              19.0164511
+            ],
+            [
+              72.8347888,
+              19.0164504
+            ],
+            [
+              72.8347917,
+              19.0164362
+            ],
+            [
+              72.8347887,
+              19.016422
+            ],
+            [
+              72.8347802,
+              19.01641
+            ],
+            [
+              72.8347675,
+              19.016402
+            ],
+            [
+              72.8347525,
+              19.0163992
+            ],
+            [
+              72.8347375,
+              19.0164021
+            ],
+            [
+              72.8347248,
+              19.0164101
+            ],
+            [
+              72.8347163,
+              19.0164221
+            ],
+            [
+              72.8347134,
+              19.0164363
+            ],
+            [
+              72.8347154,
+              19.016446
+            ],
+            [
+              72.8346929,
+              19.0164541
+            ],
+            [
+              72.8347072,
+              19.0164899
+            ],
+            [
+              72.8346752,
+              19.0165012
+            ],
+            [
+              72.8346812,
+              19.0165163
+            ],
+            [
+              72.8346561,
+              19.0165252
+            ],
+            [
+              72.8346634,
+              19.0165434
+            ],
+            [
+              72.8345808,
+              19.0165728
+            ],
+            [
+              72.8346178,
+              19.0166658
+            ],
+            [
+              72.8347575,
+              19.0166161
+            ],
+            [
+              72.834852,
+              19.0168536
+            ],
+            [
+              72.834725,
+              19.0168988
+            ],
+            [
+              72.8347603,
+              19.0169873
+            ],
+            [
+              72.8349777,
+              19.0169099
+            ],
+            [
+              72.8349601,
+              19.0168658
+            ],
+            [
+              72.8349742,
+              19.0168608
+            ],
+            [
+              72.8349565,
+              19.0168164
+            ],
+            [
+              72.8349366,
+              19.0168235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 354262887,
+        "name": "Gokhale Road Municipal School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8136787,
+              18.960564
+            ],
+            [
+              72.813752,
+              18.9601374
+            ],
+            [
+              72.8135841,
+              18.9601116
+            ],
+            [
+              72.8135107,
+              18.9605382
+            ],
+            [
+              72.8136787,
+              18.960564
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 356187624,
+        "name": "M.S.P.T. High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8162009,
+              18.9626212
+            ],
+            [
+              72.8162874,
+              18.9628211
+            ],
+            [
+              72.8165039,
+              18.9627379
+            ],
+            [
+              72.8164152,
+              18.9625367
+            ],
+            [
+              72.8162009,
+              18.9626212
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 356187783,
+        "name": "Our Own High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:street": "Allibhai Premji Marg (Foras Road)",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8301411,
+              18.9652487
+            ],
+            [
+              72.8302169,
+              18.9651625
+            ],
+            [
+              72.8300805,
+              18.9650108
+            ],
+            [
+              72.8300287,
+              18.9650588
+            ],
+            [
+              72.8301411,
+              18.9652487
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 356207224,
+        "name": "Ahmed Sailor High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8441832,
+              19.0060155
+            ],
+            [
+              72.8443734,
+              19.0060625
+            ],
+            [
+              72.8444458,
+              19.0058009
+            ],
+            [
+              72.8442555,
+              19.0057539
+            ],
+            [
+              72.8441832,
+              19.0060155
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 356294784,
+        "name": "Navbharat School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8447763,
+              19.0101664
+            ],
+            [
+              72.8449421,
+              19.0104314
+            ],
+            [
+              72.8450559,
+              19.0103677
+            ],
+            [
+              72.8448901,
+              19.0101027
+            ],
+            [
+              72.8447763,
+              19.0101664
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 356294928,
+        "name": "Dr. D.B.Kulkarni Vidhyalay",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8423048,
+              19.041972
+            ],
+            [
+              72.8423596,
+              19.0420162
+            ],
+            [
+              72.8424027,
+              19.0419686
+            ],
+            [
+              72.8424644,
+              19.0420185
+            ],
+            [
+              72.8424213,
+              19.0420662
+            ],
+            [
+              72.8424794,
+              19.0421131
+            ],
+            [
+              72.8425694,
+              19.0420136
+            ],
+            [
+              72.8423948,
+              19.0418724
+            ],
+            [
+              72.8423048,
+              19.041972
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 356454578,
+        "name": "Mahim Mori Road Municipal Marathi School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8555563,
+              19.0156375
+            ],
+            [
+              72.8556752,
+              19.0157934
+            ],
+            [
+              72.8557824,
+              19.0157219
+            ],
+            [
+              72.8557495,
+              19.0156788
+            ],
+            [
+              72.8557676,
+              19.015664
+            ],
+            [
+              72.8557617,
+              19.0156211
+            ],
+            [
+              72.8557346,
+              19.0156247
+            ],
+            [
+              72.8557305,
+              19.0155864
+            ],
+            [
+              72.855706,
+              19.0155882
+            ],
+            [
+              72.8556922,
+              19.0155954
+            ],
+            [
+              72.8556779,
+              19.0155746
+            ],
+            [
+              72.8556476,
+              19.0155965
+            ],
+            [
+              72.8556307,
+              19.015577
+            ],
+            [
+              72.8555563,
+              19.0156375
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 356530618,
+        "name": "Wadala High Primary Mahapalika Urdu School,",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8592006,
+              19.018327
+            ],
+            [
+              72.8595342,
+              19.0181422
+            ],
+            [
+              72.8594522,
+              19.0180099
+            ],
+            [
+              72.8591186,
+              19.0181947
+            ],
+            [
+              72.8592006,
+              19.018327
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 357031569,
+        "name": "Sitaram Prakash High Scool",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8579797,
+              19.0325847
+            ],
+            [
+              72.8580774,
+              19.0325449
+            ],
+            [
+              72.858051,
+              19.032487
+            ],
+            [
+              72.8581123,
+              19.032462
+            ],
+            [
+              72.8581398,
+              19.0325223
+            ],
+            [
+              72.8581968,
+              19.0324991
+            ],
+            [
+              72.8580945,
+              19.0322747
+            ],
+            [
+              72.8578785,
+              19.0323626
+            ],
+            [
+              72.8579797,
+              19.0325847
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 357112933,
+        "name": "Little Angels School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8485249,
+              19.0338273
+            ],
+            [
+              72.8486052,
+              19.0338264
+            ],
+            [
+              72.8486011,
+              19.0335103
+            ],
+            [
+              72.8485208,
+              19.0335112
+            ],
+            [
+              72.8485249,
+              19.0338273
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 357187182,
+        "name": "Bombay Girls' High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8505981,
+              19.0381502
+            ],
+            [
+              72.8507759,
+              19.0383558
+            ],
+            [
+              72.8508372,
+              19.038313
+            ],
+            [
+              72.8506544,
+              19.0381019
+            ],
+            [
+              72.8505981,
+              19.0381502
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 357187290,
+        "name": "Shahu Nagar Municipal School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8310882,
+              18.9234796
+            ],
+            [
+              72.8309461,
+              18.9233815
+            ],
+            [
+              72.8307156,
+              18.9236593
+            ],
+            [
+              72.8307935,
+              18.9237237
+            ],
+            [
+              72.8307829,
+              18.9237449
+            ],
+            [
+              72.8308305,
+              18.9237802
+            ],
+            [
+              72.8310882,
+              18.9234796
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 358489295,
+        "name": "Convent of Jesus and Mary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_alt_name": "Fort Convent",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8277404,
+              18.9762271
+            ],
+            [
+              72.8277769,
+              18.976214
+            ],
+            [
+              72.8277932,
+              18.9762509
+            ],
+            [
+              72.8278711,
+              18.9762279
+            ],
+            [
+              72.8278373,
+              18.9761569
+            ],
+            [
+              72.8278628,
+              18.9761388
+            ],
+            [
+              72.8278447,
+              18.9760988
+            ],
+            [
+              72.8277064,
+              18.9761438
+            ],
+            [
+              72.8277404,
+              18.9762271
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 359528686,
+        "name": "Maulana Azad High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8405308,
+              18.9722056
+            ],
+            [
+              72.8406974,
+              18.9721922
+            ],
+            [
+              72.8406812,
+              18.9720135
+            ],
+            [
+              72.84054,
+              18.972021
+            ],
+            [
+              72.8405308,
+              18.9722056
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 359690892,
+        "name": "St. Isabel High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8567277,
+              19.0323377
+            ],
+            [
+              72.8563282,
+              19.03261
+            ],
+            [
+              72.8559129,
+              19.0328459
+            ],
+            [
+              72.8557549,
+              19.032487
+            ],
+            [
+              72.8561205,
+              19.0322748
+            ],
+            [
+              72.8563369,
+              19.0320997
+            ],
+            [
+              72.8567277,
+              19.0323377
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 427245951,
+        "name": "South Indian Education Society (SIES) High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:street": "K A Subramaniam Road",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20",
+        "osm_short_name": "SIES School",
+        "osm_website": "https://sieshsm.edu.in/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8403672,
+              18.9680607
+            ],
+            [
+              72.8414427,
+              18.9677804
+            ],
+            [
+              72.8409988,
+              18.9669966
+            ],
+            [
+              72.8406488,
+              18.9671146
+            ],
+            [
+              72.8405334,
+              18.9668444
+            ],
+            [
+              72.8398562,
+              18.9670283
+            ],
+            [
+              72.8402035,
+              18.9676625
+            ],
+            [
+              72.8403672,
+              18.9680607
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 428199723,
+        "name": "St Peter's School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8081977,
+              18.9101225
+            ],
+            [
+              72.8085841,
+              18.9099129
+            ],
+            [
+              72.8087153,
+              18.9098383
+            ],
+            [
+              72.8093349,
+              18.9107848
+            ],
+            [
+              72.8084344,
+              18.9112488
+            ],
+            [
+              72.8080474,
+              18.9114546
+            ],
+            [
+              72.807448,
+              18.9105015
+            ],
+            [
+              72.8075786,
+              18.9104289
+            ],
+            [
+              72.8080378,
+              18.9102016
+            ],
+            [
+              72.8081977,
+              18.9101225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 431494596,
+        "name": "Kendriya Vidyalaya No.2, Colaba",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_brand": "Kendriya Vidyalaya",
+        "osm_brand:wikidata": "Q1156653",
+        "osm_check_date": "2026-03-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8363286,
+              18.969381
+            ],
+            [
+              72.8357037,
+              18.9697564
+            ],
+            [
+              72.834376,
+              18.9698122
+            ],
+            [
+              72.834217,
+              18.9697513
+            ],
+            [
+              72.8344323,
+              18.9694567
+            ],
+            [
+              72.8352443,
+              18.9687237
+            ],
+            [
+              72.8353556,
+              18.9686131
+            ],
+            [
+              72.8354515,
+              18.9688991
+            ],
+            [
+              72.8361704,
+              18.9687291
+            ],
+            [
+              72.8363286,
+              18.969381
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 436455880,
+        "name": "St. Mary's School (ICSE)",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "400010",
+        "osm_addr:street": "S B Dhody Marg (Nesbit Road)",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.848355,
+              19.000061
+            ],
+            [
+              72.8477105,
+              19.0003582
+            ],
+            [
+              72.8475255,
+              19.0000235
+            ],
+            [
+              72.8481477,
+              18.9997217
+            ],
+            [
+              72.848355,
+              19.000061
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 625809287,
+        "name": "Baradevi Municipal School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8485681,
+              19.0221218
+            ],
+            [
+              72.8488778,
+              19.021924
+            ],
+            [
+              72.8487831,
+              19.0217941
+            ],
+            [
+              72.8487341,
+              19.021828
+            ],
+            [
+              72.8484668,
+              19.0220128
+            ],
+            [
+              72.8485681,
+              19.0221218
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 685548839,
+        "name": "IES V N Sule Guruji",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20",
+        "osm_fee": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8488831,
+              19.0219224
+            ],
+            [
+              72.8491802,
+              19.0217177
+            ],
+            [
+              72.8490297,
+              19.0215195
+            ],
+            [
+              72.8489502,
+              19.0215718
+            ],
+            [
+              72.8490043,
+              19.02165
+            ],
+            [
+              72.8489672,
+              19.0216745
+            ],
+            [
+              72.8487896,
+              19.0217914
+            ],
+            [
+              72.8488831,
+              19.0219224
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 685548841,
+        "name": "Raja Shivaji Vidyalay",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_fee": "yes",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8488689,
+              19.021596
+            ],
+            [
+              72.8490152,
+              19.0214999
+            ],
+            [
+              72.8487639,
+              19.0211394
+            ],
+            [
+              72.8485519,
+              19.021086
+            ],
+            [
+              72.8484982,
+              19.0211261
+            ],
+            [
+              72.8488689,
+              19.021596
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 685548843,
+        "name": "Digambar Patkar Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20",
+        "osm_fee": "yes",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8478421,
+              19.0216807
+            ],
+            [
+              72.8479154,
+              19.0216331
+            ],
+            [
+              72.8485323,
+              19.0212324
+            ],
+            [
+              72.8484668,
+              19.0211459
+            ],
+            [
+              72.8477807,
+              19.0215962
+            ],
+            [
+              72.8478421,
+              19.0216807
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 685548846,
+        "name": "IES Orion",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20",
+        "osm_fee": "yes",
+        "osm_isced:level": "2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8558314,
+              19.0177099
+            ],
+            [
+              72.8559788,
+              19.0176032
+            ],
+            [
+              72.8559336,
+              19.0175459
+            ],
+            [
+              72.8560108,
+              19.0174841
+            ],
+            [
+              72.8559479,
+              19.0174032
+            ],
+            [
+              72.8557233,
+              19.017565
+            ],
+            [
+              72.8558314,
+              19.0177099
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 685553901,
+        "name": "Bansidhar Agarwal High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8542333,
+              19.0084633
+            ],
+            [
+              72.8545362,
+              19.0084558
+            ],
+            [
+              72.8545619,
+              19.0081188
+            ],
+            [
+              72.8544609,
+              19.0077913
+            ],
+            [
+              72.8544107,
+              19.0073447
+            ],
+            [
+              72.8542451,
+              19.0073364
+            ],
+            [
+              72.8542333,
+              19.0084633
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 687295050,
+        "name": "Dnyaneshwar Vidyalay",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8280749,
+              18.9967688
+            ],
+            [
+              72.8281384,
+              18.996451
+            ],
+            [
+              72.8284016,
+              18.9964821
+            ],
+            [
+              72.8283376,
+              18.9967979
+            ],
+            [
+              72.8280749,
+              18.9967688
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 725098202,
+        "name": "French International School of Mumbai",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400013",
+        "osm_addr:street": "Ganpatrao Kadam Mar",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "9",
+        "osm_name:fr": "Ecole Francaise Internationale Bombay",
+        "osm_source": "http://www.efib.in/fr/wp-admin/wp-content/uploads/sites/2/2015/PDF/Presentation%20Building%20EFIB%20compressed%20x.pdf",
+        "osm_website": "http://www.efib.in"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8086724,
+              18.9743694
+            ],
+            [
+              72.8086805,
+              18.9742172
+            ],
+            [
+              72.8090527,
+              18.9742584
+            ],
+            [
+              72.8090305,
+              18.9744153
+            ],
+            [
+              72.8086724,
+              18.9743694
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 752114567,
+        "name": "Activity High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8072636,
+              18.9765272
+            ],
+            [
+              72.8073353,
+              18.9764662
+            ],
+            [
+              72.8074652,
+              18.9766098
+            ],
+            [
+              72.8073906,
+              18.9766734
+            ],
+            [
+              72.8072636,
+              18.9765272
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 753815723,
+        "name": "Mahalaxmi Municipal School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_isced:level": "3",
+        "osm_operator:type": "public"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8161631,
+              19.0075391
+            ],
+            [
+              72.8163661,
+              19.0074708
+            ],
+            [
+              72.8162894,
+              19.0072704
+            ],
+            [
+              72.8160774,
+              19.0073514
+            ],
+            [
+              72.8161631,
+              19.0075391
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 794424283,
+        "name": "Worli Naka Upper Primary Marathi School No.2",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.837444,
+              19.0023762
+            ],
+            [
+              72.8382773,
+              19.0020563
+            ],
+            [
+              72.838145,
+              19.0017482
+            ],
+            [
+              72.8373117,
+              19.0020682
+            ],
+            [
+              72.837444,
+              19.0023762
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 936795318,
+        "name": "Central Railway Primary Education School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8459671,
+              18.9991308
+            ],
+            [
+              72.8458719,
+              18.9991688
+            ],
+            [
+              72.8454776,
+              18.9992107
+            ],
+            [
+              72.8454253,
+              18.9991511
+            ],
+            [
+              72.8454387,
+              18.9989063
+            ],
+            [
+              72.8458947,
+              18.9988974
+            ],
+            [
+              72.8459685,
+              18.9988645
+            ],
+            [
+              72.8459671,
+              18.9991308
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 961376713,
+        "name": "JBCN International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8297618,
+              19.0067277
+            ],
+            [
+              72.8300376,
+              19.0067272
+            ],
+            [
+              72.830037,
+              19.006405
+            ],
+            [
+              72.8297611,
+              19.0064055
+            ],
+            [
+              72.8297618,
+              19.0067277
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 978614994,
+        "name": "Globe Mill Passage Municipal School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8317286,
+              19.0061493
+            ],
+            [
+              72.8322905,
+              19.006148
+            ],
+            [
+              72.8322449,
+              19.0057207
+            ],
+            [
+              72.8315462,
+              19.0057511
+            ],
+            [
+              72.8317286,
+              19.0061493
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 978614996,
+        "name": "Holy Cross High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "400013",
+        "osm_addr:street": "Senapati Bapat Marg (Tulsi Pipe Road)",
+        "osm_amenity": "school",
+        "osm_isced:level": "1;2;3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.838807,
+              19.0251795
+            ],
+            [
+              72.838933,
+              19.0252264
+            ],
+            [
+              72.8390685,
+              19.0252961
+            ],
+            [
+              72.8392415,
+              19.0253975
+            ],
+            [
+              72.8394426,
+              19.0255408
+            ],
+            [
+              72.8395325,
+              19.0256169
+            ],
+            [
+              72.839558,
+              19.0255877
+            ],
+            [
+              72.8395969,
+              19.0255078
+            ],
+            [
+              72.8395151,
+              19.0254165
+            ],
+            [
+              72.8393756,
+              19.0253177
+            ],
+            [
+              72.8393461,
+              19.0252961
+            ],
+            [
+              72.8393461,
+              19.0252657
+            ],
+            [
+              72.8392742,
+              19.0252243
+            ],
+            [
+              72.8392053,
+              19.0251845
+            ],
+            [
+              72.8391744,
+              19.0251972
+            ],
+            [
+              72.8390551,
+              19.0251376
+            ],
+            [
+              72.8389223,
+              19.0250983
+            ],
+            [
+              72.8388298,
+              19.0250894
+            ],
+            [
+              72.838807,
+              19.0251795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 978615006,
+        "name": "Balmohan Vidyamandir",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.847842,
+              19.02171
+            ],
+            [
+              72.8479154,
+              19.0216331
+            ],
+            [
+              72.8482662,
+              19.0218816
+            ],
+            [
+              72.8483006,
+              19.021909
+            ],
+            [
+              72.8482349,
+              19.0219933
+            ],
+            [
+              72.8478741,
+              19.0217333
+            ],
+            [
+              72.847842,
+              19.02171
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 978615010,
+        "name": "IES Padmakar Dhamdhere",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20",
+        "osm_fee": "yes",
+        "osm_isced:level": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8306845,
+              18.9450094
+            ],
+            [
+              72.8309513,
+              18.9452136
+            ],
+            [
+              72.8311988,
+              18.9449475
+            ],
+            [
+              72.8309156,
+              18.9447231
+            ],
+            [
+              72.8306845,
+              18.9450094
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 978824051,
+        "name": "Lord Harris Municipal Marathi School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8304262,
+              18.9229643
+            ],
+            [
+              72.8308459,
+              18.9232727
+            ],
+            [
+              72.8308851,
+              18.9232996
+            ],
+            [
+              72.8309561,
+              18.923259
+            ],
+            [
+              72.8309622,
+              18.9228076
+            ],
+            [
+              72.8309239,
+              18.922719
+            ],
+            [
+              72.8304262,
+              18.9229643
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 978824053,
+        "name": "Holy Name High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8119325,
+              18.9003419
+            ],
+            [
+              72.8126753,
+              18.9000759
+            ],
+            [
+              72.8133982,
+              18.8998554
+            ],
+            [
+              72.8138956,
+              18.9004632
+            ],
+            [
+              72.8141033,
+              18.9009014
+            ],
+            [
+              72.814934,
+              18.9023609
+            ],
+            [
+              72.8143483,
+              18.9025926
+            ],
+            [
+              72.8141948,
+              18.9026533
+            ],
+            [
+              72.8136894,
+              18.9028532
+            ],
+            [
+              72.812796,
+              18.9028546
+            ],
+            [
+              72.8127308,
+              18.9026143
+            ],
+            [
+              72.8119326,
+              18.9005364
+            ],
+            [
+              72.8118961,
+              18.9004037
+            ],
+            [
+              72.8119325,
+              18.9003419
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 978824057,
+        "name": "Army Public School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Mumbai",
+        "osm_addr:postcode": "400005",
+        "osm_addr:street": "Nanabhai Moos Marg",
+        "osm_amenity": "school",
+        "osm_email": "apsmumbai@awesindia.edu.in",
+        "osm_phone": "+91 7506 086 333",
+        "osm_website": "https://www.apsmumbai.com/",
+        "osm_wikidata": "Q4794243",
+        "osm_wikipedia": "en:Army Public School, Mumbai"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8100094,
+              18.90737
+            ],
+            [
+              72.8103983,
+              18.9081617
+            ],
+            [
+              72.8108275,
+              18.9087326
+            ],
+            [
+              72.8111331,
+              18.908527
+            ],
+            [
+              72.8110646,
+              18.9078437
+            ],
+            [
+              72.8105988,
+              18.907224
+            ],
+            [
+              72.8100668,
+              18.9072717
+            ],
+            [
+              72.8100094,
+              18.90737
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 978824059,
+        "name": "Kendriya Vidyalaya No.1, Colaba",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_brand": "Kendriya Vidyalaya",
+        "osm_brand:wikidata": "Q1156653"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8194293,
+              18.952606
+            ],
+            [
+              72.8193314,
+              18.9525274
+            ],
+            [
+              72.8193197,
+              18.9525405
+            ],
+            [
+              72.8191447,
+              18.9523999
+            ],
+            [
+              72.8190827,
+              18.952469
+            ],
+            [
+              72.8190687,
+              18.9524845
+            ],
+            [
+              72.8192508,
+              18.9526308
+            ],
+            [
+              72.8191844,
+              18.9527047
+            ],
+            [
+              72.8190451,
+              18.9525927
+            ],
+            [
+              72.8189786,
+              18.9526668
+            ],
+            [
+              72.8189968,
+              18.9526814
+            ],
+            [
+              72.8188053,
+              18.9528947
+            ],
+            [
+              72.8189434,
+              18.9530056
+            ],
+            [
+              72.8189682,
+              18.952978
+            ],
+            [
+              72.819063,
+              18.9530542
+            ],
+            [
+              72.8190842,
+              18.9530306
+            ],
+            [
+              72.8192535,
+              18.9531666
+            ],
+            [
+              72.8193606,
+              18.9530473
+            ],
+            [
+              72.8191703,
+              18.9528945
+            ],
+            [
+              72.8194293,
+              18.952606
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 979362799,
+        "name": "St. Teresa High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "3",
+        "osm_wikidata": "Q17153100",
+        "osm_wikimedia_commons": "Category:St. Teresa's High School, Charni Road",
+        "osm_wikipedia": "en:St. Teresa's High School, Charni Road"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8138383,
+              18.9743678
+            ],
+            [
+              72.8140099,
+              18.9744769
+            ],
+            [
+              72.8140517,
+              18.974418
+            ],
+            [
+              72.8140146,
+              18.9743944
+            ],
+            [
+              72.8140437,
+              18.9743536
+            ],
+            [
+              72.8141116,
+              18.9743967
+            ],
+            [
+              72.8141668,
+              18.974319
+            ],
+            [
+              72.8139644,
+              18.9741903
+            ],
+            [
+              72.8138383,
+              18.9743678
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 979362804,
+        "name": "Victoria Memorial School for the Blind",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "school",
+        "osm_school": "blind"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8177663,
+              18.9735371
+            ],
+            [
+              72.8177084,
+              18.9734766
+            ],
+            [
+              72.8175517,
+              18.9733134
+            ],
+            [
+              72.8177064,
+              18.9731847
+            ],
+            [
+              72.8182358,
+              18.973153
+            ],
+            [
+              72.8181795,
+              18.973319
+            ],
+            [
+              72.8177663,
+              18.9735371
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 979362806,
+        "name": "Yusuf Meherali Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8166405,
+              18.972097
+            ],
+            [
+              72.8166358,
+              18.9719042
+            ],
+            [
+              72.8167478,
+              18.9719018
+            ],
+            [
+              72.8167498,
+              18.9719822
+            ],
+            [
+              72.816829,
+              18.9719805
+            ],
+            [
+              72.8168317,
+              18.9720928
+            ],
+            [
+              72.8166405,
+              18.972097
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 979362809,
+        "name": "Sir C. J. High School (Secondary)",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8130801,
+              18.9728971
+            ],
+            [
+              72.8129589,
+              18.9732126
+            ],
+            [
+              72.8123939,
+              18.9730146
+            ],
+            [
+              72.8125172,
+              18.9727
+            ],
+            [
+              72.8130801,
+              18.9728971
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 979362815,
+        "name": "Hill Spring International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8180493,
+              18.9673619
+            ],
+            [
+              72.8179273,
+              18.9670639
+            ],
+            [
+              72.8179911,
+              18.9670405
+            ],
+            [
+              72.8180981,
+              18.9673017
+            ],
+            [
+              72.8180626,
+              18.9673146
+            ],
+            [
+              72.8180777,
+              18.9673515
+            ],
+            [
+              72.8180493,
+              18.9673619
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 979362816,
+        "name": "Bai Ruttonbai F D Panday Girls' High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8215088,
+              18.9610696
+            ],
+            [
+              72.8214646,
+              18.960918
+            ],
+            [
+              72.8216749,
+              18.9608631
+            ],
+            [
+              72.8217192,
+              18.9610147
+            ],
+            [
+              72.8215088,
+              18.9610696
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 979371199,
+        "name": "Bai Ratan F. Pavri High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8358036,
+              18.9699207
+            ],
+            [
+              72.8362059,
+              18.9697032
+            ],
+            [
+              72.8363775,
+              18.9703062
+            ],
+            [
+              72.8359142,
+              18.9704229
+            ],
+            [
+              72.8358036,
+              18.9699207
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 979371200,
+        "name": "St. Mary's High School (S.S.C.)",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q7590421",
+        "osm_wikipedia": "en:St. Mary's School, Mumbai"
+      }
+    }
+  ],
+  "category": "schools",
+  "count": 181
+}

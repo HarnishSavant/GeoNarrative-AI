@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { Suspense, useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { KeyRound, ShieldAlert, CheckCircle, Loader2, ArrowRight } from "lucide-react";
 import { apiService } from "@/services/apiService";
 
-export default function ResetPasswordPage() {
+function ResetPasswordContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -52,7 +52,8 @@ export default function ResetPasswordPage() {
       await apiService.resetPassword({
         email,
         token,
-        new_password: password
+        new_password: password,
+        confirm_new_password: confirmPassword
       });
       setStatus("success");
     } catch (err: any) {
@@ -180,5 +181,17 @@ export default function ResetPasswordPage() {
         )}
       </motion.div>
     </div>
+  );
+}
+
+export default function ResetPasswordPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-[#0b0f19] flex items-center justify-center p-4">
+        <Loader2 className="w-10 h-10 text-indigo-500 animate-spin" />
+      </div>
+    }>
+      <ResetPasswordContent />
+    </Suspense>
   );
 }

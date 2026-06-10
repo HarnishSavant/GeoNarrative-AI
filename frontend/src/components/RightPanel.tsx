@@ -28,6 +28,7 @@ interface RightPanelProps {
   dashboardMode: DashboardMode;
   isOpen: boolean;
   onToggle: () => void;
+  isSimulated?: boolean;
 }
 
 type RightTab = "insights" | "analytics" | "risks";
@@ -80,6 +81,7 @@ export default function RightPanel({
   dashboardMode,
   isOpen,
   onToggle,
+  isSimulated = false,
 }: RightPanelProps) {
   const [activeTab, setActiveTab] = useState<RightTab>("insights");
   const insights = MODE_INSIGHTS[dashboardMode];
@@ -118,7 +120,18 @@ export default function RightPanel({
         className="h-full bg-geo-darker/80 backdrop-blur-xl border-l border-geo-border overflow-hidden flex flex-col"
       >
         <div className="p-4 border-b border-geo-border flex items-center justify-between flex-shrink-0">
-          <h2 className="text-sm font-semibold text-gray-200">Intelligence Panel</h2>
+          <div className="flex items-center gap-2">
+            <h2 className="text-sm font-semibold text-gray-200">Intelligence Panel</h2>
+            {isSimulated ? (
+              <span className="px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[8px] font-bold uppercase tracking-normal">
+                Simulation
+              </span>
+            ) : (
+              <span className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[8px] font-bold uppercase tracking-normal">
+                Production
+              </span>
+            )}
+          </div>
           <button onClick={onToggle} className="w-6 h-6 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-300 hover:bg-white/5 transition-colors">
             <X size={14} />
           </button>

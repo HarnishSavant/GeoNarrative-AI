@@ -1,0 +1,2374 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8433439,
+          18.48977
+        ]
+      },
+      "properties": {
+        "id": 2027727165,
+        "name": "Forever Music Pvt. Ltd / Forever Arts Academy",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housename": "Savli Bungalow, Meghana Society",
+        "osm_addr:housenumber": "Plot No 74, Sahakarnagar 2",
+        "osm_addr:postcode": "411009",
+        "osm_addr:street": "Dhomkar Path",
+        "osm_amenity": "school",
+        "osm_designation": "Arts School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8264445,
+          18.4468305
+        ]
+      },
+      "properties": {
+        "id": 3600490397,
+        "name": "Red Rose Nursery",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-15",
+        "osm_contact:phone": "08805652958"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8255276,
+          18.5036978
+        ]
+      },
+      "properties": {
+        "id": 4452524320,
+        "name": "Abhinava Vidyalaya",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_wikidata": "Q4667437",
+        "osm_wikipedia": "en:Abhinava Vidyalaya, Pune"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8241285,
+          18.5035861
+        ]
+      },
+      "properties": {
+        "id": 4452529697,
+        "name": "Government Aided School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.834955,
+          18.51022
+        ]
+      },
+      "properties": {
+        "id": 4520210890,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_name:en": "Class CCNA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8151877,
+          18.4825852
+        ]
+      },
+      "properties": {
+        "id": 4611287873,
+        "name": "Tree House",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7679471,
+          18.4278199
+        ]
+      },
+      "properties": {
+        "id": 4634643989,
+        "name": "KV DIAT",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7652369,
+          18.4243102
+        ]
+      },
+      "properties": {
+        "id": 4674947989,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_name:en": "Tiny Tots play school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7925018,
+          18.4887544
+        ]
+      },
+      "properties": {
+        "id": 5730289522,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:street": "Bypass",
+        "osm_amenity": "school",
+        "osm_name:en": "RMD Sinhgad College"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8040865,
+          18.4953054
+        ]
+      },
+      "properties": {
+        "id": 6457239788,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school",
+        "osm_name:en": "Grammangal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8295105,
+          18.4582883
+        ]
+      },
+      "properties": {
+        "id": 7930289885,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:housenumber": "6/16",
+        "osm_addr:postcode": "411046",
+        "osm_addr:street": "Behind Indian Oil Petrol Pump, Ambegaon Bk ,Dehu-Katraj,Bypass Tal.Haveli",
+        "osm_amenity": "school",
+        "osm_email": "communications.oisa@orchids.edu.in",
+        "osm_name:en": "Orchids The International School, Ambegaon",
+        "osm_opening_hours": "Mo-Su 09:00-18:30",
+        "osm_operator": "Orchids International School",
+        "osm_phone": "9513923100",
+        "osm_website": "https://www.orchidsinternationalschool.com/pune-branches/ambegaon/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.791607,
+          18.4883339
+        ]
+      },
+      "properties": {
+        "id": 10150949587,
+        "name": "Singhgad Spring Dale School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Pune",
+        "osm_addr:street": "Warje Road",
+        "osm_amenity": "school",
+        "osm_grades": "1-10",
+        "osm_operator": "Singhgad Institute",
+        "osm_operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8028899,
+          18.5064329
+        ]
+      },
+      "properties": {
+        "id": 10574633157,
+        "name": "Annasaheb Patil School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8030994,
+          18.5065954
+        ]
+      },
+      "properties": {
+        "id": 10574645036,
+        "name": "Sahyadri Internationsal School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.798735,
+          18.5065799
+        ]
+      },
+      "properties": {
+        "id": 10574649086,
+        "name": "Vasundhara Secondary School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8094384,
+          18.4985278
+        ]
+      },
+      "properties": {
+        "id": 10574663122,
+        "name": "Athrava Ved School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8196892,
+          18.4873064
+        ]
+      },
+      "properties": {
+        "id": 10692763680,
+        "name": "Kidzee karve nagar",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8202498,
+          18.4897544
+        ]
+      },
+      "properties": {
+        "id": 10692792823,
+        "name": "dnyanda nutan balvikas",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8212115,
+          18.4848591
+        ]
+      },
+      "properties": {
+        "id": 10692810140,
+        "name": "bharatratna dr.APJ abdul kalam e-learning school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8207628,
+          18.4889072
+        ]
+      },
+      "properties": {
+        "id": 10692810141,
+        "name": "blue bird nursey school",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8203595,
+          18.4897341
+        ]
+      },
+      "properties": {
+        "id": 10692820321,
+        "name": "tree house play group",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7859013,
+          18.4428063
+        ]
+      },
+      "properties": {
+        "id": 10765391648,
+        "name": "Craze English Medium School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:city": "Pune",
+        "osm_addr:postcode": "411024",
+        "osm_addr:street": "Kolhewadi Road",
+        "osm_amenity": "school",
+        "osm_grades": "1-7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8089004,
+              18.4914422
+            ],
+            [
+              73.8090186,
+              18.4913663
+            ],
+            [
+              73.8112833,
+              18.4911763
+            ],
+            [
+              73.8115944,
+              18.4918222
+            ],
+            [
+              73.8103821,
+              18.4920969
+            ],
+            [
+              73.8088703,
+              18.4915263
+            ],
+            [
+              73.8089004,
+              18.4914422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 109748020,
+        "name": "Millennium National School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "411052",
+        "osm_addr:street": "Karve Road , Karve Nagar , Pune",
+        "osm_alt_name": "Millennium School",
+        "osm_amenity": "school",
+        "osm_source": "local_knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8097678,
+              18.490858
+            ],
+            [
+              73.8093279,
+              18.4893877
+            ],
+            [
+              73.8085447,
+              18.4894335
+            ],
+            [
+              73.8090489,
+              18.4914023
+            ],
+            [
+              73.8100003,
+              18.4913209
+            ],
+            [
+              73.809918,
+              18.4910208
+            ],
+            [
+              73.8097731,
+              18.4910309
+            ],
+            [
+              73.8097678,
+              18.490858
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 109754327,
+        "name": "Marathwada Mitramandal College of Engineering",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "411052",
+        "osm_addr:street": "Karve Nagar , Pune",
+        "osm_amenity": "school",
+        "osm_name:mr": "मराठवाडा मित्रमंडळ अभियांत्रिकी महाविद्यालय",
+        "osm_short_name": "MMCOE",
+        "osm_source": "local_knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8262369,
+              18.5029403
+            ],
+            [
+              73.8264086,
+              18.5025638
+            ],
+            [
+              73.8266124,
+              18.5021416
+            ],
+            [
+              73.8267156,
+              18.5019094
+            ],
+            [
+              73.8267547,
+              18.5018212
+            ],
+            [
+              73.8268188,
+              18.501677
+            ],
+            [
+              73.8272595,
+              18.5018552
+            ],
+            [
+              73.8271304,
+              18.5022652
+            ],
+            [
+              73.8270822,
+              18.5025472
+            ],
+            [
+              73.8267411,
+              18.5024977
+            ],
+            [
+              73.8266709,
+              18.5030293
+            ],
+            [
+              73.8262369,
+              18.5029403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 132813468,
+        "name": "Dr. Kalmadi Shamarao High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8435149,
+              18.5111966
+            ],
+            [
+              73.8450741,
+              18.511392
+            ],
+            [
+              73.8454672,
+              18.5110294
+            ],
+            [
+              73.8455447,
+              18.510389
+            ],
+            [
+              73.8446055,
+              18.5101892
+            ],
+            [
+              73.8437532,
+              18.5100328
+            ],
+            [
+              73.8435529,
+              18.5105846
+            ],
+            [
+              73.8435513,
+              18.5106109
+            ],
+            [
+              73.8435322,
+              18.5109177
+            ],
+            [
+              73.8435149,
+              18.5111966
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 207872400,
+        "name": "New English School , Tilak Road",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-12",
+        "osm_name:mr": "न्यू इंग्लिश स्कूल, टिळक रस्ता",
+        "osm_operator": "Deccan Education Society",
+        "osm_website": "https://www.despune.org/newenglishschool-pune"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8083992,
+              18.5018997
+            ],
+            [
+              73.8088865,
+              18.5018882
+            ],
+            [
+              73.808896,
+              18.5013842
+            ],
+            [
+              73.8083283,
+              18.5014922
+            ],
+            [
+              73.8083992,
+              18.5018997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 208958214,
+        "name": "Paranjape Nursery School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8168116,
+              18.5034872
+            ],
+            [
+              73.818066,
+              18.5038032
+            ],
+            [
+              73.8180439,
+              18.5038871
+            ],
+            [
+              73.8178447,
+              18.5046429
+            ],
+            [
+              73.8178264,
+              18.5047122
+            ],
+            [
+              73.8166056,
+              18.5044211
+            ],
+            [
+              73.8168116,
+              18.5034872
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 217278788,
+        "name": "MES Bal Shikshan Mandir English Medium School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Pune",
+        "osm_addr:housename": "MES Bal Shikshan Mandir English Medium School",
+        "osm_addr:postcode": "411029",
+        "osm_addr:street": "Chhatrapati Rajaram Marg",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-15",
+        "osm_name:mr": "बाल शिक्षण मंदिर",
+        "osm_operator": "Maharashtra Education Society"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8164168,
+              18.4853467
+            ],
+            [
+              73.8167004,
+              18.4856872
+            ],
+            [
+              73.8168962,
+              18.4857316
+            ],
+            [
+              73.8166861,
+              18.4867995
+            ],
+            [
+              73.8155602,
+              18.4865789
+            ],
+            [
+              73.8156214,
+              18.4860528
+            ],
+            [
+              73.8158294,
+              18.4858168
+            ],
+            [
+              73.8159865,
+              18.4856717
+            ],
+            [
+              73.816168,
+              18.4855769
+            ],
+            [
+              73.8162985,
+              18.4853989
+            ],
+            [
+              73.8164168,
+              18.4853467
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 217278789,
+        "name": "Cummins College of Engineering for Women",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "411052",
+        "osm_addr:street": "Karvenagar , Pune",
+        "osm_alt_name": "Cummins",
+        "osm_amenity": "school",
+        "osm_source": "loac_knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8132698,
+              18.50228
+            ],
+            [
+              73.8137601,
+              18.5022788
+            ],
+            [
+              73.8137589,
+              18.5026364
+            ],
+            [
+              73.813266,
+              18.5026341
+            ],
+            [
+              73.8132698,
+              18.50228
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 218059568,
+        "name": "Vidya Niketan",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_operator": "Pune Municipal Corporation",
+        "osm_ref": "8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8196425,
+              18.510322
+            ],
+            [
+              73.8197909,
+              18.5103251
+            ],
+            [
+              73.8200778,
+              18.5100156
+            ],
+            [
+              73.82018,
+              18.5094855
+            ],
+            [
+              73.8202279,
+              18.5091352
+            ],
+            [
+              73.8203103,
+              18.5087725
+            ],
+            [
+              73.8205527,
+              18.5079078
+            ],
+            [
+              73.8209864,
+              18.5072026
+            ],
+            [
+              73.8198354,
+              18.5070071
+            ],
+            [
+              73.8195798,
+              18.5078499
+            ],
+            [
+              73.8203054,
+              18.5079969
+            ],
+            [
+              73.8198437,
+              18.509695
+            ],
+            [
+              73.8196425,
+              18.510322
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 218697333,
+        "name": "MIT School and Junior College of Commerce & Science",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:street": "127/1A, Paud Rd, Mahaganesh Colony, Kothrud, Pune, Maharashtra 411038",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.817319,
+              18.5036781
+            ],
+            [
+              73.8168733,
+              18.5035711
+            ],
+            [
+              73.816755,
+              18.50403
+            ],
+            [
+              73.8169151,
+              18.5040731
+            ],
+            [
+              73.8169224,
+              18.5040542
+            ],
+            [
+              73.8169751,
+              18.5040645
+            ],
+            [
+              73.8170152,
+              18.5040749
+            ],
+            [
+              73.8170042,
+              18.5041064
+            ],
+            [
+              73.8172657,
+              18.5041717
+            ],
+            [
+              73.8173081,
+              18.5041818
+            ],
+            [
+              73.8173172,
+              18.5041387
+            ],
+            [
+              73.817279,
+              18.5041284
+            ],
+            [
+              73.8172899,
+              18.50408
+            ],
+            [
+              73.8172226,
+              18.5040628
+            ],
+            [
+              73.817319,
+              18.5036781
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 235117501,
+        "name": "MES Bal Shikshan Mandir English Medium School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Pune",
+        "osm_addr:housename": "MES Bal Shikshan Mandir English Medium School",
+        "osm_addr:postcode": "411029",
+        "osm_addr:street": "Chhatrapati Rajaram Marg",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_check_date": "2026-03-15",
+        "osm_operator": "Maharashtra Education Society",
+        "osm_operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8116659,
+              18.5118003
+            ],
+            [
+              73.8128001,
+              18.5111355
+            ],
+            [
+              73.8128647,
+              18.5106575
+            ],
+            [
+              73.8115447,
+              18.5106547
+            ],
+            [
+              73.8115325,
+              18.5111271
+            ],
+            [
+              73.8115986,
+              18.5116122
+            ],
+            [
+              73.8116659,
+              18.5118003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 235293162,
+        "name": "Raja Shree Shivrai Pratishthan School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Pune",
+        "osm_addr:housename": "Raja Shree Shivrai Pratishthan College",
+        "osm_addr:postcode": "411038",
+        "osm_addr:street": "Rambaug Colony Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8022467,
+              18.4993702
+            ],
+            [
+              73.8026713,
+              18.4993058
+            ],
+            [
+              73.8028461,
+              18.5007735
+            ],
+            [
+              73.8023327,
+              18.5008148
+            ],
+            [
+              73.8022467,
+              18.4993702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 250116192,
+        "name": "Mahesh Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:mr": "महेश विद्यालय"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8324243,
+              18.50047
+            ],
+            [
+              73.8324544,
+              18.5004671
+            ],
+            [
+              73.8326906,
+              18.5014645
+            ],
+            [
+              73.8316271,
+              18.5016366
+            ],
+            [
+              73.831539,
+              18.5010698
+            ],
+            [
+              73.8314731,
+              18.5006459
+            ],
+            [
+              73.8314609,
+              18.500567
+            ],
+            [
+              73.8324243,
+              18.50047
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 251878756,
+        "name": "Sevasadan English Medium School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Pune",
+        "osm_addr:housenumber": "1410, Patwardhan Baug",
+        "osm_addr:neighbourhood": "Erandawane",
+        "osm_addr:postcode": "411004",
+        "osm_addr:state": "Maharashtra",
+        "osm_addr:street": "Maai Mangeshkar Path",
+        "osm_amenity": "school",
+        "osm_name:mr": "सेवासदन इंग्रजी मध्यम शाळा",
+        "osm_operator": "Pune Sevasadan Society"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8126724,
+              18.4605146
+            ],
+            [
+              73.812609,
+              18.4599872
+            ],
+            [
+              73.8125054,
+              18.459542
+            ],
+            [
+              73.8117717,
+              18.4597205
+            ],
+            [
+              73.8118922,
+              18.4600092
+            ],
+            [
+              73.8120381,
+              18.4602399
+            ],
+            [
+              73.8124504,
+              18.4605748
+            ],
+            [
+              73.812554,
+              18.4605668
+            ],
+            [
+              73.8126724,
+              18.4605146
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 263813852,
+        "name": "Sanas Vidyalaya",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:mr": "सणस विद्यालय"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8179576,
+              18.5049568
+            ],
+            [
+              73.8190682,
+              18.505207
+            ],
+            [
+              73.8189922,
+              18.5055101
+            ],
+            [
+              73.8178817,
+              18.5052599
+            ],
+            [
+              73.8179576,
+              18.5049568
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 275490280,
+        "name": "Jog College",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Pune",
+        "osm_addr:postcode": "411038",
+        "osm_addr:street": "Chhatrapati Rajaram Maharaj Path",
+        "osm_addr:suburb": "Kothrud",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8327333,
+              18.506431
+            ],
+            [
+              73.8327483,
+              18.5064015
+            ],
+            [
+              73.833091,
+              18.5065535
+            ],
+            [
+              73.8331541,
+              18.5064299
+            ],
+            [
+              73.8335918,
+              18.5066282
+            ],
+            [
+              73.8334008,
+              18.506929
+            ],
+            [
+              73.833003,
+              18.5067854
+            ],
+            [
+              73.8330917,
+              18.506608
+            ],
+            [
+              73.8327333,
+              18.506431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 281844134,
+        "name": "Anusayabai Khilare Shala",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:mr": "अनुसयाबाई खिलारे शाळा"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8410796,
+              18.5044316
+            ],
+            [
+              73.8410742,
+              18.5041539
+            ],
+            [
+              73.840761,
+              18.5041594
+            ],
+            [
+              73.8407665,
+              18.5044371
+            ],
+            [
+              73.8410796,
+              18.5044316
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 290034473,
+        "name": "Vasantrao Vaidya Vidyalay",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-15",
+        "osm_name:mr": "वसंतराव वैद्य विद्यालय"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8291689,
+              18.5093663
+            ],
+            [
+              73.829438,
+              18.509509
+            ],
+            [
+              73.8291418,
+              18.5100679
+            ],
+            [
+              73.8288762,
+              18.5099406
+            ],
+            [
+              73.8291689,
+              18.5093663
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 331532102,
+        "name": "Erandawane Madhyamik Vidyalay",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:mr": "एरंडवणे माध्यमिक विद्यालय"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8316527,
+              18.4918948
+            ],
+            [
+              73.8321616,
+              18.491591
+            ],
+            [
+              73.832659,
+              18.4923573
+            ],
+            [
+              73.8320454,
+              18.4926461
+            ],
+            [
+              73.8316527,
+              18.4918948
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 331532104,
+        "name": "Kridaniketan Shala",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-13",
+        "osm_name:mr": "क्रीडानिकेतन शाळा"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8415725,
+              18.5009236
+            ],
+            [
+              73.8415718,
+              18.50039
+            ],
+            [
+              73.8420817,
+              18.5003895
+            ],
+            [
+              73.8420824,
+              18.500923
+            ],
+            [
+              73.8415725,
+              18.5009236
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 331532106,
+        "name": "Satyanarayan Shivlal Agarwal Shala",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:mr": "सत्यनारायण शिवलाल अगरवाल शाळा"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8353102,
+              18.5080933
+            ],
+            [
+              73.8355072,
+              18.5078351
+            ],
+            [
+              73.8356051,
+              18.5077284
+            ],
+            [
+              73.8357532,
+              18.5078624
+            ],
+            [
+              73.8354393,
+              18.5081644
+            ],
+            [
+              73.8353102,
+              18.5080933
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 331532108,
+        "name": "Sinhagad Spring Dale School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:mr": "सिंहगड स्प्रिंग डेल शाळा"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8229381,
+              18.493004
+            ],
+            [
+              73.8230924,
+              18.4929764
+            ],
+            [
+              73.8230465,
+              18.4927455
+            ],
+            [
+              73.8228922,
+              18.492773
+            ],
+            [
+              73.8229381,
+              18.493004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 359988654,
+        "name": "GR Palkar Primary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:postcode": "411052",
+        "osm_alt_name": "G R Palkar Primary School",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_building:levels": "4",
+        "osm_building:min_level": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.833794,
+              18.4566717
+            ],
+            [
+              73.8339766,
+              18.4567209
+            ],
+            [
+              73.8340327,
+              18.4565334
+            ],
+            [
+              73.833923,
+              18.4565039
+            ],
+            [
+              73.8339703,
+              18.4563459
+            ],
+            [
+              73.8340798,
+              18.4563754
+            ],
+            [
+              73.8341427,
+              18.4561654
+            ],
+            [
+              73.8339507,
+              18.4561136
+            ],
+            [
+              73.83382,
+              18.4565503
+            ],
+            [
+              73.8338295,
+              18.4565529
+            ],
+            [
+              73.833794,
+              18.4566717
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 360321613,
+        "name": "Podar International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Ambegaon",
+        "osm_addr:district": "Pune",
+        "osm_addr:postcode": "411046",
+        "osm_amenity": "school",
+        "osm_building": "yes",
+        "osm_website": "https://www.podareducation.org/school/ambegaon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8006537,
+              18.4417731
+            ],
+            [
+              73.8013431,
+              18.441913
+            ],
+            [
+              73.8013994,
+              18.4416955
+            ],
+            [
+              73.8014761,
+              18.4417097
+            ],
+            [
+              73.8017037,
+              18.4407108
+            ],
+            [
+              73.800911,
+              18.4405662
+            ],
+            [
+              73.8006537,
+              18.4417731
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 371368740,
+        "name": "DSK School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Pune",
+        "osm_addr:postcode": "411041",
+        "osm_amenity": "school",
+        "osm_contact:website": "http://dskschool.in",
+        "osm_operator": "D S Kulkarni Educational Trust",
+        "osm_phone": "02024380047",
+        "osm_school:curriculum": "ICSE",
+        "osm_wheelchair": "limited",
+        "osm_wikidata": "Q5203447",
+        "osm_wikipedia": "en:D.S.K. School"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8249785,
+              18.5036681
+            ],
+            [
+              73.8248454,
+              18.5039648
+            ],
+            [
+              73.8254105,
+              18.5041552
+            ],
+            [
+              73.8255529,
+              18.5038851
+            ],
+            [
+              73.8249785,
+              18.5036681
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 448218376,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8244741,
+              18.5034311
+            ],
+            [
+              73.8243527,
+              18.5037832
+            ],
+            [
+              73.8245827,
+              18.5038629
+            ],
+            [
+              73.8248244,
+              18.5039493
+            ],
+            [
+              73.8249435,
+              18.5035795
+            ],
+            [
+              73.8244741,
+              18.5034311
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 448218377,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.815171,
+              18.4823793
+            ],
+            [
+              73.8150207,
+              18.4824268
+            ],
+            [
+              73.8149929,
+              18.4826169
+            ],
+            [
+              73.8151654,
+              18.4827066
+            ],
+            [
+              73.8155829,
+              18.4827436
+            ],
+            [
+              73.8156609,
+              18.482638
+            ],
+            [
+              73.8153157,
+              18.4824902
+            ],
+            [
+              73.815171,
+              18.4823793
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 466296543,
+        "name": "Tree house school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.7771512,
+              18.5103952
+            ],
+            [
+              73.7770424,
+              18.5109372
+            ],
+            [
+              73.7761905,
+              18.5108198
+            ],
+            [
+              73.7762932,
+              18.5102388
+            ],
+            [
+              73.7765704,
+              18.5102578
+            ],
+            [
+              73.7766972,
+              18.5103437
+            ],
+            [
+              73.7771512,
+              18.5103952
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1096657641,
+        "name": "Swami Vivekanand Vidyalay",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:etymology:wikidata": "Q47478"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.7195414,
+              18.5050024
+            ],
+            [
+              73.7193215,
+              18.5053466
+            ],
+            [
+              73.7191619,
+              18.5055926
+            ],
+            [
+              73.7193707,
+              18.5058958
+            ],
+            [
+              73.7202991,
+              18.5064521
+            ],
+            [
+              73.7209206,
+              18.5064836
+            ],
+            [
+              73.7214901,
+              18.5061576
+            ],
+            [
+              73.7225607,
+              18.506021
+            ],
+            [
+              73.7227789,
+              18.5056794
+            ],
+            [
+              73.7231165,
+              18.5047835
+            ],
+            [
+              73.7218958,
+              18.5047391
+            ],
+            [
+              73.7213228,
+              18.5045021
+            ],
+            [
+              73.7200193,
+              18.5038498
+            ],
+            [
+              73.7194991,
+              18.5046753
+            ],
+            [
+              73.7196792,
+              18.5047805
+            ],
+            [
+              73.7195414,
+              18.5050024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1097297900,
+        "name": "Sanskriti School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Bhukum",
+        "osm_addr:housenumber": "Gat 1164",
+        "osm_addr:postcode": "412115",
+        "osm_amenity": "school",
+        "osm_grades": "0-12",
+        "osm_website": "https://sanskritischoolpune.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8161208,
+              18.4907411
+            ],
+            [
+              73.8156503,
+              18.4908546
+            ],
+            [
+              73.8156324,
+              18.4905908
+            ],
+            [
+              73.8161238,
+              18.4905417
+            ],
+            [
+              73.8161208,
+              18.4907411
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1105747977,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.7669338,
+              18.5116395
+            ],
+            [
+              73.7670659,
+              18.5122652
+            ],
+            [
+              73.767259,
+              18.5122328
+            ],
+            [
+              73.7673247,
+              18.512496
+            ],
+            [
+              73.7672811,
+              18.5127428
+            ],
+            [
+              73.7681381,
+              18.5131389
+            ],
+            [
+              73.7683647,
+              18.5127097
+            ],
+            [
+              73.7681998,
+              18.512615
+            ],
+            [
+              73.7681535,
+              18.5125558
+            ],
+            [
+              73.7678973,
+              18.5120141
+            ],
+            [
+              73.7678276,
+              18.5118831
+            ],
+            [
+              73.7677384,
+              18.511754
+            ],
+            [
+              73.767263,
+              18.5111468
+            ],
+            [
+              73.7672033,
+              18.5111302
+            ],
+            [
+              73.767198,
+              18.5111639
+            ],
+            [
+              73.7672295,
+              18.5116707
+            ],
+            [
+              73.7669331,
+              18.5116256
+            ],
+            [
+              73.7669338,
+              18.5116395
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1172951517,
+        "name": "Ryan International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_name:mr": "रायन इंटरनॅशनल स्कूल"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8113739,
+              18.4737635
+            ],
+            [
+              73.8118145,
+              18.4737635
+            ],
+            [
+              73.8118145,
+              18.4736214
+            ],
+            [
+              73.8120746,
+              18.4736214
+            ],
+            [
+              73.8120746,
+              18.4739111
+            ],
+            [
+              73.8113738,
+              18.4739111
+            ],
+            [
+              73.8113739,
+              18.4737635
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1197605287,
+        "name": "Helios International School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.7958759,
+              18.4745671
+            ],
+            [
+              73.7959098,
+              18.4742559
+            ],
+            [
+              73.7953383,
+              18.4741682
+            ],
+            [
+              73.7953152,
+              18.4742237
+            ],
+            [
+              73.7958759,
+              18.4745671
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1245480881,
+        "name": "Late Gulabrao Tukaram Wanjale School Ground",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Pune",
+        "osm_addr:district": "Pune",
+        "osm_addr:postcode": "411023",
+        "osm_addr:street": "New Ahire Gaon Road",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.7884899,
+              18.4616778
+            ],
+            [
+              73.7883498,
+              18.4615293
+            ],
+            [
+              73.7883311,
+              18.4614171
+            ],
+            [
+              73.7883609,
+              18.4612706
+            ],
+            [
+              73.7884899,
+              18.4611868
+            ],
+            [
+              73.7886424,
+              18.4611248
+            ],
+            [
+              73.7890285,
+              18.461175
+            ],
+            [
+              73.7894318,
+              18.4612393
+            ],
+            [
+              73.7897375,
+              18.4613035
+            ],
+            [
+              73.7898449,
+              18.4614212
+            ],
+            [
+              73.7898717,
+              18.4615785
+            ],
+            [
+              73.78983,
+              18.4617108
+            ],
+            [
+              73.7896891,
+              18.4618122
+            ],
+            [
+              73.7894636,
+              18.4618495
+            ],
+            [
+              73.789088,
+              18.4617996
+            ],
+            [
+              73.7884899,
+              18.4616778
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1271173140,
+        "name": "Nanded City Ground",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_access": "private",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8343742,
+              18.4454997
+            ],
+            [
+              73.8343214,
+              18.4449385
+            ],
+            [
+              73.8343681,
+              18.4448826
+            ],
+            [
+              73.8343661,
+              18.4447515
+            ],
+            [
+              73.8343946,
+              18.4447303
+            ],
+            [
+              73.8343946,
+              18.4446358
+            ],
+            [
+              73.8346832,
+              18.4446146
+            ],
+            [
+              73.8347056,
+              18.4449385
+            ],
+            [
+              73.8346629,
+              18.4452374
+            ],
+            [
+              73.8346202,
+              18.4454418
+            ],
+            [
+              73.8343742,
+              18.4454997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1271971192,
+        "name": "vision school ground",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8111247,
+              18.4739535
+            ],
+            [
+              73.8111324,
+              18.4735667
+            ],
+            [
+              73.8121482,
+              18.4735364
+            ],
+            [
+              73.8121345,
+              18.4739443
+            ],
+            [
+              73.8111247,
+              18.4739535
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1386960250,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.7886756,
+              18.4915902
+            ],
+            [
+              73.788408,
+              18.4914185
+            ],
+            [
+              73.7881125,
+              18.4916116
+            ],
+            [
+              73.7888533,
+              18.4921368
+            ],
+            [
+              73.7890662,
+              18.491868
+            ],
+            [
+              73.7886756,
+              18.4915902
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1410504206,
+        "name": "Rosary School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8428441,
+              18.4575301
+            ],
+            [
+              73.8428363,
+              18.4572755
+            ],
+            [
+              73.8436174,
+              18.457259
+            ],
+            [
+              73.8436205,
+              18.4575036
+            ],
+            [
+              73.8428441,
+              18.4575301
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1517384413,
+        "name": "Unnamed school",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_education": "school"
+      }
+    }
+  ],
+  "category": "schools",
+  "count": 60
+}

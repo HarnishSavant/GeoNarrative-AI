@@ -122,24 +122,47 @@ KNOWN_LOCATIONS = {
 
 @router.get("/locations/search")
 async def search_location(q: str = Query(..., description="Search query for location")):
-    """Search for a location by name"""
-    results = []
-    query_lower = q.lower()
-    for key, loc in KNOWN_LOCATIONS.items():
-        if query_lower in key or query_lower in loc["name"].lower():
-            results.append(loc)
+    """Search for a location by name dynamically via Nominatim"""
+    from app.services.osm_service import OSMService
+    geo = await OSMService.geocode_city(q)
+    if geo:
+        return {
+            "name": geo["display_name"],
+            "lat": geo["lat"],
+            "lon": geo["lon"],
+            "bbox": geo["bbox"]
+        }
     
-    if not results:
-        # Default fallback
-        results.append({
-            "name": q,
-            "lat": 18.5204 + random.uniform(-5, 5),
-            "lng": 73.8567 + random.uniform(-5, 5),
-            "country": "Unknown",
-            "state": "Unknown",
-        })
-    
-    return {"results": results}
+    # Fallback to Pune
+    return {
+        "name": "Pune, Maharashtra, India",
+        "lat": 18.5204,
+        "lon": 73.8567,
+        "bbox": {"lat_min": 18.4, "lat_max": 18.6, "lon_min": 73.7, "lon_max": 73.9}
+    }
+
+
+@router.get("/locations/osm")
+async def get_osm_layer(
+    city: str = Query(...),
+    category: str = Query(...),
+    lat_min: float = Query(...),
+    lat_max: float = Query(...),
+    lon_min: float = Query(...),
+    lon_max: float = Query(...)
+):
+    """Fetch live OSM GeoJSON features for a bounding box"""
+    from app.services.osm_service import OSMService
+    bbox = {
+        "lat_min": lat_min,
+        "lat_max": lat_max,
+        "lon_min": lon_min,
+        "lon_max": lon_max
+    }
+    geojson = await OSMService.fetch_osm_features(city, category, bbox)
+    if not geojson:
+        return {"type": "FeatureCollection", "features": []}
+    return geojson
 
 
 # ============================================================

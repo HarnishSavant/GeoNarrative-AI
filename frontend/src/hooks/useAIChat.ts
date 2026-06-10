@@ -78,7 +78,10 @@ What would you like to investigate?`,
             sources: ["OSM Nominatim Geocoder", "Overpass API"],
           },
         };
-        setMessages((prev) => [...prev, locationMsg]);
+        setMessages((prev) => {
+          if (prev.some((m) => m.id === locationMsg.id)) return prev;
+          return [...prev, locationMsg];
+        });
       }
     }
   }, [currentLocation]);
@@ -301,10 +304,10 @@ Please check the file and try uploading again.`,
       setIsTyping(true);
 
       try {
-        // Package prior context
-        const chatContext = messages.slice(-6).map((msg) => ({
+        // Package prior context — 10 messages for strong follow-up understanding
+        const chatContext = messages.slice(-10).map((msg) => ({
           role: msg.role,
-          content: msg.content.substring(0, 500),
+          content: msg.content.substring(0, 800),
         }));
 
         // Query the live FastAPI PostGIS backend
@@ -323,6 +326,7 @@ Please check the file and try uploading again.`,
           metadata: {
             dataPoints: response.metadata?.data_points,
             sources: response.metadata?.sources,
+            agent_trace: response.metadata?.agent_trace,
           },
         };
 
@@ -356,6 +360,22 @@ Please check the file and try uploading again.`,
           metadata: {
             dataPoints: Math.floor(50 + Math.random() * 250),
             sources: ["Local Simulation Engine"],
+            agent_trace: {
+              user_query: text.trim(),
+              detected_intent: text.toLowerCase().includes("hospital") ? "hospitals_in_flood" :
+                               text.toLowerCase().includes("school") ? "schools_near_rivers" :
+                               text.toLowerCase().includes("shelter") ? "nearest_shelters" :
+                               text.toLowerCase().includes("road") ? "flood_prone_roads" : "conversational",
+              selected_tool: "Rule-Based Mock Simulation",
+              spatial_operation: text.toLowerCase().includes("hospital") ? "ST_Contains" :
+                                 text.toLowerCase().includes("school") ? "ST_DWithin & ST_Distance" :
+                                 text.toLowerCase().includes("shelter") ? "KNN Index Search (<->)" : "None (Simulated)",
+              parameters: { location: currentLocation || "Unknown", mode: dashboardMode },
+              records_found: Math.floor(10 + Math.random() * 50),
+              map_action: "Trigger fallback mock visualization overlay",
+              report_action: "Generate fallback report section",
+              processing_time: 0.12
+            }
           },
         };
         setMessages((prev) => [...prev, aiMessage]);

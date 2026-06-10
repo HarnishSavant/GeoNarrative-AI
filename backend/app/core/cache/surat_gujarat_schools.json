@@ -1,0 +1,339 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8123965,
+          21.1860732
+        ]
+      },
+      "properties": {
+        "id": 1236209052,
+        "name": "Tapidas & Tulsidas Varajdas School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7716011,
+          21.1591959
+        ]
+      },
+      "properties": {
+        "id": 4414602907,
+        "name": "Lancer Army School",
+        "category": "schools",
+        "osm_type": "node",
+        "osm_addr:postcode": "395007",
+        "osm_addr:street": "Dumas Road",
+        "osm_amenity": "school",
+        "osm_name:en": "Lancer Army School",
+        "osm_opening_hours": "Mo-Sa 08:00-17:30",
+        "osm_phone": "0261-2212735"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8102989,
+              21.1837436
+            ],
+            [
+              72.8107874,
+              21.182415
+            ],
+            [
+              72.8114329,
+              21.1826213
+            ],
+            [
+              72.8109444,
+              21.1839499
+            ],
+            [
+              72.8102989,
+              21.1837436
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 135967792,
+        "name": "Vanita Vishram School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.7518826,
+              21.1412263
+            ],
+            [
+              72.752875,
+              21.1402257
+            ],
+            [
+              72.753185,
+              21.1404548
+            ],
+            [
+              72.752242,
+              21.1414915
+            ],
+            [
+              72.7518826,
+              21.1412263
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 257581526,
+        "name": "K.V.-3",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.7238637,
+              21.1250805
+            ],
+            [
+              72.723912,
+              21.12453
+            ],
+            [
+              72.7233165,
+              21.12448
+            ],
+            [
+              72.7233326,
+              21.1240447
+            ],
+            [
+              72.7228981,
+              21.1239946
+            ],
+            [
+              72.7229786,
+              21.1235843
+            ],
+            [
+              72.7236277,
+              21.1236143
+            ],
+            [
+              72.7237832,
+              21.1229438
+            ],
+            [
+              72.7247381,
+              21.1230439
+            ],
+            [
+              72.7245825,
+              21.1251355
+            ],
+            [
+              72.7238637,
+              21.1250805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 257584717,
+        "name": "Delhi Public School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_building": "no",
+        "osm_check_date": "2024-12-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8093063,
+              21.1753971
+            ],
+            [
+              72.8106069,
+              21.1755685
+            ],
+            [
+              72.810826,
+              21.1750346
+            ],
+            [
+              72.8095254,
+              21.1746754
+            ],
+            [
+              72.8093063,
+              21.1753971
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 275854756,
+        "name": "St. Xaviers School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:street": "Ghod Dhod Road",
+        "osm_amenity": "school",
+        "osm_building:levels": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.7918099,
+              21.1751629
+            ],
+            [
+              72.79201,
+              21.1746204
+            ],
+            [
+              72.7928029,
+              21.1749625
+            ],
+            [
+              72.7928288,
+              21.174921
+            ],
+            [
+              72.7929437,
+              21.1749659
+            ],
+            [
+              72.7929214,
+              21.1750039
+            ],
+            [
+              72.7931475,
+              21.1750869
+            ],
+            [
+              72.7931623,
+              21.1750592
+            ],
+            [
+              72.793203,
+              21.1750627
+            ],
+            [
+              72.7931882,
+              21.1751145
+            ],
+            [
+              72.793292,
+              21.1751456
+            ],
+            [
+              72.7930771,
+              21.1756155
+            ],
+            [
+              72.7929992,
+              21.1755844
+            ],
+            [
+              72.7918099,
+              21.1751629
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 563383131,
+        "name": "C.C Shah Sarvajanik English High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_addr:city": "Surat",
+        "osm_addr:postcode": "395007",
+        "osm_amenity": "school",
+        "osm_description": "English and Gujrati Medium School for Students from Jr. Kg till 12th Grade"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.8018052,
+              21.1770134
+            ],
+            [
+              72.802506,
+              21.177459
+            ],
+            [
+              72.8025768,
+              21.1773732
+            ],
+            [
+              72.8018512,
+              21.1769276
+            ],
+            [
+              72.8018052,
+              21.1770134
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1449669407,
+        "name": "Lourdes Convent High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_education": "school"
+      }
+    }
+  ],
+  "category": "schools",
+  "count": 8
+}

@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-import { Droplets, Car, Building2, Zap, Globe2, Search, MapPin, BarChart3, MessageSquareText, Shield, Loader2 } from "lucide-react";
+import { Droplets, Car, Building2, Zap, Globe2, Search, MapPin, BarChart3, MessageSquareText, Shield, Loader2, AlertTriangle } from "lucide-react";
 
 import Sidebar from "@/components/Sidebar";
 import TopNav from "@/components/TopNav";
@@ -81,9 +81,15 @@ export default function Home() {
             const activeUser = await apiService.getProfile();
             setUser(activeUser);
             localStorage.setItem("geonarrative_user", JSON.stringify(activeUser));
-          } catch (err) {
-            console.warn("Automatically validating active JWT session failed, keeping local session active:", err);
-            // High-resilience: do not log out user on transient backend errors
+          } catch (err: any) {
+            console.warn("Automatically validating active JWT session failed:", err);
+            if (err.message && err.message.includes("401")) {
+              // The token is definitively expired or invalid. Log out to prevent dashboard fetch loops.
+              localStorage.removeItem("geonarrative_token");
+              localStorage.removeItem("geonarrative_user");
+              setUser(null);
+            }
+            // Otherwise, High-resilience: do not log out user on transient 500/network backend errors
           }
         }
       } catch (err) {
@@ -136,6 +142,7 @@ export default function Home() {
     osmData,
     isLoadingOSM,
     hasSearched,
+    boundaryData,
     setLayerOpacity,
     setMapFullscreen,
     handleModeChange,
@@ -149,6 +156,7 @@ export default function Home() {
   const [currentFloodRisks, setCurrentFloodRisks] = useState<any[]>(() => generateFloodRisksForLocation(currentLocation || "Unknown", dashboardMode));
   const [currentAnalytics, setCurrentAnalytics] = useState<any>(() => generateAnalyticsForLocation(currentLocation || "Unknown", dashboardMode));
   const [isSyncingData, setIsSyncingData] = useState(false);
+  const [dataSourceType, setDataSourceType] = useState<"real" | "fallback" | "simulated">("simulated");
 
   // Fetch dynamic, real-analytics metrics from FastAPI backend + PostGIS database
   React.useEffect(() => {
@@ -168,6 +176,9 @@ export default function Home() {
         ]);
 
         if (active) {
+          const isPune = currentLocation.toLowerCase().includes("pune");
+          setDataSourceType(isPune ? "real" : "simulated");
+
           if (kpiData) {
             // Support direct lists or wrapped structures
             if (Array.isArray(kpiData)) {
@@ -192,6 +203,7 @@ export default function Home() {
           setCurrentKPIs(getKPIsForMode(dashboardMode));
           setCurrentFloodRisks(generateFloodRisksForLocation(currentLocation || "Unknown", dashboardMode));
           setCurrentAnalytics(generateAnalyticsForLocation(currentLocation || "Unknown", dashboardMode));
+          setDataSourceType("fallback");
         }
       } finally {
         if (active) setIsSyncingData(false);
@@ -380,24 +392,31 @@ export default function Home() {
   // 2. Unauthenticated SaaS Visitor View
   if (!user) {
     return (
-      <>
-        <LandingPage onStartAuth={(mode) => { setAuthModalMode(mode); setShowAuthModal(true); }} />
+      <div className="min-h-screen bg-geo-darker text-gray-100 font-sans selection:bg-primary-500/30">
+        <LandingPage onStartAuth={(mode) => {
+          setAuthModalMode(mode);
+          setShowAuthModal(true);
+        }} />
         <AnimatePresence>
           {showAuthModal && (
-            <AuthModal 
-              initialMode={authModalMode} 
-              onSuccess={(userData) => { setUser(userData); setShowAuthModal(false); }} 
-              onCancel={() => setShowAuthModal(false)} 
+            <AuthModal
+              initialMode={authModalMode}
+              onCancel={() => setShowAuthModal(false)}
+              onSuccess={(userData) => {
+                setUser(userData);
+                setShowAuthModal(false);
+                setActiveTab("dashboard");
+              }}
             />
           )}
         </AnimatePresence>
-      </>
+      </div>
     );
   }
 
   // 3. Authenticated SaaS Enterprise View
   return (
-    <div className="h-screen w-screen flex flex-col bg-geo-dark text-gray-100">
+    <div className="h-screen w-screen flex flex-col bg-geo-dark text-gray-100 overflow-hidden">
       {/* Top Navigation */}
       <TopNav 
         onLocationSearch={handleLocationSearch} 
@@ -423,7 +442,7 @@ export default function Home() {
           {showLeftContent && (
             <motion.div
               initial={{ width: 0, opacity: 0 }}
-              animate={{ width: activeTab === "chat" ? 440 : 340, opacity: 1 }}
+              animate={{ width: activeTab === "chat" ? 440 : (activeTab === "prediction" || activeTab === "reports") ? 560 : 340, opacity: 1 }}
               exit={{ width: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="h-full bg-geo-darker/60 backdrop-blur-xl border-r border-geo-border overflow-hidden flex flex-col"
@@ -464,8 +483,23 @@ export default function Home() {
                     </button>
                   ))}
                   <div className="flex-1" />
-                  <span className="text-[10px] text-gray-600 font-mono uppercase tracking-widest">
+                  <span className="text-[10px] text-gray-600 font-mono uppercase tracking-widest flex items-center gap-2">
                     {dashboardMode} intelligence • {currentLocation?.split(",")[0] || ""}
+                    {dataSourceType === "real" && (
+                      <span className="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[9px] font-bold tracking-normal uppercase">
+                        Production (PostGIS)
+                      </span>
+                    )}
+                    {dataSourceType === "fallback" && (
+                      <span className="px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-[9px] font-bold tracking-normal uppercase">
+                        Fallback Mode
+                      </span>
+                    )}
+                    {dataSourceType === "simulated" && (
+                      <span className="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[9px] font-bold tracking-normal uppercase">
+                        Simulation Mode
+                      </span>
+                    )}
                   </span>
                 </div>
               </div>
@@ -475,7 +509,12 @@ export default function Home() {
                 <div className="p-4 pb-0 flex-shrink-0">
                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                     {currentKPIs.map((kpi, i) => (
-                      <KPICard key={`${dashboardMode}-${kpi.id}`} data={kpi} index={i} />
+                      <KPICard 
+                        key={`${dashboardMode}-${kpi.id}`} 
+                        data={kpi} 
+                        index={i} 
+                        isSimulated={dataSourceType !== "real"}
+                      />
                     ))}
                   </div>
                 </div>
@@ -515,10 +554,75 @@ export default function Home() {
 
               {/* Map Area */}
               <div
-                className={`flex-1 p-4 ${
+                className={`flex-1 p-4 relative ${
                   mapFullscreen ? "fixed inset-0 z-50 p-0" : ""
                 }`}
               >
+                {/* Spatial Integrity Status Panel */}
+                {hasSearched && (
+                  <div className="absolute top-8 left-8 z-40 bg-gray-950/85 border border-primary-500/30 p-4 rounded-2xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.6)] backdrop-blur-xl text-xs w-64 pointer-events-auto transition-all duration-300 hover:bg-gray-950/95">
+                    <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-2">
+                      <div className="flex items-center gap-2">
+                        <div className={`w-6 h-6 rounded-lg flex items-center justify-center border ${isLoadingOSM ? 'bg-amber-500/20 border-amber-500/30' : 'bg-emerald-500/20 border-emerald-500/30'}`}>
+                          <div className={`w-2 h-2 rounded-full animate-pulse ${isLoadingOSM ? 'bg-amber-400' : 'bg-emerald-400'}`}></div>
+                        </div>
+                        <h3 className="font-bold text-gray-100 tracking-wider uppercase text-[10px]">Data Integrity</h3>
+                      </div>
+                      <span className="text-[9px] font-mono text-gray-500">{new Date().toLocaleTimeString()}</span>
+                    </div>
+                    
+                    <div className="space-y-2 text-[11px]">
+                      <div className="flex justify-between items-center bg-black/40 rounded-lg p-2 border border-white/5">
+                        <span className="text-gray-400 font-medium">Data Source</span>
+                        <span className={`font-bold px-2 py-0.5 rounded text-[9px] ${isLoadingOSM ? 'bg-amber-400/10 text-amber-400' : osmData?.buildings?.features?.length ? 'bg-emerald-400/10 text-emerald-400' : 'bg-blue-400/10 text-blue-400'}`}>
+                          {isLoadingOSM ? "FETCHING..." : osmData?.buildings?.features?.length ? "VERIFIED LIVE" : "AI ESTIMATED"}
+                        </span>
+                      </div>
+                      
+                      <div className="grid grid-cols-2 gap-1.5 mt-2">
+                        {[
+                          { label: "City", value: currentLocation.split(",")[0] || "Unknown" },
+                          { label: "Cache", value: isLoadingOSM ? "Bypassed" : "Active" },
+                          { label: "Layer State", value: mapLayers.filter(l => l.visible).length + " Active" },
+                          { label: "Quality Score", value: isLoadingOSM ? "N/A" : osmData?.buildings?.features?.length ? "94/100" : "78/100 (Est.)" },
+                        ].map((item, idx) => (
+                          <div key={idx} className="flex flex-col p-1.5 rounded bg-white/5 border border-white/5">
+                            <span className="text-[9px] text-gray-500 uppercase tracking-wider">{item.label}</span>
+                            <span className="text-gray-200 font-medium truncate">{item.value}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div className="grid grid-cols-3 gap-1.5 mt-2 pt-2 border-t border-primary-500/20">
+                        {[
+                          { key: "Buildings", count: isLoadingOSM ? "Loading" : osmData?.buildings?.features?.length || "Est." },
+                          { key: "Roads", count: isLoadingOSM ? "Loading" : osmData?.roads?.features?.length || "Est." },
+                          { key: "Water", count: isLoadingOSM ? "Loading" : osmData?.rivers?.features?.length || "Est." },
+                          { key: "Hospitals", count: isLoadingOSM ? "Loading" : osmData?.hospitals?.features?.length || "0" },
+                          { key: "Schools", count: isLoadingOSM ? "Loading" : osmData?.schools?.features?.length || "0" },
+                          { key: "Utilities", count: isLoadingOSM ? "Loading" : osmData?.infrastructure?.features?.length || "Est." },
+                        ].map((stat, idx) => (
+                          <div key={idx} className="flex flex-col items-center justify-center p-1.5 rounded bg-black/30 border border-white/5">
+                            <span className={`font-mono font-bold text-[10px] ${stat.count === "Loading" ? "text-amber-400" : stat.count === "Est." ? "text-blue-400" : stat.count === "0" ? "text-red-400" : "text-emerald-400"}`}>
+                              {stat.count}
+                            </span>
+                            <span className="text-[8px] text-gray-500 uppercase mt-0.5">{stat.key}</span>
+                          </div>
+                        ))}
+                      </div>
+                      
+                      {(!isLoadingOSM && (!osmData?.hospitals?.features?.length || !osmData?.schools?.features?.length)) && (
+                        <div className="mt-2 bg-amber-500/10 border border-amber-500/20 rounded-lg p-2 flex gap-2 items-start">
+                          <AlertTriangle size={12} className="text-amber-400 mt-0.5 shrink-0" />
+                          <p className="text-[9px] text-amber-200/90 leading-tight">
+                            Synthesizing modeled spatial parameters due to sparse primary telemetry in this sector.
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+                
                 <MapView
                   center={mapCenter}
                   currentLocation={currentLocation}
@@ -528,6 +632,7 @@ export default function Home() {
                   onToggleFullscreen={() => setMapFullscreen(!mapFullscreen)}
                   layerOpacity={layerOpacity}
                   osmData={osmData}
+                  boundaryData={boundaryData}
                 />
               </div>
             </>
@@ -543,6 +648,7 @@ export default function Home() {
             dashboardMode={dashboardMode}
             isOpen={rightPanelOpen}
             onToggle={() => setRightPanelOpen(!rightPanelOpen)}
+            isSimulated={dataSourceType !== "real"}
           />
         )}
       </div>

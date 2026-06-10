@@ -308,6 +308,39 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
     return plan.replace("_", " ").toUpperCase();
   };
 
+  if (isLoading && !billing) {
+    return (
+      <div className="p-6 space-y-6 h-full overflow-y-auto custom-scrollbar bg-geo-darker/20">
+        {/* Header skeleton */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-geo-border/60">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full animate-skeleton" />
+            <div className="space-y-2">
+              <div className="w-32 h-4 rounded animate-skeleton" />
+              <div className="w-24 h-3 rounded animate-skeleton" />
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <div className="w-20 h-8 rounded-lg animate-skeleton" />
+            <div className="w-20 h-8 rounded-lg animate-skeleton" />
+            <div className="w-20 h-8 rounded-lg animate-skeleton" />
+          </div>
+        </div>
+
+        {/* Content Grid skeletons */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="h-36 rounded-2xl animate-skeleton" />
+          <div className="h-36 rounded-2xl animate-skeleton" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="h-56 rounded-2xl animate-skeleton" />
+          <div className="h-56 rounded-2xl animate-skeleton" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="p-6 space-y-6 h-full overflow-y-auto custom-scrollbar bg-geo-darker/20">
       

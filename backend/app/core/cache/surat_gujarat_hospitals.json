@@ -1,0 +1,3339 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7522692,
+          21.1399347
+        ]
+      },
+      "properties": {
+        "id": 2630750312,
+        "name": "Dispensary",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8139384,
+          21.1841759
+        ]
+      },
+      "properties": {
+        "id": 3655463848,
+        "name": "Smt. R. B. Shah Mahavir Super Speciality Hospital / Shri Bachubhai Dahyabhai Mehta Mahavir Heart Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "At. Shree Mahavir Health Campus, Opposite Jeevan Bharti School",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7782917,
+          21.1677348
+        ]
+      },
+      "properties": {
+        "id": 6968440404,
+        "name": "DWTI - Prabhu General Hospital and Bankers Heart Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Opposite Lake View Garden, B/H Shardayatan School, Floral Park Road, Umra",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8122222,
+          21.1851558
+        ]
+      },
+      "properties": {
+        "id": 6968717498,
+        "name": "Tender Touch Childrens Hospital and Neonatal Unit",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "2nd Floor , Ornate House ,Athwa Gate , Ring Road",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7956163,
+          21.1658104
+        ]
+      },
+      "properties": {
+        "id": 6968861292,
+        "name": "Healing Hands Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "Surat",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Prasham Building, City Light Road",
+        "osm_addr:housenumber": "2nd Floor, Prasham Apartment, Opposite Lavanya Market",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_addr:street": "City Light Road",
+        "osm_amenity": "hospital",
+        "osm_emergency": "yes",
+        "osm_healthcare:speciality": "general;otolaryngology",
+        "osm_opening_hours": "24/7",
+        "osm_phone": "+91-97127-17557",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "https://sudeepenthospital.com/",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7962993,
+          21.1774952
+        ]
+      },
+      "properties": {
+        "id": 6969601207,
+        "name": "Dr. Sachdev Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "5&6Th Floor, Platinum Plaza, Near Pooja Abhishek, Parle Point",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.820981,
+          21.1851177
+        ]
+      },
+      "properties": {
+        "id": 6970074032,
+        "name": "Asutosh Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Beside Kshetrapal Mandir, Rajeshree Hall Road, Majura Gate",
+        "osm_addr:postcode": "395002",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7893178,
+          21.169823
+        ]
+      },
+      "properties": {
+        "id": 6970498540,
+        "name": "New City Hospital and Polyclinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "9, Dev Deep Soceity Lane, Umra",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7848067,
+          21.1961714
+        ]
+      },
+      "properties": {
+        "id": 6970512534,
+        "name": "New Tech Surgical Hospital & Physio Care Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "2001, 2nd Floor, Riddhi Residency,Beside Jalram Temple, L.P.Savani Road, Adajan",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8187789,
+          21.1810242
+        ]
+      },
+      "properties": {
+        "id": 6970536532,
+        "name": "Shreyash Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Swaminarayan Complex, OppositeMajuragate Ring Road",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8207731,
+          21.1851508
+        ]
+      },
+      "properties": {
+        "id": 6970635475,
+        "name": "Happy and Healthy Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "B/141.1st Floor, Shankheshwar Complex, Opposite Raymonds Show Room, Kailasnagar",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7783573,
+          21.1537876
+        ]
+      },
+      "properties": {
+        "id": 6970647030,
+        "name": "Maitraiya Multi Speciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Navsari",
+        "osm_addr:full": "1st Floor, Jinendra Complex, Opposite Mental Hospital, Maroli",
+        "osm_addr:postcode": "396436",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8193831,
+          21.183799
+        ]
+      },
+      "properties": {
+        "id": 6970647035,
+        "name": "Sharda Hospital And Research Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Beside Kailasnagar Jain Derasar,Majuragate -Shankhuar Road",
+        "osm_addr:postcode": "395002",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8199981,
+          21.1853503
+        ]
+      },
+      "properties": {
+        "id": 6970670688,
+        "name": "Girish Group Of Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shankeshwar Complex, Majuragate",
+        "osm_addr:postcode": "395002",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8155784,
+          21.1925984
+        ]
+      },
+      "properties": {
+        "id": 6970699145,
+        "name": "Arpan Public Charitable Trust",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "2nd Floor, Kinara Apartment, Makkai Pool, Nanpura",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_operator:type": "government",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8165607,
+          21.1931398
+        ]
+      },
+      "properties": {
+        "id": 6970722854,
+        "name": "Dr. Kapse Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Akshar Complex, 1st Floor, Near Kwality Hotel, Makkaipool",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.79815,
+          21.1895986
+        ]
+      },
+      "properties": {
+        "id": 6974252918,
+        "name": "Baps Pramukh Swami Hospital, Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Baps Pramukh Swami Hospital, Shri Pramukh Swami Maharaj Marg",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8131147,
+          21.187808
+        ]
+      },
+      "properties": {
+        "id": 6974384224,
+        "name": "Anand Hospital - Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1/568-B, Por Mohallo. Opp State Bank Of India Timaliyawad, Nanpura",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8049485,
+          21.1966785
+        ]
+      },
+      "properties": {
+        "id": 6974557467,
+        "name": "Bhadra Memorial Eye Institute",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "5, Kalpna Society, Adajan Road",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8141548,
+          21.1678183
+        ]
+      },
+      "properties": {
+        "id": 6974943940,
+        "name": "Pals Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "30, Vardhaman Complex, Opposite Uma Bhavan, Bavan",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7976954,
+          21.1958807
+        ]
+      },
+      "properties": {
+        "id": 6975025228,
+        "name": "Lamha Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3Road Floor, Devi Plaza Bldg., Opposite Shriram Petrol Pump, Anandmahal Road, Adajan",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8007317,
+          21.1949379
+        ]
+      },
+      "properties": {
+        "id": 6975249239,
+        "name": "Naaz Maternity and Gynaec Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Bharuch",
+        "osm_addr:full": "37-1 Ankur Society,B/H Cbi , Panchbatti",
+        "osm_addr:postcode": "392009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7863684,
+          21.1689176
+        ]
+      },
+      "properties": {
+        "id": 6975338512,
+        "name": "Saurabh Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3Road Flr., 4Th Flr., Veerbhadra Complex, Opposite Svnt College, I Chchanath, Parle Point Parle Point",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8109308,
+          21.189091
+        ]
+      },
+      "properties": {
+        "id": 6975579244,
+        "name": "Me And Mummy Hospital and Ivf and Endoscopy Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3Road Floor, Jalnidhi, Oppl Bahumali Building, Nanpura",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8197458,
+          21.1842123
+        ]
+      },
+      "properties": {
+        "id": 6975837285,
+        "name": "Bhavin Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "22-23, Swagat Complex, Next To Mehta Park, Opp Sneh Milan Garden, Majura Gate",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.816721,
+          21.1677432
+        ]
+      },
+      "properties": {
+        "id": 6976021354,
+        "name": "Aayush Medi Care Hospital and Cardiac Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "47, Sweety Society, Nr, Uma Bhavan, Bhatar Road",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8133776,
+          21.1662806
+        ]
+      },
+      "properties": {
+        "id": 6976079673,
+        "name": "Amruta Hospital, Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Raj Complex , Bhatar Road",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.812239,
+          21.1895538
+        ]
+      },
+      "properties": {
+        "id": 6976102823,
+        "name": "Pravar Superspeciality Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "B/S Ramji Mandir , Opposite Navdi Ovara Nanpura",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8184466,
+          21.1740833
+        ]
+      },
+      "properties": {
+        "id": 6976102879,
+        "name": "Shree Guru Nanak Dharmarth Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Yogi Krupa Society, Near Elbee Cinema, Shree Gurunanak Devji Marg (Bhatar Road)",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8108919,
+          21.1612611
+        ]
+      },
+      "properties": {
+        "id": 6977612383,
+        "name": "Mehta Hospital, Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Opp:Sub Jai, Icici Ring Road",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8215456,
+          21.1854321
+        ]
+      },
+      "properties": {
+        "id": 6977803471,
+        "name": "Genesis Hospital and Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "6-10-11, 3Road Floor, Jash Point, Kshertrapal Mandir, Kailash Nagar, Sagrampura",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8189385,
+          21.1822272
+        ]
+      },
+      "properties": {
+        "id": 6978416545,
+        "name": "Sunflower Fertility Endoscopy Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "309-10. Kashi Plaza,Near Children Hospital,Majuragate",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7951165,
+          21.1975712
+        ]
+      },
+      "properties": {
+        "id": 6979376711,
+        "name": "Parth Hospital, Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Samay Complex, Anand Mahal Road, Adajan (Opposite Sagar Complex)",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7882326,
+          21.1918269
+        ]
+      },
+      "properties": {
+        "id": 6979386920,
+        "name": "Arham Hospital and Icu",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "201 - 202, 2nd - Floor,Vasupujaya Residency,OppositeTrinity Business Park,L.P Savani Road Adajan",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8121203,
+          21.1746165
+        ]
+      },
+      "properties": {
+        "id": 6979502302,
+        "name": "Krupa Orthopaedic Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shivam, Near New Life Hospital,Godh dod Road",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7916443,
+          21.1981676
+        ]
+      },
+      "properties": {
+        "id": 6979632846,
+        "name": "Roshan Eye Hospital And Laser Center",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1st Floor, Shivam Complex, Opp Gangeshwar Mahadev Mandir, New Adajan Road",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8163904,
+          21.1716914
+        ]
+      },
+      "properties": {
+        "id": 6981541210,
+        "name": "The Rainbow Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3rd Floor, Shiv Shakti Shopping Centre, B/S. Raj Empire Multiples, Bharat Road",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7874574,
+          21.1697767
+        ]
+      },
+      "properties": {
+        "id": 6981657447,
+        "name": "Sushrut Hospital, Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shakuntal''B'' Apartment, Nr Sanghvi Tower , Gujarat Gas Circle, Adajan Road",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8118964,
+          21.1610348
+        ]
+      },
+      "properties": {
+        "id": 6981903598,
+        "name": "Maheta Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "101-102, Swapnadeep Apts, Opp- Sarvodaya School, Bhatter Char Rasta, Althan",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8154054,
+          21.1897181
+        ]
+      },
+      "properties": {
+        "id": 6981939832,
+        "name": "Rallis Orthopaedic Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Opposite Handloom House, Main Road, Nanpura",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8162905,
+          21.1920413
+        ]
+      },
+      "properties": {
+        "id": 6981979571,
+        "name": "Nupoor General Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Makai Pool, Nanpura",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.778987,
+          21.1505125
+        ]
+      },
+      "properties": {
+        "id": 6982058554,
+        "name": "Ankur Children Hospital and Neonatal Nursery",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shahid Vijay Complex,Near Baroda Pristage , Varachha Road",
+        "osm_addr:postcode": "395004",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8204153,
+          21.1850798
+        ]
+      },
+      "properties": {
+        "id": 6982092244,
+        "name": "Netrang Eye Hospital and Laser Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "246 Shankheshwar Complex, Opp Raymond Showroom , Majura Gate",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8141749,
+          21.1875073
+        ]
+      },
+      "properties": {
+        "id": 6982527962,
+        "name": "Veragiwala Hospital Critical Care And Diabetes Management Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shree Hariom Plaza Complex,Nanpura,Timaliawad",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8136505,
+          21.1889247
+        ]
+      },
+      "properties": {
+        "id": 6983623769,
+        "name": "Kadhiwala Orthopaedic Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Valsad",
+        "osm_addr:full": "Athugar Street State Bank Of India Nanpura Surat",
+        "osm_addr:postcode": "396001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8188092,
+          21.1813358
+        ]
+      },
+      "properties": {
+        "id": 6983710471,
+        "name": "Arora Surgical",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Surat",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8142554,
+          21.183779
+        ]
+      },
+      "properties": {
+        "id": 6986279435,
+        "name": "Gandhi Ortho-Care and Physiotherapy",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "C - 191, President Plaza, Near Rto",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8113277,
+          21.1754812
+        ]
+      },
+      "properties": {
+        "id": 6986376125,
+        "name": "Vidya Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "F-16, Jolly Sqare, Ram Chowk, Ghod Dod Road",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7964173,
+          21.1650156
+        ]
+      },
+      "properties": {
+        "id": 6986887248,
+        "name": "Muskan Children's Hospital - Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "101, Square Point, Near Shakti Dham Mandir, Citylight",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8173413,
+          21.1755757
+        ]
+      },
+      "properties": {
+        "id": 6987096005,
+        "name": "Raj Orthopaedic Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "20, Shital Shoping Centre Square, Ground Floor, Near Reliance Fresh, Olf L.B. Cinema, Bhatar Road",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8097117,
+          21.1875854
+        ]
+      },
+      "properties": {
+        "id": 6987941152,
+        "name": "Divyam Hospital, Ring Road",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Surat",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8174901,
+          21.1753005
+        ]
+      },
+      "properties": {
+        "id": 6987956862,
+        "name": "New Pooja Hospital, Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "105,106 Shiv Darshan Aptt Near Elbee Talkies Bhatar Road",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.809642,
+          21.1620053
+        ]
+      },
+      "properties": {
+        "id": 6988329207,
+        "name": "Chakshu Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1st Floor, Shiv Complex, Opposite Evershine Marbles, Near Bhatar Char Rasta, Udhna-Magdalla Road",
+        "osm_addr:postcode": "395003",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8206927,
+          21.185007
+        ]
+      },
+      "properties": {
+        "id": 6988575085,
+        "name": "Ketan Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "144-147,Shankheshwar Complex, Majuragate Road",
+        "osm_addr:postcode": "395002",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8202555,
+          21.1781793
+        ]
+      },
+      "properties": {
+        "id": 6989218850,
+        "name": "Government Medical College and New Civil  Hospital, Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:city": "surat",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Majura Gate",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_addr:street": "Ghod Dhod Road",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_healthcare:speciality": "general",
+        "osm_operator": "Govt Of Gujarat",
+        "osm_operator:type": "government",
+        "osm_source": "OpenGovernmentData",
+        "osm_website": "http://gmcsurat.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7973641,
+          21.1939188
+        ]
+      },
+      "properties": {
+        "id": 6989219193,
+        "name": "Aakanksha Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "126, Aradhna Nagar, Sabzi Market, Anand Mahal Road, Adajan",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8036445,
+          21.194589
+        ]
+      },
+      "properties": {
+        "id": 6991199341,
+        "name": "Harsh Hospital and Maternity Home, Surat",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shakuntal B Apartment,Nr Sanghvi Tower, Gujrat Gas Circle",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8143029,
+          21.1485207
+        ]
+      },
+      "properties": {
+        "id": 7590363937,
+        "name": "Pearl Children's Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Isana, The Business Hub, Besides Dmart, Bamroli, VIP Road, Althan, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.814271,
+          21.148656
+        ]
+      },
+      "properties": {
+        "id": 7590363977,
+        "name": "Lotus Eye & Chest Care Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "407/408, Isana The Business Hub Near D-Mart, Bamroli Althan Expressway, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.81449,
+          21.148643
+        ]
+      },
+      "properties": {
+        "id": 7590363993,
+        "name": "Harsh Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Isana The Business Hub Near D-Mart, Bamroli Althan Expressway, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8170943,
+          21.1484852
+        ]
+      },
+      "properties": {
+        "id": 7590364028,
+        "name": "Aarogyam Hospital, Udhna",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Nem Nagar, Pandesara, Udhna, Surat",
+        "osm_addr:postcode": "394220",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7988536,
+          21.1933702
+        ]
+      },
+      "properties": {
+        "id": 7592471226,
+        "name": "Jogi Ayurved Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "F-1, 3rd Floor, Shriji Arcade, Anand Mahal Road, Guru Ram Pavan Bhumi, Adajan Gam, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7883154,
+          21.1967327
+        ]
+      },
+      "properties": {
+        "id": 7592471228,
+        "name": "Chetali Chat Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "54, Green Valley Road, TGB, Uma Park Society, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8029498,
+          21.1941805
+        ]
+      },
+      "properties": {
+        "id": 7592471234,
+        "name": "Sarvodaya ENT Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "60/61, 1st Floor, Sardar Complex, Hazira - Adajan Road, Gujarat Gas Circle, Near Sardar Bridge, Green Enclave, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7794299,
+          21.1928242
+        ]
+      },
+      "properties": {
+        "id": 7592471246,
+        "name": "Saumya Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Pal Village Road, Adajan Gam, Pal Gam, Surat",
+        "osm_addr:postcode": "394510",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.777805,
+          21.1898052
+        ]
+      },
+      "properties": {
+        "id": 7592471254,
+        "name": "Datar Ayurved Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Green City Road, Pal Gam, Surat",
+        "osm_addr:postcode": "394510",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7945114,
+          21.1907392
+        ]
+      },
+      "properties": {
+        "id": 7592471259,
+        "name": "Vijyalaxmi Hospital and Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Vijyalaxmi Hills, F-1,1st Floor, Near Kavi Kalapi Garden, Opposite Gujarat Gas Company, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7863785,
+          21.193573
+        ]
+      },
+      "properties": {
+        "id": 7592471262,
+        "name": "Malavia Eye Hospital & Laser Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3rd Floor, Shivalik Western, L.P. Savani Road, Above TGB Restaurant, Adajan-Pal, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7984168,
+          21.1938813
+        ]
+      },
+      "properties": {
+        "id": 7592471269,
+        "name": "Aamnya Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shreeji Arcade, 401, Anand Mahal Road, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7956742,
+          21.1896365
+        ]
+      },
+      "properties": {
+        "id": 7592471276,
+        "name": "Dr. Miral Eye Care Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "301-302, Titanium Square, Adajan Gam Char Rasta, Adajan Hazira Main Road, Infront of N.Y Pizza, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.787606,
+          21.19309
+        ]
+      },
+      "properties": {
+        "id": 7592471279,
+        "name": "Garvit Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "104, LP Savani Road, TGB, Guru Ram Pavan Bhumi, Adajan Gam, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7796261,
+          21.1898792
+        ]
+      },
+      "properties": {
+        "id": 7592471281,
+        "name": "Veer Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "201, Helios, Above Surat People's Bank , Galaxy Circle, Green City Road, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8003479,
+          21.1926075
+        ]
+      },
+      "properties": {
+        "id": 7592471293,
+        "name": "Desai's Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Mayuri Apartment, Hazira - Adajan Road, Saint Park Society, Guru Ram Pavan Bhumi, Adajan Gam, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7916558,
+          21.188221
+        ]
+      },
+      "properties": {
+        "id": 7592471296,
+        "name": "Garvit ENT Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "401 Eon Square, Next to Shell Petrol Pump, LP Savani Road, Opposite Chroma, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.788204,
+          21.191887
+        ]
+      },
+      "properties": {
+        "id": 7592471302,
+        "name": "Spanee Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Second Floor, Vasupujya Complex, Madhuvan Circle, L P Savani Road, Adajan, Opposite Trinity Business Park, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.786628,
+          21.193313
+        ]
+      },
+      "properties": {
+        "id": 7592471303,
+        "name": "Vivek Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "107, LP Savani Road, TGB, Adajan Gam, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7898613,
+          21.1893867
+        ]
+      },
+      "properties": {
+        "id": 7592471312,
+        "name": "Akshika Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "503/504, White Orchid, LP Savani Road, Beside Shell Petrol Pump, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.783281,
+          21.183137
+        ]
+      },
+      "properties": {
+        "id": 7592471314,
+        "name": "Dr. Nikita's Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "306, Marvella Business Hub, Hazira Road, Opposite RTO office, Pal Gam, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.787242,
+          21.193963
+        ]
+      },
+      "properties": {
+        "id": 7592471316,
+        "name": "Eva Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor, Milionarie Business Park, Above McDonald's, L.P.Savani Road, Adajan-Pal, Kalpana Chawla Marg, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.779421,
+          21.192678
+        ]
+      },
+      "properties": {
+        "id": 7592471318,
+        "name": "Hetvi Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Raj Arcade, 301, Fourth Floor, Lift A, Pal Gam Circle, Pal Road, Near Landmark - Fortune Mall, Galaxy Circle, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.780703,
+          21.186918
+        ]
+      },
+      "properties": {
+        "id": 7592471321,
+        "name": "Apoorva Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "101, Siddhagiri Residency, Opposite Vaishnav Devi Lifestyle, Near Nishal Circle, Pal Gam, Surat",
+        "osm_addr:postcode": "394510",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.788268,
+          21.191779
+        ]
+      },
+      "properties": {
+        "id": 7592471325,
+        "name": "Pareenima Eye Hospital & Laboratory",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "S-6, 2nd Floor, Vasupujiya Complex, Near Madhuvan Circle, LP Savani Road, Opposite Trinity Business Park, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8003112,
+          21.1925535
+        ]
+      },
+      "properties": {
+        "id": 7592471329,
+        "name": "Masoom Children's Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "102, Mayuri Apartment, Near Water Tank, Bhulka Bhavan Crossing, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7983182,
+          21.1918845
+        ]
+      },
+      "properties": {
+        "id": 7592471334,
+        "name": "Ajay Orthopaedic Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "A2, Adajan Road, Guru Ram Pavan Bhumi, Adajan Gam, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.789898,
+          21.194567
+        ]
+      },
+      "properties": {
+        "id": 7592471338,
+        "name": "Arogyam Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "BSNL Adajan Office, Kalpana Chawla Marg, Hariom Nagar Society, Adajan Gam, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.789775,
+          21.191752
+        ]
+      },
+      "properties": {
+        "id": 7592471342,
+        "name": "Wings Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Agarwal House, LP Savani Road, Behind McDonald's, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.784639,
+          21.196402
+        ]
+      },
+      "properties": {
+        "id": 7592471346,
+        "name": "Ujjaval Eye Hospital Dental Clinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "First Floor, Riddhi Residency, Besides Jalaram Temple, LP Savani Road, Guru Ram Pavan Bhumi, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8068956,
+          21.193089
+        ]
+      },
+      "properties": {
+        "id": 7592471348,
+        "name": "Shalby Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Anand Vatika Society, Param Housing Society, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.787621,
+          21.193027
+        ]
+      },
+      "properties": {
+        "id": 7592471354,
+        "name": "Clear View Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "404, 4th Floor, Wood Square, LP Savani Road, TGB, Adajan, Surat",
+        "osm_addr:postcode": "395009",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7953751,
+          21.1440512
+        ]
+      },
+      "properties": {
+        "id": 7592765737,
+        "name": "Ayushyam Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor, Palladium Complex, VIP Road, Near Khatu-Shyam Temple, Bharthana, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8191756,
+          21.17491
+        ]
+      },
+      "properties": {
+        "id": 7592765738,
+        "name": "Saachi Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Off Prajapati Brahma Marg, Near Akashganga Apartment, Sanskar Nagar, Majura Gate, Surat",
+        "osm_addr:postcode": "395002",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.773964,
+          21.13523
+        ]
+      },
+      "properties": {
+        "id": 7592765739,
+        "name": "Noble Multispeciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor, Wing 'C', Aagam Shopping World, Canal Road, Near Agrawal Vidya Vihar School, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8158518,
+          21.1633137
+        ]
+      },
+      "properties": {
+        "id": 7592765740,
+        "name": "Bansri Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Dhanral Apartment, Bhatar Road, Gandhi Kutir, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7772693,
+          21.1564037
+        ]
+      },
+      "properties": {
+        "id": 7592765741,
+        "name": "Ansh Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1st Floor, Krishnadham Complex, Krishnadham Society, Near Pragati Nagar Circle, Piplod, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.797222,
+          21.1436197
+        ]
+      },
+      "properties": {
+        "id": 7592765743,
+        "name": "Muve Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor, VIP Plaza, Vesu Main Road, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8178094,
+          21.1745672
+        ]
+      },
+      "properties": {
+        "id": 7592765744,
+        "name": "Shreeji Multispeciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Narayan Krupa Apartment, Bhatar Road, Opposite Shreemad Rajchandra Ashram, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7786722,
+          21.1528414
+        ]
+      },
+      "properties": {
+        "id": 7592765745,
+        "name": "Anand Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor Milestone, Milagro Complex, Opposite Gujarat Gas CNG Station, Udhna, Udhana - Magdalla Road, Vesu, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.808438,
+          21.1559306
+        ]
+      },
+      "properties": {
+        "id": 7592765747,
+        "name": "Shiv Netra General & Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "G-2, Saikrupa Complex, Althan, Opposite Shri Ram Marble, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "Opthalmologist",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7968077,
+          21.1627025
+        ]
+      },
+      "properties": {
+        "id": 7592765748,
+        "name": "Jyoti Surgical & General Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "B-13, City Light Road, Panas Gam, City Light Town, Athwa, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7757918,
+          21.154568
+        ]
+      },
+      "properties": {
+        "id": 7592765750,
+        "name": "Florence Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Krishnadham Society, Piplod, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.799228,
+          21.1779692
+        ]
+      },
+      "properties": {
+        "id": 7592765751,
+        "name": "Eye Q Super Speciality Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3rd Floor, SNS House, Above TBZ Showroom, Near Court Building, Parle Point, Athwa Lines, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8174438,
+          21.1756245
+        ]
+      },
+      "properties": {
+        "id": 7592765752,
+        "name": "Dhruv Orthopaedic & Surgical Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "20, 21, 22, Shital Shopping Centre, Ground Floor, Bhatar Road, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8171569,
+          21.1639084
+        ]
+      },
+      "properties": {
+        "id": 7592765753,
+        "name": "Shivam Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "R. B. Complex, Varachha Road, Opposite Baroda Prestress, Swaminagar Society, Athwa, Surat",
+        "osm_addr:postcode": "359007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.804746,
+          21.146386
+        ]
+      },
+      "properties": {
+        "id": 7592765757,
+        "name": "Shraddha Maternity & Multispeciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3rd Floor, Anupam Square Complex, VIP Road, Althan Char Rasta",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8060624,
+          21.1749415
+        ]
+      },
+      "properties": {
+        "id": 7592765759,
+        "name": "Pujara Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Ghod Dod Road, Opposite Black Jack Theatre, Amarakunj Society, Athwa, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7893332,
+          21.1712723
+        ]
+      },
+      "properties": {
+        "id": 7592765760,
+        "name": "Prizma Eyecare Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1, Surat - Dumas Road, Meghdoot Society, City Light Town, Athwa, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.816813,
+          21.171881
+        ]
+      },
+      "properties": {
+        "id": 7592765762,
+        "name": "Sethi Hospital and Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "401-408, Rajhans Olympia, Bhatar Road, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.773658,
+          21.163371
+        ]
+      },
+      "properties": {
+        "id": 7592765763,
+        "name": "Sushrut Ayurved Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Nehru nagar, Ichhanath Road, Dumas Road, Piplod, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.809798,
+          21.1765574
+        ]
+      },
+      "properties": {
+        "id": 7592765766,
+        "name": "Shivjoti Multispeciality Hopsital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Ghoddod Road, Near St. Xavier's School, Ram Chowk, Athwa, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8119524,
+          21.1741042
+        ]
+      },
+      "properties": {
+        "id": 7592765767,
+        "name": "Gokani Rutam Maternity Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "99, Shubhashnagar Society, Ghod Dod Road, Near Ram Chowk, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7781574,
+          21.1402709
+        ]
+      },
+      "properties": {
+        "id": 7592765768,
+        "name": "Anant Multispeciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "VIP High Street, Vesu, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.797516,
+          21.1737699
+        ]
+      },
+      "properties": {
+        "id": 7592765770,
+        "name": "Vision Eye Super Speciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Kakadiya Complex, 3rd Floor, Near Union Point, Ghod Dod Road, Parle Point, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.796454,
+          21.165095
+        ]
+      },
+      "properties": {
+        "id": 7592765775,
+        "name": "Aman Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor, Siddhi Shopping Complex, Opposite Utsav Party Plot, City Light, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.809253,
+          21.1688281
+        ]
+      },
+      "properties": {
+        "id": 7592765776,
+        "name": "Dev Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shop No.A-4, Swami Vivekanand Marg, Canal Road, Jivkor Nagar, Jeevkar Nagar, Athwa, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.812564,
+          21.164348
+        ]
+      },
+      "properties": {
+        "id": 7592765777,
+        "name": "Sanjivani Hospital & ICCU Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Silver Point Complex, F3-F7, S1-S8, Bhatar Road, Opposite Vidya Bharti School, Bhatar, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.799505,
+          21.153403
+        ]
+      },
+      "properties": {
+        "id": 7592765778,
+        "name": "VYOM Advanced Orthopaedic & Women's Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1, MJ Park Society, Near Chinagate Society, Near DRB College, New City Light Road, Althan, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.781188,
+          21.1489029
+        ]
+      },
+      "properties": {
+        "id": 7592765781,
+        "name": "Pavan Advanced Orthopaedic Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "11, Vrundavan Society, Near Someshwara Enclave, Vesu, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.804953,
+          21.17918
+        ]
+      },
+      "properties": {
+        "id": 7592765782,
+        "name": "Shree Nandan Hospital & Test tube Baby Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "419, Athwa Lines, Shree Nandan Hospital, Arogya Nagar, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7953808,
+          21.1442111
+        ]
+      },
+      "properties": {
+        "id": 7592765783,
+        "name": "Fairsight Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Shyam Temple, 4th Floor, Palladium Complex, Near Khatu, VIP Road, Bharthana, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7609256,
+          21.1358355
+        ]
+      },
+      "properties": {
+        "id": 7592765785,
+        "name": "Marina Grand Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "VIP Road, Opposite Nandini 3, E3 Block, Vesu, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8171907,
+          21.1643872
+        ]
+      },
+      "properties": {
+        "id": 7592765787,
+        "name": "Umiya Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1st Floor, Ashapuri Complex, Udhana - Magdalla Road, Bhatar, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.809904,
+          21.1597077
+        ]
+      },
+      "properties": {
+        "id": 7592765788,
+        "name": "Shree Shubh Hospital & Infertility Clinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Sankalp Complex, 3rd Floor, Bhatar Road, New City Light, Althan, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7836042,
+          21.146682
+        ]
+      },
+      "properties": {
+        "id": 7592765789,
+        "name": "Sanjivni Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "F -5,6, Narayan Square Complex, VIP Road, Vesu, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8122449,
+          21.1718065
+        ]
+      },
+      "properties": {
+        "id": 7592765791,
+        "name": "Ruta Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Jamna Nagar, Subhash Nagar, Athwa, Surat",
+        "osm_addr:postcode": "395008",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8122386,
+          21.162039
+        ]
+      },
+      "properties": {
+        "id": 7592765793,
+        "name": "Suraj Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Althan Road, Uma Bhawan Society, Althan, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7702614,
+          21.1580702
+        ]
+      },
+      "properties": {
+        "id": 7592765794,
+        "name": "Sunshine Global Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Dumas Road, Beside Big Bazar, Piplod, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8057484,
+          21.147472
+        ]
+      },
+      "properties": {
+        "id": 7592765796,
+        "name": "Prathna Multispeciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3rd Floor, Blue Arc Complex, Near Althan Garden, VIP Road, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8099531,
+          21.159764
+        ]
+      },
+      "properties": {
+        "id": 7592765797,
+        "name": "Bansari Children Hospital, Althan",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Althan Tenament Plot No.189, Althan Road, Bhatar Char Rasta, Vishal Nagar Society, New City Light, Althan, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.795781,
+          21.166893
+        ]
+      },
+      "properties": {
+        "id": 7592765800,
+        "name": "Agrawal Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3rd Floor, Bhagwati Aasthan House, City Light Road, Athwa, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.773903,
+          21.145547
+        ]
+      },
+      "properties": {
+        "id": 7592765801,
+        "name": "Priya Women's Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Aagam Arcade, Vesu Main Road, Vesu, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7977125,
+          21.1554722
+        ]
+      },
+      "properties": {
+        "id": 7592765802,
+        "name": "Ratnadeep Cancer Centre & Multispeciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Plot No 1,2,3, Rajvansh Society, Opposite Spring Valley Apartments, New City Light, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8164392,
+          21.1717655
+        ]
+      },
+      "properties": {
+        "id": 7592765804,
+        "name": "Netram Eye Hospital & Corneal Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1st Floor, Shiv Shakti Complex, Bhatar Road, Near Raj Olympia, Bhatar, Athwa, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7957148,
+          21.1443409
+        ]
+      },
+      "properties": {
+        "id": 7592765805,
+        "name": "KCJ Hospital & Maternity Home",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor, Palladium Complex, VIP Road, Near Shyam Mandir, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.804799,
+          21.146285
+        ]
+      },
+      "properties": {
+        "id": 7592765806,
+        "name": "Ashish Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Althan, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7944403,
+          21.1752111
+        ]
+      },
+      "properties": {
+        "id": 7592765807,
+        "name": "Zankhana Maternity Hospital & Laproscopic Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "First Floor, Narmada Apartment, Opposite Ambika Niketan Road, Parle Point, Athwalines, Athwa, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8049625,
+          21.1435164
+        ]
+      },
+      "properties": {
+        "id": 7592765808,
+        "name": "Bombay Multi Speciality Hospital, Bhimrad",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor, Atlanta Mall, Bhimrad-Althan Road, Apcha Nagar, Bhimrad, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7958061,
+          21.1642327
+        ]
+      },
+      "properties": {
+        "id": 7592765809,
+        "name": "Dr. Rohan's Eye Hospital & Laser Centre",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "1st Floor, Shivpooja Complex, Above Bank of Baroda, City Light Road, Beside Utsav Party Plot, City Light Town, Athwa, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7734722,
+          21.1454524
+        ]
+      },
+      "properties": {
+        "id": 7592765811,
+        "name": "Tanish Orthopaedic & Women's Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "12, B Wing, Aagam Arcade, Vesu, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7730912,
+          21.1504624
+        ]
+      },
+      "properties": {
+        "id": 7592765817,
+        "name": "Sanjeevani Multi Speciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "2nd Floor, Western Business Park, Opposite S.D Jain School, Vesu Char Rasta, Udhana - Magdalla Road, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7871352,
+          21.142719
+        ]
+      },
+      "properties": {
+        "id": 7592765821,
+        "name": "Om Women's & Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "4th Floor, Four Point, Near Maniba Park, Opposite C.B. Patel Health Club, VIP Road, Vesu, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7963341,
+          21.1625868
+        ]
+      },
+      "properties": {
+        "id": 7592765822,
+        "name": "Vikas Children Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "H-16-17, Sajni Complex, Near Naher, City Light Road, Opposite Surya Complex, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8099031,
+          21.1594505
+        ]
+      },
+      "properties": {
+        "id": 7592765823,
+        "name": "Harsh General Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Sy. No. 16, P. No.18, Shop No. 1, Vanden Co-Operative Housing Society, Near Bus Stand Althan, Bharat Char Rasta, Atop Nagar Society, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8057471,
+          21.1517542
+        ]
+      },
+      "properties": {
+        "id": 7592765830,
+        "name": "Jinwala Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "5, Jankipark, On Althan Naher, Near Vanita Residency, Althan, Surat",
+        "osm_addr:postcode": "395017",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7889554,
+          21.170692
+        ]
+      },
+      "properties": {
+        "id": 7592765831,
+        "name": "Saurabh Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "3rd & 4th Floor, VeerbhaRoadra Building, Opposite SVNIT College, Besides IOC Petrol Pump Ichhanath, Dumas Road, Parle Point, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8085452,
+          21.17581
+        ]
+      },
+      "properties": {
+        "id": 7592765832,
+        "name": "Chinmaya Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Ghod Dod Road, Adarsh Society, Athwa, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.795844,
+          21.166825
+        ]
+      },
+      "properties": {
+        "id": 7592765836,
+        "name": "Bombay Multi Speciality Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Bhagwati Ashish 2, Complex, 9, City Light Road, Athwa, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8048401,
+          21.1431427
+        ]
+      },
+      "properties": {
+        "id": 7592765838,
+        "name": "Joshi Eye Hospital and Psychiatric Clinic",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "20, 21, Atlanta Shopping Mall, Bhimrad Crossing, Bhimrad-Althan Road, Althan, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7777609,
+          21.1653007
+        ]
+      },
+      "properties": {
+        "id": 7592765839,
+        "name": "Savani Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Gymkhana Road, Nandi Park Society, Piplod, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7976084,
+          21.1770475
+        ]
+      },
+      "properties": {
+        "id": 7592765841,
+        "name": "Tejas Eye Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "R/4, Shri Somanath Society, Umra Jakat Naka, Athwa Lines, Surat",
+        "osm_addr:postcode": "395001",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_healthcare": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7901523,
+          21.1718972
+        ]
+      },
+      "properties": {
+        "id": 7592765842,
+        "name": "Ishaan Maternity Hospital",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_addr:district": "Surat",
+        "osm_addr:full": "Sargam Shopping Center, M,/27, Surat - Dumas Road, Parle Point, Somanath Society, Umra Gam, Athwa, Surat",
+        "osm_addr:postcode": "395007",
+        "osm_addr:state": "Gujarat",
+        "osm_amenity": "hospital",
+        "osm_source": "Local Knowledge"
+      }
+    }
+  ],
+  "category": "hospitals",
+  "count": 202
+}

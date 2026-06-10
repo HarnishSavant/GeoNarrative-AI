@@ -1,0 +1,775 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1270523,
+          28.548657
+        ]
+      },
+      "properties": {
+        "id": 6311067869,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_check_date": "2019-02-23",
+        "osm_emergency": "fire_hydrant",
+        "osm_fire_hydrant:type": "pipe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1640789,
+          28.5565837
+        ]
+      },
+      "properties": {
+        "id": 10272739172,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1232595,
+          28.5508656
+        ]
+      },
+      "properties": {
+        "id": 10314014709,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant",
+        "osm_fire_hydrant:position": "sidewalk",
+        "osm_fire_hydrant:type": "pillar",
+        "osm_source": "survey 2023"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1232636,
+          28.5501809
+        ]
+      },
+      "properties": {
+        "id": 10314593109,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant",
+        "osm_fire_hydrant:position": "sidewalk",
+        "osm_fire_hydrant:type": "pillar",
+        "osm_source": "survey 2023"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1644953,
+          28.5568855
+        ]
+      },
+      "properties": {
+        "id": 10680147683,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.165138,
+          28.5569983
+        ]
+      },
+      "properties": {
+        "id": 10749920199,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1650562,
+          28.5573615
+        ]
+      },
+      "properties": {
+        "id": 10749935151,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1649365,
+          28.5577832
+        ]
+      },
+      "properties": {
+        "id": 10749947358,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1494397,
+          28.5311595
+        ]
+      },
+      "properties": {
+        "id": 10750321533,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1559333,
+          28.5410708
+        ]
+      },
+      "properties": {
+        "id": 10750327970,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1935093,
+          28.5431142
+        ]
+      },
+      "properties": {
+        "id": 11708040107,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant",
+        "osm_fire_hydrant:type": "wall",
+        "osm_ref": "FHC-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1158559,
+          28.5445344
+        ]
+      },
+      "properties": {
+        "id": 11868159857,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1158501,
+          28.5444028
+        ]
+      },
+      "properties": {
+        "id": 11868160262,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1159332,
+          28.5447518
+        ]
+      },
+      "properties": {
+        "id": 11868168495,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1159191,
+          28.54433
+        ]
+      },
+      "properties": {
+        "id": 11868175799,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1551761,
+          28.5884063
+        ]
+      },
+      "properties": {
+        "id": 11881256745,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant",
+        "osm_fire_hydrant:type": "pipe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1551849,
+          28.5880323
+        ]
+      },
+      "properties": {
+        "id": 11881256774,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant",
+        "osm_fire_hydrant:type": "pipe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1211036,
+          28.5538541
+        ]
+      },
+      "properties": {
+        "id": 12017304817,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant",
+        "osm_fire_hydrant:position": "green",
+        "osm_fire_hydrant:type": "pillar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0882458,
+          28.5540831
+        ]
+      },
+      "properties": {
+        "id": 12127690580,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0717962,
+          28.5899703
+        ]
+      },
+      "properties": {
+        "id": 12223915409,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_power": "substation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.071639,
+          28.5878809
+        ]
+      },
+      "properties": {
+        "id": 12223941334,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_power": "substation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1784649,
+          28.6187169
+        ]
+      },
+      "properties": {
+        "id": 12255430269,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0696209,
+          28.5852381
+        ]
+      },
+      "properties": {
+        "id": 12620240422,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_power": "substation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1695042,
+          28.5891405
+        ]
+      },
+      "properties": {
+        "id": 12676083728,
+        "name": "Auxiliary Substation Room",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_operator": "Delhi Metro Rail Corporation",
+        "osm_power": "substation",
+        "osm_substation": "transmission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1925277,
+          28.5689263
+        ]
+      },
+      "properties": {
+        "id": 12965623436,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant",
+        "osm_fire_hydrant:type": "pillar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1876925,
+          28.5800098
+        ]
+      },
+      "properties": {
+        "id": 12965669599,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1860727,
+          28.579359
+        ]
+      },
+      "properties": {
+        "id": 12965716377,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1840072,
+          28.5786547
+        ]
+      },
+      "properties": {
+        "id": 12965716836,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1858425,
+          28.5814192
+        ]
+      },
+      "properties": {
+        "id": 12965717345,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1877681,
+          28.5792826
+        ]
+      },
+      "properties": {
+        "id": 12965720678,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1870882,
+          28.5801701
+        ]
+      },
+      "properties": {
+        "id": 12965721923,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1850997,
+          28.5813198
+        ]
+      },
+      "properties": {
+        "id": 12965722005,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1838085,
+          28.5787579
+        ]
+      },
+      "properties": {
+        "id": 12965725654,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1873293,
+          28.5799114
+        ]
+      },
+      "properties": {
+        "id": 12965730113,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.184811,
+          28.5789534
+        ]
+      },
+      "properties": {
+        "id": 12965730304,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1865826,
+          28.5799194
+        ]
+      },
+      "properties": {
+        "id": 12965731604,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1866453,
+          28.5802952
+        ]
+      },
+      "properties": {
+        "id": 12965735001,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1863332,
+          28.5793447
+        ]
+      },
+      "properties": {
+        "id": 12972971072,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1198021,
+          28.5488916
+        ]
+      },
+      "properties": {
+        "id": 13294706569,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1866351,
+          28.5796697
+        ]
+      },
+      "properties": {
+        "id": 13341855091,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1816924,
+          28.5903669
+        ]
+      },
+      "properties": {
+        "id": 13377090073,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.181507,
+          28.5904042
+        ]
+      },
+      "properties": {
+        "id": 13377112898,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1701175,
+          28.5880478
+        ]
+      },
+      "properties": {
+        "id": 13466938141,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_location": "surface",
+        "osm_power": "substation",
+        "osm_substation": "distribution",
+        "osm_voltage": "110000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.189519,
+          28.5667565
+        ]
+      },
+      "properties": {
+        "id": 13814218886,
+        "name": "Unnamed infrastructure",
+        "category": "infrastructure",
+        "osm_type": "node",
+        "osm_emergency": "fire_hydrant"
+      }
+    }
+  ],
+  "category": "infrastructure",
+  "count": 44
+}
