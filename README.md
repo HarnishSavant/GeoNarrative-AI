@@ -1,170 +1,411 @@
-GeoNarrative AI: Enterprise Digital Twin & Spatial Decision Support System (SDSS)
+🌊 GeoNarrative AI
 
-GeoNarrative AI is a GIS-first Spatial Decision Support System (SDSS) for urban flood analysis, infrastructure exposure assessment, 3D visualization, and geospatial decision-making.
+An Integrated GIS, 3D Digital Twin & GeoAI Framework for Urban Flood Decision Support in Pune
 
-The platform combines enterprise GIS, spatial databases, 3D Digital Twin visualization, flood-modelling workflows, and GeoAI to provide an interactive environment for exploring urban flood scenarios.
+<p align="center">
 
-Current development focus: integrating LiDAR-derived high-resolution terrain, rainfall data, and hydrological/hydrodynamic modelling to improve flood simulation and validation.
+GIS-FIRST • 3D DIGITAL TWIN • FLOOD MODELLING • GEOAI
 
-Core Modules
+<br>
 
-1. 2D GIS & Spatial Analysis
+An evolving geospatial platform for exploring urban flood susceptibility, scenario inundation, infrastructure exposure, and spatial decision support.
 
-ArcGIS Maps SDK for JavaScript
+</p>
 
-ArcGIS Enterprise integration
+🌍 Project Vision
 
-Interactive rivers, buildings, roads, LULC, and terrain layers
+GeoNarrative AI brings together the analytical power of GIS with immersive 3D visualization and AI-assisted spatial exploration.
 
-Spatial queries and feature-level analysis
+The project began as a GIS-based flood susceptibility and exposure prototype for the Pune Municipal Corporation and is now being extended toward a more physically informed flood-modelling platform using LiDAR-derived terrain, rainfall data, hydrological modelling, and hydrodynamic modelling.
 
-Flood susceptibility and infrastructure exposure analysis
+The central idea is:
 
-Localized risk explanation using elevation, slope, proximity, and density indicators
+GIS provides the spatial intelligence. 3D provides the context. GeoAI makes the intelligence easier to explore.
 
-2. 3D Digital Twin
+✨ What GeoNarrative AI Does
 
-CesiumJS-based interactive 3D environment
+Capability
 
-Terrain and building visualization
+What it provides
 
-Flood scenario visualization
+🗺️ GIS Analysis
 
-Scenario controls
+Flood susceptibility and spatial conditioning analysis
 
-Infrastructure exposure visualization
+🏔️ High-Resolution Terrain
 
-Spatial context for disaster-management decision support
+LiDAR-based terrain development
 
-3. Flood Modelling & Data Integration
+🌧️ Rainfall Integration
 
-The modelling workflow is being extended beyond the initial terrain-based scenario approach.
+Event and scenario rainfall inputs
 
-Current development includes:
+🌊 Flood Modelling
 
-LiDAR integration for higher-resolution DEM/DTM generation
+Hydrological / hydrodynamic modelling workflow
 
-Rainfall data integration for event-based and scenario-driven analysis
+🏢 Exposure Analysis
 
-Hydrological modelling for rainfall-runoff estimation
+Building and road exposure assessment
 
-Hydrodynamic modelling workflow for flood propagation
+🌐 2D Web GIS
 
-Historical flood-event data for calibration and validation
+Interactive spatial exploration
 
-Integration of model outputs with the 2D GIS and 3D Digital Twin
+🌎 3D Digital Twin
 
-The objective is to move from a primarily relative susceptibility and scenario framework toward a more physically informed flood-modelling workflow.
+Terrain, buildings and flood scenarios
 
-4. Infrastructure Exposure
+🤖 GeoAI
 
-Spatial intersections are used to estimate potential exposure of:
+Natural-language interaction with spatial information
+
+📊 Decision Support
+
+Scenario comparison, analytics and reporting
+
+📄 Automated Reporting
+
+Generation of structured technical reports
+
+🧭 System Workflow
+
+                    🌍 GEOSPATIAL DATA
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+        LiDAR           Rainfall       GIS Layers
+          │                │        Rivers • LULC
+          │                │        Buildings • Roads
+          └────────────────┼────────────────┘
+                           ▼
+                 🛠️ GEOSPATIAL PROCESSING
+                  ArcGIS Pro • Python
+                           │
+                           ▼
+                 🗄️ SPATIAL DATA PLATFORM
+                     PostgreSQL + PostGIS
+                           │
+             ┌─────────────┴─────────────┐
+             ▼                           ▼
+       🗺️ 2D GIS ANALYSIS          🌧️ FLOOD MODELLING
+       Susceptibility               Hydrological
+       Spatial Queries              Hydrodynamic
+       Exposure                     Scenario Analysis
+             │                           │
+             └─────────────┬─────────────┘
+                           ▼
+                   🌎 3D DIGITAL TWIN
+                        CesiumJS
+                           │
+                 ┌─────────┴─────────┐
+                 ▼                   ▼
+              🤖 GeoAI          📊 Decision Support
+          Spatial Questions     Exposure • Maps
+          Natural Language      Analytics • Reports
+
+🗺️ 1. GIS & Spatial Analysis
+
+The analytical foundation of GeoNarrative AI is built around geospatial data and GIS workflows.
+
+Core analysis
+
+Flood susceptibility mapping
+
+Raster reclassification and overlay
+
+Terrain analysis
+
+Drainage proximity analysis
+
+Land-use / land-cover analysis
+
+Building-density analysis
+
+Infrastructure exposure
+
+Spatial intersection and querying
+
+Esri ecosystem
+
+ArcGIS Pro is used for core geospatial processing and spatial analysis, while ArcGIS Enterprise / ArcGIS Maps SDK for JavaScript provide the foundation for enterprise-oriented web GIS integration.
+
+🏔️ 2. LiDAR & High-Resolution Terrain
+
+A major current development direction is the integration of LiDAR-derived terrain data.
+
+The goal is to improve the representation of:
+
+Urban elevation
+
+Micro-topography
+
+Drainage pathways
+
+Low-lying areas
+
+Building surroundings
+
+Local surface variations
+
+The LiDAR workflow is intended to provide a higher-resolution terrain foundation for the next generation of the flood model.
+
+Current status: LiDAR integration is under active development.
+
+🌧️ 3. Rainfall & Flood Modelling
+
+The project is being extended beyond the original terrain-based scenario approach by introducing rainfall as an important flood-driving input.
+
+Development direction
+
+Rainfall
+   ↓
+Rainfall–Runoff Response
+   ↓
+Hydrological Model
+   ↓
+Flow / Discharge
+   ↓
+Hydrodynamic Model
+   ↓
+Flood Extent / Depth
+   ↓
+Infrastructure Exposure
+
+The objective is to gradually move from a primarily relative susceptibility and scenario framework toward a more physically informed flood-modelling workflow.
+
+Planned model improvements
+
+Event-based rainfall inputs
+
+Rainfall–runoff modelling
+
+River / drainage inputs
+
+Flood depth estimation
+
+Spatial flood propagation
+
+Historical event calibration
+
+Quantitative validation
+
+Important: Hydrological and hydrodynamic modelling components are currently under development and should not be presented as fully calibrated operational forecasting models until validation is completed.
+
+🌊 4. Flood Susceptibility & Scenario Analysis
+
+The initial susceptibility framework uses spatial conditioning factors such as:
+
+Elevation
+
+Slope
+
+Distance to waterways
+
+Land-use / land-cover imperviousness
+
+Building density
+
+These factors are standardized and combined through a GIS-based multicriteria workflow to generate a relative flood susceptibility surface.
+
+The platform also supports severity-based scenario visualization for comparing potential spatial exposure.
+
+🏢 5. Infrastructure Exposure
+
+Flood scenarios are connected with real-world urban assets using spatial operations.
+
+Exposure targets
+
+🏢 Buildings
+
+🛣️ Roads
+
+🏥 Critical infrastructure
+
+👥 Population
+
+🏙️ Other assets where appropriate data are available
+
+Example workflow:
+
+Flood Scenario
+      ↓
+Spatial Intersection
+      ↓
+Buildings / Roads / Assets
+      ↓
+Exposure Statistics
+      ↓
+Decision Support
+
+This moves the analysis from:
+
+“Where could flooding occur?”
+
+to:
+
+“What could be affected?”
+
+🌎 6. 3D Digital Twin Command Center
+
+The 3D environment is powered by CesiumJS.
+
+It brings together:
+
+High-resolution terrain
 
 Buildings
 
 Roads
 
-Critical infrastructure
+Water features
 
-Population and other assets where suitable datasets are available
+Flood scenarios
 
-5. GeoAI
+Exposure information
 
-GeoNarrative AI includes a conversational geospatial interaction layer for querying and interpreting project spatial information using natural language.
+Interactive spatial controls
 
-Example:
+The goal is not simply to create a visually attractive 3D map.
 
-"Which areas have the highest building exposure under the extreme flood scenario?"
+The 3D environment provides spatial context for understanding how terrain, infrastructure and flood conditions interact.
 
-The GeoAI layer is designed to work with project data and analytical outputs rather than act as an independent source of flood predictions.
+GIS provides the analysis; the Digital Twin provides the context.
 
-6. Automated Reporting
+🤖 7. GeoAI Spatial Assistant
 
-Selected spatial analyses and system outputs can be converted into structured technical reports.
+GeoNarrative AI adds a conversational interface over the project's spatial information.
 
-Technology Stack
+Instead of manually searching through multiple layers, users can ask questions such as:
 
-Domain
+“Which areas have the highest building exposure under the extreme scenario?”
 
-Technologies
+or
 
-Frontend
+“Show the critical infrastructure near the affected flood area.”
 
-React, Next.js, TypeScript, Tailwind CSS
+The GeoAI layer is intended to work with the project's spatial database, analytical outputs and available tools.
 
-2D GIS
+Design principle
 
-ArcGIS Maps SDK for JavaScript
+GeoAI assists spatial exploration; it does not replace the underlying GIS analysis.
 
-3D GIS
+📊 8. Spatial Decision Support
 
-CesiumJS
+The different components are brought together into a single decision-support workflow.
 
-Spatial Visualization
+GIS Data
+   ↓
+Spatial Analysis
+   ↓
+Flood Modelling
+   ↓
+Exposure Assessment
+   ↓
+2D GIS + 3D Digital Twin
+   ↓
+GeoAI Interaction
+   ↓
+Decision Support
 
-Mapbox GL JS, deck.gl
+The platform is designed for potential use by:
+
+Municipal corporations
+
+Disaster-management authorities
+
+Urban planners
+
+GIS analysts
+
+Infrastructure managers
+
+Smart-city teams
+
+Researchers
+
+🧰 Technology Stack
+
+GIS & 3D
+
+ArcGIS Pro · ArcGIS Enterprise · ArcGIS Maps SDK for JavaScript · CesiumJS · Mapbox GL JS · deck.gl
+
+Geospatial Data
+
+LiDAR · DEM/DTM · Raster Data · Vector Data · Remote Sensing · OSM
 
 Backend
 
-Python, FastAPI, Uvicorn, Pydantic
+Python · FastAPI · Uvicorn · Pydantic · SQLAlchemy
 
-Database
+Spatial Database
 
-PostgreSQL, PostGIS
-
-Geospatial Processing
-
-ArcGIS Pro, Python
+PostgreSQL · PostGIS
 
 AI / ML
 
-LangChain, LLM APIs, Hugging Face Transformers
+LangChain · LLM APIs · Hugging Face Transformers
+
+Frontend
+
+React · Next.js · TypeScript · Tailwind CSS
+
+Engineering
+
+Docker · Docker Compose · Nginx
 
 Reporting
 
 ReportLab
 
-Infrastructure
+🏗️ Architecture
 
-Docker, Docker Compose, Nginx
+┌─────────────────────────────────────────────────────────┐
+│                    DATA SOURCES                         │
+│ LiDAR │ Rainfall │ DEM │ Rivers │ LULC │ Buildings │ Roads │
+└─────────────────────────┬───────────────────────────────┘
+                          │
+                          ▼
+┌─────────────────────────────────────────────────────────┐
+│              GEOSPATIAL PROCESSING                      │
+│              ArcGIS Pro • Python                        │
+└─────────────────────────┬───────────────────────────────┘
+                          │
+                          ▼
+┌─────────────────────────────────────────────────────────┐
+│                 POSTGRESQL + POSTGIS                    │
+│       Spatial Data • Queries • Exposure • Outputs       │
+└─────────────────────────┬───────────────────────────────┘
+                          │
+              ┌───────────┴───────────┐
+              ▼                       ▼
+┌────────────────────────┐  ┌─────────────────────────────┐
+│       2D GIS            │  │       FLOOD MODELLING      │
+│ ArcGIS / Web GIS        │  │ Hydrological               │
+│ Spatial Analysis        │  │ Hydrodynamic               │
+│ Exposure Analysis       │  │ Scenario Simulation         │
+└────────────┬───────────┘  └─────────────┬───────────────┘
+             │                            │
+             └────────────┬───────────────┘
+                          ▼
+┌─────────────────────────────────────────────────────────┐
+│                  3D DIGITAL TWIN                       │
+│                       CesiumJS                          │
+└─────────────────────────┬───────────────────────────────┘
+                          │
+             ┌────────────┴────────────┐
+             ▼                         ▼
+┌───────────────────────┐   ┌─────────────────────────────┐
+│        GeoAI          │   │    DECISION SUPPORT         │
+│ Spatial Questions     │   │ Maps • Exposure • Reports   │
+│ Natural Language      │   │ Analytics • KPIs            │
+└───────────────────────┘   └─────────────────────────────┘
 
-System Architecture
+🚀 Development Roadmap
 
-Data Sources
-(LiDAR, DEM, Rainfall, Rivers, LULC, Buildings, Roads, Flood Events)
-                         |
-                         v
-             Geospatial Processing
-          (ArcGIS Pro + Python)
-                         |
-                         v
-                  PostgreSQL/PostGIS
-                         |
-              +----------+----------+
-              |                     |
-              v                     v
-       2D GIS / ArcGIS       Flood Modelling
-       Spatial Analysis      Hydrological +
-       Exposure Analysis     Hydrodynamic
-              |                     |
-              +----------+----------+
-                         |
-                         v
-                 3D Digital Twin
-                    CesiumJS
-                         |
-              +----------+----------+
-              |                     |
-              v                     v
-            GeoAI            Decision Support
-      Natural-language       Maps / Exposure /
-      spatial interaction    Reports / KPIs
+✅ Core Prototype
 
-Development Roadmap
-
-Core Prototype
-
-GIS-based flood susceptibility analysis
+GIS-based flood susceptibility workflow
 
 Spatial conditioning-factor processing
 
@@ -172,15 +413,15 @@ Building and road exposure analysis
 
 Scenario-based inundation visualization
 
-PostGIS spatial data management
+PostgreSQL/PostGIS spatial database
 
 CesiumJS 3D visualization
 
 GeoAI-assisted spatial interaction
 
-Automated reporting workflow
+Automated reporting
 
-Current Development
+🔄 Currently Developing
 
 LiDAR-derived high-resolution terrain
 
@@ -192,13 +433,15 @@ Hydrological modelling
 
 Historical flood-event validation
 
-Planned Improvements
+🔮 Next Stage
 
 Calibrated hydrodynamic modelling
 
-Higher-resolution terrain and drainage representation
+Higher-resolution drainage representation
 
 Real-time rainfall and river-level feeds
+
+Flood depth and velocity analysis
 
 Improved population and critical-infrastructure exposure
 
@@ -206,7 +449,7 @@ ArcGIS Enterprise deployment
 
 Operational disaster-management dashboards
 
-Running the Project
+💻 Quick Start
 
 Prerequisites
 
@@ -225,6 +468,7 @@ Cesium ion token where required
 Backend
 
 cd backend
+
 python -m venv venv
 
 # Windows
@@ -234,23 +478,38 @@ venv\Scripts\activate
 source venv/bin/activate
 
 pip install -r requirements.txt
+
 uvicorn app.main:app --reload --port 8000
 
 Frontend
 
 cd frontend
+
 npm install
 npm run dev
 
-Development application:http://localhost:3000
+Open:
 
-Project Positioning
+http://localhost:3000
 
-GeoNarrative AI is a research and development platform exploring how GIS, 3D Digital Twins, flood modelling, spatial databases, and GeoAI can be combined for urban disaster decision support.
+📌 Project Status
 
-It should not be presented as an operational flood forecasting service unless the modelling components have been independently calibrated, validated, and approved for operational use.
+Research + Active Development
 
-Author
+GeoNarrative AI is evolving from a research prototype into a more advanced geospatial flood-modelling and decision-support platform.
 
-Harnish SavantM.Sc. Data Science & Spatial Analytics — Geo-IntelligenceSymbiosis Institute of Geoinformatics, Pune
+The current development priority is:
 
+LiDAR → Rainfall → Hydrological Modelling → Hydrodynamic Modelling → 3D Digital Twin → GeoAI Decision Support
+
+👨‍💻 Author
+
+Harnish Savant
+
+M.Sc. Data Science & Spatial Analytics — Geo-IntelligenceSymbiosis Institute of Geoinformatics, Pune
+
+Research Focus:GIS • Spatial Analytics • Urban Flood Modelling • Digital Twins • GeoAI • Spatial Decision Support
+
+🌐 GeoNarrative AI
+
+Engineering the future of resilient and spatially intelligent cities.
