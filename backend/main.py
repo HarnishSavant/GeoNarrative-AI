@@ -24,12 +24,21 @@ from fastapi.responses import JSONResponse
 
 logger = logging.getLogger("geonarrative_telemetry")
 
+from gis.loader import load_gis_data, unload_gis_data
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Auto-create tables and auto-seed Pune geospatial digital twin data on server boot asynchronously"""
     import asyncio
+    
+    # Initialize the GIS Data Manager
+    load_gis_data()
+    
     asyncio.create_task(init_db_and_seed())
     yield
+    
+    # Cleanup GIS rasters
+    unload_gis_data()
 
 app = FastAPI(
     title="GeoNarrative AI API",
@@ -65,6 +74,19 @@ app.add_middleware(
 
 # Include Enterprise Modular Router
 app.include_router(api_router, prefix="/api/v1")
+
+from gis.api import router as gis_dss_router
+app.include_router(gis_dss_router, prefix="/api", tags=["Decision Support System"])
+
+import os
+from fastapi.staticfiles import StaticFiles
+data_path = os.path.join(os.path.dirname(__file__), "Data")
+if os.path.exists(data_path):
+    app.mount("/api/data", StaticFiles(directory=data_path), name="data")
+
+geojson_path = os.path.join(os.path.dirname(__file__), "app", "core", "cache")
+if os.path.exists(geojson_path):
+    app.mount("/api/geojson", StaticFiles(directory=geojson_path), name="geojson")
 
 async def init_db_and_seed():
     """Attempt to create database tables and seed Pune digital twin spatial datasets in the background"""

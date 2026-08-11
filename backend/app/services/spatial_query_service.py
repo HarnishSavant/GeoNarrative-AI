@@ -63,19 +63,19 @@ class SpatialQueryService:
     @staticmethod
     async def query_schools_near_rivers(session: AsyncSession, distance_m: float = 500.0) -> List[Dict[str, Any]]:
         """
-        Query 2: Identify school facilities within 500m of rivers.
-        Uses: ST_Distance(geom, ST_GeomFromText(river_wkt, 4326))
-        Degree equivalent: 500m ~= 0.0045 degrees.
+        Query 2: Identify school facilities within X meters of rivers.
+        Uses: ST_DWithin and ST_Distance with ST_Geography for accurate real-world meters 
+        instead of Cartesian degree estimations.
         """
         logger.info(f"Executing PostGIS query: Schools within {distance_m}m of rivers.")
-        distance_degrees = distance_m / 111120.0  # Approx degree conversion
 
+        # Cast geometries to geography for accurate meter-based spatial operations
         stmt = (
             select(
                 Infrastructure,
-                func.min(func.ST_Distance(Infrastructure.geom, FloodZone.geom)).label("dist")
+                func.min(func.ST_Distance(func.ST_Geography(Infrastructure.geom), func.ST_Geography(FloodZone.geom))).label("dist_meters")
             )
-            .join(FloodZone, func.ST_DWithin(Infrastructure.geom, FloodZone.geom, distance_degrees))
+            .join(FloodZone, func.ST_DWithin(func.ST_Geography(Infrastructure.geom), func.ST_Geography(FloodZone.geom), distance_m))
             .where(
                 and_(
                     Infrastructure.type.ilike("school"),
@@ -83,17 +83,17 @@ class SpatialQueryService:
                 )
             )
             .group_by(Infrastructure.id)
-            .order_by("dist")
+            .order_by("dist_meters")
         )
 
         result = await session.execute(stmt)
         results = []
-        for infra, dist in result.all():
+        for infra, dist_meters in result.all():
             results.append({
                 "id": infra.id,
                 "name": infra.name,
                 "type": infra.type,
-                "distance_meters": round(dist * 111120.0, 1),
+                "distance_meters": round(dist_meters, 1),
                 "status": infra.status
             })
         return results
@@ -102,7 +102,8 @@ class SpatialQueryService:
     async def query_nearest_shelters(session: AsyncSession, center_lng: float, center_lat: float, limit: int = 3) -> List[Dict[str, Any]]:
         """
         Query 3: Nearest emergency shelters search using spatial index KNN.
-        Uses: PostGIS Index Distance Operator '<->' for O(log N) R-Tree search
+        Uses: PostGIS Index Distance Operator '<->' for O(log N) R-Tree search,
+        and ST_Geography for accurate distance calculation in meters.
         """
         logger.info(f"Executing PostGIS KNN search: shelters near ({center_lng}, {center_lat}).")
         center_point = f"SRID=4326;POINT({center_lng} {center_lat})"
@@ -110,7 +111,7 @@ class SpatialQueryService:
         stmt = (
             select(
                 Infrastructure,
-                func.ST_Distance(Infrastructure.geom, func.ST_GeomFromText(center_point, 4326)).label("dist")
+                func.ST_Distance(func.ST_Geography(Infrastructure.geom), func.ST_Geography(func.ST_GeomFromText(center_point, 4326))).label("dist_meters")
             )
             .where(Infrastructure.type.ilike("shelter"))
             .order_by(Infrastructure.geom.op("<->")(func.ST_GeomFromText(center_point, 4326)))
@@ -119,12 +120,12 @@ class SpatialQueryService:
 
         result = await session.execute(stmt)
         results = []
-        for infra, dist in result.all():
+        for infra, dist_meters in result.all():
             results.append({
                 "id": infra.id,
                 "name": infra.name,
                 "type": infra.type,
-                "distance_km": round(dist * 111.12, 3),
+                "distance_km": round(dist_meters / 1000.0, 3),
                 "status": infra.status
             })
         return results
@@ -187,43 +188,44 @@ class SpatialQueryService:
     async def query_flood_prone_roads(session: AsyncSession) -> List[Dict[str, Any]]:
         """
         Query 6: Identify flood-prone road corridors.
-        Executes a PostGIS line-in-polygon intersection check:
-        ST_Intersects(ST_GeomFromText(road_line, 4326), zone.geom)
+        FIX: Eliminated N+1 query loop bottleneck. Now executes a single spatial join using aliased tables.
+        Executes ST_Intersects between roads and high/critical hazard zones.
         """
-        logger.info("Executing PostGIS query: Flood-prone road corridors.")
-        results = []
-
-        # Query all roads from FloodZone table
-        roads_stmt = select(FloodZone).where(FloodZone.name.like("[roads]%"))
-        roads_result = await session.execute(roads_stmt)
-        roads = roads_result.scalars().all()
-
-        for road in roads:
-            # Check intersections with high/critical flood zones (like rivers)
-            stmt = (
-                select(FloodZone)
-                .where(
-                    and_(
-                        FloodZone.risk_level.in_(["high", "critical"]),
-                        FloodZone.id != road.id,
-                        func.ST_Intersects(road.geom, FloodZone.geom)
-                    )
-                )
+        from sqlalchemy.orm import aliased
+        logger.info("Executing optimized PostGIS single-pass query: Flood-prone road corridors.")
+        
+        Road = aliased(FloodZone)
+        Zone = aliased(FloodZone)
+        
+        # Single spatial join: find all roads that intersect a high/critical zone
+        stmt = (
+            select(
+                Road,
+                func.max(Zone.inundation_depth).label("max_depth"),
+                func.array_agg(Zone.risk_level).label("risk_levels"),
+                func.array_agg(Zone.name).label("impacted_sectors")
             )
-            
-            result = await session.execute(stmt)
-            zones = result.scalars().all()
-            
-            if zones:
-                max_depth = max(z.inundation_depth for z in zones)
-                highest_risk = "critical" if any(z.risk_level == "critical" for z in zones) else "high"
-                results.append({
-                    "road_name": road.name.replace("[roads] ", ""),
-                    "is_flood_prone": True,
-                    "max_inundation_depth_m": round(max_depth, 2),
-                    "highest_risk_level": highest_risk,
-                    "impacted_sectors": [z.name for z in zones]
-                })
+            .join(Zone, and_(
+                func.ST_Intersects(Road.geom, Zone.geom),
+                Zone.risk_level.in_(["high", "critical"]),
+                Zone.id != Road.id
+            ))
+            .where(Road.name.like("[roads]%"))
+            .group_by(Road.id)
+        )
+        
+        result = await session.execute(stmt)
+        results = []
+        for road, max_depth, risk_levels, impacted_sectors in result.all():
+            highest_risk = "critical" if "critical" in (risk_levels or []) else "high"
+            results.append({
+                "road_name": road.name.replace("[roads] ", ""),
+                "is_flood_prone": True,
+                "max_inundation_depth_m": round(max_depth or 0.0, 2),
+                "highest_risk_level": highest_risk,
+                "impacted_sectors": list(set(impacted_sectors or []))
+            })
+        
         return results
 
     # --- DIGITAL TWIN MODE CONNECTORS ---

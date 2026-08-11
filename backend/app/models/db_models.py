@@ -62,6 +62,29 @@ class FloodZone(Base):
     geom = Column(Geometry("MULTIPOLYGON", srid=4326), nullable=False)
 
 
+class HexagonGrid(Base):
+    __tablename__ = "hexagon_grid"
+
+    id = Column(Integer, primary_key=True, index=True)
+    
+    # UNDRR Scores per cell
+    h_score = Column(Float, default=0.0) # Hazard
+    e_score = Column(Float, default=0.0) # Exposure
+    v_score = Column(Float, default=0.0) # Vulnerability
+    c_score = Column(Float, default=1.0) # Capacity
+    
+    risk_score = Column(Float, default=0.0) # 0 to 10
+    risk_level = Column(String, default="low") # low, medium, high, critical
+    
+    # Raw stats
+    population = Column(Integer, default=0)
+    buildings = Column(Integer, default=0)
+    hospitals = Column(Integer, default=0)
+    
+    # Spatial column storing hexagon polygon
+    geom = Column(Geometry("POLYGON", srid=4326), nullable=False)
+
+
 class Infrastructure(Base):
     __tablename__ = "infrastructure"
 
@@ -238,3 +261,39 @@ class AuditLog(Base):
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
     user = relationship("User")
+
+
+class DatasetMetadata(Base):
+    """
+    Research-Grade Geospatial Data Pipeline Metadata
+    Tracks all datasets used in the Pune Metropolitan Region Digital Twin.
+    """
+    __tablename__ = "dataset_metadata"
+
+    id = Column(Integer, primary_key=True, index=True)
+    layer_name = Column(String, nullable=False, index=True) # e.g. "DEM (SRTM)", "Land Use / Land Cover"
+    purpose = Column(String, nullable=False) # e.g. "Elevation, Slope, Aspect", "Urban Expansion"
+    source = Column(String, nullable=False) # Data Provider / Source
+    resolution = Column(String, nullable=False) # Spatial Resolution
+    coverage = Column(String, nullable=False) # Coverage Area
+    date_acquired = Column(DateTime, default=datetime.datetime.utcnow)
+    is_raster = Column(Boolean, default=False)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+    datasets = relationship("SpatialDataset", back_populates="metadata_ref", cascade="all, delete-orphan")
+
+
+class SpatialDataset(Base):
+    """
+    Unified table for storing structural vector assets and spatial telemetry.
+    """
+    __tablename__ = "spatial_datasets"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    dataset_id = Column(Integer, ForeignKey("dataset_metadata.id", ondelete="CASCADE"), nullable=False)
+    
+    # Generic spatial geometry storage supporting points, lines, polygons
+    geom = Column(Geometry("GEOMETRY", srid=4326), nullable=False)
+    properties = Column(JSON, nullable=True) # GeoJSON attributes / feature properties
+    
+    metadata_ref = relationship("DatasetMetadata", back_populates="datasets")

@@ -1,0 +1,30 @@
+{
+  "normal": {
+    "final_temporary_flood_km2": 53.600796799133605,
+    "max_depth_m": 50.80374099507185,
+    "affected_buildings": 11262,
+    "critical_buildings": 8808,
+    "affected_road_km": 751.1884644435945
+  },
+  "moderate": {
+    "final_temporary_flood_km2": 70.00699890555269,
+    "max_depth_m": 65.57249200072147,
+    "affected_buildings": 15903,
+    "critical_buildings": 12154,
+    "affected_road_km": 981.1132137688028
+  },
+  "heavy": {
+    "final_temporary_flood_km2": 89.72350942160125,
+    "max_depth_m": 64.06280554414946,
+    "affected_buildings": 24210,
+    "critical_buildings": 18618,
+    "affected_road_km": 1257.4302863347073
+  },
+  "extreme": {
+    "final_temporary_flood_km2": 133.9661351043155,
+    "max_depth_m": 89.37701779526901,
+    "affected_buildings": 40723,
+    "critical_buildings": 32084,
+    "affected_road_km": 1877.4686446094122
+  }
+}

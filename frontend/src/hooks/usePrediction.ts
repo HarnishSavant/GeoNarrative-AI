@@ -4,6 +4,8 @@ import { useState, useCallback, useEffect } from "react";
 import { DashboardMode } from "@/lib/types";
 import { apiService } from "@/services/apiService";
 
+export type PredictionDomain = "flood" | "traffic" | "urban" | "utility";
+
 export interface PredictionResult {
   overallRisk: "low" | "medium" | "high" | "critical";
   score: number;
@@ -13,7 +15,7 @@ export interface PredictionResult {
   featureImportance?: any[];
 }
 
-export function usePrediction(initialMode: DashboardMode = "flood") {
+export function usePrediction(initialMode: PredictionDomain = "flood") {
   const [isRunning, setIsRunning] = useState(false);
   const [result, setResult] = useState<PredictionResult | null>(null);
 
@@ -56,7 +58,7 @@ export function usePrediction(initialMode: DashboardMode = "flood") {
     setParameters((prev) => ({ ...prev, [id]: value }));
   }, []);
 
-  const runPrediction = useCallback(async (mode: DashboardMode) => {
+  const runPrediction = useCallback(async (mode: PredictionDomain) => {
     setIsRunning(true);
     setResult(null);
 

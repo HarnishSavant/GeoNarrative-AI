@@ -13,6 +13,8 @@ from app.api.v1.endpoints import (
     auth,
     billing,
     enterprise,
+    geodata,
+    raster,
 )
 
 api_router = APIRouter()
@@ -27,7 +29,10 @@ api_router.include_router(flood.router, prefix="/flood", tags=["flood"])
 api_router.include_router(map.router, prefix="/map", tags=["map"])
 api_router.include_router(chat.router, prefix="/chat", tags=["chat"])
 api_router.include_router(predict.router, prefix="/predict", tags=["prediction"])
+api_router.include_router(predict.router, prefix="/prediction", tags=["prediction"])
 api_router.include_router(report.router, prefix="/reports", tags=["reports"])
 api_router.include_router(weather.router, prefix="/weather", tags=["weather"])
 api_router.include_router(gis_db.router, prefix="/gis", tags=["geospatial-database"])
+api_router.include_router(geodata.router, prefix="/geodata", tags=["geodata"])
+api_router.include_router(raster.router, prefix="/geodata/raster", tags=["raster"])
 

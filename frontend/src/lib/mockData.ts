@@ -2,70 +2,16 @@
 
 import { AnalyticsData, ChatMessage, DashboardMode, FloodRisk, KPIData, MapLayer, Notification } from "./types";
 
-export const mockKPIs: KPIData[] = [
-  {
-    id: "flood-risk",
-    title: "Flood Risk Score",
-    value: "7.8",
-    change: 12.5,
-    changeLabel: "vs last month",
-    icon: "droplets",
-    color: "#ef4444",
-    gradient: ["#ef4444", "#f97316"],
-  },
-  {
-    id: "population",
-    title: "Population at Risk",
-    value: "1.2M",
-    change: -3.2,
-    changeLabel: "vs last assessment",
-    icon: "users",
-    color: "#f59e0b",
-    gradient: ["#f59e0b", "#eab308"],
-  },
-  {
-    id: "infra",
-    title: "Infrastructure Score",
-    value: "84%",
-    change: 5.1,
-    changeLabel: "improvement",
-    icon: "building",
-    color: "#10b981",
-    gradient: ["#10b981", "#06b6d4"],
-  },
-  {
-    id: "rainfall",
-    title: "Avg Rainfall",
-    value: "142mm",
-    change: 18.3,
-    changeLabel: "above normal",
-    icon: "cloud-rain",
-    color: "#3b82f6",
-    gradient: ["#3b82f6", "#6366f1"],
-  },
-  {
-    id: "elevation",
-    title: "Avg Elevation",
-    value: "560m",
-    change: 0,
-    changeLabel: "above sea level",
-    icon: "mountain",
-    color: "#8b5cf6",
-    gradient: ["#8b5cf6", "#a855f7"],
-  },
-  {
-    id: "water-bodies",
-    title: "Water Bodies",
-    value: "23",
-    change: 2,
-    changeLabel: "monitored",
-    icon: "waves",
-    color: "#06b6d4",
-    gradient: ["#06b6d4", "#22d3ee"],
-  },
+export const hydrologyKPIs: KPIData[] = [
+  { id: "flood-risk", title: "Flood Risk Score", value: "7.8", change: 12.5, changeLabel: "vs historical baseline", icon: "droplets", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
+  { id: "population", title: "Pop. in Floodway", value: "1.2M", change: -3.2, changeLabel: "since 2011 census", icon: "users", color: "#f59e0b", gradient: ["#f59e0b", "#eab308"] },
+  { id: "infra", title: "SWD Capacity", value: "84%", change: 5.1, changeLabel: "design threshold", icon: "building", color: "#10b981", gradient: ["#10b981", "#06b6d4"] },
+  { id: "rainfall", title: "Annual Precipitation", value: "722mm", change: 18.3, changeLabel: "above normal", icon: "cloud-rain", color: "#3b82f6", gradient: ["#3b82f6", "#6366f1"] },
+  { id: "elevation", title: "Avg Catchment Elev.", value: "560m", change: 0, changeLabel: "MSL (Pune)", icon: "mountain", color: "#8b5cf6", gradient: ["#8b5cf6", "#a855f7"] },
+  { id: "water-bodies", title: "Monitored Basins", value: "23", change: 2, changeLabel: "active sensors", icon: "waves", color: "#06b6d4", gradient: ["#06b6d4", "#22d3ee"] },
 ];
 
-export const mockAnalytics: AnalyticsData = {
+export const fallbackAnalytics: AnalyticsData = {
   rainfall: [
     { month: "Jan", value: 12, avg: 15 },
     { month: "Feb", value: 8, avg: 12 },
@@ -118,7 +64,7 @@ export const mockAnalytics: AnalyticsData = {
   ],
 };
 
-export const mockFloodRisks: FloodRisk[] = [
+export const fallbackFloodRisks: FloodRisk[] = [
   {
     zone: "Riverside District",
     level: "critical",
@@ -409,7 +355,7 @@ export function generateAnalyticsForLocation(location: string, mode: DashboardMo
     };
   }
   // Default: flood
-  const data = JSON.parse(JSON.stringify(mockAnalytics)) as AnalyticsData;
+  const data = JSON.parse(JSON.stringify(fallbackAnalytics)) as AnalyticsData;
   data.populationDensity = [
     { area: `${cityName} Central`, density: 12500, risk: "high" },
     { area: `${cityName} North`, density: 8200, risk: "medium" },
@@ -418,98 +364,191 @@ export function generateAnalyticsForLocation(location: string, mode: DashboardMo
     { area: `${cityName} West`, density: 11200, risk: "high" },
   ];
   return data;
-}
-
-export const mockMapLayers: MapLayer[] = [
-  { id: "flood-zones", name: "Estimated Flood Zones", type: "fill", visible: true, color: "#3b82f6", icon: "droplets", description: "Modeled predictive inundation overlay" },
-  { id: "risk-heatmap", name: "Risk Density (Modeled)", type: "heatmap", visible: true, color: "#ef4444", icon: "flame", description: "AI-estimated risk intensity heatmap" },
-  { id: "rivers", name: "Rivers/Water (Live OSM)", type: "line", visible: true, color: "#06b6d4", icon: "waves", description: "Verified real-time water features" },
-  { id: "infrastructure", name: "Infrastructure (Live OSM)", type: "circle", visible: false, color: "#f59e0b", icon: "building", description: "Verified OpenStreetMap amenities" },
-  { id: "elevation", name: "Elevation Contours (Est.)", type: "line", visible: false, color: "#8b5cf6", icon: "mountain", description: "Modeled topographic elevation" },
-  { id: "population", name: "Population Density (Est.)", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Estimated demographic distribution" },
-  { id: "roads", name: "Road Network (Live OSM)", type: "line", visible: false, color: "#9ca3af", icon: "route", description: "Verified street and highway grid" },
-  { id: "shelters", name: "Emergency Shelters (Modeled)", type: "symbol", visible: false, color: "#22d3ee", icon: "shield", description: "Simulated emergency response points" },
+}export const fallbackMapLayers: MapLayer[] = [
+  { 
+    id: "dem", 
+    name: "DEM (Elevation)", 
+    type: "heatmap", 
+    visible: true, 
+    color: "#8b5cf6", 
+    icon: "mountain", 
+    description: "Digital Elevation Model.",
+    dataSource: "Copernicus GLO-30 DEM",
+    resolution: "30m Spatial Resolution",
+    updateDate: "2025-10-15",
+    layerMetadata: "Bare-earth elevation model. EPSG:4326.",
+    coverageArea: "Pune Metropolitan Region"
+  },
+  { 
+    id: "hill", 
+    name: "Hillshade", 
+    type: "heatmap", 
+    visible: true, 
+    color: "#6b7280", 
+    icon: "sun", 
+    description: "Topographic hillshade relief.",
+    dataSource: "Derived from DEM",
+    resolution: "30m Spatial Resolution",
+    updateDate: "2025-10-15",
+    layerMetadata: "Hillshade visualization of terrain.",
+    coverageArea: "Pune Metropolitan Region"
+  },
+  { 
+    id: "flood", 
+    name: "Flood Risk", 
+    type: "heatmap", 
+    visible: false, 
+    color: "#3b82f6", 
+    icon: "droplets", 
+    description: "Hydrological flood inundation risk.",
+    dataSource: "Hydrological Modeling",
+    resolution: "10m Pixel Size",
+    updateDate: "2026-01-22",
+    layerMetadata: "Raster-based flood risk exposure.",
+    coverageArea: "Pune Metropolitan Region"
+  },
+  { 
+    id: "dist_to_river", 
+    name: "Distance to River", 
+    type: "heatmap", 
+    visible: false, 
+    color: "#06b6d4", 
+    icon: "waves", 
+    description: "Proximity to major water bodies.",
+    dataSource: "Spatial Analysis",
+    resolution: "10m Pixel Size",
+    updateDate: "2026-01-22",
+    layerMetadata: "Euclidean distance to Mula-Mutha river.",
+    coverageArea: "Pune Metropolitan Region"
+  },
+  { 
+    id: "lulc", 
+    name: "Land Use / Land Cover", 
+    type: "heatmap", 
+    visible: false, 
+    color: "#10b981", 
+    icon: "route", 
+    description: "Urban expansion and zoning footprint.",
+    dataSource: "Sentinel-2 & Bhuvan LULC",
+    resolution: "10m Pixel Size",
+    updateDate: "2025-12-01",
+    layerMetadata: "Classified raster into Built-up, Vegetation, Water, Barren.",
+    coverageArea: "Pune Metropolitan Region"
+  },
+  { 
+    id: "builddens", 
+    name: "Building Density", 
+    type: "heatmap", 
+    visible: false, 
+    color: "#f59e0b", 
+    icon: "building", 
+    description: "Urban structural density.",
+    dataSource: "Derived from OSM",
+    resolution: "10m Pixel Size",
+    updateDate: "2026-05-01",
+    layerMetadata: "Rasterized density of building footprints.",
+    coverageArea: "Pune Metropolitan Region"
+  },
+  { 
+    id: "rivers", 
+    name: "Rivers & Water Bodies", 
+    type: "fill", 
+    visible: true, 
+    color: "#3b82f6", 
+    icon: "droplets", 
+    description: "Hydrology and drainage analysis.",
+    dataSource: "PMC & OpenStreetMap",
+    resolution: "1:1000 Scale Vector",
+    updateDate: "2026-01-22",
+    layerMetadata: "Mula-Mutha river cross-sections and HFL boundaries.",
+    coverageArea: "Pune Metropolitan Region"
+  },
+  { 
+    id: "roads", 
+    name: "Road Network", 
+    type: "line", 
+    visible: false, 
+    color: "#9ca3af", 
+    icon: "route", 
+    description: "Mobility analysis and access routing.",
+    dataSource: "OpenStreetMap",
+    resolution: "Vector Polyline",
+    updateDate: "2026-05-15",
+    layerMetadata: "High-resolution topological routing network.",
+    coverageArea: "Pune Metropolitan Region"
+  }
 ];
 
-// ===== TRAFFIC MODE =====
-export const trafficKPIs: KPIData[] = [
-  { id: "congestion", title: "Congestion Index", value: "6.4", change: 8.2, changeLabel: "vs last week", icon: "route", color: "#f59e0b", gradient: ["#f59e0b", "#ef4444"] },
-  { id: "travel-time", title: "Avg Travel Time", value: "38m", change: 12.1, changeLabel: "above normal", icon: "route", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
-  { id: "accidents", title: "Accident Rate", value: "2.3", change: -5.4, changeLabel: "per 10k trips", icon: "building", color: "#10b981", gradient: ["#10b981", "#06b6d4"] },
-  { id: "transit-load", title: "Transit Load", value: "87%", change: 3.6, changeLabel: "capacity used", icon: "users", color: "#3b82f6", gradient: ["#3b82f6", "#6366f1"] },
-  { id: "road-quality", title: "Road Quality", value: "72%", change: 1.8, changeLabel: "good condition", icon: "route", color: "#8b5cf6", gradient: ["#8b5cf6", "#a855f7"] },
-  { id: "signal-eff", title: "Signal Efficiency", value: "81%", change: 4.2, changeLabel: "optimized", icon: "waves", color: "#06b6d4", gradient: ["#06b6d4", "#22d3ee"] },
-];
-export const trafficMapLayers: MapLayer[] = [
-  { id: "traffic-heatmap", name: "Congestion Heatmap (Est.)", type: "heatmap", visible: true, color: "#ef4444", icon: "flame", description: "Modeled real-time traffic density" },
-  { id: "roads", name: "Road Network (Live OSM)", type: "line", visible: true, color: "#f59e0b", icon: "route", description: "Verified street infrastructure" },
-  { id: "accident-hotspots", name: "Accident Hotspots (Modeled)", type: "circle", visible: true, color: "#dc2626", icon: "droplets", description: "Estimated high-frequency collision zones" },
-  { id: "transit-routes", name: "Transit Corridors (Live OSM)", type: "line", visible: false, color: "#3b82f6", icon: "route", description: "Verified transit corridors" },
-  { id: "parking", name: "Parking Zones (Est.)", type: "fill", visible: false, color: "#8b5cf6", icon: "building", description: "Modeled parking capacities" },
-  { id: "population", name: "Commuter Flow (Modeled)", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Simulated peak-hour commuter flow" },
-  { id: "speed-zones", name: "Speed Cameras (Est.)", type: "circle", visible: false, color: "#06b6d4", icon: "waves", description: "Simulated speed monitoring points" },
-  { id: "infrastructure", name: "Traffic Signals (Live OSM)", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Verified signaling nodes" },
+// ===== TERRAIN MODE =====
+export const terrainKPIs: KPIData[] = [
+  { id: "dem-res", title: "DEM Resolution", value: "2.5m", change: 0, changeLabel: "spatial accuracy", icon: "mountain", color: "#8b5cf6", gradient: ["#8b5cf6", "#a855f7"] },
+  { id: "max-elev", title: "Max Elevation", value: "1403m", change: 0, changeLabel: "Sinhagad Fort", icon: "mountain", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
+  { id: "min-elev", title: "Min Elevation", value: "520m", change: 0, changeLabel: "Mula-Mutha Confluence", icon: "waves", color: "#3b82f6", gradient: ["#3b82f6", "#6366f1"] },
+  { id: "slope", title: "Avg Slope", value: "12°", change: 0.5, changeLabel: "topographic gradient", icon: "route", color: "#f59e0b", gradient: ["#f59e0b", "#ef4444"] },
+  { id: "aspect", title: "Primary Aspect", value: "East", change: 0, changeLabel: "drainage direction", icon: "waves", color: "#10b981", gradient: ["#10b981", "#06b6d4"] },
+  { id: "landslide", title: "Landslide Risk", value: "Low", change: -1.2, changeLabel: "susceptibility index", icon: "flame", color: "#06b6d4", gradient: ["#06b6d4", "#22d3ee"] },
 ];
 
-// ===== URBAN DEVELOPMENT MODE =====
-export const urbanKPIs: KPIData[] = [
-  { id: "land-use", title: "Land Use Coverage", value: "94%", change: 2.1, changeLabel: "mapped area", icon: "building", color: "#8b5cf6", gradient: ["#8b5cf6", "#6366f1"] },
-  { id: "zoning", title: "Zoning Compliance", value: "88%", change: 3.5, changeLabel: "vs last quarter", icon: "building", color: "#10b981", gradient: ["#10b981", "#06b6d4"] },
-  { id: "permits", title: "Active Permits", value: "247", change: 14.2, changeLabel: "this quarter", icon: "building", color: "#f59e0b", gradient: ["#f59e0b", "#eab308"] },
-  { id: "green-ratio", title: "Green Space", value: "18%", change: -1.2, changeLabel: "of total area", icon: "waves", color: "#22c55e", gradient: ["#22c55e", "#10b981"] },
-  { id: "pop-growth", title: "Pop. Growth", value: "3.2%", change: 0.8, changeLabel: "annual rate", icon: "users", color: "#3b82f6", gradient: ["#3b82f6", "#6366f1"] },
-  { id: "housing", title: "Housing Index", value: "156", change: 6.7, changeLabel: "base 100", icon: "building", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
-];
-export const urbanMapLayers: MapLayer[] = [
-  { id: "land-use-zones", name: "Land Use Zones (Modeled)", type: "fill", visible: true, color: "#8b5cf6", icon: "building", description: "Estimated municipal zoning overlay" },
-  { id: "zoning-overlay", name: "Zoning Boundaries (Est.)", type: "line", visible: true, color: "#f59e0b", icon: "route", description: "Modeled administrative boundaries" },
-  { id: "construction", name: "Construction Sites (Modeled)", type: "circle", visible: true, color: "#ef4444", icon: "building", description: "Simulated active permits" },
-  { id: "green-spaces", name: "Green Spaces (Live OSM)", type: "fill", visible: false, color: "#10b981", icon: "waves", description: "Verified parks and open areas" },
-  { id: "population", name: "Residential Density (Est.)", type: "heatmap", visible: false, color: "#3b82f6", icon: "users", description: "Estimated household density" },
-  { id: "roads", name: "Road Network (Live OSM)", type: "line", visible: false, color: "#9ca3af", icon: "route", description: "Verified street grid" },
-  { id: "elevation", name: "Terrain Profile (Est.)", type: "line", visible: false, color: "#06b6d4", icon: "mountain", description: "Modeled elevation contours" },
-  { id: "infrastructure", name: "Civic Buildings (Live OSM)", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Verified government centers" },
+// ===== INFRASTRUCTURE MODE =====
+export const infrastructureKPIs: KPIData[] = [
+  { id: "built-area", title: "Built-up Area", value: "482km²", change: 2.1, changeLabel: "mapped footprint", icon: "building", color: "#8b5cf6", gradient: ["#8b5cf6", "#6366f1"] },
+  { id: "road-len", title: "Road Network", value: "3,204km", change: 3.5, changeLabel: "mapped ways", icon: "route", color: "#10b981", gradient: ["#10b981", "#06b6d4"] },
+  { id: "transit", title: "Transit Nodes", value: "247", change: 14.2, changeLabel: "active stations", icon: "building", color: "#f59e0b", gradient: ["#f59e0b", "#eab308"] },
+  { id: "impervious", title: "Impervious Cover", value: "42%", change: 1.2, changeLabel: "surface runoff factor", icon: "droplets", color: "#22c55e", gradient: ["#22c55e", "#10b981"] },
+  { id: "critical-infra", title: "Critical Assets", value: "1,204", change: 0.8, changeLabel: "hospitals, fire stn", icon: "shield", color: "#3b82f6", gradient: ["#3b82f6", "#6366f1"] },
+  { id: "power", title: "Power Substations", value: "156", change: 0, changeLabel: "grid nodes", icon: "waves", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
 ];
 
-// ===== UTILITY INFRASTRUCTURE MODE =====
-export const utilityKPIs: KPIData[] = [
-  { id: "grid-uptime", title: "Grid Uptime", value: "99.2%", change: 0.3, changeLabel: "this month", icon: "waves", color: "#10b981", gradient: ["#10b981", "#06b6d4"] },
-  { id: "pipe-integrity", title: "Pipe Integrity", value: "91%", change: -1.4, changeLabel: "network health", icon: "route", color: "#3b82f6", gradient: ["#3b82f6", "#6366f1"] },
-  { id: "power-load", title: "Power Load", value: "842MW", change: 7.3, changeLabel: "peak demand", icon: "waves", color: "#f59e0b", gradient: ["#f59e0b", "#ef4444"] },
-  { id: "water-psi", title: "Water Pressure", value: "58 PSI", change: -2.1, changeLabel: "avg network", icon: "droplets", color: "#06b6d4", gradient: ["#06b6d4", "#22d3ee"] },
-  { id: "outages", title: "Outage Events", value: "12", change: -18.5, changeLabel: "this month", icon: "building", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
-  { id: "telecom", title: "Telecom Coverage", value: "96%", change: 1.5, changeLabel: "4G/5G area", icon: "mountain", color: "#8b5cf6", gradient: ["#8b5cf6", "#a855f7"] },
+// ===== POPULATION MODE =====
+export const populationKPIs: KPIData[] = [
+  { id: "total-pop", title: "Total Population", value: "7.4M", change: 2.3, changeLabel: "projected 2025", icon: "users", color: "#10b981", gradient: ["#10b981", "#06b6d4"] },
+  { id: "density", title: "Avg Density", value: "9,400", change: 1.4, changeLabel: "persons/km²", icon: "users", color: "#3b82f6", gradient: ["#3b82f6", "#6366f1"] },
+  { id: "day-night", title: "Commuter Flux", value: "+1.2M", change: 0.3, changeLabel: "daytime influx", icon: "route", color: "#f59e0b", gradient: ["#f59e0b", "#ef4444"] },
+  { id: "vuln-pop", title: "Vulnerable Pop.", value: "850k", change: -2.1, changeLabel: "high-risk zones", icon: "shield", color: "#06b6d4", gradient: ["#06b6d4", "#22d3ee"] },
+  { id: "slums", title: "Informal Sett.", value: "32%", change: -0.5, changeLabel: "of total pop.", icon: "building", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
+  { id: "growth", title: "Annual Growth", value: "3.4%", change: 0.1, changeLabel: "CAGR", icon: "waves", color: "#8b5cf6", gradient: ["#8b5cf6", "#a855f7"] },
 ];
-export const utilityMapLayers: MapLayer[] = [
-  { id: "power-grid", name: "Power Grid Lines (Live OSM)", type: "line", visible: true, color: "#f59e0b", icon: "waves", description: "Verified high-voltage lines" },
-  { id: "water-pipes", name: "Water Pipelines (Live OSM)", type: "line", visible: true, color: "#06b6d4", icon: "droplets", description: "Verified municipal water mains" },
-  { id: "gas-mains", name: "Gas Mains (Modeled)", type: "line", visible: true, color: "#ef4444", icon: "flame", description: "Estimated gas distribution network" },
-  { id: "telecom-towers", name: "Telecom Towers (Live OSM)", type: "circle", visible: false, color: "#8b5cf6", icon: "mountain", description: "Verified base stations" },
-  { id: "substations", name: "Substations (Live OSM)", type: "circle", visible: false, color: "#f59e0b", icon: "building", description: "Verified power substations" },
-  { id: "outage-zones", name: "Outage Zones (Modeled)", type: "fill", visible: false, color: "#dc2626", icon: "flame", description: "Simulated current outage areas" },
-  { id: "population", name: "Service Coverage (Est.)", type: "heatmap", visible: false, color: "#10b981", icon: "users", description: "Estimated utility reach" },
-  { id: "infrastructure", name: "Pump Stations (Live OSM)", type: "circle", visible: false, color: "#22d3ee", icon: "shield", description: "Verified pump stations" },
+
+// ===== ENVIRONMENT MODE =====
+export const environmentKPIs: KPIData[] = [
+  { id: "ndvi", title: "Mean NDVI", value: "0.42", change: -0.05, changeLabel: "vegetation index", icon: "waves", color: "#22c55e", gradient: ["#22c55e", "#10b981"] },
+  { id: "lst", title: "Mean LST", value: "34.2°C", change: 1.4, changeLabel: "land surface temp", icon: "flame", color: "#ef4444", gradient: ["#ef4444", "#f97316"] },
+  { id: "pm25", title: "PM2.5 Avg", value: "68µg", change: 12.3, changeLabel: "air quality", icon: "cloud-rain", color: "#8b5cf6", gradient: ["#8b5cf6", "#6366f1"] },
+  { id: "uhi", title: "UHI Effect", value: "+4.5°C", change: 0.8, changeLabel: "urban heat island delta", icon: "flame", color: "#f59e0b", gradient: ["#f59e0b", "#eab308"] },
+  { id: "tree-canopy", title: "Tree Canopy", value: "18%", change: -1.2, changeLabel: "spatial coverage", icon: "mountain", color: "#10b981", gradient: ["#10b981", "#06b6d4"] },
+  { id: "aqi", title: "Real-time AQI", value: "142", change: 15, changeLabel: "moderate", icon: "waves", color: "#3b82f6", gradient: ["#3b82f6", "#6366f1"] },
 ];
 
 // Master getter functions
 export function getKPIsForMode(mode: DashboardMode): KPIData[] {
   switch (mode) {
-    case "traffic": return trafficKPIs;
-    case "urban": return urbanKPIs;
-    case "utility": return utilityKPIs;
-    default: return mockKPIs;
+    case "terrain": return terrainKPIs;
+    case "infrastructure": return infrastructureKPIs;
+    case "population": return populationKPIs;
+    case "environment": return environmentKPIs;
+    default: return hydrologyKPIs;
   }
 }
 export function getLayersForMode(mode: DashboardMode): MapLayer[] {
-  switch (mode) {
-    case "traffic": return trafficMapLayers;
-    case "urban": return urbanMapLayers;
-    case "utility": return utilityMapLayers;
-    default: return mockMapLayers;
-  }
+  // Map Dashboard modes to corresponding active datasets
+  // Each mode activates layers most relevant for analysis
+  const modeToLayers: Record<string, string[]> = {
+    "terrain": ["dem", "hill", "lulc", "builddens", "dist_to_river", "flood"],
+    "hydrology": ["dem", "hill", "lulc", "builddens", "dist_to_river", "flood"],
+    "infrastructure": ["dem", "hill", "lulc", "builddens", "dist_to_river", "flood"],
+    "population": ["dem", "hill", "lulc", "builddens", "dist_to_river", "flood"],
+    "environment": ["dem", "hill", "lulc", "builddens", "dist_to_river", "flood"]
+  };
+  
+  const activeLayerIds = modeToLayers[mode] || ["dem", "hill"];
+
+  return fallbackMapLayers.map(layer => ({
+    ...layer,
+    visible: activeLayerIds.includes(layer.id)
+  }));
 }
 
-export const mockChatHistory: ChatMessage[] = [
+export const fallbackChatHistory: ChatMessage[] = [
   {
     id: "1",
     role: "assistant",
@@ -518,7 +557,7 @@ export const mockChatHistory: ChatMessage[] = [
   },
 ];
 
-export const mockNotifications: Notification[] = [
+export const fallbackNotifications: Notification[] = [
   {
     id: "1",
     title: "Flood Alert",
@@ -545,94 +584,7 @@ export const mockNotifications: Notification[] = [
   },
 ];
 
-// Generate random points around a center for demo
-export function generateRandomPoints(
-  center: [number, number],
-  count: number,
-  radiusKm: number = 10,
-  locationName: string = "Pune"
-): GeoJSON.FeatureCollection {
-  const cityName = locationName.split(',')[0].trim();
-  const features = [];
-  for (let i = 0; i < count; i++) {
-    const angle = Math.random() * 2 * Math.PI;
-    const distance = Math.random() * radiusKm * 0.009; // roughly convert km to degrees
-    const lng = center[0] + distance * Math.cos(angle);
-    const lat = center[1] + distance * Math.sin(angle);
-    const riskScore = Math.random() * 10;
-    const riskLevel =
-      riskScore > 7.5 ? "critical" : riskScore > 5 ? "high" : riskScore > 2.5 ? "medium" : "low";
 
-    features.push({
-      type: "Feature" as const,
-      geometry: {
-        type: "Point" as const,
-        coordinates: [lng, lat],
-      },
-      properties: {
-        id: i,
-        riskScore: Math.round(riskScore * 10) / 10,
-        riskLevel,
-        name: `${cityName} Sensor ${i + 1}`,
-        elevation: Math.round(300 + Math.random() * 400),
-        rainfall: Math.round(50 + Math.random() * 200),
-      },
-    });
-  }
-  return {
-    type: "FeatureCollection",
-    features,
-  };
-}
-
-// Generate flood zone polygons
-export function generateFloodZones(center: [number, number], locationName: string = "Pune"): GeoJSON.FeatureCollection {
-  const zones = [];
-  const colors = ["#10b981", "#f59e0b", "#ef4444", "#dc2626"];
-  const levels = ["low", "medium", "high", "critical"];
-  const cityName = locationName.split(',')[0].trim();
-
-  for (let z = 0; z < 4; z++) {
-    const points = [];
-    const baseRadius = (0.02 + z * 0.015) * (1 + Math.random() * 0.3);
-    const numPoints = 8 + Math.floor(Math.random() * 4);
-    const offsetLng = (Math.random() - 0.5) * 0.04;
-    const offsetLat = (Math.random() - 0.5) * 0.04;
-
-    for (let i = 0; i <= numPoints; i++) {
-      const angle = (i / numPoints) * 2 * Math.PI;
-      const jitter = 1 + (Math.random() - 0.5) * 0.4;
-      const r = baseRadius * jitter;
-      points.push([
-        center[0] + offsetLng + r * Math.cos(angle),
-        center[1] + offsetLat + r * Math.sin(angle),
-      ]);
-    }
-    // close the polygon
-    points[points.length - 1] = points[0];
-
-    zones.push({
-      type: "Feature" as const,
-      geometry: {
-        type: "Polygon" as const,
-        coordinates: [points],
-      },
-      properties: {
-        id: z,
-        riskLevel: levels[z],
-        color: colors[z],
-        name: `${cityName} ${levels[z].charAt(0).toUpperCase() + levels[z].slice(1)} Risk Zone`,
-        area: Math.round((5 + Math.random() * 20) * 10) / 10,
-        population: Math.round(5000 + Math.random() * 50000),
-      },
-    });
-  }
-
-  return {
-    type: "FeatureCollection",
-    features: zones,
-  };
-}
 
 // AI response generator (client-side fallback)
 // AI response generator (client-side fallback)
@@ -1081,70 +1033,4 @@ Our spatial digital twin processing engine has completed a diagnostic evaluation
 *   **Immediate Action (0-3 Months):** Deploy IoT real-time telematic sensors in high-density corridors to establish a 45-minute preventative warning threshold.
 *   **Short-Term Adaptation (3-12 Months):** Execute localized load-balancing and demand-routing bypasses to relieve strain on overloaded physical grid substations and transit intersections.
 *   **Long-Term Integration (1-5 Years):** Fully synchronize hydraulic and transit models within the digital twin framework to run continuous predictive ML diagnostic models.`;
-}
-
-// Generate mock rivers
-export function generateMockRivers(center: [number, number], locationName: string = "Pune"): GeoJSON.FeatureCollection {
-  const cityName = locationName.split(',')[0].trim();
-  const features = [];
-  for (let i = 0; i < 4; i++) {
-    const points = [];
-    let curLng = center[0] + (Math.random() - 0.5) * 0.15;
-    let curLat = center[1] + (Math.random() - 0.5) * 0.15;
-    for (let j = 0; j < 25; j++) {
-      points.push([curLng, curLat]);
-      curLng += (Math.random() - 0.3) * 0.02;
-      curLat += (Math.random() - 0.5) * 0.02;
-    }
-    features.push({
-      type: "Feature" as const,
-      geometry: { type: "LineString" as const, coordinates: points },
-      properties: { name: `${cityName} Waterway ${i + 1}`, color: "#06b6d4" }
-    });
-  }
-  return { type: "FeatureCollection", features };
-}
-
-// Generate mock road traffic network
-export function generateMockRoadNetwork(center: [number, number], locationName: string = "Pune"): GeoJSON.FeatureCollection {
-  const cityName = locationName.split(',')[0].trim();
-  const features = [];
-  const trafficLevels = ["high", "medium", "low", "low", "medium"];
-  // create a grid
-  for (let i = 0; i < 10; i++) {
-    const lat = center[1] - 0.06 + i * 0.015 + (Math.random() - 0.5) * 0.005;
-    features.push({
-      type: "Feature" as const,
-      geometry: { type: "LineString" as const, coordinates: [[center[0] - 0.1, lat], [center[0] + 0.1, lat]] },
-      properties: { name: `${cityName} Route ${i}A`, level: trafficLevels[Math.floor(Math.random() * trafficLevels.length)] }
-    });
-    const lng = center[0] - 0.06 + i * 0.015 + (Math.random() - 0.5) * 0.005;
-    features.push({
-      type: "Feature" as const,
-      geometry: { type: "LineString" as const, coordinates: [[lng, center[1] - 0.1], [lng, center[1] + 0.1]] },
-      properties: { name: `${cityName} Route ${i}B`, level: trafficLevels[Math.floor(Math.random() * trafficLevels.length)] }
-    });
-  }
-  return { type: "FeatureCollection", features };
-}
-
-// Generate mock elevation contours
-export function generateMockElevationContours(center: [number, number], locationName: string = "Pune"): GeoJSON.FeatureCollection {
-  const cityName = locationName.split(',')[0].trim();
-  const features = [];
-  for (let i = 1; i <= 6; i++) {
-    const points = [];
-    const r = i * 0.015;
-    for (let j = 0; j <= 40; j++) {
-      const angle = (j / 40) * Math.PI * 2;
-      const noiseR = r * (1 + (Math.random() - 0.5) * 0.3);
-      points.push([center[0] + noiseR * Math.cos(angle), center[1] + noiseR * Math.sin(angle)]);
-    }
-    features.push({
-      type: "Feature" as const,
-      geometry: { type: "LineString" as const, coordinates: points },
-      properties: { name: `${cityName} Elevation ${i * 100}m`, level: i <= 2 ? "high" : i <= 4 ? "medium" : "low" }
-    });
-  }
-  return { type: "FeatureCollection", features };
 }

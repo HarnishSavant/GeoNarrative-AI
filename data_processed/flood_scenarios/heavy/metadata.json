@@ -1,0 +1,372 @@
+{
+  "id": "heavy",
+  "frame_count": 40,
+  "bounds_wgs84": {
+    "west": 73.73180554444444,
+    "south": 18.400138899999995,
+    "east": 74.0184722111111,
+    "north": 18.622083344444434
+  },
+  "stats": [
+    {
+      "frame": 0,
+      "flooded_area_km2": 17.65306581703631,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 4.322539406265713,
+      "affected_buildings": 3012,
+      "critical_buildings": 1868,
+      "affected_road_km": 520.0858047614023
+    },
+    {
+      "frame": 1,
+      "flooded_area_km2": 25.09313217617181,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 4.698257649980083,
+      "affected_buildings": 5007,
+      "critical_buildings": 3322,
+      "affected_road_km": 691.7135958895543
+    },
+    {
+      "frame": 2,
+      "flooded_area_km2": 31.053982154690082,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 5.0183468675756355,
+      "affected_buildings": 6650,
+      "critical_buildings": 4569,
+      "affected_road_km": 812.9967794543812
+    },
+    {
+      "frame": 3,
+      "flooded_area_km2": 35.78996065061582,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 5.220698431315151,
+      "affected_buildings": 7886,
+      "critical_buildings": 5507,
+      "affected_road_km": 897.4918465471941
+    },
+    {
+      "frame": 4,
+      "flooded_area_km2": 39.34122738468974,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 5.399198929325927,
+      "affected_buildings": 9004,
+      "critical_buildings": 6360,
+      "affected_road_km": 968.9647606732167
+    },
+    {
+      "frame": 5,
+      "flooded_area_km2": 42.88388846431923,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 5.594052302623858,
+      "affected_buildings": 10317,
+      "critical_buildings": 7331,
+      "affected_road_km": 1033.267553780086
+    },
+    {
+      "frame": 6,
+      "flooded_area_km2": 45.50000741543023,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 5.734597853258062,
+      "affected_buildings": 11251,
+      "critical_buildings": 8016,
+      "affected_road_km": 1088.525499025645
+    },
+    {
+      "frame": 7,
+      "flooded_area_km2": 48.16202319024494,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 5.91027100334743,
+      "affected_buildings": 11984,
+      "critical_buildings": 8549,
+      "affected_road_km": 1136.52682601773
+    },
+    {
+      "frame": 8,
+      "flooded_area_km2": 50.316305352837446,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.030090613596016,
+      "affected_buildings": 12663,
+      "critical_buildings": 9055,
+      "affected_road_km": 1173.0409834282484
+    },
+    {
+      "frame": 9,
+      "flooded_area_km2": 52.24014721308427,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.1430856645767395,
+      "affected_buildings": 13315,
+      "critical_buildings": 9515,
+      "affected_road_km": 1209.25118221701
+    },
+    {
+      "frame": 10,
+      "flooded_area_km2": 54.050203197899016,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.265373893760553,
+      "affected_buildings": 13873,
+      "critical_buildings": 9884,
+      "affected_road_km": 1245.410397856998
+    },
+    {
+      "frame": 11,
+      "flooded_area_km2": 55.78567684419524,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.390194388055045,
+      "affected_buildings": 14327,
+      "critical_buildings": 10200,
+      "affected_road_km": 1274.6895812092566
+    },
+    {
+      "frame": 12,
+      "flooded_area_km2": 57.27254269542975,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.499256404786354,
+      "affected_buildings": 14696,
+      "critical_buildings": 10442,
+      "affected_road_km": 1300.2949038803104
+    },
+    {
+      "frame": 13,
+      "flooded_area_km2": 58.681001472837096,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.6144211477427515,
+      "affected_buildings": 15163,
+      "critical_buildings": 10763,
+      "affected_road_km": 1327.1503822855377
+    },
+    {
+      "frame": 14,
+      "flooded_area_km2": 59.91065387456545,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.719552232228376,
+      "affected_buildings": 15520,
+      "critical_buildings": 11048,
+      "affected_road_km": 1350.7265813665986
+    },
+    {
+      "frame": 15,
+      "flooded_area_km2": 60.99783488604688,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.823346398592754,
+      "affected_buildings": 15897,
+      "critical_buildings": 11351,
+      "affected_road_km": 1362.0184572703436
+    },
+    {
+      "frame": 16,
+      "flooded_area_km2": 61.91099044098512,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 6.932806984780157,
+      "affected_buildings": 16189,
+      "critical_buildings": 11609,
+      "affected_road_km": 1378.73654953703
+    },
+    {
+      "frame": 17,
+      "flooded_area_km2": 62.70271064987397,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.041495682235584,
+      "affected_buildings": 16437,
+      "critical_buildings": 11845,
+      "affected_road_km": 1388.7445634903022
+    },
+    {
+      "frame": 18,
+      "flooded_area_km2": 63.469570079256656,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.152272235047402,
+      "affected_buildings": 16686,
+      "critical_buildings": 12087,
+      "affected_road_km": 1397.2345192709518
+    },
+    {
+      "frame": 19,
+      "flooded_area_km2": 64.23642950863935,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.251018939794336,
+      "affected_buildings": 16880,
+      "critical_buildings": 12273,
+      "affected_road_km": 1408.1922565177185
+    },
+    {
+      "frame": 20,
+      "flooded_area_km2": 64.94783027604672,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.339049094736161,
+      "affected_buildings": 17027,
+      "critical_buildings": 12417,
+      "affected_road_km": 1417.2450301489057
+    },
+    {
+      "frame": 21,
+      "flooded_area_km2": 65.56265647691089,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.417137577621809,
+      "affected_buildings": 17189,
+      "critical_buildings": 12571,
+      "affected_road_km": 1422.4425725639915
+    },
+    {
+      "frame": 22,
+      "flooded_area_km2": 66.23485370740468,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.48393858937082,
+      "affected_buildings": 17352,
+      "critical_buildings": 12724,
+      "affected_road_km": 1432.9239409098773
+    },
+    {
+      "frame": 23,
+      "flooded_area_km2": 66.87262832012071,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.540831829302365,
+      "affected_buildings": 17521,
+      "critical_buildings": 12882,
+      "affected_road_km": 1445.7914686810514
+    },
+    {
+      "frame": 24,
+      "flooded_area_km2": 67.392792322096,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.579401196092197,
+      "affected_buildings": 17680,
+      "critical_buildings": 13029,
+      "affected_road_km": 1452.1948552033818
+    },
+    {
+      "frame": 25,
+      "flooded_area_km2": 67.82785596345401,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.622784767494317,
+      "affected_buildings": 17822,
+      "critical_buildings": 13160,
+      "affected_road_km": 1458.360702470822
+    },
+    {
+      "frame": 26,
+      "flooded_area_km2": 68.33176484036757,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.664578199873341,
+      "affected_buildings": 17985,
+      "critical_buildings": 13298,
+      "affected_road_km": 1466.408878565636
+    },
+    {
+      "frame": 27,
+      "flooded_area_km2": 68.78977689357743,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.702856061444801,
+      "affected_buildings": 18115,
+      "critical_buildings": 13407,
+      "affected_road_km": 1471.9374565207424
+    },
+    {
+      "frame": 28,
+      "flooded_area_km2": 69.1435649096268,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.733791097539912,
+      "affected_buildings": 18197,
+      "critical_buildings": 13477,
+      "affected_road_km": 1477.9123107024757
+    },
+    {
+      "frame": 29,
+      "flooded_area_km2": 69.53464409493542,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.77034744726221,
+      "affected_buildings": 18272,
+      "critical_buildings": 13537,
+      "affected_road_km": 1484.007959220448
+    },
+    {
+      "frame": 30,
+      "flooded_area_km2": 69.89608158160206,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.805493959194997,
+      "affected_buildings": 18340,
+      "critical_buildings": 13601,
+      "affected_road_km": 1490.3595678227753
+    },
+    {
+      "frame": 31,
+      "flooded_area_km2": 70.18580528123168,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.83209623402448,
+      "affected_buildings": 18396,
+      "critical_buildings": 13652,
+      "affected_road_km": 1494.5572839579156
+    },
+    {
+      "frame": 32,
+      "flooded_area_km2": 70.56636644444154,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.868056800076351,
+      "affected_buildings": 18467,
+      "critical_buildings": 13718,
+      "affected_road_km": 1498.4888392469481
+    },
+    {
+      "frame": 33,
+      "flooded_area_km2": 70.99378061518226,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.905971726558825,
+      "affected_buildings": 18529,
+      "critical_buildings": 13775,
+      "affected_road_km": 1503.2785673643616
+    },
+    {
+      "frame": 34,
+      "flooded_area_km2": 71.36669230777485,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.940370542293048,
+      "affected_buildings": 18588,
+      "critical_buildings": 13832,
+      "affected_road_km": 1510.7484036548092
+    },
+    {
+      "frame": 35,
+      "flooded_area_km2": 71.87155736851557,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 7.993354795321372,
+      "affected_buildings": 18645,
+      "critical_buildings": 13885,
+      "affected_road_km": 1517.6754447696783
+    },
+    {
+      "frame": 36,
+      "flooded_area_km2": 72.29992772308346,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 8.027102447519166,
+      "affected_buildings": 18706,
+      "critical_buildings": 13942,
+      "affected_road_km": 1521.539337004214
+    },
+    {
+      "frame": 37,
+      "flooded_area_km2": 72.72734189382417,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 8.050294999115579,
+      "affected_buildings": 18767,
+      "critical_buildings": 14002,
+      "affected_road_km": 1528.299727582425
+    },
+    {
+      "frame": 38,
+      "flooded_area_km2": 73.08877938049082,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 8.072224791435755,
+      "affected_buildings": 18812,
+      "critical_buildings": 14039,
+      "affected_road_km": 1532.3937614456759
+    },
+    {
+      "frame": 39,
+      "flooded_area_km2": 73.44352358036735,
+      "max_depth_m": 54.42859838917804,
+      "mean_depth_m": 8.08230949478978,
+      "affected_buildings": 18864,
+      "critical_buildings": 14090,
+      "affected_road_km": 1536.648921863137
+    }
+  ]
+}

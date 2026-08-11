@@ -17,6 +17,9 @@ from app.services.spatial_query_service import SpatialQueryService
 from app.services.weather_service import WeatherService
 from app.services.prediction_service import PredictionService
 from app.repositories.data_store import search_locations_db
+from app.services.geoai.intent_router import IntentRouter
+from app.services.geoai.query_planner import QueryPlanner
+from app.services.geoai.gemini_client import GeminiClient
 
 logger = logging.getLogger("geonarrative.geoai_orchestrator")
 
@@ -75,98 +78,45 @@ unless the exact number is present in the RETRIEVED DATA CONTEXT."""
 
     @staticmethod
     async def call_llm(contents: List[Dict[str, Any]], system_instruction: Optional[str] = None, json_mode: bool = False) -> str:
-        """Call Gemini LLM with retry logic."""
-        import asyncio
-        api_key = settings.GEMINI_API_KEY
-        if not api_key:
+        """Call Gemini LLM using the unified GeminiClient with model cascade and retries."""
+        result = await GeminiClient.generate(
+            contents=contents,
+            system_instruction=system_instruction,
+            json_mode=json_mode,
+            temperature=0.15,
+            max_tokens=4096,
+        )
+        # Return empty string on error for backward compatibility with existing callers
+        if result.startswith("[ERROR]"):
+            logger.error(f"GeminiClient returned: {result}")
             return ""
-
-        model_name = "gemini-2.0-flash"
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent"
-
-        gemini_contents = []
-        for item in contents:
-            role = "user" if item.get("role") == "user" else "model"
-            text = item.get("content", "").strip()
-            if not text:
-                continue
-            if gemini_contents and gemini_contents[-1]["role"] == role:
-                gemini_contents[-1]["parts"][0]["text"] += "\n\n" + text
-            else:
-                gemini_contents.append({"role": role, "parts": [{"text": text}]})
-
-        generation_config = {"temperature": 0.15, "topP": 0.95, "maxOutputTokens": 4096}
-        if json_mode:
-            generation_config["responseMimeType"] = "application/json"
-
-        payload = {
-            "contents": gemini_contents,
-            "generationConfig": generation_config
-        }
-        if system_instruction:
-            payload["systemInstruction"] = {"parts": [{"text": system_instruction}]}
-
-        headers = {
-            "x-goog-api-key": api_key,
-            "Content-Type": "application/json"
-        }
-
-        models_to_try = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro-latest"]
-        
-        for model in models_to_try:
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-            for attempt in range(2):
-                try:
-                    async with httpx.AsyncClient(timeout=30.0) as client:
-                        resp = await client.post(url, json=payload, headers=headers)
-                        if resp.status_code == 200:
-                            data = resp.json()
-                            cands = data.get("candidates", [])
-                            if cands:
-                                return cands[0].get("content", {}).get("parts", [{}])[0].get("text", "")
-                            return ""
-                        elif resp.status_code == 429:
-                            await asyncio.sleep(1 + attempt)
-                        else:
-                            logger.error(f"Gemini API Error ({model}): {resp.status_code}")
-                            break # Try next model
-                except Exception as e:
-                    logger.error(f"Gemini API Exception ({model}): {e}")
-                    break # Try next model
-        
-        return "HTTP 429"
+        return result
 
     @staticmethod
-    async def classify_intent(query: str, has_files: bool) -> str:
+    async def classify_intent(query: str, has_files: bool) -> Dict[str, Any]:
         """1. Build Intent Classification Layer"""
         if has_files and any(x in query.lower() for x in ["file", "document", "upload", "summarize", "csv", "data"]):
-            return "DOCUMENT_ANALYSIS"
+            return {"intent": "DOCUMENT_ANALYSIS", "entities": {}}
             
-        # Rule-based fallback to save API rate limits for common operations
-        q = query.lower()
-        if any(x in q for x in ["flood", "hospital", "school", "road", "traffic", "zoning", "building", "risk", "analyze", "infrastructure", "substation"]):
-            return "GEO_ANALYSIS"
-        if any(x in q for x in ["predict", "forecast", "future", "2030", "machine learning"]):
-            return "FORECASTING"
-        if any(x in q for x in ["weather", "rain", "temperature", "storm"]):
-            return "WEATHER"
-        if any(x in q for x in ["report", "pdf", "generate", "download"]):
-            return "REPORT_GENERATION"
-            
-        sys_prompt = GeoAIOrchestrator.INTENT_ROUTING_PROMPT
-        contents = [{"role": "user", "content": f"Query: {query}\nClassify the intent strictly into one of the 7 categories."}]
-        intent = await GeoAIOrchestrator.call_llm(contents, sys_prompt)
-        intent = intent.strip().upper()
+        # Call the new Intent Router
+        intent_payload = await IntentRouter.route(query)
         
-        valid_intents = ["GENERAL_KNOWLEDGE", "PLATFORM_HELP", "WEATHER", "GEO_ANALYSIS", "FORECASTING", "DOCUMENT_ANALYSIS", "REPORT_GENERATION"]
-        for v in valid_intents:
-            if v in intent:
-                return v
-        return "GENERAL_KNOWLEDGE"
+        # Override with WEATHER or FORECASTING if needed based on simple rules, 
+        # or just trust the IntentRouter which defaults to GeneralIntent
+        q = query.lower()
+        if any(x in q for x in ["predict", "forecast", "future", "2030", "machine learning"]):
+            return {"intent": "FORECASTING", "entities": {}}
+        if any(x in q for x in ["weather", "rain", "temperature", "storm"]):
+            return {"intent": "WEATHER", "entities": {}}
+        if any(x in q for x in ["report", "pdf", "generate", "download"]):
+            return {"intent": "REPORT_GENERATION", "entities": {}}
+            
+        return intent_payload
 
     @staticmethod
-    async def get_tool_context(intent: str, query: str, location: str, db: AsyncSession, uploaded_files: List[Dict]) -> Dict[str, Any]:
+    async def get_tool_context(intent_payload: Dict[str, Any], query: str, location: str, db: AsyncSession, uploaded_files: List[Dict]) -> Dict[str, Any]:
         """4. Build Tool Selection Layer & Context Retrieval"""
+        intent = intent_payload.get("intent", "GeneralIntent")
         context_data = ""
         tool_used = "None"
         confidence = "High"
@@ -229,54 +179,36 @@ unless the exact number is present in the RETRIEVED DATA CONTEXT."""
             spatial_results["prediction"] = pred_data
             data_points += 1
 
-        elif intent == "GEO_ANALYSIS":
-            tool_used = "GeoReasoningEngine"
-            from app.services.spatial_query_service import SpatialQueryService
-            from app.services.geo_reasoning_engine import GeoReasoningEngine
-            query_lower = query.lower()
+        elif intent in ["RiskIntent", "ExposureIntent", "InfrastructureIntent", "ShelterIntent", "SpatialSearchIntent", "AnalyticsIntent"]:
+            tool_used = "Spatial Query Engine"
             
-            raw_spatial = {}
-            available_layers = ["roads", "buildings", "rivers", "hospitals", "schools"]
-            domain = "FLOOD"
+            # Use the new modular Query Planner!
+            raw_spatial = await QueryPlanner.execute_plan(intent_payload, db)
             
-            persona = "GeoAI Analyst Agent"
-            if "hospital" in query_lower or "clinic" in query_lower:
-                raw_spatial["hospitals_in_flood_zones"] = await SpatialQueryService.query_hospitals_in_flood_zones(db)
-                domain = "FLOOD"
-                persona = "GeoAI Analyst Agent"
-            elif "road" in query_lower or "traffic" in query_lower:
-                raw_spatial["flood_corridors"] = await SpatialQueryService.query_flood_prone_roads(db)
-                domain = "TRAFFIC"
-                persona = "Infrastructure Agent"
-            elif "zoning" in query_lower or "building" in query_lower:
-                raw_spatial["vulnerable_buildings"] = await SpatialQueryService.query_buildings_intersecting_vulnerable_areas(db)
-                domain = "URBAN"
-                persona = "Urban Planning Agent"
-            elif "utility" in query_lower or "substation" in query_lower:
-                raw_spatial["high_risk_infrastructure"] = [{"name": "Substation", "type": "power"}]
-                domain = "UTILITY"
-                persona = "Infrastructure Agent"
+            # 5.3 If DB fails, AI returns 'Data not available' - NO FALLBACKS
+            if raw_spatial.get("status") == "error" or not raw_spatial.get("data"):
+                context_data = "STRICT INSTRUCTION: The database query failed or returned 0 results. You MUST state EXACTLY 'Data not available in the spatial database.' Do not attempt to guess or hallucinate any statistics."
+                confidence = "None"
+                data_points = 0
+                spatial_results = {}
+                tool_used = "PostGIS Spatial Engine (Failed)"
             else:
-                flood = await SpatialQueryService.execute_mode_analysis(db, "flood")
-                raw_spatial["hospitals_in_flood_zones"] = [{"id": 1, "name": "General Hospital"} for _ in range(flood['kpis'].get('vulnerable_facilities_count', 0))]
+                raw_spatial["city_wide_totals"] = await SpatialQueryService.get_total_feature_counts(db)
+                
+                persona = "GeoAI Spatial Analyst"
+                if intent == "ShelterIntent": persona = "Emergency Management Coordinator"
+                elif intent == "InfrastructureIntent": persona = "Infrastructure Resiliency Expert"
 
-            # Also fetch overall counts to give Gemini full city-wide context
-            raw_spatial["city_wide_totals"] = await SpatialQueryService.get_total_feature_counts(db)
-
-            # Execute Deterministic Reasoning (for fallback and confidence)
-            reasoning_result = GeoReasoningEngine.generate_intelligence(domain, raw_spatial, available_layers)
-            formatted_markdown = GeoReasoningEngine.format_as_markdown(reasoning_result)
+                import json
+                context_data = f"[ASSIGNED PERSONA: {persona}]\n[POSTGIS RAW SPATIAL QUERY RESULTS]\n{json.dumps(raw_spatial, indent=2)}"
+                confidence = "High"
+                data_points = len(raw_spatial.get("data", []))
+                spatial_results = raw_spatial
+                tool_used = "PostGIS Spatial Engine + LLM Reasoning"
             
-            # Feed Gemini the exact raw PostGIS counts, names, and overall stats!
-            import json
-            context_data = f"[ASSIGNED PERSONA: {persona}]\n[POSTGIS RAW SPATIAL QUERY RESULTS]\n{json.dumps(raw_spatial, indent=2)}"
-            confidence = reasoning_result["confidence_score"]
-            data_points = sum(len(v) for v in raw_spatial.values() if isinstance(v, list))
-            spatial_results["reasoning"] = reasoning_result
-            tool_used = "PostGIS Spatial Engine + LLM Reasoning"
-            
-            # Store fallback explicitly so it can be used if LLM fails
-            spatial_results["fallback_report"] = formatted_markdown
+        elif intent == "GeneralIntent":
+            tool_used = "General AI Knowledge"
+            context_data = "No specific spatial context required. Rely on general urban planning and GIS knowledge."
 
         elif intent == "REPORT_GENERATION":
             tool_used = "Report Generation Engine"
@@ -310,11 +242,12 @@ unless the exact number is present in the RETRIEVED DATA CONTEXT."""
         has_files = bool(uploaded_files and len(uploaded_files) > 0)
 
         # 1. Intent Detection
-        intent = await GeoAIOrchestrator.classify_intent(query, has_files)
+        intent_payload = await GeoAIOrchestrator.classify_intent(query, has_files)
+        intent = intent_payload.get("intent", "GeneralIntent")
         logger.info(f"Detected Intent: {intent}")
 
         # 2. Tool Selection & Context Retrieval
-        tool_data = await GeoAIOrchestrator.get_tool_context(intent, query, location, db, uploaded_files)
+        tool_data = await GeoAIOrchestrator.get_tool_context(intent_payload, query, location, db, uploaded_files)
         
         # 3. Build Final System Prompt (Truthfulness + Style + Master)
         system_instruction = f"{GeoAIOrchestrator.MASTER_PROMPT}\n\n{GeoAIOrchestrator.TRUTHFULNESS_PROMPT}\n\n{GeoAIOrchestrator.STYLE_PROMPT}\n\n"
@@ -365,7 +298,11 @@ unless the exact number is present in the RETRIEVED DATA CONTEXT."""
                     "detected_intent": intent,
                     "selected_tool": tool_data["tool"],
                     "confidence_score": tool_data["confidence"],
-                    "processing_time": processing_time
+                    "processing_time": processing_time,
+                    "spatial_operation": tool_data.get("spatial_results", {}).get("query_type", "None"),
+                    "parameters": {"location": location, "confidence": tool_data["confidence"]},
+                    "records_found": tool_data["data_points"],
+                    "map_action": "None"
                 }
             }
         }

@@ -26,6 +26,7 @@ email-validator==2.1.1
 # ML/AI Dependencies
 scikit-learn==1.4.2
 xgboost==2.0.3
+google-genai>=1.0.0
 
 # PDF Generation
 fpdf2==2.7.9

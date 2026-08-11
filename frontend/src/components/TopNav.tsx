@@ -13,7 +13,7 @@ import {
   Globe2,
 } from "lucide-react";
 import { Notification } from "@/lib/types";
-import { mockNotifications } from "@/lib/mockData";
+import { fallbackNotifications } from "@/lib/mockData";
 
 interface TopNavProps {
   onLocationSearch: (location: string) => void;
@@ -34,16 +34,14 @@ export default function TopNav({ onLocationSearch, currentLocation, user, onTabC
 
 
   const suggestions = [
-    "Pune, Maharashtra, India",
-    "Mumbai, Maharashtra, India",
-    "Chennai, Tamil Nadu, India",
-    "Delhi, India",
-    "Bangalore, Karnataka, India",
-    "Kolkata, West Bengal, India",
-    "Hyderabad, Telangana, India",
-    "New York, USA",
-    "Tokyo, Japan",
-    "London, UK",
+    "Pune Metropolitan Region, Maharashtra, India",
+    "Pune City, Maharashtra, India",
+    "Pimpri-Chinchwad, Maharashtra, India",
+    "Hinjawadi IT Park, Pune",
+    "Kalyani Nagar, Pune",
+    "Koregaon Park, Pune",
+    "Wakad, Pune",
+    "Baner, Pune",
   ];
 
   useEffect(() => {
@@ -81,73 +79,21 @@ export default function TopNav({ onLocationSearch, currentLocation, user, onTabC
     }
   };
 
-  const unreadCount = mockNotifications.filter((n) => !n.read).length;
+  const unreadCount = fallbackNotifications.filter((n) => !n.read).length;
 
   return (
-    <header className="h-16 bg-geo-darker/80 backdrop-blur-xl border-b border-geo-border flex items-center justify-between px-6 z-40 relative">
+    <header className="h-14 bg-[#080a14]/90 backdrop-blur-xl border-b border-white/5 flex items-center justify-between px-5 z-40 relative">
       {/* Left — Current Location */}
       <div className="flex items-center gap-3">
-        <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary-500/10 border border-primary-500/20">
-          <MapPin size={14} className="text-primary-400" />
-          <span className="text-sm font-medium text-primary-300">{currentLocation}</span>
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/20 border border-white/10 shadow-inner backdrop-blur-md">
+          <Globe2 size={14} className="text-primary-400" />
+          <span className="text-xs font-semibold text-gray-200 tracking-wide">{currentLocation}</span>
         </div>
       </div>
 
-      {/* Center — Search */}
-      <div ref={searchRef} className="relative w-full max-w-xl mx-8">
-        <form onSubmit={handleSearch}>
-          <div className="relative">
-            <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => handleInputChange(e.target.value)}
-              onFocus={() => searchQuery.length > 0 && setShowSuggestions(true)}
-              placeholder="Search any city or location..."
-              className="w-full pl-11 pr-12 py-2.5 rounded-xl bg-geo-card/80 border border-geo-border text-sm text-gray-200 placeholder-gray-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-200 outline-none"
-              id="location-search"
-            />
-            {isSearching && (
-              <Loader2 size={16} className="absolute right-4 top-1/2 -translate-y-1/2 text-primary-400 animate-spin" />
-            )}
-            {searchQuery && !isSearching && (
-              <button
-                type="button"
-                onClick={() => { setSearchQuery(""); setShowSuggestions(false); }}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300"
-              >
-                <X size={14} />
-              </button>
-            )}
-          </div>
-        </form>
-
-        {/* Suggestions Dropdown */}
-        <AnimatePresence>
-          {showSuggestions && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              className="absolute top-full mt-2 w-full glass-card p-2 z-50 shadow-xl"
-            >
-              {searchSuggestions.map((suggestion, i) => (
-                <button
-                  key={i}
-                  onClick={() => {
-                    setSearchQuery(suggestion);
-                    onLocationSearch(suggestion);
-                    setShowSuggestions(false);
-                  }}
-                  className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-primary-500/10 text-sm text-gray-300 hover:text-primary-300 transition-colors text-left"
-                >
-                  <MapPin size={14} className="text-gray-500 flex-shrink-0" />
-                  <span>{suggestion}</span>
-                </button>
-              ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
+      {/* Center — Search (Removed for Phase 1) */}
+      <div className="relative w-full max-w-xl mx-8 flex items-center justify-center">
+        {/* The study area is fixed to PMC. Search has been removed. */}
       </div>
 
       {/* Right — Actions */}
@@ -171,7 +117,7 @@ export default function TopNav({ onLocationSearch, currentLocation, user, onTabC
                 initial={{ opacity: 0, y: -10, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                className="absolute right-0 top-full mt-2 w-80 glass-card p-4 z-50 shadow-xl"
+                className="absolute right-0 top-full mt-3 w-80 bg-[#0f172a]/90 backdrop-blur-2xl border border-white/10 rounded-2xl p-4 z-50 shadow-2xl"
               >
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-sm font-semibold">Notifications</h3>
@@ -180,7 +126,7 @@ export default function TopNav({ onLocationSearch, currentLocation, user, onTabC
                   </span>
                 </div>
                 <div className="space-y-2 max-h-64 overflow-y-auto custom-scrollbar">
-                  {mockNotifications.map((notif) => (
+                  {fallbackNotifications.map((notif) => (
                     <div
                       key={notif.id}
                       className={`p-3 rounded-lg border transition-colors cursor-pointer ${
@@ -230,7 +176,7 @@ export default function TopNav({ onLocationSearch, currentLocation, user, onTabC
                 initial={{ opacity: 0, y: -10, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                className="absolute right-0 top-full mt-2 w-56 glass-card p-3 z-50 shadow-xl"
+                className="absolute right-0 top-full mt-3 w-56 bg-[#0f172a]/90 backdrop-blur-2xl border border-white/10 rounded-2xl p-3 z-50 shadow-2xl"
               >
                 <div className="px-3 py-2 border-b border-geo-border mb-2">
                   <p className="text-sm font-medium text-white">{user ? user.full_name : "GeoAnalyst"}</p>

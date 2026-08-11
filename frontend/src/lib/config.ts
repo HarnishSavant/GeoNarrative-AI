@@ -2,10 +2,10 @@
 
 export const config = {
   mapbox: {
-    accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN || "",
+    accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN || "pk.eyJ1IjoiMjUwNzAyNDMwMzIiLCJhIjoiY21xaHNvdnNhMDAyYTJzc2R0YWY3MTB5ZCJ9.ML2KZUsf7iuihsbV08kLrg",
     defaultCenter: [73.8567, 18.5204] as [number, number], // Pune, India
     defaultZoom: 11,
-    style: "mapbox://styles/mapbox/dark-v11",
+    style: "mapbox://styles/mapbox/light-v11",
   },
   api: {
     baseUrl: process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000",

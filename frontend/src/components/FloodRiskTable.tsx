@@ -11,14 +11,15 @@ interface FloodRiskTableProps {
 }
 
 const MODE_TITLES: Record<DashboardMode, { icon: React.ReactNode; title: string; placeholder: string }> = {
-  flood: { icon: <AlertTriangle size={14} className="text-red-400" />, title: "Flood Risk Zones", placeholder: "Search flood zones..." },
-  traffic: { icon: <Car size={14} className="text-amber-400" />, title: "Traffic Hotspots", placeholder: "Search congestion zones..." },
-  urban: { icon: <Building2 size={14} className="text-violet-400" />, title: "Development Zones", placeholder: "Search zoning segments..." },
-  utility: { icon: <Zap size={14} className="text-emerald-400" />, title: "Infrastructure Sectors", placeholder: "Search utility grids..." },
+  terrain: { icon: <AlertTriangle size={14} className="text-violet-400" />, title: "Terrain Risk Zones", placeholder: "Search terrain zones..." },
+  hydrology: { icon: <AlertTriangle size={14} className="text-red-400" />, title: "Flood Risk Zones", placeholder: "Search flood zones..." },
+  infrastructure: { icon: <Building2 size={14} className="text-amber-400" />, title: "Infrastructure Exposure", placeholder: "Search infrastructure..." },
+  population: { icon: <Car size={14} className="text-blue-400" />, title: "Population Exposure", placeholder: "Search population zones..." },
+  environment: { icon: <Zap size={14} className="text-emerald-400" />, title: "Environmental Hazards", placeholder: "Search hazard zones..." },
 };
 
-export default function FloodRiskTable({ risks, dashboardMode = "flood" }: FloodRiskTableProps) {
-  const modeTitle = MODE_TITLES[dashboardMode];
+export default function FloodRiskTable({ risks, dashboardMode = "hydrology" }: FloodRiskTableProps) {
+  const modeTitle = MODE_TITLES[dashboardMode] || MODE_TITLES.hydrology;
   const [filterLevel, setFilterLevel] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
 

@@ -11,15 +11,27 @@ class LocationResponse(BaseModel):
     country: str
     state: str
 
+class MapContext(BaseModel):
+    bbox: Optional[List[float]] = None
+    zoom: Optional[float] = None
+    center: Optional[List[float]] = None
+    visible_layers: Optional[List[str]] = None
+    active_filters: Optional[dict] = None
+    selected_features: Optional[List[dict]] = None
+    dashboard_mode: Optional[str] = None
+
 class ChatRequest(BaseModel):
     message: str
     location: Optional[str] = None
     context: Optional[List[dict]] = None
     uploaded_files: Optional[List[dict]] = None
+    map_context: Optional[MapContext] = None
+    simulation_context: Optional[dict] = None
 
 class ChatResponse(BaseModel):
     message: str
     metadata: dict
+    actions: Optional[List[dict]] = None
 
 class PredictionRequest(BaseModel):
     rainfall: float = 245.0
@@ -65,8 +77,15 @@ class KPIResponse(BaseModel):
     water_bodies: int
 
 class ReportRequest(BaseModel):
-    location: str
+    location: str = "Pune, Maharashtra"
     report_type: str = "comprehensive"
+    scenario: Optional[str] = "extreme"
+    progress: Optional[float] = 100.0
+    include_prediction: Optional[bool] = True
+    include_maps: Optional[bool] = True
+    include_charts: Optional[bool] = True
+    include_snapshot: Optional[bool] = True
+    snapshot_base64: Optional[str] = None
 
 class ReportResponse(BaseModel):
     id: str
@@ -79,6 +98,11 @@ class ReportResponse(BaseModel):
     pdf_base64: Optional[str] = None
     charts: Optional[dict] = None
     telemetry_source: Optional[dict] = None
+    scenario_metadata: Optional[dict] = None
+    key_findings: Optional[List[str]] = None
+    recommendations_list: Optional[List[str]] = None
+    comparison_data: Optional[dict] = None
+    processing_time: Optional[str] = None
 
 
 

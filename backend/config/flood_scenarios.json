@@ -1,0 +1,40 @@
+{
+  "scenarios": [
+    {
+      "id": "normal",
+      "name": "Normal",
+      "description": "Representative rainfall: 0-50 mm. River remains largely within channel.",
+      "rainfall_mm": [0, 50],
+      "frames": 24,
+      "max_cost_threshold": 0.5,
+      "water_level_rise_m": 0.5
+    },
+    {
+      "id": "moderate",
+      "name": "Moderate",
+      "description": "Representative rainfall: 50-80 mm. Localized bank overflow.",
+      "rainfall_mm": [50, 80],
+      "frames": 25,
+      "max_cost_threshold": 1.2,
+      "water_level_rise_m": 1.5
+    },
+    {
+      "id": "heavy",
+      "name": "Heavy",
+      "description": "Representative rainfall: 80-150 mm. Substantial river rise, larger connected floodplain inundation.",
+      "rainfall_mm": [80, 150],
+      "frames": 30,
+      "max_cost_threshold": 3.0,
+      "water_level_rise_m": 3.0
+    },
+    {
+      "id": "extreme",
+      "name": "Extreme",
+      "description": "Representative rainfall: 150-250 mm. Largest river rise and infrastructure exposure.",
+      "rainfall_mm": [150, 250],
+      "frames": 30,
+      "max_cost_threshold": 6.0,
+      "water_level_rise_m": 5.5
+    }
+  ]
+}

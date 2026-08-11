@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8853416,
+              18.538216
+            ],
+            [
+              73.8851188,
+              18.5376967
+            ],
+            [
+              73.884407,
+              18.5369087
+            ],
+            [
+              73.884166,
+              18.5369456
+            ],
+            [
+              73.8830648,
+              18.5376067
+            ],
+            [
+              73.8829361,
+              18.5376677
+            ],
+            [
+              73.8839124,
+              18.5391426
+            ],
+            [
+              73.8848165,
+              18.5385772
+            ],
+            [
+              73.8852115,
+              18.5383302
+            ],
+            [
+              73.8853416,
+              18.538216
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 53455333,
+        "name": "JN Petit Technical High School",
+        "category": "schools",
+        "osm_type": "way",
+        "osm_amenity": "school",
+        "osm_check_date": "2026-03-10",
+        "osm_wikidata": "Q6106593",
+        "osm_wikipedia": "en:J. N. Petit Technical High School"
+      }
+    }
+  ],
+  "category": "schools",
+  "count": 1
+}

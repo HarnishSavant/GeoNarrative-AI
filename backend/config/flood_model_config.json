@@ -1,0 +1,19 @@
+{
+  "propagation_weights": {
+    "elevation_penalty": 0.50,
+    "uphill_penalty": 2.00,
+    "slope_penalty": 0.10,
+    "distance_penalty": 0.15,
+    "surface_resistance": 0.15,
+    "susceptibility_penalty": 0.10
+  },
+  "resolution_m": 30.0,
+  "resolution_justification": "Using 30m resolution as it balances the computational efficiency required for offline generation on a consumer machine with sufficient granularity to model city-scale floodplain dynamics without artificial channel disconnection.",
+  "susceptibility_map": {
+    "1": 0.9,
+    "2": 0.7,
+    "3": 0.5,
+    "4": 0.3,
+    "5": 0.1
+  }
+}

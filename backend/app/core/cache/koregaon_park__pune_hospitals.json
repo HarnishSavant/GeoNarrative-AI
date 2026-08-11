@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8874441,
+          18.5347719
+        ]
+      },
+      "properties": {
+        "id": 10172977893,
+        "name": "Sadhu Vaswani Missions Medical Complex",
+        "category": "hospitals",
+        "osm_type": "node",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2025-06-28",
+        "osm_healthcare": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.8869549,
+              18.5342469
+            ],
+            [
+              73.8871435,
+              18.5358832
+            ],
+            [
+              73.8878017,
+              18.535815
+            ],
+            [
+              73.8876131,
+              18.5341787
+            ],
+            [
+              73.8869549,
+              18.5342469
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 380417659,
+        "name": "Inlaks and Budhrani Hospital,Sadhu Vaswani Mission's Medical Complex",
+        "category": "hospitals",
+        "osm_type": "way",
+        "osm_addr:district": "Pune",
+        "osm_addr:full": "7-9, Koregaon Park Road, Opposite Osho Ashram",
+        "osm_addr:postcode": "411001",
+        "osm_addr:state": "Maharashtra",
+        "osm_amenity": "hospital",
+        "osm_check_date": "2026-03-09",
+        "osm_healthcare": "hospital",
+        "osm_name:mr": "इनलॅक्स बुधराणी रुग्णालय",
+        "osm_source": "OpenGovernmentData",
+        "osm_wheelchair": "yes",
+        "osm_wikidata": "Q14956857",
+        "osm_wikipedia": "en:Inlaks & Budhrani Hospital"
+      }
+    }
+  ],
+  "category": "hospitals",
+  "count": 2
+}

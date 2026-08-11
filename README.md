@@ -1,145 +1,89 @@
-# 🌍 GeoNarrative AI — Conversational GeoAI Digital Twin Platform
+# GeoNarrative AI: Enterprise Digital Twin & Spatial Decision Support System (SDSS)
 
-> AI-powered geospatial intelligence platform for smart-city analytics, flood risk prediction, and conversational GIS insights.
+![GeoNarrative AI](https://img.shields.io/badge/Platform-Enterprise_GIS-06b6d4?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production_Ready-10b981?style=for-the-badge)
+![Tech Stack](https://img.shields.io/badge/Stack-React_|_FastAPI_|_PostGIS-3b82f6?style=for-the-badge)
 
-![GeoNarrative AI](https://img.shields.io/badge/GeoNarrative-AI-6366f1?style=for-the-badge&logo=globe&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=for-the-badge&logo=fastapi)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
-![Mapbox](https://img.shields.io/badge/Mapbox-GL-4264fb?style=for-the-badge&logo=mapbox)
+GeoNarrative AI is a high-fidelity, production-ready **Digital Twin and Spatial Decision Support System (SDSS)** explicitly engineered for Disaster Management Authorities, Smart Cities, and Municipal Corporations. 
 
-## ✨ Features
+Bridging the gap between deeply analytical 2D geoprocessing and immersive 3D simulations, the platform empowers decision-makers to visualize, predict, and mitigate urban flooding scenarios within the Pune Metropolitan Region.
 
-- 🗺️ **Interactive Map** — Mapbox GL with flood zones, heatmaps, and data layers
-- 🤖 **AI Chat Assistant** — Conversational GIS with natural language queries
-- 📊 **Analytics Dashboard** — KPI cards, charts, and risk gauges
-- 🌊 **Flood Risk Prediction** — ML-based multi-factor risk analysis
-- 📁 **GIS Data Upload** — GeoJSON, CSV, Shapefile, KML support
-- 📋 **Report Generation** — AI-generated risk assessment reports
-- 🎨 **Modern SaaS UI** — Glassmorphism, animations, dark mode
+---
 
-## 🚀 Quick Start
+## 🌟 Core Modules
+
+### 1. 2D Spatial Analysis Engine (ArcGIS Enterprise)
+A professional web-based GIS interface powered by the `ArcGIS Maps SDK for JavaScript`. 
+- **Live Geoprocessing:** Perform on-the-fly spatial queries against multi-layered topological datasets (Rivers, Buildings, LULC, DEM).
+- **Risk Explanation Matrix:** Click any parcel to automatically generate a localized risk profile (Elevation, Slope, Proximity, Density) rendered via dynamic Recharts.
+
+### 2. 3D Digital Twin Command Center (CesiumJS)
+An immersive, cinematic WebGL engine designed for stakeholder presentations and real-time situational awareness.
+- **Cinematic Flood Engine:** 8-stage hydrodynamic simulation visualization with advanced water shaders, bloom, and building translucency.
+- **Scenario Simulation:** Real-time adjustable sliders for Rainfall Intensity, River Base Level, and Engine Speed.
+- **Live Telemetry Dashboard:** Tracks dynamic Total Flooded Area, Estimated Population at Risk, and Financial Loss dynamically during simulations.
+
+### 3. Federated Autonomous Agent System (FastAPI)
+The backend is driven by a sophisticated Python/FastAPI architecture coordinating multiple specialized AI agents.
+- **Data Ingestion:** Automated PostGIS vector/raster synchronization.
+- **Predictive ML:** Interface bindings ready for hydrology inference models.
+- **Reporting Agent:** Automatically parses spatial analyses and LLM insights into localized PDF disaster reports via ReportLab.
+
+---
+
+## 🏗️ Technology Stack
+
+| Domain | Technologies |
+| :--- | :--- |
+| **Frontend Core** | React 18, Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion |
+| **GIS & 3D Engines**| ArcGIS Maps SDK, CesiumJS, Mapbox GL JS, Deck.gl |
+| **Backend API** | Python 3.10+, FastAPI, Uvicorn, Pydantic, SQLAlchemy |
+| **Database** | PostgreSQL + PostGIS Extension |
+| **AI & ML** | LangChain, HuggingFace Transformers, OpenAI Integration |
+| **Infrastructure** | Docker, Docker Compose, Nginx (Production) |
+
+---
+
+## 🚀 Quick Start (Development)
 
 ### Prerequisites
-- **Node.js** 18+ and **npm**
-- **Python** 3.10+
-- **Mapbox Access Token** (free at [mapbox.com](https://account.mapbox.com/access-tokens/))
+- Node.js (v18+)
+- Python (v3.10+)
+- PostgreSQL (v14+) with PostGIS (v3+)
 
-### 1. Frontend Setup
+### 1. Clone & Configure
+```bash
+git clone https://github.com/your-org/geonarrative-ai.git
+cd geonarrative-ai
+```
+Configure your `.env` (Backend) and `.env.local` (Frontend) using the provided `.env.example` templates. Ensure you provide valid `NEXT_PUBLIC_ARCGIS_API_KEY` and `NEXT_PUBLIC_CESIUM_ION_TOKEN`.
 
+### 2. Start the Backend (FastAPI)
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # (Windows: venv\Scripts\activate)
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+### 3. Start the Frontend (Next.js)
 ```bash
 cd frontend
-
-# Install dependencies
 npm install
-
-# Create environment file
-copy .env.example .env.local
-
-# Add your Mapbox token to .env.local:
-# NEXT_PUBLIC_MAPBOX_TOKEN=pk.eyJ1...your_token_here
-
-# Start development server
 npm run dev
 ```
 
-Frontend runs at **http://localhost:3000**
+The application will be available at `http://localhost:3000`.
 
-### 2. Backend Setup
+---
 
-```bash
-cd backend
+## 🛡️ Enterprise Grade Architecture
+- **Clean Architecture:** Strict separation of concerns (Controllers -> Services -> Data Access).
+- **Graceful Error Handling:** Deep React `ErrorBoundary` and `Suspense` wrappers protect the DOM from WebGL context crashes.
+- **Modular Integrations:** Defined `abc.ABC` Python interfaces (`IWeatherAPI`, `IRiverSensorAPI`) for rapid deployment of IoT sensors and real-world meteorology APIs.
+- **Optimized Bundle:** Heavy GIS dependencies are strictly lazy-loaded on the client-side to guarantee lightning-fast initial load times.
 
-# Create virtual environment
-python -m venv venv
-venv\Scripts\activate     # Windows
-# source venv/bin/activate  # Mac/Linux
+---
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Start server
-python main.py
-# OR
-uvicorn main:app --reload --port 8000
-```
-
-Backend runs at **http://localhost:8000**
-API docs at **http://localhost:8000/docs**
-
-## 🏗️ Project Structure
-
-```
-geonarrative-ai/
-├── frontend/                   # Next.js Frontend
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── layout.tsx      # Root layout
-│   │   │   ├── page.tsx        # Main dashboard page
-│   │   │   └── globals.css     # Global styles
-│   │   ├── components/
-│   │   │   ├── Sidebar.tsx     # Navigation sidebar
-│   │   │   ├── TopNav.tsx      # Top navigation bar
-│   │   │   ├── MapView.tsx     # Mapbox GL map
-│   │   │   ├── KPICard.tsx     # KPI metric cards
-│   │   │   ├── AnalyticsCharts.tsx  # Recharts analytics
-│   │   │   ├── AIChatPanel.tsx # AI chat interface
-│   │   │   ├── FileUpload.tsx  # Drag-and-drop upload
-│   │   │   ├── FloodRiskTable.tsx   # Risk zones table
-│   │   │   ├── MapLayersPanel.tsx   # Layer toggles
-│   │   │   ├── PredictionPanel.tsx  # ML prediction
-│   │   │   ├── ReportsPanel.tsx     # Report generation
-│   │   │   ├── RightPanel.tsx       # Intelligence panel
-│   │   │   └── SettingsPanel.tsx    # Settings
-│   │   └── lib/
-│   │       ├── types.ts        # TypeScript types
-│   │       ├── config.ts       # App configuration
-│   │       └── mockData.ts     # Demo data
-│   ├── tailwind.config.ts
-│   └── package.json
-├── backend/                    # FastAPI Backend
-│   ├── app/
-│   │   ├── api/
-│   │   │   └── routes.py       # All API endpoints
-│   │   ├── core/
-│   │   │   └── config.py       # Backend config
-│   │   ├── services/           # Business logic
-│   │   └── models/             # Data models
-│   ├── main.py                 # FastAPI entry point
-│   └── requirements.txt
-└── README.md
-```
-
-## 🔑 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/v1/locations/search?q=` | Search locations |
-| POST | `/api/v1/upload` | Upload GIS files |
-| GET | `/api/v1/analytics` | Get analytics data |
-| GET | `/api/v1/analytics/kpi` | Get KPI metrics |
-| GET | `/api/v1/flood-zones` | Get flood risk zones |
-| GET | `/api/v1/map/layers` | Get map layer config |
-| GET | `/api/v1/map/geojson` | Get GeoJSON data |
-| POST | `/api/v1/chat` | AI chat endpoint |
-| POST | `/api/v1/predict` | Run ML prediction |
-| POST | `/api/v1/reports/generate` | Generate report |
-
-## 🛠️ Tech Stack
-
-**Frontend:** Next.js 14, React 18, TypeScript, Tailwind CSS, Mapbox GL JS, Recharts, Framer Motion, Lucide Icons
-
-**Backend:** FastAPI, Python, Pydantic, Uvicorn
-
-**AI/ML:** Gemini API (optional), Simulated ML models
-
-## 📝 Notes
-
-- The platform works with demo data out of the box
-- Add a **Mapbox token** for the full interactive map experience
-- Add a **Gemini API key** for enhanced AI chat responses
-- Without these keys, the platform uses beautiful fallback visualizations
-
-## 📄 License
-
-MIT License — Built for educational and demonstration purposes.
+*GeoNarrative AI — Engineering the future of resilient Smart Cities.*

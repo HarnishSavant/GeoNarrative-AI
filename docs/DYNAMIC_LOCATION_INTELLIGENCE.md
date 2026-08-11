@@ -1,6 +1,6 @@
-# 🗺️ Dynamic Location Intelligence Architecture
+# 🗺️ Pune Digital Twin Intelligence Architecture
 
-GeoNarrative AI is equipped with a real-time, global geospatial data extraction and geocoding pipeline. When a user searches for any city (e.g., *"Pune"*, *"Mumbai"*, *"London"*), the system dynamically queries global open spatial databases, downloads structural vectors, converts them to high-performance GeoJSON, maps them to Mapbox layers, and persists them inside our spatial PostGIS database.
+GeoNarrative AI is equipped with a high-fidelity geospatial data extraction and geocoding pipeline customized for the Pune Metropolitan Region. When the system initializes the study area (e.g., *"Pune"*, *"Pimpri-Chinchwad"*), it queries spatial databases, downloads structural vectors, converts them to high-performance GeoJSON, maps them to Digital Twin layers, and persists them inside our spatial PostGIS database.
 
 ```mermaid
 graph TD

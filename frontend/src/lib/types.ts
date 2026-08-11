@@ -38,7 +38,7 @@ export interface KPIData {
   change: number;
   changeLabel: string;
   icon: string;
-  color: string;
+  color?: string;
   gradient: [string, string];
 }
 
@@ -82,6 +82,11 @@ export interface MapLayer {
   color: string;
   icon: string;
   description: string;
+  dataSource?: string;
+  resolution?: string;
+  updateDate?: string;
+  layerMetadata?: string;
+  coverageArea?: string;
 }
 
 export interface UploadedFile {
@@ -119,7 +124,7 @@ export interface Notification {
   read: boolean;
 }
 
-export type DashboardMode = "flood" | "traffic" | "urban" | "utility";
+export type DashboardMode = "terrain" | "hydrology" | "infrastructure" | "population" | "environment";
 
 export type SidebarTab =
   | "dashboard"
@@ -131,4 +136,6 @@ export type SidebarTab =
   | "prediction"
   | "settings"
   | "profile"
-  | "admin";
+  | "admin"
+  | "arcgis"
+  | "twin";

@@ -15,9 +15,9 @@ class SaaSLimitMiddleware(BaseHTTPMiddleware):
         method = request.method
 
         # 1. Identify which routes require active credit/plan audits
-        is_ai_route = path.startswith("/api/v1/chat")
-        is_prediction_route = path.startswith("/api/v1/predict")
-        is_report_route = path.startswith("/api/v1/reports")
+        is_ai_route = path.startswith("/api/v1/chat") and method == "POST"
+        is_prediction_route = path == "/api/v1/predict" and method == "POST"
+        is_report_route = path.startswith("/api/v1/reports") and method == "POST"
         
         # We only monitor SaaS limits on POST/GET execution pipelines
         if not (is_ai_route or is_prediction_route or is_report_route):

@@ -1,0 +1,356 @@
+# GIS Data Audit Report
+
+## Rasters
+### builddens.tif
+- **path**: D:\sem3\geonarrative-ai\data\builddens.tif
+- **width**: 49
+- **height**: 42
+- **band_count**: 1
+- **dtype**: float32
+- **CRS**: PROJCS["WGS 84 / UTM zone 43N",GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",75],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
+- **EPSG**: None
+- **transform**: [660.9461410455096, 0.0, 364905.3921229541, 0.0, -663.5258191952847, 2060574.6336255956]
+- **pixel_size_x**: 660.9461410455096
+- **pixel_size_y**: 663.5258191952847
+- **extent**: BoundingBox(left=364905.3921229541, bottom=2032706.5492193936, right=397291.75303418405, top=2060574.6336255956)
+- **NoData**: None
+### dem.tif
+- **path**: D:\sem3\geonarrative-ai\data\dem.tif
+- **width**: 1032
+- **height**: 799
+- **band_count**: 1
+- **dtype**: float32
+- **CRS**: GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+- **EPSG**: None
+- **transform**: [0.000277777777777773, 0.0, 73.73180554444444, 0.0, -0.00027777777777777116, 18.622083344444434]
+- **pixel_size_x**: 0.000277777777777773
+- **pixel_size_y**: 0.00027777777777777116
+- **extent**: BoundingBox(left=73.73180554444444, bottom=18.400138899999995, right=74.0184722111111, top=18.622083344444434)
+- **NoData**: None
+### dist_to_river.tif
+- **path**: D:\sem3\geonarrative-ai\data\dist_to_river.tif
+- **width**: 49
+- **height**: 40
+- **band_count**: 1
+- **dtype**: float32
+- **CRS**: GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+- **EPSG**: None
+- **transform**: [0.006003667919999919, 0.0, 73.72659804388007, 0.0, -0.006003667919999955, 18.625449191240072]
+- **pixel_size_x**: 0.006003667919999919
+- **pixel_size_y**: 0.006003667919999955
+- **extent**: BoundingBox(left=73.72659804388007, bottom=18.385302474440074, right=74.02077777196007, top=18.625449191240072)
+- **NoData**: None
+### flood.tif
+- **path**: D:\sem3\geonarrative-ai\data\flood.tif
+- **width**: 48
+- **height**: 39
+- **band_count**: 1
+- **dtype**: int8
+- **CRS**: PROJCS["WGS 84 / UTM zone 43N",GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",75],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
+- **EPSG**: None
+- **transform**: [660.5678421149618, 0.0, 365383.15703577455, 0.0, -664.055370964671, 2060252.0220963084]
+- **pixel_size_x**: 660.5678421149618
+- **pixel_size_y**: 664.055370964671
+- **extent**: BoundingBox(left=365383.15703577455, bottom=2034353.8626286862, right=397090.4134572927, top=2060252.0220963084)
+- **NoData**: None
+### hill.tif
+- **path**: D:\sem3\geonarrative-ai\data\hill.tif
+- **width**: 1032
+- **height**: 799
+- **band_count**: 1
+- **dtype**: uint8
+- **CRS**: GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+- **EPSG**: None
+- **transform**: [0.000277777777777773, 0.0, 73.73180554444444, 0.0, -0.00027777777777777116, 18.622083344444434]
+- **pixel_size_x**: 0.000277777777777773
+- **pixel_size_y**: 0.00027777777777777116
+- **extent**: BoundingBox(left=73.73180554444444, bottom=18.400138899999995, right=74.0184722111111, top=18.622083344444434)
+- **NoData**: None
+### lulcc.tif
+- **path**: D:\sem3\geonarrative-ai\data\lulcc.tif
+- **width**: 3189
+- **height**: 2633
+- **band_count**: 1
+- **dtype**: uint8
+- **CRS**: GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+- **EPSG**: None
+- **transform**: [8.983152841194997e-05, 0.0, 73.73192188996208, 0.0, -8.983152841194964e-05, 18.621896176740854]
+- **pixel_size_x**: 8.983152841194997e-05
+- **pixel_size_y**: 8.983152841194964e-05
+- **extent**: BoundingBox(left=73.73192188996208, bottom=18.38536976243219, right=74.01839463406779, top=18.621896176740854)
+- **NoData**: None
+### output_hh.tif
+- **path**: D:\sem3\geonarrative-ai\data\output_hh.tif
+- **width**: 1260
+- **height**: 1260
+- **band_count**: 1
+- **dtype**: float32
+- **CRS**: GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+- **EPSG**: None
+- **transform**: [0.0002777777777777778, 0.0, 73.69986109999999, 0.0, -0.0002777777777777778, 18.750138899999996]
+- **pixel_size_x**: 0.0002777777777777778
+- **pixel_size_y**: 0.0002777777777777778
+- **extent**: BoundingBox(left=73.69986109999999, bottom=18.400138899999995, right=74.04986109999999, top=18.750138899999996)
+- **NoData**: None
+### Pune_LULC_10m_2024.tif
+- **path**: D:\sem3\geonarrative-ai\data\Pune_LULC_10m_2024.tif
+- **width**: 6681
+- **height**: 5569
+- **band_count**: 1
+- **dtype**: uint8
+- **CRS**: GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+- **EPSG**: None
+- **transform**: [8.983152841195215e-05, 0.0, 73.54992321339947, 0.0, -8.983152841195215e-05, 18.850247921964037]
+- **pixel_size_x**: 8.983152841195215e-05
+- **pixel_size_y**: 8.983152841195215e-05
+- **extent**: BoundingBox(left=73.54992321339947, bottom=18.349976140237874, right=74.15008765471971, top=18.850247921964037)
+- **NoData**: None
+### sloop.tif
+- **path**: D:\sem3\geonarrative-ai\data\sloop.tif
+- **width**: 1032
+- **height**: 799
+- **band_count**: 1
+- **dtype**: float32
+- **CRS**: GEOGCS["WGS 84",DATUM["World Geodetic System 1984",SPHEROID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+- **EPSG**: None
+- **transform**: [0.000277777777777773, 0.0, 73.73180554444444, 0.0, -0.00027777777777777116, 18.622083344444434]
+- **pixel_size_x**: 0.000277777777777773
+- **pixel_size_y**: 0.00027777777777777116
+- **extent**: BoundingBox(left=73.73180554444444, bottom=18.400138899999995, right=74.0184722111111, top=18.622083344444434)
+- **NoData**: None
+## Vectors
+### MyProject8.gdb_main_Clip
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: main_Clip
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 1
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.87536880000005, 18.48181640000007, 73.87549490000004, 18.482001300000036]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'type', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_Pune_Buildings
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: Pune_Buildings
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 1
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.87536880000005, 18.48181640000007, 73.87549490000004, 18.482001300000036]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'type', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_main_Clip1
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: main_Clip1
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 1
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.87536880000005, 18.48181640000007, 73.87549490000004, 18.482001300000036]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'type', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_pune_building
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: pune_building
+- **geometry_type**: []
+- **feature_count**: 0
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: None
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'type', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_building
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: building
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 339732
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.36781530000007, 17.893830800000046, 75.12334070000003, 19.368146700000068]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'type', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_roads
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: roads
+- **geometry_type**: ['MultiLineString']
+- **feature_count**: 146162
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.33285889000007, 17.891491478000034, 75.14335960000005, 19.394833824000045]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'ref', 'oneway', 'maxspeed', 'layer', 'bridge', 'tunnel', 'geom_Length', 'geometry']
+### MyProject8.gdb_railways
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: railways
+- **geometry_type**: ['MultiLineString']
+- **feature_count**: 1027
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.36607751900004, 18.100965150000036, 74.83916365100004, 18.767727800000046]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'layer', 'bridge', 'tunnel', 'geom_Length', 'geometry']
+### MyProject8.gdb_Landue
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: Landue
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 7451
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.33301419900005, 17.893417353000075, 75.13836669800008, 19.393901473000028]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_natural
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: natural
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 7
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.35845080000007, 18.244795700000054, 73.75175550000006, 19.24051890000004]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_natural_f
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: natural_f
+- **geometry_type**: ['Point']
+- **feature_count**: 19325
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.33460930000007, 18.031045000000063, 74.72458010000008, 19.380634900000075]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geometry']
+### MyProject8.gdb_place
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: place
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 83
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.38192650000008, 18.068483155000024, 74.82808190000003, 19.34368440000003]
+- **attributes**: ['osm_id', 'code', 'fclass', 'population', 'name', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_places
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: places
+- **geometry_type**: ['Point']
+- **feature_count**: 1039
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.33627220000005, 17.924444600000072, 75.13498310000006, 19.37142780000005]
+- **attributes**: ['osm_id', 'code', 'fclass', 'population', 'name', 'geometry']
+### MyProject8.gdb_pofw
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: pofw
+- **geometry_type**: ['Point']
+- **feature_count**: 500
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.36172740000006, 18.03134250000005, 75.02782600000006, 19.284384900000077]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geometry']
+### MyProject8.gdb_pofw_f
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: pofw_f
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 382
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.38377040000006, 18.06638430000004, 75.02916010000007, 19.292455000000075]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_pois
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: pois
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 10980
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.33374020000008, 17.91115835900007, 75.11695340000006, 19.337487700000054]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_pois_f
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: pois_f
+- **geometry_type**: ['Point']
+- **feature_count**: 14921
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.33515500000004, 17.950506500000074, 75.12800480000004, 19.379928000000064]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geometry']
+### MyProject8.gdb_protected
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: protected
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 8
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.40695092500005, 18.332276300000046, 74.38382530000007, 19.394990921000044]
+- **attributes**: ['osm_id', 'code', 'fclass', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_trafic
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: trafic
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 598
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.37673340000003, 18.07235220000007, 74.65819650000003, 19.241612100000054]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'calming', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_trafic_f
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: trafic_f
+- **geometry_type**: ['Point']
+- **feature_count**: 1807
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.37043710000006, 18.062116400000036, 74.78762230000007, 19.355712700000026]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'calming', 'geometry']
+### MyProject8.gdb_transport
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: transport
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 598
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.37673340000003, 18.07235220000007, 74.65819650000003, 19.241612100000054]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'calming', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_transport_f
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: transport_f
+- **geometry_type**: ['Point']
+- **feature_count**: 901
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.37670920000005, 18.105445600000053, 74.77455320000007, 19.260502400000064]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geometry']
+### MyProject8.gdb_water
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: water
+- **geometry_type**: ['MultiPolygon']
+- **feature_count**: 1740
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.34721870000004, 17.894336200000055, 75.16710662800006, 19.366419200000053]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geom_Length', 'geom_Area', 'geometry']
+### MyProject8.gdb_water_ways
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: water_ways
+- **geometry_type**: ['MultiLineString']
+- **feature_count**: 1444
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.34236329700008, 17.893001705000074, 75.15654800000004, 19.393918685000074]
+- **attributes**: ['osm_id', 'code', 'fclass', 'width', 'name', 'geom_Length', 'geometry']
+### MyProject8.gdb_transport_f_ExportFeatures
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: transport_f_ExportFeatures
+- **geometry_type**: ['Point']
+- **feature_count**: 901
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.37670920000005, 18.105445600000053, 74.77455320000007, 19.260502400000064]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geometry']
+### MyProject8.gdb_transport_f_ExportFeatures1
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: transport_f_ExportFeatures1
+- **geometry_type**: ['Point']
+- **feature_count**: 901
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.37670920000005, 18.105445600000053, 74.77455320000007, 19.260502400000064]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geometry']
+### MyProject8.gdb_transport_f_ExportFeatures2
+- **dataset**: D:\sem3\geonarrative-ai\data\MyProject8.gdb
+- **layer**: transport_f_ExportFeatures2
+- **geometry_type**: ['Point']
+- **feature_count**: 901
+- **CRS**: OGC:CRS84
+- **EPSG**: None
+- **extent**: [73.37670920000005, 18.105445600000053, 74.77455320000007, 19.260502400000064]
+- **attributes**: ['osm_id', 'code', 'fclass', 'name', 'geometry']
+## Failures

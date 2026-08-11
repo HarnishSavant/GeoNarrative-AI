@@ -60,31 +60,134 @@ export const apiService = {
   },
 
   /**
-   * Get location analytics trends and charts
+   * Get total hexagon counts grouped by Risk Class (Jenks)
    */
-  async getAnalytics(location: string, mode?: string): Promise<any> {
-    const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
-    const res = await fetch(`${BASE_URL}/api/v1/analytics?location=${encodeURIComponent(location)}${modeParam}`, {
+  async getRiskSummary(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/risk-summary`, {
       headers: this.getAuthHeaders(),
     });
-    if (!res.ok) throw new Error("Failed to fetch analytics");
+    if (!res.ok) throw new Error("Failed to fetch risk summary");
     return res.json();
   },
 
   /**
-   * Get real-time metric KPIs for a location and active mode
+   * Get exact counts of Buildings, Roads, POIs intersecting High/Very High flood zones
    */
-  async getKPIs(location: string, mode?: string): Promise<any> {
-    const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
-    const res = await fetch(`${BASE_URL}/api/v1/analytics/kpi?location=${encodeURIComponent(location)}${modeParam}`, {
+  async getExposureSummary(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/exposure-summary`, {
       headers: this.getAuthHeaders(),
     });
-    if (!res.ok) throw new Error("Failed to fetch KPIs");
+    if (!res.ok) throw new Error("Failed to fetch exposure summary");
+    return res.json();
+  },
+
+  /**
+   * Get high-risk POIs (Hospitals, Schools)
+   */
+  async getCriticalInfrastructure(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/critical-infrastructure`, {
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to fetch critical infrastructure");
+    return res.json();
+  },
+
+  /**
+   * Get emergency planning safe assembly points
+   */
+  async getShelterRecommendations(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/shelter-recommendations`, {
+      headers: this.getAuthHeaders(),
+    });
+    if (!res.ok) throw new Error("Failed to fetch shelter recommendations");
+    return res.json();
+  },
+
+  // ═════════════════════════════════════════════════════════════════════════
+  // PHASE 7 RESEARCH-GRADE SPATIAL ANALYTICS SERVICE CALLS
+  // ═════════════════════════════════════════════════════════════════════════
+  async getAnalyticsOverview(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/overview`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch analytics overview");
+    return res.json();
+  },
+
+  async getAnalyticsSusceptibility(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/susceptibility`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch susceptibility analytics");
+    return res.json();
+  },
+
+  async getAnalyticsTerrain(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/terrain`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch terrain analytics");
+    return res.json();
+  },
+
+  async getAnalyticsLulc(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/lulc`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch LULC analytics");
+    return res.json();
+  },
+
+  async getAnalyticsScenarios(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/scenarios`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch scenarios comparison");
+    return res.json();
+  },
+
+  async getAnalyticsScenarioTimeline(scenarioId: string): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/scenarios/${encodeURIComponent(scenarioId)}/timeline`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch scenario timeline");
+    return res.json();
+  },
+
+  async getAnalyticsScenarioExposure(scenarioId: string): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/analytics/scenarios/${encodeURIComponent(scenarioId)}/exposure`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch scenario exposure");
+    return res.json();
+  },
+
+  // ─── Phase 8: Predictive Spatial Intelligence Endpoints ───
+  async getPredictionScenarios(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/prediction/scenarios`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch predictive scenario escalation definitions");
+    return res.json();
+  },
+
+  async getPredictionProgress(scenario: string, progress: number): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/prediction/scenario/${encodeURIComponent(scenario)}/progress/${progress}`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch prediction progress metrics");
+    return res.json();
+  },
+
+  async getPredictionCompare(baseline: string, target: string): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/prediction/compare?baseline=${encodeURIComponent(baseline)}&target=${encodeURIComponent(target)}`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to compare scenarios");
+    return res.json();
+  },
+
+  async getPredictionHotspots(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/prediction/hotspots`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to fetch emerging impact hotspots");
+    return res.json();
+  },
+
+  async getPredictionLocation(lat: number, lon: number): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/prediction/location?lat=${lat}&lon=${lon}`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to query location prediction profile");
+    return res.json();
+  },
+
+  async getPredictionStory(): Promise<any> {
+    const res = await fetch(`${BASE_URL}/api/v1/prediction/story`, { headers: this.getAuthHeaders() });
+    if (!res.ok) throw new Error("Failed to load prediction story mode");
     return res.json();
   },
 
   /**
    * Get low-lying risk flood zones
+   *
    */
   async getFloodZones(location: string, mode?: string): Promise<any> {
     const modeParam = mode ? `&mode=${encodeURIComponent(mode)}` : "";
@@ -128,15 +231,22 @@ export const apiService = {
   /**
    * Send natural language chat prompt to backend AI assistant
    */
-  async sendChatMessage(message: string, location?: string, context?: any[], uploadedFiles?: any[]): Promise<any> {
+  async sendChatMessage(message: string, location?: string, context?: any[], uploadedFiles?: any[], mapContext?: any, simulationContext?: any): Promise<any> {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30.0s timeout
+    const timeoutId = setTimeout(() => controller.abort(), 60000); // 60s timeout for full function calling loop
 
     try {
       const res = await fetch(`${BASE_URL}/api/v1/chat`, {
         method: "POST",
         headers: this.getAuthHeaders(),
-        body: JSON.stringify({ message, location, context, uploaded_files: uploadedFiles }),
+        body: JSON.stringify({ 
+          message, 
+          location, 
+          context, 
+          uploaded_files: uploadedFiles,
+          map_context: mapContext,
+          simulation_context: simulationContext
+        }),
         signal: controller.signal,
       });
       clearTimeout(timeoutId);
@@ -184,13 +294,25 @@ export const apiService = {
   },
 
   /**
-   * Generate an executive risk assessment report
+   * Generate an executive risk assessment or Phase 9 analytical report
    */
-  async generateReport(location: string, reportType: string = "comprehensive"): Promise<any> {
+  async generateReport(
+    location: string,
+    reportType: string = "comprehensive",
+    options?: {
+      scenario?: string;
+      progress?: number;
+      include_prediction?: boolean;
+      include_maps?: boolean;
+      include_charts?: boolean;
+      include_snapshot?: boolean;
+      snapshot_base64?: string;
+    }
+  ): Promise<any> {
     const res = await fetch(`${BASE_URL}/api/v1/reports/generate`, {
       method: "POST",
       headers: this.getAuthHeaders(),
-      body: JSON.stringify({ location, report_type: reportType }),
+      body: JSON.stringify({ location, report_type: reportType, ...options }),
     });
     if (!res.ok) throw new Error("Failed to generate report");
     const data = await res.json();

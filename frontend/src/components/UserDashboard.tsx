@@ -105,18 +105,7 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
     }
   };
 
-  // Inject Razorpay checkout script on mount
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
+
 
   useEffect(() => {
     loadBillingAndEnterpriseData();
@@ -164,9 +153,19 @@ export default function UserDashboard({ user, onLogout, onRefreshProfile }: User
 
       // Fallback for real Razorpay Keys
       if (!(window as any).Razorpay) {
-        setErrorMsg("Razorpay payment gateway script not loaded. Please disable ad-blockers or try again.");
-        setIsUpgrading(false);
-        return;
+        // Dynamically inject script on demand to prevent console warning spam
+        await new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = "https://checkout.razorpay.com/v1/checkout.js";
+          script.async = true;
+          script.onload = resolve;
+          script.onerror = () => reject(new Error("Failed to load Razorpay SDK"));
+          document.body.appendChild(script);
+        }).catch(() => {
+          setErrorMsg("Razorpay payment gateway script not loaded. Please disable ad-blockers or try again.");
+          setIsUpgrading(false);
+          return;
+        });
       }
 
       const options: any = {

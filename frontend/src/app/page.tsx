@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-import { Droplets, Car, Building2, Zap, Globe2, Search, MapPin, BarChart3, MessageSquareText, Shield, Loader2, AlertTriangle } from "lucide-react";
+import { Droplets, Car, Building2, Zap, Globe2, Search, MapPin, BarChart3, MessageSquareText, Shield, Loader2, AlertTriangle, Users } from "lucide-react";
 
 import Sidebar from "@/components/Sidebar";
 import TopNav from "@/components/TopNav";
@@ -14,47 +14,166 @@ import PredictionPanel from "@/components/PredictionPanel";
 import ReportsPanel from "@/components/ReportsPanel";
 import SettingsPanel from "@/components/SettingsPanel";
 import RightPanel from "@/components/RightPanel";
+import FeatureDetailsPanel from "@/components/FeatureDetailsPanel";
 
 // SaaS upgrades
 import LandingPage from "@/components/LandingPage";
 import AuthModal from "@/components/AuthModal";
 import UserDashboard from "@/components/UserDashboard";
 import AdminDashboard from "@/components/AdminDashboard";
+import CommandDashboard from "@/components/CommandDashboard";
 import { apiService } from "@/services/apiService";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 import { SidebarTab, UploadedFile, DashboardMode } from "@/lib/types";
-import { getKPIsForMode, generateFloodRisksForLocation, generateAnalyticsForLocation } from "@/lib/mockData";
+
 import { useMapControl } from "@/hooks/useMapControl";
+import { useUIStore } from "@/store/uiStore";
+import { useDataStore } from "@/store/dataStore";
+import { useAnalyticsStore } from "@/store/analyticsStore";
 
 // Dynamic import for the map to avoid SSR issues
 const MapView = dynamic(() => import("@/components/MapView"), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full rounded-xl bg-geo-card border border-geo-border flex items-center justify-center">
-      <div className="text-center space-y-3">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-          className="w-10 h-10 border-2 border-primary-500/30 border-t-primary-500 rounded-full mx-auto"
-        />
-        <p className="text-sm text-gray-500">Loading map...</p>
+    <div className="w-full h-full rounded-xl bg-geo-dark border border-geo-border flex items-center justify-center relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-950/20 to-cyan-950/20" />
+      <div className="text-center space-y-6 relative z-10 flex flex-col items-center">
+        <div className="relative w-16 h-16 flex items-center justify-center">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+            className="absolute inset-0 rounded-full border-[3px] border-primary-500/10 border-t-primary-500"
+          />
+          <motion.div
+            animate={{ rotate: -360 }}
+            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+            className="absolute inset-2 rounded-full border-[3px] border-cyan-500/10 border-t-cyan-500"
+          />
+          <Globe2 size={24} className="text-primary-400 animate-pulse" />
+        </div>
+        <div className="space-y-1">
+          <h3 className="text-sm font-bold text-gray-200 tracking-wider">INITIALIZING 3D DIGITAL TWIN</h3>
+          <p className="text-[10px] text-gray-500 font-mono uppercase tracking-widest flex items-center justify-center gap-2">
+            <Loader2 size={10} className="animate-spin text-cyan-500" />
+            Loading WebGL Rendering Engine
+          </p>
+        </div>
       </div>
     </div>
   ),
 });
 
+const ArcGISView = dynamic(() => import("@/components/ArcGISView"), {
+  ssr: false,
+  loading: () => <div className="flex-1 flex items-center justify-center bg-gray-100">Loading ArcGIS Enterprise...</div>,
+});
+
+const CesiumTwinView = dynamic(() => import("@/components/CesiumTwinView"), {
+  ssr: false,
+  loading: () => <div className="flex-1 flex items-center justify-center bg-gray-900 text-white">Loading Digital Twin Engine...</div>,
+});
+
 const DASHBOARD_MODES = [
-  { id: "flood" as DashboardMode, label: "Flood Risk", icon: <Droplets size={14} />, color: "#3b82f6", gradient: "from-blue-600 to-cyan-500" },
-  { id: "traffic" as DashboardMode, label: "Traffic", icon: <Car size={14} />, color: "#f59e0b", gradient: "from-amber-500 to-orange-500" },
-  { id: "urban" as DashboardMode, label: "Urban Dev", icon: <Building2 size={14} />, color: "#8b5cf6", gradient: "from-violet-500 to-indigo-500" },
-  { id: "utility" as DashboardMode, label: "Utility", icon: <Zap size={14} />, color: "#10b981", gradient: "from-emerald-500 to-teal-500" },
+  { id: "terrain" as DashboardMode, label: "Terrain Twin", icon: <Globe2 size={14} />, color: "#8b5cf6", gradient: "from-violet-600 to-indigo-500" },
+  { id: "hydrology" as DashboardMode, label: "Hydrology Twin", icon: <Droplets size={14} />, color: "#3b82f6", gradient: "from-blue-600 to-cyan-500" },
+  { id: "infrastructure" as DashboardMode, label: "Infrastructure Twin", icon: <Building2 size={14} />, color: "#10b981", gradient: "from-emerald-500 to-teal-500" },
+  { id: "population" as DashboardMode, label: "Population Twin", icon: <Users size={14} />, color: "#f59e0b", gradient: "from-amber-500 to-orange-500" },
+  { id: "environment" as DashboardMode, label: "Environmental Twin", icon: <Zap size={14} />, color: "#22c55e", gradient: "from-green-500 to-emerald-400" },
 ];
 
+// ── WelcomeScreen at MODULE SCOPE — not inside Home() ──
+// Must be defined here to prevent React creating a new component type on every Home() render
+function WelcomeScreen({ onSearch, onOpenChat }: { onSearch: () => void; onOpenChat: () => void }) {
+  return (
+    <div className="flex-1 flex items-center justify-center p-8 relative overflow-hidden">
+      {/* Dynamic Background */}
+      <div className="absolute inset-0 bg-[#0a0f18]" />
+      <div className="absolute top-[20%] left-[20%] w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[10%] right-[20%] w-[600px] h-[600px] bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+      
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-5xl w-full text-center space-y-12 relative z-10"
+      >
+        <div className="space-y-6">
+          <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }}
+            className="w-24 h-24 rounded-3xl bg-gradient-to-br from-blue-600 to-cyan-400 flex items-center justify-center mx-auto shadow-[0_0_40px_rgba(59,130,246,0.3)] border border-white/10">
+            <Globe2 size={48} className="text-white" />
+          </motion.div>
+          <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
+            className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-400 tracking-tight">GeoNarrative AI</motion.h2>
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
+            className="text-slate-400 text-base max-w-2xl mx-auto leading-relaxed">
+            Enterprise 3D Digital Twin Platform. Access high-fidelity Terrain, Hydrology,
+            Infrastructure, Population, and Environmental models for the Pune Metropolitan Region.
+          </motion.p>
+        </div>
+
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
+          onClick={onSearch}
+          className="max-w-2xl mx-auto bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-2xl p-6 cursor-pointer hover:bg-white/[0.08] hover:border-blue-500/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transition-all duration-300 group">
+          <div className="flex items-center gap-4 justify-center">
+            <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center group-hover:scale-110 group-hover:bg-blue-500/40 transition-all duration-300">
+              <Search size={20} className="text-blue-400 group-hover:text-white" />
+            </div>
+            <div className="text-left">
+              <h3 className="text-lg font-semibold text-slate-200 group-hover:text-white transition-colors">Load Pune Metropolitan Region</h3>
+              <p className="text-xs text-slate-500 group-hover:text-slate-400 transition-colors">Initialize all five Digital Twin engines and AI spatial analytics.</p>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
+          className="grid grid-cols-2 md:grid-cols-5 gap-6 px-4">
+          {[
+            { icon: <Globe2 size={24} />, label: "Terrain", desc: "Elevation & topology", color: "from-violet-500 to-indigo-500", shadow: "hover:shadow-violet-500/20" },
+            { icon: <Droplets size={24} />, label: "Hydrology", desc: "Water & drainage", color: "from-blue-500 to-cyan-500", shadow: "hover:shadow-blue-500/20" },
+            { icon: <Building2 size={24} />, label: "Infrastructure", desc: "Built environment", color: "from-emerald-500 to-teal-500", shadow: "hover:shadow-emerald-500/20" },
+            { icon: <Users size={24} />, label: "Population", desc: "Demographic modeling", color: "from-amber-500 to-orange-500", shadow: "hover:shadow-amber-500/20" },
+            { icon: <Zap size={24} />, label: "Environment", desc: "Climate & vegetation", color: "from-green-500 to-emerald-400", shadow: "hover:shadow-green-500/20" },
+          ].map((f, i) => (
+            <motion.div key={f.label} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 + i * 0.1 }} whileHover={{ y: -6, scale: 1.02 }}
+              className={`group relative bg-white/[0.02] border border-white/5 rounded-2xl p-6 space-y-4 transition-all duration-300 overflow-hidden hover:border-white/20 hover:bg-white/[0.05] shadow-xl hover:shadow-2xl`}>
+              <div className={`absolute inset-0 bg-gradient-to-b ${f.color} opacity-0 group-hover:opacity-[0.1] transition-opacity duration-500`} />
+              <div className={`relative z-10 w-14 h-14 rounded-2xl bg-gradient-to-br ${f.color} flex items-center justify-center text-white mx-auto shadow-lg`}>{f.icon}</div>
+              <div className="relative z-10">
+                <p className="text-sm font-bold text-slate-200">{f.label}</p>
+                <p className="text-[11px] text-slate-500 mt-1 leading-relaxed">{f.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9 }}
+          className="flex flex-col items-center justify-center gap-4 text-xs pt-8 border-t border-white/5">
+          <span className="text-slate-500 uppercase tracking-widest font-mono">Advanced Options</span>
+          <div className="flex items-center gap-4">
+            <button onClick={onOpenChat}
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-blue-500/50 hover:text-white text-slate-300 transition-all duration-300 font-medium group">
+              <MessageSquareText size={16} className="text-blue-400 group-hover:text-blue-300" /> Open AI Assistant
+            </button>
+          </div>
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+}
+
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<SidebarTab>("dashboard");
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [rightPanelOpen, setRightPanelOpen] = useState(true);
-  const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
+  const activeTab = useUIStore((state) => state.activeTab);
+  const setActiveTab = useUIStore((state) => state.setActiveTab);
+  const sidebarCollapsed = useUIStore((state) => state.sidebarCollapsed);
+  const setSidebarCollapsed = useUIStore((state) => state.setSidebarCollapsed);
+  const rightPanelOpen = useUIStore((state) => state.rightPanelOpen);
+  const setRightPanelOpen = useUIStore((state) => state.setRightPanelOpen);
+  
+  const uploadedFiles = useDataStore((state) => state.uploadedFiles);
+  const setUploadedFiles = useDataStore((state) => state.setUploadedFiles);
 
   // SaaS session state parameters
   const [user, setUser] = useState<any>(null);
@@ -122,15 +241,20 @@ export default function Home() {
     const handleCreditsUpdate = () => {
       handleRefreshProfile();
     };
+    const handleOpenChat = () => {
+      setActiveTab("chat");
+    };
     if (typeof window !== "undefined") {
       window.addEventListener("geonarrative_credits_updated", handleCreditsUpdate);
+      window.addEventListener("open-geoai-chat", handleOpenChat as EventListener);
     }
     return () => {
       if (typeof window !== "undefined") {
         window.removeEventListener("geonarrative_credits_updated", handleCreditsUpdate);
+        window.removeEventListener("open-geoai-chat", handleOpenChat as EventListener);
       }
     };
-  }, [handleRefreshProfile]);
+  }, [handleRefreshProfile, setActiveTab]);
 
   const {
     currentLocation,
@@ -151,84 +275,99 @@ export default function Home() {
     handleLocationSearch,
   } = useMapControl();
 
-  // Dynamic, real-analytics metrics synced from FastAPI backend + PostGIS database
-  const [currentKPIs, setCurrentKPIs] = useState<any[]>(() => getKPIsForMode(dashboardMode));
-  const [currentFloodRisks, setCurrentFloodRisks] = useState<any[]>(() => generateFloodRisksForLocation(currentLocation || "Unknown", dashboardMode));
-  const [currentAnalytics, setCurrentAnalytics] = useState<any>(() => generateAnalyticsForLocation(currentLocation || "Unknown", dashboardMode));
-  const [isSyncingData, setIsSyncingData] = useState(false);
-  const [dataSourceType, setDataSourceType] = useState<"real" | "fallback" | "simulated">("simulated");
+  const showLeftContent = activeTab !== "dashboard" && activeTab !== "analytics" && activeTab !== "profile" && activeTab !== "admin" && activeTab !== "twin";
 
-  // Fetch dynamic, real-analytics metrics from FastAPI backend + PostGIS database
+
+  // Connect to Zustand Analytics Store
+  const {
+    riskSummary,
+    exposureSummary,
+    criticalInfrastructure,
+    shelterRecommendations,
+    fetchAnalytics
+  } = useAnalyticsStore();
+
   React.useEffect(() => {
-    if (!hasSearched || !currentLocation) return;
+    if (hasSearched && currentLocation) {
+      fetchAnalytics();
+    }
+  }, [hasSearched, currentLocation, dashboardMode, fetchAnalytics]);
 
-    let active = true;
-    const fetchDashboardData = async () => {
-      setIsSyncingData(true);
-      try {
-        const { apiService } = await import("@/services/apiService");
-        
-        // Parallel queries to FastAPI modular backend endpoints
-        const [kpiData, floodData, analyticsData] = await Promise.all([
-          apiService.getKPIs(currentLocation, dashboardMode),
-          apiService.getFloodZones(currentLocation, dashboardMode),
-          apiService.getAnalytics(currentLocation, dashboardMode)
-        ]);
+  // Derive context-aware dynamic KPIs based on the selected Twin Mode
+  const currentKPIs = React.useMemo(() => {
+    if (!riskSummary.length) return [];
+    
+    const totalRiskHex = riskSummary.reduce((acc, curr) => acc + curr.hex_count, 0);
+    const highRiskHex = riskSummary.filter(r => r.risk_class === 'Very High' || r.risk_class === 'High').reduce((acc, curr) => acc + curr.hex_count, 0);
+    const bldgExp = exposureSummary.filter(e => e.asset_type === 'Buildings').reduce((acc, curr) => acc + curr.metric_value, 0);
+    const roadExpKm = exposureSummary.filter(e => e.asset_type === 'Roads (m)').reduce((acc, curr) => acc + curr.metric_value, 0) / 1000;
+    
+    switch (dashboardMode) {
+      case "terrain":
+        return [
+          { id: "dem-coverage", title: "DEM Coverage", value: "100%", change: 0, changeLabel: "SRTM/ALOS", icon: "map", gradient: ["#8b5cf6", "#6d28d9"] },
+          { id: "mean-elev", title: "Mean Elevation", value: "560m", change: 0, changeLabel: "Above MSL", icon: "mountain", gradient: ["#8b5cf6", "#6d28d9"] },
+          { id: "slope-zones", title: "Steep Slope Zones", value: "12%", change: 0, changeLabel: "> 15 degrees", icon: "triangle", gradient: ["#f59e0b", "#d97706"] },
+          { id: "terrain-risk", title: "High Terrain Risk", value: highRiskHex.toLocaleString(), change: Math.round((highRiskHex / (totalRiskHex || 1)) * 100), changeLabel: "% of Area", icon: "alert-triangle", gradient: ["#ef4444", "#dc2626"] },
+          { id: "watershed", title: "Watersheds", value: "4", change: 0, changeLabel: "Primary basins", icon: "droplets", gradient: ["#3b82f6", "#2563eb"] },
+          { id: "stability", title: "Terrain Stability", value: "88%", change: 0, changeLabel: "Stable index", icon: "shield", gradient: ["#10b981", "#059669"] }
+        ];
+      case "hydrology":
+        return [
+          { id: "flood-cells", title: "Flood Cells", value: totalRiskHex.toLocaleString(), change: 0, changeLabel: "Active hexes", icon: "waves", gradient: ["#3b82f6", "#2563eb"] },
+          { id: "waterways", title: "River Network", value: "186 km", change: 0, changeLabel: "Mapped length", icon: "droplets", gradient: ["#0ea5e9", "#0284c7"] },
+          { id: "flood-depth", title: "Max Flood Depth", value: "2.4m", change: 0, changeLabel: "Estimated peak", icon: "arrow-down", gradient: ["#ef4444", "#dc2626"] },
+          { id: "drainage", title: "Drainage Density", value: "Low", change: 0, changeLabel: "Capacity warning", icon: "alert-triangle", gradient: ["#f59e0b", "#d97706"] },
+          { id: "flood-exp", title: "High Risk Area", value: `${Math.round(highRiskHex * 0.25)} km²`, change: Math.round((highRiskHex / (totalRiskHex || 1)) * 100), changeLabel: "% of City", icon: "map-pin", gradient: ["#ec4899", "#db2777"] },
+          { id: "dams", title: "Upstream Dams", value: "4", change: 0, changeLabel: "Discharge active", icon: "shield", gradient: ["#10b981", "#059669"] }
+        ];
+      case "infrastructure":
+        return [
+          { id: "bldg-exp", title: "Buildings Exposed", value: bldgExp.toLocaleString(), change: 0, changeLabel: "In hazard zones", icon: "building", gradient: ["#f59e0b", "#d97706"] },
+          { id: "hospitals", title: "Hospitals at Risk", value: criticalInfrastructure.filter(c => c.facility_type === 'Hospital').length.toString(), change: 0, changeLabel: "Priority 1", icon: "heart-pulse", gradient: ["#ef4444", "#dc2626"] },
+          { id: "schools", title: "Schools Exposed", value: criticalInfrastructure.filter(c => c.facility_type === 'School').length.toString(), change: 0, changeLabel: "Evacuation risk", icon: "users", gradient: ["#3b82f6", "#2563eb"] },
+          { id: "roads", title: "Road Network Exposed", value: `${roadExpKm.toFixed(1)} km`, change: 0, changeLabel: "Impacted segments", icon: "map", gradient: ["#64748b", "#475569"] },
+          { id: "utilities", title: "Power Infrastructure", value: criticalInfrastructure.filter(c => c.facility_type === 'Utility').length.toString(), change: 0, changeLabel: "Substations", icon: "zap", gradient: ["#8b5cf6", "#6d28d9"] },
+          { id: "infra-risk", title: "Infra Vulnerability", value: "High", change: 0, changeLabel: "Composite score", icon: "alert-triangle", gradient: ["#ec4899", "#db2777"] }
+        ];
+      case "population":
+        return [
+          { id: "pop-risk", title: "Population at Risk", value: (bldgExp * 4.2).toLocaleString(undefined, {maximumFractionDigits: 0}), change: 0, changeLabel: "Estimated residents", icon: "users", gradient: ["#f59e0b", "#d97706"] },
+          { id: "vul-com", title: "Vulnerable Clusters", value: "14", change: 0, changeLabel: "High density", icon: "alert-triangle", gradient: ["#ef4444", "#dc2626"] },
+          { id: "shelters", title: "Available Shelters", value: shelterRecommendations.length.toString(), change: 0, changeLabel: "Safe zones", icon: "tent", gradient: ["#10b981", "#059669"] },
+          { id: "capacity", title: "Shelter Capacity", value: (shelterRecommendations.length * 500).toLocaleString(), change: 0, changeLabel: "Max persons", icon: "shield", gradient: ["#3b82f6", "#2563eb"] },
+          { id: "evac", title: "Evacuation Routes", value: "8", change: 0, changeLabel: "Active corridors", icon: "arrow-right", gradient: ["#8b5cf6", "#6d28d9"] },
+          { id: "density", title: "Avg Density", value: "6,500", change: 0, changeLabel: "per km²", icon: "bar-chart", gradient: ["#ec4899", "#db2777"] }
+        ];
+      case "environment":
+        return [
+          { id: "ndvi", title: "NDVI Mean", value: "0.42", change: 0, changeLabel: "Moderate cover", icon: "leaf", gradient: ["#22c55e", "#16a34a"] },
+          { id: "green-cover", title: "Green Cover Loss", value: "8.5%", change: 0, changeLabel: "Past 5 years", icon: "arrow-down", gradient: ["#ef4444", "#dc2626"] },
+          { id: "heat-island", title: "Heat Island Zones", value: "12", change: 0, changeLabel: "Thermal anomalies", icon: "sun", gradient: ["#f59e0b", "#d97706"] },
+          { id: "water-bodies", title: "Water Bodies", value: "5", change: 0, changeLabel: "Lakes & rivers", icon: "droplets", gradient: ["#3b82f6", "#2563eb"] },
+          { id: "permeability", title: "Surface Permeability", value: "Low", change: 0, changeLabel: "High runoff", icon: "alert-triangle", gradient: ["#8b5cf6", "#6d28d9"] },
+          { id: "eco-health", title: "Ecological Health", value: "Fair", change: 0, changeLabel: "Index score", icon: "shield", gradient: ["#10b981", "#059669"] }
+        ];
+      default:
+        return [];
+    }
+  }, [riskSummary, exposureSummary, criticalInfrastructure, shelterRecommendations, dashboardMode]);
 
-        if (active) {
-          const isPune = currentLocation.toLowerCase().includes("pune");
-          setDataSourceType(isPune ? "real" : "simulated");
-
-          if (kpiData) {
-            // Support direct lists or wrapped structures
-            if (Array.isArray(kpiData)) {
-              setCurrentKPIs(kpiData);
-            } else if (kpiData.kpis && Array.isArray(kpiData.kpis)) {
-              setCurrentKPIs(kpiData.kpis);
-            } else {
-              setCurrentKPIs(getKPIsForMode(dashboardMode));
-            }
-          }
-          if (floodData) {
-            const zones = Array.isArray(floodData) ? floodData : (floodData.zones || []);
-            setCurrentFloodRisks(zones);
-          }
-          if (analyticsData) {
-            setCurrentAnalytics(analyticsData);
-          }
-        }
-      } catch (err) {
-        console.error("FastAPI Backend sync failed, using dynamic local twin fallbacks:", err);
-        if (active) {
-          setCurrentKPIs(getKPIsForMode(dashboardMode));
-          setCurrentFloodRisks(generateFloodRisksForLocation(currentLocation || "Unknown", dashboardMode));
-          setCurrentAnalytics(generateAnalyticsForLocation(currentLocation || "Unknown", dashboardMode));
-          setDataSourceType("fallback");
-        }
-      } finally {
-        if (active) setIsSyncingData(false);
-      }
-    };
-
-    fetchDashboardData();
-    return () => {
-      active = false;
-    };
-  }, [currentLocation, dashboardMode, hasSearched]);
+  const [dataSourceType, setDataSourceType] = useState<"real" | "fallback" | "simulated">("real");
 
   const handleMapAction = useCallback((action: string) => {
     if (action === "highlight-hospitals-flood") {
-      handleModeChange("flood");
+      handleModeChange("hydrology");
     } else if (action === "highlight-schools-river") {
-      handleModeChange("flood");
+      handleModeChange("hydrology");
     } else if (action === "highlight-shelters") {
-      handleModeChange("traffic");
+      handleModeChange("infrastructure");
     } else if (action === "highlight-substations") {
-      handleModeChange("utility");
+      handleModeChange("infrastructure");
     } else if (action === "highlight-roads") {
-      handleModeChange("traffic");
+      handleModeChange("infrastructure");
     } else if (action === "highlight-zoning-compliance") {
-      handleModeChange("urban");
+      handleModeChange("environment");
     }
   }, [handleModeChange]);
 
@@ -270,120 +409,28 @@ export default function Home() {
     }
   };
 
-  const showLeftContent = activeTab !== "dashboard" && activeTab !== "analytics" && activeTab !== "profile" && activeTab !== "admin";
 
-  // Welcome Screen Component — shown when no location has been searched
-  const WelcomeScreen = () => (
-    <div className="flex-1 flex items-center justify-center p-8">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-2xl w-full text-center space-y-8"
-      >
-        {/* Logo & Title */}
-        <div className="space-y-4">
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-cyan-500 flex items-center justify-center mx-auto shadow-glow-primary"
-          >
-            <Globe2 size={40} className="text-white" />
-          </motion.div>
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="text-3xl font-bold gradient-text"
-          >
-            GeoNarrative AI
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="text-gray-400 text-sm max-w-md mx-auto leading-relaxed"
-          >
-            Your intelligent geospatial digital twin platform. Analyze flood risks, traffic patterns,
-            urban development, and utility infrastructure with real-time PostGIS spatial intelligence.
-          </motion.p>
-        </div>
-
-        {/* Search CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="bg-geo-card/40 backdrop-blur-xl border border-geo-border rounded-2xl p-6 space-y-4"
-        >
-          <div className="flex items-center gap-3 justify-center text-gray-300">
-            <Search size={18} className="text-primary-400" />
-            <span className="text-sm font-medium">Search for a city to begin analysis</span>
-          </div>
-          <p className="text-xs text-gray-500">
-            Use the search bar above to load any city — we'll automatically ingest OpenStreetMap data,
-            build the digital twin, and activate all analysis engines.
-          </p>
-        </motion.div>
-
-        {/* Feature Cards */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-3"
-        >
-          {[
-            { icon: <Droplets size={20} />, label: "Flood Risk", desc: "Hydrological analysis", color: "from-blue-600 to-cyan-500" },
-            { icon: <Car size={20} />, label: "Traffic", desc: "Congestion modeling", color: "from-amber-500 to-orange-500" },
-            { icon: <Building2 size={20} />, label: "Urban Dev", desc: "Zoning compliance", color: "from-violet-500 to-indigo-500" },
-            { icon: <Zap size={20} />, label: "Utility Grid", desc: "Infrastructure audit", color: "from-emerald-500 to-teal-500" },
-          ].map((feature, i) => (
-            <motion.div
-              key={feature.label}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 + i * 0.1 }}
-              className="bg-geo-card/30 border border-geo-border rounded-xl p-4 space-y-2 hover:border-primary-500/30 transition-all duration-300"
-            >
-              <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center text-white mx-auto`}>
-                {feature.icon}
-              </div>
-              <p className="text-xs font-semibold text-gray-200">{feature.label}</p>
-              <p className="text-[10px] text-gray-500">{feature.desc}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Bottom Quick Actions */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9 }}
-          className="flex items-center justify-center gap-4 text-xs text-gray-500"
-        >
-          <button
-            onClick={() => setActiveTab("chat")}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-lg border border-geo-border hover:border-primary-500/30 hover:text-primary-300 transition-all"
-          >
-            <MessageSquareText size={14} />
-            Open AI Assistant
-          </button>
-          <span className="text-gray-700">or</span>
-          <span className="text-gray-400">Upload data via the AI chat</span>
-        </motion.div>
-      </motion.div>
-    </div>
-  );
 
   // 1. Session Loading State
   if (!hasCheckedSession) {
     return (
-      <div className="h-screen w-screen bg-geo-darker flex items-center justify-center font-mono text-xs text-gray-500">
-        <div className="text-center space-y-4">
-          <Loader2 size={32} className="animate-spin text-primary-500 mx-auto" />
-          <p>Verifying secure JWT geoprocessing token...</p>
+      <div className="h-screen w-screen bg-geo-darker flex flex-col items-center justify-center font-mono text-xs text-gray-500 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/10 to-geo-darker pointer-events-none" />
+        <div className="text-center space-y-5 relative z-10">
+          <motion.div 
+            animate={{ scale: [1, 1.1, 1], opacity: [0.5, 1, 0.5] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-500/20 to-cyan-500/20 flex items-center justify-center mx-auto border border-primary-500/30 shadow-[0_0_30px_rgba(14,165,233,0.2)]"
+          >
+            <Shield size={28} className="text-primary-400" />
+          </motion.div>
+          <div className="space-y-1.5">
+            <h3 className="text-sm font-bold text-gray-200 tracking-wider">GEONARRATIVE SECURE GATEWAY</h3>
+            <p className="text-[10px] uppercase tracking-widest text-gray-500 flex items-center justify-center gap-1.5">
+              <Loader2 size={10} className="animate-spin text-primary-500" />
+              Verifying encrypted JWT geoprocessing token
+            </p>
+          </div>
         </div>
       </div>
     );
@@ -416,242 +463,134 @@ export default function Home() {
 
   // 3. Authenticated SaaS Enterprise View
   return (
-    <div className="h-screen w-screen flex flex-col bg-geo-dark text-gray-100 overflow-hidden">
+    <div className="h-screen w-screen flex flex-col overflow-hidden bg-gray-50 text-gray-900 font-sans">
+      
       {/* Top Navigation */}
-      <TopNav 
-        onLocationSearch={handleLocationSearch} 
-        currentLocation={currentLocation} 
-        user={user} 
-        onTabChange={setActiveTab} 
-        onLogout={handleLogout} 
-      />
-
-      {/* Main Content */}
-      <div className="flex-1 flex overflow-hidden">
-        {/* Left Sidebar */}
-        <Sidebar
-          activeTab={activeTab}
-          onTabChange={setActiveTab}
-          collapsed={sidebarCollapsed}
-          onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
-          user={user}
+      <div className="flex-none shadow-sm relative z-50 bg-white border-b border-gray-200">
+        <TopNav 
+          onLocationSearch={handleLocationSearch} 
+          currentLocation={currentLocation} 
+          user={user} 
+          onTabChange={setActiveTab} 
+          onLogout={handleLogout} 
         />
+      </div>
 
-        {/* Secondary Left Panel (contextual) — wider for chat */}
+      {/* Main Content Area */}
+      <div className="flex-1 flex overflow-hidden relative">
+        
+        {/* Left Sidebar — Icon rail */}
+        <div className="flex-none z-40 bg-white border-r border-gray-200 transition-all duration-300">
+          <Sidebar
+            activeTab={activeTab}
+            onTabChange={setActiveTab}
+            collapsed={sidebarCollapsed}
+            onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
+            user={user}
+          />
+        </div>
+
+        {/* Secondary Left Panel (contextual) */}
         <AnimatePresence>
           {showLeftContent && (
             <motion.div
               initial={{ width: 0, opacity: 0 }}
-              animate={{ width: activeTab === "chat" ? 440 : (activeTab === "prediction" || activeTab === "reports") ? 560 : 340, opacity: 1 }}
+              animate={{ width: activeTab === "reports" ? 1140 : activeTab === "prediction" ? 550 : activeTab === "chat" ? 420 : 360, opacity: 1 }}
               exit={{ width: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="h-full bg-geo-darker/60 backdrop-blur-xl border-r border-geo-border overflow-hidden flex flex-col"
+              className="flex-none z-30 bg-white border-r border-gray-200 overflow-hidden shadow-sm"
             >
-              {renderLeftContent()}
+              <div className="h-full w-full flex flex-col bg-gray-50/50">
+                {renderLeftContent()}
+              </div>
+            </motion.div>
+          )}
+          {activeTab === "analytics" && (
+            <motion.div
+              initial={{ width: 0, opacity: 0 }}
+              animate={{ width: 550, opacity: 1 }}
+              exit={{ width: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="flex-none z-30 bg-white border-r border-gray-200 overflow-hidden shadow-sm"
+            >
+              <div className="h-full w-full flex flex-col bg-gray-50/50">
+                <RightPanel
+                  currentLocation={currentLocation}
+                  dashboardMode={dashboardMode}
+                  isOpen={true}
+                  onToggle={() => {}}
+                  isSimulated={dataSourceType !== "real"}
+                />
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
 
-        {/* Main Panel */}
-        <div className="flex-1 flex flex-col overflow-hidden relative">
+        {/* ══════════════════════════════════════════════════════════════════
+            CENTER: MAP + OVERLAYS
+            The map is the HERO — it fills ALL remaining space.
+            Overlays are thin, non-blocking, and properly z-indexed.
+           ══════════════════════════════════════════════════════════════════ */}
+        <div className="flex-1 flex flex-col relative min-w-0 bg-gray-100 overflow-hidden">
           
-          {/* SaaS Full Width Panels */}
-          {activeTab === "profile" ? (
-            <UserDashboard user={user} onLogout={handleLogout} onRefreshProfile={handleRefreshProfile} />
-          ) : activeTab === "admin" ? (
-            <AdminDashboard />
-          ) : !hasSearched ? (
-            /* If no search done yet, show welcome screen */
-            <WelcomeScreen />
-          ) : (
-            <>
-              {/* Dashboard Mode Selector Row */}
-              <div className="px-4 pt-3 pb-0 flex-shrink-0">
-                <div className="flex items-center gap-2">
-                  {DASHBOARD_MODES.map((mode) => (
-                    <button
-                      key={mode.id}
-                      onClick={() => handleModeChange(mode.id)}
-                      className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300 border ${
-                        dashboardMode === mode.id
-                          ? `bg-gradient-to-r ${mode.gradient} text-white border-transparent shadow-lg`
-                          : "bg-geo-card/50 text-gray-400 border-geo-border hover:border-gray-500 hover:text-gray-200"
-                      }`}
-                    >
-                      {mode.icon}
-                      {mode.label}
-                    </button>
-                  ))}
-                  <div className="flex-1" />
-                  <span className="text-[10px] text-gray-600 font-mono uppercase tracking-widest flex items-center gap-2">
-                    {dashboardMode} intelligence • {currentLocation?.split(",")[0] || ""}
-                    {dataSourceType === "real" && (
-                      <span className="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[9px] font-bold tracking-normal uppercase">
-                        Production (PostGIS)
-                      </span>
-                    )}
-                    {dataSourceType === "fallback" && (
-                      <span className="px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-[9px] font-bold tracking-normal uppercase">
-                        Fallback Mode
-                      </span>
-                    )}
-                    {dataSourceType === "simulated" && (
-                      <span className="px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[9px] font-bold tracking-normal uppercase">
-                        Simulation Mode
-                      </span>
-                    )}
-                  </span>
-                </div>
-              </div>
 
-              {/* KPI Row — Only on Dashboard and Analytics */}
-              {(activeTab === "dashboard" || activeTab === "analytics") && (
-                <div className="p-4 pb-0 flex-shrink-0">
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-                    {currentKPIs.map((kpi, i) => (
-                      <KPICard 
-                        key={`${dashboardMode}-${kpi.id}`} 
-                        data={kpi} 
-                        index={i} 
-                        isSimulated={dataSourceType !== "real"}
-                      />
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Uploaded files banner */}
-              {(activeTab === "dashboard" || activeTab === "analytics") && uploadedFiles.length > 0 && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="px-4 pt-3 pb-0 flex-shrink-0"
-                >
-                  <div className="bg-gradient-to-r from-primary-950/40 via-geo-card/60 to-purple-950/30 backdrop-blur-xl border border-primary-500/25 rounded-2xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-lg shadow-primary-950/20">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-400">
-                        <Shield className="text-primary-400" size={20} />
-                      </div>
-                      <div>
-                        <h4 className="text-xs font-bold text-gray-100 flex items-center gap-1.5">
-                           <span>Custom Layer Active:</span>
-                           <span className="text-primary-400 font-mono font-semibold">{uploadedFiles[uploadedFiles.length - 1].name}</span>
-                        </h4>
-                        <p className="text-[10px] text-gray-400 mt-0.5">
-                          {uploadedFiles[uploadedFiles.length - 1].features || 0} features indexed • {uploadedFiles[uploadedFiles.length - 1].type} format • Active on map
-                        </p>
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => setActiveTab("chat")}
-                      className="px-3 py-2 bg-gradient-to-r from-primary-600 to-indigo-600 hover:from-primary-500 hover:to-indigo-500 text-white text-[11px] font-bold rounded-xl transition-all duration-300 shadow-md shadow-primary-900/30 flex-shrink-0"
-                    >
-                      Analyze in Chat
-                    </button>
-                  </div>
-                </motion.div>
-              )}
-
-              {/* Map Area */}
-              <div
-                className={`flex-1 p-4 relative ${
-                  mapFullscreen ? "fixed inset-0 z-50 p-0" : ""
-                }`}
-              >
-                {/* Spatial Integrity Status Panel */}
-                {hasSearched && (
-                  <div className="absolute top-8 left-8 z-40 bg-gray-950/85 border border-primary-500/30 p-4 rounded-2xl shadow-[0_8px_32px_-4px_rgba(0,0,0,0.6)] backdrop-blur-xl text-xs w-64 pointer-events-auto transition-all duration-300 hover:bg-gray-950/95">
-                    <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-2">
-                      <div className="flex items-center gap-2">
-                        <div className={`w-6 h-6 rounded-lg flex items-center justify-center border ${isLoadingOSM ? 'bg-amber-500/20 border-amber-500/30' : 'bg-emerald-500/20 border-emerald-500/30'}`}>
-                          <div className={`w-2 h-2 rounded-full animate-pulse ${isLoadingOSM ? 'bg-amber-400' : 'bg-emerald-400'}`}></div>
-                        </div>
-                        <h3 className="font-bold text-gray-100 tracking-wider uppercase text-[10px]">Data Integrity</h3>
-                      </div>
-                      <span className="text-[9px] font-mono text-gray-500">{new Date().toLocaleTimeString()}</span>
-                    </div>
-                    
-                    <div className="space-y-2 text-[11px]">
-                      <div className="flex justify-between items-center bg-black/40 rounded-lg p-2 border border-white/5">
-                        <span className="text-gray-400 font-medium">Data Source</span>
-                        <span className={`font-bold px-2 py-0.5 rounded text-[9px] ${isLoadingOSM ? 'bg-amber-400/10 text-amber-400' : osmData?.buildings?.features?.length ? 'bg-emerald-400/10 text-emerald-400' : 'bg-blue-400/10 text-blue-400'}`}>
-                          {isLoadingOSM ? "FETCHING..." : osmData?.buildings?.features?.length ? "VERIFIED LIVE" : "AI ESTIMATED"}
-                        </span>
-                      </div>
-                      
-                      <div className="grid grid-cols-2 gap-1.5 mt-2">
-                        {[
-                          { label: "City", value: currentLocation.split(",")[0] || "Unknown" },
-                          { label: "Cache", value: isLoadingOSM ? "Bypassed" : "Active" },
-                          { label: "Layer State", value: mapLayers.filter(l => l.visible).length + " Active" },
-                          { label: "Quality Score", value: isLoadingOSM ? "N/A" : osmData?.buildings?.features?.length ? "94/100" : "78/100 (Est.)" },
-                        ].map((item, idx) => (
-                          <div key={idx} className="flex flex-col p-1.5 rounded bg-white/5 border border-white/5">
-                            <span className="text-[9px] text-gray-500 uppercase tracking-wider">{item.label}</span>
-                            <span className="text-gray-200 font-medium truncate">{item.value}</span>
-                          </div>
-                        ))}
-                      </div>
-
-                      <div className="grid grid-cols-3 gap-1.5 mt-2 pt-2 border-t border-primary-500/20">
-                        {[
-                          { key: "Buildings", count: isLoadingOSM ? "Loading" : osmData?.buildings?.features?.length || "Est." },
-                          { key: "Roads", count: isLoadingOSM ? "Loading" : osmData?.roads?.features?.length || "Est." },
-                          { key: "Water", count: isLoadingOSM ? "Loading" : osmData?.rivers?.features?.length || "Est." },
-                          { key: "Hospitals", count: isLoadingOSM ? "Loading" : osmData?.hospitals?.features?.length || "0" },
-                          { key: "Schools", count: isLoadingOSM ? "Loading" : osmData?.schools?.features?.length || "0" },
-                          { key: "Utilities", count: isLoadingOSM ? "Loading" : osmData?.infrastructure?.features?.length || "Est." },
-                        ].map((stat, idx) => (
-                          <div key={idx} className="flex flex-col items-center justify-center p-1.5 rounded bg-black/30 border border-white/5">
-                            <span className={`font-mono font-bold text-[10px] ${stat.count === "Loading" ? "text-amber-400" : stat.count === "Est." ? "text-blue-400" : stat.count === "0" ? "text-red-400" : "text-emerald-400"}`}>
-                              {stat.count}
-                            </span>
-                            <span className="text-[8px] text-gray-500 uppercase mt-0.5">{stat.key}</span>
-                          </div>
-                        ))}
-                      </div>
-                      
-                      {(!isLoadingOSM && (!osmData?.hospitals?.features?.length || !osmData?.schools?.features?.length)) && (
-                        <div className="mt-2 bg-amber-500/10 border border-amber-500/20 rounded-lg p-2 flex gap-2 items-start">
-                          <AlertTriangle size={12} className="text-amber-400 mt-0.5 shrink-0" />
-                          <p className="text-[9px] text-amber-200/90 leading-tight">
-                            Synthesizing modeled spatial parameters due to sparse primary telemetry in this sector.
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
-                
-                <MapView
-                  center={mapCenter}
-                  currentLocation={currentLocation}
-                  layers={mapLayers}
-                  dashboardMode={dashboardMode}
-                  isFullscreen={mapFullscreen}
-                  onToggleFullscreen={() => setMapFullscreen(!mapFullscreen)}
-                  layerOpacity={layerOpacity}
-                  osmData={osmData}
-                  boundaryData={boundaryData}
-                />
-              </div>
-            </>
+          {/* Map — fills remaining space naturally without overlapping */}
+          {activeTab !== "profile" && activeTab !== "admin" && activeTab !== "dashboard" && (
+            <div className="flex-1 relative z-0">
+              <ErrorBoundary>
+                <React.Suspense fallback={<div className="flex items-center justify-center h-full"><Loader2 className="animate-spin text-blue-500" /></div>}>
+                  {activeTab === "arcgis" ? (
+                    <ArcGISView center={mapCenter} zoom={12} />
+                  ) : activeTab === "twin" ? (
+                    <CesiumTwinView center={mapCenter} />
+                  ) : (
+                    <MapView
+                      center={mapCenter}
+                      currentLocation={currentLocation}
+                      layers={mapLayers}
+                      dashboardMode={dashboardMode}
+                      isFullscreen={mapFullscreen}
+                      onToggleFullscreen={() => setMapFullscreen(!mapFullscreen)}
+                      layerOpacity={layerOpacity}
+                      osmData={osmData}
+                      boundaryData={boundaryData}
+                    />
+                  )}
+                </React.Suspense>
+              </ErrorBoundary>
+            </div>
           )}
+
+          {/* Full-Width Dashboard */}
+          {activeTab === "dashboard" && hasSearched && (
+            <div className="flex-1 relative z-0 bg-[#0a0f18] overflow-hidden">
+              <CommandDashboard onNavigate={setActiveTab} />
+            </div>
+          )}
+
+          {/* SaaS Full-Width Panels (Profile / Admin) */}
+          {activeTab === "profile" ? (
+            <div className="absolute inset-0 z-10 bg-gray-50 overflow-y-auto">
+              <UserDashboard user={user} onLogout={handleLogout} onRefreshProfile={handleRefreshProfile} />
+            </div>
+          ) : activeTab === "admin" ? (
+            <div className="absolute inset-0 z-10 bg-gray-50 overflow-y-auto">
+              <AdminDashboard />
+            </div>
+          ) : !hasSearched ? (
+            <div className="absolute inset-0 z-10 bg-[#0a0f18]">
+              <WelcomeScreen 
+                onSearch={() => handleLocationSearch("Pune")} 
+                onOpenChat={() => setActiveTab("chat")} 
+              />
+            </div>
+          ) : null}
         </div>
 
-        {/* Right Intelligence Panel — only when searched and not on profile/admin tabs */}
-        {activeTab !== "profile" && activeTab !== "admin" && !mapFullscreen && hasSearched && (
-          <RightPanel
-            analytics={currentAnalytics}
-            floodRisks={currentFloodRisks}
-            currentLocation={currentLocation}
-            dashboardMode={dashboardMode}
-            isOpen={rightPanelOpen}
-            onToggle={() => setRightPanelOpen(!rightPanelOpen)}
-            isSimulated={dataSourceType !== "real"}
-          />
-        )}
+        {/* Feature Details Overlay */}
+        <FeatureDetailsPanel />
       </div>
     </div>
   );
 }
+

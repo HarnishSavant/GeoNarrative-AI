@@ -22,6 +22,11 @@ import {
   Database,
   ChevronDown,
   ChevronUp,
+  BrainCircuit,
+  Building,
+  Route,
+  Layers,
+  FileText
 } from "lucide-react";
 import { DashboardMode, UploadedFile } from "@/lib/types";
 import { useAIChat } from "@/hooks/useAIChat";
@@ -32,13 +37,13 @@ function AgentTraceView({ trace }: { trace: any }) {
   if (!trace) return null;
 
   return (
-    <div className="mt-2 border border-geo-border/50 rounded-lg overflow-hidden bg-geo-card/45 backdrop-blur-sm transition-all duration-200">
+    <div className="mt-2 border border-blue-100 rounded-lg overflow-hidden bg-blue-50/50 transition-all duration-200">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-3 py-2 flex items-center justify-between text-[11px] font-mono text-cyan-400 hover:text-cyan-300 hover:bg-white/5 transition-all duration-150"
+        className="w-full px-3 py-2 flex items-center justify-between text-[11px] font-mono text-blue-700 hover:text-blue-800 hover:bg-blue-100/50 transition-all duration-150"
       >
         <span className="flex items-center gap-1.5 font-semibold">
-          <Terminal size={12} className="text-cyan-500 animate-pulse" />
+          <Terminal size={12} className="text-blue-600 animate-pulse" />
           AGENT EXECUTION TRACE
         </span>
         <span className="flex items-center gap-2">
@@ -48,31 +53,31 @@ function AgentTraceView({ trace }: { trace: any }) {
       </button>
 
       {isOpen && (
-        <div className="px-3 pb-3 pt-2 border-t border-geo-border/30 font-mono text-[10px] space-y-2 text-gray-400">
-          <div className="grid grid-cols-2 gap-2 border-b border-white/5 pb-2">
+        <div className="px-3 pb-3 pt-2 border-t border-blue-100 font-mono text-[10px] space-y-2 text-gray-600">
+          <div className="grid grid-cols-2 gap-2 border-b border-gray-200 pb-2">
             <div>
-              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Detected Intent</span>
-              <span className="text-gray-300 break-all">{trace.detected_intent}</span>
+              <span className="text-gray-500 block text-[9px] uppercase font-semibold">Detected Intent</span>
+              <span className="text-gray-800 font-medium break-all">{trace.detected_intent}</span>
             </div>
             <div>
-              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Processing Latency</span>
-              <span className="text-gray-300 flex items-center gap-1">
+              <span className="text-gray-500 block text-[9px] uppercase font-semibold">Processing Latency</span>
+              <span className="text-gray-800 font-medium flex items-center gap-1">
                 <Clock size={10} className="text-amber-500" />
                 {trace.processing_time} seconds
               </span>
             </div>
             <div className="col-span-2">
-              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Selected Tool</span>
-              <span className="text-gray-300 flex items-center gap-1">
-                <Cpu size={10} className="text-purple-400" />
+              <span className="text-gray-500 block text-[9px] uppercase font-semibold">Selected Tool</span>
+              <span className="text-gray-800 font-medium flex items-center gap-1">
+                <Cpu size={10} className="text-purple-600" />
                 {trace.selected_tool}
               </span>
             </div>
             <div className="col-span-2">
-              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Spatial SQL / Operation</span>
-              <span className="text-gray-300 flex items-center gap-1">
-                <Database size={10} className="text-cyan-400" />
-                <code className="bg-black/30 px-1 py-0.5 rounded text-cyan-300 text-[9px]">
+              <span className="text-gray-500 block text-[9px] uppercase font-semibold">Spatial SQL / Operation</span>
+              <span className="text-gray-800 font-medium flex items-center gap-1">
+                <Database size={10} className="text-blue-500" />
+                <code className="bg-white border border-gray-200 px-1.5 py-0.5 rounded text-blue-700 text-[9px]">
                   {trace.spatial_operation}
                 </code>
               </span>
@@ -80,24 +85,20 @@ function AgentTraceView({ trace }: { trace: any }) {
           </div>
 
           <div>
-            <span className="text-gray-600 block text-[9px] uppercase font-semibold mb-1">Execution Parameters</span>
-            <pre className="bg-black/30 p-2 rounded text-[9px] text-gray-400 overflow-x-auto max-w-full font-mono">
+            <span className="text-gray-500 block text-[9px] uppercase font-semibold mb-1">Execution Parameters</span>
+            <pre className="bg-white border border-gray-200 p-2 rounded text-[9px] text-gray-600 overflow-x-auto max-w-full font-mono">
               {JSON.stringify(trace.parameters, null, 2)}
             </pre>
           </div>
 
-          <div className="grid grid-cols-2 gap-2 border-t border-white/5 pt-2">
+          <div className="grid grid-cols-2 gap-2 border-t border-gray-200 pt-2">
             <div>
-              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Records Found</span>
-              <span className="text-gray-300 font-semibold text-emerald-400">{trace.records_found} spatial entities</span>
+              <span className="text-gray-500 block text-[9px] uppercase font-semibold">Records Found</span>
+              <span className="text-gray-800 font-semibold text-emerald-600">{trace.records_found}</span>
             </div>
             <div>
-              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Digital Twin Map Action</span>
-              <span className="text-gray-300">{trace.map_action}</span>
-            </div>
-            <div className="col-span-2">
-              <span className="text-gray-600 block text-[9px] uppercase font-semibold">Report Action</span>
-              <span className="text-gray-300">{trace.report_action}</span>
+              <span className="text-gray-500 block text-[9px] uppercase font-semibold">Map Action</span>
+              <span className="text-gray-800 font-medium">{trace.map_action}</span>
             </div>
           </div>
         </div>
@@ -116,7 +117,7 @@ interface AIChatPanelProps {
 
 export default function AIChatPanel({
   currentLocation,
-  dashboardMode = "flood",
+  dashboardMode = "hydrology",
   onMapAction,
   uploadedFiles = [],
   onFileUpload,
@@ -167,18 +168,24 @@ export default function AIChatPanel({
     }
   };
 
-  const quickPrompts = currentLocation
-    ? [
-        { icon: <MapPin size={12} />, text: `Analyze flood risk for ${currentLocation.split(",")[0]}` },
-        { icon: <BarChart3 size={12} />, text: "Show hospitals near flood zones" },
-        { icon: <Lightbulb size={12} />, text: "Check infrastructure vulnerability" },
-        { icon: <Zap size={12} />, text: "Audit utility grid coverage" },
-      ]
-    : [
-        { icon: <Globe2 size={12} />, text: "What can you analyze?" },
-        { icon: <MapPin size={12} />, text: "How do I get started?" },
-        { icon: <Lightbulb size={12} />, text: "What data formats do you support?" },
-      ];
+  React.useEffect(() => {
+    const handleAISend = (e: any) => {
+      if (e.detail) {
+        sendMessage(e.detail);
+      }
+    };
+    window.addEventListener('ai-chat-send', handleAISend);
+    return () => window.removeEventListener('ai-chat-send', handleAISend);
+  }, [sendMessage]);
+
+  const quickPrompts = [
+    { icon: <MapPin size={12} />, text: "Why is this area flood susceptible?" },
+    { icon: <Layers size={12} />, text: "Compare Heavy and Extreme scenarios" },
+    { icon: <Globe2 size={12} />, text: "Explain the current flood simulation" },
+    { icon: <Route size={12} />, text: "How does terrain influence flooding?" },
+    { icon: <Building size={12} />, text: "Which infrastructure is most exposed?" },
+    { icon: <Lightbulb size={12} />, text: "What does the flood susceptibility map show?" },
+  ];
 
   // Markdown-like rendering
   const renderContent = (content: string) => {
@@ -198,7 +205,6 @@ export default function AIChatPanel({
           </h4>
         );
       }
-      // Table detection
       if (line.startsWith("|")) {
         const cells = line
           .split("|")
@@ -209,10 +215,10 @@ export default function AIChatPanel({
         return (
           <div
             key={i}
-            className={`grid gap-1 text-xs py-1 px-2 rounded ${
+            className={`grid gap-1 text-xs py-1 px-2 rounded border-b border-gray-100 ${
               isHeader
-                ? "bg-primary-500/10 font-semibold text-gray-200"
-                : "text-gray-400 hover:bg-white/5"
+                ? "bg-gray-50 font-semibold text-gray-900 border-t"
+                : "text-gray-700 hover:bg-gray-50"
             }`}
             style={{ gridTemplateColumns: `repeat(${cells.length}, 1fr)` }}
           >
@@ -226,7 +232,7 @@ export default function AIChatPanel({
       }
       if (line.match(/^\d+\.\s/)) {
         return (
-          <p key={i} className="text-xs text-gray-300 ml-2 my-0.5">
+          <p key={i} className="text-[13px] text-gray-700 ml-2 my-1 leading-relaxed">
             {line}
           </p>
         );
@@ -237,11 +243,11 @@ export default function AIChatPanel({
         if (bulletContent.includes("**")) {
           const parts = bulletContent.split(/\*\*(.*?)\*\*/g);
           return (
-            <p key={i} className="text-xs text-gray-300 ml-3 my-0.5">
+            <p key={i} className="text-[13px] text-gray-700 ml-3 my-1 leading-relaxed">
               •{" "}
               {parts.map((part, j) =>
                 j % 2 === 1 ? (
-                  <strong key={j} className="text-gray-100 font-semibold">
+                  <strong key={j} className="text-gray-900 font-semibold">
                     {part}
                   </strong>
                 ) : (
@@ -252,7 +258,7 @@ export default function AIChatPanel({
           );
         }
         return (
-          <p key={i} className="text-xs text-gray-300 ml-3 my-0.5">
+          <p key={i} className="text-[13px] text-gray-700 ml-3 my-1 leading-relaxed">
             • {bulletContent}
           </p>
         );
@@ -261,10 +267,10 @@ export default function AIChatPanel({
       if (line.includes("**")) {
         const parts = line.split(/\*\*(.*?)\*\*/g);
         return (
-          <p key={i} className="text-xs text-gray-300 my-0.5">
+          <p key={i} className="text-[13px] text-gray-700 my-1 leading-relaxed">
             {parts.map((part, j) =>
               j % 2 === 1 ? (
-                <strong key={j} className="text-gray-100 font-semibold">
+                <strong key={j} className="text-gray-900 font-semibold">
                   {part}
                 </strong>
               ) : (
@@ -277,16 +283,16 @@ export default function AIChatPanel({
       if (line.includes("*") && !line.includes("**")) {
         const parts = line.split(/\*(.*?)\*/g);
         return (
-          <p key={i} className="text-xs text-gray-400 my-0.5 italic">
+          <p key={i} className="text-[13px] text-gray-600 my-1 italic leading-relaxed">
             {parts.map((part, j) =>
               j % 2 === 1 ? <em key={j}>{part}</em> : part
             )}
           </p>
         );
       }
-      if (line.trim() === "") return <div key={i} className="h-1" />;
+      if (line.trim() === "") return <div key={i} className="h-1.5" />;
       return (
-        <p key={i} className="text-xs text-gray-300 my-0.5">
+        <p key={i} className="text-[13px] text-gray-700 my-1 leading-relaxed">
           {line}
         </p>
       );
@@ -294,22 +300,27 @@ export default function AIChatPanel({
   };
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full bg-white text-gray-900 border-l border-gray-200 w-[400px]">
       {/* Header */}
-      <div className="p-4 border-b border-geo-border flex items-center gap-3">
-        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-cyan-500 flex items-center justify-center pulse-dot">
-          <Globe2 size={16} className="text-white" />
+      <div className="p-4 border-b border-gray-800 flex items-center gap-3 bg-[#0f172a]">
+        <div className="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center shadow-sm">
+          <BrainCircuit size={16} className="text-emerald-400" />
         </div>
         <div className="flex-1">
-          <h3 className="text-sm font-semibold text-gray-200">GeoNarrative AI</h3>
-          <p className="text-[10px] text-gray-500 flex items-center gap-1">
-            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
-            {currentLocation ? `Analyzing ${currentLocation.split(",")[0]}` : "Ready — search a location to begin"}
+          <div className="flex items-center gap-2">
+            <h3 className="text-sm font-bold text-white tracking-wide">GeoNarrative AI</h3>
+            <span className="px-1.5 py-0.5 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded text-[9px] font-extrabold tracking-widest uppercase animate-pulse">
+              LIVE TWIN
+            </span>
+          </div>
+          <p className="text-[10px] text-emerald-400/90 font-medium mt-0.5 tracking-wide flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full" />
+            Connected to Pune Digital Twin
           </p>
         </div>
         <button
           onClick={clearHistory}
-          className="w-7 h-7 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary-400 hover:bg-primary-500/10 transition-colors"
+          className="w-7 h-7 rounded-lg flex items-center justify-center text-gray-400 hover:text-blue-600 hover:bg-blue-50 transition-colors border border-transparent hover:border-blue-100"
           title="Clear chat"
         >
           <RotateCcw size={14} />
@@ -317,7 +328,7 @@ export default function AIChatPanel({
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar">
+      <div className="flex-1 overflow-y-auto p-5 space-y-5 custom-scrollbar bg-white">
         <AnimatePresence>
           {messages.map((msg) => (
             <motion.div
@@ -328,50 +339,48 @@ export default function AIChatPanel({
               className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
             >
               {msg.role === "assistant" && (
-                <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-primary-500/30 to-cyan-500/30 flex items-center justify-center mr-2 mt-1 flex-shrink-0">
-                  <Sparkles size={12} className="text-primary-400" />
+                <div className="w-6 h-6 rounded-lg bg-blue-100 flex items-center justify-center mr-2.5 mt-1 flex-shrink-0 shadow-sm border border-blue-200">
+                  <Sparkles size={12} className="text-blue-600" />
                 </div>
               )}
-              <div className={msg.role === "user" ? "max-w-[80%]" : "max-w-[90%]"}>
+              <div className={msg.role === "user" ? "max-w-[85%]" : "max-w-[88%]"}>
                 <div
-                  className={
+                  className={`p-3.5 rounded-2xl shadow-sm border ${
                     msg.role === "user"
-                      ? "chat-bubble-user"
-                      : "chat-bubble-ai"
-                  }
+                      ? "bg-blue-600 text-white border-blue-700 rounded-tr-sm"
+                      : "bg-gray-50 border-gray-200 text-gray-800 rounded-tl-sm"
+                  }`}
                 >
                   {msg.role === "user" ? (
-                    <p className="text-sm">{msg.content}</p>
+                    <p className="text-[13px] leading-relaxed">{msg.content}</p>
                   ) : (
-                    <div>{renderContent(msg.content)}</div>
+                    <div className="text-[13px] leading-relaxed space-y-2">{renderContent(msg.content)}</div>
                   )}
                 </div>
-                {msg.role === "assistant" && msg.metadata?.agent_trace && (
-                  <AgentTraceView trace={msg.metadata.agent_trace} />
-                )}
                 {msg.role === "assistant" && (
                   <div className="flex items-center gap-2 mt-1.5 ml-1">
                     <button
                       onClick={() => handleCopy(msg.id, msg.content)}
-                      className="text-gray-600 hover:text-gray-400 transition-colors"
+                      className="text-gray-400 hover:text-blue-600 transition-colors flex items-center gap-1 text-[11px] font-medium px-1.5 py-0.5 rounded hover:bg-gray-100"
+                      title="Copy response"
                     >
-                      {copiedId === msg.id ? <Check size={11} /> : <Copy size={11} />}
+                      {copiedId === msg.id ? (
+                        <>
+                          <Check size={12} className="text-emerald-600" />
+                          <span className="text-emerald-600">Copied</span>
+                        </>
+                      ) : (
+                        <>
+                          <Copy size={12} />
+                          <span>Copy</span>
+                        </>
+                      )}
                     </button>
-                    {msg.metadata?.dataPoints != null && msg.metadata.dataPoints > 0 && (
-                      <span className="text-[10px] text-gray-600">
-                        {msg.metadata.dataPoints} data points analyzed
-                      </span>
-                    )}
-                    {msg.metadata?.sources && msg.metadata.sources.length > 0 && (
-                      <span className="text-[10px] text-gray-700">
-                        via {msg.metadata.sources[0]}
-                      </span>
-                    )}
                   </div>
                 )}
               </div>
               {msg.role === "user" && (
-                <div className="w-6 h-6 rounded-lg bg-primary-600 flex items-center justify-center ml-2 mt-1 flex-shrink-0">
+                <div className="w-6 h-6 rounded-lg bg-gray-800 flex items-center justify-center ml-2.5 mt-1 flex-shrink-0 shadow-sm border border-gray-700">
                   <User size={12} className="text-white" />
                 </div>
               )}
@@ -386,20 +395,20 @@ export default function AIChatPanel({
             animate={{ opacity: 1, y: 0 }}
             className="flex items-start gap-2.5"
           >
-            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-primary-500/30 to-cyan-500/30 flex items-center justify-center flex-shrink-0 animate-pulse mt-0.5">
-              <Sparkles size={11} className="text-primary-400" />
+            <div className="w-6 h-6 rounded-lg bg-blue-100 border border-blue-200 flex items-center justify-center flex-shrink-0 animate-pulse mt-0.5">
+              <Sparkles size={11} className="text-blue-600" />
             </div>
-            <div className="bg-geo-card/45 border border-geo-border/60 rounded-xl p-3.5 max-w-[85%] space-y-2 backdrop-blur-sm">
+            <div className="bg-white border border-blue-200 rounded-2xl rounded-tl-sm p-4 max-w-[85%] space-y-2 shadow-sm">
               <div className="flex items-center gap-2">
-                <div className="chat-typing-dots flex items-center gap-1">
-                  <span />
-                  <span />
-                  <span />
+                <div className="chat-typing-dots flex items-center gap-1 opacity-70">
+                  <span className="bg-blue-600 w-1.5 h-1.5 rounded-full" />
+                  <span className="bg-blue-600 w-1.5 h-1.5 rounded-full" />
+                  <span className="bg-blue-600 w-1.5 h-1.5 rounded-full" />
                 </div>
-                <span className="text-[9px] font-bold text-primary-400 uppercase tracking-widest animate-pulse">GeoAI Agent Running</span>
+                <span className="text-[9px] font-bold text-blue-600 uppercase tracking-widest animate-pulse">Running Spatial Engine</span>
               </div>
-              <div className="text-[11px] text-gray-300 leading-relaxed font-mono flex items-center gap-1.5">
-                <Loader2 size={11} className="animate-spin text-primary-400" />
+              <div className="text-[11px] text-gray-600 font-medium font-mono flex items-center gap-2">
+                <Loader2 size={11} className="animate-spin text-blue-500" />
                 {thinkingPhrases[thinkingStep]}
               </div>
             </div>
@@ -409,13 +418,12 @@ export default function AIChatPanel({
         <div ref={chatEndRef} />
       </div>
 
-      {/* Quick Prompts */}
-      <div className="px-4 py-2 flex gap-2 flex-wrap">
+      <div className="px-3 py-3 bg-[#1e293b]/50 border-t border-white/5 flex gap-1.5 flex-wrap overflow-y-auto max-h-[140px] custom-scrollbar">
         {quickPrompts.map((prompt, i) => (
           <button
             key={i}
             onClick={() => sendMessage(prompt.text)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] text-gray-400 border border-geo-border hover:border-primary-500/30 hover:text-primary-300 hover:bg-primary-500/5 transition-all duration-200"
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#0f172a] text-[10px] font-bold text-slate-300 border border-white/5 hover:border-emerald-500/30 hover:text-emerald-400 hover:bg-emerald-500/5 transition-all duration-200 tracking-wider uppercase text-left"
           >
             {prompt.icon}
             {prompt.text}
@@ -424,8 +432,8 @@ export default function AIChatPanel({
       </div>
 
       {/* Input with file upload */}
-      <div className="p-4 border-t border-geo-border">
-        <div className="relative flex items-end gap-2">
+      <div className="p-4 bg-white border-t border-gray-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.02)]">
+        <div className="relative flex items-end gap-2 bg-gray-50 p-1.5 rounded-2xl border border-gray-200 focus-within:border-blue-400 focus-within:ring-2 focus-within:ring-blue-100 transition-all">
           {/* Hidden file input */}
           <input
             ref={fileInputRef}
@@ -439,7 +447,7 @@ export default function AIChatPanel({
           <button
             onClick={() => fileInputRef.current?.click()}
             disabled={isTyping}
-            className="w-10 h-10 rounded-xl bg-geo-card/60 border border-geo-border hover:border-primary-500/30 hover:bg-primary-500/5 disabled:opacity-50 text-gray-400 hover:text-primary-400 flex items-center justify-center transition-all duration-200 flex-shrink-0"
+            className="w-10 h-10 rounded-xl bg-white border border-gray-200 hover:border-blue-300 hover:bg-blue-50 disabled:opacity-50 text-gray-500 hover:text-blue-600 flex items-center justify-center transition-all duration-200 flex-shrink-0 shadow-sm"
             title="Upload GIS data (GeoJSON, CSV, Shapefile, KML)"
           >
             <Paperclip size={16} />
@@ -449,22 +457,25 @@ export default function AIChatPanel({
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={currentLocation ? `Ask about ${currentLocation.split(",")[0]}...` : "Search a location above to begin analysis..."}
-            className="flex-1 resize-none bg-geo-card/60 border border-geo-border rounded-xl px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-200 max-h-28"
+            placeholder={currentLocation ? `Ask about ${currentLocation.split(",")[0]}...` : "Type a spatial query..."}
+            className="flex-1 resize-none bg-transparent border-none px-3 py-2.5 text-[13px] text-gray-900 placeholder-gray-400 outline-none max-h-32"
             rows={1}
             id="ai-chat-input"
           />
           <button
             onClick={handleSend}
             disabled={!input.trim() || isTyping}
-            className="w-10 h-10 rounded-xl bg-primary-600 hover:bg-primary-500 disabled:bg-gray-700 disabled:text-gray-500 text-white flex items-center justify-center transition-all duration-200 flex-shrink-0"
+            className="w-10 h-10 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:bg-gray-200 disabled:text-gray-400 text-white flex items-center justify-center transition-all duration-200 flex-shrink-0 shadow-sm disabled:shadow-none"
           >
             <Send size={16} />
           </button>
         </div>
-        <p className="text-[10px] text-gray-600 mt-2 text-center">
-          GeoNarrative AI • PostGIS Spatial Engine • Multi-Criteria Analysis
-        </p>
+        <div className="flex items-center justify-center gap-1.5 mt-3">
+          <Database size={10} className="text-emerald-500" />
+          <p className="text-[10px] text-gray-400 font-medium tracking-wide">
+            GeoNarrative AI • PostGIS Spatial Engine
+          </p>
+        </div>
       </div>
     </div>
   );

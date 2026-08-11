@@ -1,0 +1,26 @@
+{
+  "scenarios": {
+    "normal": {
+      "final_flooded_area_km2": 369.72,
+      "max_depth_m": 620.62,
+      "description": "Remains predominantly within and immediately beside the river."
+    },
+    "moderate": {
+      "final_flooded_area_km2": 437.62,
+      "max_depth_m": 657.36,
+      "description": "Localized connected river-bank flooding."
+    },
+    "heavy": {
+      "final_flooded_area_km2": 529.89,
+      "max_depth_m": 733.13,
+      "description": "Substantial connected floodplain expansion."
+    },
+    "extreme": {
+      "final_flooded_area_km2": 608.40,
+      "max_depth_m": 735.63,
+      "description": "Largest connected inundation footprint."
+    }
+  },
+  "validation_status": "PASSED",
+  "relationship_check": "Normal < Moderate < Heavy < Extreme confirmed."
+}
